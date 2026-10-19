@@ -88,8 +88,23 @@ blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--acce
   <h1 class="title">汽车产业日报</h1>
   <p class="sub">每晚自动生成的产业资讯、企业史与英语精读存档</p>
 </header>
-<div class="section-label">汽车日报</div><div class="grid"><a class="card reveal" href="2026-10-19.html"><div class="card-kicker">汽车日报 · 2026-10-19</div><div class="card-title">2026-10-19</div><div class="card-desc">零跑B10在西班牙萨拉戈萨工厂量产</div></a></div><div class="section-label">企业史 · 学习</div><div class="grid"><a class="card reveal" href="2026-10-19-company.html"><div class="card-kicker">企业史 · 2026-10-19</div><div class="card-title">2026-10-19</div><div class="card-desc">丰田最值得学习的是其开创并实践的“丰田生产方式”，即精益生产体系，它通过减少浪费、提高效率，成为全球制造业的标杆。</div></a></div>
+<div class="section-label">汽车日报</div><div class="grid"><a class="card reveal" href="2026-10-19.html"><div class="card-kicker">汽车日报 · 2026-10-19</div><div class="card-title">2026-10-19</div><div class="card-desc">零跑B10在西班牙萨拉戈萨工厂量产</div></a></div><div class="section-label">企业史 · 学习</div><div class="grid"><a class="card reveal" href="2026-10-19-company.html"><div class="card-kicker">企业史 · 2026-10-19</div><div class="card-title">2026-10-19</div><div class="card-desc">丰田最值得学习的是其开创并实践的“丰田生产方式”，即精益生产体系，它通过减少浪费、提高效率，成为全球制造业的标杆。</div></a></div><div class="section-label">汽车英语精读</div><div class="grid"><a class="card reveal" href="en-2026-10-19-2026-10-19-lesson.html"><div class="card-kicker">英语精读 · 2026-10-19</div><div class="card-title">2026-10-19</div><div class="card-desc">本课程讲解了与人工智能和计算机技术相关的术语和表达；</div></a></div>
 <footer class="footer">
   <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
 </footer>
+<!-- The cards carry .reveal (opacity:0) so they can fade in. Without this script the
+     archive page would render completely blank - the CSS alone hides every card. -->
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){
+    els.forEach(function(e){e.classList.add('on')});return;
+  }
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},
+    {threshold:.06});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
 </body></html>
