@@ -81,6 +81,16 @@ blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--acce
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}
   html{scroll-behavior:auto}}
 @media print{.hero{padding:24px 0}.reveal{opacity:1;transform:none}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
 </style>
 </head><body>
 <header class="hero">
@@ -90,92 +100,110 @@ blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--acce
 </header>
 <main class="wrap">
 <article class="reveal">
+<p>resumed</p>
+
 
 <h2>今日速览（30 秒版）</h2>
-<ul><li>零跑B10在西班牙萨拉戈萨工厂量产（来源：盖世汽车）</li><li>比亚迪大汉EV上市，售价23.59万元起（来源：易车、电动邦）</li><li>方程豹累计销量突破60万台（来源：盖世汽车）</li><li>东风商用车发布绿智平台，获8700台意向订单（来源：电动邦）</li><li>日产汽车中国区9月销量23658台（来源：汽车之家）</li><li>小鹏海外销量首破1万辆（来源：CnEVPost）</li></ul>
+<ul><li>零跑B10在西班牙萨拉戈萨工厂量产（来源：盖世汽车）</li><li>广汽第30万套电池包下线，实现电池自研自造（来源：太平洋汽车）</li><li>宝马第六代动力电池在沈阳量产，开启新世代电动产品（来源：新浪汽车）</li><li>智界新能源汽车获批独立造车资质，产能来自奇瑞（来源：汽车之家）</li><li>凯迪拉克XT5 PHEV Air版上市，限时权益价23.99万元起（来源：电动邦）</li><li>东风商用车发布全新绿智平台，获8700台意向订单（来源：电动邦）</li><li>一汽-大众全新纯电轿车ID.AURA L5工信部公示（来源：网上车市）</li><li>日产汽车中国区9月销量23658台（来源：汽车之家）</li><li>东风商用车发布全新绿智平台，覆盖五大能源路线（来源：电动邦）</li><li>大众安徽与众06/07焕新上市，续航达670km（来源：太平洋汽车）</li></ul>
 
 <h2>今日头条</h2>
-<h3>零跑B10在西班牙萨拉戈萨工厂量产</h3>
-<p>零跑B10于2026年10月16日在西班牙萨拉戈萨工厂正式启动量产，标志着零跑与Stellantis集团的战略合作迎来产业化成果。  </p>
-<p>零跑与Stellantis集团工程团队共同推进产线适配，并在西班牙马连打造本地化电池组装基地。  </p>
-<p>此次量产是零跑在欧洲本地化生产的突破性进展。</p>
+<h3>广汽第30万套电池包下线，实现电池自研自造</h3>
+<p>广汽因湃电池第30万套动力电池正式量产下线，标志着其在电池领域实现从定义到制造的全栈自研能力。（来源：太平洋汽车）</p>
+<ul><li>广汽在电池领域持续投入，推动其新能源战略向纵深发展。</li><li>电池自研自造成为行业趋势，广汽走在前列。</li></ul>
 
 <h2>一、新车与产品</h2>
-<ul><li><strong>新款大众安徽与众06/与众07上市，售价9.99万元起</strong> —— 搭载激光雷达和城市NOA功能，进一步丰富大众安徽产品矩阵（来源：汽车之家）</li><li><strong>2027款长安启源Q05正式上市，限时补贴价7.99万元起</strong> —— 产品升级有助于提升品牌竞争力（来源：易车）</li><li><strong>上汽大众ID. ERA 8X正式上市，限时权益价20.68万元起</strong> —— 产品定位中高端市场，进一步丰富ID系列产品线（来源：汽车之家）</li><li><strong>东风风神L8+将于10月23日上市，搭载天元智驾T800辅助驾驶方案</strong> —— 提升智能化水平，增强产品吸引力（来源：汽车之家）</li></ul>
+<ul><li><strong>零跑B10在西班牙萨拉戈萨工厂量产</strong> —— 与Stellantis合作实现欧洲本地化生产（来源：盖世汽车）</li><li><strong>凯迪拉克XT5 PHEV Air版上市</strong> —— 限时权益价23.99万元，入门即双电机四驱（来源：电动邦）</li><li><strong>大众安徽与众06/07焕新上市</strong> —— 新增激光雷达、续航达670km（来源：太平洋汽车）</li><li><strong>一汽-大众ID.AURA L5工信部公示</strong> —— 基于CMP平台打造，轴距2820mm（来源：网上车市）</li><li><strong>凯迪拉克XT5 PHEV Air版上市</strong> —— 9月首月销量3892台，登顶豪华插混SUV榜首（来源：电动邦）</li></ul>
 
 <h2>二、销量与市场</h2>
-<ul><li><strong>方程豹累计销量突破60万台</strong> —— 用时约35个月达成这一规模，品牌增长速度显著（来源：盖世汽车）</li><li><strong>比亚迪大汉EV正式上市，售价23.59万元起</strong> —— 作为王朝品牌冲击高端市场的旗舰产品，具备较强市场潜力（来源：易车、电动邦）</li><li><strong>凯迪拉克XT5 PHEV智混四驱Air版上市，限时权益价23.99万元起</strong> —— 价格下探有助于提升市场渗透率（来源：易车）</li><li><strong>日产汽车中国区9月销量23658台</strong> —— 东风日产销量为18932台，整体表现稳定（来源：汽车之家）</li></ul>
+<ul><li><strong>日产汽车中国区9月销量23658台</strong> —— 含乘用车和轻型商用车（来源：汽车之家）</li><li><strong>通用汽车第三季度在华销量超35.8万辆</strong> —— 新能源占比超60%（来源：新浪汽车）</li><li><strong>凯迪拉克XT5 PHEV Air版上市</strong> —— 9月首月销量3892台，登顶豪华插混SUV榜首（来源：电动邦）</li></ul>
 
 <h2>三、政策与标准</h2>
-<ul><li><strong>墨西哥免征汽车零部件进口关税</strong> —— 为期5年，有助于吸引整车与零部件产能落地（来源：盖世汽车）</li><li><strong>中国房车产业迎来历史性发展窗口</strong> —— 商务部等8部门公布40个试点城市名单，扬州以“房车露营”方向入选（来源：中汽协）</li></ul>
+<ul><li><strong>商务部等8部门公布40个汽车流通消费改革试点城市</strong> —— 扬州以“房车露营”方向入选（来源：中汽协）</li><li><strong>商务部等9部门联合印发《关于培育壮大汽车后市场消费若干措施的通知》</strong> —— 提出17条举措（来源：中汽协）</li></ul>
 
 <h2>四、供应链与智驾</h2>
-<ul><li><strong>东风商用车发布全新绿智平台，覆盖五大能源路线</strong> —— 获得8700台意向订单，新能源布局进一步深化（来源：电动邦）</li><li><strong>银河TT联合宁德时代推出NP3.0热失控防护安全技术</strong> —— 提升电池安全标准，实现“控烟气”防护（来源：电动邦）</li><li><strong>东风风神L8+搭载天元智驾T800辅助驾驶方案</strong> —— 提升智能化水平，增强产品竞争力（来源：汽车之家）</li></ul>
+<ul><li><strong>广汽第30万套电池包下线</strong> —— 实现电池自研自造，推动新能源战略（来源：太平洋汽车）</li><li><strong>大众安徽与众06/07新增酷睿程HS8端到端大模型</strong> —— 搭载激光雷达，支持城市NOA领航辅助（来源：太平洋汽车）</li><li><strong>东风商用车发布全新绿智平台D600</strong> —— 覆盖氨燃料、氢燃料、纯电等五大能源路线（来源：电动邦）</li></ul>
 
 <h2>五、公司与人事</h2>
-<ul><li><strong>一汽与广汽签署战略合作框架协议</strong> —— 为产业高质量发展提供合作新范本（来源：中汽协）</li></ul>
+<ul><li><strong>智界新能源汽车获批独立造车资质</strong> —— 产能来源于奇瑞，计划独立上市（来源：汽车之家）</li><li><strong>宝马第六代动力电池在沈阳量产</strong> —— 宝马集团董事长聂科维博士到场见证（来源：新浪汽车）</li></ul>
 
 <h2>六、出海与国际</h2>
-<ul><li><strong>小鹏海外销量首破1万辆</strong> —— 中东订单超过3000辆，海外市场拓展成效显著（来源：CnEVPost）</li><li><strong>零跑B10在西班牙萨拉戈萨工厂量产</strong> —— 实现欧洲本地化量产，推动品牌国际化（来源：盖世汽车）</li><li><strong>问界拟进军欧洲</strong> —— 丰田计划在中国落地自研一体化压铸工艺，对标特斯拉造车技术（来源：盖世汽车）</li></ul>
+<ul><li><strong>零跑B10在西班牙萨拉戈萨工厂量产</strong> —— 标志零跑与Stellantis合作实现欧洲本地化生产（来源：盖世汽车）</li><li><strong>宝马第六代动力电池在沈阳量产</strong> —— 为新世代电动产品提供动力支持（来源：新浪汽车）</li></ul>
 
 <h2>数据速览</h2>
 <table><thead><tr><th>指标</th><th>数值</th><th>口径/区间</th><th>来源</th></tr></thead><tbody>
-<tr><td>方程豹累计销量</td><td>60万台</td><td>累计</td><td>盖世汽车</td></tr>
-<tr><td>比亚迪大汉EV售价</td><td>23.59万元起</td><td>售价</td><td>易车、电动邦</td></tr>
-<tr><td>日产汽车中国区9月销量</td><td>23658台</td><td>9月销量</td><td>汽车之家</td></tr>
-<tr><td>小鹏海外销量</td><td>1万辆</td><td>9月销量</td><td>CnEVPost</td></tr>
-<tr><td>东风商用车意向订单</td><td>8700台</td><td>意向订单</td><td>电动邦</td></tr>
+<tr><td>广汽电池包产量</td><td>30万套</td><td>2026年10月</td><td>太平洋汽车</td></tr>
+<tr><td>宝马第六代动力电池产量</td><td>未明确</td><td>2026年10月</td><td>新浪汽车</td></tr>
+<tr><td>日产汽车中国区9月销量</td><td>23658台</td><td>2026年9月</td><td>汽车之家</td></tr>
+<tr><td>凯迪拉克XT5 PHEV Air版首月销量</td><td>3892台</td><td>2026年9月</td><td>电动邦</td></tr>
+<tr><td>东风商用车意向订单</td><td>8700台</td><td>2026年10月</td><td>电动邦</td></tr>
+<tr><td>大众安徽与众07续航</td><td>670km</td><td>CLTC</td><td>太平洋汽车</td></tr>
 </tbody></table>
 
 <h2>快讯流水（单一信源，待证实）</h2>
-<ul><li>丰田将在中国落地自研一体化压铸工艺，对标特斯拉造车技术 ｜ 单一信源：盖世汽车 ｜ 待证实</li><li>特斯拉“无法保证”Roadster预订车辆最终会交付 ｜ 单一信源：InsideEVs ｜ 待证实</li><li>丰田计划自2028年起在中国投产下一代卡罗拉 ｜ 单一信源：盖世汽车 ｜ 待证实</li></ul>
+<ul><li>凯迪拉克XT5 PHEV Air版上市，限时权益价23.99万元起 ｜ 单一信源：电动邦 ｜ 待证实</li><li>一汽-大众ID.AURA L5工信部公示 ｜ 单一信源：网上车市 ｜ 待证实</li><li>宝马第六代动力电池在沈阳量产 ｜ 单一信源：新浪汽车 ｜ 待证实</li><li>智界新能源汽车获批独立造车资质 ｜ 单一信源：汽车之家 ｜ 待证实</li><li>东风商用车发布全新绿智平台D600 ｜ 单一信源：电动邦 ｜ 待证实</li></ul>
 
 <h2>参考来源</h2>
-<ul><li>[1] Electrek｜Volkswagen is recalling ‘several thousand’ EVs, including the ID.4, and not just in the US</li><li>[2] CnEVPost｜Xpeng expands GX shipments overseas as Middle East orders exceed 3,000</li><li>[3] 汽车之家｜9.99万起 搭载激光雷达+城市NOA 新款大众安徽与众06/与众07上市</li><li>[4] 易车｜2027款长安启源Q05正式上市 限时补贴价7.99万元起</li><li>[5] 盖世汽车｜【国际】墨西哥免征汽车零部件进口关税</li><li>[6] 中汽协｜一汽与广汽开展战略合作为产业高质量发展提供合作新范本</li><li>[7] InsideEVs｜AMG’s New Electric SUV Has 1,153 HP. The Charging Specs Are Even Wilder</li><li>[8] 电动邦｜23.59万起，1008公里续航加闪充，大汉EV到底值不值？</li><li>[9] 钛媒体｜【数智周报】特朗普政府要求AI公司在发生安全事件后立即上报</li><li>[10] Electrek｜From excavators to hypercars, these LEGO kits were made for EV fans (2026)</li><li>[11] CnEVPost｜BYD&#x27;s all-new Han and third-gen Qin Plus appear in filings as core sedan refresh continues</li><li>[12] 汽车之家｜上半年热销SUV盘点：理想单品销量超小米YU7 这些燃油车仍坚挺？</li><li>[13] 易车｜上汽大众ID. ERA 8X正式上市 限时权益价20.68万元起</li><li>[14] 盖世汽车｜【国际快讯】问界拟进军欧洲</li><li>[15] 中汽协｜2026年新能源汽车下乡活动（四川宜宾站）与世界动力电池大会同期启动</li><li>[16] InsideEVs｜New Tesla Roadster Reveal: How To Watch The Livestream</li><li>[17] 电动邦｜不止不起火，更要无烟！银河TT把电池安全标准再往上提</li><li>[18] 钛媒体｜【钛晨报】央行就《银行间债券市场债券发行管理规则》公开征求意见</li><li>[19] Electrek｜E-quipment highlight: LEAPTING launches electric autonomous forklift</li><li>[20] CnEVPost｜Li Auto to hold Power Day on October 20 to share latest EV tech advances</li><li>[21] 汽车之家｜搭载天元智驾T800辅助驾驶方案 ！东风风神L8+将于10月23日上市！</li><li>[22] 易车｜比亚迪大汉EV正式上市 售价23.59万元起</li><li>[23] 盖世汽车｜方程豹累计销量突破60万台</li><li>[24] 中汽协｜新政东风劲吹，房车产业迎来历史性发展窗口</li><li>[25] InsideEVs｜Tesla &#x27;Cannot Guarantee&#x27; Your Roadster Pre-Order Will Ever Be Delivered</li><li>[26] 电动邦｜东风商用车发布全新绿智平台，覆盖五大能源路线并获8700台意向订单</li><li>[27] Electrek｜Electric Mercedes-AMG GT SUV unveiled with 1,153 hp and 710 kW charging</li><li>[28] CnEVPost｜Nio Firefly reaches 90,000 cumulative deliveries after record September</li><li>[29] 汽车之家｜日产汽车中国区9月销量23658台 东风日产9月销量18932台</li><li>[30] 易车｜凯迪拉克XT5 PHEV智混四驱Air版上市 限时权益价23.99万元</li><li>[31] 盖世汽车｜零跑B10西班牙工厂量产</li><li>[32] InsideEVs｜Tesla Just Revealed The Roadster With A Truly Insane Demo. Here&#x27;s What You Need To Know</li><li>[33] 电动邦｜入门即双电机四驱，凯迪拉克XT5 PHEV Air版把诚意写在明处</li></ul>
+<ul><li>33：中汽协｜新政东风劲吹，房车产业迎来历史性发展窗口</li><li>34：InsideEVs｜Tesla &#x27;Cannot Guarantee&#x27; Your Roadster Pre-Order Will Ever Be Delivered</li><li>35：电动邦｜东风商用车发布全新绿智平台，覆盖五大能源路线并获8700台意向订单</li><li>36：网上车市｜一汽-大众全新纯电轿车实拍：命名ID. AURA L5</li><li>37：Electrek｜Electric Mercedes-AMG GT SUV unveiled with 1,153 hp and 710 kW charging</li><li>38：CnEVPost｜Nio to launch larger 60-kWh battery pack for Firefly on October 23</li><li>39：汽车之家｜日产汽车中国区9月销量23658台 东风日产9月销量18932台</li><li>40：太平洋汽车｜30万套电池包下线：广汽把电池“定义权+制造权”握在了手里</li><li>41：易车｜凯迪拉克XT5 PHEV智混四驱Air版上市 限时权益价23.99万元</li><li>42：新浪汽车｜第六代动力电池沈阳正式投产下线 宝马新世代电动产品蓄势起航</li><li>43：盖世汽车｜零跑B10西班牙工厂量产</li><li>44：InsideEVs｜Tesla Just Revealed The Roadster With A Truly Insane Demo. Here&#x27;s What You Need To Know</li><li>45：电动邦｜入门即双电机四驱，凯迪拉克XT5 PHEV Air版把诚意写在明处</li><li>46：网上车市｜上汽大众官宣：纯电ID.ERA 5X 下月正式上市！</li><li>47：汽车之家｜智界即将获得独立造车资质 产能来源于奇瑞 消息称其计划独立上市</li><li>48：太平洋汽车｜9.99万起 大众安徽与众06/与众07焕新上市 配激光雷达/续航670km</li><li>49：易车｜吉利星瑞L PLUS正式上市 上市限时价10.97万元起</li><li>50：新浪汽车｜通用汽车第三季度表现稳定 在华销量超35.8万辆</li></ul>
+
+<hr>
+
+<h2>今日图集</h2>
+
+<div class="gallery"><figure><img src="img/59db4fd1f1f920.jpg" alt="赛力斯出新轿跑SUV了：不是问界，Pk智界RX小米YU7" loading="lazy"><figcaption>赛力斯出新轿跑SUV了：不是问界，Pk智界RX小米YU7<span class="via">网上车市</span></figcaption></figure><figure><img src="img/562a6e4a7889c4.webp" alt="Volkswagen is recalling ‘several…" loading="lazy"><figcaption>Volkswagen is recalling ‘several…<span class="via">Electrek</span></figcaption></figure><figure><img src="img/77eea834b9ae86.jpg" alt="Xpeng expands GX shipments overs…" loading="lazy"><figcaption>Xpeng expands GX shipments overs…<span class="via">CnEVPost</span></figcaption></figure><figure><img src="img/a98880ad407cc6.jpg" alt="9.99万起 搭载激光雷达+城市NOA 新款大众安徽与众06/与…" loading="lazy"><figcaption>9.99万起 搭载激光雷达+城市NOA 新款大众安徽与众06/与…<span class="via">汽车之家</span></figcaption></figure><figure><img src="img/ea0f5ed56fc369.png" alt="日产汽车中国区9月销量23658台 东风日产为销量主要来源" loading="lazy"><figcaption>日产汽车中国区9月销量23658台 东风日产为销量主要来源<span class="via">太平洋汽车</span></figcaption></figure><figure><img src="img/c6509260bfae1e.jpg" alt="ID. ERA 8X上市背后，上汽大众重建新能源竞争坐标" loading="lazy"><figcaption>ID. ERA 8X上市背后，上汽大众重建新能源竞争坐标<span class="via">新浪汽车</span></figcaption></figure><figure><img src="img/3794444f549d24.jpg" alt="23.59万起，1008公里续航加闪充，大汉EV到底值不值？" loading="lazy"><figcaption>23.59万起，1008公里续航加闪充，大汉EV到底值不值？<span class="via">电动邦</span></figcaption></figure><figure><img src="img/48c06cfb1e4138.png" alt="【数智周报】特朗普政府要求AI公司在发生安全事件后立即上报；华为…" loading="lazy"><figcaption>【数智周报】特朗普政府要求AI公司在发生安全事件后立即上报；华为…<span class="via">钛媒体</span></figcaption></figure><figure><img src="img/eafb454762022f.jpg" alt="魏牌高山8 HEV预售27.58万起 蓝牌MPV带激光雷达" loading="lazy"><figcaption>魏牌高山8 HEV预售27.58万起 蓝牌MPV带激光雷达<span class="via">网上车市</span></figcaption></figure><figure><img src="img/1a00e190bbf7b3.webp" alt="From excavators to hypercars, th…" loading="lazy"><figcaption>From excavators to hypercars, th…<span class="via">Electrek</span></figcaption></figure><figure><img src="img/adcbb5ce7e916c.jpg" alt="BYD&#x27;s all-new Han and third-gen …" loading="lazy"><figcaption>BYD&#x27;s all-new Han and third-gen …<span class="via">CnEVPost</span></figcaption></figure><figure><img src="img/92c23ade680786.jpg" alt="上半年热销SUV盘点：理想单品销量超小米YU7 这些燃油车仍坚挺？" loading="lazy"><figcaption>上半年热销SUV盘点：理想单品销量超小米YU7 这些燃油车仍坚挺？<span class="via">汽车之家</span></figcaption></figure></div>
 
 <hr>
 
 <h2>原文来源</h2>
-<p>1. [Electrek] Volkswagen is recalling ‘several thousand’ EVs, including the ID.4, and not just in the US — https://electrek.co/2026/10/16/volkswagen-is-recalling-thousands-of-evs-including-the-id-4/</p>
-<p>2. [CnEVPost] Xpeng expands GX shipments overseas as Middle East orders exceed 3,000 — https://cnevpost.com/2026/10/17/xpeng-expands-gx-shipments-overseas/</p>
-<p>3. [汽车之家] 9.99万起 搭载激光雷达+城市NOA 新款大众安徽与众06/与众07上市 — https://www.autohome.com.cn/news/202610/1317828.html#pvareaid=102624</p>
-<p>4. [易车] 2027款长安启源Q05正式上市 限时补贴价7.99万元起 — https://news.yiche.com/info/113846180.html</p>
-<p>5. [盖世汽车] 【国际】墨西哥免征汽车零部件进口关税 — https://auto.gasgoo.com/news/202610/16I70475046C108.shtml</p>
-<p>6. [中汽协] 一汽与广汽开展战略合作为产业高质量发展提供合作新范本 — http://www.caam.org.cn/chn/1/cate_2/con_5237342.html</p>
-<p>7. [InsideEVs] AMG’s New Electric SUV Has 1,153 HP. The Charging Specs Are Even Wilder — https://insideevs.com/news/812320/amg-gt-suv-ev-reveal/</p>
-<p>8. [电动邦] 23.59万起，1008公里续航加闪充，大汉EV到底值不值？ — https://www.diandongbang.com/news/167893.html</p>
-<p>9. [钛媒体] 【数智周报】特朗普政府要求AI公司在发生安全事件后立即上报；华为与高通宣布达成广泛专利许可协议；月之暗面据悉即将完成IPO前融资，估值将达5 — https://www.tmtpost.com/8163752.html</p>
-<p>10. [Electrek] From excavators to hypercars, these LEGO kits were made for EV fans (2026) — https://electrek.co/2026/10/18/from-excavators-to-hypercars-these-lego-kits-were-made-for-ev-fans-2026/</p>
-<p>11. [CnEVPost] BYD&#x27;s all-new Han and third-gen Qin Plus appear in filings as core sedan refresh continues — https://cnevpost.com/2026/10/17/byd-all-new-han-third-gen-qin-plus-filings/</p>
-<p>12. [汽车之家] 上半年热销SUV盘点：理想单品销量超小米YU7 这些燃油车仍坚挺？ — https://www.autohome.com.cn/news/202607/1315911.html#pvareaid=102623</p>
-<p>13. [易车] 上汽大众ID. ERA 8X正式上市 限时权益价20.68万元起 — https://news.yiche.com/info/113810570.html</p>
-<p>14. [盖世汽车] 【国际快讯】问界拟进军欧洲 — https://auto.gasgoo.com/news/202610/19I70475275C108.shtml</p>
-<p>15. [中汽协] 2026年新能源汽车下乡活动（四川宜宾站）与世界动力电池大会同期启动 中国汽车工业协会持续推动新能源汽车普惠城乡 — http://www.caam.org.cn/chn/1/cate_3/con_5237303.html</p>
-<p>16. [InsideEVs] New Tesla Roadster Reveal: How To Watch The Livestream — https://insideevs.com/news/812012/new-tesla-roadster-reveal-event-livestream/</p>
-<p>17. [电动邦] 不止不起火，更要无烟！银河TT把电池安全标准再往上提 — https://www.diandongbang.com/news/167899.html</p>
-<p>18. [钛媒体] 【钛晨报】央行就《银行间债券市场债券发行管理规则》公开征求意见；智界将获独立造车资质，内部人士确认公司计划上市；英伟达辟谣RTX5090停产 — https://www.tmtpost.com/8172465.html</p>
-<p>19. [Electrek] E-quipment highlight: LEAPTING launches electric autonomous forklift — https://electrek.co/2026/10/18/e-quipment-highlight-leapting-launches-electric-autonomous-forklift/</p>
-<p>20. [CnEVPost] Li Auto to hold Power Day on October 20 to share latest EV tech advances — https://cnevpost.com/2026/10/19/li-auto-power-day-oct-20/</p>
-<p>21. [汽车之家] 搭载天元智驾T800辅助驾驶方案 ！东风风神L8+将于10月23日上市！ — https://www.autohome.com.cn/news/202610/1317810.html#pvareaid=102624</p>
-<p>22. [易车] 比亚迪大汉EV正式上市 售价23.59万元起 — https://news.yiche.com/info/113824706.html</p>
-<p>23. [盖世汽车] 方程豹累计销量突破60万台 — https://auto.gasgoo.com/news/202610/19I70475278C109.shtml</p>
-<p>24. [中汽协] 新政东风劲吹，房车产业迎来历史性发展窗口 — http://www.caam.org.cn/chn/1/cate_2/con_5237260.html</p>
-<p>25. [InsideEVs] Tesla &#x27;Cannot Guarantee&#x27; Your Roadster Pre-Order Will Ever Be Delivered — https://insideevs.com/news/812247/tesla-roadster-preorder-delivery-guarantee/</p>
-<p>26. [电动邦] 东风商用车发布全新绿智平台，覆盖五大能源路线并获8700台意向订单 — https://www.diandongbang.com/news/167888.html</p>
-<p>27. [Electrek] Electric Mercedes-AMG GT SUV unveiled with 1,153 hp and 710 kW charging — https://electrek.co/2026/10/17/mercedes-amg-gt-suv-electric-1153-hp-710-kw-charging/</p>
-<p>28. [CnEVPost] Nio Firefly reaches 90,000 cumulative deliveries after record September — https://cnevpost.com/2026/10/16/nio-firefly-90000-cumulative-deliveries/</p>
-<p>29. [汽车之家] 日产汽车中国区9月销量23658台 东风日产9月销量18932台 — https://www.autohome.com.cn/news/202610/1317846.html#pvareaid=102624</p>
-<p>30. [易车] 凯迪拉克XT5 PHEV智混四驱Air版上市 限时权益价23.99万元 — https://news.yiche.com/info/113923889.html</p>
-<p>31. [盖世汽车] 零跑B10西班牙工厂量产 — https://auto.gasgoo.com/news/202610/19I70475250C501.shtml</p>
-<p>32. [InsideEVs] Tesla Just Revealed The Roadster With A Truly Insane Demo. Here&#x27;s What You Need To Know — https://insideevs.com/news/812151/2027-tesla-roadster-price-specs-release-date/</p>
-<p>33. [电动邦] 入门即双电机四驱，凯迪拉克XT5 PHEV Air版把诚意写在明处 — https://www.diandongbang.com/news/167902.html</p>
-<p>34. [汽车之家] 智界即将获得独立造车资质 产能来源于奇瑞 消息称其计划独立上市 — https://www.autohome.com.cn/news/202610/1317850.html#pvareaid=102624</p>
-<p>35. [易车] 吉利星瑞L PLUS正式上市 上市限时价10.97万元起 — https://news.yiche.com/info/113950927.html</p>
-<p>36. [盖世汽车] 1600辆红旗整车出口伊拉克 — https://auto.gasgoo.com/news/202610/19I70475252C109.shtml</p>
-<p>37. [电动邦] 四部门给“速成车”踩刹车，岚图早已把安全冗余拉到了数倍国标 — https://www.diandongbang.com/news/167896.html</p>
-<p>38. [汽车之家] 30项功能更新 辅助驾驶+智能座舱 乐道椰子智能系统3.3.0版本升级 — https://www.autohome.com.cn/news/202610/1317827.html#pvareaid=102624</p>
-<p>39. [易车] 捷途旅行者7正式上市 超级焕新价12.59万元起 — https://news.yiche.com/info/113824528.html</p>
-<p>40. [盖世汽车] 27款坦克500三种动力可预订 — https://auto.gasgoo.com/news/202610/16I70475061C107.shtml</p>
+<p>1. [网上车市] 赛力斯出新轿跑SUV了：不是问界，Pk智界RX小米YU7 — http://news.cheshi.com/dujia/20261017/3426067.shtml</p>
+<p>2. [Electrek] Volkswagen is recalling ‘several thousand’ EVs, including the ID.4, and not just in the US — https://electrek.co/2026/10/16/volkswagen-is-recalling-thousands-of-evs-including-the-id-4/</p>
+<p>3. [CnEVPost] Xpeng expands GX shipments overseas as Middle East orders exceed 3,000 — https://cnevpost.com/2026/10/17/xpeng-expands-gx-shipments-overseas/</p>
+<p>4. [汽车之家] 9.99万起 搭载激光雷达+城市NOA 新款大众安徽与众06/与众07上市 — https://www.autohome.com.cn/news/202610/1317828.html#pvareaid=102624</p>
+<p>5. [太平洋汽车] 日产汽车中国区9月销量23658台 东风日产为销量主要来源 — http://www.pcauto.com.cn/news/5189/51890034.html?ad=28676</p>
+<p>6. [易车] 2027款长安启源Q05正式上市 限时补贴价7.99万元起 — https://news.yiche.com/info/113846180.html</p>
+<p>7. [新浪汽车] ID. ERA 8X上市背后，上汽大众重建新能源竞争坐标 — https://auto.sina.com.cn/news/2026-10-14/detail-iniveqvq4429826.shtml</p>
+<p>8. [盖世汽车] 【国际】墨西哥免征汽车零部件进口关税 — https://auto.gasgoo.com/news/202610/16I70475046C108.shtml</p>
+<p>9. [中汽协] 一汽与广汽开展战略合作为产业高质量发展提供合作新范本 — http://www.caam.org.cn/chn/1/cate_2/con_5237342.html</p>
+<p>10. [InsideEVs] AMG’s New Electric SUV Has 1,153 HP. The Charging Specs Are Even Wilder — https://insideevs.com/news/812320/amg-gt-suv-ev-reveal/</p>
+<p>11. [电动邦] 23.59万起，1008公里续航加闪充，大汉EV到底值不值？ — https://www.diandongbang.com/news/167893.html</p>
+<p>12. [钛媒体] 【数智周报】特朗普政府要求AI公司在发生安全事件后立即上报；华为与高通宣布达成广泛专利许可协议；月之暗面据悉即将完成IPO前融资，估值将达5 — https://www.tmtpost.com/8163752.html</p>
+<p>13. [网上车市] 魏牌高山8 HEV预售27.58万起 蓝牌MPV带激光雷达 — http://news.cheshi.com/dujia/20261019/3426074.shtml</p>
+<p>14. [Electrek] From excavators to hypercars, these LEGO kits were made for EV fans (2026) — https://electrek.co/2026/10/18/from-excavators-to-hypercars-these-lego-kits-were-made-for-ev-fans-2026/</p>
+<p>15. [CnEVPost] BYD&#x27;s all-new Han and third-gen Qin Plus appear in filings as core sedan refresh continues — https://cnevpost.com/2026/10/17/byd-all-new-han-third-gen-qin-plus-filings/</p>
+<p>16. [汽车之家] 上半年热销SUV盘点：理想单品销量超小米YU7 这些燃油车仍坚挺？ — https://www.autohome.com.cn/news/202607/1315911.html#pvareaid=102623</p>
+<p>17. [太平洋汽车] 蔚来firefly萤火虫新车型将10月23日上市 配60度电池/续航560km — http://www.pcauto.com.cn/nation/5189/51890084.html?ad=28676</p>
+<p>18. [易车] 上汽大众ID. ERA 8X正式上市 限时权益价20.68万元起 — https://news.yiche.com/info/113810570.html</p>
+<p>19. [新浪汽车] 十一假期，蔚来充换电服务超200万次，单日换电总量连创历史新高 — https://auto.sina.com.cn/news/2026-10-09/detail-iniuqywr7931591.shtml</p>
+<p>20. [盖世汽车] 【国际快讯】问界拟进军欧洲 — https://auto.gasgoo.com/news/202610/19I70475275C108.shtml</p>
+<p>21. [中汽协] 2026年新能源汽车下乡活动（四川宜宾站）与世界动力电池大会同期启动 中国汽车工业协会持续推动新能源汽车普惠城乡 — http://www.caam.org.cn/chn/1/cate_3/con_5237303.html</p>
+<p>22. [InsideEVs] California’s EV Push Goes Beyond Giving Buyers $3,500 — https://insideevs.com/news/812412/california-evs-incentives-buying-charging/</p>
+<p>23. [电动邦] 不止不起火，更要无烟！银河TT把电池安全标准再往上提 — https://www.diandongbang.com/news/167899.html</p>
+<p>24. [钛媒体] 【钛晨报】央行就《银行间债券市场债券发行管理规则》公开征求意见；智界将获独立造车资质，内部人士确认公司计划上市；英伟达辟谣RTX5090停产 — https://www.tmtpost.com/8172465.html</p>
+<p>25. [网上车市] 27款纵横G700限时售30.49万起，配华为智驾ADS 5 — http://news.cheshi.com/dujia/20260929/3425943.shtml</p>
+<p>26. [Electrek] E-quipment highlight: LEAPTING launches electric autonomous forklift — https://electrek.co/2026/10/18/e-quipment-highlight-leapting-launches-electric-autonomous-forklift/</p>
+<p>27. [CnEVPost] Li Auto to hold Power Day on October 20 to share latest EV tech advances — https://cnevpost.com/2026/10/19/li-auto-power-day-oct-20/</p>
+<p>28. [汽车之家] 搭载天元智驾T800辅助驾驶方案 ！东风风神L8+将于10月23日上市！ — https://www.autohome.com.cn/news/202610/1317810.html#pvareaid=102624</p>
+<p>29. [太平洋汽车] 27.58万元起 魏牌高山8 HEV开启预订/搭载2.0T油混 — http://www.pcauto.com.cn/nation/5189/51890083.html?ad=28676</p>
+<p>30. [易车] 比亚迪大汉EV正式上市 售价23.59万元起 — https://news.yiche.com/info/113824706.html</p>
+<p>31. [新浪汽车] 大众前三季度在华交付新车137万辆 继续稳居市场前三 — https://auto.sina.com.cn/news/2026-10-12/detail-iniuyari7206170.shtml</p>
+<p>32. [盖世汽车] 方程豹累计销量突破60万台 — https://auto.gasgoo.com/news/202610/19I70475278C109.shtml</p>
+<p>33. [中汽协] 新政东风劲吹，房车产业迎来历史性发展窗口 — http://www.caam.org.cn/chn/1/cate_2/con_5237260.html</p>
+<p>34. [InsideEVs] Tesla &#x27;Cannot Guarantee&#x27; Your Roadster Pre-Order Will Ever Be Delivered — https://insideevs.com/news/812247/tesla-roadster-preorder-delivery-guarantee/</p>
+<p>35. [电动邦] 东风商用车发布全新绿智平台，覆盖五大能源路线并获8700台意向订单 — https://www.diandongbang.com/news/167888.html</p>
+<p>36. [网上车市] 一汽-大众全新纯电轿车实拍：命名ID. AURA L5 — http://news.cheshi.com/dujia/20261016/3426062.shtml</p>
+<p>37. [Electrek] Electric Mercedes-AMG GT SUV unveiled with 1,153 hp and 710 kW charging — https://electrek.co/2026/10/17/mercedes-amg-gt-suv-electric-1153-hp-710-kw-charging/</p>
+<p>38. [CnEVPost] Nio to launch larger 60-kWh battery pack for Firefly on October 23 — https://cnevpost.com/2026/10/16/nio-launch-60-kwh-battery-pack-firefly-oct-23/</p>
+<p>39. [汽车之家] 日产汽车中国区9月销量23658台 东风日产9月销量18932台 — https://www.autohome.com.cn/news/202610/1317846.html#pvareaid=102624</p>
+<p>40. [太平洋汽车] 30万套电池包下线：广汽把电池“定义权+制造权”握在了手里 — http://www.pcauto.com.cn/news/5188/51886789.html?ad=28676</p>
+<p>41. [易车] 凯迪拉克XT5 PHEV智混四驱Air版上市 限时权益价23.99万元 — https://news.yiche.com/info/113923889.html</p>
+<p>42. [新浪汽车] 第六代动力电池沈阳正式投产下线 宝马新世代电动产品蓄势起航 — https://auto.sina.com.cn/news/2026-10-16/detail-inivivfx7895438.shtml</p>
+<p>43. [盖世汽车] 零跑B10西班牙工厂量产 — https://auto.gasgoo.com/news/202610/19I70475250C501.shtml</p>
+<p>44. [InsideEVs] Tesla Just Revealed The Roadster With A Truly Insane Demo. Here&#x27;s What You Need To Know — https://insideevs.com/news/812151/2027-tesla-roadster-price-specs-release-date/</p>
+<p>45. [电动邦] 入门即双电机四驱，凯迪拉克XT5 PHEV Air版把诚意写在明处 — https://www.diandongbang.com/news/167902.html</p>
+<p>46. [网上车市] 上汽大众官宣：纯电ID.ERA 5X 下月正式上市！ — http://news.cheshi.com/dujia/20261012/3426026.shtml</p>
+<p>47. [汽车之家] 智界即将获得独立造车资质 产能来源于奇瑞 消息称其计划独立上市 — https://www.autohome.com.cn/news/202610/1317850.html#pvareaid=102624</p>
+<p>48. [太平洋汽车] 9.99万起 大众安徽与众06/与众07焕新上市 配激光雷达/续航670km — http://www.pcauto.com.cn/nation/5188/51886835.html?ad=28676</p>
+<p>49. [易车] 吉利星瑞L PLUS正式上市 上市限时价10.97万元起 — https://news.yiche.com/info/113950927.html</p>
+<p>50. [新浪汽车] 通用汽车第三季度表现稳定 在华销量超35.8万辆 — https://auto.sina.com.cn/news/2026-10-09/detail-iniurfen1156888.shtml</p>
 
 
 </article>
