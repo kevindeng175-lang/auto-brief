@@ -75,12 +75,17 @@ blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--acce
 .section-label{max-width:1080px;margin:0 auto;padding:44px 24px 16px;
   font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
   color:var(--muted)}
-.reveal{opacity:0;transform:translateY(14px);
-  transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.3,1)}
-.reveal.on{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
   html{scroll-behavior:auto}}
-@media print{.hero{padding:24px 0}.reveal{opacity:1;transform:none}}
+@media print{.hero{padding:24px 0}}
 /* article images + the :::gallery grid */
 article img{max-width:100%;height:auto;border-radius:12px;display:block}
 figure{margin:26px 0}
@@ -99,7 +104,7 @@ figure{margin:26px 0}
   <p class="sub">生成于 2026-10-19</p>
 </header>
 <main class="wrap">
-<article class="reveal">
+<article>
 
 <h2>今日速览（30 秒版）</h2>
 <ul><li>广汽30万套电池包下线，掌握电池“定义权+制造权”（来源：太平洋汽车）</li><li>零跑B10在西班牙萨拉戈萨工厂量产，实现欧洲本地化生产（来源：盖世汽车）</li><li>宝马第六代动力电池在沈阳投产，新世代电动产品蓄势待发（来源：新浪汽车）</li><li>智界新能源汽车获批独立造车资质，产能来源于奇瑞（来源：汽车之家）</li><li>东风商用车发布绿智平台，获8700台意向订单（来源：电动邦）</li><li>阿维塔07L增程版申报图曝光，搭载1.5T增程器（来源：新浪汽车）</li><li>一汽-大众ID.AURA L5纯电轿车亮相，轴距2820mm（来源：网上车市）</li><li>日产中国区9月销量23658台，东风日产销量18932台（来源：汽车之家）</li><li>凯迪拉克XT5 PHEV Air版上市，限时权益价23.99万元（来源：电动邦）</li><li>东风商用车发布全新绿智平台，覆盖五大能源路线（来源：电动邦）</li><li>梅赛德斯-奔驰召回部分CLA/A级车型，涉及安全隐患（来源：太平洋汽车）</li><li>阿维塔07L增程版申报图曝光，轴距2990mm（来源：新浪汽车）</li><li>一汽-大众ID.AURA L5搭载双电机，综合功率310kW（来源：网上车市）</li></ul>
@@ -237,16 +242,5 @@ figure{margin:26px 0}
   <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
   <p><a href="index.html">← 返回归档</a></p>
 </footer>
-<!-- Without JS the article would stay at opacity:0, i.e. a blank page. -->
-<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
-<script>
-(function(){
-  if(!('IntersectionObserver' in window)){document.querySelectorAll('.reveal')
-    .forEach(function(e){e.classList.add('on')});return;}
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){
-    if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},
-    {threshold:.08});
-  document.querySelectorAll('.reveal').forEach(function(e){io.observe(e);});
-})();
-</script>
+
 </body></html>

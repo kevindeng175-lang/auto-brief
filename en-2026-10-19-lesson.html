@@ -75,12 +75,17 @@ blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--acce
 .section-label{max-width:1080px;margin:0 auto;padding:44px 24px 16px;
   font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
   color:var(--muted)}
-.reveal{opacity:0;transform:translateY(14px);
-  transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.3,1)}
-.reveal.on{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
   html{scroll-behavior:auto}}
-@media print{.hero{padding:24px 0}.reveal{opacity:1;transform:none}}
+@media print{.hero{padding:24px 0}}
 /* article images + the :::gallery grid */
 article img{max-width:100%;height:auto;border-radius:12px;display:block}
 figure{margin:26px 0}
@@ -99,7 +104,7 @@ figure{margin:26px 0}
   <p class="sub">生成于 2026-10-19</p>
 </header>
 <main class="wrap">
-<article class="reveal">
+<article>
 
 <table><thead><tr><th>项目</th><th>值</th></tr></thead><tbody>
 <tr><td>源文件</td><td>auto-en-2026-10-19-lesson.mp4</td></tr>
@@ -273,16 +278,5 @@ figure{margin:26px 0}
   <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
   <p><a href="index.html">← 返回归档</a></p>
 </footer>
-<!-- Without JS the article would stay at opacity:0, i.e. a blank page. -->
-<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
-<script>
-(function(){
-  if(!('IntersectionObserver' in window)){document.querySelectorAll('.reveal')
-    .forEach(function(e){e.classList.add('on')});return;}
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){
-    if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},
-    {threshold:.08});
-  document.querySelectorAll('.reveal').forEach(function(e){io.observe(e);});
-})();
-</script>
+
 </body></html>
