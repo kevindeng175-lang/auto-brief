@@ -1,26 +1,95 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="utf-8">
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>汽车产业日报 · 归档</title>
+<meta name="color-scheme" content="light dark">
+<title>汽车产业日报</title>
 <style>
-:root{color-scheme:light dark}
-body{max-width:860px;margin:0 auto;padding:18px 16px 60px;
- font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
-h1{font-size:1.6em;border-bottom:3px solid #2563eb;padding-bottom:.3em}
-h2{font-size:1.25em;margin-top:1.6em;color:#1e40af}
-h3{font-size:1.05em;margin-top:1.2em}
-table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94em}
-th,td{border:1px solid #cbd5e1;padding:6px 9px;text-align:left;vertical-align:top}
-th{background:#eff6ff}
-a{color:#2563eb;text-decoration:none} a:hover{text-decoration:underline}
-.meta{color:#64748b;font-size:.88em;margin-bottom:1.4em}
-li{margin:.35em 0}
-@media(prefers-color-scheme:dark){
- body{background:#0f172a;color:#e2e8f0} h1{border-color:#3b82f6}
- h2{color:#93c5fd} th,td{border-color:#334155} th{background:#1e293b}
- a{color:#60a5fa} .meta{color:#94a3b8}
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
 }
-</style></head><body>
-<h1>汽车产业日报 · 归档</h1><ul><li><a href="2026-10-19.html">2026-10-19</a> <span class="meta">2026-10-19 05:30</span></li><li><a href="2026-10-19-company.html">2026-10-19-company</a> <span class="meta">2026-10-19 06:27</span></li></ul>
+@media (prefers-color-scheme:dark){
+  :root{--bg:#000000; --fg:#f5f5f7; --muted:#86868b; --line:#2b2b2e;
+        --accent:#2997ff; --card:#1c1c1e; --hero:#0a0a0c;}
+}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:16ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 120px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:44px 24px 16px;
+  font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--muted)}
+.reveal{opacity:0;transform:translateY(14px);
+  transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.3,1)}
+.reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}.reveal{opacity:1;transform:none}}
+</style>
+</head><body>
+<header class="hero">
+  <p class="kicker">Automotive Daily</p>
+  <h1 class="title">汽车产业日报</h1>
+  <p class="sub">每晚自动生成的产业资讯、企业史与英语精读存档</p>
+</header>
+<div class="section-label">汽车日报</div><div class="grid"><a class="card reveal" href="2026-10-19.html"><div class="card-kicker">汽车日报 · 2026-10-19</div><div class="card-title">2026-10-19</div><div class="card-desc">零跑B10在西班牙萨拉戈萨工厂量产</div></a></div><div class="section-label">企业史 · 学习</div><div class="grid"><a class="card reveal" href="2026-10-19-company.html"><div class="card-kicker">企业史 · 2026-10-19</div><div class="card-title">2026-10-19</div><div class="card-desc">丰田最值得学习的是其开创并实践的“丰田生产方式”，即精益生产体系，它通过减少浪费、提高效率，成为全球制造业的标杆。</div></a></div>
+<footer class="footer">
+  <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+</footer>
 </body></html>

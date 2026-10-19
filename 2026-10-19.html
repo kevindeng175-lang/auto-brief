@@ -1,68 +1,197 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="utf-8">
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>汽车产业日报 · 2026-10-19</title>
+<meta name="color-scheme" content="light dark">
+<title>汽车日报 · 2026-10-19</title>
 <style>
-:root{color-scheme:light dark}
-body{max-width:860px;margin:0 auto;padding:18px 16px 60px;
- font:16px/1.75 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
-h1{font-size:1.6em;border-bottom:3px solid #2563eb;padding-bottom:.3em}
-h2{font-size:1.25em;margin-top:1.6em;color:#1e40af}
-h3{font-size:1.05em;margin-top:1.2em}
-table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.94em}
-th,td{border:1px solid #cbd5e1;padding:6px 9px;text-align:left;vertical-align:top}
-th{background:#eff6ff}
-a{color:#2563eb;text-decoration:none} a:hover{text-decoration:underline}
-.meta{color:#64748b;font-size:.88em;margin-bottom:1.4em}
-li{margin:.35em 0}
-@media(prefers-color-scheme:dark){
- body{background:#0f172a;color:#e2e8f0} h1{border-color:#3b82f6}
- h2{color:#93c5fd} th,td{border-color:#334155} th{background:#1e293b}
- a{color:#60a5fa} .meta{color:#94a3b8}
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
 }
-</style></head><body>
-<h1>汽车产业日报 · 2026-10-19</h1>
+@media (prefers-color-scheme:dark){
+  :root{--bg:#000000; --fg:#f5f5f7; --muted:#86868b; --line:#2b2b2e;
+        --accent:#2997ff; --card:#1c1c1e; --hero:#0a0a0c;}
+}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:16ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 120px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:44px 24px 16px;
+  font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--muted)}
+.reveal{opacity:0;transform:translateY(14px);
+  transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.3,1)}
+.reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}.reveal{opacity:1;transform:none}}
+</style>
+</head><body>
+<header class="hero">
+  <p class="kicker">汽车日报</p>
+  <h1 class="title">汽车日报 · 2026-10-19</h1>
+  <p class="sub">生成于 2026-10-19</p>
+</header>
+<main class="wrap">
+<article class="reveal">
 
-<h2>今日要闻</h2>
-<ul><li><strong>蔚来Firefly累计交付达90,000辆</strong> —— 9月交付量创纪录，1.5个月内从80,000辆增至90,000辆。</li><li><strong>蔚来将为Firefly推出60kWh电池包</strong> —— 新电池包CLTC续航达560公里，预计10月23日发布。</li><li><strong>特斯拉Roadster展示飞行能力</strong> —— 特斯拉Roadster完成飞行、跳跃等高难度动作，引发关注。</li><li><strong>特斯拉Roadster预售无法保证交付</strong> —— 特斯拉表示无法保证Roadster的交付时间和是否能交付。</li><li><strong>特斯拉FSD系统事故引发关注</strong> —— 一名特斯拉司机在FSD开启状态下睡着，撞上警车，导致两名警员受伤。</li><li><strong>小鹏宣布在巴黎车展“卖技术”</strong> —— 小鹏宣布将技术输出，推动产业合作与创新。</li><li><strong>一汽-大众发布ID. AURA L5</strong> —— 新车定位“智能大掀背、超级家轿”，与ID. AURA T6组成“新能源双子星”。</li><li><strong>一汽与广汽签署战略合作协议</strong> —— 双方将深化合作，推动产业高质量发展。</li><li><strong>三部门联合调查尊界V800刹车踏板断裂问题</strong> —— 工信部、网信办、市场监管总局成立联合调查组，调查刹车踏板断裂事件。</li></ul>
+<h2>今日速览（30 秒版）</h2>
+<ul><li>零跑B10在西班牙萨拉戈萨工厂量产（来源：盖世汽车）</li><li>比亚迪大汉EV上市，售价23.59万元起（来源：易车、电动邦）</li><li>方程豹累计销量突破60万台（来源：盖世汽车）</li><li>东风商用车发布绿智平台，获8700台意向订单（来源：电动邦）</li><li>日产汽车中国区9月销量23658台（来源：汽车之家）</li><li>小鹏海外销量首破1万辆（来源：CnEVPost）</li></ul>
 
-<h2>分板块</h2>
+<h2>今日头条</h2>
+<h3>零跑B10在西班牙萨拉戈萨工厂量产</h3>
+<p>零跑B10于2026年10月16日在西班牙萨拉戈萨工厂正式启动量产，标志着零跑与Stellantis集团的战略合作迎来产业化成果。  </p>
+<p>零跑与Stellantis集团工程团队共同推进产线适配，并在西班牙马连打造本地化电池组装基地。  </p>
+<p>此次量产是零跑在欧洲本地化生产的突破性进展。</p>
 
+<h2>一、新车与产品</h2>
+<ul><li><strong>新款大众安徽与众06/与众07上市，售价9.99万元起</strong> —— 搭载激光雷达和城市NOA功能，进一步丰富大众安徽产品矩阵（来源：汽车之家）</li><li><strong>2027款长安启源Q05正式上市，限时补贴价7.99万元起</strong> —— 产品升级有助于提升品牌竞争力（来源：易车）</li><li><strong>上汽大众ID. ERA 8X正式上市，限时权益价20.68万元起</strong> —— 产品定位中高端市场，进一步丰富ID系列产品线（来源：汽车之家）</li><li><strong>东风风神L8+将于10月23日上市，搭载天元智驾T800辅助驾驶方案</strong> —— 提升智能化水平，增强产品吸引力（来源：汽车之家）</li></ul>
 
+<h2>二、销量与市场</h2>
+<ul><li><strong>方程豹累计销量突破60万台</strong> —— 用时约35个月达成这一规模，品牌增长速度显著（来源：盖世汽车）</li><li><strong>比亚迪大汉EV正式上市，售价23.59万元起</strong> —— 作为王朝品牌冲击高端市场的旗舰产品，具备较强市场潜力（来源：易车、电动邦）</li><li><strong>凯迪拉克XT5 PHEV智混四驱Air版上市，限时权益价23.99万元起</strong> —— 价格下探有助于提升市场渗透率（来源：易车）</li><li><strong>日产汽车中国区9月销量23658台</strong> —— 东风日产销量为18932台，整体表现稳定（来源：汽车之家）</li></ul>
 
-<h3>特斯拉</h3>
-<ul><li><strong>特斯拉Roadster展示飞行能力</strong> —— 特斯拉Roadster完成飞行、跳跃等高难度动作，引发关注。</li><li><strong>特斯拉Roadster预售无法保证交付</strong> —— 特斯拉表示无法保证Roadster的交付时间和是否能交付。</li><li><strong>特斯拉FSD系统事故引发关注</strong> —— 一名特斯拉司机在FSD开启状态下睡着，撞上警车，导致两名警员受伤。</li></ul>
+<h2>三、政策与标准</h2>
+<ul><li><strong>墨西哥免征汽车零部件进口关税</strong> —— 为期5年，有助于吸引整车与零部件产能落地（来源：盖世汽车）</li><li><strong>中国房车产业迎来历史性发展窗口</strong> —— 商务部等8部门公布40个试点城市名单，扬州以“房车露营”方向入选（来源：中汽协）</li></ul>
 
-<h3>其他新势力（蔚来 / 小鹏 / 理想 / 零跑 / 吉利极氪等）</h3>
-<ul><li><strong>蔚来Firefly累计交付达90,000辆</strong> —— 9月交付量创纪录，1.5个月内从80,000辆增至90,000辆。</li><li><strong>蔚来将为Firefly推出60kWh电池包</strong> —— 新电池包CLTC续航达560公里，预计10月23日发布。</li><li><strong>小鹏宣布在巴黎车展“卖技术”</strong> —— 小鹏宣布将技术输出，推动产业合作与创新。</li></ul>
+<h2>四、供应链与智驾</h2>
+<ul><li><strong>东风商用车发布全新绿智平台，覆盖五大能源路线</strong> —— 获得8700台意向订单，新能源布局进一步深化（来源：电动邦）</li><li><strong>银河TT联合宁德时代推出NP3.0热失控防护安全技术</strong> —— 提升电池安全标准，实现“控烟气”防护（来源：电动邦）</li><li><strong>东风风神L8+搭载天元智驾T800辅助驾驶方案</strong> —— 提升智能化水平，增强产品竞争力（来源：汽车之家）</li></ul>
 
-<h3>传统车企（大众 / 丰田 / 一汽 / 广汽 / 长安 / 奇瑞 / 东风等）</h3>
-<ul><li><strong>一汽-大众发布ID. AURA L5</strong> —— 新车定位“智能大掀背、超级家轿”，与ID. AURA T6组成“新能源双子星”。</li><li><strong>一汽与广汽签署战略合作协议</strong> —— 双方将深化合作，推动产业高质量发展。</li><li><strong>三部门联合调查尊界V800刹车踏板断裂问题</strong> —— 工信部、网信办、市场监管总局成立联合调查组，调查刹车踏板断裂事件。</li></ul>
+<h2>五、公司与人事</h2>
+<ul><li><strong>一汽与广汽签署战略合作框架协议</strong> —— 为产业高质量发展提供合作新范本（来源：中汽协）</li></ul>
 
-<h2>数据点</h2>
-<ul><li><strong>2026年9月，我国动力和储能电池合计产量达237.8GWh</strong>，同比增长57.3%（来自材料10）。</li><li><strong>2026年1-9月，我国动力和储能电池累计产量达1833.1GWh</strong>，同比增长63.4%（来自材料10）。</li><li><strong>2026年9月，我国动力和储能电池合计销量达222.7GWh</strong>，同比增长52%（来自材料10）。</li><li><strong>2026年9月，储能电池销量73.5GWh</strong>，同比增长104.4%（来自材料10）。</li><li><strong>因湃电池第30万套电池正式下线</strong>（来自材料11）。</li></ul>
+<h2>六、出海与国际</h2>
+<ul><li><strong>小鹏海外销量首破1万辆</strong> —— 中东订单超过3000辆，海外市场拓展成效显著（来源：CnEVPost）</li><li><strong>零跑B10在西班牙萨拉戈萨工厂量产</strong> —— 实现欧洲本地化量产，推动品牌国际化（来源：盖世汽车）</li><li><strong>问界拟进军欧洲</strong> —— 丰田计划在中国落地自研一体化压铸工艺，对标特斯拉造车技术（来源：盖世汽车）</li></ul>
 
-<h2>值得关注</h2>
-<ul><li><strong>蔚来Firefly交付速度加快</strong>，从80,000辆到90,000辆仅用1.5个月，显示出其在新能源汽车市场的强劲增长势头。</li><li><strong>特斯拉Roadster的飞行能力展示</strong>，不仅展示了特斯拉在技术上的突破，也引发了行业对电动超级跑车未来发展的关注。</li><li><strong>三部门联合调查尊界V800刹车踏板断裂问题</strong>，表明监管部门对新能源汽车安全问题的重视，未来可能推动行业在质量与安全标准上的进一步提升。</li></ul>
+<h2>数据速览</h2>
+<table><thead><tr><th>指标</th><th>数值</th><th>口径/区间</th><th>来源</th></tr></thead><tbody>
+<tr><td>方程豹累计销量</td><td>60万台</td><td>累计</td><td>盖世汽车</td></tr>
+<tr><td>比亚迪大汉EV售价</td><td>23.59万元起</td><td>售价</td><td>易车、电动邦</td></tr>
+<tr><td>日产汽车中国区9月销量</td><td>23658台</td><td>9月销量</td><td>汽车之家</td></tr>
+<tr><td>小鹏海外销量</td><td>1万辆</td><td>9月销量</td><td>CnEVPost</td></tr>
+<tr><td>东风商用车意向订单</td><td>8700台</td><td>意向订单</td><td>电动邦</td></tr>
+</tbody></table>
+
+<h2>快讯流水（单一信源，待证实）</h2>
+<ul><li>丰田将在中国落地自研一体化压铸工艺，对标特斯拉造车技术 ｜ 单一信源：盖世汽车 ｜ 待证实</li><li>特斯拉“无法保证”Roadster预订车辆最终会交付 ｜ 单一信源：InsideEVs ｜ 待证实</li><li>丰田计划自2028年起在中国投产下一代卡罗拉 ｜ 单一信源：盖世汽车 ｜ 待证实</li></ul>
+
+<h2>参考来源</h2>
+<ul><li>[1] Electrek｜Volkswagen is recalling ‘several thousand’ EVs, including the ID.4, and not just in the US</li><li>[2] CnEVPost｜Xpeng expands GX shipments overseas as Middle East orders exceed 3,000</li><li>[3] 汽车之家｜9.99万起 搭载激光雷达+城市NOA 新款大众安徽与众06/与众07上市</li><li>[4] 易车｜2027款长安启源Q05正式上市 限时补贴价7.99万元起</li><li>[5] 盖世汽车｜【国际】墨西哥免征汽车零部件进口关税</li><li>[6] 中汽协｜一汽与广汽开展战略合作为产业高质量发展提供合作新范本</li><li>[7] InsideEVs｜AMG’s New Electric SUV Has 1,153 HP. The Charging Specs Are Even Wilder</li><li>[8] 电动邦｜23.59万起，1008公里续航加闪充，大汉EV到底值不值？</li><li>[9] 钛媒体｜【数智周报】特朗普政府要求AI公司在发生安全事件后立即上报</li><li>[10] Electrek｜From excavators to hypercars, these LEGO kits were made for EV fans (2026)</li><li>[11] CnEVPost｜BYD&#x27;s all-new Han and third-gen Qin Plus appear in filings as core sedan refresh continues</li><li>[12] 汽车之家｜上半年热销SUV盘点：理想单品销量超小米YU7 这些燃油车仍坚挺？</li><li>[13] 易车｜上汽大众ID. ERA 8X正式上市 限时权益价20.68万元起</li><li>[14] 盖世汽车｜【国际快讯】问界拟进军欧洲</li><li>[15] 中汽协｜2026年新能源汽车下乡活动（四川宜宾站）与世界动力电池大会同期启动</li><li>[16] InsideEVs｜New Tesla Roadster Reveal: How To Watch The Livestream</li><li>[17] 电动邦｜不止不起火，更要无烟！银河TT把电池安全标准再往上提</li><li>[18] 钛媒体｜【钛晨报】央行就《银行间债券市场债券发行管理规则》公开征求意见</li><li>[19] Electrek｜E-quipment highlight: LEAPTING launches electric autonomous forklift</li><li>[20] CnEVPost｜Li Auto to hold Power Day on October 20 to share latest EV tech advances</li><li>[21] 汽车之家｜搭载天元智驾T800辅助驾驶方案 ！东风风神L8+将于10月23日上市！</li><li>[22] 易车｜比亚迪大汉EV正式上市 售价23.59万元起</li><li>[23] 盖世汽车｜方程豹累计销量突破60万台</li><li>[24] 中汽协｜新政东风劲吹，房车产业迎来历史性发展窗口</li><li>[25] InsideEVs｜Tesla &#x27;Cannot Guarantee&#x27; Your Roadster Pre-Order Will Ever Be Delivered</li><li>[26] 电动邦｜东风商用车发布全新绿智平台，覆盖五大能源路线并获8700台意向订单</li><li>[27] Electrek｜Electric Mercedes-AMG GT SUV unveiled with 1,153 hp and 710 kW charging</li><li>[28] CnEVPost｜Nio Firefly reaches 90,000 cumulative deliveries after record September</li><li>[29] 汽车之家｜日产汽车中国区9月销量23658台 东风日产9月销量18932台</li><li>[30] 易车｜凯迪拉克XT5 PHEV智混四驱Air版上市 限时权益价23.99万元</li><li>[31] 盖世汽车｜零跑B10西班牙工厂量产</li><li>[32] InsideEVs｜Tesla Just Revealed The Roadster With A Truly Insane Demo. Here&#x27;s What You Need To Know</li><li>[33] 电动邦｜入门即双电机四驱，凯迪拉克XT5 PHEV Air版把诚意写在明处</li></ul>
 
 <hr>
 
 <h2>原文来源</h2>
-<p>1. [CnEVPost] Nio Firefly reaches 90,000 cumulative deliveries after record September — https://cnevpost.com/2026/10/16/nio-firefly-90000-cumulative-deliveries/</p>
-<p>2. [CnEVPost] Nio to launch larger 60-kWh battery pack for Firefly on October 23 — https://cnevpost.com/2026/10/16/nio-launch-60-kwh-battery-pack-firefly-oct-23/</p>
-<p>3. [CnEVPost] Tesla&#x27;s Roadster can fly, and Nio&#x27;s William Li admits: &#x27;This we really don&#x27;t have&#x27; — https://cnevpost.com/2026/10/16/tesla-roadster-can-fly-nio-william-li-comment/</p>
-<p>4. [InsideEVs] Here Are All Of The Crazy Tricks The Tesla Roadster Just Did — https://insideevs.com/news/812152/tesla-roadster-backflip-suction-2g/</p>
-<p>5. [InsideEVs] New Tesla Roadster Reveal: How To Watch The Livestream — https://insideevs.com/news/812012/new-tesla-roadster-reveal-event-livestream/</p>
-<p>6. [InsideEVs] Tesla &#x27;Cannot Guarantee&#x27; Your Roadster Pre-Order Will Ever Be Delivered — https://insideevs.com/news/812247/tesla-roadster-preorder-delivery-guarantee/</p>
-<p>7. [Electrek] Tesla driver says he was asleep on FSD when he hit CHP car, 2 officers hurt — https://electrek.co/2026/10/16/tesla-fsd-crash-chp-patrol-car-driver-asleep-fairfield/</p>
-<p>8. [Electrek] Tiny Titan: new residential battery system from EcoFlow starts small — https://electrek.co/2026/10/18/tiny-titan-new-residential-battery-system-from-ecoflow-starts-small/</p>
-<p>9. [中汽协] 2026年新能源汽车下乡活动（四川宜宾站）与世界动力电池大会同期启动 中国汽车工业协会持续推动新能源汽车普惠城乡 — http://www.caam.org.cn/chn/1/cate_3/con_5237303.html</p>
-<p>10. [盖世汽车] 9月电池产业：储能翻倍，出口提速 — https://auto.gasgoo.com/news/202610/16I70475024C501.shtml</p>
-<p>11. [盖世汽车] E周看点｜小鹏巴黎车展官宣“卖技术” — https://auto.gasgoo.com/news/202610/18I70475227C501.shtml</p>
-<p>12. [盖世汽车] 一汽-大众ID. AURA L5 — https://auto.gasgoo.com/news/202610/16I70475109C109.shtml</p>
-<p>13. [中汽协] 一汽与广汽开展战略合作为产业高质量发展提供合作新范本 — http://www.caam.org.cn/chn/1/cate_2/con_5237342.html</p>
-<p>14. [盖世汽车] 三部门联合调查尊界V800刹车踏板断裂 — https://auto.gasgoo.com/news/202610/15I70474972C109.shtml</p>
+<p>1. [Electrek] Volkswagen is recalling ‘several thousand’ EVs, including the ID.4, and not just in the US — https://electrek.co/2026/10/16/volkswagen-is-recalling-thousands-of-evs-including-the-id-4/</p>
+<p>2. [CnEVPost] Xpeng expands GX shipments overseas as Middle East orders exceed 3,000 — https://cnevpost.com/2026/10/17/xpeng-expands-gx-shipments-overseas/</p>
+<p>3. [汽车之家] 9.99万起 搭载激光雷达+城市NOA 新款大众安徽与众06/与众07上市 — https://www.autohome.com.cn/news/202610/1317828.html#pvareaid=102624</p>
+<p>4. [易车] 2027款长安启源Q05正式上市 限时补贴价7.99万元起 — https://news.yiche.com/info/113846180.html</p>
+<p>5. [盖世汽车] 【国际】墨西哥免征汽车零部件进口关税 — https://auto.gasgoo.com/news/202610/16I70475046C108.shtml</p>
+<p>6. [中汽协] 一汽与广汽开展战略合作为产业高质量发展提供合作新范本 — http://www.caam.org.cn/chn/1/cate_2/con_5237342.html</p>
+<p>7. [InsideEVs] AMG’s New Electric SUV Has 1,153 HP. The Charging Specs Are Even Wilder — https://insideevs.com/news/812320/amg-gt-suv-ev-reveal/</p>
+<p>8. [电动邦] 23.59万起，1008公里续航加闪充，大汉EV到底值不值？ — https://www.diandongbang.com/news/167893.html</p>
+<p>9. [钛媒体] 【数智周报】特朗普政府要求AI公司在发生安全事件后立即上报；华为与高通宣布达成广泛专利许可协议；月之暗面据悉即将完成IPO前融资，估值将达5 — https://www.tmtpost.com/8163752.html</p>
+<p>10. [Electrek] From excavators to hypercars, these LEGO kits were made for EV fans (2026) — https://electrek.co/2026/10/18/from-excavators-to-hypercars-these-lego-kits-were-made-for-ev-fans-2026/</p>
+<p>11. [CnEVPost] BYD&#x27;s all-new Han and third-gen Qin Plus appear in filings as core sedan refresh continues — https://cnevpost.com/2026/10/17/byd-all-new-han-third-gen-qin-plus-filings/</p>
+<p>12. [汽车之家] 上半年热销SUV盘点：理想单品销量超小米YU7 这些燃油车仍坚挺？ — https://www.autohome.com.cn/news/202607/1315911.html#pvareaid=102623</p>
+<p>13. [易车] 上汽大众ID. ERA 8X正式上市 限时权益价20.68万元起 — https://news.yiche.com/info/113810570.html</p>
+<p>14. [盖世汽车] 【国际快讯】问界拟进军欧洲 — https://auto.gasgoo.com/news/202610/19I70475275C108.shtml</p>
+<p>15. [中汽协] 2026年新能源汽车下乡活动（四川宜宾站）与世界动力电池大会同期启动 中国汽车工业协会持续推动新能源汽车普惠城乡 — http://www.caam.org.cn/chn/1/cate_3/con_5237303.html</p>
+<p>16. [InsideEVs] New Tesla Roadster Reveal: How To Watch The Livestream — https://insideevs.com/news/812012/new-tesla-roadster-reveal-event-livestream/</p>
+<p>17. [电动邦] 不止不起火，更要无烟！银河TT把电池安全标准再往上提 — https://www.diandongbang.com/news/167899.html</p>
+<p>18. [钛媒体] 【钛晨报】央行就《银行间债券市场债券发行管理规则》公开征求意见；智界将获独立造车资质，内部人士确认公司计划上市；英伟达辟谣RTX5090停产 — https://www.tmtpost.com/8172465.html</p>
+<p>19. [Electrek] E-quipment highlight: LEAPTING launches electric autonomous forklift — https://electrek.co/2026/10/18/e-quipment-highlight-leapting-launches-electric-autonomous-forklift/</p>
+<p>20. [CnEVPost] Li Auto to hold Power Day on October 20 to share latest EV tech advances — https://cnevpost.com/2026/10/19/li-auto-power-day-oct-20/</p>
+<p>21. [汽车之家] 搭载天元智驾T800辅助驾驶方案 ！东风风神L8+将于10月23日上市！ — https://www.autohome.com.cn/news/202610/1317810.html#pvareaid=102624</p>
+<p>22. [易车] 比亚迪大汉EV正式上市 售价23.59万元起 — https://news.yiche.com/info/113824706.html</p>
+<p>23. [盖世汽车] 方程豹累计销量突破60万台 — https://auto.gasgoo.com/news/202610/19I70475278C109.shtml</p>
+<p>24. [中汽协] 新政东风劲吹，房车产业迎来历史性发展窗口 — http://www.caam.org.cn/chn/1/cate_2/con_5237260.html</p>
+<p>25. [InsideEVs] Tesla &#x27;Cannot Guarantee&#x27; Your Roadster Pre-Order Will Ever Be Delivered — https://insideevs.com/news/812247/tesla-roadster-preorder-delivery-guarantee/</p>
+<p>26. [电动邦] 东风商用车发布全新绿智平台，覆盖五大能源路线并获8700台意向订单 — https://www.diandongbang.com/news/167888.html</p>
+<p>27. [Electrek] Electric Mercedes-AMG GT SUV unveiled with 1,153 hp and 710 kW charging — https://electrek.co/2026/10/17/mercedes-amg-gt-suv-electric-1153-hp-710-kw-charging/</p>
+<p>28. [CnEVPost] Nio Firefly reaches 90,000 cumulative deliveries after record September — https://cnevpost.com/2026/10/16/nio-firefly-90000-cumulative-deliveries/</p>
+<p>29. [汽车之家] 日产汽车中国区9月销量23658台 东风日产9月销量18932台 — https://www.autohome.com.cn/news/202610/1317846.html#pvareaid=102624</p>
+<p>30. [易车] 凯迪拉克XT5 PHEV智混四驱Air版上市 限时权益价23.99万元 — https://news.yiche.com/info/113923889.html</p>
+<p>31. [盖世汽车] 零跑B10西班牙工厂量产 — https://auto.gasgoo.com/news/202610/19I70475250C501.shtml</p>
+<p>32. [InsideEVs] Tesla Just Revealed The Roadster With A Truly Insane Demo. Here&#x27;s What You Need To Know — https://insideevs.com/news/812151/2027-tesla-roadster-price-specs-release-date/</p>
+<p>33. [电动邦] 入门即双电机四驱，凯迪拉克XT5 PHEV Air版把诚意写在明处 — https://www.diandongbang.com/news/167902.html</p>
+<p>34. [汽车之家] 智界即将获得独立造车资质 产能来源于奇瑞 消息称其计划独立上市 — https://www.autohome.com.cn/news/202610/1317850.html#pvareaid=102624</p>
+<p>35. [易车] 吉利星瑞L PLUS正式上市 上市限时价10.97万元起 — https://news.yiche.com/info/113950927.html</p>
+<p>36. [盖世汽车] 1600辆红旗整车出口伊拉克 — https://auto.gasgoo.com/news/202610/19I70475252C109.shtml</p>
+<p>37. [电动邦] 四部门给“速成车”踩刹车，岚图早已把安全冗余拉到了数倍国标 — https://www.diandongbang.com/news/167896.html</p>
+<p>38. [汽车之家] 30项功能更新 辅助驾驶+智能座舱 乐道椰子智能系统3.3.0版本升级 — https://www.autohome.com.cn/news/202610/1317827.html#pvareaid=102624</p>
+<p>39. [易车] 捷途旅行者7正式上市 超级焕新价12.59万元起 — https://news.yiche.com/info/113824528.html</p>
+<p>40. [盖世汽车] 27款坦克500三种动力可预订 — https://auto.gasgoo.com/news/202610/16I70475061C107.shtml</p>
 
 
+</article>
+</main>
+<footer class="footer">
+  <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+  <p><a href="index.html">← 返回归档</a></p>
+</footer>
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)){document.querySelectorAll('.reveal')
+    .forEach(function(e){e.classList.add('on')});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},
+    {threshold:.08});
+  document.querySelectorAll('.reveal').forEach(function(e){io.observe(e);});
+})();
+</script>
 </body></html>
