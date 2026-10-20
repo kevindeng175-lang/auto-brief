@@ -184,7 +184,9 @@ h1.fr-lead{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia
   .fr-brand small{font-size:10px;letter-spacing:.28em}
   .fr-body{grid-template-columns:1fr;gap:26px}
   .fr-quick{border-left:0;padding-left:0;border-top:1px solid #d9d2c2;padding-top:16px}
-  h1.fr-lead{font-size:27px;line-height:1.24}
+  /* balance split a 14-character headline 7/7 and cut "标准" in half. On narrow
+     screens filling the line is better than perfect symmetry. */
+  h1.fr-lead{font-size:27px;line-height:1.24;text-wrap:wrap}
   .fr-lines{grid-template-columns:1fr 1fr}
   .fr-more article{grid-template-columns:70px 1fr}
 }
