@@ -98,7 +98,7 @@ figure{margin:26px 0}
 .gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
 @media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
 
-html,body{background:#fbfaf7 !important;color:#17130c !important}
+html,body{background:#f7f4ec !important;color:#17130c !important}
 .art{max-width:764px;margin:0 auto;padding:0 32px 70px;
   font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
 .art a{color:#9a2f22;text-decoration:none}
@@ -139,38 +139,52 @@ html,body{background:#fbfaf7 !important;color:#17130c !important}
 .art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
 .art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
   border-top:1px solid #ded7c8;padding-top:6px}
-.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:14.5px;
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
   font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
-.art-body th{font-size:11.5px;letter-spacing:.1em;color:#5b5446;text-align:left;
-  font-weight:700;border-bottom:1px solid #17130c;padding:7px 12px 7px 0}
-.art-body td{border-bottom:1px solid #e6e0d2;padding:9px 14px 9px 0;vertical-align:top}
-.art-body th:first-child,.art-body td:first-child{width:72px;white-space:nowrap}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
 .art-body td:last-child,.art-body th:last-child{padding-right:0}
-.art-body tr:last-child td{border-bottom:1px solid #ded7c8}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
 .art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
   font-size:12.5px;color:#5b5446;line-height:1.9}
 @media (max-width:640px){
   .art{padding:0 20px 50px}
-  .art-title{font-size:30px;line-height:1.24;text-wrap:wrap}
-  .art-body p,.art-body li{font-size:16.5px;line-height:1.85}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
   .art-body h2{font-size:22px}
   .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+  /* Six summary bullets filled the whole 844px viewport before any body copy; the
+     phone shows the top four, desktop keeps all six. */
+  .art-body > ul:first-of-type > li:nth-child(n+5){display:none}
 }
 </style>
 </head><body>
 <div class="art">
-  <nav class="art-nav"><a href="index.html">← 返回头版</a><span>汽车日报</span></nav>
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 10 月 20 日 · 星期二 · 第 43 周</span></nav>
   <header class="art-head">
     <p class="art-kicker">汽车日报</p>
     <h1 class="art-title">岚图制动踏板标准超国标50%</h1>
-    <p class="art-meta">2026-10-20</p>
   </header>
   <div class="art-rule"></div>
+  <p class="art-standfirst">29 条报道 ｜ 13 张配图 ｜ 全部条目带来源标注，单源信息标注待证实</p>
   <article class="art-body">
 
 <h2>今日速览（30 秒版）</h2>
-
-<ul><li>蔚来第三代ES8交付量近16万辆，距上一里程碑约1个月</li><li>新款大众安徽与众06/07上市，起售价9.99万元</li><li>奕境X9纯电版预计11月亮相，搭载宁德时代电池</li><li>北京现代全新伊兰特申报，长4765mm，轴距2750mm</li><li>大众ID. AURA L5可选装激光雷达，配备掀背尾门</li><li>新阿维塔06上市，增程版限时价20.59万元起</li><li>一汽-大众探歌L轴距加长50mm，搭载1.4T/1.5T发动机</li><li>吉利星瑞L PLUS限时售价10.97-14.37万元</li><li>阿维塔06焕新上市，限时权益价20.59万起</li><li>智界RX售25.98万起，10月25日开启首批交付</li></ul>
+<ul><li>蔚来第三代ES8交付量近16万辆，距上一里程碑约1个月</li><li>新款大众安徽与众06/07上市，起售价9.99万元</li><li>奕境X9纯电版预计11月亮相，搭载宁德时代电池</li><li>北京现代全新伊兰特申报，长4765mm，轴距2750mm</li><li>大众ID. AURA L5可选装激光雷达，配备掀背尾门</li><li>新阿维塔06上市，增程版限时价20.59万元起</li></ul>
 
 <h2>今日头条</h2>
 <p>10月10日，四部门联合发布《关于进一步加强汽车产品创新设计和研发测试验证有关管理工作的通知（征求意见稿）》，明确自2027年1月1日起，新申报产品应完成综合可靠性与耐久性、结构可靠性、软件功能可靠性、环境适应性等方面测试验证，其中可靠性验证试验不低于3万公里。岚图汽车在制动踏板标准上已将载荷提至3000N，比国标水平高出50%。现行国标规定制动踏板承载2000N纵向静态载荷不失效，而岚图采用多层高强度钢板主梁、IPB2.0集成线控制动与RBU双独立液压备份共同支撑的双硬件保险，确保制动踏板在极端情况下仍能保持安全。新规的出台意味着汽车行业将从“拼速度”转向“拼底线”，岚图通过远超同行的测试体系，为行业树立了“央企样本”。</p>
