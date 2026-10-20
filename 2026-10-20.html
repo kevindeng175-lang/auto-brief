@@ -72,9 +72,10 @@ blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--acce
   margin-bottom:10px}
 .card-desc{font-size:14px;line-height:1.5;color:var(--muted);
   display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.section-label{max-width:1080px;margin:0 auto;padding:44px 24px 16px;
-  font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
-  color:var(--muted)}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
 /* Entrance animation is CSS-only on purpose. The previous version set .reveal to
    opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
    grew taller than ~12 viewports that threshold became unreachable, the observer never
