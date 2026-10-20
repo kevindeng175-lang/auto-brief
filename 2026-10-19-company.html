@@ -12,10 +12,10 @@
   --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
   --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
 }
-@media (prefers-color-scheme:dark){
-  :root{--bg:#000000; --fg:#f5f5f7; --muted:#86868b; --line:#2b2b2e;
-        --accent:#2997ff; --card:#1c1c1e; --hero:#0a0a0c;}
-}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{
   margin:0;background:var(--bg);color:var(--fg);
