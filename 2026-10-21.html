@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>鸿蒙智行推出智界RX，售价25.98万起</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.2;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+  /* Six summary bullets filled the whole 844px viewport before any body copy; the
+     phone shows the top four, desktop keeps all six. */
+  .art-body > ul:first-of-type > li:nth-child(n+5){display:none}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 10 月 21 日 · 星期三 · 第 43 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">汽车日报</p>
+    <h1 class="art-title">鸿蒙智行推出智界RX，售价25.98万起</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">20 条报道 ｜ 12 张配图 ｜ 全部条目带来源标注，单源信息标注待证实</p>
+  <article class="art-body">
+
+<h2>今日速览（30 秒版）</h2>
+<ul><li>小鹏Mona L03在欧洲交付，法国首辆由CEO交付</li><li>比亚迪推出新款海鸥，起售价6.28万元</li><li>特斯拉2026年第三季度财报预计营收持平</li><li>全新比亚迪海鸥上市，指导价6.59-9.99万元</li><li>奇瑞发布紫微芯片，加速智能科技转型</li><li>雷克萨斯NX 2027款仅提供混动版本</li></ul>
+
+<h2>今日头条</h2>
+<p>鸿蒙智行正式推出智界RX，官方售价区间为25.98万-38.98万元。该车型定位中大型纯电轿跑SUV，车身尺寸为5020mm×2007mm×1585mm，轴距3000mm，基于华为途灵平台与巨鲸800V高压平台打造。动力方面，提供单电机后驱与双电机四驱两种布局，四驱版系统综合功率达437kW，最高时速251km/h。电池方面，提供81kWh磷酸铁锂电池与100kWh三元锂电池两种选择，CLTC纯电续航从672km到852km不等，30%-80%快充补能约15分钟。底盘结构采用虚拟主销四球头全铝双叉臂前悬、后五连杆独立悬架，高配版本配备双腔空气悬架与双阀连续可变阻尼减振器，前轮搭载六活塞制动卡钳。该车底盘由前AMG董事会主席托比亚斯・莫尔斯参与调校，并在浙江国际赛车场跑出1分43秒210的圈速，刷新了中国品牌量产SUV的最快圈速纪录。智能驾驶配置方面，Ultra系列搭载4颗激光雷达，包括1颗896线双光路图像级激光雷达与3颗固态激光雷达，全车配备38个融合感知传感器，基于L3级自动驾驶冗余架构开发，已获批L3级自动驾驶道路测试牌照。余承东称智界RX为‘鸿蒙智行最好开的车’，并强调该车面向驾驶者调校。</p>
+
+<figure><img src="img/d43773fab68d21.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h2>一、新车与产品</h2>
+
+<h3>比亚迪第二代海鸥上市 售6.59万元起</h3>
+
+<p>10月20日，比亚迪第二代海鸥正式上市，售价区间为6.59-9.99万元。新车在外观、内饰、配置、动力、续航及辅助驾驶能力等方面进行了全面升级。车身尺寸从原来的3780mm提升至4205mm，轴距达到2650mm，提供了更宽敞的乘坐空间和更大的储物空间。新车提供六种外观颜色，并采用“海洋美学”设计理念，提升了辨识度和科技感。内饰方面，新车使用了“鲸鱼尾”造型，并配备15.6英寸智能车机屏幕，搭载DiLink 150系统，支持多种智能功能。此次升级是比亚迪在小型电动车市场的一次重要动作，进一步丰富了产品线，与竞品相比更具竞争力。第二代海鸥的上市意味着比亚迪在新能源汽车领域的布局更加完善，满足了更多消费者的需求。（来源：新浪汽车·新车）</p>
+
+<figure><img src="img/18ab0f81cee341.jpg" alt="（图：新浪汽车·新车）" loading="lazy"><figcaption>（图：新浪汽车·新车）</figcaption></figure>
+
+<h3>比亚迪第二代海鸥支持闪充 起售价9810美元</h3>
+
+<p>比亚迪第二代海鸥正式推出，支持闪充技术，可在5分钟内将电池从10%充至70%。该车型提供三种续航里程为420公里的版本，均配备闪充功能。此次发布的第二代海鸥是比亚迪在新能源汽车领域的一次重要升级，延续了其在电动车型上的技术优势。与此前的车型相比，第二代海鸥在充电速度和续航能力上都有显著提升，进一步增强了其在市场上的竞争力。第二代海鸥的推出意味着比亚迪在电动化技术上的持续进步，为消费者提供了更高效、更便捷的出行解决方案。（来源：CnEVPost）</p>
+
+<figure><img src="img/24b88976e886a1.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>比亚迪推出新款海鸥 5分钟闪充起售价低于1万美元</h3>
+
+<p>比亚迪推出新款海鸥电动车，支持5分钟闪充技术，起售价低于1万美元。该车型是比亚迪目前在中国市场最便宜的电动车，并且具备快速充电能力。新款海鸥的推出是比亚迪在新能源汽车领域的一次重要动作，延续了其在电动车型上的技术优势。与此前的车型相比，新款海鸥在充电速度和续航能力上都有显著提升，进一步增强了其在市场上的竞争力。新款海鸥的推出意味着比亚迪在电动化技术上的持续进步，为消费者提供了更高效、更便捷的出行解决方案。（来源：Electrek）</p>
+
+<figure><img src="img/cc9d683e23f013.webp" alt="（图：Electrek）" loading="lazy"><figcaption>（图：Electrek）</figcaption></figure>
+
+<h3>智己LS8 NEO纯电10月29日开启预售</h3>
+
+<p>智己汽车宣布，智己LS8 NEO纯电将于10月29日开启预售。该车定位全线控大五座旗舰SUV，由上汽集团联合宁德时代打造，搭载宁德时代电池。车身尺寸为5085mm/2000mm/1807mm，轴距3060mm，属于中大型SUV规格。新车全系标配全线控灵蜥底盘，搭载四轮转向系统，实现4.85米转弯半径。动力方面，单电机版本最大功率300kW，动力电池选用宁德时代三元锂电池。此前LS8车系仅推出增程版本，本次即将预售的纯电版本，补齐了动力类型短板，给拥有稳定充电条件、偏好纯电驾乘质感的用户提供新选择。（来源：太平洋汽车）</p>
+
+<figure><img src="img/ab61b5746e2fb3.png" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h2>二、销量与市场</h2>
+
+<h3>全新捷途旅行者710月14日上市</h3>
+
+<p>全新捷途旅行者7将于10月14日在北京正式上市。该车定位为“智美旅行冠军方盒”，围绕可城、可野、可旅行全面越级。外观采用“方圆之道”设计语言，新增日照金、雾岭绿两款新潮车色。动力方面，新车提供燃油与混动两套方案，C-DM版本搭载鲲鹏1.5TD+三电机真四驱，配备宁德时代45.12kWh电池，CLTC纯电续航251km，综合续航可达1400km。智能化方面，新车搭载猎鹰500高阶智驾，地平线征程6M芯片加持，支持高速NOA与全场景泊车辅助。预售门槛为14.99万起，延续旅行者系列的势能，也为国产方盒子树立全新价值标杆。（来源：网上车市）</p>
+
+<figure><img src="img/18598bfc840965.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h3>吉利星愿第100万辆整车下线</h3>
+
+<p>吉利星愿第100万辆整车于10月20日正式下线。从2024年10月上市到达成百万辆规模，星愿用时约两年，成为A0级纯电轿车市场中少数跨过百万门槛的车型之一。现款车型于5月28日上市，共推出六款车型，官方指导价区间为6.48万元至9.48万元，限时权益价区间为6.18万元至9.18万元。新车搭载千里浩瀚H3方案，128TOPS算力，支持高速高架NOA，全场景接管里程超200km。动力方面，新车提供58kW和85kW两种后置单电机，续航方面，310km版升级至410km，410km版升级至480km。（来源：太平洋汽车）</p>
+
+<figure><img src="img/dc6b0fde64f7ca.jpg" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>方程豹成立三年累计销量突破60万辆</h3>
+
+<p>10月18日，方程豹官方宣布，品牌成立三年以来累计销量正式突破60万辆大关。方程豹自成立以来，从零开创电驱越野新品类，完成豹、钛、方程、皮卡多序列布局，成长为比亚迪集团中高端化核心主力。其累计成交均价达22.2万，其中豹5均价26.4万、豹8均价39.7万、钛7均价20.9万、方程S&amp;方程S GT均价21万。方程豹聚焦20万级中高端个性化市场，精准填补比亚迪集团个性化品类空白。此次销量突破标志着其在中高端市场的成功布局。（来源：汽车之家）</p>
+
+<figure><img src="img/868cda4fc61b27.png" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>保时捷中置8缸超跑10月15日亮相</h3>
+
+<p>10月7日，保时捷CEO莱特斯确认正在开发中置引擎超跑平台，计划推出定位高于911的新车，该车将于10月15日在纽约全球首发。这款名为Mission S的概念车，其直接对手是法拉利SF90的继任车型，预计搭载全新水平对置八缸混动系统，综合马力有望突破千匹。保时捷计划将客户平均花费从27万欧元提至33万欧元，与法拉利形成直接竞争。（来源：网上车市）</p>
+
+<h2>三、政策与标准</h2>
+
+<h3>工信部征求五项强标意见 智驾小蓝灯写入国标</h3>
+
+<p>近日，工业和信息化部装备工业一司发布公告，组织全国汽车标准化技术委员会开展《汽车数据安全要求》等五项强制性国家标准的制修订工作，目前已形成征求意见稿，截止日期为2026年12月19日。此次修订新增了ADS标志灯专用的蓝绿色光色要求，明确具备L3级及以上自动驾驶系统的车辆应选装ADS标志灯。此次修订旨在规范智能网联汽车行业发展，提升数据安全与自动驾驶系统的标准化水平。（来源：太平洋汽车）</p>
+
+<figure><img src="img/aa81cc254f7998.png" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>L2级辅助驾驶禁用“小蓝灯”</h3>
+
+<p>10月20日，工信部装备工业一司就《汽车数据安全要求》等五项强制性国家标准制修订公开征求意见。其中，《汽车及挂车外部照明和光信号装置的安装要求（征求意见稿）》明确，未配备L3级及以上自动驾驶系统的车辆，禁止安装自动驾驶系统标志灯（ADS标志灯）。具备L3级及以上自动驾驶系统的车辆，可选装ADS标志灯，其专用光色为蓝绿色。该规定意味着，L2级辅助驾驶车辆不能通过ADS标志灯向外界传递自动驾驶状态信号。此前，部分车企曾使用蓝色提示灯展示辅助驾驶功能的运行状态，相关设计也引发过对驾驶自动化等级及功能边界的讨论。此次标准拟修订GB 4785—2019，进一步明确智能化汽车外部照明及信号装置的使用边界。目前相关文件仍处于征求意见阶段，尚未正式实施。（来源：盖世汽车）</p>
+
+<h2>四、供应链与智驾</h2>
+
+<h3>地平线征程芯片量产突破1500万套</h3>
+
+<p>地平线征程系列芯片量产突破1500万套。地平线创始人兼CEO余凯表示，地平线目前市场份额已经是第一；但如果只看大算力芯片，“今年大概是第二名”，他的目标是明年做到第一。地平线已经证明了自己能把芯片卖出去，接下来要证明的，是能不能把过去积累的规模优势继续带进下一轮高阶智驾竞争。余凯认为，自动驾驶属于高度收敛、难以差异化的技术，做好相当难。他判断，到最后，全世界做自动驾驶这种核心技术的供应商，可能也不会超过2到3家。（来源：盖世汽车）</p>
+
+<h3>理想汽车发布连山电动技术体系</h3>
+
+<p>10月20日，理想汽车在北京举办“Power Day：理想汽车电动技术发布会”，正式发布“连山”电动技术体系。该体系融合连山电池、连山电驱、超充设备及自建超充网络，通过核心技术自研与整车系统协同，并依托连山质量预警平台，持续提升车辆续航、补能效率与全生命周期安全保障能力。理想汽车总裁兼总工程师马东辉表示，无论增程还是纯电，理想发展电动技术的初心，都是解决用户真实的里程和补能焦虑。2026款理想i6 CLTC续航最高达到780公里，较2025款提升8%。理想汽车还发布了“连山电池保障计划”，推出两项保障措施，为用户长期使用后的续航表现和超充体验提供保障。（来源：新浪汽车·新车）</p>
+
+<figure><img src="img/66fef532adb769.png" alt="（图：新浪汽车·新车）" loading="lazy"><figcaption>（图：新浪汽车·新车）</figcaption></figure>
+
+<h3>梅赛德斯-奔驰与英伟达拓展战略合作</h3>
+
+<p>10月20日，梅赛德斯-奔驰与英伟达宣布拓展战略合作，共同推进下一代自动驾驶系统研发。双方将整合奔驰的整车工程能力、安全技术积淀以及MB.OS操作系统，结合英伟达的加速计算与人工智能技术。英伟达Alpamayo Stack支持城市点对点辅助驾驶、主动安全及自动泊车功能，Halos体系则提供系统冗余与安全防护机制。此次合作旨在支撑高阶辅助驾驶，并面向未来SAE 4级自动驾驶应用的研发。此前，奔驰已在整车工程仿真和MO360数字化生产生态中采用英伟达技术。此次深化合作将进一步提升全球生产网络的效率与品质。这标志着奔驰在自动驾驶领域迈出了重要一步，与英伟达的技术协同将推动行业向更高级别自动驾驶迈进。（来源：汽车之家）</p>
+
+<figure><img src="img/1865c41f566e4c.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>国轩高科推出CTB后背集成式重卡产品</h3>
+
+<p>近日，国轩高科推出新一代CTB后背集成式重卡产品，采用整车原生集成思路，实现从独立电池包到底盘一体化方案的升级。该产品通过省去冗余框架与模组层级，使动力电池系统高度降至943mm，降幅达40%，整车减重约400公斤，能量密度突破160Wh/kg。此外，产品支持电量覆盖400kWh至700kWh，用户可根据需求选择容量版本。该产品采用“水电分离设计”，冷却水管外置，提升安全性和维修便利性，并提供“液冷液热+PTC选配”方案，以应对低温环境。该产品已完成6000公里整车耐久路试，可靠性与稳定性得到验证。国轩高科重卡市场装机量在2026年1-8月已跻身行业前五，同比2025年增长51.5%。此次产品发布将进一步巩固其在重卡电池市场的竞争力。（来源：盖世汽车）</p>
+
+<h2>五、公司与人事</h2>
+
+<h3>大众集团拟冻结员工薪资至2030年</h3>
+
+<p>10月19日，大众汽车集团工会收到管理委员会内部信息，计划冻结全球66万名员工的工资至2030年，作为更广泛成本削减计划的一部分。此举旨在应对当前的经济压力和行业挑战。此前，大众集团已在多个领域进行成本优化，包括供应链管理和生产流程改进。此次薪资冻结将对员工的收入产生直接影响，可能引发工会与管理层之间的进一步谈判。这一举措反映了汽车行业在全球经济不确定性下的应对策略，也凸显了企业在全球化背景下的成本控制压力。（来源：盖世汽车）</p>
+
+<h3>北京奔驰纯电C300L申报工信部</h3>
+
+<p>最新一批工信部新车公示中，北京奔驰申报了全新纯电C300L。新车长宽高分别为4977/1876/1510毫米，轴距3051毫米，整备质量2315公斤。外观采用奔驰纯电家族的盾形中网，内部为点阵镀铬，中央镶嵌三叉星徽，狭长大灯与前格栅贯通；车尾为贯穿式尾灯，尾门左侧带“C300L”和“北京奔驰”标识。动力部分，新车搭载一台型号EM0037的驱动电机，峰值功率230千瓦，最高车速200公里/小时。储能装置为磷酸铁锂电池，电芯由宁德时代（福鼎）供应，电池包由北京奔驰自产。此前申报的C350L采用前后双电机和三元锂电池，动力规格明显更高。新车基于奔驰MB.EA纯电专属架构打造，采用800伏高压平台，轴距针对中国市场加长。后续它将与国产纯电GLC一起，构成北京奔驰在华纯电轿车与SUV的产品矩阵，直接对位新世代宝马i3和奥迪E5 Sportback。（来源：网上车市）</p>
+
+<h3>奇瑞iCAUR品牌将进英国市场</h3>
+
+<p>奇瑞汽车计划于2027年初将旗下iCAUR品牌引入英国市场，首款车型为一款SUV。iCAUR将成为奇瑞在英国推出的第五个品牌，此前奇瑞、欧萌达（Omoda）、Jaecoo和Lepas已进入当地市场。iCAUR在英国市场推出的首款车型V27采用方正硬朗的SUV设计，外观风格与路虎卫士有相似之处。V27将采用电动化动力系统，更多车型信息将在未来几个月内公布。该车型在其他市场以增程式电动汽车的形式销售，同时搭载用于发电的内燃机。奇瑞国际表示，iCAUR目前已进入全球40个国家和地区。英国汽车制造商和贸易商协会（SMMT）的数据显示，今年1月至9月，奇瑞旗下各品牌在英国市场的合计份额达到7%，是当地销量最高的中国汽车制造商，整体销量排名仅次于大众汽车。（来源：盖世汽车）</p>
+
+<h2>六、出海与国际</h2>
+
+<h3>BYD在印尼推出首款Danza EV</h3>
+
+<p>BYD在印尼推出了首款‘Danza’电动汽车，并宣布计划到12月在该国部署100个Flash Chargers，这可能是其在东南亚地区最大规模的高功率充电技术部署。此前，BYD将其高端品牌Denza在印尼本地更名为Danza，原因是商标纠纷。BYD在印尼的这一举措，表明其在东南亚市场的布局正在加速。同时，BYD还计划在印尼部署100个Flash Chargers，这将有助于提升其电动汽车的充电便利性。此举意味着BYD在印尼市场的影响力正在扩大，同时也为其在东南亚其他市场的拓展奠定了基础。（来源：Electrive）</p>
+
+<figure><img src="img/9735b94bb56e33.webp" alt="（图：Electrive）" loading="lazy"><figcaption>（图：Electrive）</figcaption></figure>
+
+<h3>AITO转向博世合作拓展欧洲市场</h3>
+
+<p>AITO宣布在欧洲市场拓展过程中，将从华为转向博世进行合作。此前，AITO与华为在智能汽车领域有深入合作，但此次转向博世标志着其在欧洲市场战略的调整。这一变化可能与博世在欧洲汽车供应链中的强大地位有关，同时也能帮助AITO更好地适应欧洲市场的技术标准和法规要求。AITO近年来在新能源汽车领域发展迅速，此次合作或将为其在欧洲市场的进一步扩张提供技术支持和资源保障。此举意味着AITO在欧洲市场的布局更加多元化，同时也反映出其对本地化合作的重视。（来源：CarNewsChina）</p>
+
+<h3>中国电动车品牌在欧洲建厂</h3>
+
+<p>Stellantis正在西班牙生产Leapmotor的B10电动跨界车，并计划于明年推出第二款车型。这是中国电动车品牌首次在欧洲本土进行生产，标志着中国新能源汽车企业加速全球化布局。此前，Leapmotor主要在中国市场销售，此次与Stellantis合作，不仅有助于其产品进入欧洲市场，还能借助Stellantis的制造能力和渠道资源提升品牌影响力。这一举措也反映了欧洲市场对中国电动车需求的增长，以及中国车企在国际市场上寻求合作与扩张的趋势。此举意味着中国电动车品牌正在通过本地化生产进一步巩固其在欧洲市场的地位。（来源：InsideEVs）</p>
+
+<h2>数据速览</h2>
+
+<table><thead><tr><th>指标</th><th>数值</th><th>口径/区间</th><th>来源</th></tr></thead><tbody>
+<tr><td>全新捷途旅行者7全球销量</td><td>59万辆</td><td>截至9月底</td><td>网上车市</td></tr>
+<tr><td>吉利星愿累计销量</td><td>100万辆</td><td>截至发布时</td><td>太平洋汽车</td></tr>
+<tr><td>方程豹累计销量</td><td>60万辆</td><td>成立三年</td><td>盖世汽车</td></tr>
+<tr><td>智界RX售价区间</td><td>25.98万-38.98万元</td><td>人民币</td><td>网上车市</td></tr>
+<tr><td>大众ID. ERA 5X量产</td><td>首辆下线</td><td>2026年10月16日</td><td>盖世汽车</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>原文来源</h2>
+
+<p class="standfirst">本页每条报道的图片均来自该条新闻原文页面；原文没有合格图片的条目不配图。</p>
+
+<p>1. [网上车市] 余承东：鸿蒙智行最好开的车！智界RX售25.98万起！ — https://news.cheshi.com/dujia/20260911/3425795.shtml</p>
+<p>2. [新浪汽车·新车] 售6.59万元起 比亚迪第二代海鸥上市 — https://auto.sina.com.cn/newcar/2026-10-20/detail-inivwpzf7779268.shtml?oaid=00001&amp;c=spr_auto_trackid_f8944f41f240e3fc</p>
+<p>3. [CnEVPost] BYD launches larger second-gen Seagull from $9,810, adds flash charging — https://cnevpost.com/2026/10/20/byd-launches-second-gen-seagull/</p>
+<p>4. [Electrek] BYD launches new Seagull EV with 5-minute Flash Charging, starting under $10,000 — https://electrek.co/2026/10/20/byd-launches-new-seagull-ev-with-5-min-charging-under-10k/</p>
+<p>5. [太平洋汽车] 智己LS8 NEO纯电将于10月29日开启预售 NEXT・2028战略大五座旗舰 — http://www.pcauto.com.cn/nation/5189/51892221.html?ad=28676</p>
+<p>6. [网上车市] 《安定洞察》全新捷途旅行者7：方盒子价值再进阶 — http://news.cheshi.com/dujia/20261013/3426038.shtml</p>
+<p>7. [太平洋汽车] 吉利星愿第100万辆正式下线 限时权益价6.18万元起 — http://www.pcauto.com.cn/news/5189/51892241.html?ad=28676</p>
+<p>8. [汽车之家] 方程豹成立三年 累计销量突破60万辆！ — https://www.autohome.com.cn/news/202610/1317836.html#pvareaid=102624</p>
+<p>9. [网上车市] 保时捷中置8缸超跑10月15日亮相！PK法拉利SF90 — http://news.cheshi.com/dujia/20261013/3426032.shtml</p>
+<p>10. [太平洋汽车] 工信部征求五项强标意见 智驾 “小蓝灯” 正式写入国标 — http://www.pcauto.com.cn/news/5189/51892153.html?ad=28676</p>
+<p>11. [盖世汽车] 官方定调：L2级辅助驾驶禁用“小蓝灯” — https://auto.gasgoo.com/news/202610/20I70475405C1103.shtml</p>
+<p>12. [盖世汽车] 余凯谈智驾下一轮：算法好，已经不够了 — https://auto.gasgoo.com/news/202609/16I70472105C601.shtml</p>
+<p>13. [新浪汽车·新车] 理想汽车正式发布连山电动技术体系 — https://auto.sina.com.cn/jishu/2026-10-20/detail-inivwuif5763601.shtml?oaid=00110&amp;c=spr_auto_trackid_4d7d188c9b7a61c4</p>
+<p>14. [汽车之家] 推进自动驾驶系统研发 梅赛德斯-奔驰与英伟达拓展战略合作 — https://www.autohome.com.cn/news/202610/1317872.html#pvareaid=102624</p>
+<p>15. [盖世汽车] 国轩高科CTB 后背集成式 — https://auto.gasgoo.com/news/202610/20I70475356C501.shtml</p>
+<p>16. [盖世汽车] 国际|大众集团拟冻结员工薪资至2030年 — https://auto.gasgoo.com/news/202610/20I70475372C108.shtml</p>
+<p>17. [网上车市] 北京奔驰：更便宜的纯电C级来了！命名C300L — http://news.cheshi.com/dujia/20261016/3426059.shtml</p>
+<p>18. [盖世汽车] 奇瑞iCAUR进英国市场 — https://auto.gasgoo.com/news/202610/19I70475302C101.shtml</p>
+<p>19. [Electrive] Indonesia: BYD launches first ‘Danza’ EVs, prepares to deploy 100 Flash Chargers — https://www.electrive.com/2026/10/20/indonesia-byd-launches-first-danza-evs-prepares-to-deploy-100-flash-chargers/</p>
+<p>20. [CarNewsChina] Aito shifts from Huawei to Bosch for European expansion — https://carnewschina.com/2026/10/20/aito-shifts-from-huawei-to-bosch-for-european-expansion/</p>
+<p>21. [InsideEVs] This Chinese EV Is Now Made In Europe. More Are Coming — https://insideevs.com/news/812617/leapmotor-begins-european-production-stellantis/</p>
+<p>22. [CnEVPost] Xpeng starts Mona L03 deliveries in Europe, with CEO handing over first car in France — https://cnevpost.com/2026/10/20/xpeng-starts-mona-l03-deliveries-europe/</p>
+<p>23. [CarNewsChina] BYD launches all-new Seagull in China: the brand’s most affordable Flash-Charging EV under 10,000 USD — https://carnewschina.com/2026/10/20/byd-launches-all-new-seagull-in-china-the-brands-most-affordable-flash-charging-ev-under-10000-usd/</p>
+<p>24. [Electrek] Tesla (TSLA) Q3 2026 earnings preview: flat revenue, falling profits — https://electrek.co/2026/10/20/tesla-tsla-q3-2026-earnings-preview/</p>
+<p>25. [太平洋汽车] 售6.28万起 全新比亚迪海鸥上市 配二代电池/闪充技术 续航420km — http://www.pcauto.com.cn/nation/5189/51892257.html?ad=28676</p>
+<p>26. [汽车之家] 售6.29万元起 尺寸全面升级/可选激光雷达 全新比亚迪海鸥上市 — https://www.autohome.com.cn/news/202610/1317884.html#pvareaid=102624</p>
+<p>27. [新浪汽车] 奇瑞展望瑶光2035战略 紫微芯片发布 加速向全球智能科技公司进化 — https://auto.sina.com.cn/news/2026-10-20/detail-inivwyrf6383382.shtml</p>
+<p>28. [Motor1] Lexus NX Goes Hybrid Only For 2027 — https://www.motor1.com/news/812567/2027-lexus-nx-drops-gas/</p>
+<p>29. [太平洋汽车·新闻] 双手可以放开方向盘了？ L3/L4级自动驾驶上路通行试点 — https://www.pcauto.com.cn/news/4065/40658608.html</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>

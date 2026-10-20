@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>福特</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.2;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+  /* Six summary bullets filled the whole 844px viewport before any body copy; the
+     phone shows the top four, desktop keeps all six. */
+  .art-body > ul:first-of-type > li:nth-child(n+5){display:none}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 10 月 21 日 · 星期三 · 第 43 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">企业史</p>
+    <h1 class="art-title">福特</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">流水线与大众市场：把汽车从奢侈品变成消费品 ｜ 福特汽车通过流水线生产，将汽车从奢侈品变为大众消费品，开创了现代制造业模式</p>
+  <article class="art-body">
+
+
+
+
+
+<h2>今日一史（3 分钟版）</h2>
+
+<p>福特汽车公司于1903年在美国密歇根州底特律成立，由亨利·福特创立。1913年，福特引入移动装配线，极大提高了生产效率并降低了汽车成本。到1914年，福特制形成，成为全球制造业的典范。1925年，福特在澳大利亚成立子公司，拓展国际市场。1938年，福特创立水星品牌，填补福特与林肯之间的产品线空缺。2010年，水星品牌因销量下滑被关闭。2013年，福特因制造成本和销售低迷退出澳大利亚市场，2016年福特Falcon在澳大利亚停产，标志着福特在澳大利亚88年历史的结束。</p>
+
+<h2>一、发展史时间轴</h2>
+
+<table><thead><tr><th>年份</th><th>事件</th><th>为什么重要</th></tr></thead><tbody>
+<tr><td>1903</td><td>福特汽车公司成立（美国密歇根州底特律）</td><td>标志着福特汽车工业的开端</td></tr>
+<tr><td>1913</td><td>引入移动装配线</td><td>极大提高了生产效率，降低了汽车成本</td></tr>
+<tr><td>1914</td><td>福特制形成</td><td>成为全球制造业的典范</td></tr>
+<tr><td>1925</td><td>福特澳大利亚成立</td><td>拓展了福特的国际市场</td></tr>
+<tr><td>1938</td><td>水星品牌创立</td><td>填补福特与林肯之间的产品线空缺</td></tr>
+<tr><td>1939</td><td>水星品牌首次推出</td><td>成为福特中等价位汽车的重要品牌</td></tr>
+<tr><td>2010</td><td>水星品牌关闭</td><td>因销量下滑和市场份额减少</td></tr>
+<tr><td>2013</td><td>福特退出澳大利亚市场</td><td>因制造成本和销售低迷</td></tr>
+<tr><td>2016</td><td>福特Falcon在澳大利亚停产</td><td>标志着福特在澳大利亚88年历史的结束</td></tr>
+</tbody></table>
+
+<h2>二、今日概念</h2>
+
+<h3>流水线生产（Mass Production）</h3>
+
+<ul><li><strong>定义</strong>：通过标准化、重复性高的生产流程，提高效率并降低成本。</li><li><strong>来龙去脉</strong>：为了解决传统手工生产效率低、成本高的问题，福特引入流水线生产，使汽车制造更加高效。</li><li><strong>案例</strong>：福特通过流水线生产，使T型车成本大幅下降，使汽车成为大众消费品。</li></ul>
+
+<h3>福特制（Fordism）</h3>
+
+<ul><li><strong>定义</strong>：一种结合流水线生产、高工资和大规模消费的经济模式。</li><li><strong>来龙去脉</strong>：为了解决工人低工资导致的消费能力不足问题，福特通过高工资和低产品价格，推动了消费主义。</li><li><strong>案例</strong>：福特制通过高工资和低价格，使工人能够购买自己生产的汽车，推动了美国消费经济的发展。</li></ul>
+
+<h2>三、关键决策时刻</h2>
+
+<p>背景：1903年，亨利·福特在密歇根州底特律创立福特汽车公司，标志着福特汽车工业的开端。  </p>
+<p>选项：福特可以选择继续生产高端汽车，或尝试通过创新降低汽车成本，使其成为大众消费品。  </p>
+<p>选择与结果：福特选择引入移动装配线，极大提高了生产效率并降低了成本，使汽车成为大众消费品。  </p>
+<p>另一种声音：资料未覆盖争议。</p>
+
+<p>背景：1938年，福特意识到需要扩充品牌版图，以与竞争对手匹敌。  </p>
+<p>选项：福特可以选择继续只生产福特和林肯两个品牌，或创立一个新品牌填补中间市场。  </p>
+<p>选择与结果：福特创立水星品牌，填补福特与林肯之间的产品线空缺，成为福特中等价位汽车的重要品牌。  </p>
+<p>另一种声音：资料未覆盖争议。</p>
+
+<p>背景：1925年，福特决定拓展国际市场，进入澳大利亚。  </p>
+<p>选项：福特可以选择继续专注于美国市场，或在澳大利亚设立子公司。  </p>
+<p>选择与结果：福特在澳大利亚成立子公司，拓展国际市场，推出福特T型车，并逐步按照澳洲的需求和路况进行本土化改造。  </p>
+<p>另一种声音：资料未覆盖争议。</p>
+
+<p>背景：2013年，福特面临制造成本和销售低迷的挑战。  </p>
+<p>选项：福特可以选择继续在澳大利亚经营，或退出市场。  </p>
+<p>选择与结果：福特因制造成本和销售低迷退出澳大利亚市场，导致1200名员工失业。  </p>
+<p>另一种声音：资料未覆盖争议。</p>
+
+<h2>四、数字档案</h2>
+
+<table><thead><tr><th>指标</th><th>数值</th><th>年份/口径</th><th>来源</th></tr></thead><tbody>
+<tr><td>员工人数</td><td>169,000</td><td>2025年</td><td>资料1</td></tr>
+<tr><td>福特澳大利亚员工人数</td><td>1,800</td><td>2023年</td><td>资料4</td></tr>
+<tr><td>水星品牌首次推出销量</td><td>65,800</td><td>1939年</td><td>资料3</td></tr>
+<tr><td>福特Falcon在澳大利亚生产年数</td><td>88</td><td>1925-2013</td><td>资料4</td></tr>
+<tr><td>福特英国员工人数</td><td>约8,500</td><td>资料2</td><td></td></tr>
+<tr><td>福特英国制造基地数量</td><td>2</td><td>资料2</td><td></td></tr>
+</tbody></table>
+
+<h2>五、链接当下</h2>
+
+<ul><li>新能源汽车行业：福特的流水线生产模式为现代汽车制造奠定了基础，如今这一理念被广泛应用于新能源汽车的规模化生产，推动了电动车的普及和成本降低。  </li><li>供应链/库存/制造管理：福特的流水线生产方式强调标准化和效率，这一理念在当今供应链管理中依然具有重要价值，有助于企业优化库存、提升制造管理的自动化水平。</li></ul>
+
+<h2>六、术语卡（间隔重复）</h2>
+
+<p>流水线生产 —— 通过标准化、重复性高的生产流程，提高效率并降低成本。  </p>
+<p>福特制 —— 一种结合流水线生产、高工资和大规模消费的经济模式。  </p>
+<p>移动装配线 —— 福特引入的一种生产方式，极大提高了生产效率并降低了汽车成本。</p>
+
+<hr>
+
+<h2>语料出处</h2>
+
+<p>1. 福特汽车（提及 554 次，wiki-corpus 语料）</p>
+<p>2. 福特英国（提及 196 次，wiki-corpus 语料）</p>
+<p>3. 水星 (汽车)（提及 195 次，wiki-corpus 语料）</p>
+<p>4. 福特澳大利亚（提及 146 次，wiki-corpus 语料）</p>
+<p>5. 亨利·福特（提及 139 次，wiki-corpus 语料）</p>
+
+<p class="standfirst">语料来源：维基百科离线转储（中文 / 英文），经关键词抽取。</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
