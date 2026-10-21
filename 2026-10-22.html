@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>方程豹两个月新增10万辆销量超小米蔚来华为</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.2;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+  /* Six summary bullets filled the whole 844px viewport before any body copy; the
+     phone shows the top four, desktop keeps all six. */
+  .art-body > ul:first-of-type > li:nth-child(n+5){display:none}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 10 月 22 日 · 星期四 · 第 43 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">汽车日报</p>
+    <h1 class="art-title">方程豹两个月新增10万辆销量超小米蔚来华为</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">38 条报道 ｜ 22 张配图 ｜ 全部条目带来源标注，单源信息标注待证实</p>
+  <article class="art-body">
+
+<h2>今日速览（30 秒版）</h2>
+<ul><li>特斯拉退出全球十大创新电动车制造商，奔驰进入前十</li><li>大众召回近7.3万辆电动车，因电池故障限制充电至80%</li><li>特斯拉Optimus机器人量产，利润下降43%</li><li>华为引望加入巧克力换电生态，2027年推出首款奕境换电车型</li><li>Lucid将2.5万辆电动车投入Nvidia自动驾驶软件测试</li><li>通用新一代电动车平台减少30%线缆和20%电池</li></ul>
+
+<h2>今日头条</h2>
+<p>比亚迪旗下方程豹品牌在8月5日突破50万辆销量后，仅用2个月零4天便实现累计销量突破60万辆，新增10万辆的销量是品牌成立以来增长最快的阶段。9月方程豹全系交付43,181辆，同比增长79%，月销量连续3个月稳居新势力前三。同期，小米汽车交付超4万台，鸿蒙智行交付37,490辆，蔚来交付37,408辆，方程豹的月销量已超越这三个品牌。其中，钛7一款车型在9月交付32,144辆，占品牌当月总销量的74%。钛7上市一年多累计销量超25万辆，占方程豹60万辆总销量的40%以上。方程豹品牌累计成交均价为22.2万元，其中钛7均价20.9万元，豹5均价26.4万元，豹8均价39.7万元。在价格战背景下，方程豹没有选择低价换量策略，而是通过产品力和品牌价值实现增长。中国汽车流通协会9月保值率榜显示，钛7、豹8、豹5进入插混前15名，钛3进入纯电前10名。两个月新增10万辆销量，验证了方程豹以单一车型支撑品牌发展的路径，钛7凭借方盒子造型成功吸引20万元级合资燃油车置换人群。未来，方程豹还将推出钛9、鲨鱼皮卡等车型，进一步拓展产品线。</p>
+
+<figure><img src="img/3eb28eb64ed7df.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h2>一、新车与产品</h2>
+
+<h3>比亚迪Denza N8 EV搭载1193马力三电机四驱系统</h3>
+
+<p>比亚迪Denza N8 EV在Q4上市前被拍到搭载890千瓦三电机四驱系统，提供五座布局和205升前备箱。该车型此前未公布具体参数，此次曝光的三电机四驱系统动力强劲，预计将成为高端电动SUV市场的重要竞争者。此前，比亚迪在新能源领域持续发力，推出多款高性能车型。此次Denza N8 EV的曝光表明比亚迪正进一步拓展高端电动市场，强化其在电动SUV领域的技术实力和产品矩阵。（来源：CarNewsChina）</p>
+
+<h3>北汽星钽5X预售13.99万元起，搭载华为乾崑ADS 5 Pro</h3>
+
+<p>10月21日，北汽推出全新中大型方盒子SUV星钽5X，预售价格13.99万元起，提供插混和纯电两种动力方案。该车型搭载华为乾崑ADS 5 Pro高阶智驾系统，采用固态激光雷达方案，提升复杂环境下的感知稳定性。此前，北汽在新能源领域持续布局，推出多款智能车型。此次星钽5X的预售表明北汽正通过智能化和空间优化，切入城市轻越野与家用大五座SUV市场，满足家庭用户对空间、智能和舒适性的多重需求。（来源：新浪汽车·新车）</p>
+
+<figure><img src="img/73ec4dcf3971a6.jpg" alt="（图：新浪汽车·新车）" loading="lazy"><figcaption>（图：新浪汽车·新车）</figcaption></figure>
+
+<h3>小鹏MONA L05预售16.98万元起，瞄准年轻用户</h3>
+
+<p>2026年10月15日，小鹏汽车推出MONA系列首款大五座SUV——MONA L05，预售价格16.98万元起，提供纯电与超级增程两种动力形式。该车型延续MONA家族“VitalFlow流动的生命力”设计理念，强调大而不笨的视觉观感。此前，小鹏MONA系列已交付超35万台，其中MONA M03连续24个月稳居纯电轿车销量榜首。此次推出MONA L05，旨在填补年轻用户在大五座SUV市场的选择空白，满足其对智能、空间和时尚的多元化需求。（来源：电动邦）</p>
+
+<figure><img src="img/1fbcbbae63231f.png" alt="（图：电动邦）" loading="lazy"><figcaption>（图：电动邦）</figcaption></figure>
+
+<h3>北京越野星钽5X首发亮相泰钽700开启交付</h3>
+
+<p>北京越野在全球用户大会上正式发布了星钽5X，并开启了泰钽700的首批车主交付。星钽5X是星钽序列首款车型，定位家用新能源方盒子SUV，轴距2875mm，提供纯电和插混两种动力选择，纯电版CLTC续航625公里，插混版纯电续航超过310公里。泰钽700则定位豪华越野市场，起售价24.98万元，搭载1.5T增程动力和华为乾崑ADS 5智驾系统。此前，北京越野已通过BJ40系列守住入门越野市场，此次星钽5X和泰钽700的推出，标志着其新能源产品矩阵的进一步完善。此举意味着北京越野正通过差异化产品布局，抢占家用和豪华越野市场。（来源：网上车市）</p>
+
+<figure><img src="img/b7cbbe5437c3e3.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h3>魏牌高山8 HEV将于10月26日上市</h3>
+
+<p>魏牌高山8 HEV将于10月26日正式上市，预售价格为27.58万元起。新车定位智能豪华四驱MPV，采用无需外接充电的油电混动方案，搭载2.0T油混系统和Hi4四驱系统，系统最大功率322kW，最大扭矩782N・m，0-100km/h加速5.9秒，WLTC综合工况油耗6.92L/100km。新车与在售的高山PHEV并行销售，提供多种车身颜色和内饰配色选择，配备智能座舱和高阶辅助驾驶系统。此前，魏牌已推出高山PHEV，此次高山8 HEV的上市将进一步丰富其产品线，满足不同消费者对混动MPV的需求。此举意味着魏牌正在通过差异化产品布局，抢占高端MPV市场。（来源：太平洋汽车）</p>
+
+<figure><img src="img/035938184dc889.jpg" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>2027款领克03新增原厂宽体套件</h3>
+
+<p>2027款领克03新增原厂宽体套件，并保留原厂大尾翼，外观更具战斗感。新车车宽从现款的1843mm提升至1901mm，宽体套件直接纳入工信部申报范围，属于合规出厂配置。1.5T版本发动机最大功率提升至148kW，匹配7速湿式双离合变速箱。2.0T版本预计延续现有方案，最大功率272马力，匹配8AT变速箱，零百加速6.5秒。此前，领克03已推出多个版本，此次2027款的升级进一步强化了其运动性能和外观设计。此举意味着领克正在通过原厂宽体套件等配置，提升车型的运动感和市场竞争力。（来源：太平洋汽车）</p>
+
+<figure><img src="img/7a3656b3ffe7ca.jpg" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>零跑D11大型SUV谍照曝光 轴距超3米</h3>
+
+<p>近日，零跑全新大型SUV谍照曝光，该车代号D11，轴距预计超过3米，定位大型SUV，或将与理想L9、问界M9等车型竞争。谍照车外观覆盖完整伪装贴纸，前脸采用分体式大灯设计，配备激光雷达和毫米波雷达，车顶更高，整体造型魁梧。车尾采用简约设计，牌照框位于后保险杠位置，C柱到D柱之间距离较大，预计提供6座或7座布局。底盘为混合动力系统，配备后置驱动电机和多连杆后悬架。此前，零跑已为该车量产进行工厂产线升级技改。零跑此前推出的C系列SUV已为其产品线积累经验，此次D11的推出将进一步丰富其SUV产品矩阵，提升在大型SUV市场的竞争力。（来源：汽车之家）</p>
+
+<figure><img src="img/574d13ec7e246e.png" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>领克900L官图发布 轴距3170mm</h3>
+
+<p>日前，领克900L官图发布，新车比现款领克900尺寸更大，轴距达3170mm，定位为7座SUV，可选装牵引装置，具备2吨拖挂能力。外观方面，新车采用全新一体式灯组设计，保留经典日行灯轮廓，前脸配备激光雷达，车侧装配21英寸密辐多辐轮圈，车身尺寸为5280/1999/1810mm。动力方面，新车搭载2.0T插混系统，发动机峰值功率160kW，最高车速225km/h。领克900L的推出延续了领克900的设计语言，并在尺寸和动力上进行升级，进一步强化其在大型SUV市场的竞争力。（来源：汽车之家）</p>
+
+<h3>北汽星钽5X开启预售 起售价13.99万元</h3>
+
+<p>10月21日，北汽星钽5X正式开启预售，预售价区间为13.99-18.49万元。新车定位中大型科技新能源方盒子SUV，车长近5米，轴距2875mm，提供插混和纯电双动力版本。插混版CLTC纯电续航310km、综合续航1300km，纯电版CLTC续航625km。新车配备华为乾崑ADS 5 Pro方案，支持越野NOA功能，拥有228mm最小离地间隙和600mm涉水深度。星钽5X延续了“城市猎人”概念车的设计精髓，采用方正车身和星月横戈前脸，内饰配备268°环抱式座舱和23扬声器。该车的推出将丰富北汽在新能源SUV市场的产品布局，进一步提升其在中大型新能源SUV领域的竞争力。（来源：太平洋汽车）</p>
+
+<h3>捷途山海L7 PLUS新版本10月24日上市</h3>
+
+<p>10月24日，捷途山海L7 PLUS新版本车型将正式上市。该车型主要将猎鹰智驾方案进行下放，降低入门门槛。现款车型售价区间为11.99-17.59万元，新版本车型在智能驾驶方面搭载猎鹰700智驾系统，配备27颗传感器，支持高速NOA无图领航功能。新版本车型延续现款设计风格，车身尺寸为4810/1930/1705mm，轴距2820mm。此前，捷途山海L7 PLUS已推出多款配置，此次新版本车型的上市将进一步丰富产品线，提升市场竞争力。（来源：汽车之家）</p>
+
+<h3>捷途旅行者7 12.59万起上市</h3>
+
+<p>10月14日，捷途旅行者7及旅行者7 C-DM正式上市，燃油版焕新价12.59万-16.59万元，插混版焕新价14.39万-16.39万元。新车作为三周年换代之作，车身尺寸增至4827mm，轴距仍为2800mm，外观设计更偏向城市风格。全系标配高通8255芯片、15.6英寸中控屏及讯飞星火大模型，智能驾驶方面燃油版搭载猎鹰500系统，插混版搭载华为乾崑ADS 5。此次上市是捷途在智能与尺寸上的重要升级，进一步巩固其在SUV市场的地位。（来源：网上车市）</p>
+
+<h3>比亚迪“大海鸥”10月20日上市</h3>
+
+<p>10月20日，比亚迪第二代海鸥将正式上市，新车采用后置后驱布局，电机功率提升至95kW，后悬架升级为独立悬架，尺寸从A00级跨入A0级。续航提供300公里级和400公里级两个版本，其中400公里级搭载二代刀片电池与闪充技术。此前，第一代海鸥销量表现优异，此次换代被视为比亚迪巩固小型电动车市场的重要举措。新车将闪充、独立悬架等配置下放至入门车型，同时价格有所上浮，将直接影响其市场表现。（来源：网上车市）</p>
+
+<h2>二、销量与市场</h2>
+
+<h3>【国际】9月中国汽车在欧洲销量大增104%</h3>
+
+<p>欧洲议会三大党团就放宽2035年汽车减排目标达成初步协议 欧洲议会三大主流党团就调整新车二氧化碳排放目标达成初步政治协议，拟进一步放宽欧盟2035年汽车减排要求，到2035年，拟将乘用车队平均排放量较2021年降低87.5%，另允许通过使用欧盟生产的低碳钢获得相当于7.5%的补充减排额度，商用车拟要求平均排放量降低80%。不过，方案仍需相关党团正式确认，并与欧盟成员国协商，尚不是最终生效的法规。 根据市场研究公司Dataforce的初步数据，9月份欧洲新车销量同比增长10%，达到134万辆，主要得益于 电动汽车 、（来源：盖世汽车）</p>
+
+<h3>大众在华智能化进入“交付模式”</h3>
+
+<p>10月21日，盖世汽车获悉，就2026世界 智能网联 汽车大会上，大众汽车集团管理董事会主席奥博穆和大众中国CTO吴博锐同时释放了一个清晰的信号：大众在华智能化，已经跑完了“布局期”，进入“交付模式”。 奥博穆给出的时间表很直接：L2++全场景辅助驾驶已正式开始部署，2027年实现L3就绪。但他紧接着补了一句：“消费者只接受他们能够信任的技术。”速度不是目标，安全、质量和可靠性才是大众不肯让步的前提。 吴博锐把这句话拆成了工程现实。三年前成立的VCTC落地合肥，如今已是大众德国以外最大研发中心，汇聚超3000名工程（来源：盖世汽车）</p>
+
+<h3>尹同跃：拒绝价格战，切忌出海变填海</h3>
+
+<p>盖世汽车讯 10月21日，在2026世界 智能网联 汽车大会上，奇瑞控股集团董事长尹同跃围绕汽车国际化主题分享观点。他表示，当下国内车企出口规模持续走高，也引发海外市场关注，国际化是一项复杂系统工程，需要秉持长期主义，不能局限于整车外销的思路。 尹同跃提出，国际化的核心是从“卖到全球”转向“长在全球、扎根全球”，深度融入当地技术链、供应链与价值链。 一方面要接轨国际标准，依托全球研发布局，吸纳本土工程师参与产品定义；另一方面推进本地化研发、制造、采购、人才建设，在同等生产要素条件下参与全球竞争。他透露，奇瑞在马来西（来源：盖世汽车）</p>
+
+<h3>VW Anhui to launch ID. UNYX 09 on October 24 as second model developed with Xpeng</h3>
+
+<p>Pre-sales for the ID. UNYX 09 began on September 24, with prices ranging from 199,900 yuan ($29,750) to 249,900 yuan. For details, please visit CnEVPost (cnev.co).（来源：CnEVPost）</p>
+
+<figure><img src="img/d14f526c40ebc8.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>吉利星愿第100万辆下线</h3>
+
+<p>盖世汽车讯 10月20日，吉利汽车官方官宣，吉利银河星愿第100万辆整车正式下线。这款A0级纯电小车自2024年10月上市，用时约两年完成百万整车下线，创下细分市场成长新纪录。吉利汽车集团销售总公司常务副总经理范峻毅在社交平台表示，百万下线是重要里程碑，未来将继续迭代产品回馈用户信赖。 回顾星愿的成长节奏，2025年5月达成20万辆，2026年3月突破60万辆，同年8月跨过80万辆台阶，10月实现百万下线。其中60万到100万辆仅耗时7个月，最后20万辆增量仅用时约两个月，后期产销速度持续提速。 作为吉利银河旗下主（来源：盖世汽车）</p>
+
+<h2>三、政策与标准</h2>
+
+<h3>Toyota Wants To Convince The EU That Some Hybrids Are Zero Emissions</h3>
+
+<p>Proposed VEEF rules would classify certain Toyota combustion models as zero-emission if they run exclusively on approved renewable gasoline in Europe.（来源：Motor1）</p>
+
+<h3>欧洲九国探索电动汽车与电网整合</h3>
+
+<p>九个欧洲合作伙伴正在研究如何智能地将电动汽车、热泵、电池和其他灵活技术整合到能源系统中。该项目的核心是实际测试这些方法。这一举措旨在推动电动汽车成为电网资产，从而提升能源系统的灵活性和效率。此前，欧洲在可再生能源和智能电网技术方面已有一定积累，但电动汽车的广泛接入仍面临技术与政策上的挑战。此次合作标志着欧洲在推动电动汽车与能源系统深度融合方面迈出了重要一步，意味着电动汽车将不再仅仅是交通工具，而是能源系统的重要组成部分。（来源：Electrive）</p>
+
+<figure><img src="img/dc6bf96a25f056.webp" alt="（图：Electrive）" loading="lazy"><figcaption>（图：Electrive）</figcaption></figure>
+
+<h3>奔驰CEO呼吁平衡产业保护与成本</h3>
+
+<p>梅赛德斯-奔驰集团CEO康林松在柏林全球对话和布鲁塞尔采访中表示，欧盟的产业保护政策可能会推高汽车产业成本，并打破全球供应链的平衡。他指出，现代汽车包含来自全球各地的数千个零部件，增加限制会提高生产成本，尽管这能提升供应链韧性。康林松强调，欧盟不能成为孤立于主要贸易伙伴的“孤岛”，并敦促推进更多自贸协定。此前，欧盟对中国电动汽车加征关税，中方也采取了反制措施。此次表态体现了德国车企在保护本土产业与维持全球合作之间的双重考量，意味着未来中欧汽车产业关系仍将以对话与合作为主旋律。（来源：盖世汽车）</p>
+
+<h2>四、供应链与智驾</h2>
+
+<h3>广汽-华为品牌计划推出换电车型</h3>
+
+<p>广汽-华为合作品牌Aistaland计划在与宁德时代合作的电池换电模式下推出换电车型。此前，华为与宁德时代已启动电池换电合作，而Aistaland作为该合作下的最新品牌，正进一步拓展这一模式。目前，电池换电技术在新能源汽车领域逐渐受到关注，多家车企也在探索类似方案。此次Aistaland的计划表明，换电模式可能成为未来新能源汽车发展的重要方向之一，意味着车企在提升用户体验和降低使用成本方面正寻求更多创新路径。（来源：CnEVPost）</p>
+
+<figure><img src="img/9a69905b2995a2.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>智己LS8 NEO纯电版10月29日预售</h3>
+
+<p>10月29日，智己LS8 NEO纯电版将开启预售。该车全系标配宁德时代电池、全线控灵蜥底盘，配备NEO飓风电机、能效大师3.0、全域热管理系统等核心技术。车身尺寸为5085/2000/1807mm，轴距3060mm，提供5座/6座布局。车辆搭载520线超视域激光雷达、英伟达Thor芯片及IM AD ZETA端到端大模型，支持高速和城市领航辅助NOA功能。此前，该车已在工信部完成申报，最大功率300kW。智己LS8 NEO纯电版的推出，将进一步丰富智己品牌在中大型SUV市场的布局，与同级别竞品形成差异化竞争。（来源：汽车之家）</p>
+
+<figure><img src="img/54608a74b00f0c.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>DeepSeek推理框架支持华为与英伟达芯片</h3>
+
+<p>10月20日，DeepSeek宣布开源推理框架DeepInfer，支持华为昇腾950系列NPU与英伟达SM100（Blackwell架构GPU）。该框架通过一个环境变量即可在两类硬件间切换，标志着国产芯片在AI推理领域从“补充角色”向“对等主力角色”转变。此前，国产芯片在大模型中多作为次序靠后的“补充后端”存在，而DeepInfer的推出为国产芯片提供了更公平的适配环境。目前，DeepInfer的性能基准主要基于英伟达GPU，尚无法判断华为昇腾950在相同模型下的表现。DeepInfer的开源，为国产芯片在AI推理赛道的生态突围提供了重要机会。（来源：钛媒体）</p>
+
+<figure><img src="img/48c06cfb1e4138.png" alt="（图：钛媒体）" loading="lazy"><figcaption>（图：钛媒体）</figcaption></figure>
+
+<h3>华为自动驾驶安全数据达680万次</h3>
+
+<p>10月21日，在2026世界智能网联汽车大会上，华为公司高级副总裁靳玉志表示，自动驾驶对安全的要求更高。截至10月20日，华为乾崑智驾累计主动避免可能的碰撞680万次，辅助驾驶状态下严重碰撞事故前安全行驶里程为中国司机平均值的5.75倍。靳玉志指出，自动驾驶规模化商用落地的关键在于以真实数据建立用户信任。目前，华为乾崑智驾正通过“10分钟乾崑智驾生活圈”提升智能化体验。华为在自动驾驶领域的数据积累，为其在智能化下半场的竞争奠定了基础，也推动了行业对自动驾驶安全性的关注。（来源：新浪汽车）</p>
+
+<figure><img src="img/22d29a0513f2b1.png" alt="（图：新浪汽车）" loading="lazy"><figcaption>（图：新浪汽车）</figcaption></figure>
+
+<h3>宁德时代推出双电池系统加速重卡电动化</h3>
+
+<p>宁德时代推出一款双电池系统，该系统结合可更换的主电池和77千瓦时的续航扩展电池，旨在提高电池利用率并降低车队运营成本。这一创新方案是宁德时代在推动重卡电动化方面的重要举措。此前，宁德时代已在多个领域推动电池技术的革新，包括乘用车和轻型商用车。该系统的推出意味着宁德时代在电动重卡市场上的布局进一步深化，有助于推动整个行业的电动化进程。（来源：CnEVPost）</p>
+
+<figure><img src="img/5f3e3aa6fcf807.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>大众全球召回近72700台电动汽车</h3>
+
+<p>大众汽车因动力电池电芯存在质量缺陷，在全球范围内召回近72700台电动汽车，涉及ID.3、ID.4、ID.7、ID. Buzz以及西雅特Cupra Born等多款车型。此次召回的车辆生产年份为2022至2025年（ID系列）和2022至2024年（Cupra Born）。问题源于供应商的生产失误，可能导致电池起火风险。大众要求车主在检测完成前，充电电量不得超过80%，并张贴警示贴纸。该事件表明，动力电池的质量控制仍是电动汽车行业面临的重要挑战。（来源：汽车之家）</p>
+
+<figure><img src="img/5e5dbbe68c49eb.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>蔚来李斌出席智能网联汽车大会谈自动驾驶价值</h3>
+
+<p>10月21日，蔚来创始人李斌在2026世界智能网联汽车大会上表示，智能驾驶进入下半场，评判核心是能否为用户创造价值。他强调商业化闭环和可量化的安全表现是关键指标。蔚来已部署智能辅助驾驶系统于超过95万辆车上，累计安全行驶里程达91.4亿公里，避免或减轻了907万次潜在事故。李斌指出，L3级自动驾驶的量产上路取决于法律法规的开放节奏。此次大会展示了蔚来在智能网联汽车领域的多项核心技术成果。（来源：电动邦）</p>
+
+<figure><img src="img/07a314d2822972.jpg" alt="（图：电动邦）" loading="lazy"><figcaption>（图：电动邦）</figcaption></figure>
+
+<h3>理想汽车推出自研Lianshan电动汽车技术系统</h3>
+
+<p>理想汽车近日推出自研Lianshan电动汽车技术系统，并承诺为其自研电池提供终身安全保证。该技术系统的推出标志着理想汽车在电池技术上从与宁德时代合作转向与Sunwoda的合资企业自主研发。此前，理想汽车在电池技术上依赖于宁德时代，此次转向自研电池表明其在供应链自主可控方面迈出重要一步。此举不仅有助于提升电池性能和安全性，也符合当前汽车行业对电池技术自主化的需求。（来源：CnEVPost）</p>
+
+<figure><img src="img/69af85f5c2918a.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>华为引望坚持做供应商不与车企竞争</h3>
+
+<p>在2026世界智能网联汽车大会上，华为公司高级副总裁、引望公司CEO靳玉志表示，引望自诞生以来一直坚持做智能网联汽车增量部件供应商，定位为‘电子螺丝钉’，不与车企竞争。引望与宁德时代、时代电服签署了换电战略合作，搭载乾崑智驾的车辆可实现自主寻站、进站、换电，整个过程仅需99秒。引望计划通过持续技术创新和工程优化，提供更丰富、更可靠、更具成本竞争力的智能汽车解决方案产品组合。（来源：太平洋汽车·新闻）</p>
+
+<figure><img src="img/fd44bbfcdb0434.png" alt="（图：太平洋汽车·新闻）" loading="lazy"><figcaption>（图：太平洋汽车·新闻）</figcaption></figure>
+
+<h3>Momenta累计量产交付超130万台</h3>
+
+<p>在2026物理AI与世界模型大会上，Momenta CEO曹旭东表示，公司累计量产交付超过130万台，累计行驶里程接近200亿公里。曹旭东预判2028年将成为L4规模化落地的重要拐点，并指出智驾安全性与性能每两年提升十倍的趋势，称为‘智驾摩尔定律’。Momenta R7世界模型通过预测学习物理规律，结合驾驶数据与后训练，提升防御性驾驶能力。新芯航途（XHEART）的下一代X9芯片将支持端侧模型规模扩大100倍，推动智驾摩尔定律加速兑现。（来源：汽车之家）</p>
+
+<figure><img src="img/118ccdb54729c9.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>宁德时代回应2027年行业需求担忧</h3>
+
+<p>宁德时代在10月20日的投资者关系活动中表示，2027年新能源行业需求依然可期。尽管2026年乘用车整体销量有所下降，但电动化率和单车带电量的提升推动了新能源乘用车动力电池的正增长。数据显示，2026年1至9月，国内动力电池装车量同比增长17%，销量同比增长38%，其中新能源车单车平均带电量为69.5kWh，同比增长32%。宁德时代正与客户沟通分担税费政策变化带来的影响，自2026年4月起电池产品增值税出口退税率下调，2027年起取消退税。此前多家券商已下调其2027年盈利预期，公司股价较历史高点已腰斩。（来源：盖世汽车）</p>
+
+<h3>奔驰与英伟达深化智能驾驶合作</h3>
+
+<p>梅赛德斯-奔驰与NVIDIA英伟达宣布深化战略合作，双方将联合开发下一代辅助驾驶系统。梅赛德斯-奔驰的MB.OS操作系统将与英伟达Hyperion计算及传感器架构协同运行，支持驾驶功能的持续新增与OTA更新。英伟达Alpamayo Stack将提供AI推理能力的全栈驾驶软件，覆盖城市点到点辅助驾驶、主动安全及自动泊车等场景。此外，英伟达Halos安全体系将强化梅赛德斯-奔驰的安全架构，为未来SAE L4级自动驾驶应用奠定基础。双方合作还延伸至生产制造环节，梅赛德斯-奔驰在MO360中采用英伟达技术，提升全球生产网络效率与产品质量。（来源：盖世汽车）</p>
+
+<h2>五、公司与人事</h2>
+
+<h3>长城军工前三季度亏损1.18亿元</h3>
+
+<p>长城军工发布三季报显示，前三季度实现营收8.94亿元，同比减少16.98%；归母净利润亏损1.18亿元，同比降幅566.21%。亏损原因指向订单交付节奏和产品结构变化，特品营业收入同比减少50.65%。公司表示，大宗订单集中在四季度交付，本期交付产品减少，同时销售产品结构变化导致毛利率降低。尽管业绩下滑，QFII和北上资金却逆市加仓，UBS AG和北上资金连续增持。公司应收账款增至14.33亿元，占前三季度营收的160.29%。（来源：钛媒体）</p>
+
+<figure><img src="img/48c06cfb1e4138.png" alt="（图：钛媒体）" loading="lazy"><figcaption>（图：钛媒体）</figcaption></figure>
+
+<h3>瑞鹄模具三季报增收不增利，净利润下降2.63%</h3>
+
+<p>10月20日，瑞鹄模具发布三季报，2026年1-9月实现营收29.03亿元，同比增长11.48%，但归母净利润3.46亿元，同比下降2.63%。净利润下滑主要由于资产减值损失和财务费用大幅增加，其中应收账款坏账计提减值1886.98万元，存货减值1592.47万元，财务费用同比增加683.68%至1145.88万元。公司主营汽车制造装备和轻量化零部件业务，前者在手订单充足，但后者毛利率承压。公司正通过发行可转债募资加码汽车制造装备业务，并向机器人与智能制造演进。此前，券商普遍看好公司业绩确定性，但市场资金出现分歧，牛散林仁平持续减持。（来源：钛媒体）</p>
+
+<figure><img src="img/48c06cfb1e4138.png" alt="（图：钛媒体）" loading="lazy"><figcaption>（图：钛媒体）</figcaption></figure>
+
+<h3>首都在线前三季度净利润扭亏为盈，增长108.85%</h3>
+
+<p>10月21日，首都在线披露2026年三季报，前三季度实现营业收入9.56亿元，同比增长3.14%；归母净利润879.62万元，同比增长108.85%，实现扭亏为盈。净利润增长主要得益于设备处置收益5542.60万元和政府补助1719.45万元。公司云业务收入增长较快，智算云收入同比增长107.76%，但IDC业务收入同比下降24.50%。尽管毛利率提升至20.35%，但扣非净利润仍亏损5618.03万元。公司资产负债率攀升至68.31%，并面临未付收购款带来的资金压力。（来源：钛媒体）</p>
+
+<figure><img src="img/48c06cfb1e4138.png" alt="（图：钛媒体）" loading="lazy"><figcaption>（图：钛媒体）</figcaption></figure>
+
+<h3>奇瑞高层人事调整，张国忠升任集团常务副总裁</h3>
+
+<p>9月23日，奇瑞发布高层人事调整公告，张国忠卸任奇瑞汽车股份有限公司常务副总裁，履新奇瑞控股集团常务副总裁。张贵兵接任股份公司常务副总裁，负责整车经营目标，张国忠则转向集团维度，统筹产业链布局、前沿产业孵化及重大战略合作。此次调整旨在推进全球化3.0战略，明确上市平台与控股集团的职责划分，避免长期战略投入扰动上市公司短期业绩。此前，张国忠负责整车品牌运营及智界等合作项目，调整后两套班子独立运作，分别负责当下市场与中长期战略。（来源：网上车市）</p>
+
+<h3>奇瑞宣布解决能源粮食问题，2027年投产固态电池</h3>
+
+<p>10月20日，在2026奇瑞创新大会上，奇瑞宣布未来不仅解决出行问题，还要解决能源和粮食问题。大会公布了犀牛S固态电池进展，能量密度达400Wh/kg，中试线计划2027年投产；同时发布全球首台商业化E-Fuel发电产品，将富余绿电转化为绿氨存储，并启动与国家电网合作的首个车网互动规模化运营场站。此外，奇瑞展示了纯电智能农机，支持无人驾驶，一次充电可连续工作3至8小时。此前，奇瑞已在阜阳落地新能源智能化农机项目，并战略投资农业机器人企业中科原动力。这一系列举措表明，奇瑞正从传统汽车制造商向综合解决方案提供商转型，以应对能源和粮食安全挑战。（来源：网上车市）</p>
+
+<h2>六、出海与国际</h2>
+
+<h3>法雷奥巴黎车展展示技术创新，开发周期缩短至24个月</h3>
+
+<p>在2026巴黎国际车展上，法雷奥展示了高度集成的电驱与热管理系统、全景抬头显示、扩展现实赛车以及基于高通8775芯片的跨域融合方案。法雷奥中国CTO顾剑民博士表示，整车开发周期已从过去的48个月缩短至24个月，借助AI、虚拟验证和平台化开发，部分车灯项目的开发周期也大幅压缩。这一变化与当前中国车企加快全球化布局的背景密切相关，法雷奥表示将依托全球研发、制造及法规认证体系，支持中国车企从产品出口走向本地研发、本地生产。这意味着法雷奥正在适应中国汽车产业带来的新节奏，以更高效的技术支持应对全球市场需求。（来源：盖世汽车）</p>
+
+<h2>数据速览</h2>
+
+<table><thead><tr><th>指标</th><th>数值</th><th>口径/区间</th><th>来源</th></tr></thead><tbody>
+<tr><td>销量</td><td>43,181辆</td><td>9月方程豹全系交付</td><td>网上车市</td></tr>
+<tr><td>销量</td><td>60万辆</td><td>方程豹累计销量</td><td>网上车市</td></tr>
+<tr><td>销量</td><td>104%</td><td>9月中国汽车在欧洲销量增长</td><td>盖世汽车</td></tr>
+<tr><td>电池容量</td><td>77-kWh</td><td>CATL双电池系统</td><td>CnEVPost</td></tr>
+<tr><td>召回数量</td><td>72,700台</td><td>大众全球召回电动汽车</td><td>汽车之家</td></tr>
+<tr><td>价格</td><td>13.99万元起</td><td>北汽星钽5X预售</td><td>太平洋汽车</td></tr>
+<tr><td>价格</td><td>16.98万元起</td><td>小鹏MONA L05预售</td><td>电动邦</td></tr>
+<tr><td>价格</td><td>27.58万元起</td><td>魏牌高山8 HEV预售</td><td>太平洋汽车</td></tr>
+<tr><td>价格</td><td>199,900元起</td><td>VW Anhui ID. UNYX 09预售</td><td>CnEVPost</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>原文来源</h2>
+
+<p class="standfirst">本页每条报道的图片均来自该条新闻原文页面；原文没有合格图片的条目不配图。</p>
+
+<p>1. [网上车市] 方程豹2个月新增10万！销量超小米、蔚来、华为 — http://news.cheshi.com/dujia/20261021/3426091.shtml</p>
+<p>2. [CarNewsChina] BYD Denza N8 EV spied in China with 1,193 hp tri-motor AWD ahead of Q4 launch — https://carnewschina.com/2026/10/21/byd-denza-n8-ev-spied-in-china-with-1193-hp-tri-motor-awd-ahead-of-q4-launch/</p>
+<p>3. [新浪汽车·新车] 华为乾崑上车 星钽5X预售13.99万起 — https://auto.sina.com.cn/newcar/2026-10-21/detail-inivzcqf6117259.shtml?oaid=00001&amp;c=spr_auto_trackid_f8944f41f240e3fc</p>
+<p>4. [电动邦] 小鹏MONA L05预售16.98万元起，瞄准年轻人首台智能时尚大五座SUV — https://www.diandongbang.com/news/167910.html</p>
+<p>5. [网上车市] 北京越野：星钽5X首发亮相！泰钽700开启交付！ — http://news.cheshi.com/dujia/20260904/3425749.shtml</p>
+<p>6. [太平洋汽车] 魏牌高山8 HEV将于10月26日上市 预售27.58万起 — http://www.pcauto.com.cn/nation/5189/51892360.html?ad=28676</p>
+<p>7. [太平洋汽车] 2027款领克03官图 原厂宽体+原厂大尾翼 战斗感爆棚 — http://www.pcauto.com.cn/nation/5189/51892386.html?ad=28676</p>
+<p>8. [汽车之家] 冲理想L9而来？ 代号D11 疑似零跑全新大型SUV最新谍照曝光！ — https://www.autohome.com.cn/news/202610/1317899.html#pvareaid=102624</p>
+<p>9. [汽车之家] 尺寸加长 外观依旧硬核 领克900L官图 搭载2.0T插混系统 — https://www.autohome.com.cn/news/202610/1317892.html#pvareaid=102624</p>
+<p>10. [太平洋汽车] 北汽星钽5X开启预售 13.99万元起/配华为乾崑ADS 5 Pro — http://www.pcauto.com.cn/nation/5189/51892488.html?ad=28676</p>
+<p>11. [汽车之家] 搭猎鹰智驾方案 捷途山海L7 PLUS新版本车型将于10月24日上市 — https://www.autohome.com.cn/news/202610/1317909.html#pvareaid=102624</p>
+<p>12. [网上车市] 捷途旅行者7上市12.59万起：车身更大、更智能！ — http://news.cheshi.com/dujia/20261012/3426025.shtml</p>
+<p>13. [网上车市] 比亚迪“大海鸥”10月20上市：后置后驱+动力提升 — http://news.cheshi.com/dujia/20261013/3426037.shtml</p>
+<p>14. [盖世汽车] 【国际】9月中国汽车在欧洲销量大增104% — https://auto.gasgoo.com/news/202610/21I70475463C108.shtml</p>
+<p>15. [盖世汽车] 大众在华智能化进入“交付模式” — https://auto.gasgoo.com/news/202610/21I70475496C109.shtml</p>
+<p>16. [盖世汽车] 尹同跃：拒绝价格战，切忌出海变填海 — https://auto.gasgoo.com/news/202610/21I70475509C109.shtml</p>
+<p>17. [CnEVPost] VW Anhui to launch ID. UNYX 09 on October 24 as second model developed with Xpeng — https://cnevpost.com/2026/10/21/vw-anhui-launch-id-unyx-09-oct-24/</p>
+<p>18. [盖世汽车] 吉利星愿第100万辆下线 — https://auto.gasgoo.com/news/202610/20I70475368C110.shtml</p>
+<p>19. [Motor1] Toyota Wants To Convince The EU That Some Hybrids Are Zero Emissions — https://www.motor1.com/news/812756/toyota-veef-plan-seeks-zero/</p>
+<p>20. [Electrive] CREED project: how EVs can become power grid assets — https://www.electrive.com/2026/10/21/creed-project-how-evs-can-become-power-grid-assets/</p>
+<p>21. [盖世汽车] 奔驰CEO：产业保护需平衡成本 — https://auto.gasgoo.com/news/202610/21I70475497C109.shtml</p>
+<p>22. [CnEVPost] GAC-Huawei brand Aistaland said to be planning battery swap models under CATL tie-up — https://cnevpost.com/2026/10/21/aistaland-planning-battery-swap-models-catl-tie-up/</p>
+<p>23. [汽车之家] 全系标配宁德时代电池 智己LS8 NEO纯电版将于10月29日预售 — https://www.autohome.com.cn/news/202610/1317896.html#pvareaid=102624</p>
+<p>24. [钛媒体] DeepSeek推理框架对等支持华为、英伟达芯片，意味着什么？ — https://www.tmtpost.com/8175996.html</p>
+<p>25. [新浪汽车] 华为靳玉志：自动驾驶对安全的要求更高 — https://auto.sina.com.cn/news/2026-10-21/detail-inivysym6162065.shtml</p>
+<p>26. [CnEVPost] CATL unveils dual-battery system to accelerate heavy-duty truck electrification — https://cnevpost.com/2026/10/20/catl-dual-battery-system-heavy-truck-electrification/</p>
+<p>27. [汽车之家] 动力电池电芯存在质量缺陷！大众全球召回近72700台电动汽车！ — https://www.autohome.com.cn/news/202610/1317905.html#pvareaid=102624</p>
+<p>28. [电动邦] 蔚来李斌出席2026世界智能网联汽车大会：智能驾驶核心是能否真正为用户创造价值 — https://www.diandongbang.com/news/167909.html</p>
+<p>29. [CnEVPost] Li Auto launches Lianshan in-house EV tech system, backs self-developed batteries with lifetime safety pledges — https://cnevpost.com/2026/10/20/li-auto-launches-lianshan-in-house-ev-tech-system/</p>
+<p>30. [太平洋汽车·新闻] 华为靳玉志：引望坚持做供应商，不与车企竞争 — https://www.pcauto.com.cn/news/5189/51892489.html</p>
+<p>31. [汽车之家] 2028年或为L4规模化落地重要拐点 Momenta累计量产交付超130万台 — https://www.autohome.com.cn/news/202610/1317888.html#pvareaid=102624</p>
+<p>32. [盖世汽车] ​宁德时代2027年增长靠什么？ — https://auto.gasgoo.com/news/202610/21I70475468C501.shtml</p>
+<p>33. [盖世汽车] 奔驰英伟达深化合作 — https://auto.gasgoo.com/news/202610/21I70475462C601.shtml</p>
+<p>34. [钛媒体] 昔日4倍妖股三季报又大亏，QFII和北上资金逆市加仓｜看财报 — https://www.tmtpost.com/8176769.html</p>
+<p>35. [钛媒体] 瑞鹄模具三季报增收不增利，牛散林仁平持续减仓｜看财报 — https://www.tmtpost.com/8175247.html</p>
+<p>36. [钛媒体] 首都在线：账面扭亏，AI算力持续投入｜看财报 — https://www.tmtpost.com/8176619.html</p>
+<p>37. [网上车市] 奇瑞：张国忠上调集团 — https://news.cheshi.com/dujia/20260923/3425899.shtml</p>
+<p>38. [网上车市] 奇瑞：除了出行自由，还要解决，能源、粮食自由！ — http://news.cheshi.com/dujia/20261020/3426086.shtml</p>
+<p>39. [盖世汽车] 巴黎车展｜法雷奥：提速不减质，出海不止出口 — https://auto.gasgoo.com/news/202610/16I70475137C1203.shtml#nav</p>
+<p>40. [Electrive] Tesla drops out of top 10 ‘most innovative’ EV manufacturers; Mercedes gains ground — https://www.electrive.com/2026/10/21/tesla-drops-out-of-top-10-most-innovative-ev-manufacturers-mercedes-gains-ground/</p>
+<p>41. [Electrek] Volkswagen recalls nearly 73,000 EVs due to faulty batteries — https://electrek.co/2026/10/21/volkswagen-recalls-nearly-73000-evs-faulty-batteries/</p>
+<p>42. [TechCrunch·交通] Tesla starts Optimus robot production in California as profit falls 43% — https://techcrunch.com/2026/10/21/tesla-stars-optimus-robot-production-in-california-as-profit-falls-43/</p>
+<p>43. [太平洋汽车] 华为引望加入巧克力换电生态 首款奕境换电车型2027落地 — http://www.pcauto.com.cn/news/5189/51892313.html?ad=28676</p>
+<p>44. [Electrek] Lucid’s 25,000 Bolt robotaxis will run on Nvidia’s self-driving software — https://electrek.co/2026/10/21/lucid-bolt-robotaxi-nvidia-alpamayo-madrid-2027/</p>
+<p>45. [InsideEVs] GM&#x27;s Next-Generation EV Platform Has 30% Less Wiring And 20% Less Battery — https://insideevs.com/news/812810/gm-fourth-generation-ev-platform-lmr-battery/</p>
+<p>46. [Motor1] Rivian’s US EV Sales Surge From 10th To 2nd As R2 Arrives — https://www.motor1.com/news/812736/rivian-climbs-second-place-us/</p>
+<p>47. [太平洋汽车] 通用汽车Q3调整后息税前利润41亿美元 中国市场连续八季度盈利 — http://www.pcauto.com.cn/news/5189/51892405.html?ad=28676</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
