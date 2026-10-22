@@ -122,7 +122,7 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
 .art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
   font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
   margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
-.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
 .art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
   font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
 .art-body h3+p{margin-top:0}
@@ -144,6 +144,45 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
   background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
   cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
 .art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
 .art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
   border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
   font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
@@ -177,9 +216,6 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
   .art-body p,.art-body li{margin-bottom:13px}
   .art-standfirst{padding-bottom:12px;margin-bottom:16px}
   .art-body h2{margin-top:32px;padding-top:16px}
-  /* Six summary bullets filled the whole 844px viewport before any body copy; the
-     phone shows the top four, desktop keeps all six. */
-  .art-body > ul:first-of-type > li:nth-child(n+5){display:none}
 }
 </style>
 </head><body>
@@ -196,7 +232,7 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
   <article class="art-body">
 
 <h2>今日速览（30 秒版）</h2>
-<ul><li>2027款长安启源Q05上市 限时补贴价7.99万元起</li><li>魏牌高山8HEV预售27.58万元起 车长5280mm</li><li>ID. ERA 8X上市 限时权益价20.68万—26.98万元</li><li>蔚来firefly新车型10月23日上市 续航560km</li><li>奇瑞艾瑞泽7申报图曝光 燃油版高1491mm</li><li>27款纵横G700限时售30.49万起 搭华为智驾ADS 5</li></ul>
+<ul><li>2027款长安启源Q05上市 限时补贴价7.99万元起</li><li>魏牌高山8HEV预售27.58万元起 车长5280mm</li><li>ID. ERA 8X上市 限时权益价20.68万—26.98万元</li><li>蔚来firefly新车型10月23日上市 续航560km</li><li>奇瑞艾瑞泽7申报图曝光 燃油版高1491mm</li><li>27款纵横G700限时售30.49万起 搭华为智驾ADS 5</li><li>比亚迪大汉EV上市 售价23.59万元起</li></ul>
 
 <h2>今日头条</h2>
 <p>2026年9月29日，中国第一汽车集团有限公司（中国一汽）与广州汽车工业集团有限公司（广汽工业）正式签署战略合作框架协议。此次合作标志着双方在品牌建设、整车制造、市场布局、国际化经营、关键技术自主创新等方面将展开深度协同，旨在推动汽车产业高质量发展。此次合作是汽车行业贯彻落实《智能网联新能源汽车产业发展‘十五五’规划》部署的重要实践，也是央地国企深化战略合作、优化产业结构的典型案例。此前，中国一汽已与零跑汽车、北汽集团与中国长安汽车集团等企业展开资源共享，此次与广汽工业的合作是这一趋势的延续。当前，汽车行业正进入竞争深化、结构优化的关键期，提升产业集中度、培育全球竞争力企业成为行业共识。此次合作意味着中国一汽与广汽工业将依托资产资本联动，以科技创新为驱动力，推动产业资源跨区域高效协同，实现经营提质增效，共促中国汽车产业发展升级。</p>

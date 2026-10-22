@@ -122,7 +122,7 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
 .art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
   font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
   margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
-.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
 .art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
   font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
 .art-body h3+p{margin-top:0}
@@ -144,6 +144,45 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
   background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
   cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
 .art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
 .art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
   border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
   font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
@@ -177,9 +216,6 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
   .art-body p,.art-body li{margin-bottom:13px}
   .art-standfirst{padding-bottom:12px;margin-bottom:16px}
   .art-body h2{margin-top:32px;padding-top:16px}
-  /* Six summary bullets filled the whole 844px viewport before any body copy; the
-     phone shows the top four, desktop keeps all six. */
-  .art-body > ul:first-of-type > li:nth-child(n+5){display:none}
 }
 </style>
 </head><body>
@@ -195,52 +231,45 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
   <p class="art-standfirst"></p>
   <article class="art-body">
 
-<p class="standfirst">星期四 ｜ 今日 10 条：会议与汇报 2 · 邮件与沟通 2 · 谈判与采购 2 · 供应链与仓储 2 · 财务与指标 1 · 交付与项目 1 ｜ 全部选自工作场景，例句可直接替换主语使用</p>
+<p class="standfirst">2026 年 10 月 22 日 · 星期四 ｜ 1 条精讲 · 8 条场景表达 · 4 组中式纠正 · 5 道自测</p>
 
-<h2>一、会议与汇报</h2>
+<h2>今日精讲</h2>
 
-<table><thead><tr><th>英文</th><th>中文</th><th>例句</th></tr></thead><tbody>
-<tr><td>follow up on</td><td>跟进</td><td>I&#x27;ll follow up on the open purchase order tomorrow.（那张未结采购单我明天跟进。）</td></tr>
-<tr><td>bottom line</td><td>结论／底线</td><td>The bottom line is we need two more weeks.（结论是我们还需要两周。）</td></tr>
-</tbody></table>
+<h3>guidance　业绩指引</h3>
 
-<h2>二、邮件与沟通</h2>
+<p>语域：正式 · 财务</p>
 
-<table><thead><tr><th>英文</th><th>中文</th><th>例句</th></tr></thead><tbody>
-<tr><td>at your earliest convenience</td><td>方便时尽快</td><td>Could you review the contract at your earliest convenience?（方便时请尽快看下合同。）</td></tr>
-<tr><td>just a quick reminder</td><td>提醒一下</td><td>Just a quick reminder that the cutoff is Friday.（提醒一下，截止时间是周五。）</td></tr>
-</tbody></table>
+<p><strong>为什么值得细看</strong></p>
 
-<h2>三、谈判与采购</h2>
+<p>公司对下一期间业绩的公开预期。读财报新闻时，raise／cut／maintain guidance 比单季数字更能说明管理层看到了什么。</p>
 
-<table><thead><tr><th>英文</th><th>中文</th><th>例句</th></tr></thead><tbody>
-<tr><td>open-book costing</td><td>成本透明核算</td><td>The supplier agreed to open-book costing.（供应商同意做成本透明核算。）</td></tr>
-<tr><td>penalty clause</td><td>违约罚则</td><td>Add a penalty clause for late delivery.（加上延迟交付的罚则。）</td></tr>
-</tbody></table>
+<p><strong>容易用错</strong></p>
 
-<h2>四、供应链与仓储</h2>
+<p>不要用 forecast 代替 guidance：forecast 可以是任何人的预测，guidance 特指公司自己给出的。</p>
 
-<table><thead><tr><th>英文</th><th>中文</th><th>例句</th></tr></thead><tbody>
-<tr><td>cross-docking</td><td>越库作业</td><td>Cross-docking cut our dwell time in half.（越库把停留时间砍了一半。）</td></tr>
-<tr><td>dwell time</td><td>停留时间</td><td>Reduce dwell time at the inbound dock.（降低收货月台的停留时间。）</td></tr>
-</tbody></table>
+<p><strong>常用搭配</strong></p>
 
-<h2>五、财务与指标</h2>
+<ul><li><code>cut guidance</code></li><li><code>raise full-year guidance</code></li><li><code>in line with guidance</code></li><li><code>withdraw guidance</code></li></ul>
 
-<table><thead><tr><th>英文</th><th>中文</th><th>例句</th></tr></thead><tbody>
-<tr><td>year over year</td><td>同比</td><td>Deliveries were up 18% year over year.（交付量同比增长 18%。）</td></tr>
-</tbody></table>
+<p><strong>三个例句</strong></p>
 
-<h2>六、交付与项目</h2>
+<ul><li>The company cut its full-year guidance on softer EV demand.　—　因电动车需求走弱，公司下调了全年指引。</li><li>Results came in at the top end of guidance.　—　业绩落在指引区间的上沿。</li><li>Management withdrew guidance citing tariff uncertainty.　—　管理层以关税不确定为由撤回了指引。</li></ul>
 
-<table><thead><tr><th>英文</th><th>中文</th><th>例句</th></tr></thead><tbody>
-<tr><td>expedite</td><td>加急</td><td>We had to expedite the air freight.（我们只能加急空运。）</td></tr>
-</tbody></table>
+<h2>场景表达</h2>
 
+<div class="biz-cards"><div class="biz-card"><div class="bc-head"><b>follow up on</b><span class="bc-reg">中性</span></div><div class="bc-zh">跟进</div><div class="bc-eg">I&#x27;ll follow up on the open purchase order tomorrow.<i>那张未结采购单我明天跟进。</i></div><div class="bc-alt">≈ chase</div></div><div class="biz-card"><div class="bc-head"><b>at your earliest convenience</b><span class="bc-reg">正式</span></div><div class="bc-zh">方便时尽快</div><div class="bc-eg">Could you review the contract at your earliest convenience?<i>方便时请尽快看下合同。</i></div><div class="bc-alt">≈ when you get a chance</div></div><div class="biz-card"><div class="bc-head"><b>open-book costing</b><span class="bc-reg">正式</span></div><div class="bc-zh">成本透明核算</div><div class="bc-eg">The supplier agreed to open-book costing.<i>供应商同意做成本透明核算。</i></div><div class="bc-alt">≈ cost transparency</div></div><div class="biz-card"><div class="bc-head"><b>cross-docking</b><span class="bc-reg">中性</span></div><div class="bc-zh">越库作业</div><div class="bc-eg">Cross-docking cut our dwell time in half.<i>越库把停留时间砍了一半。</i></div><div class="bc-alt">≈ flow-through</div></div><div class="biz-card"><div class="bc-head"><b>year over year</b><span class="bc-reg">正式</span></div><div class="bc-zh">同比</div><div class="bc-eg">Deliveries were up 18% year over year.<i>交付量同比增长 18%。</i></div><div class="bc-alt">≈ versus the same period last year</div></div><div class="biz-card"><div class="bc-head"><b>expedite</b><span class="bc-reg">中性</span></div><div class="bc-zh">加急</div><div class="bc-eg">We had to expedite the air freight.<i>我们只能加急空运。</i></div><div class="bc-alt">≈ rush</div></div><div class="biz-card"><div class="bc-head"><b>bottom line</b><span class="bc-reg">中性</span></div><div class="bc-zh">结论／底线</div><div class="bc-eg">The bottom line is we need two more weeks.<i>结论是我们还需要两周。</i></div><div class="bc-alt">≈ the key takeaway</div></div><div class="biz-card"><div class="bc-head"><b>just a quick reminder</b><span class="bc-reg">正式</span></div><div class="bc-zh">提醒一下</div><div class="bc-eg">Just a quick reminder that the cutoff is Friday.<i>提醒一下，截止时间是周五。</i></div><div class="bc-alt">≈ a short nudge</div></div></div>
 
-<h2>怎么用</h2>
+<h2>中式英语纠正</h2>
 
-<ul><li><strong>听说</strong>：把例句读三遍，第二遍换掉主语和后缀数字，第三遍不看中文复述。</li><li><strong>读写</strong>：当天收到的邮件或周报里，找一个能套用上面表达法的句子改写一次。</li><li><strong>闪卡</strong>：用文末的 CSV 下载直接导入 Anki（正面英文，背面中文 + 例句）。</li></ul>
+<div class="biz-fix"><div class="bf-row"><div class="bf-bad">Please tell me your opinion.</div><div class="bf-good">What&#x27;s your read on this?</div><div class="bf-note">read 作名词表示判断，会议里很常用。</div></div><div class="bf-row"><div class="bf-bad">We have no problem.</div><div class="bf-good">We&#x27;re good on our side.</div><div class="bf-note">no problem 像在回答感谢，表态用 We&#x27;re good。</div></div><div class="bf-row"><div class="bf-bad">This is a big problem.</div><div class="bf-good">This is the real blocker.</div><div class="bf-note">blocker 直接指出卡住了什么，比 problem 有信息量。</div></div><div class="bf-row"><div class="bf-bad">Our stock is not enough.</div><div class="bf-good">We&#x27;re running low on stock.</div><div class="bf-note">enough 说的是「足够」，库存紧张用 running low 更自然。</div></div></div>
+
+<h2>自测：把空格补回去</h2>
+
+<div class="biz-quiz"><details class="q"><summary><span class="qn">01</span>I&#x27;ll ______ the open purchase order tomorrow.</summary><div class="qa">follow up on（跟进）</div></details><details class="q"><summary><span class="qn">02</span>Could you review the contract ______?</summary><div class="qa">at your earliest convenience（方便时尽快）</div></details><details class="q"><summary><span class="qn">03</span>The supplier agreed to ______.</summary><div class="qa">open-book costing（成本透明核算）</div></details><details class="q"><summary><span class="qn">04</span>______ cut our dwell time in half.</summary><div class="qa">cross-docking（越库作业）</div></details><details class="q"><summary><span class="qn">05</span>Deliveries were up 18% ______.</summary><div class="qa">year over year（同比）</div></details></div>
+
+<h2>本周进度</h2>
+
+<ul><li>本周已生成 <strong>4</strong> 期，按每期 8 条计，累计接触 32 条表达。</li><li>语料库：68 条场景表达 · 20 组中式纠正 · 6 条精讲。</li><li>闪卡用文末的 CSV 下载导入 Anki。</li></ul>
 <h2>下载</h2><ul><li><a href="biz-en-2026-10-22-%E9%97%AA%E5%8D%A1.csv" download>Anki 闪卡 CSV（biz-en-2026-10-22-闪卡.csv）</a> —— 可直接导入 Anki，正反面为「英文原句 / 中文释义」</li></ul>
   </article>
   <footer class="art-foot">

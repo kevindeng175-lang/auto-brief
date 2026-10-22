@@ -122,7 +122,7 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
 .art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
   font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
   margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
-.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
 .art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
   font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
 .art-body h3+p{margin-top:0}
@@ -144,6 +144,45 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
   background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
   cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
 .art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
 .art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
   border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
   font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
@@ -177,9 +216,6 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
   .art-body p,.art-body li{margin-bottom:13px}
   .art-standfirst{padding-bottom:12px;margin-bottom:16px}
   .art-body h2{margin-top:32px;padding-top:16px}
-  /* Six summary bullets filled the whole 844px viewport before any body copy; the
-     phone shows the top four, desktop keeps all six. */
-  .art-body > ul:first-of-type > li:nth-child(n+5){display:none}
 }
 </style>
 </head><body>
@@ -196,7 +232,7 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
   <article class="art-body">
 
 <h2>今日速览（30 秒版）</h2>
-<ul><li>小鹏Mona L03在欧洲交付，法国首辆由CEO交付</li><li>比亚迪推出新款海鸥，起售价6.28万元</li><li>特斯拉2026年第三季度财报预计营收持平</li><li>全新比亚迪海鸥上市，指导价6.59-9.99万元</li><li>奇瑞发布紫微芯片，加速智能科技转型</li><li>雷克萨斯NX 2027款仅提供混动版本</li></ul>
+<ul><li>小鹏Mona L03在欧洲交付，法国首辆由CEO交付</li><li>比亚迪推出新款海鸥，起售价6.28万元</li><li>特斯拉2026年第三季度财报预计营收持平</li><li>全新比亚迪海鸥上市，指导价6.59-9.99万元</li><li>奇瑞发布紫微芯片，加速智能科技转型</li><li>雷克萨斯NX 2027款仅提供混动版本</li><li>L3/L4级自动驾驶试点获四部委联合批准</li></ul>
 
 <h2>今日头条</h2>
 <p>鸿蒙智行正式推出智界RX，官方售价区间为25.98万-38.98万元。该车型定位中大型纯电轿跑SUV，车身尺寸为5020mm×2007mm×1585mm，轴距3000mm，基于华为途灵平台与巨鲸800V高压平台打造。动力方面，提供单电机后驱与双电机四驱两种布局，四驱版系统综合功率达437kW，最高时速251km/h。电池方面，提供81kWh磷酸铁锂电池与100kWh三元锂电池两种选择，CLTC纯电续航从672km到852km不等，30%-80%快充补能约15分钟。底盘结构采用虚拟主销四球头全铝双叉臂前悬、后五连杆独立悬架，高配版本配备双腔空气悬架与双阀连续可变阻尼减振器，前轮搭载六活塞制动卡钳。该车底盘由前AMG董事会主席托比亚斯・莫尔斯参与调校，并在浙江国际赛车场跑出1分43秒210的圈速，刷新了中国品牌量产SUV的最快圈速纪录。智能驾驶配置方面，Ultra系列搭载4颗激光雷达，包括1颗896线双光路图像级激光雷达与3颗固态激光雷达，全车配备38个融合感知传感器，基于L3级自动驾驶冗余架构开发，已获批L3级自动驾驶道路测试牌照。余承东称智界RX为‘鸿蒙智行最好开的车’，并强调该车面向驾驶者调校。</p>

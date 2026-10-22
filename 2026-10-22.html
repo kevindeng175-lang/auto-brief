@@ -122,7 +122,7 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
 .art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
   font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
   margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
-.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
 .art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
   font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
 .art-body h3+p{margin-top:0}
@@ -144,6 +144,45 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
   background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
   cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
 .art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
 .art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
   border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
   font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
@@ -177,9 +216,6 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
   .art-body p,.art-body li{margin-bottom:13px}
   .art-standfirst{padding-bottom:12px;margin-bottom:16px}
   .art-body h2{margin-top:32px;padding-top:16px}
-  /* Six summary bullets filled the whole 844px viewport before any body copy; the
-     phone shows the top four, desktop keeps all six. */
-  .art-body > ul:first-of-type > li:nth-child(n+5){display:none}
 }
 </style>
 </head><body>
@@ -196,7 +232,7 @@ html,body{background:#f7f4ec !important;color:#17130c !important}
   <article class="art-body">
 
 <h2>今日速览（30 秒版）</h2>
-<ul><li>特斯拉退出全球十大创新电动车制造商，奔驰进入前十</li><li>大众召回近7.3万辆电动车，因电池故障限制充电至80%</li><li>特斯拉Optimus机器人量产，利润下降43%</li><li>华为引望加入巧克力换电生态，2027年推出首款奕境换电车型</li><li>Lucid将2.5万辆电动车投入Nvidia自动驾驶软件测试</li><li>通用新一代电动车平台减少30%线缆和20%电池</li></ul>
+<ul><li>特斯拉退出全球十大创新电动车制造商，奔驰进入前十</li><li>大众召回近7.3万辆电动车，因电池故障限制充电至80%</li><li>特斯拉Optimus机器人量产，利润下降43%</li><li>华为引望加入巧克力换电生态，2027年推出首款奕境换电车型</li><li>Lucid将2.5万辆电动车投入Nvidia自动驾驶软件测试</li><li>通用新一代电动车平台减少30%线缆和20%电池</li><li>Rivian美国电动车销量从第十跃升至第二</li><li>通用Q3调整后息税前利润41亿美元，中国连续八季度盈利</li></ul>
 
 <h2>今日头条</h2>
 <p>比亚迪旗下方程豹品牌在8月5日突破50万辆销量后，仅用2个月零4天便实现累计销量突破60万辆，新增10万辆的销量是品牌成立以来增长最快的阶段。9月方程豹全系交付43,181辆，同比增长79%，月销量连续3个月稳居新势力前三。同期，小米汽车交付超4万台，鸿蒙智行交付37,490辆，蔚来交付37,408辆，方程豹的月销量已超越这三个品牌。其中，钛7一款车型在9月交付32,144辆，占品牌当月总销量的74%。钛7上市一年多累计销量超25万辆，占方程豹60万辆总销量的40%以上。方程豹品牌累计成交均价为22.2万元，其中钛7均价20.9万元，豹5均价26.4万元，豹8均价39.7万元。在价格战背景下，方程豹没有选择低价换量策略，而是通过产品力和品牌价值实现增长。中国汽车流通协会9月保值率榜显示，钛7、豹8、豹5进入插混前15名，钛3进入纯电前10名。两个月新增10万辆销量，验证了方程豹以单一车型支撑品牌发展的路径，钛7凭借方盒子造型成功吸引20万元级合资燃油车置换人群。未来，方程豹还将推出钛9、鲨鱼皮卡等车型，进一步拓展产品线。</p>
