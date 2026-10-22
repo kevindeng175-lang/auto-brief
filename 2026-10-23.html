@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>奥迪中国CEO将由张俊接任，2026年11月1日正式上任</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.2;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 10 月 23 日 · 星期五 · 第 43 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">汽车日报</p>
+    <h1 class="art-title">奥迪中国CEO将由张俊接任，2026年11月1日正式上任</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">24 条报道 ｜ 13 张配图 ｜ 全部条目带来源标注，单源信息标注待证实</p>
+  <article class="art-body">
+
+<h2>今日速览（30 秒版）</h2>
+<ul><li>小鹏L03 Ultra版配置超竞品，价格具竞争力</li><li>特斯拉Optimus机器人预计2027年底交付，手部技术待完善</li><li>2027款福特Mustang Mach-E全系标配长续航电池</li><li>福特召回102159辆皮卡，涉及多款F系列车型</li><li>小鹏GX五个月交付突破3万台，Ultra版订单占比高</li><li>小鹏GX交付超3万台，中东订单近4000</li><li>赛力斯AIVA ME7实车亮相，或成小米YU7新对手</li></ul>
+
+<h2>今日头条</h2>
+<p>奥迪中国宣布人事任命，张俊将于2026年11月1日正式出任奥迪中国总裁，接替罗英瀚博士。罗英瀚博士的任期至2026年10月31日，本次轮换属于奥迪集团规划内的高管轮岗，不属于中途临时调整。张俊此前担任奇瑞国际副总经理、Chery品牌海外事业部总经理，主导奇瑞欧洲相关业务。他曾在Stellantis集团任职，担任阿尔法·罗密欧、DS汽车中国区总经理，并在2018至2020年期间在奥迪在华体系内担任多个领导职务，参与筹建上汽奥迪销售组织，也深度参与一汽奥迪多项战略项目。奥迪中国是奥迪股份公司全资子公司，统筹奥迪在华一汽、上汽两大合资体系、电动化项目以及本土业务决策。此前，该岗位历任负责人均为德籍高管。当前，国内豪华车市场竞争加剧，电动化转型压力突出，张俊的履新被视为奥迪进一步强化本土化决策、贴合中国市场变化的重要信号。</p>
+
+<figure><img src="img/d282e6d74a350f.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h2>一、新车与产品</h2>
+
+<h3>比亚迪腾势N8 SUV 10月26日开启预售</h3>
+
+<p>比亚迪腾势N8 SUV将于10月26日开启预售，并于11月正式上市。这款大型五座SUV将搭载快充技术，提升用户的充电体验。此前，腾势品牌已推出多款新能源车型，市场反响良好。此次N8的预售标志着腾势在新能源SUV领域的进一步布局，与同级别竞品相比，N8在续航和智能化方面具有明显优势。该车型的推出将进一步丰富腾势的产品矩阵，巩固其在新能源市场中的地位。（来源：CnEVPost）</p>
+
+<figure><img src="img/56ba991b468ff7.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>比亚迪腾势N8 EV 10月26日开启预订</h3>
+
+<p>比亚迪腾势N8 EV将于10月26日正式开启非绑定预订，并计划于11月正式上市并交付。这款全电动SUV的预订开启，标志着腾势品牌在新能源汽车市场上的进一步拓展。此前，腾势已推出多款电动车型，积累了良好的市场口碑。此次N8 EV的预订，不仅为消费者提供了更多选择，也表明腾势在新能源技术上的持续投入。该车型的推出将进一步提升腾势在新能源SUV市场的竞争力。（来源：CarNewsChina）</p>
+
+<h3>2027款坦克500 10月23日上市</h3>
+
+<p>2027款坦克500将于10月23日正式上市，该车型将搭载Coffee Pilot 4辅助驾驶系统，提升用户的驾驶安全性和便利性。此前，坦克品牌已推出多款SUV车型，市场表现强劲。此次2027款坦克500的上市，是坦克品牌在智能驾驶技术上的重要升级，与同级别竞品相比，该车型在智能化和安全性方面具有明显优势。该车型的推出将进一步巩固坦克品牌在SUV市场的地位，满足消费者对高端智能SUV的需求。（来源：易车）</p>
+
+<h3>捷达M6上市售价7.98万元起</h3>
+
+<p>10月22日，一汽-大众捷达M6正式上市，共推出465 Pro、555 Max、555 Ultra三款车型，官方指导价分别为7.98万元、8.98万元、9.98万元。该车基于自研捷思架构与纯电平台开发，搭载地平线征程6M芯片，采用纯视觉智驾方案，提供多项终身质保服务，包括三电系统、自动泊车系统等，价值共计11000元。捷达M6定位中型纯电轿车，车身尺寸为4806/1895/1500mm，轴距2820mm，风阻系数低至0.208Cd，续航提升约17公里。该车型是捷达品牌的首款新能源战略车型，标志着其在新能源领域的进一步布局。（来源：新浪汽车·新车）</p>
+
+<figure><img src="img/13afbd8039ddba.jpg" alt="（图：新浪汽车·新车）" loading="lazy"><figcaption>（图：新浪汽车·新车）</figcaption></figure>
+
+<h3>firefly萤火虫60kWh大电池车型上市续航560km</h3>
+
+<p>10月23日，firefly萤火虫60kWh大电池车型正式上市，续航里程达到560km。该车型作为firefly系列的升级版本，搭载更大容量电池，进一步提升了车辆的续航能力。此前，firefly系列已推出多款车型，但此次60kWh版本的推出，标志着其在新能源市场上的进一步拓展。该车型的上市，意味着消费者在选择新能源车型时，将有更长续航的选项，满足长途出行需求。（来源：易车）</p>
+
+<h3>2027款吉利博越10月23日上市实现百大升级</h3>
+
+<p>10月23日，2027款吉利博越正式上市，该车型在五大维度实现百大升级。作为吉利博越系列的最新版本，2027款在外观、内饰、智能配置、动力系统及安全性能等方面均有显著提升。此前，吉利博越系列已多次进行改款，但此次升级幅度较大，显示出吉利在SUV市场上的持续投入。该车型的上市，意味着吉利在市场竞争中进一步强化了自身的产品力，为消费者提供了更多选择。（来源：易车）</p>
+
+<h3>零跑C18谍照曝光 接近量产状态</h3>
+
+<p>日前，疑似零跑C18车型谍照在网络上曝光，新车已接近量产状态，更换了量产灯具，定位介于零跑C16和D19之间，是一款中大型SUV。外观上，新车采用贯穿式日行灯和分体式大灯，前脸简洁化设计，车头顶部配备激光雷达。车身侧面使用隐藏式门把手，车尾饱满厚实，采用贯穿式尾灯，预计后排空间表现良好。新车左侧为加油口，右侧为充电口，将是一款增程车型。内饰方面，前排设计与现款C16基本一致。预计新车将搭载1.5L增程器，匹配单电机，系统最大功率200千瓦，最大扭矩360牛·米，CLTC纯电续航280km。零跑C18的推出将进一步丰富零跑在SUV市场的布局，与同级别竞品形成竞争。（来源：汽车之家）</p>
+
+<figure><img src="img/173e5398ca936e.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>深蓝L06售价11.49万起 追风版15.19万起</h3>
+
+<p>10月9日，深蓝汽车正式推出2027款深蓝L06及L06追风版，其中2027款限时权益价11.49万至14.69万元，追风版限时15.19万至16.19万元。新车全系纯电驱动，搭载后置200千瓦电机，CLTC续航最高670公里。2027款Ultra、Ultra+及追风版升级磁流变悬架，每秒可进行1000次阻尼调节，响应速度为常规CDC悬架的20倍。除入门MAX版外，新款L06标配1颗激光雷达与3颗毫米波雷达，两颗地平线J6M芯片总算力256 TOPS，支持城区及高速领航辅助、自动泊车，并新增城市自主漫游功能。追风版加装专属空气动力学套件，零百加速5.9秒。深蓝L06的推出将进一步强化深蓝在纯电SUV市场的竞争力，与同级别车型形成差异化优势。（来源：网上车市）</p>
+
+<h2>二、销量与市场</h2>
+
+<h3>特斯拉Q3营收280.5亿美元 净利润下滑43%</h3>
+
+<p>当地时间10月21日，特斯拉发布2026年第三季度财报，总营收280.5亿美元，同比基本持平；GAAP净利润7.87亿美元，同比下滑43%；全球交付48.65万辆，同比减少2%。同期毛利率回升至19.6%，自由现金流转正至15.3亿美元，期末现金及短期投资达454.5亿美元。财报显示，北美新车FSD开通率超75%，活跃订阅量达174万，同比增长67%；赛博无人驾驶电动车在奥斯汀投入Robotaxi运营，累计无人监督行驶里程近322万公里；人形机器人Optimus已在弗里蒙特工厂量产线投产。特斯拉将全年资本开支指引由约250亿美元下调至约200亿美元，资源向自动驾驶、机器人与储能倾斜。特斯拉Q3财报的发布反映了其在新能源汽车和自动驾驶领域的持续投入与布局。（来源：盖世汽车）</p>
+
+<h3>特斯拉：中国销量创新高 目标2030年产量500万辆</h3>
+
+<p>网新社研究所： 特斯拉于美东时间21日（周三）盘后公布了2026年3季度财报，截止26年9月30日，特斯拉营收280.5亿美元，同比基本持平，略低于华尔街分析师预期的281.3亿美元，GAAP净利润（国际会计准则）7.87亿美元，同比下滑43%。 剔除了非经常项目（股权激励，投资收益变动等），更能反应特斯拉实际经营状况的Non-GAAP净利润（经调整净利润）为16.97亿美元，同比下滑4%，超出了市场预期大约9%，同时特斯拉三季度的毛利率也提升至19.6%，自由现金流由负转正为15.3亿美元，显示了特斯拉的现金流情（来源：网上车市）</p>
+
+<figure><img src="img/ca2bc1cbab108d.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h3>BEV registrations rose sharply across Europe in September</h3>
+
+<p>Registrations of electric cars in the EU rose sharply in September. According to ACEA, 290,117 pure electric cars were newly registered - 72.9 per cent more than in the same month last year. This put their market share at 29.9 per cent in September. Since the （来源：Electrive）</p>
+
+<figure><img src="img/2b9bd06f74104e.webp" alt="（图：Electrive）" loading="lazy"><figcaption>（图：Electrive）</figcaption></figure>
+
+<h3>Rivian Was The Second Best-Selling EV Brand In Q3 2026, But Still Far Behind Tesla</h3>
+
+<p>Move over Chevy, there&#x27;s a new second-place in town.（来源：InsideEVs）</p>
+
+<figure><img src="img/c071069b969097.jpg" alt="（图：InsideEVs）" loading="lazy"><figcaption>（图：InsideEVs）</figcaption></figure>
+
+<h3>欧洲发现中国二手电动车价格低于市场价40%</h3>
+
+<p>欧洲消费者发现中国出口的二手电动车价格仅为市场售价的60%，这一发现由CEVM报告指出。中国二手车近年来逐渐进入欧洲市场，吸引了越来越多的欧洲买家。这些车辆价格显著低于新车市场价，为欧洲消费者提供了更具性价比的选择。此前，中国电动车市场主要以新车出口为主，而如今二手车出口的兴起，表明中国电动车产业的成熟度和市场渗透力正在提升。这一趋势可能对欧洲本土电动车市场形成一定冲击，同时推动中国电动车品牌在海外的进一步扩张。（来源：CarNewsChina）</p>
+
+<h2>四、供应链与智驾</h2>
+
+<h3>宁德时代与华为合作扩展换电网络</h3>
+
+<p>宁德时代与华为宣布合作，共同扩展电池换电网络。此次合作旨在提升电池换电服务的覆盖范围和效率，为电动车用户提供更便捷的补能体验。宁德时代作为全球领先的动力电池制造商，与华为在智能技术领域的合作，将进一步推动电动车行业的基础设施建设。此前，宁德时代已在多个城市布局换电网络，而此次与华为的合作或将加速这一进程。此举意味着宁德时代在换电模式上的布局正在向更广泛的市场扩展，同时为电动车行业提供更完善的解决方案。（来源：CarNewsChina）</p>
+
+<h3>均胜电子固液混合电池接近量产</h3>
+
+<p>均胜电子旗下均恩新能源研发的固液混合电池已达到量产标准，并正依托均胜电子全球渠道加速出海。该电池采用硫化物固态电解质路线，能量密度覆盖300至600Wh/kg，循环寿命超过2000次，30分钟可充至80%。均胜电子还为其搭载了车规级BMS，电量估算精度达1%至3%。此前，均胜电子在机器人赛道已布局灵巧手、智能体控制器等核心部件，形成完整产品矩阵。此次固液混合电池的量产，标志着均胜电子在新能源领域的技术实力进一步增强，为未来在电动车及具身智能设备市场的发展奠定了基础。（来源：盖世汽车）</p>
+
+<h3>特斯拉承认需自研地图以完善FSD系统</h3>
+
+<p>特斯拉在2026年第三季度财报电话会议上表示，公司正在研发自己的地图，以解决其‘全自动驾驶’系统中常见的问题，如识别限速、停车和路线选择等。这一转变标志着特斯拉从此前CEO长期反对依赖地图的自动驾驶系统的立场发生了重大变化。此前，特斯拉曾认为依赖地图的自动驾驶系统存在脆弱性。此次自研地图的举措，表明特斯拉正试图通过更精确的地图数据来提升FSD系统的性能和可靠性。（来源：Electrek）</p>
+
+<figure><img src="img/85bb3cce3cfc5e.webp" alt="（图：Electrek）" loading="lazy"><figcaption>（图：Electrek）</figcaption></figure>
+
+<h3>深蓝SL03获首批L3级自动驾驶专用号牌</h3>
+
+<p>2026年10月22日，深蓝汽车旗下中型轿车深蓝SL03获得首批L3级自动驾驶专用号牌。该车型售价区间为12.99-14.69万元，目前其L3级自动驾驶功能仅限在重庆市内环快速路、新内环快速路及渝都大道等特定路段开启，最高车速为50km/h。深蓝SL03搭载增程和纯电两种动力系统，其中增程版综合续航可达1140公里，纯电版CLTC续航里程为530公里。此次获得L3级自动驾驶专用号牌，标志着深蓝SL03在自动驾驶技术上取得了重要进展，也为中国L3级自动驾驶技术的落地提供了实际案例。（来源：汽车之家）</p>
+
+<figure><img src="img/0ebaff923bf2d6.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h2>五、公司与人事</h2>
+
+<h3>张俊将出任奥迪中国首位中方总裁</h3>
+
+<p>2026年11月1日，张俊将正式出任奥迪中国总裁，成为该职位设立以来首位中国籍管理者。张俊此前曾担任奇瑞国际副总裁兼奇瑞品牌首席执行官，并在奥迪中国担任过高级管理职务，拥有超过20年的国际管理经验。此次任命表明奥迪中国对张俊在高端市场和中国汽车行业的深厚经验给予高度认可。张俊的上任，或将推动奥迪中国在本土化战略和市场竞争中取得新的突破。（来源：新浪汽车）</p>
+
+<figure><img src="img/0918908180dd9e.png" alt="（图：新浪汽车）" loading="lazy"><figcaption>（图：新浪汽车）</figcaption></figure>
+
+<h3>阿维塔副总裁孙百功离职，将投身AI与出海领域</h3>
+
+<p>10月22日，光子星球独家获悉，阿维塔负责产品操盘和营销的副总裁孙百功即将离职。孙百功拥有超20年科技和汽车行业经验，加入阿维塔之前，曾担任华为荣耀中东非洲总裁、理想汽车销服副总裁。孙百功是2025年阿维塔战略2.0实施后引入的重磅高管，任职期间主导了阿维塔与华为在市场体系、品牌营销、生命周期操盘等领域的深度合作，并推动了多款高端车型的上市。孙百功在华为体系工作了近20年，是华为成为世界级领先企业的亲历者与深度参与者。据知情人士透露，孙百功因个人职业规划主动转身，下一步或将聚焦AI与出海两大方向，正式投身创业。（来源：钛媒体）</p>
+
+<figure><img src="img/48c06cfb1e4138.png" alt="（图：钛媒体）" loading="lazy"><figcaption>（图：钛媒体）</figcaption></figure>
+
+<h3>奥迪中国迎来首位中国籍总裁</h3>
+
+<p>10月22日，奥迪股份公司官网发布公告，自2026年11月1日起，张俊（Jeff Zhang）出任奥迪中国总裁，成为奥迪在华业务开展以来首位中国籍最高负责人。张俊拥有超过20年国际汽车行业管理经验，加入奥迪前曾担任奇瑞国际副总裁兼奇瑞品牌首席执行官，并在Stellantis集团出任阿尔法・罗密欧与DS汽车中国区董事总经理。奥迪CEO高德诺表示，此举旨在将国际经验与对中国市场的深刻理解相结合，更快响应客户需求。行业数据显示，2026年上半年奥迪品牌在华交付量约23.2万辆，较去年同期的28.8万辆有所下滑。（来源：盖世汽车）</p>
+
+<h2>六、出海与国际</h2>
+
+<h3>中国智驾出海需建多云应对本地化规则</h3>
+
+<p>在巴黎车展上，中国品牌展示了其在智驾技术上的实力，但智驾模型在欧洲的适配面临挑战。中国品牌的智驾模型在国内训练成熟，但欧洲各国的交通规则、环岛使用、骑行者路权等差异较大，导致模型无法直接平移。小鹏在欧洲建立数据中心，用于本地数据存储和模型训练，但其本地算力规模未披露。特斯拉在中国也采用类似的分层逻辑，上海临港AI训练中心负责中国路况适配和本土化调优。车企在欧洲建立区域训练中心，以应对数据监管和交通语义差异，但本地算力仍是关键。（来源：新浪汽车·新车）</p>
+
+<figure><img src="img/a8a805f5382c51.jpg" alt="（图：新浪汽车·新车）" loading="lazy"><figcaption>（图：新浪汽车·新车）</figcaption></figure>
+
+<h3>奇瑞考虑与美企合作，明年推新品牌</h3>
+
+<p>奇瑞汽车表示，正考虑与美国汽车制造商开展合作，并计划于明年早些时候在加拿大推出新品牌。此举旨在扩大其在北美市场的布局，以应对欧洲及其他地区市场快速增长的趋势。此前，奇瑞已在南非确定本地生产车型，计划从2027年第三季度开始生产Omoda C4等车型。这一动向表明，奇瑞正在积极拓展全球市场，同时寻求与国际车企合作以增强竞争力。奇瑞对与美国车企合作持开放态度，显示出其在国际化战略上的灵活性和前瞻性。（来源：盖世汽车）</p>
+
+<h3>奇瑞发布垂类大模型CheryMind</h3>
+
+<p>10月20日，奇瑞在全球创新大会上发布了名为CheryMind的垂类基础大模型，该模型将作为瑶光2035战略的核心技术底座，用于汽车研发、制造、质量管理等企业内部业务，以及智能驾驶、智能座舱、机器人等领域。CheryMind基于奇瑞积累的700TB企业知识、200PB工程数据等，旨在将工程经验转化为数字资产。此前，汽车行业对AI的关注多集中于智能驾驶和座舱，而奇瑞此次布局则着眼于更广泛的产业应用。CheryMind的发布标志着奇瑞在AI技术上的深度布局，或将推动其在智能制造领域取得突破。（来源：钛媒体）</p>
+
+<figure><img src="img/48c06cfb1e4138.png" alt="（图：钛媒体）" loading="lazy"><figcaption>（图：钛媒体）</figcaption></figure>
+
+<h3>奇瑞V2G场站启用，用户年收益超3000元</h3>
+
+<p>奇瑞与国网安徽电力在芜湖启用了行业首个车网互动V2G规模化运营场站，实现“谷时充电、峰时卖电”的商业模式。以风云A9为例，用户年参与200天放电，理论价差收益约5600元，扣除费用后预计可获3000元以上。此前，V2G技术因成本、电池损伤担忧等因素难以落地，而奇瑞通过技术与商业协同，解决了这些障碍。V2G的规模化应用不仅让用户“能充能赚”，还为电网提供削峰填谷能力，推动新能源汽车与电网的深度融合。此举标志着奇瑞在能源自由领域的探索取得实质性进展。（来源：盖世汽车）</p>
+
+<h2>数据速览</h2>
+
+<table><thead><tr><th>指标</th><th>数值</th><th>口径/区间</th><th>来源</th></tr></thead><tbody>
+<tr><td>特斯拉2026年第三季度全球交付</td><td>48.65万辆</td><td>同比减少2%</td><td>特斯拉</td></tr>
+<tr><td>中国品牌在巴黎车展参展数量</td><td>22家</td><td>占整车展商的37%</td><td>网上车市</td></tr>
+<tr><td>极氪9X上市一周年交付量</td><td>8.5万台</td><td>均价超53万元</td><td>太平洋汽车</td></tr>
+<tr><td>小鹏GX累计交付量</td><td>30000台</td><td>用时仅五个月</td><td>太平洋汽车</td></tr>
+<tr><td>深蓝S07 AI激光版限时权益价</td><td>14.99万-16.99万元</td><td>官方指导价15.59万-17.59万元</td><td>网上车市</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>原文来源</h2>
+
+<p class="standfirst">本页每条报道的图片均来自该条新闻原文页面；原文没有合格图片的条目不配图。</p>
+
+<p>1. [网上车市] 奇瑞副总经理张俊！加盟Audi出任奥迪中国CEO — http://news.cheshi.com/dujia/20261022/3426098.shtml</p>
+<p>2. [CnEVPost] BYD Denza to begin pre-sales of refreshed N8 SUV on October 26 with flash charging — https://cnevpost.com/2026/10/22/byd-denza-pre-sales-refreshed-n8-oct-26/</p>
+<p>3. [CarNewsChina] BYD’s Denza N8 EV opens reservations on October 26 ahead of November launch — https://carnewschina.com/2026/10/22/byds-denza-n8-ev-opens-reservations-on-october-26-ahead-of-november-launch/</p>
+<p>4. [易车] 2027款坦克500将10月23日上市 搭Coffee Pilot 4辅助驾驶系统 — https://news.yiche.com/info/114018542.html</p>
+<p>5. [新浪汽车·新车] 一汽-大众捷达M6官方起售价7.98万元 — https://auto.sina.com.cn/newcar/2026-10-22/detail-iniwcaff5219454.shtml?oaid=00001&amp;c=spr_auto_trackid_f8944f41f240e3fc</p>
+<p>6. [易车] firefly萤火虫60kWh大电池车型将于10月23日上市 续航达560km — https://news.yiche.com/info/113997059.html</p>
+<p>7. [易车] 2027款吉利博越将于10月23日上市 五大维度实现百大升级 — https://news.yiche.com/info/113926139.html</p>
+<p>8. [汽车之家] 疑似零跑C18谍照 大空间增程SUV 已接近量产状态 — https://www.autohome.com.cn/news/202610/1317925.html#pvareaid=102624</p>
+<p>9. [网上车市] 深蓝官宣：2027款L06售11.49万起！追风版15.19万起 — http://news.cheshi.com/dujia/20261009/3425997.shtml</p>
+<p>10. [盖世汽车] 特斯拉发布Q3财报 — https://auto.gasgoo.com/news/202610/22I70475571C109.shtml</p>
+<p>11. [网上车市] 特斯拉：中国销量创新高 目标2030年产量500万辆 — http://news.cheshi.com/dujia/20261022/3426097.shtml</p>
+<p>12. [Electrive] BEV registrations rose sharply across Europe in September — https://www.electrive.com/2026/10/22/bev-registrations-rose-sharply-across-europe-in-september/</p>
+<p>13. [InsideEVs] Rivian Was The Second Best-Selling EV Brand In Q3 2026, But Still Far Behind Tesla — https://insideevs.com/news/812808/rivian-r2-q3-sales/</p>
+<p>14. [CarNewsChina] Europeans discovered used EVs from China, price 40% under MSRP, CEVM says — https://carnewschina.com/2026/10/22/europeans-discovered-used-evs-from-china-price-40-under-msrp-cevm-says/</p>
+<p>15. [CarNewsChina] CATL expands battery-swapping footprint with Huawei — https://carnewschina.com/2026/10/22/catl-expands-battery-swapping-footprint-with-huawei/</p>
+<p>16. [盖世汽车] 均胜电子：具身固液混合电池已近量产 — https://auto.gasgoo.com/news/202610/22I70475581C601.shtml</p>
+<p>17. [Electrek] Tesla now says it needs its own maps for FSD after years of dismissing maps — https://electrek.co/2026/10/22/tesla-building-own-maps-fsd-after-mocking-maps/</p>
+<p>18. [汽车之家] 现款售12.99万起 深蓝SL03获首批L3级自动驾驶专用号牌 — https://www.autohome.com.cn/news/202610/1317912.html#pvareaid=102624</p>
+<p>19. [新浪汽车] 奇瑞高管张俊加盟奥迪中国 将出任奥迪中国首位中方总裁 — https://auto.sina.com.cn/news/2026-10-22/detail-iniwarrs4924265.shtml</p>
+<p>20. [钛媒体] 独家｜阿维塔副总裁孙百功即将离职，未来将投身AI与出海领域 — https://www.tmtpost.com/8177799.html</p>
+<p>21. [盖世汽车] 奥迪中国迎来首位中国籍总裁 — https://auto.gasgoo.com/news/202610/22I70475617C109.shtml</p>
+<p>22. [新浪汽车·新车] 中国智驾出海要建多少云 — https://auto.sina.com.cn/news/2026-10-22/detail-iniwamir5969094.shtml?c=spr_auto_trackid_f8944f41f240e3fc&amp;oaid=00003</p>
+<p>23. [盖世汽车] 【国际】奇瑞对与美国车企合作持开放态度 — https://auto.gasgoo.com/news/202610/22I70475602C108.shtml</p>
+<p>24. [钛媒体] 奇瑞造了一个“大脑”，想改变的不只是汽车 — https://www.tmtpost.com/8177247.html</p>
+<p>25. [盖世汽车] 奇瑞车网互动做成了生意 — https://auto.gasgoo.com/news/202610/22I70475515C501.shtml</p>
+<p>26. [Electrive] First drive in the Xpeng L03: finally a Chinese EV that doesn’t beep — https://www.electrive.com/2026/10/22/first-drive-in-the-xpeng-l03-finally-a-chinese-ev-that-doesnt-beep/</p>
+<p>27. [Electrek] Tesla pushes Optimus deliveries to late 2027, says hands still a problem — https://electrek.co/2026/10/22/tesla-optimus-delivery-late-2027-hands-ai-problems/</p>
+<p>28. [InsideEVs] The 2027 Ford Mustang Mach-E Has More Range As Standard — https://insideevs.com/news/812887/2027-ford-mustang-mach-e-trail-battery-range/</p>
+<p>29. [汽车之家] 仪表盘存在故障风险！福特召回102159辆皮卡！涉及多款车型！ — https://www.autohome.com.cn/news/202610/1317923.html#pvareaid=102624</p>
+<p>30. [太平洋汽车] 小鹏GX累计交付正式突破30000台 用时仅五个月 — http://www.pcauto.com.cn/news/5189/51894899.html?ad=28676</p>
+<p>31. [CnEVPost] Xpeng GX deliveries top 30,000 as Middle East orders near 4,000 — https://cnevpost.com/2026/10/22/xpeng-gx-deliveries-30000/</p>
+<p>32. [Motor1] Ford&#x27;s Electric Mustang Gets Cheaper And More Rugged For 2027 — https://www.motor1.com/news/812851/ford-mustang-mach-e-2027/</p>
+<p>33. [汽车之家] 小米YU7又来新对手？全新纯电轿跑SUV 赛力斯AIVA ME7实车亮相 — https://www.autohome.com.cn/news/202610/1317918.html#pvareaid=102624</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
