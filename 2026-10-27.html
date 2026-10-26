@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>大众中国获L3级自动驾驶道路测试牌照</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 10 月 27 日 · 星期二 · 第 44 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">汽车日报</p>
+    <h1 class="art-title">大众中国获L3级自动驾驶道路测试牌照</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">17 条报道 ｜ 9 张配图 ｜ 全部条目带来源标注，单源信息标注待证实</p>
+  <article class="art-body">
+
+<h2>今日速览（30 秒版）</h2>
+<ul><li>奇瑞风云A9增程版11.69万起，纯电续航230公里</li><li>魏牌高山8 HEV售价25.98万起，比格瑞维亚便宜10.6万</li><li>电池级碳酸锂现货均价99,350元/吨，周跌幅2.7%</li><li>特斯拉FSD开通率75%，影响盈利结构</li><li>劳斯莱斯纯电SUV中国路试，预计售价300万</li></ul>
+
+<h2>今日头条</h2>
+<p>10月26日，大众汽车集团（中国）在合肥正式获得L3级自动驾驶道路测试牌照。该牌照是在国内当前要求最严苛的L3监管框架下获批，完全满足最新安全设计强制标准。基于此，大众汽车集团（中国）可在合肥合规开展L3级技术的真实道路测试与大规模数据采集。目前，相关测试工作已正式启动。此次获牌是大众汽车推进高阶自动驾驶落地的关键节点，标志着集团向2027年实现L3级自动驾驶技术就绪迈进的又一重要进展。依托本土智能驾驶中心酷睿程的研发能力，大众汽车集团（中国）已推出首款全场景高级驾驶辅助系统Hyper Sense 8（HS8）。基于AI技术赋能，集团自研的世界模型GAIA 2.0每天可开展相当于500万公里真实行驶里程的智驾安全仿真测试，同时利用多达3000万个场景片段的真实路采数据，持续优化系统能力。在仿真技术的支持下，GAIA 2.0的训练里程以每日1000万公里为目标，为迈向L3自动驾驶时代做好准备。通过海量数据和充分训练，系统能够在面对罕见及突发路况时依然游刃有余。同时，大众汽车集团最高可支持L4级能力的自研系统级芯片C7H的研发工作也在稳步推进。</p>
+
+<h2>一、新车与产品</h2>
+
+<h3>比亚迪第二代海豹07开启预订 车长5080mm</h3>
+
+<p>10月26日，比亚迪第二代海豹07开启预订，提供插电混动和纯电双动力系统。新车车长达到5080mm，轴距2960mm，相比现款有所增加，座舱空间进一步拓展。该车配备DiSus-M智能磁控车身控制系统，并搭载激光雷达，采用天神之眼B驾驶辅助系统。此前，比亚迪已推出多款新能源车型，此次第二代海豹07的升级将进一步巩固其在新能源市场的竞争力。该车型的推出意味着比亚迪在智能化和电动化方面持续发力，进一步满足消费者对高端新能源车型的需求。（来源：CnEVPost）</p>
+
+<figure><img src="img/f3fdff67321ee5.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>比亚迪第二代海豹07开启盲订 轴距2960mm</h3>
+
+<p>10月26日，比亚迪第二代海豹07开启盲订，提供插电混动和纯电双动力系统，并配备激光雷达。新车轴距达到2960mm，相比现款有所增加，座舱空间进一步拓展。该车采用封闭式前格栅和波浪形大灯组，视觉辨识度较高，同时配备天神之眼B驾驶辅助系统。此前，比亚迪已推出多款新能源车型，此次第二代海豹07的升级将进一步巩固其在新能源市场的竞争力。该车型的推出意味着比亚迪在智能化和电动化方面持续发力，进一步满足消费者对高端新能源车型的需求。（来源：CarNewsChina）</p>
+
+<h3>比亚迪新款海豹07开启盲订 轴距2960mm</h3>
+
+<p>10月26日，比亚迪新款海豹07（官方称为第二代）开启盲订，提供插电混动和纯电双动力系统，并配备激光雷达。新车轴距达到2960mm，相比现款有所增加，座舱空间进一步拓展。该车提供六款外观颜色和三款内饰配色，配备零重力座椅和20扬帝瓦雷音响系统。此前，比亚迪已推出多款新能源车型，此次第二代海豹07的升级将进一步巩固其在新能源市场的竞争力。该车型的推出意味着比亚迪在智能化和电动化方面持续发力，进一步满足消费者对高端新能源车型的需求。（来源：汽车之家）</p>
+
+<figure><img src="img/d17b13fe3d3b6e.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>福特2027款Mustang Mach-E新增长续航电池</h3>
+
+<p>福特近日在美国开启了2027款Mustang Mach-E的预订，并推出了专为轻度越野设计的Trail版本。该车型起售价为39,995美元（不含交付费用），新增的长续航电池现已作为标准配置。此次更新表明福特正在进一步拓展Mustang Mach-E的产品线，以满足不同消费者的需求。此前，Mustang Mach-E主要面向城市通勤市场，而此次新增的Trail版本则瞄准了对轻度越野有需求的用户群体。此举意味着福特在电动SUV领域正持续发力，以增强其在电动汽车市场的竞争力。（来源：Electrive）</p>
+
+<figure><img src="img/dc0bd228f886ea.webp" alt="（图：Electrive）" loading="lazy"><figcaption>（图：Electrive）</figcaption></figure>
+
+<h3>比亚迪腾势N8改款最大续航达1003公里</h3>
+
+<p>比亚迪腾势宣布开启改款N8 SUV的预订，该车型最大续航里程可达1003公里，并将采用5座布局取代此前的3排7座设计。新车计划于11月正式上市。此次改款是比亚迪腾势在新能源SUV市场的一次重要升级，旨在提升产品的实用性和续航能力。此前，腾势N8以7座布局为主打，而此次调整则更符合当前市场对空间和舒适性的多样化需求。此举意味着比亚迪腾势正在通过技术升级和产品优化，进一步巩固其在中大型电动SUV领域的地位。（来源：CnEVPost）</p>
+
+<figure><img src="img/709e9e76dde1d6.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>比亚迪第三代秦PLUS 10月27日上市</h3>
+
+<p>比亚迪宣布第三代秦PLUS将于10月27日正式上市，新车在内外设计上均有显著升级。此次上市标志着比亚迪在紧凑型电动轿车市场的一次重要更新。此前，秦PLUS系列以高性价比和长续航能力受到市场欢迎，而第三代车型的推出将进一步强化其在该细分市场的竞争力。此举意味着比亚迪正在通过持续的产品迭代，巩固其在新能源汽车领域的领先地位。（来源：易车）</p>
+
+<h2>二、销量与市场</h2>
+
+<h3>10月乘用车零售预计160万辆</h3>
+
+<p>乘联分会最新研判显示，10月狭义乘用车零售预计约160万辆，环比下降1.1%，同比下降28.9%。受去年同期高基数影响，市场整体承压。新能源汽车表现突出，零售预计达107万辆，渗透率约66.9%，继续支撑市场近三分之二的销量。此前9月零售为161.8万辆，同比下降28%，燃油车销量受油价高位影响，降幅超过40%。进入10月，市场在“银十”窗口期表现平淡，季节性拉动效应减弱，厂商对四季度销售持谨慎态度。新能源汽车的稳定增长表明其在市场中的主导地位，而燃油车则面临持续下滑的压力。（来源：盖世汽车）</p>
+
+<h3>2027年国内车市零售预计增2%</h3>
+
+<p>乘联分会秘书长崔东树预计，2027年国内车市零售同比增长约2%，车市分化仍将加剧。2026年车市因政策透支、油价冲击、AI成本外溢等因素影响，零售预计为1850万台，低于2025年2374万台峰值。前7月乘用车零售1017.3万辆，同比降幅达20.3%。崔东树认为，2027年购置税翘尾、春节消费大年、油价回调及碳酸锂降价等因素将推动需求修复，行业预计进入稳态存量周期。不过，2%的增速属于温和修复，而非强复苏，去库存与新车供给修复的持续性更值得关注。（来源：盖世汽车）</p>
+
+<h2>三、政策与标准</h2>
+
+<h3>大众获L3级自动驾驶道路测试牌照</h3>
+
+<p>10月26日，大众汽车集团（中国）在合肥正式取得L3级自动驾驶道路测试牌照，并已在合肥启动L3级技术的真实道路测试与数据采集。此次获牌是大众高阶自动驾驶落地进程中的关键节点，为其2027年实现L3级自动驾驶技术就绪的规划提供支持。此前，大众已在中国推出多款基于CMP平台打造的车型，包括ID.AURA L5和ID. ERA 5X，这些车型标志着其首个本土开发的新能源汽车平台开始规模化应用。此次L3级测试牌照的获得，表明大众在自动驾驶技术领域持续发力，进一步巩固其在中国市场的竞争力。（来源：汽车之家）</p>
+
+<figure><img src="img/4849c1198b83d8.png" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h2>四、供应链与智驾</h2>
+
+<h3>宁德时代与奇瑞成立10亿元电池公司</h3>
+
+<p>10月19日，宁德时代与奇瑞汽车共同成立宁德时代奇瑞（芜湖）新能源科技有限公司，注册资本10亿元，由宁德时代持股51%，奇瑞汽车持股49%。该公司经营范围包括电池制造、销售及储能技术服务等。此前，宁德时代与奇瑞汽车已于今年4月签署战略合作协议，聚焦‘超充+换电’共享网络布局。此外，宁德时代近期还与引望、赛力斯集团等车企深化合作，推动新能源汽车产业发展。宁德时代第三季度营收达1652.21亿元，同比增长58.58%，净利润212.46亿元，同比增长14.54%。此次合作将进一步巩固宁德时代在动力电池领域的领先地位。（来源：盖世汽车）</p>
+
+<h3>Svolt量产100千瓦时半固态快充电池包</h3>
+
+<p>Svolt宣布开始量产100千瓦时半固态快充电池包，该电池支持900伏、6C快充，12分钟可增加500公里续航。此前，Svolt在固态电池技术领域已有布局，但此次量产标志着其在快充技术上的重要进展。目前，全球多家车企和电池厂商正在竞相研发高能量密度、快充能力的电池产品，以满足市场对新能源汽车续航和充电速度的需求。Svolt此次量产的电池技术，或将为其在激烈的市场竞争中赢得一席之地。（来源：CnEVPost）</p>
+
+<figure><img src="img/462c2ad993a54d.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>奇瑞电池7分钟充至97%</h3>
+
+<p>奇瑞汽车宣布其新款电池可在7分钟内将电量从10%充至97%。这一技术突破是奇瑞在新能源汽车领域持续发力的又一例证。此前，奇瑞已与宁德时代等企业展开合作，推动‘超充+换电’共享网络布局。目前，全球车企和电池厂商正竞相提升充电速度，以满足消费者对新能源汽车充电效率的需求。奇瑞此次推出的电池技术，或将为其在新能源汽车市场中提升竞争力。（来源：InsideEVs）</p>
+
+<figure><img src="img/b2a12b2922fb59.jpg" alt="（图：InsideEVs）" loading="lazy"><figcaption>（图：InsideEVs）</figcaption></figure>
+
+<h3>奇瑞高端品牌Luxeed将全球推出六款新能源车型</h3>
+
+<p>奇瑞汽车旗下高端品牌Luxeed计划在全球推出六款新能源车型，包括LLounge minivan、Stormax SUV以及四款跨界车型。此次车型发布是Luxeed品牌全球化战略的重要一步，旨在进一步拓展其在新能源汽车市场的影响力。此前，Luxeed已在多个市场推出新能源车型，但此次发布标志着其产品矩阵的全面升级。此举意味着Luxeed正加速布局全球新能源市场，与特斯拉、比亚迪等品牌展开更激烈的竞争。（来源：CarNewsChina）</p>
+
+<h2>五、公司与人事</h2>
+
+<h3>奥迪CEO出席特朗普集会引发大众工会不满</h3>
+
+<p>奥迪CEO出席特朗普集会的举动引发了大众集团工会主席的强烈不满，其称奥迪管理层及大众集团领导层已成为特朗普政治表演的“提线木偶”。该事件发生在特朗普竞选活动期间，奥迪CEO的公开亮相被解读为对特朗普政治立场的支持。此前，大众集团在电动车转型和碳中和目标方面已投入大量资源，但此次事件可能影响其在欧洲市场的公众形象。这一事件表明，车企高层的政治参与可能对品牌声誉和公众信任产生深远影响。（来源：Motor1）</p>
+
+<figure><img src="img/289ac8ef028422.jpg" alt="（图：Motor1）" loading="lazy"><figcaption>（图：Motor1）</figcaption></figure>
+
+<h3>华为何刚进入董事会制衡余承东</h3>
+
+<p>华为终端BG CEO何刚正式进入华为董事会，成为集团董事，获得董事会层面的投票权。这一人事调整发生在华为“刹车门”事件后，外界普遍认为此举是为了加强产品质量与风险管控。此前，何刚已接任余承东担任终端BG CEO，而余承东则担任终端BG董事长。此次调整后，两人在集团董事会层面拥有同等投票权，形成制衡关系。这一变化标志着华为终端业务从高速扩张转向稳健发展，何刚的董事席位成为这一战略调整的重要信号。（来源：网上车市）</p>
+
+<figure><img src="img/c77334a5fd313a.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h2>六、出海与国际</h2>
+
+<h3>奇瑞入选香港第七批重点企业</h3>
+
+<p>10月22日，香港特区政府引进重点企业办公室举行第七批重点企业伙伴签署仪式，奇瑞汽车股份有限公司成为该批次唯一入选的中国汽车先进制造及新能源企业。此次共有18家企业落户或扩展在港业务，涵盖先进制造与新能源、人工智能、生命健康科技等领域，预计带来约840亿港元投资、创造约2.67万个职位。奇瑞此前已于今年4月在香港科学园设立创新中心，聚焦新能源、智能驾驶及车联网等技术方向。此次入选意味着奇瑞以香港为接口，从产品出海向创新协同的全球化路径获得特区政府的制度性确认。（来源：盖世汽车）</p>
+
+<h3>新能源汽车出口退税率下调至9%</h3>
+
+<p>自2027年4月1日起，新能源汽车增值税出口退税率由13%下调至9%，覆盖纯电动、插电式混合动力（含增程式）乘用车及电动商用车等67类产品。此次调整是继2026年4月光伏退税归零、电池退税降至6%后的又一政策变化，旨在遏制出口洪流、缓和贸易摩擦。新能源汽车出口退税政策的调整，与欧盟、美国等主要市场不断升级的贸易壁垒形成呼应，中国车企在海外的低价竞争策略正面临更大挑战。此次退税率下调，预计对比亚迪、零跑、吉利、长城、奇瑞等车企的出口利润产生不同程度的影响。（来源：盖世汽车）</p>
+
+<h2>数据速览</h2>
+
+<table><thead><tr><th>指标</th><th>数值</th><th>口径/区间</th><th>来源</th></tr></thead><tbody>
+<tr><td>BYD Denza N8 EV CLTC range</td><td>1,003 km</td><td>CLTC</td><td>CarNewsChina</td></tr>
+<tr><td>BYD Denza N8 EV Flash Charging capability</td><td>9 minutes</td><td>10% to 97%</td><td>CnEVPost</td></tr>
+<tr><td>Chery’s battery charging time</td><td>under 7 minutes</td><td>10% to 97%</td><td>TechCrunch·交通</td></tr>
+<tr><td>Svolt semi-solid fast-charging battery range added in 12 minutes</td><td>500 km</td><td>900-volt, 6C fast charging</td><td>CnEVPost</td></tr>
+<tr><td>BYD Denza N8 EV wheelbase</td><td>2,960 mm</td><td>LiDAR-equipped</td><td>CarNewsChina</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>原文来源</h2>
+
+<p class="standfirst">本页每条报道的图片均来自该条新闻原文页面；原文没有合格图片的条目不配图。</p>
+
+<p>1. [盖世汽车] 大众中国获得L3级自动驾驶道路测试牌照 — https://auto.gasgoo.com/news/202610/26I70475911C109.shtml</p>
+<p>2. [CnEVPost] BYD Denza brings flash charging to Hong Kong with Z9GT launch — https://cnevpost.com/2026/10/26/byd-denza-hk-z9gt-launch/</p>
+<p>3. [CarNewsChina] BYD’s new Denza N8 EV pre-orders open in China: 1,003 km CLTC range,  1,193 hp and Flash Charging — https://carnewschina.com/2026/10/26/byds-new-denza-n8-ev-pre-orders-open-in-china-1003-km-cltc-range-1193-hp-and-flash-charging/</p>
+<p>4. [Electrek] BYD’s ultra-luxury EV could debut next week with solid-state batteries and much more — https://electrek.co/2026/10/26/byds-ultra-luxury-ev-may-debut-next-week-with-solid-state-batteries/</p>
+<p>5. [CnEVPost] BYD opens reservations for second-gen Seal 07 with Blade Battery and flash charging — https://cnevpost.com/2026/10/26/byd-opens-reservations-2nd-gen-seal-07/</p>
+<p>6. [CarNewsChina] BYD opens blind orders for second-generation Seal 07, with LiDAR and 2,960 mm wheelbase — https://carnewschina.com/2026/10/26/byd-opens-blind-orders-for-second-generation-seal-07-with-lidar-and-2960-mm-wheelbase/</p>
+<p>7. [汽车之家] 整车尺寸加大 提供激光雷达/插混纯电双动力 新款海豹07开启盲订 — https://www.autohome.com.cn/news/202610/1317985.html#pvareaid=102624</p>
+<p>8. [Electrive] Ford adds longer-range battery and Trail version to 2027 Mustang Mach-E — https://www.electrive.com/2026/10/26/ford-adds-longer-range-battery-and-trail-version-to-2027-mustang-mach-e/</p>
+<p>9. [CnEVPost] BYD Denza opens reservations for revamped N8 SUV with up to 1,003 km of electric range — https://cnevpost.com/2026/10/26/byd-denza-opens-reservations-revamped-n8/</p>
+<p>10. [易车] 比亚迪第三代秦PLUS将于10月27日上市 内外焕然一新 — https://news.yiche.com/info/114103811.html</p>
+<p>11. [盖世汽车] 10月乘用车零售预计160万辆 — https://auto.gasgoo.com/news/202610/26I70475929C501.shtml</p>
+<p>12. [盖世汽车] 崔东树：2027年国内车市零售预计增2% — https://auto.gasgoo.com/news/202610/26I70475894C108.shtml</p>
+<p>13. [汽车之家] 大众获得L3级自动驾驶道路测试牌照 已在合肥启动道路测试 — https://www.autohome.com.cn/news/202610/1317990.html#pvareaid=102624</p>
+<p>14. [盖世汽车] 10亿元！宁德时代再与车企成立电池公司 — https://auto.gasgoo.com/news/202610/26I70475794C501.shtml</p>
+<p>15. [CnEVPost] Svolt begins mass production of 100-kWh semi-solid fast-charging battery packs — https://cnevpost.com/2026/10/26/svolt-begins-mass-production-100-kwh-semi-solid-packs/</p>
+<p>16. [InsideEVs] Chery Joins China’s EV Charging Race With A Bold Promise — https://insideevs.com/news/813243/chery-ultra-fast-charging-demonstration/</p>
+<p>17. [CarNewsChina] Chery’s Luxeed to launch six NEV models globally — https://carnewschina.com/2026/10/26/cherys-luxeed-to-launch-six-nev-models-globally/</p>
+<p>18. [Motor1] Audi CEO&#x27;s Trump Rally Appearance Leaves Volkswagen Union Boss &#x27;Ashamed&#x27; (Update) — https://www.motor1.com/news/813229/audi-boss-criticized-appearing-with-trump/</p>
+<p>19. [网上车市] 刹车门后！何刚高调进入华为最高管理层，制衡余承东？ — http://news.cheshi.com/dujia/20261026/3426128.shtml</p>
+<p>20. [盖世汽车] 奇瑞入选香港第七批重点企业 — https://auto.gasgoo.com/news/202610/26I70475936C109.shtml</p>
+<p>21. [盖世汽车] 新能源汽车出海告别退税红利 — https://auto.gasgoo.com/news/202610/26I70475869C501.shtml</p>
+<p>22. [网上车市] 奇瑞风云A9增程上市11.69万起，纯电能跑230公里 — http://news.cheshi.com/dujia/20261026/3426138.shtml</p>
+<p>23. [网上车市] 比格瑞维亚便宜10.6万！魏牌高山8 HEV卖25.98万起 — http://news.cheshi.com/dujia/20261026/3426130.shtml</p>
+<p>24. [汽车之家] 限时11.69万起 配备激光雷达/纯电续航230km 风云A9增程版上市 — https://www.autohome.com.cn/news/202610/1317988.html#pvareaid=102624</p>
+<p>25. [汽车之家] 限时权益价25.98万起 2.0T+双电机混动 魏牌高山8 HEV正式上市 — https://www.autohome.com.cn/news/202610/1317983.html#pvareaid=102624</p>
+<p>26. [太平洋汽车] 魏牌高山8 HEV上市 限时25.98万元起/不用充电的四驱MPV — http://www.pcauto.com.cn/nation/5189/51897438.html?ad=28676</p>
+<p>27. [盖世汽车] 宁德时代枧下窝锂矿扰动 — https://auto.gasgoo.com/news/202610/26I70475845C103.shtml</p>
+<p>28. [盖世汽车] 特斯拉FSD开通率75% — https://auto.gasgoo.com/news/202610/26I70475868C109.shtml</p>
+<p>29. [网上车市] 劳斯莱斯-纯电SUV中国路试 小库里南售价300万？ — http://news.cheshi.com/dujia/20261026/3426133.shtml</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
