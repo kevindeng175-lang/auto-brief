@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>中国车企欧洲销量首超日系</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 10 月 28 日 · 星期三 · 第 44 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">汽车日报</p>
+    <h1 class="art-title">中国车企欧洲销量首超日系</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">26 条报道 ｜ 16 张配图 ｜ 全部条目带来源标注，单源信息标注待证实</p>
+  <article class="art-body">
+
+<h2>今日速览（30 秒版）</h2>
+<ul><li>奥迪Q4 E-Tron召回9048辆因电池起火风险</li><li>奥迪召回超9000辆Q4 E-Tron并限制充电至80%</li><li>一汽奔腾小马五门版10月28日上市搭载宁德时代电池</li><li>上汽奥迪E7X/E5 Sportback推出至高1.2万增换购补贴</li><li>新款智界R7售价23.98-31.98万元开启全国交付</li><li>比亚迪秦Plus DM-i新款上市纯电续航达220公里</li><li>韩国警方起诉80名非法使用特斯拉FSD设备司机</li><li>小鹏MONA L05将于10月29日上市预售16.98万起</li></ul>
+
+<h2>今日头条</h2>
+<p>2023年第三季度，中国车企在欧洲市场销量首次超过日本车企，市场份额达到12.7%，其中混动车型是增长主力。这一成绩由比亚迪、奇瑞等品牌推动，尤其在英国市场表现突出，奇瑞旗下Jaecoo 7 SUV在3月和9月两次登上英国车型销量榜首。此前，中国品牌在欧洲的市场份额仅有1%左右，而日系车企如丰田、日产在欧洲市场深耕多年。此次增长得益于中国车企加快本地化生产布局，例如奇瑞筹备巴塞罗那工厂，比亚迪匈牙利生产基地接近完工，零跑依托与Stellantis的合资项目在西班牙投产。同时，欧盟对中国产纯电动车加征关税，并计划限制混动汽车进口，但中国车企仍加快出口节奏。这一变化对欧洲本土车企形成双重冲击，一方面中国品牌在欧洲市场崛起，另一方面中国国内需求下降促使车企拓展海外市场。</p>
+
+<h2>一、新车与产品</h2>
+
+<h3>魏牌高山8 HEV上市 限时25.98万元起</h3>
+
+<p>10月26日，魏牌高山8 HEV正式上市，推出舒享版和臻享版两款配置，限时权益价分别为25.98万元和27.98万元。新车定位为‘不用充电的智能豪华四驱MPV’，搭载192线激光雷达、Orin-Y域控制器和Coffee Pilot 3辅助驾驶系统，支持城市NOA和高速NOA。高山8 HEV是油混MPV中唯一标配激光雷达的车型，同时搭载2.0T混动专用发动机加四挡Hi4性能版智能四驱，系统最大功率322kW，零百加速5.9秒。此前，蓝牌MPV在智能化方面长期空白，高山8 HEV的上市填补了这一市场空白。该车型的推出意味着蓝牌MPV用户无需充电即可享受高阶智能驾驶和豪华配置。（来源：电动邦）</p>
+
+<figure><img src="img/1fbcbbae63231f.png" alt="（图：电动邦）" loading="lazy"><figcaption>（图：电动邦）</figcaption></figure>
+
+<h3>魏牌二代蓝山全球首秀 轴距3010mm</h3>
+
+<p>10月27日，魏牌二代蓝山完成全球首秀，定位豪华方盒子SUV，以‘山海相融’的设计语言、全地形AI智能系统及全地形性能配置，面向兼顾城市通勤与户外探索的复合出行需求。新车基于归元S平台架构，搭载‘2468动力架构’，配备闭式双腔空气悬架、EDC连续可变阻尼减振器与双向20°后轮转向组成的全自研底盘系统。长城汽车在方盒子SUV领域有较长的研发历史，二代蓝山延续了其四驱技术积累，并整合了三十余年的越野数据与自研AI算力。该车型的推出意味着用户可在城市与户外场景中获得更全面的出行解决方案。（来源：新浪汽车·新车）</p>
+
+<figure><img src="img/023add1da02b9d.jpg" alt="（图：新浪汽车·新车）" loading="lazy"><figcaption>（图：新浪汽车·新车）</figcaption></figure>
+
+<h3>2026款理想i6实车亮相 10月28日正式上市</h3>
+
+<p>2026款理想i6实车于10月28日正式亮相，并将于同日上市。该车型是理想汽车在MPV市场的重要布局，延续了理想品牌一贯的智能与豪华定位。此前，理想汽车已推出多款热门车型，如理想L系列，2026款i6的亮相将进一步丰富其产品线。该车型的上市意味着理想汽车在新能源MPV市场将面临更多竞争，同时也为消费者提供了更多选择。（来源：易车）</p>
+
+<h3>特斯拉Cybercab电池设计预留LFP化学空间</h3>
+
+<p>特斯拉在Cybercab的电池包设计中，特意为未来采用LFP（磷酸铁锂）电池化学技术预留了空间。这一设计表明，特斯拉正在为Cybercab的电池系统未来升级做准备，以适应更高效、更安全的电池技术。此前，特斯拉在Model 3和Model Y上已开始使用LFP电池，此次设计意味着Cybercab或将延续这一趋势。此举意味着特斯拉在电池技术的长期规划上，正逐步向更稳定、成本更低的LFP技术倾斜。（来源：InsideEVs）</p>
+
+<figure><img src="img/e8156fb07c3704.jpg" alt="（图：InsideEVs）" loading="lazy"><figcaption>（图：InsideEVs）</figcaption></figure>
+
+<h3>34.98万元起，三大极限挑战彰显硬核实力，红旗G919正式上市</h3>
+
+<p>10月25日，红旗G919正式上市， 三款车型指导价34.98万至42.98万元 。 发布会没有冗长的参数堆砌，取而代之的是三场横跨数千公里的极限实测——株洲的重卡牵引、巴丹吉林沙漠的陡坡冲顶，以及珠峰脚下的高原智驾。 把产品力拆解成可被镜头记录的动作，再用价格锚定用户预期，红旗给出少见的上市叙事。 对关注豪华越野赛道的人而言，真正值得讨论的并不是某一项数据有多亮眼，而是G919背后的产品逻辑：当四电机从百万级车型下探到三十五万区间，硬派越野的规则或许要被重写。 传统新车发布会习惯把PPT做成数据墙，红旗G919反（来源：电动邦）</p>
+
+<figure><img src="img/1638e8e9ee025f.jpg" alt="（图：电动邦）" loading="lazy"><figcaption>（图：电动邦）</figcaption></figure>
+
+<h3>魏牌第二代蓝山首发亮相 中大型方盒子SUV 2.0T插混/配后轮转向</h3>
+
+<p>新车 行业 评测 导购 技术 改装 文化 Ai选车专家 图片 排行榜 工具 购车计算 车型对比 精彩推荐 极智+ 混动时代 太平洋号 购车 购车优惠 买车趣·最高领49999购车补贴 分期购 经销商 车市 商城 用车 社区 用车 酷养车 意见反馈 意见反馈 * 问题描述 0 / 300 【太平洋汽车 新车频道 】10月27日，魏牌第二代蓝山全球首秀，作为换代车型，新车除了延续现款蓝山的名字，其他方面没有太大的联系，定位中大型插混SUV，采用方盒子造型，基于800V高压平台打造，搭载2.0T双电机插混系统，配备闭式双（来源：太平洋汽车）</p>
+
+<figure><img src="img/8c24257c94c325.png" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>比亚迪第三代秦PLUS DM-i上市 限时优享价7.69万元起</h3>
+
+<p>比亚迪第三代秦PLUS DM-i正式上市，限时超级优享价7.69万元起。该车型作为比亚迪DM-i技术的最新代表，延续了秦PLUS系列在混动领域的优势，进一步优化了能耗表现与智能化配置。此前，比亚迪已推出多款DM-i车型，包括秦PLUS DM-i、宋PLUS DM-i等，均在市场上取得良好反响。此次第三代秦PLUS DM-i的推出，将进一步巩固比亚迪在新能源紧凑型轿车市场的领先地位，同时为消费者提供更多选择。（来源：易车）</p>
+
+<h3>10月狭义乘用车零售预计160万辆 同比下降28.9%</h3>
+
+<p>据乘联分会10月初厂商调研，10月狭义乘用车零售预计为160.0万辆，同比下降28.9%，环比下降1.1%。其中新能源零售预计为107.0万辆，同比下降16.5%，市场零售渗透率达66.9%。这一数据延续了9月的下滑趋势，9月狭义乘用车零售为161.8万辆，同比下降28.0%。燃油车销量跌幅超过40%，主要受油价高位运行影响。新能源市场虽增速放缓，但渗透率仍保持高位，预计年底前仍有新车型上市，但新车交付周期延长，用户等待时间增加。（来源：太平洋汽车）</p>
+
+<figure><img src="img/0c66232e51243f.png" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>仰望全新超豪华行政旗舰轿车命名为“鼎曜” 11月首发亮相</h3>
+
+<p>仰望汽车旗下全新超豪华行政旗舰轿车正式命名为“鼎曜”，英文名为“YANGWANG ALTIOR”，将于11月初在中东首发亮相。该车型是仰望汽车潜心研发三年的成果，预计车身长度超过5米5，轴距超过3米4，配备劳斯莱斯同款对开车门和“大饼式”轮毂，彰显尊贵感。此前，仰望汽车已推出仰望U8等车型，此次“鼎曜”将与尊界S800、奔驰迈巴赫S级、宾利飞驰、劳斯莱斯幻影等豪华车型竞争。该车型的发布将进一步拓展仰望在超豪华轿车市场的布局，提升品牌影响力。（来源：太平洋汽车）</p>
+
+<figure><img src="img/814ebb70df95d3.jpg" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>吉利银河星耀6EF 11月3日上市</h3>
+
+<p>吉利银河星耀6EF将于11月3日正式上市。新车采用1.5L甲醇插电式混合动力系统，由1.5L甲醇发动机与电机组成，发动机最大功率93kW，并配备磷酸铁锂电池组。外观方面，车辆前脸采用横向格栅造型，整车设计相较现款有所变化。车身尺寸为4806/1886/1490mm，轴距为2756mm。此前新车已在工信部进行申报。该车型的推出，是吉利在新能源领域布局的又一举措，进一步丰富其产品矩阵，与市场上其他插混车型展开竞争。（来源：汽车之家；旁证：太平洋汽车 亦报道）</p>
+
+<figure><img src="img/db3120337f5349.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>比亚迪第三代秦PLUS DM-i 7.69万起</h3>
+
+<p>比亚迪第三代秦PLUS DM-i正式上市，指导价7.99万-10.09万元，限时价7.69万-9.79万。新车尺寸为4840×1900×1498mm，轴距2800mm，相比2026款尺寸明显增大。设计上取消了标志性的大尺寸格栅，改用“鲨鱼鼻”车头+风道造型，整体姿态更低趴。动力沿用第五代DM技术，纯电续航提升至140/220km，满油满电综合续航增至2290km。该车型的推出，是比亚迪在插混市场进一步发力的表现，与吉利银河星耀6、日产N6等车型展开竞争。（来源：网上车市）</p>
+
+<figure><img src="img/8801e7a9b5fe0d.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h3>腾势N8 11月上市</h3>
+
+<p>腾势N8正式开启预订，并计划于11月上市。新车瞄准35万级大五座SUV市场，车身尺寸为5150mm×1999mm×1820mm，轴距3075mm。新车采用全新“优雅之势”设计语言，座舱配备1.1米天际屏与30英寸巨幕屏组成的双屏组合，并搭载腾势巨幕智能座舱。纯电版CLTC续航达1003km，插混版CLTC纯电续航为435km。该车型的推出，是腾势在高端SUV市场的一次重要布局，以“宽适”体验与8系旗舰SUV竞争。（来源：电动邦）</p>
+
+<h2>二、销量与市场</h2>
+
+<h3>上汽集团前三季度海外销量突破116.6万辆</h3>
+
+<p>2026年前三季度，上汽集团海外销量达116.6万辆，同比增长52.4%，已超过2025年全年销量。其中，MG品牌在欧洲累计销量超28万辆，同比增长23%。9月，MG在英国单月销量达1.8万辆，电动车型占比超九成。此外，上汽商用车9月海外销量达18395辆，同比增长120%，创下历史新高。上汽商用车已在中国轻型商用车对欧出口中占据首位，近十万台车辆在欧洲投入运营。上汽集团通过乘用车与商用车双轮驱动，正从产品输出走向整车、技术、服务、供应链与本地运营协同并进的‘体系出海’。（来源：盖世汽车）</p>
+
+<h3>上汽集团前三季度海外销量突破116.6万辆</h3>
+
+<p>2026年前三季度，上汽集团海外销量达116.6万辆，同比增长52.4%，已超过2025年全年销量。欧洲仍是上汽最大的海外区域市场，MG品牌在欧洲累计销量超28万辆，同比增长23%。9月，MG在英国单月销量达1.8万辆，电动化车型占比达91.6%。此外，上汽商用车9月海外销量达18395辆，同比增长120%，创下历史新高。上汽商用车位居中国轻型商用车对欧洲出口首位，目前有近10万台产品在欧洲各地投入商业运营。上汽集团通过乘用车与商用车双轮驱动，正从产品输出走向整车、技术、服务、供应链与本地运营协同并进的‘体系出海’。（来源：盖世汽车）</p>
+
+<h3>Re:Build融资21亿美元推动汽车制造</h3>
+
+<p>Re:Build，一家从Slate Auto分拆出来的制造加速器，近日成功融资21亿美元。该公司自称为‘美国版的深圳’。这一融资将用于推动其在汽车制造领域的创新与发展。此前，Slate Auto在电动汽车和自动驾驶技术方面已有一定积累，而Re:Build的成立标志着其在制造加速器领域的新尝试。此次融资不仅为Re:Build提供了充足的资金支持，也表明了市场对其未来发展的高度认可。（来源：TechCrunch·交通）</p>
+
+<h2>三、政策与标准</h2>
+
+<h3>欧盟议会下调电动车配额目标 2030年或成关键年</h3>
+
+<p>欧盟委员会此前提出的《汽车产业方案》草案中，曾要求成员国从2030年起对大型企业车队设定强制性电动车配额。然而，欧洲议会现在可能将该强制性配额目标下调为自愿性目标。这一调整反映了欧盟在推动电动车普及过程中，对政策执行力度的重新考量。此前，欧盟曾多次强调加速电动车普及的重要性，但此次调整可能与成员国在实施过程中的实际困难有关。此举意味着欧盟在电动车推广政策上趋于灵活，但长期目标仍指向2030年实现全面电动化转型。（来源：Electrive）</p>
+
+<figure><img src="img/855b7f456fdb33.webp" alt="（图：Electrive）" loading="lazy"><figcaption>（图：Electrive）</figcaption></figure>
+
+<h3>中汽协倡议提升汽车生产一致性与质量安全 2026年发布</h3>
+
+<p>2026年8月27日，中国汽车工业协会发布《关于提升汽车产品生产一致性和质量安全水平的倡议》，强调当前中国汽车产业正处于转型升级的关键时期，新能源汽车和智能网联汽车快速发展，但非理性竞争可能影响产品质量和安全。倡议要求全行业企业严格遵守国家法律法规，强化生产一致性管理，完善质量标准体系，提升产品可靠性。同时，倡议还提出要规范技术创新，加强产品设计验证和测试，杜绝“伪创新”。此举意味着中国正通过强化行业自律，推动汽车产业高质量发展，提升国际竞争力。（来源：中汽协）</p>
+
+<h2>四、供应链与智驾</h2>
+
+<h3>SVOLT启动半固态电池量产 100kWh电池包下线</h3>
+
+<p>中国电池制造商SVOLT已启动半固态电池的量产，首批100kWh容量的电池包已在江苏常州下线。该电池支持6C快充，标志着SVOLT在固态电池技术领域取得重要进展。此前，SVOLT在固态电池研发方面已有布局，此次量产是其技术突破的重要一步。与宁德时代、比亚迪等企业在固态电池领域的竞争相比，SVOLT此次量产进一步推动了中国在固态电池技术上的商业化进程。此举意味着中国在新能源汽车核心零部件领域正加速追赶国际先进水平，提升产业链整体竞争力。（来源：Electrive）</p>
+
+<h3>大众或引入中国技术节省50亿欧元</h3>
+
+<p>据Electrive报道，大众集团可能将在中国开发的CEA电子架构引入欧洲主流车型，此举预计可节省高达50亿欧元成本。该计划将形成一个软件联盟，与Rivian合作开发面向非中国市场的车型。这一动向已在大众管理委员会内部引发讨论。此前，大众一直将中国市场与其他市场的软件开发工作分开，中国市场的软件由大众与小鹏汽车联合开发，而西方市场则由大众与Rivian合作开发。此次若将中国技术引入欧洲，可能使Rivian在大众集团中的地位逐渐被边缘化。此举意味着大众在软件技术应用上正寻求更灵活和成本更低的解决方案，以应对激烈的市场竞争。（来源：Electrive）</p>
+
+<figure><img src="img/bc05a04316b52f.webp" alt="（图：Electrive）" loading="lazy"><figcaption>（图：Electrive）</figcaption></figure>
+
+<h3>大众或在欧洲使用中国软件</h3>
+
+<p>据德国《经理人杂志》援引知情人士消息，大众汽车可能将目前在中国市场车型上使用的软件推广至欧洲的大众品牌主流车型。该软件由大众与中国电动汽车制造商小鹏汽车合作开发，用于中国市场的“电子电气架构”（China Electronic Architecture），可能成为大众、斯柯达和Cupra三大核心品牌未来车型的基础。大众乘用车品牌负责人Thomas Schaefer预计将于10月27日向管理层提交这一方案，该方案将覆盖上述三个品牌约四分之三的下一代车型。此前，大众一直将中国市场与其他市场的软件开发工作分开，而与Rivian的合作是其软件战略的重要组成部分。此举意味着大众在软件技术应用上正寻求更灵活和成本更低的解决方案，以应对激烈的市场竞争。（来源：盖世汽车）</p>
+
+<h3>长城汽车100 kWh半固态电池量产</h3>
+
+<p>据CarNewsChina报道，长城汽车旗下的Svolt已开始量产100 kWh半固态电池。该电池组基于900V高压系统，支持6C快充。此前，Svolt在电池技术领域已有一定积累，此次量产标志着其在固态电池技术上的重要进展。半固态电池作为当前动力电池技术的重要方向之一，其能量密度和充电速度均优于传统液态电池，具有广阔的市场前景。此举意味着长城汽车在新能源汽车核心零部件领域正加速布局，以提升其在行业内的竞争力。（来源：CarNewsChina）</p>
+
+<h2>五、公司与人事</h2>
+
+<h3>德国总统体验大众与地平线智驾技术</h3>
+
+<p>10月27日，正在中国进行国事访问的德国总统施泰因迈尔及夫人在安徽合肥参观大众汽车（中国）科技有限公司，亲身体验了搭载地平线征程®6H芯片与HSD AI基座模型的两款大众车型——一汽-大众ID. AURA T6与上汽大众ID. ERA 5X。这两款车型均采用由大众与地平线合资公司酷睿程打造的全场景辅助驾驶方案。地平线与大众汽车集团于2022年确立战略合作，2023年成立合资公司酷睿程，2026年以来双方合作进入量产收获期，酷睿程方案已陆续搭载于大众在华七款全新电动化车型。此次体验标志着双方在智能驾驶领域的合作取得实质性进展。（来源：太平洋汽车·新闻）</p>
+
+<figure><img src="img/66380739ef8b25.png" alt="（图：太平洋汽车·新闻）" loading="lazy"><figcaption>（图：太平洋汽车·新闻）</figcaption></figure>
+
+<h3>上汽通用总经理徐平面临离职倒计时</h3>
+
+<p>上汽通用总经理徐平出生于1969年5月，距离法定退休年龄还有两年多，按照上海国资惯例，男性总经理通常在60岁调整岗位。徐平目前正面临任期倒计时，需在有限时间内推动上汽通用的电动化转型。此前两任总经理卢晓和庄菁雄的任期均大幅缩短，反映出当前合资品牌在新能源转型压力下高管轮岗节奏加快。徐平在上汽通用体系深耕多年，履新前执掌华域汽车，拥有丰富的零部件供应链经验。他需在两年多的窗口期内完成上汽通用的智电转型，稳定销量并理顺中外双方的产品决策。（来源：网上车市）</p>
+
+<figure><img src="img/e498486fb77c36.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h3>地平线向219名员工发放1.45亿港元激励</h3>
+
+<p>10月26日，地平线机器人-W（09660.HK）发布公告，向219名集团雇员授出合计3775.992万股B类普通股奖励，总价值约1.45亿港元，人均约66万港元。此次激励对象全部为集团雇员，不涉及董事、高级管理人员及主要股东关联方，无需股东大会批准。奖励股份归属期约44至58个月，分批解锁，首批可在授出日起12个月内归属，不设绩效目标。此次激励正值地平线量产规模持续扩大的节点，2026年9月其征程系列智驾芯片累计量产突破1500万颗，国内每三台搭载智能辅助驾驶的车辆中就有一台使用地平线方案。此举旨在稳住关键工程师队伍，巩固其在智驾芯片市场的领先地位。（来源：太平洋汽车·新闻）</p>
+
+<figure><img src="img/806f244ba24b06.png" alt="（图：太平洋汽车·新闻）" loading="lazy"><figcaption>（图：太平洋汽车·新闻）</figcaption></figure>
+
+<h3>大众或推广中国软件至欧洲多品牌车型</h3>
+
+<p>近日，大众汽车集团考虑将在中国市场车型上使用的软件推广至欧洲的大众、斯柯达和Cupra三大品牌主流车型。该方案预计覆盖上述三个品牌约四分之三的下一代车型，而这三个品牌正加快在欧洲市场推出电动汽车。此前，大众在中国市场与小鹏汽车合作开发了电子电气架构，而面向西方市场的软件技术则由大众与RIVIAN合作开发。大众在软件领域一直面临挑战，旗下品牌体系复杂，软件技术的规模化应用困难重重。此次推广或将改变其在欧洲市场的软件布局，提升其在电动汽车领域的竞争力。（来源：汽车之家）</p>
+
+<figure><img src="img/31b877099466e9.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h2>六、出海与国际</h2>
+
+<h3>深蓝汽车埃及增程细分市场排名第一</h3>
+
+<p>深蓝汽车进入埃及市场一周年，拿下当地增程细分市场第一。自2025年8月正式进入埃及以来，深蓝汽车依托与当地最大汽车经销集团GB集团的合作，仅用几个月便实现这一成绩。深蓝汽车在埃及市场快速破局，是其坚持‘体系化出海’与‘本地化深耕’的结果。目前，深蓝汽车已进入全球超100个国家和地区，建成4个全球制造基地与1796个全球服务网点，形成了遍布全球的服务网络。深蓝汽车在埃及市场取得的成绩，标志着其全球化战略的进一步推进。（来源：太平洋汽车）</p>
+
+<figure><img src="img/cff895edda8416.jpg" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h2>数据速览</h2>
+
+<table><thead><tr><th>指标</th><th>数值</th><th>口径/区间</th><th>来源</th></tr></thead><tbody>
+<tr><td>上汽集团海外销量</td><td>116.6万辆</td><td>1-9月</td><td>上汽集团</td></tr>
+<tr><td>上汽集团海外销量增长率</td><td>52.4%</td><td>同比增长</td><td>上汽集团</td></tr>
+<tr><td>BYD Qin Plus DM-i纯电续航</td><td>220 km</td><td>最大</td><td>BYD</td></tr>
+<tr><td>红旗G919指导价</td><td>34.98-42.98万元</td><td>三款车型</td><td>红旗</td></tr>
+<tr><td>魏牌高山8 HEV限时权益价</td><td>25.98万元起</td><td>舒享版</td><td>魏牌</td></tr>
+<tr><td>SVOLT半固态电池容量</td><td>100 kWh</td><td>量产</td><td>GWM Svolt</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>原文来源</h2>
+
+<p class="standfirst">本页每条报道的图片均来自该条新闻原文页面；原文没有合格图片的条目不配图。</p>
+
+<p>1. [盖世汽车] 中国车企欧洲销量首超日系 — https://auto.gasgoo.com/news/202610/27I70476008C110.shtml</p>
+<p>2. [电动邦] 魏牌高山8 HEV上市，限时权益价25.98万元起 — https://www.diandongbang.com/news/167929.html</p>
+<p>3. [新浪汽车·新车] 魏牌二代蓝山全球首秀 新浪汽车原创 — https://auto.sina.com.cn/newcar/2026-10-27/detail-iniwswnn6888238.shtml?c=spr_auto_trackid_1a5b248004627db8</p>
+<p>4. [易车] 2026款理想i6实车亮相 将于10月28日正式上市 — https://news.yiche.com/info/113774605.html</p>
+<p>5. [InsideEVs] Tesla Designed The Cybercab To Use LFP Batteries In The Future — https://insideevs.com/news/813324/tesla-cybercab-lfp-battery-chemistry/</p>
+<p>6. [电动邦] 34.98万元起，三大极限挑战彰显硬核实力，红旗G919正式上市 — https://www.diandongbang.com/news/167927.html</p>
+<p>7. [太平洋汽车] 魏牌第二代蓝山首发亮相 中大型方盒子SUV 2.0T插混/配后轮转向 — http://www.pcauto.com.cn/nation/5189/51899626.html?ad=28676</p>
+<p>8. [易车] 比亚迪第三代秦PLUS DM-i上市 限时超级优享价7.69万元起 — https://news.yiche.com/info/114194806.html</p>
+<p>9. [太平洋汽车] 乘联分会：10月狭义乘用车零售预计160.0万辆 同比下降28.9% — http://www.pcauto.com.cn/news/5189/51899571.html?ad=28676</p>
+<p>10. [太平洋汽车] 仰望全新超豪华行政旗舰轿车正式命名为“鼎曜” 将11月首发亮相 — http://www.pcauto.com.cn/nation/5189/51899587.html?ad=28676</p>
+<p>11. [汽车之家] 1.5L甲醇插电混动 外观升级 吉利银河星耀6EF将于11月3日上市 — https://www.autohome.com.cn/news/202610/1317994.html#pvareaid=102624</p>
+<p>12. [网上车市] 比亚迪：史上最大秦PLUS上市7.69万起，设计也变了 — http://news.cheshi.com/dujia/20261027/3426140.shtml</p>
+<p>13. [电动邦] 35万级大五座SUV，腾势N8正式开启预订，将于11月上市 — https://www.diandongbang.com/news/167931.html</p>
+<p>14. [盖世汽车] 上汽海外销量破百万 — https://auto.gasgoo.com/news/202610/27I70476020C109.shtml</p>
+<p>15. [盖世汽车] 上汽集团前三季度海外销售突破百万 — https://auto.gasgoo.com/news/202610/27I70476010C109.shtml</p>
+<p>16. [TechCrunch·交通] Re:Build, which spun out Slate Auto, raises $2.1B — https://techcrunch.com/2026/10/27/rebuild-which-spun-out-slate-auto-raises-2-1b/</p>
+<p>17. [Electrive] EVP secures majority against binding EV quotas for large corporate fleets — https://www.electrive.com/2026/10/27/evp-secures-majority-against-binding-ev-quotas-for-large-corporate-fleets/</p>
+<p>18. [中汽协] 关于提升汽车产品生产一致性和质量安全水平的倡议 — http://www.caam.org.cn/chn/1/cate_2/con_5237294.html</p>
+<p>19. [Electrive] SVOLT launches series production of its semi-solid-state battery — https://www.electrive.com/2026/10/27/svolt-launches-series-production-of-its-semi-solid-state-battery/</p>
+<p>20. [Electrive] VW could bring Chinese tech to Europe amid cost-saving pressures — https://www.electrive.com/2026/10/27/vw-could-bring-chinese-tech-to-europe-amid-cost-saving-pressures/</p>
+<p>21. [盖世汽车] 大众汽车考虑在欧洲市场使用中国软件 — https://auto.gasgoo.com/news/202610/27I70475999C109.shtml</p>
+<p>22. [CarNewsChina] GWM’s Svolt began mass production of 100 kWh semi-solid batteries — https://carnewschina.com/2026/10/26/gwms-svolt-began-mass-production-of-100-kwh-semi-solid-batteries/</p>
+<p>23. [太平洋汽车·新闻] 德国总统施泰因迈尔体验大众与地平线联合开发的智驾技术 — https://www.pcauto.com.cn/news/5189/51899631.html</p>
+<p>24. [网上车市] 上汽通用总经理徐平，离职倒计时！ — http://news.cheshi.com/dujia/20261027/3426146.shtml</p>
+<p>25. [太平洋汽车·新闻] 地平线给219名员工发了1.45亿港元，人均66万 — https://www.pcauto.com.cn/news/5189/51899585.html</p>
+<p>26. [汽车之家] 或覆盖大众/斯柯达/Cupra多款新车 大众考虑在欧洲使用中国软件 — https://www.autohome.com.cn/news/202610/1318008.html#pvareaid=102624</p>
+<p>27. [太平洋汽车] 深蓝汽车进入埃及一周年拿下当地增程细分市场第一 — http://www.pcauto.com.cn/nation/5189/51899601.html?ad=28676</p>
+<p>28. [Motor1] Audi Q4 E-Tron Recall Affects 9,048 EVs Over Battery Fire Risk — https://www.motor1.com/news/813371/audi-q4-e-tron-recall/</p>
+<p>29. [Electrek] Volkswagen’s EV recall spreads to Audi, and owners are told to stop at 80% charge — https://electrek.co/2026/10/27/vws-ev-recall-spreads-to-audi-owners-told-stop-at-80-charge/</p>
+<p>30. [易车] 一汽奔腾小马五门版将于10月28日正式上市 搭载宁德时代电池 — https://news.yiche.com/info/114018667.html</p>
+<p>31. [汽车之家] 至高1.2万增换购补贴 上汽奥迪E7X/E5 Sportback推出限时五重礼遇 — https://www.autohome.com.cn/news/202610/1318000.html#pvareaid=102624</p>
+<p>32. [太平洋汽车] 售价23.98-31.98万元 新款智界R7开启全国交付 — http://www.pcauto.com.cn/nation/5189/51899612.html?ad=28676</p>
+<p>33. [CarNewsChina] New BYD Qin Plus DM-i sedan launched in China with 220 km of EV range — https://carnewschina.com/2026/10/27/new-byd-qin-plus-dm-i-sedan-launched-in-china-with-220-km-of-ev-range/</p>
+<p>34. [Electrek] Korean police book 80 Tesla drivers over illegal FSD unlock devices — https://electrek.co/2026/10/27/tesla-fsd-south-korea-police-80-illegal-unlock-devices/</p>
+<p>35. [汽车之家] 小鹏MONA L05将于10月29日上市 预售16.98万起 增程+纯电中型SUV — https://www.autohome.com.cn/news/202610/1317934.html#pvareaid=102624</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
