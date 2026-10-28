@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>p04-54-Scared-to-speak-English · 英语精读</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 10 月 28 日 · 星期三 · 第 44 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">英语精读</p>
+    <h1 class="art-title">p04-54-Scared-to-speak-English · 英语精读</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">2026-10-28</p>
+  <article class="art-body">
+<div class="player"><audio controls preload="metadata" src="audio/auto-en-p04-54-Scared-to-speak-English.m4a"></audio><p class="player-note">原声 00:06:47 ｜ 素材自身音轨 ｜ 点正文里的时间码，从该句开始播放</p></div>
+<table><thead><tr><th>项目</th><th>值</th></tr></thead><tbody>
+<tr><td>源文件</td><td>auto-en-p04-54-Scared-to-speak-English.m4a</td></tr>
+<tr><td>时长</td><td>00:06:47</td></tr>
+<tr><td>句段数</td><td>82</td></tr>
+<tr><td>生成时间</td><td>2026-10-28 23:37</td></tr>
+<tr><td>任务号</td><td>20261028-233015-6b6fcfea</td></tr>
+</tbody></table>
+
+<h2>内容摘要</h2>
+<ul><li>本视频围绕英语学习中的“口语焦虑”展开，探讨了人们在使用外语时感到紧张的原因。</li><li>通过采访和专家解释，说明了焦虑与自我认知、错误恐惧等心理因素有关。</li><li>提供了实用的学习资源，如播客和网站内容，帮助学习者克服口语焦虑。</li><li>通过问答形式，介绍了英语母语者日常使用的词汇量。</li><li>强调了犯错是学习过程中的正常现象，鼓励学习者积极练习。</li></ul>
+
+<h2>行业术语</h2>
+<table><thead><tr><th>英文</th><th>缩写</th><th>中文</th><th>原文语境</th></tr></thead><tbody>
+<tr><td>internal factors</td><td></td><td>内部因素</td><td>some low self-perceptions, fear of negative evaluation, all those learner internal, you know, factors</td></tr>
+<tr><td>negative evaluation</td><td></td><td>负面评价</td><td>learners worry about mistakes because they&#x27;re scared of negative evaluation</td></tr>
+<tr><td>relate to</td><td></td><td>与……有关</td><td>you know what it feels like, usually because a similar thing has happened to you</td></tr>
+<tr><td>vocabulary</td><td></td><td>词汇</td><td>we&#x27;ll be learning some useful new words</td></tr>
+<tr><td>confident</td><td></td><td>自信</td><td>you might feel confident and intelligent</td></tr>
+<tr><td>normal</td><td></td><td>正常</td><td>mistakes are normal</td></tr>
+<tr><td>frustrating</td><td></td><td>令人沮丧的</td><td>this is frustrating</td></tr>
+<tr><td>tips</td><td></td><td>小贴士</td><td>videos with tips to help you feel more confident with speaking</td></tr>
+<tr><td>confident</td><td></td><td>自信</td><td>videos with tips to help you feel more confident with speaking</td></tr>
+</tbody></table>
+
+<h2>高频表达</h2>
+<table><thead><tr><th>英文</th><th>中文</th><th>用法</th></tr></thead><tbody>
+</tbody></table>
+
+<h2>商务表达</h2>
+<table><thead><tr><th>英文</th><th>中文</th><th>适用场合</th></tr></thead><tbody>
+</tbody></table>
+
+<h2>逐句中英对照</h2>
+
+<button class="ts" type="button" data-sec="1">[00:00:01]</button>
+
+<p>6 Minute English from bbclearningenglish.com</p>
+
+<p>6 Minute English 来自 bbclearningenglish.com</p>
+
+<button class="ts" type="button" data-sec="6">[00:00:06]</button>
+
+<p>Hello and welcome to 6 Minute English from BBC Learning English. I&#x27;m Pippa.</p>
+
+<p>欢迎收听BBC学习英语的6分钟英语节目。我是Pippa。</p>
+
+<button class="ts" type="button" data-sec="12">[00:00:12]</button>
+
+<p>And I&#x27;m Beth. Have you ever been scared of speaking in English? In this episode, we&#x27;re</p>
+
+<p>我是Beth。你有没有害怕用英语说话的时候？在这一期节目中，我们将</p>
+
+<button class="ts" type="button" data-sec="19">[00:00:19]</button>
+
+<p>talking about why speaking in a foreign language can be so stressful. So, Pippa, do you ever</p>
+
+<p>讨论为什么用外语说话会如此有压力。所以，Pippa，你有没有</p>
+
+<button class="ts" type="button" data-sec="25">[00:00:25]</button>
+
+<p>get nervous speaking in a different language?</p>
+
+<p>在说一种不同语言时感到紧张吗？</p>
+
+<button class="ts" type="button" data-sec="28">[00:00:28]</button>
+
+<p>Yes, I learnt French when I was younger and I was actually quite good at it, I think,</p>
+
+<p>是的，我年轻时学过法语，我觉得自己其实相当擅长。</p>
+
+<button class="ts" type="button" data-sec="34">[00:00:34]</button>
+
+<p>but I was really nervous when I was speaking French. How about you?</p>
+
+<p>但当我说法语时，我真的很紧张。你呢？</p>
+
+<button class="ts" type="button" data-sec="39">[00:00:39]</button>
+
+<p>Yeah, I&#x27;ve always felt like that with Spanish. I am scared to speak because I don&#x27;t want</p>
+
+<p>是的，我用西班牙语时一直有这种感觉。我害怕说话，因为我不想</p>
+
+<button class="ts" type="button" data-sec="44">[00:00:44]</button>
+
+<p>to make mistakes, even though I know it&#x27;s OK to make mistakes.</p>
+
+<p>犯错误，即使我知道犯错误是可以接受的。</p>
+
+<button class="ts" type="button" data-sec="48">[00:00:48]</button>
+
+<p>Well, in this episode of 6 Minute English, we&#x27;ll be hearing about how to feel less nervous</p>
+
+<p>那么，在这一期6分钟英语节目中，我们将听到如何减少紧张感</p>
+
+<button class="ts" type="button" data-sec="54">[00:00:54]</button>
+
+<p>when you speak English. And as usual, we&#x27;ll be learning some useful</p>
+
+<p>当你用英语说话时。和往常一样，我们将学习一些有用的</p>
+
+<button class="ts" type="button" data-sec="57">[00:00:57]</button>
+
+<p>new words.</p>
+
+<p>新词汇。</p>
+
+<button class="ts" type="button" data-sec="58">[00:00:58]</button>
+
+<p>You can practice these with the quiz and worksheets on our website, bbclearningenglish.com.</p>
+
+<p>你可以在我们的网站bbclearningenglish.com上的测验和练习题中练习这些内容。</p>
+
+<button class="ts" type="button" data-sec="65">[00:01:05]</button>
+
+<p>But first, I have a question for you, Pippa. So, English has around one million words,</p>
+
+<p>不过首先，我有一个问题要问你，Pippa。所以，英语大约有一百万个单词，</p>
+
+<button class="ts" type="button" data-sec="72">[00:01:12]</button>
+
+<p>but on average, how many words does a typical English speaker use in daily conversation?</p>
+
+<p>但平均来说，一个典型的英语使用者在日常对话中使用多少个单词？</p>
+
+<button class="ts" type="button" data-sec="79">[00:01:19]</button>
+
+<p>Is it A, between 2,000 and 3,000? B, between 20,000 and 30,000?</p>
+
+<p>是A，2000到3000之间？B，20000到30000之间？</p>
+
+<button class="ts" type="button" data-sec="88">[00:01:28]</button>
+
+<p>Or C, between 200,000 and 300,000?</p>
+
+<p>还是C，200000到300000之间？</p>
+
+<button class="ts" type="button" data-sec="93">[00:01:33]</button>
+
+<p>I&#x27;m going to say A, 2,000 to 3,000.</p>
+
+<p>我会选A，2000到3000。</p>
+
+<button class="ts" type="button" data-sec="96">[00:01:36]</button>
+
+<p>OK, well, we will find out later in the programme. Now, Pippa, you said you found it stressful</p>
+
+<p>好吧，稍后我们会知道。现在，皮帕，你说说法语让你感到有压力，尽管你法语说得很好。</p>
+
+<button class="ts" type="button" data-sec="103">[00:01:43]</button>
+
+<p>speaking in French, even though you are quite good at it. Now, someone else who has had</p>
+
+<p>说法语，尽管你法语说得很好。现在，还有另一个人有这种经历，就是哈南·拉齐克。</p>
+
+<button class="ts" type="button" data-sec="108">[00:01:48]</button>
+
+<p>this experience is Hanan Razek. Hanan is a journalist at BBC Arabic and also host of</p>
+
+<p>哈南是BBC阿拉伯语频道的记者，也是播客《Beating Speaking》的主持人。</p>
+
+<button class="ts" type="button" data-sec="116">[00:01:56]</button>
+
+<p>the podcast Beating Speaking.</p>
+
+<p>她正在向BBC英语学习节目的主持人乔治讲述自己说英语的经历。</p>
+
+<button class="ts" type="button" data-sec="117">[00:01:57]</button>
+
+<p>Here she is telling BBC Learning English presenter Georgie about speaking English.</p>
+
+<p>我的英语其实很好，但和人交谈时，我发现这真的很困难。</p>
+
+<button class="ts" type="button" data-sec="125">[00:02:05]</button>
+
+<p>My English was actually pretty good, but having conversations with people, I found it really</p>
+
+<p>所以当我第一次加入BBC时，英语学习团队对我进行了英语水平评估，他们会对所有新成员进行此类评估，以确定他们是否需要帮助或课程。</p>
+
+<button class="ts" type="button" data-sec="130">[00:02:10]</button>
+
+<p>difficult. So when I first joined the BBC, the Learning English team made an assessment</p>
+
+<p>我的成绩还不错，而且我英语很流利。但就在同一天，我离开大楼去喝咖啡时，我根本听不懂咖啡师在说什么。</p>
+
+<button class="ts" type="button" data-sec="135">[00:02:15]</button>
+
+<p>of my English level, which they used to do for all new joiners to see if they need any</p>
+
+<p>我点咖啡时感到非常紧张，还试图把每个词都强调得很清楚，希望自己的语法正确，发音也正确。</p>
+
+<button class="ts" type="button" data-sec="141">[00:02:21]</button>
+
+<p>help or courses. My results were pretty good and I was fluent. But on that very same day,</p>
+
+<p>是的，我相信很多人都能感同身受。</p>
+
+<button class="ts" type="button" data-sec="147">[00:02:27]</button>
+
+<p>leaving the building and going to get some coffee, I couldn&#x27;t really understand what</p>
+
+<p>哈南的英语评估结果还不错，但她在用英语说话时仍然感到很紧张，比如用英语点咖啡时。</p>
+
+<button class="ts" type="button" data-sec="152">[00:02:32]</button>
+
+<p>the barista was saying. And I felt pretty nervous to order coffee and was trying to</p>
+
+<p>修饰语pretty的意思是相当或有点。</p>
+
+<button class="ts" type="button" data-sec="157">[00:02:37]</button>
+
+<p>stress every single word, hoping that my grammar is correct and I&#x27;m pronouncing the words right.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="163">[00:02:43]</button>
+
+<p>Yeah, I&#x27;m sure that&#x27;s a situation lots of people can relate to.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="167">[00:02:47]</button>
+
+<p>Hanan&#x27;s results on her English assessment were pretty good, but she was still pretty</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="171">[00:02:51]</button>
+
+<p>nervous to speak in English, for example, when ordering a coffee in English. The modifier</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="177">[00:02:57]</button>
+
+<p>pretty means quite or a bit.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="179">[00:02:59]</button>
+
+<p>Georgie says that Hanan&#x27;s experience is something that lots of people can relate to. If you</p>
+
+<p>乔治说，哈南的经历是很多人能够产生共鸣的事情。如果你</p>
+
+<button class="ts" type="button" data-sec="185">[00:03:05]</button>
+
+<p>relate to a situation, you know what it feels like, usually because a similar thing has</p>
+
+<p>对某种情境产生共鸣，你就知道那种感觉，通常是因为类似的事情曾经发生在你身上。</p>
+
+<button class="ts" type="button" data-sec="191">[00:03:11]</button>
+
+<p>happened to you.</p>
+
+<p>因此，即使像哈南这样擅长外语的人，很多人在用另一种语言说话时也会感到紧张。我们称之为口语焦虑。焦虑意味着对正在发生或可能发生的事情感到不舒服或担忧。</p>
+
+<button class="ts" type="button" data-sec="192">[00:03:12]</button>
+
+<p>So lots of people feel nervous speaking another language, even if they&#x27;re good at it, like</p>
+
+<p>那么，为什么这么多人会对说外语感到焦虑呢？专家认为，这与我们对自己的看法有关。美国拉法耶特学院中文教授韩洛向BBC英语学习节目主持人乔治进一步解释道。</p>
+
+<button class="ts" type="button" data-sec="198">[00:03:18]</button>
+
+<p>Hanan. We can call this speaking anxiety. Anxiety means an uncomfortable feeling or</p>
+
+<p>你知道，通常导致焦虑，尤其是严重焦虑的信念，我们称之为非理性信念。</p>
+
+<button class="ts" type="button" data-sec="204">[00:03:24]</button>
+
+<p>worry about something that is happening or could happen.</p>
+
+<p>此外，还有一些低自我评价、害怕负面评价等因素，这些都是学习者内部的、你知道的、影响因素。</p>
+
+<button class="ts" type="button" data-sec="207">[00:03:27]</button>
+
+<p>So why do so many people have anxiety about speaking a foreign language? Experts think</p>
+
+<p>哈南表示，学习者担心犯错是因为他们害怕受到负面评价。</p>
+
+<button class="ts" type="button" data-sec="215">[00:03:35]</button>
+
+<p>it&#x27;s connected to the beliefs we have about ourselves. Han Luo, professor of Chinese at</p>
+
+<p>换句话说，人们会因为他们的错误而评判他们，并对他们的看法不好。</p>
+
+<button class="ts" type="button" data-sec="221">[00:03:41]</button>
+
+<p>Lafayette College in the United States, explains more to BBC Learning English presenter Georgie.</p>
+
+<p>韩认为，非理性信念会让我们感到焦虑。非理性信念是指那些并非建立在我们真正相信的事物之上的信念。</p>
+
+<button class="ts" type="button" data-sec="228">[00:03:48]</button>
+
+<p>You know, usually the beliefs that cause anxiety, especially severe anxiety, are, we call it</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="234">[00:03:54]</button>
+
+<p>irrational beliefs.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="237">[00:03:57]</button>
+
+<p>And also, like, some low self-perceptions, fear of negative evaluation, all those learner</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="246">[00:04:06]</button>
+
+<p>internal, you know, factors.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="249">[00:04:09]</button>
+
+<p>And Han says that learners worry about mistakes because they&#x27;re scared of negative evaluation.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="255">[00:04:15]</button>
+
+<p>In other words, that people will judge them for their mistakes and think badly of them.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="260">[00:04:20]</button>
+
+<p>Han argues that irrational beliefs can make us anxious. Irrational beliefs are beliefs</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="265">[00:04:25]</button>
+
+<p>that aren&#x27;t based on things that we believe in.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="267">[00:04:27]</button>
+
+<p>So, for example, when you speak your first language, you might feel confident and intelligent.</p>
+
+<p>因此，例如，当你使用母语说话时，可能会感到自信和聪明。</p>
+
+<button class="ts" type="button" data-sec="292">[00:04:52]</button>
+
+<p>But when you speak in a new language, you make mistakes and feel less confident.</p>
+
+<p>但当你用一种新语言说话时，会犯错误并感到不够自信。</p>
+
+<button class="ts" type="button" data-sec="297">[00:04:57]</button>
+
+<p>You can&#x27;t show people what you&#x27;re really like. And this is frustrating.</p>
+
+<p>你无法向他人展示真实的自己。这令人沮丧。</p>
+
+<button class="ts" type="button" data-sec="302">[00:05:02]</button>
+
+<p>But, as we tell people all the time at BBC Learning English, mistakes are normal. You</p>
+
+<p>但正如BBC Learning English一直告诉人们的那样，犯错是正常的。你</p>
+
+<button class="ts" type="button" data-sec="308">[00:05:08]</button>
+
+<p>have to try to speak even though you make mistakes. And mistakes can be a good thing.</p>
+
+<p>即使犯错，也必须尝试说话。错误可能是好事。</p>
+
+<button class="ts" type="button" data-sec="313">[00:05:13]</button>
+
+<p>They can help us learn.</p>
+
+<p>它们能帮助我们学习。</p>
+
+<button class="ts" type="button" data-sec="314">[00:05:14]</button>
+
+<p>And if you want more tips to improve your speaking, listen to the Beating Speaking Anxiety</p>
+
+<p>如果你想获得更多提高口语的技巧，请收听《克服口语焦虑》播客。本集下方的备注中有链接。但Beth，我认为是时候</p>
+
+<button class="ts" type="button" data-sec="320">[00:05:20]</button>
+
+<p>podcast. There&#x27;s a link in the notes below this episode. But Beth, I think it&#x27;s time</p>
+
+<p>为你的问题提供答案了。</p>
+
+<button class="ts" type="button" data-sec="325">[00:05:25]</button>
+
+<p>for the answer to your quiz question.</p>
+
+<p>是的。我问你，一个普通英语使用者在日常交流中使用多少词汇？</p>
+
+<button class="ts" type="button" data-sec="327">[00:05:27]</button>
+
+<p>Yes. I asked you, how many words does the average English speaker use in daily communication?</p>
+
+<p>答案是2万到3万个。这相当多。</p>
+
+<button class="ts" type="button" data-sec="335">[00:05:35]</button>
+
+<p>The answer is 20,000 to 30,000. That&#x27;s quite a lot.</p>
+
+<p>是的，这太多了。</p>
+
+<button class="ts" type="button" data-sec="340">[00:05:40]</button>
+
+<p>Yeah, that&#x27;s loads.</p>
+
+<p>好的。让我们回顾一下我们学到的词汇。Pretty可以用作修饰语，表示相当或有点。</p>
+
+<button class="ts" type="button" data-sec="341">[00:05:41]</button>
+
+<p>OK. Let&#x27;s recap the vocabulary we&#x27;ve learnt. Pretty can be used as a modifier to mean quite</p>
+
+<p>如果你与某人或某种情况相关，你理解他们，通常是因为你经历过类似的事情。</p>
+
+<button class="ts" type="button" data-sec="348">[00:05:48]</button>
+
+<p>or a bit.</p>
+
+<p>焦虑是一个可以用来表示类似含义的词。</p>
+
+<button class="ts" type="button" data-sec="349">[00:05:49]</button>
+
+<p>If you relate to a person or situation, you understand them, usually because you&#x27;ve experienced</p>
+
+<p>焦虑是一个可以用来表示类似含义的词。</p>
+
+<button class="ts" type="button" data-sec="355">[00:05:55]</button>
+
+<p>something similar.</p>
+
+<p>焦虑是一个可以用来表示类似含义的词。</p>
+
+<button class="ts" type="button" data-sec="356">[00:05:56]</button>
+
+<p>Anxiety is a word that can be used to mean something similar.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="356">[00:05:56]</button>
+
+<p>Anxiety is a word that can be used to mean something similar.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="356">[00:05:56]</button>
+
+<p>Anxiety is a word that can be used to mean something similar.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="357">[00:05:57]</button>
+
+<p>Anxiety is a word that can be used to mean something similar.</p>
+
+<p>焦虑是一个可以用来表示类似意思的词。</p>
+
+<button class="ts" type="button" data-sec="357">[00:05:57]</button>
+
+<p>Anxiety is feeling uncomfortable or worried about something that is happening or could</p>
+
+<p>焦虑是指对正在发生或可能发生在未来的事情感到不安或担忧。</p>
+
+<button class="ts" type="button" data-sec="361">[00:06:01]</button>
+
+<p>happen in the future.</p>
+
+<p>非理性信念是对不真实事物的信念。它们不合逻辑。</p>
+
+<button class="ts" type="button" data-sec="363">[00:06:03]</button>
+
+<p>Irrational beliefs are beliefs about something that is not true. They&#x27;re not logical.</p>
+
+<p>自我认知是你如何看待自己的方式。</p>
+
+<button class="ts" type="button" data-sec="368">[00:06:08]</button>
+
+<p>Self-perception is the way you see yourself.</p>
+
+<p>而内部指的是身体或心理内部。</p>
+
+<button class="ts" type="button" data-sec="371">[00:06:11]</button>
+
+<p>And internal means inside the body or mind.</p>
+
+<p>再次，我们的六分钟时间到了。但如果你想了解更多关于说话焦虑的内容，请访问我们的网站bbclearningenglish.com，查找我们的《克服说话焦虑》系列。</p>
+
+<button class="ts" type="button" data-sec="375">[00:06:15]</button>
+
+<p>Once again, our six minutes are up. But if you&#x27;d like to find out more about speaking</p>
+
+<p>这里有我们发现说不同语言时感到害怕的事物的播客，</p>
+
+<button class="ts" type="button" data-sec="380">[00:06:20]</button>
+
+<p>anxiety, then head over to our website, bbclearningenglish.com, to find our Beating</p>
+
+<p>还有帮助你提高说话自信心的视频。</p>
+
+<button class="ts" type="button" data-sec="386">[00:06:26]</button>
+
+<p>Speaking Anxiety series. There are podcasts about the things we find scary when speaking</p>
+
+<p>感谢参与，再见。</p>
+
+<button class="ts" type="button" data-sec="392">[00:06:32]</button>
+
+<p>a different language, and videos with tips to help you feel more confident with speaking.</p>
+
+<p>再见。</p>
+
+<button class="ts" type="button" data-sec="398">[00:06:38]</button>
+
+<p>Thanks for joining us and goodbye.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="400">[00:06:40]</button>
+
+<p>Goodbye.</p>
+
+<p>[未翻译]</p>
+
+<hr>
+
+<p class="standfirst">汽车英语精读 ｜ 来源视频：p04-54-Scared-to-speak-English ｜ 含术语表、高频表达与逐句中英对照</p>
+
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
