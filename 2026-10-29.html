@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>大众汽车召回超8.5万辆电动车电池，奥迪车型受影响</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 10 月 29 日 · 星期四 · 第 44 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">汽车日报</p>
+    <h1 class="art-title">大众汽车召回超8.5万辆电动车电池，奥迪车型受影响</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">17 条报道 ｜ 8 张配图 ｜ 全部条目带来源标注，单源信息标注待证实</p>
+  <article class="art-body">
+
+<h2>今日速览（30 秒版）</h2>
+<ul><li>理想2026款i6搭载自研芯片，电池容量提升至96kWh</li><li>宏光MINIEV销量突破200万辆，连续74个月销量冠军</li><li>2026款理想i6上市，首销价23.98万元</li><li>岚图泰山获C-NCAP五星+，综合得分率92%</li><li>恒辉安防拟募资8亿，扩产7200吨UHMWPE纤维</li><li>宁德时代全固态电池2027年小批量生产，2030年量产</li><li>一汽-大众ID. AURA L5亮相，搭载激光雷达</li><li>比亚迪腾势为停产N7增加节能哨兵模式</li></ul>
+
+<h2>今日头条</h2>
+<p>近日，大众汽车宣布扩大其电动车电池召回范围，涉及车辆总数超过85,000辆，其中奥迪品牌旗下约13,000辆Q4 E-Tron和Q4 Sportback E-Tron车型被纳入召回范围。此次召回涉及全球市场，受影响车主被要求将电池充电限制在80%的容量以内，以避免潜在的安全风险。此前，大众已对ID.4车型进行了类似召回，此次行动表明其对电池安全问题的持续关注。此次召回与此前大众在电动车电池安全方面的行动一脉相承，也反映出当前电动车行业在电池技术应用和管理方面仍面临挑战。同时，这也与竞争对手在电动车安全领域的动作形成呼应，凸显出行业对电池安全问题的高度重视。此次召回事件意味着，电动车企业在电池技术的成熟度和安全性方面仍需持续改进，以满足日益增长的市场需求和监管要求。</p>
+
+<p>（旁证：Electrive 亦报道此事）</p>
+
+<figure><img src="img/ae774b1f235c21.webp" alt="（图：Electrek）" loading="lazy"><figcaption>（图：Electrek）</figcaption></figure>
+
+<h2>一、新车与产品</h2>
+
+<h3>理想新i6限时售23.98万：续航780公里</h3>
+
+<p>理想汽车发布2026款i6，新车仅一款配置，官方指导价24.98万元，首销期（截至11月30日24点）限时权益价23.98万元，预计11月初交付。本次改款的核心是补能升级，换装自研96kWh连山5C电池，CLTC续航由720km提升至780km，5C超充下充电10分钟可补能500km。座椅升级方面，前排标配双零重力座椅，二排右侧皇后座支持140度大躺。新车还新增电动前备箱，智能化方面搭载自研马赫M100智驾芯片与高通骁龙8797座舱芯片。此前，理想i6已多次改款，此次升级进一步强化了其在中大型SUV市场的竞争力。（来源：网上车市）</p>
+
+<figure><img src="img/80fbd92983c5cd.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h3>仰望超豪轿车定名-鼎曜，配对开门设计</h3>
+
+<p>仰望汽车正式官宣旗下超豪华行政旗舰轿车定名“鼎曜”，英文名YANGWANG ALTIOR，新车将于11月初在阿联酋迪拜完成全球首发。鼎曜延续仰望U8的“鼎式”家族前脸，车身修长方正，采用对开门设计，后门反向开启，与劳斯莱斯一致，强化后排上下车仪式感。车顶搭载瞭望塔式激光雷达，预计车长超过5.5米，轴距超过3.4米，尺寸已进入顶级行政轿车阵营。鼎曜上市后将首先与尊界S800正面竞争，同时挑战奔驰迈巴赫S级、奥迪A8L霍希等传统燃油车型。（来源：网上车市）</p>
+
+<figure><img src="img/8ea8e76e2ff060.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h3>奔腾小马五门版10月28日全球上市</h3>
+
+<p>一汽奔腾小马五门版将于10月28日全球上市，作为奔腾小马家族的全新成员，该车型在空间、智能、安全及续航等方面进行了升级，主要面向年轻家庭与女性消费群体。新车长宽高分别为3350mm、1540mm和1600mm，轴距达到2215mm，车内前后排座椅均支持放倒。三电方面，搭载宁德时代电池，CLTC工况续航里程可达328km，全系标配主副驾双气囊，配备双音区AI语音交互系统。自2024年5月上市至今，奔腾小马系列全球累计销量已近30万辆。（来源：盖世汽车）</p>
+
+<h3>腾势N8发布 将11月上市</h3>
+
+<p>10月26日，腾势N8正式发布并开启小订，定位为‘科技新境宽五座SUV’，计划于11月内上市，后续还将推出插混版本。新车长宽高为5150/1999/1820mm，轴距3075mm，为大五座中大型SUV，后备厢常规容积达1046L。新车配备四把零重力座椅，前排最大躺角165°、后排146°，通风/加热/按摩功能齐全，并搭载1.1米PHUD天际屏+30英寸全景屏，配备帝瓦雷音响、车载冰箱、后排娱乐屏。新车提供后置单电机两驱及易三方三电机四驱版，系统综合功率最高达890kW，搭载第二代刀片电池，纯电CLTC续航覆盖800km至1003km，插混版纯电续航435km。新车支持闪充，官方称9分钟可将电量从10%充至97%。腾势N8的发布进一步丰富了其产品矩阵，与同级别车型形成差异化竞争，标志着其在新能源SUV市场上的布局进一步深化。（来源：新浪汽车·新车）</p>
+
+<h2>二、销量与市场</h2>
+
+<h3>宏光MINIEV销量突破200万辆</h3>
+
+<p>10月28日，上汽通用五菱官宣，宏光MINIEV累计销量正式突破200万辆，连续74个月位居国内A00级纯电市场销量第一。该车型自2020年7月以2.88万元的起步价入市，填补了平价微型新能源代步车的市场空白，历经五代迭代，逐步优化空间、续航与驾乘体验，适配日常通勤、短途出游等多元家用场景。宏光MINIEV不仅销量亮眼，还参与多项国家及行业标准制定，产品已销往十多个海外国家与地区。第五代宏光MINIEV采用四门四座布局，优化后排乘坐与储物能力，同时升级车身防护、车载交互配置。宏光MINIEV的销量突破200万辆，标志着其在微型新能源车市场上的成功，进一步巩固了其在中国品牌纯电单一车型中的领先地位。（来源：太平洋汽车；旁证：新浪汽车·新车、汽车之家 亦报道）</p>
+
+<figure><img src="img/c7e1bf3fe361a7.jpg" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>沃尔沃新能源销量增长25%</h3>
+
+<p>2026年第三季度，沃尔沃大中华区电气化车型销量同比上涨25%，连续两个季度实现高双位数、翻倍级别的正向增长。在整体豪华燃油车市场竞争激烈、行业承压的背景下，沃尔沃通过精准发力电气化战略，实现结构性突破。目前，沃尔沃已形成插混主力走量、纯电高端占位的完整新能源产品矩阵，多款明星车型持续领跑细分市场，如XC60 T8插混、XC90 T8插混、S90插混、XC70插混及EM90纯电MPV等。沃尔沃的新能源销量逆势增长，表明其电动化转型已真正跑通，成为当下豪华车市场最具增长韧性的品牌之一。（来源：网上车市）</p>
+
+<figure><img src="img/378a5fba1b2478.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h2>三、政策与标准</h2>
+
+<h3>欧盟放松碳排放标准或威胁18.5万就业岗位</h3>
+
+<p>欧盟层面出现放松乘用车二氧化碳排放限值的迹象，国际清洁运输委员会（ICCT）的一项研究警告称，这可能使欧洲汽车工业最多失去18.5万个就业岗位。值得注意的是，汽车行业本身认为，当前严格的2035年碳排放目标是导致就业风险的主要原因。该研究指出，若放松碳排放标准，可能对欧洲汽车行业的就业造成重大冲击。此前，欧盟一直致力于通过严格的碳排放标准推动汽车行业向低碳化转型，而此次政策调整可能引发行业内部的担忧。（来源：Electrive）</p>
+
+<h2>四、供应链与智驾</h2>
+
+<h3>宁德时代20Ah固态电池试制阶段</h3>
+
+<p>宁德时代正在推进20Ah固态电池的样品开发，计划在2027年启动小批量生产。然而，该技术在耐久性、制造良率和成本方面仍面临重大挑战。此前，宁德时代已在硫化物固态电池领域取得进展，构建了10Ah级别的验证平台，并进入20Ah样品试制阶段，目标能量密度约为500Wh/kg。这一进展与宁德时代此前披露的节奏一致，即2027年启动小规模试生产，2030年前后实现规模化量产。（来源：CarNewsChina）</p>
+
+<h3>宁德时代2027年启动全固态电池小批量生产</h3>
+
+<p>宁德时代表示，其全固态电池技术已进入20Ah样品试制阶段，计划于2027年启动小批量生产。公司表示，其技术处于行业领先水平，目标能量密度约为500Wh/kg。宁德时代在2025年研发投入达221.47亿元，全固态电池研发团队已扩充至超1000人。不过，宁德时代董事长曾毓群表示，全固态电池技术成熟度目前仅为4级，产业化仍面临工程化与成本方面的挑战。2027年也是三星SDI、丰田和比亚迪等企业设定全固态电池小批量生产目标的年份，意味着下一代电池技术的工程化竞速已进入关键阶段。（来源：盖世汽车）</p>
+
+<h3>宁德时代20Ah固态电池研发取得进展</h3>
+
+<p>宁德时代在固态电池研发方面取得新进展，将电池容量提升至20Ah。公司计划于2027年开始小规模生产。此前，宁德时代已在固态电池领域持续投入研发，目标是实现更高的能量密度。此次进展标志着其在固态电池技术上的进一步突破，为未来电动汽车的续航能力提升提供了可能。该技术的成熟将有助于推动固态电池在新能源汽车市场的广泛应用。（来源：Electrek）</p>
+
+<figure><img src="img/74d9a39dd8ba34.webp" alt="（图：Electrek）" loading="lazy"><figcaption>（图：Electrek）</figcaption></figure>
+
+<h3>宁德时代与德国Intilion签订3GWh钠离子储能项目</h3>
+
+<p>宁德时代与德国Intilion达成协议，将在未来五年内部署3GWh的钠离子储能系统，覆盖德国、瑞士和奥地利等市场。此前，宁德时代已在钠离子电池领域布局，致力于推动其在储能市场的应用。此次合作表明宁德时代正在加速钠离子电池技术的商业化进程，以应对全球对清洁能源存储需求的增长。此举将有助于提升宁德时代在国际储能市场的竞争力。（来源：CnEVPost）</p>
+
+<figure><img src="img/bdc9ca3ddd8df0.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h2>五、公司与人事</h2>
+
+<h3>奥迪在华品牌运营格局重新划分</h3>
+
+<p>10月26日，奥迪与中国一汽、上汽集团签署战略协议，重新划分在华品牌运营格局。四环品牌由一汽全权运营，上汽专注AUDI字母标，协议即日生效。此前，奥迪在华存在两家合资公司，导致渠道内耗和销量下滑。此次调整旨在明确品牌分工，减少竞争冲突，提升市场效率。奥迪在华销量和利润均出现大幅下滑，促使品牌调整。此次重组意味着奥迪在华将采取更清晰的品牌策略，以应对激烈的市场竞争。（来源：盖世汽车）</p>
+
+<h3>通用汽车11月17日转至纳斯达克上市</h3>
+
+<p>通用汽车公司计划将股票上市地从纽约证券交易所迁移至纳斯达克全球精选市场，11月17日正式在纳斯达克开启交易，股票代码仍保留‘GM’。此举旨在展现企业向科技型公司转型，深耕自动驾驶与电动汽车业务。迁移后，其股票将获得纳入纳斯达克100指数的参选资格。此前，通用汽车已在密歇根州一家工厂进行混动SUV生产准备，未来数年内计划在该州投入超20亿美元。此举与通用汽车近年来加快电动化和智能化转型的策略相呼应，同时与特斯拉、福特等车企在电动车领域的竞争形成背景。通用汽车此举意味着其正加速向科技驱动型企业转型，以适应未来汽车行业的发展趋势。（来源：盖世汽车）</p>
+
+<h2>六、出海与国际</h2>
+
+<h3>长城汽车2027年一季度在保加利亚投产</h3>
+
+<p>长城汽车计划在保加利亚投产欧拉5紧凑型SUV，谋求重返欧洲市场。该新工厂规划年产能5万辆，计划2027年一季度投产。合作方保加利亚汽车工业公司此前已与长城有合作基础。此举与长城汽车近年来加快国际化布局的策略相呼应，同时与大众、宝马等车企在欧洲市场的竞争形成背景。长城汽车此举意味着其正加速在欧洲市场的布局，以应对全球电动车市场竞争的加剧。（来源：Electrive）</p>
+
+<h3>特斯拉进入越南市场挑战VinFast</h3>
+
+<p>特斯拉已在越南开始招聘，包括销售经理、服务经理和充电项目开发人员等职位，表明其正式进入越南市场。此举与特斯拉近年来加快全球市场扩张的策略相呼应，同时与本地电动车企VinFast在越南市场的竞争形成背景。VinFast目前占据越南新车市场约36%的份额。特斯拉进入越南市场意味着其正加速在东南亚市场的布局，以应对本地电动车企的激烈竞争。（来源：Electrek）</p>
+
+<figure><img src="img/87ab1e6f604051.webp" alt="（图：Electrek）" loading="lazy"><figcaption>（图：Electrek）</figcaption></figure>
+
+<h3>中国低价电动车绕过欧盟关税进入欧洲</h3>
+
+<p>近日，一家中国在线汽车交易平台发现了一种绕过欧盟关税的方式，将价格低廉的二手电动车引入欧洲市场。这一做法使得欧洲消费者能够以更低的价格购买到中国电动车。此前，欧盟对从中国进口的电动车实施了严格的关税政策，旨在保护本土汽车产业。然而，这一新途径可能对欧盟的电动车市场格局产生影响。该事件表明，中国电动车企业正在积极寻找应对欧盟贸易壁垒的策略，以扩大其在欧洲市场的份额。（来源：InsideEVs）</p>
+
+<h3>欧盟电动车销量首次超过燃油车总和</h3>
+
+<p>欧盟电动车销量在2023年首次超过了汽油和柴油车的总和，标志着电动车在欧洲市场取得了历史性突破。这一成就得益于各国政府对电动车的大力推广以及消费者对环保出行方式的日益青睐。此前，欧盟各国陆续出台多项政策，包括购车补贴、充电设施建设以及对燃油车的限制措施，这些都为电动车的快速增长提供了有力支持。该事件意味着，电动车在欧洲市场已进入全面替代燃油车的新阶段。（来源：InsideEVs）</p>
+
+<h2>数据速览</h2>
+
+<table><thead><tr><th>指标</th><th>数值</th><th>口径/区间</th><th>来源</th></tr></thead><tbody>
+<tr><td>固态电池能量密度</td><td>500 Wh/kg</td><td>宁德时代</td><td>28</td></tr>
+<tr><td>钠离子储能系统部署规模</td><td>3 GWh</td><td>宁德时代与INTILION</td><td>35</td></tr>
+<tr><td>理想i6续航里程</td><td>780公里</td><td>理想汽车</td><td>10</td></tr>
+<tr><td>宏光MINIEV累计销量</td><td>200万辆</td><td>五菱汽车</td><td>49</td></tr>
+<tr><td>蔚来ES8用户车队行驶里程</td><td>8045公里</td><td>蔚来汽车</td><td>36</td></tr>
+<tr><td>固态电池容量</td><td>20 Ah</td><td>宁德时代</td><td>28</td></tr>
+<tr><td>奥迪在华品牌运营调整时间</td><td>2027年底</td><td>奥迪</td><td>60</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>原文来源</h2>
+
+<p class="standfirst">本页每条报道的图片均来自该条新闻原文页面；原文没有合格图片的条目不配图。</p>
+
+<p>1. [Electrek] Volkswagen’s EV battery recall reaches over 85,000, with Audi now included — https://electrek.co/2026/10/28/volkswagens-ev-battery-recall-reaches-over-85000-with-audi/</p>
+<p>2. [网上车市] 理想新i6限时售23.98万：换大电池，续航780公里！ — http://news.cheshi.com/dujia/20261028/3426155.shtml</p>
+<p>3. [网上车市] 仰望超豪轿车定名-鼎曜，配“劳斯莱斯”式对开门！ — http://news.cheshi.com/dujia/20261027/3426150.shtml</p>
+<p>4. [盖世汽车] 一汽奔腾小马五门版10月28日全球上市 — https://auto.gasgoo.com/news/202610/28I70476081C109.shtml</p>
+<p>5. [新浪汽车·新车] 全新腾势N8正式发布 将11月上市 — https://auto.sina.com.cn/newcar/2026-10-26/detail-iniwqhxk2450538.shtml?oaid=00006&amp;c=spr_auto_trackid_f8944f41f240e3fc</p>
+<p>6. [太平洋汽车] 别看个头不大 宏光MINIEV累计销量已经闯过200万大关 — http://www.pcauto.com.cn/news/5189/51899648.html?ad=28676</p>
+<p>7. [网上车市] 沃尔沃中国新能源销量增长25% 段建军首个答卷 — http://news.cheshi.com/dujia/20261028/3426153.shtml</p>
+<p>8. [Electrive] ICCT: Relaxing CO₂ standards for passenger cars threatens jobs — https://www.electrive.com/2026/10/28/icct-study-relaxing-co%e2%82%82-standards-for-passenger-cars-threatens-jobs/</p>
+<p>9. [CarNewsChina] CATL advances 20 Ah solid-state battery cells ahead of 2027 trial production — https://carnewschina.com/2026/10/28/catl-advances-20-ah-solid-state-battery-cells-ahead-of-2027-trial-production/</p>
+<p>10. [盖世汽车] CATL 2027产全固态电池 — https://auto.gasgoo.com/news/202610/28I70476109C108.shtml</p>
+<p>11. [Electrek] CATL pushes ahead with 20 Ah solid-state EV batteries, with 500 Wh/kg in sight — https://electrek.co/2026/10/28/catl-pushes-ahead-20-ah-solid-state-ev-batteries-500-wh-kg/</p>
+<p>12. [CnEVPost] CATL signs deal with Germany&#x27;s Intilion to deploy 3 GWh of sodium-ion storage over 5 years — https://cnevpost.com/2026/10/28/catl-intilion-3-gwh-sodium-ion-storage/</p>
+<p>13. [盖世汽车] 奥迪两个“A”拆开了 — https://auto.gasgoo.com/news/202610/27I70476002C109.shtml</p>
+<p>14. [盖世汽车] 国际| 通用汽车将从纽交所转至纳斯达克上市 — https://auto.gasgoo.com/news/202610/28I70476125C108.shtml</p>
+<p>15. [Electrive] GWM aims for European production in Bulgaria — https://www.electrive.com/2026/10/28/gwm-aims-for-european-production-in-bulgaria/</p>
+<p>16. [Electrek] Tesla confirms Vietnam entry to take on VinFast and its 36% market share — https://electrek.co/2026/10/28/tesla-vietnam-entry-vinfast/</p>
+<p>17. [InsideEVs] How Cheap Chinese EVs Are Sneaking Around Europe&#x27;s Tariffs — https://insideevs.com/news/813426/chinese-evs-western-markets-used/</p>
+<p>18. [InsideEVs] The EU Just Hit A Historic Milestone: EVs Outsold Gas And Diesel Cars Combined — https://insideevs.com/news/813621/ev-beats-ice-europe-sales/</p>
+<p>19. [CnEVPost] Li Auto launches 2026 i6 with unchanged starting price, upgraded in-house chip and battery — https://cnevpost.com/2026/10/28/li-auto-launches-2026-i6/</p>
+<p>20. [新浪汽车·新车] 宏光MINIEV累计销量突破200万辆 — https://auto.sina.com.cn/newcar/2026-10-28/detail-iniwttsa6702454.shtml?oaid=00111&amp;c=spr_auto_trackid_4d7d188c9b7a61c4</p>
+<p>21. [易车] 2026款理想i6正式上市 首销限时权益价23.98万元 — https://news.yiche.com/info/114222529.html</p>
+<p>22. [新浪汽车] 92%综合得分率 岚图泰山获C-NCAP五星+认证 — https://auto.sina.com.cn/news/2026-10-28/detail-iniwuefy3415143.shtml</p>
+<p>23. [钛媒体] 恒辉安防8亿再押UHMWPE，未来价格战成隐患 — https://www.tmtpost.com/8184721.html</p>
+<p>24. [汽车之家] 宁德时代全固态电池：2027年有望小批量生产 2030年前后规模量产 — https://www.autohome.com.cn/news/202610/1318024.html#pvareaid=102624</p>
+<p>25. [太平洋汽车] 一汽-大众ID. AURA L5实车亮相 纯电掀背+激光雷达 — http://www.pcauto.com.cn/nation/5189/51899666.html?ad=28676</p>
+<p>26. [CarNewsChina] BYD’s Denza brings power saving sentry mode to discontinued N7 SUV, may come to more cars — https://carnewschina.com/2026/10/27/byds-denza-brings-power-saving-sentry-mode-to-discontinued-n7-suv-may-come-to-more-cars/</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
