@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>bbc-6min-multiple-languages · 汽车英语精读</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 10 月 30 日 · 星期五 · 第 44 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">英语精读</p>
+    <h1 class="art-title">bbc-6min-multiple-languages · 汽车英语精读</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">2026-10-30</p>
+  <article class="art-body">
+<div class="player"><audio controls preload="metadata" src="audio/auto-en-bbc-6min-multiple-languages.m4a"></audio><p class="player-note">原声 00:06:44 ｜ 素材自身音轨 ｜ 点正文里的时间码，从该句开始播放</p></div>
+<table><thead><tr><th>项目</th><th>值</th></tr></thead><tbody>
+<tr><td>源文件</td><td>auto-en-bbc-6min-multiple-languages.m4a</td></tr>
+<tr><td>时长</td><td>00:06:44</td></tr>
+<tr><td>句段数</td><td>103</td></tr>
+<tr><td>生成时间</td><td>2026-10-25 00:52</td></tr>
+<tr><td>任务号</td><td>20261025-004444-ac394c15</td></tr>
+</tbody></table>
+
+<h2>内容摘要</h2>
+<ul><li>本视频是 BBC 的 6 分钟英语节目，讨论多语种学习者（polyglot）及其对大脑的影响。</li><li>通过采访语言学家和多语种学习者，探讨学习多种语言对大脑健康的好处。</li><li>提到一些学习语言的方法，如沉浸式学习（immersion）和通过实践掌握技能（pick up a skill）。</li><li>介绍了多语种学习者 Victoria Mwankunda 的经历，她能说五种语言并理解八种。</li><li>最后回答了一个关于“哪个国家官方语言数量最多”的问题，答案是玻利维亚（Bolivia）。</li></ul>
+
+<h2>行业术语</h2>
+<table><thead><tr><th>英文</th><th>缩写</th><th>中文</th><th>原文语境</th></tr></thead><tbody>
+<tr><td>polyglot</td><td>-</td><td>多语种学习者</td><td>someone who knows lots of languages</td></tr>
+<tr><td>brain workout</td><td>-</td><td>大脑锻炼</td><td>exercise for your brain</td></tr>
+<tr><td>pick up a skill</td><td>-</td><td>掌握技能</td><td>you learn it, usually through practice</td></tr>
+<tr><td>soldier on</td><td>-</td><td>坚持下去</td><td>continue doing something even though it&#x27;s difficult</td></tr>
+<tr><td>tune in to</td><td>-</td><td>专注于</td><td>listen or pay attention to it</td></tr>
+<tr><td>juggle several things</td><td>-</td><td>同时处理多件事</td><td>deal with all of them at the same time</td></tr>
+<tr><td>immersion</td><td>-</td><td>沉浸式学习</td><td>go to the market or into the street</td></tr>
+<tr><td>mother tongue</td><td>-</td><td>母语</td><td>keep our mother tongue in here</td></tr>
+<tr><td>cognitive neuroscientist</td><td>-</td><td>认知神经科学家</td><td>Professor Frédérique Liégeois</td></tr>
+<tr><td>bilinguals</td><td>-</td><td>双语者</td><td>as opposed to monolinguals</td></tr>
+<tr><td>monolinguals</td><td>-</td><td>单语者</td><td>as opposed to bilinguals</td></tr>
+<tr><td>dementia</td><td>-</td><td>阿尔茨海默症</td><td>show symptoms later when they&#x27;re bilinguals</td></tr>
+<tr><td>brain efficiency</td><td>-</td><td>大脑效率</td><td>boost this brain efficiency</td></tr>
+<tr><td>official languages</td><td>-</td><td>官方语言</td><td>recognised by their government</td></tr>
+<tr><td>Kinyaranda</td><td>-</td><td>科尼亚拉达语</td><td>keep our mother tongue in here</td></tr>
+<tr><td>Norwegian</td><td>-</td><td>挪威语</td><td>pick up Norwegian quite easily</td></tr>
+<tr><td>Rwanda</td><td>-</td><td>卢旺达</td><td>moved from Rwanda to Kenya</td></tr>
+<tr><td>Kenya</td><td>-</td><td>肯尼亚</td><td>moved from Rwanda to Kenya</td></tr>
+<tr><td>Norway</td><td>-</td><td>挪威</td><td>moved from Rwanda to Kenya</td></tr>
+<tr><td>BBC World Service</td><td>-</td><td>英国广播公司国际频道</td><td>presenter and a journalist on the BBC World Service</td></tr>
+<tr><td>What in the World</td><td>-</td><td>《世界万象》</td><td>the What in the World podcast</td></tr>
+<tr><td>Six Minute English</td><td>-</td><td>六分钟英语</td><td>listen to Six Minute English</td></tr>
+<tr><td>BBC podcast</td><td>-</td><td>英国广播公司播客</td><td>Hannah from BBC podcast What In The World</td></tr>
+<tr><td>dementia</td><td>-</td><td>阿尔茨海默症</td><td>show symptoms later when they&#x27;re bilinguals</td></tr>
+<tr><td>brain efficiency</td><td>-</td><td>大脑效率</td><td>boost this brain efficiency</td></tr>
+<tr><td>official languages</td><td>-</td><td>官方语言</td><td>recognised by their government</td></tr>
+<tr><td>Kinyaranda</td><td>-</td><td>科尼亚拉达语</td><td>keep our mother tongue in here</td></tr>
+<tr><td>Norwegian</td><td>-</td><td>挪威语</td><td>pick up Norwegian quite easily</td></tr>
+<tr><td>Rwanda</td><td>-</td><td>卢旺达</td><td>moved from Rwanda to Kenya</td></tr>
+<tr><td>Kenya</td><td>-</td><td>肯尼亚</td><td>moved from Rwanda to Kenya</td></tr>
+<tr><td>Norway</td><td>-</td><td>挪威</td><td>moved from Rwanda to Kenya</td></tr>
+<tr><td>BBC World Service</td><td>-</td><td>英国广播公司国际频道</td><td>presenter and a journalist on the BBC World Service</td></tr>
+<tr><td>What in the World</td><td>-</td><td>《世界万象》</td><td>the What in the World podcast</td></tr>
+<tr><td>Six Minute English</td><td>-</td><td>六分钟英语</td><td>listen to Six Minute English</td></tr>
+<tr><td>BBC podcast</td><td>-</td><td>英国广播公司播客</td><td>Hannah from BBC podcast What In The World</td></tr>
+</tbody></table>
+
+<h2>高频表达</h2>
+<table><thead><tr><th>英文</th><th>中文</th><th>用法</th></tr></thead><tbody>
+<tr><td>pick up a skill</td><td>掌握技能</td><td>用于描述通过实践学习新技能</td></tr>
+<tr><td>soldier on</td><td>坚持下去</td><td>用于描述在困难中继续努力</td></tr>
+<tr><td>tune in to</td><td>专注于</td><td>用于描述注意力集中</td></tr>
+<tr><td>juggle several things</td><td>同时处理多件事</td><td>用于描述多任务处理</td></tr>
+<tr><td>brain workout</td><td>大脑锻炼</td><td>用于描述对大脑有益的活动</td></tr>
+<tr><td>immerse yourself in</td><td>沉浸于</td><td>用于描述学习语言的方法</td></tr>
+<tr><td>keep our mother tongue in here</td><td>保留母语</td><td>用于描述语言传承</td></tr>
+<tr><td>help someone along the way</td><td>在过程中帮助某人</td><td>用于描述支持他人学习</td></tr>
+<tr><td>make sense of the world</td><td>理解世界</td><td>用于描述学习语言的目的</td></tr>
+<tr><td>put out a new episode</td><td>发布新一期</td><td>用于描述节目制作</td></tr>
+<tr><td>look at stories from around the world</td><td>关注全球新闻</td><td>用于描述节目内容</td></tr>
+<tr><td>cover news and trending topics</td><td>涵盖新闻和热点话题</td><td>用于描述节目内容</td></tr>
+<tr><td>help you make sense of the world</td><td>帮助你理解世界</td><td>用于描述节目目标</td></tr>
+<tr><td>answer to our quiz question</td><td>回答问题</td><td>用于描述节目环节</td></tr>
+<tr><td>officially recognised languages</td><td>官方认可的语言</td><td>用于描述国家语言政策</td></tr>
+<tr><td>not everyone speaks all of them</td><td>并非所有人都会说</td><td>用于描述语言使用情况</td></tr>
+</tbody></table>
+
+<h2>商务表达</h2>
+<table><thead><tr><th>英文</th><th>中文</th><th>适用场合</th></tr></thead><tbody>
+<tr><td>soldier on</td><td>坚持下去</td><td>用于描述在困难中继续推进项目</td></tr>
+<tr><td>help someone along the way</td><td>在过程中帮助某人</td><td>用于描述团队协作或支持同事</td></tr>
+<tr><td>put out a new episode</td><td>发布新一期</td><td>用于描述产品或内容的更新</td></tr>
+<tr><td>cover news and trending topics</td><td>涵盖新闻和热点话题</td><td>用于描述内容策划或市场分析</td></tr>
+<tr><td>help you make sense of the world</td><td>帮助你理解世界</td><td>用于描述产品或服务的价值主张</td></tr>
+<tr><td>not everyone speaks all of them</td><td>并非所有人都会说</td><td>用于描述语言使用情况或市场调研</td></tr>
+</tbody></table>
+
+<h2>闪卡</h2>
+<pre class="cards">polyglot	多语种学习者; 指掌握多种语言的人
+brain workout	大脑锻炼; 指对大脑有益的活动
+pick up a skill	掌握技能; 通常通过实践学习
+soldier on	坚持下去; 在困难中继续推进
+tune in to	专注于; 用于描述注意力集中
+juggle several things	同时处理多件事; 用于描述多任务处理
+immerse yourself in	沉浸于; 用于描述学习语言的方法
+keep our mother tongue in here	保留母语; 用于描述语言传承
+help someone along the way	在过程中帮助某人; 用于描述支持他人学习
+make sense of the world	理解世界; 用于描述学习语言的目的
+put out a new episode	发布新一期; 用于描述产品或内容的更新
+cover news and trending topics	涵盖新闻和热点话题; 用于描述内容策划或市场分析
+help you make sense of the world	帮助你理解世界; 用于描述产品或服务的价值主张
+not everyone speaks all of them	并非所有人都会说; 用于描述语言使用情况或市场调研
+officially recognised languages	官方认可的语言; 用于描述国家语言政策</pre>
+
+<h2>逐句中英对照</h2>
+
+<button class="ts" type="button" data-sec="1">[00:00:01]</button>
+
+<p>Hello and welcome to 6 Minute English from BBC Learning English. I&#x27;m Neil and today</p>
+
+<p>欢迎收听BBC学习英语的《六分钟英语》。我是尼尔，今天</p>
+
+<button class="ts" type="button" data-sec="11">[00:00:11]</button>
+
+<p>I&#x27;m here with Hannah from BBC podcast What In The World. Hello, Hannah.</p>
+
+<p>我今天和来自BBC播客《What In The World》的汉娜一起。你好，汉娜。</p>
+
+<button class="ts" type="button" data-sec="16">[00:00:16]</button>
+
+<p>Hi, Neil.</p>
+
+<p>你好，尼尔。</p>
+
+<button class="ts" type="button" data-sec="17">[00:00:17]</button>
+
+<p>Hannah and the What In The World team have been investigating what it&#x27;s like to learn</p>
+
+<p>汉娜和《What In The World》团队一直在调查学习多种语言的经历</p>
+
+<button class="ts" type="button" data-sec="21">[00:00:21]</button>
+
+<p>multiple languages and she&#x27;s here to tell us more about it. Welcome to 6 Minute English.</p>
+
+<p>她将向我们详细介绍。欢迎收听《六分钟英语》。</p>
+
+<button class="ts" type="button" data-sec="26">[00:00:26]</button>
+
+<p>Thank you so much for having me.</p>
+
+<p>非常感谢邀请我。</p>
+
+<button class="ts" type="button" data-sec="28">[00:00:28]</button>
+
+<p>And it&#x27;s great to have you here. Now, in this programme, we help you improve your English</p>
+
+<p>很高兴你来。现在，在这个节目中，我们帮助你提高英语</p>
+
+<button class="ts" type="button" data-sec="32">[00:00:32]</button>
+
+<p>and maybe English is the first language you have ever tried to learn. Or maybe you know</p>
+
+<p>也许英语是你尝试学习的第一门语言。或者你已经掌握了很多语言。</p>
+
+<button class="ts" type="button" data-sec="38">[00:00:38]</button>
+
+<p>a lot of languages.</p>
+
+<p>掌握多种语言的人被称为多语者。尼尔，你是多语者吗？</p>
+
+<button class="ts" type="button" data-sec="40">[00:00:40]</button>
+
+<p>Well, someone who knows multiple languages is called a polyglot. Neil, are you a polyglot?</p>
+
+<p>我会说几种语言，但不能说自己是多语者。你呢？</p>
+
+<button class="ts" type="button" data-sec="46">[00:00:46]</button>
+
+<p>I speak a little bit of a few languages, but I couldn&#x27;t say that I&#x27;m a polyglot. How about you?</p>
+
+<p>我是多语者。</p>
+
+<button class="ts" type="button" data-sec="52">[00:00:52]</button>
+
+<p>I am a polyglot.</p>
+
+<p>哇，我感到非常钦佩，也有些紧张。</p>
+
+<button class="ts" type="button" data-sec="54">[00:00:54]</button>
+
+<p>Wow, I feel really impressed and a bit intimidated.</p>
+
+<p>现在，汉娜，我们节目总是以一个问题开始。那么，问题来了。哪个国家被政府承认的官方语言最多？是A、津巴布韦，B、瑞士，还是C、玻利维亚？</p>
+
+<button class="ts" type="button" data-sec="58">[00:00:58]</button>
+
+<p>Now, Hannah, we always start our programme off with a question. So, here it goes. Which</p>
+
+<p>我猜是津巴布韦。</p>
+
+<button class="ts" type="button" data-sec="65">[00:01:05]</button>
+
+<p>country has the most official languages recognised by their government? So, is it A, Zimbabwe,</p>
+
+<p>好的，我们将在节目结束时揭晓答案。现在，汉娜，你一直在研究多语者的一些好处。</p>
+
+<button class="ts" type="button" data-sec="71">[00:01:11]</button>
+
+<p>B, Switzerland or C, Bolivia?</p>
+
+<p>是的，尼尔，有很多研究显示如何</p>
+
+<button class="ts" type="button" data-sec="74">[00:01:14]</button>
+
+<p>I would guess Zimbabwe.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="76">[00:01:16]</button>
+
+<p>Well, we&#x27;ll find out the answer at the end of the programme. Now, Hannah, you&#x27;ve been</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="81">[00:01:21]</button>
+
+<p>finding out about some of the benefits of being a polyglot.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="84">[00:01:24]</button>
+
+<p>Yes, Neil, there&#x27;s been lots of research about how</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="88">[00:01:28]</button>
+
+<p>knowing more than one language can change your brain. And this might have some health</p>
+
+<p>掌握多种语言可以改变你的大脑。这还可能带来一些健康益处。</p>
+
+<button class="ts" type="button" data-sec="93">[00:01:33]</button>
+
+<p>benefits too. At What in the World, we spoke to Professor Frédérique Liégeois, who&#x27;s</p>
+
+<p>我们在《What in the World》节目中采访了伦敦大学学院的认知神经科学家弗雷德里克·利埃热教授。</p>
+
+<button class="ts" type="button" data-sec="98">[00:01:38]</button>
+
+<p>a cognitive neuroscientist at University College London.</p>
+
+<p>婴儿即使在说话之前，也必须适应周围的语言，以理解人们对他们说的话。</p>
+
+<button class="ts" type="button" data-sec="102">[00:01:42]</button>
+
+<p>Babies, even before they speak, have to tune into the languages around them to make sense</p>
+
+<p>当孩子们开始学习多种语言时，他们必须专注于一种语言，而忽略正在使用的另一种语言。</p>
+
+<button class="ts" type="button" data-sec="107">[00:01:47]</button>
+
+<p>out of what people say to them. And then when children start to speak several languages,</p>
+
+<p>他们还必须能够从一种语言切换到另一种语言。今天我们将讨论的就是这个话题。</p>
+
+<button class="ts" type="button" data-sec="112">[00:01:52]</button>
+
+<p>they have to focus on one language and ignore another one where they&#x27;re speaking. They also</p>
+
+<p>根据对话对象的不同，他们会在一种语言和另一种语言之间切换。</p>
+
+<button class="ts" type="button" data-sec="116">[00:01:56]</button>
+
+<p>have to be able to switch from one language to another. And that&#x27;s what we&#x27;re going to</p>
+
+<p>随着年龄增长，当成年人患有痴呆症时，双语者似乎比单语者更晚出现症状。</p>
+
+<button class="ts" type="button" data-sec="118">[00:01:58]</button>
+
+<p>talk about today.</p>
+
+<p>我们认为在多种语言之间切换帮助他们显著提升了大脑效率，这是一个巨大的优势。</p>
+
+<button class="ts" type="button" data-sec="118">[00:01:58]</button>
+
+<p>One language to the other, depending on who they&#x27;re speaking to. Later on in age, when</p>
+
+<p>就像给大脑做锻炼。</p>
+
+<button class="ts" type="button" data-sec="123">[00:02:03]</button>
+
+<p>adults have dementia, they seem to show symptoms later when they&#x27;re bilinguals as opposed to</p>
+
+<p>弗雷德里克解释说，那些在成长过程中学习多种语言的婴儿必须适应周围的语言。</p>
+
+<button class="ts" type="button" data-sec="128">[00:02:08]</button>
+
+<p>monolinguals. We think that juggling several languages has helped them really boost this</p>
+
+<p>他们必须倾听每种语言。</p>
+
+<button class="ts" type="button" data-sec="134">[00:02:14]</button>
+
+<p>brain efficiency, which is a great advantage. It&#x27;s like a brain workout.</p>
+
+<p>随着时间的推移，他们变得擅长切换语言，并忽略对话中不需要的语言。</p>
+
+<button class="ts" type="button" data-sec="139">[00:02:19]</button>
+
+<p>Frédérique explains that babies who grow up learning more than one language have to</p>
+
+<p>科学家认为在多种语言之间切换对你是有益的。</p>
+
+<button class="ts" type="button" data-sec="144">[00:02:24]</button>
+
+<p>tune into the languages around them. They have to listen to each language.</p>
+
+<p>如果你/认为</p>
+
+<button class="ts" type="button" data-sec="148">[00:02:28]</button>
+
+<p>Over time, they become good at switching languages and ignoring the ones they don&#x27;t need in a</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="154">[00:02:34]</button>
+
+<p>conversation. Scientists think that juggling several languages is good for you. If you</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="160">[00:02:40]</button>
+
+<p>juggle several things, that means you deal with all of them at the same time.</p>
+
+<p>同时处理多件事情，意味着你同时处理所有的事情。</p>
+
+<button class="ts" type="button" data-sec="164">[00:02:44]</button>
+
+<p>Frédérique describes being a polyglot as a brain workout. This means it&#x27;s exercise for your brain</p>
+
+<p>弗雷德里克将多语种者比作大脑锻炼。这意味着这是对大脑的锻炼</p>
+
+<button class="ts" type="button" data-sec="171">[00:02:51]</button>
+
+<p>that can make it stronger. Now, Hannah, I don&#x27;t know about you. When I was younger and languages</p>
+
+<p>可以使它变得更强大。现在，汉娜，我不确定你的情况。当我年轻的时候，语言似乎只是...</p>
+
+<button class="ts" type="button" data-sec="177">[00:02:57]</button>
+
+<p>just seemed like a...</p>
+
+<p>学校里的另一门学科，我当时并没有太在意。但后来我在国外工作时，</p>
+
+<button class="ts" type="button" data-sec="178">[00:02:58]</button>
+
+<p>Another subject at school, I didn&#x27;t really care so much. But when I worked abroad later in life,</p>
+
+<p>我更加有动力，也觉得更容易。你呢？</p>
+
+<button class="ts" type="button" data-sec="185">[00:03:05]</button>
+
+<p>I was much more motivated and found it easier. How about you?</p>
+
+<p>实际情况恰恰相反。我在学校和大学时发现学习语言更容易。</p>
+
+<button class="ts" type="button" data-sec="188">[00:03:08]</button>
+
+<p>Quite the opposite, actually. I did find it easier to learn languages at school and university.</p>
+
+<p>但当时我并不需要因为需要而学习这些语言。但我的同事维多利亚·姆旺库达，</p>
+
+<button class="ts" type="button" data-sec="195">[00:03:15]</button>
+
+<p>But I didn&#x27;t have to learn these languages out of necessity. But my colleague, Victoria Mwankunda,</p>
+
+<p>她是BBC世界新闻的主持人和记者，她确实需要。她会说五种语言，</p>
+
+<button class="ts" type="button" data-sec="201">[00:03:21]</button>
+
+<p>she&#x27;s a presenter and a journalist on the BBC World Service, she did. She speaks five languages,</p>
+
+<p>能听懂八种语言。她学习这些语言是因为她的家人在她十几岁时从卢旺达</p>
+
+<button class="ts" type="button" data-sec="208">[00:03:28]</button>
+
+<p>and she understands eight. And she learnt those languages because her family moved from Rwanda</p>
+
+<p>搬到肯尼亚，然后又搬到挪威。维多利亚说她能够轻松学会</p>
+
+<button class="ts" type="button" data-sec="214">[00:03:34]</button>
+
+<p>to Kenya and then to Norway when she was a teenager. Victoria says she was able to pick up</p>
+
+<p>挪威语。</p>
+
+<button class="ts" type="button" data-sec="220">[00:03:40]</button>
+
+<p>Norwegian quite easily.</p>
+
+<p>如果你学会一项技能，意味着你通过置身于该技能发生环境来学习，而不是通过被教导。</p>
+
+<button class="ts" type="button" data-sec="222">[00:03:42]</button>
+
+<p>If you pick up a skill, it means you learn it, usually by being in the environment where that</p>
+
+<p>但维多利亚的父母发现学习挪威语要困难得多。让我们听听维克在《What in the World》播客中的说法。</p>
+
+<button class="ts" type="button" data-sec="227">[00:03:47]</button>
+
+<p>thing happens, rather than being taught.</p>
+
+<p>首先，他们要完全进入一种全新的文化，这与他们之前所经历的一切都截然不同。</p>
+
+<button class="ts" type="button" data-sec="230">[00:03:50]</button>
+
+<p>But Victoria&#x27;s parents found it much harder to learn Norwegian. Let&#x27;s hear what Vic said on the</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="236">[00:03:56]</button>
+
+<p>What in the World podcast.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="238">[00:03:58]</button>
+
+<p>First of all, you&#x27;re having them coming into a new culture completely from everything they&#x27;ve</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="244">[00:04:04]</button>
+
+<p>ever known. The language is new. These are people in their 50s, you know, but they soldiered on</p>
+
+<p>前所未有的。这种语言是全新的。这些都是五十多岁的人，你知道的，但他们坚持了下来</p>
+
+<button class="ts" type="button" data-sec="250">[00:04:10]</button>
+
+<p>because if you want to work, if you want to live there, you have to learn. And they did. It wasn&#x27;t</p>
+
+<p>因为如果你想工作，如果你想在那里生活，就必须学习。他们确实做到了。这并不容易</p>
+
+<button class="ts" type="button" data-sec="255">[00:04:15]</button>
+
+<p>easy. But I think also with us kids, we picked it up quite quickly. So if they were making a mistake,</p>
+
+<p>但我觉得，对于我们这些孩子来说，我们学得很快。所以如果他们犯了错误，我们也在过程中帮助他们</p>
+
+<button class="ts" type="button" data-sec="260">[00:04:20]</button>
+
+<p>we were also helping them along the way. So it kind of a way of paying back. You helped us get</p>
+
+<p>所以这在某种程度上是一种偿还。你帮助我们到达这里，你知道的，保留我们的母语在这里。我们将继续在这里保留我们的母语</p>
+
+<button class="ts" type="button" data-sec="265">[00:04:25]</button>
+
+<p>to this, you know, to keep our mother tongue in here. We are going to keep our mother tongue in here.</p>
+
+<p>维多利亚的父母在五十多岁时发现学习挪威语很困难，但他们坚持了下来</p>
+
+<button class="ts" type="button" data-sec="268">[00:04:28]</button>
+
+<p>Victoria&#x27;s parents found it difficult to learn Norwegian in their 50s, but they soldiered on.</p>
+
+<p>尽管困难，他们仍然坚持做某事。汉娜，我真的很喜欢这个家庭在语言学习上互相帮助</p>
+
+<button class="ts" type="button" data-sec="275">[00:04:35]</button>
+
+<p>They continued doing something even though it was difficult. And I love that the family helped each</p>
+
+<p>是的。所以维克的父母在他们不得不离开卢旺达时帮助他们保留了基尼亚兰达语。几年后，孩子们又帮助父母学习挪威语</p>
+
+<button class="ts" type="button" data-sec="280">[00:04:40]</button>
+
+<p>other with their languages, Hannah.</p>
+
+<p>而且，汉娜，维多利亚在学习了四种其他语言后，仍然很容易掌握了挪威语</p>
+
+<button class="ts" type="button" data-sec="282">[00:04:42]</button>
+
+<p>Yes. So Vic&#x27;s parents helped them keep their mother tongue, Kinyaranda, when they had to leave</p>
+
+<p>维多利亚有没有学习这么多语言的建议？</p>
+
+<button class="ts" type="button" data-sec="287">[00:04:47]</button>
+
+<p>Rwanda. And then years later, the children helped their parents learn Norwegian.</p>
+
+<p>她推荐的一个方法是让自己沉浸在语言环境中。她说，去市场或街头，去那些可以听到人们使用这种语言的地方</p>
+
+<button class="ts" type="button" data-sec="292">[00:04:52]</button>
+
+<p>And, Hannah, Victoria picked up Norwegian quite easily, even after learning four other languages.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="298">[00:04:58]</button>
+
+<p>Did Victoria have any tips for learning so many languages?</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="301">[00:05:01]</button>
+
+<p>Well, one thing she recommended is trying to immerse yourself in the language. So she said</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="308">[00:05:08]</button>
+
+<p>go to the market or into the street, a place where you can listen to people using the language.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="314">[00:05:14]</button>
+
+<p>Yes, and some learners might be learning English online, and so they don&#x27;t have the opportunity to</p>
+
+<p>是的，有些学习者可能在网上学习英语，因此他们没有机会去市场或街头听人们说这种语言</p>
+
+<button class="ts" type="button" data-sec="319">[00:05:19]</button>
+
+<p>go to a market or street and hear the language. But there are other things that you can do.</p>
+
+<p>但你还可以做其他事情</p>
+
+<button class="ts" type="button" data-sec="324">[00:05:24]</button>
+
+<p>For example, you can listen to Six Minute English. Or you could try other BBC</p>
+
+<p>例如，你可以收听《六分钟英语》。或者你也可以尝试其他BBC播客，比如《What in the World》</p>
+
+<button class="ts" type="button" data-sec="328">[00:05:28]</button>
+
+<p>podcasts like What in the World, too.</p>
+
+<p>《What in the World》是我参与制作的节目，我们每周工作日都会发布新一期节目</p>
+
+<button class="ts" type="button" data-sec="330">[00:05:30]</button>
+
+<p>What in the World is the programme that I work on, and we put out a new episode every weekday.</p>
+
+<p>我们关注世界各地的新闻和热门话题</p>
+
+<button class="ts" type="button" data-sec="336">[00:05:36]</button>
+
+<p>We look at stories from around the world covering news and trending topics</p>
+
+<p>以帮助你理解世界</p>
+
+<button class="ts" type="button" data-sec="340">[00:05:40]</button>
+
+<p>to try to help you make sense of the world.</p>
+
+<p>现在是时候揭晓我们小测验的答案了</p>
+
+<button class="ts" type="button" data-sec="344">[00:05:44]</button>
+
+<p>Time now for the answer to our quiz question.</p>
+
+<p>我问过你们哪个国家拥有最多官方承认的语言</p>
+
+<button class="ts" type="button" data-sec="347">[00:05:47]</button>
+
+<p>I asked you which country has the most officially recognised languages.</p>
+
+<p>我说是津巴布韦</p>
+
+<button class="ts" type="button" data-sec="351">[00:05:51]</button>
+
+<p>I said Zimbabwe.</p>
+
+<p>但恐怕这个答案是错误的</p>
+
+<button class="ts" type="button" data-sec="352">[00:05:52]</button>
+
+<p>And I&#x27;m afraid that was the wrong answer.</p>
+
+<p>事实上是玻利维亚，该国承认</p>
+
+<button class="ts" type="button" data-sec="354">[00:05:54]</button>
+
+<p>It was in fact Bolivia, which recognises</p>
+
+<p>37种语言，当然</p>
+
+<button class="ts" type="button" data-sec="358">[00:05:58]</button>
+
+<p>37 languages, though of course</p>
+
+<p>并不是每个人都说所有这些语言</p>
+
+<button class="ts" type="button" data-sec="360">[00:06:00]</button>
+
+<p>not everyone speaks all of them.</p>
+
+<p>现在让我们复习一下我们学到的词汇</p>
+
+<button class="ts" type="button" data-sec="362">[00:06:02]</button>
+
+<p>Now let&#x27;s recap the vocabulary</p>
+
+<p>从多语者开始，多语者是指</p>
+
+<button class="ts" type="button" data-sec="364">[00:06:04]</button>
+
+<p>that we have learned, starting</p>
+
+<p>知道很多语言的人，比如我</p>
+
+<button class="ts" type="button" data-sec="366">[00:06:06]</button>
+
+<p>with polyglot, which is someone</p>
+
+<p>如果你关注某事</p>
+
+<button class="ts" type="button" data-sec="368">[00:06:08]</button>
+
+<p>who knows lots of languages, like me.</p>
+
+<p>你就是在听或关注它</p>
+
+<button class="ts" type="button" data-sec="370">[00:06:10]</button>
+
+<p>If you tune in to something</p>
+
+<p>同时处理多件事情，比如语言，意味着同时做几件不同的事情</p>
+
+<button class="ts" type="button" data-sec="372">[00:06:12]</button>
+
+<p>you listen or pay attention to it.</p>
+
+<p>大脑锻炼就是对大脑的锻炼</p>
+
+<button class="ts" type="button" data-sec="374">[00:06:14]</button>
+
+<p>Juggling several things, like</p>
+
+<p>如果你掌握了一项技能，你就是通过练习学会了它</p>
+
+<button class="ts" type="button" data-sec="376">[00:06:16]</button>
+
+<p>languages, means doing several</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="378">[00:06:18]</button>
+
+<p>different things at the same time.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="380">[00:06:20]</button>
+
+<p>A brain workout is</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="382">[00:06:22]</button>
+
+<p>exercise for your brain.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="384">[00:06:24]</button>
+
+<p>If you pick up a skill, you</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="386">[00:06:26]</button>
+
+<p>learn it, usually through practice</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="388">[00:06:28]</button>
+
+<p>rather than being taught. And if you</p>
+
+<p>而不是被教导。如果你</p>
+
+<button class="ts" type="button" data-sec="390">[00:06:30]</button>
+
+<p>soldier on, you continue doing something</p>
+
+<p>坚持下去，你就会继续做某事</p>
+
+<button class="ts" type="button" data-sec="392">[00:06:32]</button>
+
+<p>even though it&#x27;s difficult.</p>
+
+<p>即使很困难。</p>
+
+<button class="ts" type="button" data-sec="394">[00:06:34]</button>
+
+<p>Thanks for listening to 6 Minute</p>
+
+<p>感谢收听6 Minute</p>
+
+<button class="ts" type="button" data-sec="396">[00:06:36]</button>
+
+<p>English and listen to the full episode</p>
+
+<p>English，收听完整版节目</p>
+
+<button class="ts" type="button" data-sec="398">[00:06:38]</button>
+
+<p>of What in the World? about polyglots</p>
+
+<p>What in the World?关于多语种者</p>
+
+<button class="ts" type="button" data-sec="400">[00:06:40]</button>
+
+<p>and learning languages. There&#x27;s a link</p>
+
+<p>和语言学习。在本节目的下方备注中有链接</p>
+
+<button class="ts" type="button" data-sec="402">[00:06:42]</button>
+
+<p>in the notes below this programme.</p>
+
+<p>非常感谢邀请我。</p>
+
+<button class="ts" type="button" data-sec="404">[00:06:44]</button>
+
+<p>Thank you so much for having me.</p>
+
+<p>[未翻译]</p>
+
+<hr>
+
+<p class="standfirst">汽车英语精读 ｜ 来源视频：bbc-6min-multiple-languages ｜ 含术语表、高频表达与逐句中英对照</p>
+
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
