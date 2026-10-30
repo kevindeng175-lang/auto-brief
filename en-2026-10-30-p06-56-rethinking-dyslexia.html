@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>p06-56-rethinking-dyslexia · 英语精读</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 10 月 30 日 · 星期五 · 第 44 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">英语精读</p>
+    <h1 class="art-title">p06-56-rethinking-dyslexia · 英语精读</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">2026-10-30</p>
+  <article class="art-body">
+<div class="player"><audio controls preload="metadata" src="audio/auto-en-p06-56-rethinking-dyslexia.m4a"></audio><p class="player-note">原声 00:06:13 ｜ 素材自身音轨 ｜ 点正文里的时间码，从该句开始播放</p></div>
+<table><thead><tr><th>项目</th><th>值</th></tr></thead><tbody>
+<tr><td>源文件</td><td>auto-en-p06-56-rethinking-dyslexia.m4a</td></tr>
+<tr><td>时长</td><td>00:06:13</td></tr>
+<tr><td>句段数</td><td>98</td></tr>
+<tr><td>生成时间</td><td>2026-10-30 23:34</td></tr>
+<tr><td>任务号</td><td>20261030-233010-bc085f12</td></tr>
+</tbody></table>
+
+<h2>内容摘要</h2>
+<ul><li>本文主要讨论了阅读障碍（dyslexia）对个人能力的影响，以及如何将其转化为职场优势。</li><li>提到了一些著名人物如阿尔伯特·爱因斯坦和理查德·布兰森，他们都是阅读障碍者。</li><li>介绍了英国慈善机构“Made by Dyslexia”及其在提升公众对阅读障碍认知方面的工作。</li><li>强调了多元技能和团队合作在科学和商业中的重要性。</li><li>最后通过一个问答形式，回顾了本期学习的词汇和表达。</li></ul>
+
+<h2>行业术语</h2>
+<table><thead><tr><th>英文</th><th>缩写</th><th>中文</th><th>原文语境</th></tr></thead><tbody>
+<tr><td>dyslexia</td><td></td><td>阅读障碍</td><td>people with dyslexia have enhanced abilities</td></tr>
+<tr><td>superpower</td><td></td><td>超能力</td><td>it&#x27;s kind of your superpower</td></tr>
+<tr><td>learning difficulty</td><td></td><td>学习困难</td><td>a learning difficulty making it hard for people to read</td></tr>
+<tr><td>enhanced abilities</td><td></td><td>增强的能力</td><td>people with dyslexia have enhanced abilities</td></tr>
+<tr><td>problem solving</td><td></td><td>解决问题</td><td>excel in creative thinking, problem solving</td></tr>
+<tr><td>creative thinking</td><td></td><td>创造性思维</td><td>excel in creative thinking</td></tr>
+<tr><td>inventiveness</td><td></td><td>发明能力</td><td>excel in creative thinking, problem solving and inventiveness</td></tr>
+<tr><td>online learning tools</td><td></td><td>在线学习工具</td><td>shares online learning tools</td></tr>
+<tr><td>awareness</td><td></td><td>意识</td><td>works with schools and teachers to raise awareness</td></tr>
+<tr><td>global economy</td><td></td><td>全球经济</td><td>could boost the global economy by billions</td></tr>
+<tr><td>spy</td><td></td><td>间谍</td><td>dyslexics are brilliant spies</td></tr>
+<tr><td>re-evaluate</td><td></td><td>重新评估</td><td>good at re-evaluating</td></tr>
+<tr><td>reading people</td><td></td><td>读懂他人</td><td>good at reading people</td></tr>
+<tr><td>body language</td><td></td><td>肢体语言</td><td>understand someone&#x27;s true intentions through their body language</td></tr>
+<tr><td>teamwork</td><td></td><td>团队合作</td><td>it&#x27;s about teamwork and collaboration</td></tr>
+<tr><td>collaboration</td><td></td><td>协作</td><td>it&#x27;s about teamwork and collaboration</td></tr>
+<tr><td>scientific success</td><td></td><td>科学成功</td><td>can be essential for scientific success</td></tr>
+<tr><td>idiom</td><td></td><td>习语</td><td>the idiom to reach for the stars</td></tr>
+</tbody></table>
+
+<h2>高频表达</h2>
+<table><thead><tr><th>英文</th><th>中文</th><th>用法</th></tr></thead><tbody>
+<tr><td>have enhanced abilities</td><td>有增强的能力</td><td>people with dyslexia have enhanced abilities</td></tr>
+<tr><td>excel in</td><td>在某方面表现出色</td><td>excel in creative thinking</td></tr>
+<tr><td>be essential for</td><td>对...至关重要</td><td>can be essential for scientific success</td></tr>
+<tr><td>work with schools and teachers</td><td>与学校和教师合作</td><td>works with schools and teachers to raise awareness</td></tr>
+<tr><td>raise awareness</td><td>提高意识</td><td>works with schools and teachers to raise awareness</td></tr>
+<tr><td>collect information</td><td>收集信息</td><td>someone who secretly collects information</td></tr>
+<tr><td>be valid</td><td>是有效的</td><td>that&#x27;s valid</td></tr>
+<tr><td>be a disability</td><td>是一种残疾</td><td>far from being a disability</td></tr>
+<tr><td>have a superpower</td><td>有超能力</td><td>it&#x27;s kind of your superpower</td></tr>
+<tr><td>be a scientist</td><td>是科学家</td><td>space scientist and dyslexic herself</td></tr>
+<tr><td>be a social entrepreneur</td><td>是社会企业家</td><td>founded by social entrepreneur</td></tr>
+</tbody></table>
+
+<h2>商务表达</h2>
+<table><thead><tr><th>英文</th><th>中文</th><th>适用场合</th></tr></thead><tbody>
+</tbody></table>
+
+<h2>逐句中英对照</h2>
+
+<button class="ts" type="button" data-sec="0">[00:00:00]</button>
+
+<p>6 Minute English from bbclearningenglish.com</p>
+
+<p>6分钟英语来自bbclearningenglish.com</p>
+
+<button class="ts" type="button" data-sec="5">[00:00:05]</button>
+
+<p>Hello, this is 6 Minute English from BBC Learning English. I&#x27;m Phil.</p>
+
+<p>你好，这是BBC英语学习的6分钟英语。我是Phil。</p>
+
+<button class="ts" type="button" data-sec="12">[00:00:12]</button>
+
+<p>And I&#x27;m Pippa. Are you a big reader, Phil?</p>
+
+<p>我是Pippa。Phil，你是个爱读书的人吗？</p>
+
+<button class="ts" type="button" data-sec="16">[00:00:16]</button>
+
+<p>Sometimes yes, sometimes no. Sometimes I go a while without reading anything. What about you?</p>
+
+<p>有时是，有时不是。有时我好长时间都不读书。你呢？</p>
+
+<button class="ts" type="button" data-sec="22">[00:00:22]</button>
+
+<p>Well, I really love to read. I read on the train to work all the time.</p>
+
+<p>嗯，我真的很爱读书。我上班时总是坐火车看书。</p>
+
+<button class="ts" type="button" data-sec="26">[00:00:26]</button>
+
+<p>Ah, well that is a great way to get some reading in, I guess.</p>
+
+<p>啊，这确实是个很好的方式来挤出时间阅读，我想。</p>
+
+<button class="ts" type="button" data-sec="28">[00:00:28]</button>
+
+<p>Yes, and reading, of course, is a life skill, an essential skill which is useful or important in everyone&#x27;s life.</p>
+
+<p>是的，阅读当然是一项生活技能，是每个人生活中都有用或重要的基本技能。</p>
+
+<button class="ts" type="button" data-sec="36">[00:00:36]</button>
+
+<p>But reading can be a struggle for people with dyslexia, a learning difficulty making it hard for people to read, write or spell.</p>
+
+<p>但对有阅读障碍的人来说，阅读可能很困难，这是一种学习障碍，使人难以阅读、书写或拼写。</p>
+
+<button class="ts" type="button" data-sec="44">[00:00:44]</button>
+
+<p>It&#x27;s thought that around 1 in 10 people in the UK are dyslexic.</p>
+
+<p>据估计，英国大约十分之一的人有阅读障碍。</p>
+
+<button class="ts" type="button" data-sec="49">[00:00:49]</button>
+
+<p>And many dyslexic children struggle at school where the focus is on reading and writing.</p>
+
+<p>而且许多有阅读障碍的儿童在学校里遇到困难，因为学校的重点是阅读和写作。</p>
+
+<button class="ts" type="button" data-sec="54">[00:00:54]</button>
+
+<p>But in this episode, we&#x27;ll be hearing how dyslexics have other…</p>
+
+<p>但在这期节目中，我们将听到有阅读障碍的人还有其他…</p>
+
+<button class="ts" type="button" data-sec="58">[00:00:58]</button>
+
+<p>Other skills which allow them to excel in the workplace.</p>
+
+<p>其他技能，使他们能在职场中表现出色。</p>
+
+<button class="ts" type="button" data-sec="61">[00:01:01]</button>
+
+<p>As usual, we&#x27;ll be learning some useful new words and phrases.</p>
+
+<p>照例，我们将学习一些有用的词汇和短语。</p>
+
+<button class="ts" type="button" data-sec="65">[00:01:05]</button>
+
+<p>And remember, you&#x27;ll find all the vocabulary for this episode on our website, bbclearningenglish.com.</p>
+
+<p>请记住，你可以在我们的网站bbclearningenglish.com上找到本期所有词汇。</p>
+
+<button class="ts" type="button" data-sec="73">[00:01:13]</button>
+
+<p>But first, I have a question for you, Phil.</p>
+
+<p>但首先，我有一个问题要问你，Phil。</p>
+
+<button class="ts" type="button" data-sec="76">[00:01:16]</button>
+
+<p>Studies have shown that people with dyslexia have enhanced abilities in certain areas</p>
+
+<p>研究表明，有阅读障碍的人在某些领域有增强的能力。</p>
+
+<button class="ts" type="button" data-sec="81">[00:01:21]</button>
+
+<p>and can excel in creative thinking, problem solving and inventiveness.</p>
+
+<p>并且能在创造性思维、解决问题和创新性方面表现出色。</p>
+
+<button class="ts" type="button" data-sec="86">[00:01:26]</button>
+
+<p>So, which famous scientist…</p>
+
+<p>那么，哪位著名科学家…</p>
+
+<button class="ts" type="button" data-sec="88">[00:01:28]</button>
+
+<p>Which famous scientist was dyslexic?</p>
+
+<p>哪个著名科学家患有阅读障碍？</p>
+
+<button class="ts" type="button" data-sec="90">[00:01:30]</button>
+
+<p>Was it…</p>
+
+<p>是…？</p>
+
+<button class="ts" type="button" data-sec="91">[00:01:31]</button>
+
+<p>A. Stephen Hawking</p>
+
+<p>A. 斯蒂芬·霍金</p>
+
+<button class="ts" type="button" data-sec="92">[00:01:32]</button>
+
+<p>B. Albert Einstein</p>
+
+<p>B. 阿尔伯特·爱因斯坦</p>
+
+<button class="ts" type="button" data-sec="93">[00:01:33]</button>
+
+<p>Or C. Marie Curie</p>
+
+<p>或者 C. 玛丽·居里</p>
+
+<button class="ts" type="button" data-sec="96">[00:01:36]</button>
+
+<p>Ooh, I think…</p>
+
+<p>哦，我想…</p>
+
+<button class="ts" type="button" data-sec="98">[00:01:38]</button>
+
+<p>I think it&#x27;s B. I think it&#x27;s Albert Einstein.</p>
+
+<p>我想是B。我想是阿尔伯特·爱因斯坦。</p>
+
+<button class="ts" type="button" data-sec="101">[00:01:41]</button>
+
+<p>Well, we&#x27;ll find out the answer at the end of the programme.</p>
+
+<p>好吧，我们将在节目结束时揭晓答案。</p>
+
+<button class="ts" type="button" data-sec="105">[00:01:45]</button>
+
+<p>Now, the British charity Made by Dyslexia shares online learning tools</p>
+
+<p>现在，英国慈善机构Made by Dyslexia分享在线学习工具</p>
+
+<button class="ts" type="button" data-sec="109">[00:01:49]</button>
+
+<p>and works with schools and teachers to raise awareness about the condition.</p>
+
+<p>并与学校和教师合作，提高对该状况的认识。</p>
+
+<button class="ts" type="button" data-sec="113">[00:01:53]</button>
+
+<p>The charity recently collaborated with British celebrities who have dyslexia,</p>
+
+<p>该慈善机构最近与患有阅读障碍的英国名人合作，</p>
+
+<button class="ts" type="button" data-sec="118">[00:01:58]</button>
+
+<p>and they&#x27;re working on a new programme for this promotional video.</p>
+
+<p>并正在为这个宣传视频制作一个新节目。</p>
+
+<button class="ts" type="button" data-sec="120">[00:02:00]</button>
+
+<p>If you&#x27;re dyslexic, it&#x27;s kind of your superpower.</p>
+
+<p>如果你有阅读障碍，这某种程度上是你的超能力。</p>
+
+<button class="ts" type="button" data-sec="122">[00:02:02]</button>
+
+<p>It&#x27;s like the way that you think.</p>
+
+<p>这就像你思考的方式。</p>
+
+<button class="ts" type="button" data-sec="124">[00:02:04]</button>
+
+<p>Our brains, they&#x27;re wired to, I think, process information differently.</p>
+
+<p>我们的大脑，我认为，被设计成以不同的方式处理信息。</p>
+
+<button class="ts" type="button" data-sec="129">[00:02:09]</button>
+
+<p>The way I see the world might be different from somebody else, but that&#x27;s valid.</p>
+
+<p>我看待世界的方式可能与其他人不同，但这很正常。</p>
+
+<button class="ts" type="button" data-sec="133">[00:02:13]</button>
+
+<p>In fact, it&#x27;s vital.</p>
+
+<p>事实上，这至关重要。</p>
+
+<button class="ts" type="button" data-sec="134">[00:02:14]</button>
+
+<p>You might recognise some of those voices, including actors Orlando Bloom and Keira Knightley</p>
+
+<p>你可能会认出其中一些声音，包括演员奥兰多·布鲁姆和凯拉·奈特莉</p>
+
+<button class="ts" type="button" data-sec="140">[00:02:20]</button>
+
+<p>and businessman Richard Branson.</p>
+
+<p>以及企业家理查德·布兰森。</p>
+
+<button class="ts" type="button" data-sec="144">[00:02:24]</button>
+
+<p>The message is that far from being a disability, dyslexia,</p>
+
+<p>信息是，阅读障碍远非一种残疾，</p>
+
+<button class="ts" type="button" data-sec="148">[00:02:28]</button>
+
+<p>is their superpower, the ability to do something other people can&#x27;t.</p>
+
+<p>而是他们的超能力，即做别人做不到的事情的能力。</p>
+
+<button class="ts" type="button" data-sec="154">[00:02:34]</button>
+
+<p>Made by Dyslexia was founded by social entrepreneur Kate Griggs,</p>
+
+<p>Made by Dyslexia由社会企业家凯特·格里格斯创立，</p>
+
+<button class="ts" type="button" data-sec="159">[00:02:39]</button>
+
+<p>and Kate co-authored a report showing that empowering dyslexic workers</p>
+
+<p>凯特与他人合著了一份报告，显示赋予阅读障碍员工能力</p>
+
+<button class="ts" type="button" data-sec="163">[00:02:43]</button>
+
+<p>could boost the global economy by billions.</p>
+
+<p>可能使全球经济提升数十亿。</p>
+
+<button class="ts" type="button" data-sec="166">[00:02:46]</button>
+
+<p>BBC World Service programme, People Fixing the World,</p>
+
+<p>BBC世界新闻节目《改变世界的人》，</p>
+
+<button class="ts" type="button" data-sec="169">[00:02:49]</button>
+
+<p>met Kate at the report&#x27;s London launch event,</p>
+
+<p>在报告的伦敦发布会上遇到了凯特，</p>
+
+<button class="ts" type="button" data-sec="172">[00:02:52]</button>
+
+<p>where she explained why being dyslexic can actually give advantages in life,</p>
+
+<p>她解释了为什么患有阅读障碍实际上在生活中能带来优势，</p>
+
+<button class="ts" type="button" data-sec="177">[00:02:57]</button>
+
+<p>including some examples.</p>
+
+<p>包括一些例子。</p>
+
+<button class="ts" type="button" data-sec="178">[00:02:58]</button>
+
+<p>Exciting job prospects.</p>
+
+<p>令人兴奋的职业前景。</p>
+
+<button class="ts" type="button" data-sec="180">[00:03:00]</button>
+
+<p>If you think about what you have to do as a spy,</p>
+
+<p>如果你想想间谍需要做的事情，</p>
+
+<button class="ts" type="button" data-sec="183">[00:03:03]</button>
+
+<p>you have to be reading people really quickly,</p>
+
+<p>你必须非常迅速地读懂他人，</p>
+
+<button class="ts" type="button" data-sec="185">[00:03:05]</button>
+
+<p>spotting complex patterns and solving problems really quickly</p>
+
+<p>迅速发现复杂模式并解决问题</p>
+
+<button class="ts" type="button" data-sec="189">[00:03:09]</button>
+
+<p>so you can see whether there&#x27;s a terror threat.</p>
+
+<p>以便判断是否存在恐怖威胁。</p>
+
+<button class="ts" type="button" data-sec="192">[00:03:12]</button>
+
+<p>It&#x27;s natural that dyslexics are brilliant spies.</p>
+
+<p>阅读障碍者成为优秀间谍是自然的事。</p>
+
+<button class="ts" type="button" data-sec="196">[00:03:16]</button>
+
+<p>Kate thinks dyslexics make good spies,</p>
+
+<p>凯特认为阅读障碍者能成为优秀的间谍，</p>
+
+<button class="ts" type="button" data-sec="199">[00:03:19]</button>
+
+<p>people who secretly collect information about another country&#x27;s government or organisations.</p>
+
+<p>那些秘密收集其他国家政府或组织信息的人。</p>
+
+<button class="ts" type="button" data-sec="205">[00:03:25]</button>
+
+<p>Why?</p>
+
+<p>为什么？</p>
+
+<button class="ts" type="button" data-sec="206">[00:03:26]</button>
+
+<p>Because they&#x27;re good at re-evaluating.</p>
+
+<p>因为他们在重新评估方面很擅长。</p>
+
+<button class="ts" type="button" data-sec="208">[00:03:28]</button>
+
+<p>Reading people.</p>
+
+<p>读懂他人。</p>
+
+<button class="ts" type="button" data-sec="209">[00:03:29]</button>
+
+<p>To read people means to be able to understand someone&#x27;s true intentions</p>
+
+<p>读懂他人意味着能够通过他们的肢体语言和行为，而非言语，理解他人的真正意图。</p>
+
+<button class="ts" type="button" data-sec="213">[00:03:33]</button>
+
+<p>through their body language and behaviour, rather than their words.</p>
+
+<p>出席伦敦慈善活动的还有太空科学家兼阅读障碍者玛吉·阿戴林-波科克博士。</p>
+
+<button class="ts" type="button" data-sec="218">[00:03:38]</button>
+
+<p>Also present at the London charity event was space scientist and dyslexic herself,</p>
+
+<p>在这里，玛吉向BBC世界新闻的《改变世界的人》节目讲述了阅读障碍如何为她的项目团队带来不同的技能和想法。</p>
+
+<button class="ts" type="button" data-sec="223">[00:03:43]</button>
+
+<p>Dr Maggie Adairin-Pocock.</p>
+
+<p>嗯，我认为这是认识到人们的技能和差异</p>
+
+<button class="ts" type="button" data-sec="225">[00:03:45]</button>
+
+<p>Here, Maggie tells BBC World Service&#x27;s People Fixing the World</p>
+
+<p>这关乎团队合作与协作。</p>
+
+<button class="ts" type="button" data-sec="229">[00:03:49]</button>
+
+<p>how being dyslexic contributes different skills and ideas to her project teams.</p>
+
+<p>我们在科学领域这样做，那时我们就能触及星辰。</p>
+
+<button class="ts" type="button" data-sec="234">[00:03:54]</button>
+
+<p>Well, I think it&#x27;s recognising people&#x27;s skills and differences</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="238">[00:03:58]</button>
+
+<p>it&#x27;s about teamwork and collaboration.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="241">[00:04:01]</button>
+
+<p>We do it in science and that&#x27;s when we reach for the stars.</p>
+
+<p>[未翻译]</p>
+
+<button class="ts" type="button" data-sec="244">[00:04:04]</button>
+
+<p>But to do that, we need to know our skills and value all the skills.</p>
+
+<p>但要做到这一点，我们需要了解自己的技能，并重视所有技能。</p>
+
+<button class="ts" type="button" data-sec="248">[00:04:08]</button>
+
+<p>Maggie thinks that everyone&#x27;s skills should be valued or considered important.</p>
+
+<p>玛吉认为，每个人的技能都应该被重视或被认为重要。</p>
+
+<button class="ts" type="button" data-sec="254">[00:04:14]</button>
+
+<p>Dyslexics may struggle to read or spell,</p>
+
+<p>诵读障碍者可能在阅读或拼写方面遇到困难，</p>
+
+<button class="ts" type="button" data-sec="257">[00:04:17]</button>
+
+<p>but their skills in problem solving and communication, for example,</p>
+
+<p>但他们在解决问题和沟通方面的技能，例如，</p>
+
+<button class="ts" type="button" data-sec="261">[00:04:21]</button>
+
+<p>can be essential for scientific success.</p>
+
+<p>可能是科学成功的关键。</p>
+
+<button class="ts" type="button" data-sec="264">[00:04:24]</button>
+
+<p>By valuing everyone&#x27;s contribution,</p>
+
+<p>通过重视每个人的贡献，</p>
+
+<button class="ts" type="button" data-sec="267">[00:04:27]</button>
+
+<p>business and science teams can reach for the stars,</p>
+
+<p>商业和科学团队可以追求星辰大海，</p>
+
+<button class="ts" type="button" data-sec="271">[00:04:31]</button>
+
+<p>an idiom meaning to be ambitious and try to achieve something difficult,</p>
+
+<p>这是一个成语，意思是雄心勃勃并努力实现困难的目标，</p>
+
+<button class="ts" type="button" data-sec="275">[00:04:35]</button>
+
+<p>even if it seems impossible.</p>
+
+<p>即使看似不可能。</p>
+
+<button class="ts" type="button" data-sec="278">[00:04:38]</button>
+
+<p>And talking of reaching for the stars, Pippa,</p>
+
+<p>说到追求星辰大海，皮帕，</p>
+
+<button class="ts" type="button" data-sec="280">[00:04:40]</button>
+
+<p>I think it&#x27;s time you revealed the answer to your question about successful scientists.</p>
+
+<p>我认为现在该由你揭晓关于成功科学家问题的答案了。</p>
+
+<button class="ts" type="button" data-sec="286">[00:04:46]</button>
+
+<p>Yes, I asked you which famous scientist was dyslexic.</p>
+
+<p>是的，我问过你哪位著名科学家有诵读障碍。</p>
+
+<button class="ts" type="button" data-sec="291">[00:04:51]</button>
+
+<p>Was it A, Stephen Hawking, B, Albert Einstein or C, Marie Curie?</p>
+
+<p>是A、斯蒂芬·霍金，B、阿尔伯特·爱因斯坦还是C、玛丽·居里？</p>
+
+<button class="ts" type="button" data-sec="295">[00:04:55]</button>
+
+<p>And you were right, Phil.</p>
+
+<p>你答对了，菲尔。</p>
+
+<button class="ts" type="button" data-sec="297">[00:04:57]</button>
+
+<p>It was Albert Einstein.</p>
+
+<p>是阿尔伯特·爱因斯坦。</p>
+
+<button class="ts" type="button" data-sec="299">[00:04:59]</button>
+
+<p>OK, let&#x27;s recap the vocabulary we&#x27;ve learned, starting with life skill,</p>
+
+<p>好的，让我们复习一下我们学到的词汇，首先从生活技能开始，</p>
+
+<button class="ts" type="button" data-sec="305">[00:05:05]</button>
+
+<p>an essential skill such as reading or problem solving, which is useful in everyone&#x27;s life.</p>
+
+<p>例如阅读或解决问题这样的基本技能，对每个人的生活都有用。</p>
+
+<button class="ts" type="button" data-sec="311">[00:05:11]</button>
+
+<p>A superpower is the ability to do something that other people can&#x27;t.</p>
+
+<p>超能力是指做别人做不到的事情的能力。</p>
+
+<button class="ts" type="button" data-sec="317">[00:05:17]</button>
+
+<p>A spy is someone who secretly collects information</p>
+
+<p>间谍是秘密收集信息</p>
+
+<button class="ts" type="button" data-sec="320">[00:05:20]</button>
+
+<p>about other countries&#x27; governments or organisations.</p>
+
+<p>有关其他国家政府或组织的信息。</p>
+
+<button class="ts" type="button" data-sec="323">[00:05:23]</button>
+
+<p>If you&#x27;re good at reading people,</p>
+
+<p>如果你擅长识人，</p>
+
+<button class="ts" type="button" data-sec="326">[00:05:26]</button>
+
+<p>you can understand people&#x27;s real intentions</p>
+
+<p>你就能理解人们的真正意图</p>
+
+<button class="ts" type="button" data-sec="329">[00:05:29]</button>
+
+<p>through how they act and behave instead of what they say.</p>
+
+<p>通过他们的行为举止而非言语来体现。</p>
+
+<button class="ts" type="button" data-sec="333">[00:05:33]</button>
+
+<p>If you value something or someone, you consider them to be important.</p>
+
+<p>如果你重视某人或某物，你就认为他们很重要。</p>
+
+<button class="ts" type="button" data-sec="338">[00:05:38]</button>
+
+<p>And finally, the idiom to reach for the stars means to have high or ambitious aims</p>
+
+<p>最后，‘摘星揽月’这个习语意味着有远大的、雄心勃勃的目标</p>
+
+<button class="ts" type="button" data-sec="343">[00:05:43]</button>
+
+<p>and try to achieve something difficult, even if it seems impossible.</p>
+
+<p>并努力实现看似不可能的目标。</p>
+
+<button class="ts" type="button" data-sec="348">[00:05:48]</button>
+
+<p>Once again, our six minutes are up.</p>
+
+<p>再次提醒，我们的六分钟时间到了。</p>
+
+<button class="ts" type="button" data-sec="351">[00:05:51]</button>
+
+<p>But remember, you can find many more trending topics,</p>
+
+<p>但请记住，你可以在我们的网站上找到更多热门话题，</p>
+
+<button class="ts" type="button" data-sec="354">[00:05:54]</button>
+
+<p>plus a quiz and worksheet for this episode,</p>
+
+<p>还有本集的测验和练习题，</p>
+
+<button class="ts" type="button" data-sec="356">[00:05:56]</button>
+
+<p>on our website, bbclearningenglish.com.</p>
+
+<p>在我们的网站 bbclearningenglish.com 上。</p>
+
+<button class="ts" type="button" data-sec="360">[00:06:00]</button>
+
+<p>Hope to see you there soon, but for now, it&#x27;s goodbye.</p>
+
+<p>希望很快在网站上见到你，但目前先告辞了。</p>
+
+<button class="ts" type="button" data-sec="363">[00:06:03]</button>
+
+<p>Goodbye.</p>
+
+<p>再见。</p>
+
+<hr>
+
+<p class="standfirst">汽车英语精读 ｜ 来源视频：p06-56-rethinking-dyslexia ｜ 含术语表、高频表达与逐句中英对照</p>
+
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
