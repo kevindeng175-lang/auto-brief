@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>理想i6产能达20万辆 11月目标2万辆</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 10 月 31 日 · 星期六 · 第 44 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">汽车日报</p>
+    <h1 class="art-title">理想i6产能达20万辆 11月目标2万辆</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">19 条报道 ｜ 11 张配图 ｜ 全部条目带来源标注，单源信息标注待证实</p>
+  <article class="art-body">
+
+<h2>今日速览（30 秒版）</h2>
+<ul><li>东风日产NX7实车亮相，配备激光雷达，将于四季度上市</li><li>吉利汽车Q3营收990亿元，净利52.1亿元</li><li>Group14将在西班牙建电池材料工厂</li><li>华为与奥迪合作开发A8，不再与江淮合作尊界</li><li>小米投资17亿元入股欣旺达动力</li><li>蔚来能源交付10座换电站，启动第二批20座</li><li>福特CEO称其新电动技术效率比比亚迪高30%</li><li>阿维塔07L Max限时优惠后售价21.59万元</li></ul>
+
+<h2>今日头条</h2>
+<p>理想汽车的i6车型产能已达到20万辆，该车型的2026款于10月29日开始交付，目前客户等待时间约为7至8周。这一进展标志着理想汽车在新能源汽车领域的生产能力进一步提升。此前，理想汽车在2025年推出了i6车型，并在市场上获得了良好的反响。此次产能的提升与理想汽车在新能源汽车市场的持续扩张密切相关，同时也反映了其在供应链管理和生产效率方面的持续优化。目前，理想汽车的i6车型在市场上的竞争压力主要来自其他主流新能源汽车品牌，如比亚迪和蔚来等。理想汽车此次产能的提升，意味着其在新能源汽车市场上的竞争力将进一步增强，有望在未来的市场竞争中占据更有利的位置。</p>
+
+<figure><img src="img/3e9f7124297bfe.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h2>一、新车与产品</h2>
+
+<h3>小鹏Mona L05在中国上市，售价21720美元</h3>
+
+<p>小鹏Mona L05中型跨界车在中国上市，售价为21720美元，提供BEV和EREV动力系统版本。该车型属于新能源汽车领域，结合了电动和混合动力技术，以满足不同消费者的需求。小鹏汽车近年来在新能源汽车市场持续发力，不断推出新车型以增强市场竞争力。此次推出的Mona L05车型，进一步丰富了小鹏的产品线。从目前的信息来看，该车型的上市有助于小鹏在中型跨界车市场占据一席之地。（来源：CarNewsChina）</p>
+
+<h3>比亚迪测试新款MPV</h3>
+
+<p>比亚迪被目击在其运输车上测试一款新的多功能车（MPV），并出现在其快充站附近，预计将在今年晚些时候正式发布。此前，比亚迪已推出多款MPV车型，如唐和宋MAX，而这款新车或将延续品牌在该细分市场的布局。该车型的测试表明，比亚迪正在加快新能源车型的研发节奏，以应对日益增长的市场需求。此举也表明，比亚迪正通过不断丰富产品线，巩固其在新能源汽车领域的领先地位。（来源：Electrek）</p>
+
+<figure><img src="img/9e9f96603e3018.webp" alt="（图：Electrek）" loading="lazy"><figcaption>（图：Electrek）</figcaption></figure>
+
+<h3>仰望鼎曜确认搭载对开门</h3>
+
+<p>仰望汽车确认旗下全新行政旗舰轿车鼎曜将搭载对开门设计，该车型计划于11月在阿联酋迪拜完成全球首发。从最新预告图中可以看到，鼎曜采用方正厚重的车身轮廓，预计车长接近5.5米，轴距宽裕，C柱设有独立三角窗，以提升后排乘客的视野和头部空间。对开门设计在国产新能源轿车中较为罕见，有助于提升行政接待场景的仪式感。此前，仰望汽车已推出U7等车型，而鼎曜的推出将进一步巩固其在高端市场的地位。（来源：太平洋汽车）</p>
+
+<figure><img src="img/5a3bc76e95e9d9.jpg" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>比亚迪海豹07 11月5日上市</h3>
+
+<p>10月30日，比亚迪宣布全新海豹07将于11月5日正式上市。新车提供插电混动和纯电两种动力系统，轴距达2960mm，车长、车宽、轴距相比现款均有增加。外观采用海洋美学2.0设计体系，配备波浪形大灯组和贯穿尾灯组，视觉辨识度高。辅助驾驶系统配备激光雷达模组，预计支持城市领航辅助、高快领航辅助等功能。内饰方面，配备环抱式座舱设计、零重力座椅、20枚帝瓦雷音响等配置。该车型已于此前开启盲订，提供盲订礼遇、优先排产提车等权益。此次升级进一步强化了海豹系列在中型轿车市场的竞争力。（来源：汽车之家）</p>
+
+<h2>二、销量与市场</h2>
+
+<h3>方程豹钛7销量突破30万辆</h3>
+
+<p>2026年10月30日，方程豹钛7累计销量突破30万辆，成为最快达成该里程碑的中大型SUV，仅用时约14个月。该车型自2025年9月9日上市以来，连续4个月位居中大型SUV销量冠军，并连续12个月居方盒子车型销量冠军。钛7在海外市场表现同样亮眼，已登陆沙特、阿联酋、科威特等6个中东非国家，海外销量达2.7万台。钛7提供混动和纯电双动力方案，DM混动版本拥有300km+长纯电续航，EV闪充版实现755km纯电续航，依托比亚迪闪充黑科技，破解补能痛点。其高产品力和高性价比使其在市场中占据优势。（来源：新浪汽车·新车）</p>
+
+<h3>吉利1-9月销量增长3%</h3>
+
+<p>2026年1-9月，吉利汽车销量达223.55万辆，同比增长3%，在整体车市下滑的背景下实现逆势增长。同期营收达2726亿元，同比增长13%，净利润149亿元，同比大涨41%。其中，出口销量达79.8万辆，同比增长169%，新能源出口销量达48.4万辆，同比增长531%。吉利在海外市场表现突出，全球销量突破223万辆，连续7个月实现增长。尽管面临汇率波动带来的汇兑净亏损约11.3亿元，但吉利仍通过提升产品力和优化业务模式，实现盈利能力的显著提升。（来源：网上车市）</p>
+
+<figure><img src="img/1585cc6d8db1fc.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h3>奕派007限时补贴价10.99万起上市</h3>
+
+<p>10月30日，2027款奕派007在武汉国际汽车展览会正式上市，推出‘675激光版’与‘550巡航版’两个版本，限时补贴价10.99万元起，购车可享总价值38800元的多重好礼。新车采用宽体低趴溜背造型，车长4880mm、轴距2915mm，风阻系数低至0.209，搭载73.5度马赫大电池，CLTC续航可达675km，零百加速5.7s。此前，奕派007已凭借高性价比和智能化配置获得市场关注，此次升级进一步强化了其在新能源车市场的竞争力。2027款奕派007的推出，标志着该品牌在中高端电动车型领域的布局更加完善。（来源：新浪汽车·新车；旁证：汽车之家 亦报道）</p>
+
+<figure><img src="img/4b774a33c6c581.jpg" alt="（图：新浪汽车·新车）" loading="lazy"><figcaption>（图：新浪汽车·新车）</figcaption></figure>
+
+<h3>理想i6升级版售价24.98万元</h3>
+
+<p>10月28日，2026款理想i6正式上市，全国统一零售价24.98万元，首销期权益价23.98万元。新车在用户反馈基础上进行多项升级，包括电动前备箱、96千瓦时电池、780公里续航、高通8797芯片、29英寸6K全景屏等。理想i6自初代车型交付以来累计销量近19万辆，用户净推荐值达80.2分，此次升级进一步巩固了其在中大型SUV市场的地位。2026款理想i6的推出，体现了理想汽车对用户需求的精准把握和产品力的持续提升。（来源：电动邦）</p>
+
+<figure><img src="img/368b0fa9a15b3a.jpg" alt="（图：电动邦）" loading="lazy"><figcaption>（图：电动邦）</figcaption></figure>
+
+<h2>四、供应链与智驾</h2>
+
+<h3>广汽埃安泰国工厂开始生产电池组</h3>
+
+<p>广汽埃安旗下的电池品牌Inpow在泰国工厂开始生产电池组，这是广汽埃安首个海外电池组工厂，也是Inpow在海外的首个工厂。此前，广汽埃安已在多个市场布局新能源汽车业务，此次泰国工厂的投产标志着其国际化战略迈出关键一步。广汽埃安在泰国建立电池组工厂，意味着其在全球新能源汽车产业链中的布局进一步深化，有助于提升其在海外市场的竞争力。（来源：CnEVPost）</p>
+
+<figure><img src="img/67674706da1174.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>小米投资2.53亿美元入股Sunwoda EVB</h3>
+
+<p>小米计划投资约2.53亿美元，获得Sunwoda EVB 5.34%的股份，成为其第三大股东。此举标志着小米在动力电池领域进一步深化合作。此前，小米已与多家电池企业建立合作关系，此次投资将进一步巩固其在新能源汽车产业链中的布局。此举意味着小米正加速在电动汽车核心零部件领域的布局，提升其在新能源汽车市场的竞争力。（来源：CnEVPost）</p>
+
+<figure><img src="img/1e4cda764ff490.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>比亚迪第三代唐EV搭载691马力动力系统</h3>
+
+<p>比亚迪第三代唐EV已抵达中国经销商，搭载515千瓦四驱系统、双腔空气悬挂、激光雷达等配置，初步公布批发价格。该车型是比亚迪在新能源SUV市场的重要产品，与此前发布的唐DM-i、唐EV等车型形成产品矩阵。此举意味着比亚迪在高端新能源SUV市场进一步发力，强化其在智能电动化领域的技术优势。（来源：CarNewsChina）</p>
+
+<h3>吉利缤越超能版起售价5.98万元</h3>
+
+<p>2027款吉利缤越超能版于10月27日正式上市，推出三款车型，起售价为5.98万元。新车在设计、座舱、智能、动力与安全方面进行了多维升级，并提供购车优惠。作为吉利面向年轻市场打造的A0级燃油SUV，该车型延续了缤越系列的市场竞争力。此举意味着吉利在年轻消费群体中进一步巩固其市场地位，强化A0级SUV市场的布局。（来源：电动邦）</p>
+
+<figure><img src="img/e74d4c873af296.jpg" alt="（图：电动邦）" loading="lazy"><figcaption>（图：电动邦）</figcaption></figure>
+
+<h2>五、公司与人事</h2>
+
+<h3>北京现代艾尼氪V月销135台 总经理李凤刚离职</h3>
+
+<p>10月30日，现代中国内部人士确认，北京现代总经理李凤刚将于11月1日正式离职，距其2025年11月10日上任刚好一年。李凤刚是北京现代首位中国籍总经理，曾任职一汽奥迪销售有限责任公司执行副总经理。其离任背后是中韩股东在经营目标、降本幅度上的分歧，过去一年北京现代董事会几乎没有实质性议事。与此同时，北京现代全新战略车型艾尼氪V上市首月仅售出135辆，销量表现不佳。作为IONIQ品牌入华后的首款量产车型，艾尼氪V被寄予撬动新能源市场的期望，但销量规模尚难改变整体局面。今年上半年，北京现代累计销售94697辆，同比下滑5.3%。（来源：网上车市）</p>
+
+<figure><img src="img/850e1da3cbe065.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h3>沃尔沃三季度亏损56亿克朗 中国区收入腰斩</h3>
+
+<p>沃尔沃汽车发布2026年第三季度财报，全球销量14.13万辆，同比下滑11%；总收入669亿瑞典克朗，同比下降23%；营业利润转为亏损56亿克朗。中国区零售销量1.86万辆，同比大跌43%；中国收入75亿克朗，缩水47%，CEO直言“收入几乎腰斩”。沃尔沃表示，亏损主要归因于中美市场进一步下滑，已追加50亿克朗降本计划，并裁员约2500人。同期中国乘用车市场整体下滑18%，豪华细分市场下滑21%，竞争主要来自本土新能源品牌。沃尔沃三季度在华纯电销量占比仅2%，公司计划与吉利合作开发6款中国专属车型，前两款将于2027年年中亮相。（来源：网上车市）</p>
+
+<h3>宾利MULLINER推出三台限量版车型</h3>
+
+<p>宾利汽车个性化定制部门MULLINER发布三台限量专属座驾，以致敬波兰数学家、天文学家尼古拉·哥白尼。三台车型分别以太阳、地球、月亮为设计灵感，采用不同配色主题，并搭载4.0升双涡轮V8高性能混动系统，最大功率671制动马力。三台车型均配备专属迎宾踏板、香水与钥匙盒，并配套口袋方巾与丝巾。此次限量版车型基于欧陆GT S版及欧陆GT敞篷版S车型打造，设计元素包括哥白尼天体运行图发光图案，应用于中控台、前后排绗缝面板、迎宾灯与顶篷收纳盖板等区域。（来源：新浪汽车·新车）</p>
+
+<h2>六、出海与国际</h2>
+
+<h3>奇瑞汽车前三季度营收2412.34亿元</h3>
+
+<p>2026年10月30日，奇瑞汽车发布前三季度财报，实现营收2412.34亿元，同比增长12.29%；毛利390.04亿元，同比增长32.38%；期内利润145.95亿元，净利润率6.05%。这一成绩显著高于同期中国汽车制造业整体营收增速和利润率。奇瑞加快全球化3.0战略落地，从产品出海走向体系出海，已在西班牙设立海外区域运营中心，并在南非启动本土化计划。此外，奇瑞新能源产品在国内外市场同步发力，9月在欧洲销量位居中国品牌第一。这意味着奇瑞在全球化和新能源领域已取得实质性进展，展现出高质量增长的韧性。（来源：新浪汽车）</p>
+
+<h3>奇瑞汽车前三季度营收2412.34亿元</h3>
+
+<p>2026年10月30日，奇瑞汽车公布前三季度业绩，实现营收2412.34亿元，同比增长12.29%；毛利390.04亿元，同比增长32.38%；研发开支110.46亿元，同比增长40.21%。奇瑞加快全球化3.0战略落地，已在西班牙设立海外区域运营中心，并在南非启动本土化计划，推动国内外一体化协同。此外，奇瑞新能源产品在国内外市场同步发力，9月在欧洲销量位居中国品牌第一，旗下JAECOO 7在英国连续第二个月位居新车品牌销量榜首。这意味着奇瑞在全球化和新能源领域已取得实质性进展，展现出高质量增长的韧性。（来源：汽车之家）</p>
+
+<figure><img src="img/323b3beacb4adf.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>赵福全：中国汽车出口需转向盈利与可持续</h3>
+
+<p>2026年10月30日，在2026全球华人汽车精英联合年会暨“中国拥抱世界”汽车产业国际发展论坛上，清华大学汽车产业与技术战略研究院院长赵福全发表演讲，指出中国汽车出口需从追求规模转向盈利与可持续。他分析称，中国新车出口规模约1150万辆，到2030年将达1500万辆，但“出去就赚钱的时代已经终结”。赵福全强调，中国车企需推进深度本地化经营，建设全球一体化经营体系，实现全球资源协同、平台跨区域复用、区域自主盈利、品牌全球引领。这意味着中国汽车出口需循序渐进，以全球一体化经营为目标，加快构建新型全球化公司。（来源：盖世汽车）</p>
+
+<h3>AI赋能汽车产业智能化转型，合肥举办专题活动</h3>
+
+<p>10月24日，‘问学极客行’专场季之汽车专场在合肥举办，活动由神州问学主办，信息侠、徽联智汇协办。本次活动汇聚汽车产业与AI领域的企业代表及行业专家，围绕智能制造、业务流程建设、智能营销与企业AI办公等议题，探讨AI赋能汽车产业的实践路径。此前，AI已在锂电池制造、智能营销、企业办公等多个领域取得应用成效。此次活动标志着AI技术正加速融入汽车产业的核心业务，推动企业智能化转型。（来源：太平洋汽车·新闻）</p>
+
+<h2>数据速览</h2>
+
+<table><thead><tr><th>指标</th><th>数值</th><th>口径/区间</th><th>来源</th></tr></thead><tbody>
+<tr><td>销量</td><td>2412.34亿元</td><td>奇瑞汽车前三季度营收</td><td>11</td></tr>
+<tr><td>销量</td><td>24.98万元</td><td>智己LS8 NEO纯电</td><td>63</td></tr>
+<tr><td>销量</td><td>22.99万元</td><td>阿维塔07L Max</td><td>9</td></tr>
+<tr><td>销量</td><td>10.99万元</td><td>2027款奕派007</td><td>27</td></tr>
+<tr><td>销量</td><td>24.98万元</td><td>比亚迪大汉</td><td>39</td></tr>
+<tr><td>销量</td><td>22.98万元</td><td>新福特锐界L</td><td>47</td></tr>
+<tr><td>销量</td><td>24.98万元</td><td>2027款吉利缤越超能版</td><td>55</td></tr>
+<tr><td>销量</td><td>2215亿元</td><td>比亚迪三季度营收</td><td>42</td></tr>
+<tr><td>销量</td><td>66亿美元</td><td>大众汽车第三季度营业亏损</td><td>62</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>原文来源</h2>
+
+<p class="standfirst">本页每条报道的图片均来自该条新闻原文页面；原文没有合格图片的条目不配图。</p>
+
+<p>1. [CnEVPost] Li Auto&#x27;s i6 production reaches 200,000 as November capacity targets 20,000 — https://cnevpost.com/2026/10/30/li-auto-i6-production-200000/</p>
+<p>2. [CarNewsChina] Xpeng Mona L05 launched in China at 21,720 USD — https://carnewschina.com/2026/10/29/xpeng-mona-l05-launched-in-china-at-21720-usd/</p>
+<p>3. [Electrek] BYD spotted testing a new minivan [Video] — https://electrek.co/2026/10/29/byd-spotted-testing-new-minivan-video/</p>
+<p>4. [太平洋汽车] 更多预告图更新 仰望鼎曜确认搭载对开门 — http://www.pcauto.com.cn/nation/5190/51902728.html?ad=28676</p>
+<p>5. [汽车之家] 插混和纯电可选/尺寸迎来升级 全新比亚迪海豹07将于11月5日上市 — https://www.autohome.com.cn/news/202610/1318067.html#pvareaid=102624</p>
+<p>6. [新浪汽车·新车] 方程豹钛7上市一年累计销量超30万辆 — https://auto.sina.com.cn/newcar/2026-10-30/detail-iniwysmz4659550.shtml?oaid=00002&amp;c=spr_auto_trackid_f8944f41f240e3fc</p>
+<p>7. [网上车市] 吉利1-9月销量增3% 营收增13% 净利润爆涨41% — http://news.cheshi.com/dujia/20261029/3426160.shtml</p>
+<p>8. [新浪汽车·新车] 限时补贴价10.99万起 2027款奕派007正式上市 新车 — https://auto.sina.com.cn/newcar/2026-10-30/detail-iniwynec4743543.shtml?hpid=00011</p>
+<p>9. [电动邦] 24.98万元的新理想i6，把用户的声音写进升级清单 — https://www.diandongbang.com/news/167934.html</p>
+<p>10. [CnEVPost] GAC&#x27;s battery unit Inpow starts production at Thailand plant, its first overseas pack facility — https://cnevpost.com/2026/10/30/gac-inpow-starts-production-thailand-plant/</p>
+<p>11. [CnEVPost] Xiaomi follows Li Auto with planned Sunwoda EVB investment to deepen battery ties — https://cnevpost.com/2026/10/30/xiaomi-planned-sunwoda-evb-investment-battery-ties/</p>
+<p>12. [CarNewsChina] 3rd-gen BYD Tang EV arrives at dealers with 691 hp and dual-chamber air suspension — https://carnewschina.com/2026/10/30/3rd-gen-byd-tang-ev-arrives-at-dealers-with-691-hp-and-dual-chamber-air-suspension/</p>
+<p>13. [电动邦] 5.98万元起，2027款吉利缤越超能版焕新上市 — https://www.diandongbang.com/news/167936.html</p>
+<p>14. [网上车市] 北京现代艾尼氪V月销仅135台 总经理李凤刚离职 — http://news.cheshi.com/dujia/20261030/3426192.shtml</p>
+<p>15. [网上车市] 沃尔沃三季度亏56亿克朗 中国区收入腰斩 股价单日暴跌近30% — http://news.cheshi.com/dujia/20261030/3426175.shtml</p>
+<p>16. [新浪汽车·新车] 宾利MULLINER推出限量版车型 — https://auto.sina.com.cn/newcar/2026-10-28/detail-iniwueft3703957.shtml?oaid=00117&amp;c=spr_auto_trackid_4d7d188c9b7a61c4</p>
+<p>17. [新浪汽车] 奇瑞汽车发布前三季度财报 营收2412.34亿元，同比增长12.29% — https://auto.sina.com.cn/news/2026-10-30/detail-iniwzazt8166925.shtml</p>
+<p>18. [汽车之家] 奇瑞汽车前三季度营收2412.34亿元 9月欧洲销量位居中国品牌第一 — https://www.autohome.com.cn/news/202610/1318070.html#pvareaid=102624</p>
+<p>19. [盖世汽车] 赵福全：出海要从规模转向盈利与可持续 — https://auto.gasgoo.com/news/202610/30I70476363C108.shtml</p>
+<p>20. [太平洋汽车·新闻] “问学极客行”走进合肥：让 AI 融入业务流程，探索汽车产业智能化新路径 — https://www.pcauto.com.cn/news/5190/51902138.html</p>
+<p>21. [汽车之家] 东风日产NX7实车亮相 插混中型SUV 配备激光雷达 将于四季度上市 — https://www.autohome.com.cn/news/202610/1318068.html#pvareaid=102624</p>
+<p>22. [CarNewsChina] Geely Auto’s Q3 earnings reveal a harsh reality: Car sales in China are barely profitable — https://carnewschina.com/2026/10/30/geely-autos-q3-earnings-reveal-a-harsh-reality-car-sales-in-china-are-barely-profitable/</p>
+<p>23. [Electrive] Group14 to build battery material factory in Sagunt — https://www.electrive.com/2026/10/30/group14-to-build-battery-material-factory-in-sagunt/</p>
+<p>24. [网上车市] 华为有了奥迪A8，还需要和江淮，合作尊界吗？ — http://news.cheshi.com/dujia/20261029/3426165.shtml</p>
+<p>25. [太平洋汽车] 继理想之后 小米17亿元入局欣旺达动力 — http://www.pcauto.com.cn/news/5190/51902715.html?ad=28676</p>
+<p>26. [盖世汽车] 蔚来能源与长沙经开集团10座换电站交付 — https://auto.gasgoo.com/news/202610/29I70476267C501.shtml</p>
+<p>27. [InsideEVs] Ford CEO Says Its New EV Tech Is 30% More Efficient Than BYD&#x27;s — https://insideevs.com/news/813781/ford-byd-motors-30-fathom/</p>
+<p>28. [电动邦] 21.59万元买高阶辅助驾驶，阿维塔07L Max值不值 — https://www.diandongbang.com/news/167937.html</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
