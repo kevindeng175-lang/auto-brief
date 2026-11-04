@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>车企营销观察 · 2026-11-05</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 11 月 5 日 · 星期四 · 第 45 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">品牌营销</p>
+    <h1 class="art-title">车企营销观察 · 2026-11-05</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst"></p>
+  <article class="art-body">
+
+<p class="standfirst">只收品牌传播动作，不收销量与新车型参数。每条都给原文链接，判断与点评只依据标题里的事实。</p>
+
+<h2>今日一览</h2>
+
+<table><thead><tr><th>品牌</th><th>类型</th><th>标题</th></tr></thead><tbody>
+<tr><td>奔驰</td><td>TVC 创意</td><td><a href="https://www.digitaling.com/projects/381296.html" target="_blank" rel="noopener">奔驰TVC：布拉德·皮特耍大牌？</a></td></tr>
+<tr><td>东风</td><td>明星代言</td><td><a href="https://socialbeta.com/campaign/28830" target="_blank" rel="noopener">宋茜成为东风日产 NX7 品牌代言人</a></td></tr>
+<tr><td>极狐</td><td>明星代言</td><td><a href="https://socialbeta.com/campaign/28401" target="_blank" rel="noopener">田曦薇、冯德伦成为极狐阿尔法 T7 全球代言人</a></td></tr>
+<tr><td>现代</td><td>明星代言</td><td><a href="https://socialbeta.com/campaign/28325" target="_blank" rel="noopener">范丞丞成为北京现代艾尼氪 V 品牌代言人</a></td></tr>
+<tr><td>起亚</td><td>明星代言</td><td><a href="https://socialbeta.com/campaign/28298" target="_blank" rel="noopener">蔡徐坤成为起亚品牌代言人</a></td></tr>
+<tr><td>法拉利</td><td>联名合作</td><td><a href="https://socialbeta.com/campaign/28398" target="_blank" rel="noopener">PUMA 携手法拉利惠普 F1® 车队推出全新 Heritage 系列</a></td></tr>
+<tr><td>岚图</td><td>联名合作</td><td><a href="https://www.digitaling.com/articles/1533685.html" target="_blank" rel="noopener">站酷携手岚图泰山X8，拓新汽车行业AIGC营销的想象边界</a></td></tr>
+<tr><td>欧拉</td><td>节点营销</td><td><a href="https://www.digitaling.com/projects/379546.html" target="_blank" rel="noopener">欧拉5的七夕，MBTI下的情侣们</a></td></tr>
+</tbody></table>
+
+<h2>TVC 创意</h2>
+
+<h3>奔驰TVC：布拉德·皮特耍大牌？</h3>
+
+<ul><li><strong>品牌</strong>：奔驰</li><li><strong>发生了什么</strong>：相信大家都看过《F1：狂飙飞车》，延续布兰德·皮特车手人设，奔驰把他请到片场，拍了一部《难以抗拒》的非正式预告片。 布兰德·皮特一脚油门，一个漂移，成功让追踪者扑空，绝尘而去。 并没有！皮特开完一圈回来后，说“特技组没跟上”，再来一条； 没踩上点，再来一条； 再来一条更带劲的； 再来一条 …… 最后…</li><li><strong>原文</strong>：<a href="https://www.digitaling.com/projects/381296.html" target="_blank" rel="noopener">数英网·项目</a></li></ul>
+
+<h2>节点营销</h2>
+
+<h3>欧拉5的七夕，MBTI下的情侣们</h3>
+
+<ul><li><strong>品牌</strong>：欧拉</li><li><strong>发生了什么</strong>：三个词摆在一起，几乎已经能直接脑补出一支完整的汽车广告：副驾上的礼物、江边的烟花、一条没什么人的夜路。也正因为太好脑补，这套叙事早被讲过太多遍，今年七夕再原样刷一遍，用户大概率直接划走。 依托归元平台，欧拉5实现一车多动力。混动及燃油版上市之后，临近七夕，可选装的智驾版本也即将进入市场，搭载激光雷达…</li><li><strong>原文</strong>：<a href="https://www.digitaling.com/projects/379546.html" target="_blank" rel="noopener">数英网·搜索</a></li></ul>
+
+<h2>联名合作</h2>
+
+<h3>PUMA 携手法拉利惠普 F1® 车队推出全新 Heritage 系列</h3>
+
+<ul><li><strong>品牌</strong>：法拉利</li><li><strong>发生了什么</strong>：车队，重新演绎那些历经时间沉淀、始终令人难忘的经典之作。全新系列以双方千禧年的复古风格为灵感来源，这既是对法拉利赛车文化的忠实延续，也是当代设计视角下的重新诠释，让经典与当下在此交汇。昔日风格并未止步于过去，而是在当下焕新归来，续写新章。全新系列中，PUMA与法拉利车队合作档案中的多款经典版型悉数回…</li><li><strong>原文</strong>：<a href="https://socialbeta.com/campaign/28398" target="_blank" rel="noopener">SocialBeta·汽车</a></li></ul>
+
+<h3>站酷携手岚图泰山X8，拓新汽车行业AIGC营销的想象边界</h3>
+
+<ul><li><strong>品牌</strong>：岚图</li><li><strong>发生了什么</strong>：新能源汽车市场快速发展，品牌竞争不断升级，汽车营销也随之进入白热化阶段。广告片、发布会等传统传播方式已难以形成持续的新鲜感。AI技术的发展，也让越来越多品牌开始尝试将AIGC融入汽车营销，希望借助新的内容生产方式，让产品卖点以更丰富、更具互动性的方式触达用户。 顺应这一趋势， 站酷联合岚图汽车发起「…</li><li><strong>原文</strong>：<a href="https://www.digitaling.com/articles/1533685.html" target="_blank" rel="noopener">数英网·搜索</a></li></ul>
+
+<h2>明星代言</h2>
+
+<h3>宋茜成为东风日产 NX7 品牌代言人</h3>
+
+<ul><li><strong>品牌</strong>：东风</li><li><strong>发生了什么</strong>：东风日产官宣宋茜成为NX7品牌代言人，双方携手开启全新出行企划，邀请大家与这款智能零压SUV一同自在出发。宋茜亲自体验了NX7，并分享了对车身配色与设计细节的感受。NX7采用三大黄金比例车姿，搭配流光车灯，勾勒利落的车身线条。车色方面，品牌从自然景象中汲取色彩灵感，推出「紫藤花」「四叶草」等五款车色…</li><li><strong>原文</strong>：<a href="https://socialbeta.com/campaign/28830" target="_blank" rel="noopener">SocialBeta·汽车</a></li></ul>
+
+<h3>田曦薇、冯德伦成为极狐阿尔法 T7 全球代言人</h3>
+
+<ul><li><strong>品牌</strong>：极狐</li><li><strong>发生了什么</strong>：极狐汽车宣布田曦薇、冯德伦出任阿尔法T7全球代言人。这是极狐品牌首次采用双代言人阵容，田曦薇以年轻活力为车型注入潮流气质，冯德伦则凭横跨演员、导演、歌手多重身份，呼应阿尔法T7「不止一面」的产品主张。官宣当日，极狐汽车同步开启阿尔法T7的预售，并在全国十城地标同步点亮户外大屏广告。一款车能否卖好最终…</li><li><strong>原文</strong>：<a href="https://socialbeta.com/campaign/28401" target="_blank" rel="noopener">SocialBeta·汽车</a></li></ul>
+
+<h3>范丞丞成为北京现代艾尼氪 V 品牌代言人</h3>
+
+<ul><li><strong>品牌</strong>：现代</li><li><strong>发生了什么</strong>：北京现代官宣范丞丞出任艾尼氪V品牌代言人，并同步开启艾尼氪V的预售。艾尼氪是现代汽车旗下的新能源品牌，全新艾尼氪V定位为B级纯电轿跑，采用ONECURVED一体式曲面车身设计，搭载宁德时代定制磷酸铁锂电池、高通骁龙8295芯片，融合百度与豆包双AI大模型，并配备Momenta高阶智能辅助驾驶系统。在…</li><li><strong>原文</strong>：<a href="https://socialbeta.com/campaign/28325" target="_blank" rel="noopener">SocialBeta·汽车</a></li></ul>
+
+<h3>蔡徐坤成为起亚品牌代言人</h3>
+
+<ul><li><strong>品牌</strong>：起亚</li><li><strong>发生了什么</strong>：起亚汽车正式宣布蔡徐坤成为品牌代言人，这也是蔡徐坤首次跨界代言汽车品牌。这次合作主推全新赛图斯，该车定位为「智能燃油车」，全系标配27英寸超薄宽幕显示屏与高通骁龙8295P芯片，搭载百度文心一言AI大模型，车内配备车载KTV、游戏模式及BOSE音响，满足年轻人的多元化需求。起亚与蔡徐坤这次联手，表明…</li><li><strong>原文</strong>：<a href="https://socialbeta.com/campaign/28298" target="_blank" rel="noopener">SocialBeta·汽车</a></li></ul>
+
+<hr>
+
+<h2>今日观察</h2>
+
+<p>今天这些动作中，明星代言成为主流打法，涉及奔驰、东风日产、极狐、北京现代、起亚等多家车企，均通过邀请知名艺人担任品牌或车型代言人，强化品牌形象与市场吸引力。此外，联名合作和节点营销也有出现，如法拉利与PUMA的联名、岚图与站酷的AIGC合作，以及欧拉围绕七夕节的MBTI情侣营销，显示出车企在多元营销策略上的探索。对营销人员而言，值得记下的一条经验是，明星代言依然是当前汽车品牌快速提升曝光度和情感共鸣的重要手段，尤其在竞争激烈的市场环境中，借助明星的影响力能够迅速吸引目标消费者的关注，同时增强品牌信任度与市场辨识度。</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
