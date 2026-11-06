@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>仰望U9X阿布扎比打破量产车公路极速世界纪录 503.17km/h</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 11 月 7 日 · 星期六 · 第 45 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">汽车日报</p>
+    <h1 class="art-title">仰望U9X阿布扎比打破量产车公路极速世界纪录 503.17km/h</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">15 条报道 ｜ 11 张配图 ｜ 全部条目带来源标注，单源信息标注待证实</p>
+  <article class="art-body">
+
+<h2>今日速览（30 秒版）</h2>
+<ul><li>比亚迪仰望U9X极速达503.17km/h，获吉尼斯世界纪录认证。</li><li>Uber称季度最忙周仅4人用AI代理预订乘车。</li><li>本田展出27年百万公里雅阁，24小时零故障。</li><li>特斯拉将2027年中停止Cybertruck生产。</li><li>宝马Q3超四分之一车型售出含充电接口。</li><li>特斯拉上海工厂本地化率提升至98%。</li><li>全新红旗H9 11月7日预售，搭载华为智驾。</li><li>宝马提供500美元充电抵用券给2027电动车用户。</li></ul>
+
+<h2>今日头条</h2>
+<p>北京时间11月6日下午，在阿联酋阿布扎比的公共测试公路上，中国品牌仰望旗下纯电动超跑U9X完成公路极速挑战，最终以503.17km/h的最高时速，打破全球量产车公路极速世界纪录，成为目前全球速度最快的量产公路跑车。此次挑战由车手Marc Basseng完成，成绩经国际汽联（FIA）验证，并获得吉尼斯世界纪录认证，涵盖‘量产汽车单向最高速度’与‘量产电动汽车单向最高速度’两项纪录。这也是中国品牌量产车首次登上该榜单榜首位置。仰望U9X基于全球首个量产全域1200V超高压平台打造，配备四台转速可达30000rpm的电机，整车最大马力超过3000Ps。此前，仰望品牌已通过多款高性能车型展现其技术实力，此次纪录的达成进一步巩固了其在高端电动车领域的领先地位。此次挑战标志着中国品牌在高性能电动车领域实现了重大突破，展现了中国智造在全球汽车行业的竞争力。</p>
+
+<figure><img src="img/79e94624d31d01.png" alt="（图：新浪汽车）" loading="lazy"><figcaption>（图：新浪汽车）</figcaption></figure>
+
+<h2>一、新车与产品</h2>
+
+<h3>全新红旗H9 11月7日开启预售</h3>
+
+<p>11月6日，一汽红旗宣布，全新红旗H9轿车将于11月7日正式开启预售。新车搭载华为乾崑智驾ADS 5高阶版，配备纵置2.0T混动专用发动机与全球首创纵置双档混动电驱，CLTC纯电续航275km，全系标配空气悬架与后轮转向。全新红旗H9延续家族经典的东方美学设计语言，车身尺寸为5230/1955/1515mm，轴距达3120mm，内饰采用高档皮质与真铝镶嵌木纹饰板，智能座舱配置上搭载鸿蒙系统与25扬HUAWEISOUND音响。此次预售标志着红旗在高端新能源市场进一步布局，与同级别车型形成竞争。（来源：太平洋汽车；旁证：汽车之家 亦报道）</p>
+
+<figure><img src="img/bb0bf03cec3b31.png" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>比亚迪腾势N8 11月12日上市 续航达1003公里</h3>
+
+<p>BYD Denza计划于11月12日推出全新N8 SUV，该车型已于10月26日开启预售，CLTC工况下续航里程可达1003公里。N8是一款五座纯电SUV，具体配置与细节可参考CnEVPost的报道。此前，腾势品牌已推出多款新能源车型，此次N8的发布将进一步丰富其产品线，与市场上的主流纯电SUV形成竞争。此举意味着腾势在新能源市场持续发力，推动品牌向上。（来源：CnEVPost；旁证：CarNewsChina 亦报道）</p>
+
+<figure><img src="img/aba282cbb3395b.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>东风标致新408上市 售价9.97万元</h3>
+
+<p>11月6日，东风标致2027款408正式上市，360THP Pro车型售价9.97万元。新车推出南法黄与梧桐绿两款新外观车色，搭载第四代360THP全铝双涡道涡轮增压发动机与原装进口爱信第三代6速手自一体变速箱，WLTC工况下百公里油耗低至6.1升。2027款408长宽高分别为4750*1820*1488mm，轴距2730mm，配备同级唯一的1：1等比例车门与22处人性化储物空间。此次上市是对标致在紧凑型轿车市场的一次重要更新，与同级别车型形成竞争。（来源：新浪汽车·新车）</p>
+
+<figure><img src="img/b990467caef001.jpg" alt="（图：新浪汽车·新车）" loading="lazy"><figcaption>（图：新浪汽车·新车）</figcaption></figure>
+
+<h2>二、销量与市场</h2>
+
+<h3>吉利星愿百万销量达成 限时8.88万元</h3>
+
+<p>11月6日，吉利星愿在杭州举行全球用户音乐嘉年华暨百万销量宠粉权益发布会，上市24个月累计销量突破100万辆，成为全球最快达成百万销量的新能源汽车。现场发布STAR限定系列新版型STAR Ace与STAR Chill，限时权益价8.88万元，同步推出购车补贴与专属礼包。吉利星愿自2024年10月上市以来，销量持续增长，2026年上半年累计售出249418辆，同比增长21%，蝉联中国市场最畅销车型。其全球市场表现同样亮眼，已登陆30余个国家，位列2026年1-6月中国新能源两厢车型出口TOP2。吉利星愿的百万销量不仅巩固了其在国内市场的地位，也进一步拓展了全球影响力。（来源：新浪汽车·新车；旁证：易车、汽车之家 亦报道）</p>
+
+<figure><img src="img/4947f85ac4d25e.jpg" alt="（图：新浪汽车·新车）" loading="lazy"><figcaption>（图：新浪汽车·新车）</figcaption></figure>
+
+<h3>鸿蒙智行10月交付33537台 全系均价超40万元</h3>
+
+<p>鸿蒙智行10月交付新车33537台，全系成交均价超过40万元，累计交付突破160万台。鸿蒙智行作为智能汽车领域的代表，其产品线覆盖多个高端车型，凭借高性价比和智能化配置，持续吸引消费者。此次交付数据的公布，进一步巩固了其在高端智能汽车市场的领先地位。鸿蒙智行的高成交均价和持续增长的交付量，表明其产品在市场上的认可度和竞争力不断提升。（来源：新浪汽车）</p>
+
+<figure><img src="img/69ddf0ceb6cd0f.jpg" alt="（图：新浪汽车）" loading="lazy"><figcaption>（图：新浪汽车）</figcaption></figure>
+
+<h3>2027款东风标致408上市 售价9.97万元</h3>
+
+<p>11月6日，2027款东风标致408正式上市，售价9.97万元。新车新增梧桐绿和南法黄两款车色，搭载1.5T发动机与爱信6速手自一体变速箱，配备Blue-i 4.0智能网联系统及AI语音功能。该车型延续标致家族“狮魂美学”设计，配备12英寸全液晶仪表与10英寸中控屏幕，支持智能数字钥匙和多项实用配置。2027款标致408将与大众速腾、日产轩逸等传统燃油车以及比亚迪秦PLUS等新能源车型竞争。现款标致408今年前9个月累计销量5635辆，月均销量约600辆。（来源：太平洋汽车；旁证：易车 亦报道）</p>
+
+<figure><img src="img/956643a01d93e5.png" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h2>三、政策与标准</h2>
+
+<h3>欧洲议员要求评估比亚迪安全风险</h3>
+
+<p>11月4日，14名欧洲议会议员向欧盟委员会提交书面质询，要求评估比亚迪汽车是否构成安全威胁，并考虑将其列入高风险供应商名单。此次行动由法国欧洲议会议员Francois Kalfon牵头，他指出允许来自第三国的网联汽车接入欧洲敏感基础设施将带来不可接受的安全风险。比亚迪回应称，其在欧洲市场销售车辆的数据无法从中国境内远程访问，欧洲用户始终拥有对自身数据的控制权。此前，欧盟委员会提出公共招标新规，可能提高欧洲本土产品和服务的占比，但比亚迪已在匈牙利设有生产基地，仍可能参与相关采购项目。此举意味着欧洲对中国车企在网络安全方面的审查正在加强。（来源：盖世汽车）</p>
+
+<h3>长城H9限时优惠换新价17.19万起</h3>
+
+<p>11月6日，长城H9推出限时优惠换新价17.19万元起，提供现金优惠1.5万元、置换补贴1万元，活动截止至11月30日。新车延续硬派SUV定位，车身尺寸为5070mm×1960mm×1950mm，轴距2850mm，配备15.6英寸中控屏、Coffee OS3系统及多项智能驾驶辅助功能。动力方面，提供2.0T汽油发动机匹配8AT变速箱和2.4T柴油发动机匹配9AT变速箱，全系标配2.5吨牵引资质。此前，长城H9以硬核风格和越野性能受到市场关注，此次优惠进一步提升了其竞争力。此举意味着长城汽车正在通过价格策略扩大市场份额。（来源：汽车之家）</p>
+
+<figure><img src="img/8c8d69436ef2fc.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h2>四、供应链与智驾</h2>
+
+<h3>国轩高科构建全球产业版图</h3>
+
+<p>2026年10月23日，国轩高科国际运营副总裁熊永华在第十四届汽车与环境创新论坛上表示，企业已构建覆盖美洲、欧洲、东南亚的全球产业版图，并在摩洛哥打造全产业链生态闭环。国轩高科坚持“四力并举”，即产品力、市场力、制造力与资本力，推动动力电池出海。此前，国轩高科自2014年起布局国际业务，面对欧美等地的合规性要求，提出“联合出海”与“稳步出海”理念，以东南亚为前沿阵地逐步拓展欧美市场。此举意味着中国动力电池企业正在加速全球化布局，以应对海外市场快速增长的需求。（来源：盖世汽车）</p>
+
+<h3>蔚来发布全新智能座舱 NIO IN 2026创新科技日开幕</h3>
+
+<p>11月25日，蔚来将在广州举办NIO IN 2026创新科技日，发布AI驱动的全新智能座舱及智能辅助驾驶产品。蔚来表示，其换电累计完成1.3亿次，日均换电单量突破11万次，全国布局4236座换电站。同时，蔚来10月交付新车34246台，2026年1-10月累计交付334547台，同比上涨38.5%。此外，蔚来ES8特别版将于11月27日广州车展上市，提供五座、六座及七座配置，售价区间为27.48-33.88万元（BaaS租电方案）。该车型搭载神玑NX9031芯片及蔚来世界模型NWM，支持点到点全域领航辅助，配备27个扬声器及8.1.4.2布局音响系统。（来源：汽车之家）</p>
+
+<figure><img src="img/5e8ab7cdf336f9.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>2027款领克08 EM-P上市 限时置换价15.98万元起</h3>
+
+<p>2027款领克08 EM-P正式上市，共推出210四驱性能Ultra、230超长续航Ultra、230超长续航Max三款车型，限时置换价15.98万元起。该车型外观延续The Next Day家族设计，新增“璀璨星河”灯光元素及跃动橙车漆，内饰可选星夜蓝及暖云沙主题，并配备哈曼卡顿23扬声器音响系统。辅助驾驶方面，全系标配192线激光雷达及27颗感知硬件，支持车位到车位领航辅助、城市NOA及高速NOA功能。动力方面，搭载EM-P智能电混系统及38.2kWh电池，CLTC综合续航最高超1400km，纯电续航最高230km。210四驱性能Ultra版本零百加速4.6秒。（来源：太平洋汽车）</p>
+
+<figure><img src="img/aa79412a66c36b.png" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h2>五、公司与人事</h2>
+
+<h3>奥迪Q6L e-tron限时优惠1万元</h3>
+
+<p>一汽奥迪推出限时优惠活动，奥迪Q6L e-tron长续航版及Sportback e-tron长续航版可享1万元现金礼，优惠后价格分别为269800元及289800元。选购非黑色车型还可叠加「臻色限定权益」，全国限量666台。此外，购车可享受多项装备升级礼及老友福利，包括置换、增购、推荐、复购等场景的现金补贴及积分奖励。选购全系车型还可享5年贷款前2年0息金融方案。奥迪A6L e-tron首发乾崑智驾版可免费尊享价值45000元「先享装备包」，包含水平贯穿式数字OLED尾灯、黑光包套件、Bang &amp; Olufsen豪华音响系统等多项高价值配置。（来源：汽车之家）</p>
+
+<figure><img src="img/0739462b5679cd.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>Mate Rimac用豪赌拿下宝马电池订单</h3>
+
+<p>2021年，Mate Rimac在克罗地亚萨格勒布郊外的工地上，向宝马高管承诺为其建设高产量电池生产线，即使合同尚未签订。这一举动最终帮助Rimac Technology赢得了宝马的电池订单。此前，Rimac以电动超跑闻名，但超跑市场小、利润低，难以支撑公司发展。为进入主流汽车工业，Mate Rimac选择以电池为突破口，与宝马展开竞争。中国电池厂商占据全球市场70%份额，竞争激烈。宝马在考察后，最终选择了Rimac。今年4月，宝马第六代圆柱锂离子电芯与Rimac第五代模块化电池技术联合开发的电动豪华轿车亮相，成为首款搭载Rimac电池系统的宝马量产车。这标志着Rimac在主流车企中的地位得到认可。（来源：盖世汽车）</p>
+
+<h2>六、出海与国际</h2>
+
+<h3>电池出海带来营收增长与利润压力</h3>
+
+<p>2024年9月，我国动力和储能电池出口44.0GWh，同比增长64.5%，占当月销量19.7%。宁德时代、亿纬锂能、国轩高科、欣旺达四家企业营收均上涨，但利润表现分化。国轩高科归母净利润下滑66.48%，欣旺达下滑56.37%，主要因欧洲项目投资大、建设期成本高。亿纬锂能归母净利润增长86.11%，显示其出海策略更有效。宁德时代营收增长显著，但归母净利润增速仅14.54%，因原材料成本上升和海外扩张投入大。出海成为电池企业营收增长主动力，但同时也是一张需要提前支付的账单，产能建在欧洲，订单兑现需等待投产。（来源：盖世汽车）</p>
+
+<h3>Smart精灵2号限时9.99万元起售</h3>
+
+<p>11月5日，Smart精灵2号在国内上市，起售价9.99万元，提供Premium豪华版一个配置。该车被视为fortwo的电动继任者，车身长2751毫米，宽1669毫米，轴距1875毫米，最小转弯半径3.35米。搭载宁德时代磷酸铁锂电池，CLTC续航410公里，支持V2L对外放电。配置包括12.8英寸中控屏、L2级辅助驾驶、7个安全气囊等。新车由吉利济南基地生产，按中欧双标开发。此前发售的鎏金高定版限量999台，已售罄。Smart精灵2号的推出，标志着Smart品牌在电动化道路上的进一步拓展，与竞品相比，其价格更具吸引力，但市场接受度仍需观察。（来源：网上车市；旁证：易车 亦报道）</p>
+
+<h2>数据速览</h2>
+
+<table><thead><tr><th>指标</th><th>数值</th><th>口径/区间</th><th>来源</th></tr></thead><tbody>
+<tr><td>吉利星愿销量</td><td>100万辆</td><td>上市24个月</td><td>新浪汽车</td></tr>
+<tr><td>2027款东风标致408售价</td><td>9.97万元</td><td>1.5T+6AT动力组合</td><td>太平洋汽车</td></tr>
+<tr><td>BYD Denza N8续航里程</td><td>1003km</td><td>2026年10月26日预售</td><td>CnEVPost</td></tr>
+<tr><td>鸿蒙智行10月交付量</td><td>33537台</td><td>全系成交均价超40万元</td><td>新浪汽车</td></tr>
+<tr><td>大众ID. AURA L5盲订时间</td><td>11月16日</td><td>搭载激光雷达</td><td>太平洋汽车</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>原文来源</h2>
+
+<p class="standfirst">本页每条报道的图片均来自该条新闻原文页面；原文没有合格图片的条目不配图。</p>
+
+<p>1. [新浪汽车] 仰望U9X阿布扎比打破量产车公路极速世界纪录 跑出503.17km/h最高时速 — https://auto.sina.com.cn/news/2026-11-06/detail-inixuyxa5605765.shtml</p>
+<p>2. [太平洋汽车] 全新红旗H9将于11月7日开启预售 搭载华为乾崑智驾 — http://www.pcauto.com.cn/nation/5191/51912494.html?ad=28676</p>
+<p>3. [CnEVPost] BYD Denza to launch new N8 SUV on November 12 with up to 1,003 km range — https://cnevpost.com/2026/11/06/byd-denza-to-launch-new-n8-nov-12/</p>
+<p>4. [新浪汽车·新车] 售价9.97万元 东风标致新408上市 — https://auto.sina.com.cn/newcar/2026-11-06/detail-inixuywy8845162.shtml?oaid=00111&amp;c=spr_auto_trackid_4d7d188c9b7a61c4</p>
+<p>5. [新浪汽车·新车] 吉利星愿STAR限定系列 限时8.88万元 — https://auto.sina.com.cn/newcar/2026-11-06/detail-inixvfew8868158.shtml?oaid=00002&amp;c=spr_auto_trackid_f8944f41f240e3fc</p>
+<p>6. [新浪汽车] 鸿蒙智行10月交付新车33537台 全系成交均价超40万元 — https://auto.sina.com.cn/news/2026-11-01/detail-inixferx3103123.shtml</p>
+<p>7. [太平洋汽车] 售价9.97万元 2027款东风标致408 1.5T+6AT动力组合 — http://www.pcauto.com.cn/nation/5191/51912412.html?ad=28676</p>
+<p>8. [盖世汽车] 欧洲议会议员要求评估比亚迪安全风险 — https://auto.gasgoo.com/news/202611/6I70477208C101.shtml</p>
+<p>9. [汽车之家] 现金优惠1.5万元 置换补贴1万元 长城H9限时优惠换新价17.19万起 — https://www.autohome.com.cn/news/202611/1318209.html#pvareaid=102624</p>
+<p>10. [盖世汽车] 国轩高科：从产品出海到体系扎根 — https://auto.gasgoo.com/news/202611/6I70477212C106.shtml</p>
+<p>11. [汽车之家] 发布全新智能座舱等 NIO IN 2026蔚来创新科技日将于11月25日开幕 — https://www.autohome.com.cn/news/202611/1318171.html#pvareaid=102624</p>
+<p>12. [太平洋汽车] 2027款领克08 EM-P上市 限时置换价15.98万元起 — http://www.pcauto.com.cn/nation/5191/51912410.html?ad=28676</p>
+<p>13. [汽车之家] 奥迪Q6L e-tron现金优惠1万元 一汽奥迪推出限时优惠活动 — https://www.autohome.com.cn/news/202611/1318173.html#pvareaid=102624</p>
+<p>14. [盖世汽车] Mate Rimac如何用一场豪赌拿下宝马 — https://auto.gasgoo.com/news/202611/6I70477129C501.shtml</p>
+<p>15. [盖世汽车] 电池出海，一张提前支付的账单 — https://auto.gasgoo.com/news/202611/6I70477021C501.shtml</p>
+<p>16. [网上车市] Smart精灵2号上市，限时权益价9.99万元起 — http://news.cheshi.com/dujia/20261105/3426219.shtml</p>
+<p>17. [网上车市] 比亚迪：仰望U9X极速超503km/h 地表最快量产车！ — http://news.cheshi.com/dujia/20261027/3426142.shtml</p>
+<p>18. [TechCrunch·交通] Almost no one uses AI agents to book their Uber, company says — https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/</p>
+<p>19. [新浪汽车] Honda携多领域技术成果亮相进博会 — https://auto.sina.com.cn/news/2026-11-05/detail-inixsmka6119642.shtml</p>
+<p>20. [Electrek] Tesla to end Cybertruck production as sales stall at ~10% of plan — https://electrek.co/2026/11/06/tesla-ending-cybertruck-production-sales-10-percent-plan/</p>
+<p>21. [InsideEVs] Over A Quarter Of BMW, Mini, And Rolls-Royce Models Sold In Q3 Had A Plug — https://insideevs.com/news/814628/bmw-group-ev-phev-sales-q3-2026/</p>
+<p>22. [CnEVPost] Tesla pushes Shanghai plant localization to 98%, bringing joint developments with Chinese suppliers global — https://cnevpost.com/2026/11/06/tesla-shanghai-plant-localization-98/</p>
+<p>23. [汽车之家] 全新红旗H9将于11月7日开启预售 搭载华为乾��智驾ADS 5 内饰焕新 — https://www.autohome.com.cn/news/202611/1318214.html#pvareaid=102624</p>
+<p>24. [Electrive] BMW offers US customers $500 in public charging credits for 2027 EVs — https://www.electrive.com/2026/11/06/bmw-offers-us-customers-500-in-public-charging-credits-for-2027-evs/</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>

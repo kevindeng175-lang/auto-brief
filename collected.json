@@ -1,963 +1,940 @@
 {
- "date": "2026-11-06",
- "generatedAt": "2026-11-06T05:31:14",
+ "date": "2026-11-07",
+ "generatedAt": "2026-11-07T05:33:23",
  "count": 72,
- "rawCount": 608,
- "uniqueCount": 474,
+ "rawCount": 609,
+ "uniqueCount": 460,
  "items": [
   {
-   "title": "CATL, BYD gain EV battery share outside China as Korean rivals lose ground",
-   "url": "https://cnevpost.com/2026/11/05/catl-byd-gain-ev-battery-share-outside-china/",
-   "source": "CnEVPost",
+   "title": "Tesla to end Cybertruck production as sales stall at ~10% of plan",
+   "url": "https://electrek.co/2026/11/06/tesla-ending-cybertruck-production-sales-10-percent-plan/",
+   "source": "Electrek",
    "lang": "en",
-   "summary": "CATL and BYD's combined share rises to 44.5%, while the 6 Chinese makers in the top 10 hold 56.4%. For details, please visit CnEVPost (cnev.co).",
-   "imageSrc": "https://cnevpost.com/wp-content/uploads/2026/11/2026110509023876.jpg",
-   "hits": [
-    "byd",
-    "catl",
-    "battery",
-    "ev"
-   ],
-   "score": 4,
-   "body": "CATL and BYD's combined share rises to 44.5%, while the 6 Chinese makers in the top 10 hold 56.4%. For details, please visit CnEVPost (cnev.co).",
-   "image": "img/31adf12cdd0dcc.jpg"
-  },
-  {
-   "title": "GM Recalls 67,000 Chevy Blazer EVs And Cadillac Lyriqs Over Dangerous Brake Issue",
-   "url": "https://www.motor1.com/news/814525/gm-recalls-blazer-cadillac-brakes/",
-   "source": "Motor1",
-   "lang": "en",
-   "summary": "Certain Chevrolet Blazer EV and Cadillac models face low-speed brake loss, with owners getting a free software update through over-the-air or dealers.",
-   "imageSrc": "https://cdn.motor1.com/images/mgl/qkYpqJ/s3/cadillac-celestiq-night.jpg",
-   "hits": [
-    "gm",
-    "ev",
-    "loss",
-    "recall"
-   ],
-   "score": 4,
-   "body": "Certain Chevrolet Blazer EV and Cadillac models face low-speed brake loss, with owners getting a free software update through over-the-air or dealers.",
-   "image": "img/3830b1f6d339b2.jpg"
-  },
-  {
-   "title": "Second-gen BYD Seal 07 enters China with flash charging and God’s Eye ADAS",
-   "url": "https://carnewschina.com/2026/11/05/second-gen-byd-seal-07-enters-china-with-flash-charging-and-gods-eye-adas/",
-   "source": "CarNewsChina",
-   "lang": "en",
-   "summary": "The second-gen BYD Seal 07 enters China at 139,900 yuan (20,975 USD) before discounts. This model offers BEV and PHEV powertrain options. The post Second-gen BYD Seal 07 enters China with flash charging and God’s Eye ADAS appeared first on CarNewsChina.com .",
-   "hits": [
-    "byd",
-    "charging",
-    "ev",
-    "adas"
-   ],
-   "score": 4,
-   "body": "The second-gen BYD Seal 07 enters China at 139,900 yuan (20,975 USD) before discounts. This model offers BEV and PHEV powertrain options. The post Second-gen BYD Seal 07 enters China with flash charging and God’s Eye ADAS appeared first on CarNewsChina.com ."
-  },
-  {
-   "title": "Swiss companies aim to make Tesla’s Cybertruck road-legal in Europe",
-   "url": "https://www.electrive.com/2026/11/05/swiss-companies-aim-to-make-teslas-cybertruck-road-legal-in-europe/",
-   "source": "Electrive",
-   "lang": "en",
-   "summary": "Werk.lab and Revoltaris are working to get the Tesla Cybertruck approved for Swiss certification. To achieve this, the electric pickup had to undergo technical revisions in several areas.",
-   "imageSrc": "https://www.electrive.com/media/2025/03/tesla-cybertruck-frontansicht-400x267.jpg",
+   "summary": "Tesla is ending Cybertruck production. CEO Elon Musk announced early Friday that the automaker will “wind down” the electric pickup at Gigafactory Texas around the middle of 2027, about three and a half years after the first deliveries. Musk says it’s to make room for more Cybercab production. But Giga Texas isn’t short on space. The Cybertruck is short on buyers, and it sells at roughly a tenth o",
+   "imageSrc": "https://electrek.co/wp-content/uploads/sites/3/2026/10/Cybertruck_34-e1793032990825.jpg?quality=82&#038;strip=all&#038;w=1600",
    "hits": [
     "tesla",
+    "factory",
+    "gigafactory",
+    "deliveries",
+    "sales"
+   ],
+   "score": 5,
+   "body": "Tesla is ending Cybertruck production. CEO Elon Musk announced early Friday that the automaker will “wind down” the electric pickup at Gigafactory Texas around the middle of 2027, about three and a half years after the first deliveries. Musk says it’s to make room for more Cybercab production. But Giga Texas isn’t short on space. The Cybertruck is short on buyers, and it sells at roughly a tenth o",
+   "image": "img/816f7b1bb95a90.webp"
+  },
+  {
+   "title": "Over A Quarter Of BMW, Mini, And Rolls-Royce Models Sold In Q3 Had A Plug",
+   "url": "https://insideevs.com/news/814628/bmw-group-ev-phev-sales-q3-2026/",
+   "source": "InsideEVs",
+   "lang": "en",
+   "summary": "When looking at EVs specifically, one in every five cars in BMW Group’s portfolio was electric, with Europe leading the way.",
+   "imageSrc": "https://cdn.motor1.com/images/mgl/Mk6J6X/s3/bmw-ix3-production-in-debrecen-hungary.jpg",
+   "hits": [
+    "bmw",
     "eu",
     "europe",
     "ev"
    ],
    "score": 4,
-   "body": "Werk.lab and Revoltaris are working to get the Tesla Cybertruck approved for Swiss certification. To achieve this, the electric pickup had to undergo technical revisions in several areas."
+   "body": "When looking at EVs specifically, one in every five cars in BMW Group’s portfolio was electric, with Europe leading the way.",
+   "image": "img/13cb38df12f344.jpg"
   },
   {
-   "title": "上汽与Momenta拟共建智驾合资公司，中国车企迎来\"AI合伙人\"时刻",
-   "url": "https://www.pcauto.com.cn/news/5191/51911963.html",
-   "source": "太平洋汽车·新闻",
-   "lang": "zh",
+   "title": "Tesla pushes Shanghai plant localization to 98%, bringing joint developments with Chinese suppliers global",
+   "url": "https://cnevpost.com/2026/11/06/tesla-shanghai-plant-localization-98/",
+   "source": "CnEVPost",
+   "lang": "en",
+   "summary": "Over the past several years, Tesla had always described the Shanghai factory's parts localization rate as \"over 95%.\" For details, please visit CnEVPost (cnev.co).",
+   "imageSrc": "https://cnevpost.com/wp-content/uploads/2026/11/2026110607185539.jpg",
    "hits": [
-    "上汽",
-    "Momenta",
-    "智驾"
+    "tesla",
+    "plant",
+    "factory",
+    "ev"
    ],
-   "score": 3,
-   "body": "新车 行业 评测 导购 技术 改装 文化 Ai选车专家 图片 排行榜 工具 购车计算 车型对比 精彩推荐 极智+ 混动时代 太平洋号 购车 购车优惠 买车趣·最高领49999购车补贴 分期购 经销商 车市 商城 用车 社区 用车 酷养车 意见反馈 意见反馈 * 问题描述 0 / 300\n11月5日，上汽集团董事会审议通过相关议案，拟与Momenta等共同设立合资公司，注册资本3亿元，进一步加强高阶智能驾驶技术研发，提升整车产品在全球市场的竞争力。\n根据公告，合资公司注册资本为3亿元人民币。其中，Momenta拟认缴出资1.53亿元，持股51%；上汽集团拟认缴出资7500万元，持股25%；延电科技拟认缴出资7200万元，持股24%。上汽集团及延电科技合计持股49%。\n这份公告里最值得玩味的，正是股权结构：Momenta以51%的持股比例控股，上汽与延电科技合计49%。换句话说，在这家智驾合资公司里，握着\"方向盘\"的是AI公司，而不是车企。\n这在过去很难想象。车企与技术供应商之间，向来是\"你研发、我采购\"的买卖关系。而这一次，上汽选择把双方绑进同一家公司——不再是一单一单的生意，而是风险共担、利益共享的长期绑定。\n对上汽来说，这笔投资买到的不只是技术授权，更是让高阶智驾能力\"长\"在自己体系里的机会，智能化技术与整车产品需求的结合将更进一步；对Momenta来说，与头部车企深度捆绑，意味着技术能更快地从实验室开上量产车、开向全球市场。\n放大到整个行业，信号更加清晰：当智能化成为竞争的主战场，车企与AI公司的关系正在被重写。从\"甲方乙方\"到\"合伙人\"，中国汽车正在迎来属于自己的\"AI合伙人\"时刻。\n新车上市 最新文章 成都车展 宏光MINI EV 普拉多 欧拉黑猫 途达 起亚嘉华 玛奇朵 皇冠陆放 奔驰C级 哈弗神兽 坦克600 奥迪Q5 思域 卡罗拉双擎E+ 轩逸 太平洋汽车网app 新能源车\n举报邮箱：shenhezhiban@pconline.com.cn"
+   "score": 4,
+   "body": "Over the past several years, Tesla had always described the Shanghai factory's parts localization rate as \"over 95%.\" For details, please visit CnEVPost (cnev.co).",
+   "image": "img/bb84ea34cba408.jpg"
   },
   {
-   "title": "不再叫FSD 特斯拉欧洲辅助驾驶超速上限下调",
-   "url": "http://www.pcauto.com.cn/news/5191/51911142.html?ad=28676",
+   "title": "全新红旗H9将于11月7日开启预售 搭载华为乾崑智驾",
+   "url": "http://www.pcauto.com.cn/nation/5191/51912494.html?ad=28676",
    "source": "太平洋汽车",
    "lang": "zh",
    "hits": [
-    "特斯拉",
-    "辅助驾驶",
-    "欧洲"
+    "华为",
+    "红旗",
+    "智驾"
    ],
    "score": 3,
-   "body": "新车 行业 评测 导购 技术 改装 文化 Ai选车专家 图片 排行榜 工具 购车计算 车型对比 精彩推荐 极智+ 混动时代 太平洋号 购车 购车优惠 买车趣·最高领49999购车补贴 分期购 经销商 车市 商城 用车 社区 用车 酷养车 意见反馈 意见反馈 * 问题描述 0 / 300\n【太平洋汽车 汽车动态 】日前，特斯拉向欧洲市场推送重要OTA软件更新，在荷兰 RDW 监管批准下，针对搭载 HW4 硬件的车型，将此前的FSD Supervised更名为Tesla Assisted Driving（TAD，特斯拉辅助驾驶），同时下调辅助驾驶状态下的超速偏移上限，以此满足欧盟监管合规要求。\n更名是本次调整的重点之一。监管机构认为“Full Self-Driving（全自动驾驶）” 名称容易误导用户，这套系统本质仍属于L2级辅助驾驶，驾驶员需要全程接管、保持注意力。本次更新后，中控屏幕、车主手册内的系统名称同步替换为TAD；而美国市场版本依旧保留FSD命名，两地版本区分对待。\n速度设定规则改动同样明显。此前欧洲版系统允许驾驶员设置最高超出法定限速50%的速度偏移，该设置长期受到监管质疑。更新之后，速度偏移上限被压缩至10%，并且 每次车辆启动，偏移值会自动重置为0% ，默认不开启超速余量，相关速度附加功能默认关闭，进一步约束系统的行驶速度边界。\n据RDW披露，本次调整不会改变系统底层的通行能力，城市导航辅助、自动变道、环岛通行、自动泊车等原有功能保留不变。RDW已将该方案同步通知另外9个采信其认证的欧盟国家，方案落地后，也将帮助TAD继续推进欧盟多国的准入审批流程。\n需要注意的是，本次更新仅针对欧洲地区 HW4 硬件车型，国内特斯拉版本不受本次更名与限速规则影响。在欧盟监管持续收紧的背景下，也是特斯拉为高阶辅助驾驶在欧洲落地做出的妥协调整。（图/文/摄：太平洋汽车 潘洪瀚）\n新车上市 最新文章 成都车展 宏光MINI EV 普拉多 欧拉黑猫 途达 起亚嘉华 玛奇朵 皇冠陆放 奔驰C级 哈弗神兽 坦克600 奥迪Q5 思域 卡罗拉双擎E+ 轩逸 太平洋汽车网app 新能源车\n举报邮箱：shenhezhiban@pconline.com.cn",
-   "image": "img/8ef9bd17f481a2.png"
+   "body": "新车 行业 评测 导购 技术 改装 文化 Ai选车专家 图片 排行榜 工具 购车计算 车型对比 精彩推荐 极智+ 混动时代 太平洋号 购车 购车优惠 买车趣·最高领49999购车补贴 分期购 经销商 车市 商城 用车 社区 用车 酷养车 意见反馈 意见反馈 * 问题描述 0 / 300\n【太平洋汽车 新车频道 】 11月6日，一汽红旗宣布，全新红旗H9轿车将于11月7日正式开启预售。\n全新红旗H9采搭载华为乾崑智驾ADS 5高阶版。动力方面搭载纵置2.0T混动专用发动机+全球首创纵置双档混动电驱，CLTC纯电续航275km，全系标配空气悬架与后轮转向。\n在设计方面，全新红旗H9延续家族经典的东方美学设计语言，整体气场庄重大气，完美诠释旗舰行政轿车的沉稳格调。前脸配备标志性高山飞瀑直瀑式格栅，搭配品牌专属红色旗标，辨识度拉满；2.5米一体式贯穿灯带横贯整个前脸，同时支持2.5米巨幕迎宾光毯效果，仪式感十足。\n车身侧面线条舒展流畅，流畅的溜背造型打破传统行政轿车的沉闷感，兼具稳重感与运动气息，新车配备20英寸大气多辐式轮圈，细节处提升整车精致度，同时采用传统机械门把手设计，贴合商务车型稳重定位，车身尺寸方面，新车长宽高分别为5230/1955/1515mm，轴距达到3120mm。\n车尾采用分体式灯组设计，通过中间装饰条衔接，打造出一体化视觉效果，灯组设计与前脸形成呼应，家族辨识度高度统一。\n内饰部分，全新红旗H9主打高端行政豪华氛围，车内大面积覆盖高档皮质面料，搭配真铝镶嵌木纹饰板、274切面璀璨水晶旋钮，用料考究、工艺精湛。\n智能座舱配置上，新车全系搭载鸿蒙座舱，配备16.1英寸3K高清中控大屏，同时在副驾驶前方专属配置显示屏，支持多屏跨域协同操作，覆盖9大高频用车场景，可实现一键直达，大幅简化操作流程，提升用车便捷性。\n影音配置方面，新车搭载25扬HUAWEISOUND卓越系列7.1.4空间音响，打造沉浸式车载影音体验。\n在智能驾驶辅助方面，新车搭载华为乾崑智驾ADS 5高阶版，搭载行业顶尖的硬件配置，配备896线双光路图像级激光雷达+3颗高精度固态激光雷达，感知范围更广、精度更高。\n全新红旗H9搭载专属2.0T插电混动系统，配备纵置混动专用发动机与全球首创纵置双档混动电驱，发动机最大功率145kW，动力输出平顺且充沛。新车基于800V高压SiC平台打造，支持6C超充技术。\n续航上，新车搭载40.4kWh电池组，CLTC纯电续航可达275km，日常城市通勤可实现纯电出行，百公里电耗仅17.7kWh，CLTC综合百公里油耗低至5.19L，兼顾强劲动力与超低能耗。同时新车最高车速可达238km/h，动力性能媲美主流高端燃油旗舰车型。\n底盘操控层面，全新红旗H9全系标配闭式空气悬架与iDCS毫秒级调节系统，可实时根据路况调节悬架软硬高低，适配不同路况的驾乘需求。\n新车配备双向16°后轮转向功能，最小转弯半径仅5.35m，庞大车身拥有灵活的操控表现，低速转弯、泊车更加轻便。值得一提的是，新车搭载150km/h内爆胎稳行技术。（文：太平洋汽车 彭浚哲）\n新车上市 最新文章 成都车展 宏光MINI EV 普拉多 欧拉黑猫 途达 起亚嘉华 玛奇朵 皇冠陆放 奔驰C级 哈弗神兽 坦克600 奥迪Q5 思域 卡罗拉双擎E+ 轩逸 太平洋汽车网app 新能源车\n红旗新车： 红旗天工07 红旗H7 PHEV 红旗HS6 PHEV\n红旗城市4S店： 广州 北京 深圳 武汉 成都 上海 天津 杭州 青岛 重庆\n举报邮箱：shenhezhiban@pconline.com.cn",
+   "image": "img/bb0bf03cec3b31.png"
   },
   {
-   "title": "因软件控制程序等问题 广汽丰田召回超12万辆铂智3X/铂智7",
-   "url": "https://www.autohome.com.cn/news/202611/1318167.html#pvareaid=102624",
+   "title": "全新红旗H9将于11月7日开启预售 搭载华为乾��智驾ADS 5 内饰焕新",
+   "url": "https://www.autohome.com.cn/news/202611/1318214.html#pvareaid=102624",
    "source": "汽车之家",
    "lang": "zh",
    "hits": [
-    "丰田",
-    "广汽",
-    "召回"
+    "华为",
+    "红旗",
+    "智驾"
    ],
    "score": 3,
-   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 召回碰撞 正文 因软件控制程序等问题 广汽丰田召回超12万辆铂智3X/铂智7 之家原创车闻 原创 · 0 浏览 · 2026-11-04 19:04 · 北京 关注 [汽车之家 资讯 ] 日前，广汽丰田汽车有限公司根据《缺陷汽车产品召回管理条例》《缺陷汽车产品召回管理条例实施办法》的要求，向国家市场监督管理总局备案了召回计划。\n一、召回编号S2026M0124V：自即日起，召回2025年2月27日至2026年3月26日期间生产的部分 铂智3X ( 参数 | 询价 )车辆，共计100175辆。\n本次召回范围内的车辆，由于固定前悬架平衡杆拉杆的螺母设计考虑不充分，可能出现轴力不足情况。若继续使用车辆，螺母可能松动并产生异响。极端情况下，螺母可能脱出，影响车辆行驶稳定性，存在安全隐患。\n广汽丰田汽车有限公司将为召回范围内的车辆免费更换改进后的平衡杆拉杆螺母，以消除安全隐患。\n二、召回编号S2026M0125V：自即日起，召回2025年10月28日至2026年8月3日期间生产的部分铂智7车辆，共计18130辆。\n本次召回范围内的车辆，由于舒适停车功能的软件控制程序考虑不充分，开启该功能后，车辆低速行驶在特定条件下，制动力输出可能受限，导致制动距离变长，增加车辆碰撞风险，存在安全隐患。\n广汽丰田汽车有限公司将为召回范围内的车辆免费升级舒适停车功能的软件控制程序，以消除安全隐患。\n三、召回编号S2026M0126V：自即日起，召回2026年3月10日至2026年5月15日期间生产的部分铂智7车辆，共计2955辆。\n本次召回范围内的车辆，由于前部识别摄像机的软件控制程序考虑不充分，车辆在前部识别摄像机远程升级（OTA）过程中可能存在异常。车辆激活集成式巡航辅助功能后，可能引发方向盘非预期转动，存在安全隐患。\n广汽丰田汽车有限公司将为召回范围内的车辆免费升级前部识别摄像机的软件控制程序，以消除安全隐患。\n广汽丰田汽车有限公司将通过手机APP、电话等方式，通知相关用户此次召回事宜。广汽丰田汽车用户可致电广汽丰田顾客服务中心：800-830-8888（座机）、400-830-8888（手机），获取此次召回的相关信息。此外，也可登录市场监管总局召回中心网站www.samrdprc.org.cn，关注微信公众号（SAMRDPRC），了解更多信息，反映缺陷线索。（编译/汽车之家 秦超）",
-   "image": "img/bf146accc8d68c.jpg"
+   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 国产新车 正文 全新红旗H9将于11月7日开启预售 搭载华为乾崑智驾ADS 5 内饰焕新 之家原创车闻 原创 · 0 浏览 · 2026-11-06 16:19 · 北京 关注 [汽车之家 资讯 ] 日前，我们获悉，全新红旗H9将于11月7日开启预售，新车定位中大型车，采用插混动力，延续经典设计基因的基础上，外观与内饰焕新。\n外观方面，红旗H9延续东方美学设计，装配大尺寸直瀑中网，相比老款车型镀铬装饰更简约，格栅与日行灯相连，其采用分体式车灯设计，中央旗标设计维持行政轿车造型特征，车头顶部配备激光雷达。\n车身侧部线条平顺，整体更加紧凑，配备20英寸多辐轮圈，车身尺寸 5230/1955/1515mm，轴距 3120mm。\n尾灯造型与前脸形成呼应，整体遵循红旗旗舰轿车设计规范，不再是贯穿式尾灯样式，中间被镀铬饰条隔开，后包围弱化了镀铬装饰排气。\n内饰焕然一新，座舱采用豪华布局，内饰大面积使用高档皮质材料，搭配装饰纹理。搭载全新的三屏车机，配备16.1英寸3K显示屏，搭载鸿蒙座舱，支持多屏跨域协同与车载智能交互，车辆配备25扬HUAWEI SOUND卓越系列7.1.4空间音响。\n辅助驾驶硬件搭载华为乾崑智驾ADS 5高阶版，采用L3级冗余架构，感知硬件为896线双光路图像级激光雷达加3颗高精度固态激光雷达。\n座椅为真皮材质，后排膝部空间172mm，配置偏向舒适取向；后备厢容积 447L，适配商务接待及长途出行场景。\n动力方面，基于混动专属架构打造，新车搭载800V高压SiC平台，支持6C 快充，动力总成采用2.0T插混系统，发动机最大功率145kW，匹配纵置双挡混动电驱与40.4kWh 电池包。CLTC工况纯电续航275km，最高车速238km/h，最低油耗5.19L/100km。底盘全系标配闭式空气悬架，搭载iDCS 毫秒级调节系统，后轮转向角度双向16度，最小转弯半径5.35m。（文/汽车之家 秦超）",
+   "image": "img/e079b6949370e9.jpg"
   },
   {
-   "title": "BMW Is Giving New EV Buyers $500 In Free Charging",
-   "url": "https://insideevs.com/news/814588/bmw-giving-new-ev-buyers-500-free-charging/",
-   "source": "InsideEVs",
+   "title": "BMW offers US customers $500 in public charging credits for 2027 EVs",
+   "url": "https://www.electrive.com/2026/11/06/bmw-offers-us-customers-500-in-public-charging-credits-for-2027-evs/",
+   "source": "Electrive",
    "lang": "en",
-   "summary": "Buyers of eligible 2027 BMW EVs will get $500 in public charging credits, including $200 for use at the fast-growing IONNA network.",
-   "imageSrc": "https://cdn.motor1.com/images/mgl/KbM43Q/s3/2026-bmw-ix3.jpg",
+   "summary": "BMW North America is offering a new public charging package for customers purchasing or leasing eligible BEVs from its 2027 model year range. It includes $500 in charging credits and a free one-year membership at IONNA, giving customers a discount on charging sessions at the charging network.",
+   "imageSrc": "https://www.electrive.com/media/2024/02/bmw-i7-xdrive60-fahrbericht-2024-05-400x300.jpg",
    "hits": [
     "bmw",
     "charging",
     "ev"
    ],
    "score": 3,
-   "body": "Buyers of eligible 2027 BMW EVs will get $500 in public charging credits, including $200 for use at the fast-growing IONNA network.",
-   "image": "img/d3f93df1aa21da.jpg"
+   "body": "BMW North America is offering a new public charging package for customers purchasing or leasing eligible BEVs from its 2027 model year range. It includes $500 in charging credits and a free one-year membership at IONNA, giving customers a discount on charging sessions at the charging network."
   },
   {
-   "title": "BYD’s newest EV is about as big as a Toyota Camry, but brings a lot more tech for $23K",
-   "url": "https://electrek.co/2026/11/05/byds-newest-ev-big-as-toyota-camry-a-lot-more-tech-for-23k/",
-   "source": "Electrek",
-   "lang": "en",
-   "summary": "BYD launched the new Seal 07 in China, where it starts at around $23,000. It’s about the size of a Toyota Camry, but brings a surprising amount of tech and premium features for the money. more…",
-   "imageSrc": "https://electrek.co/wp-content/uploads/sites/3/2026/11/BYD-new-Seal-07-EV.jpeg?quality=82&#038;strip=all&#038;w=1600",
-   "hits": [
-    "byd",
-    "toyota",
-    "ev"
-   ],
-   "score": 3,
-   "body": "BYD launched the new Seal 07 in China, where it starts at around $23,000. It’s about the size of a Toyota Camry, but brings a surprising amount of tech and premium features for the money. more…",
-   "image": "img/861fb4ed7f063a.webp"
-  },
-  {
-   "title": "15.98万起的纯电大六座，东风奕派M8天元激光版正式上市",
-   "url": "https://www.diandongbang.com/news/167949.html",
-   "source": "电动邦",
+   "title": "国轩高科：从产品出海到体系扎根",
+   "url": "https://auto.gasgoo.com/news/202611/6I70477212C106.shtml",
+   "source": "盖世汽车",
    "lang": "zh",
    "hits": [
-    "东风",
-    "奕派"
+    "国轩",
+    "出海"
    ],
    "score": 2,
-   "body": "11月3日，东风奕派旗下定位“15万级宁德纯电满配大六座”的奕派M8天元激光版正式上市。新车推出600Pro天元激光版与600Max天元激光版两款车型，官方指导价分别为17.98万元和18.58万元。面向首批购车用户，品牌同步推出至高价值50800元的购车权益，涵盖超享置换礼、无忧金融礼、无忧质保礼等，权益贯穿购车与用车全周期，尊享权益后限时补贴价15.98万元起。\n作为奕派M8产品体系下的全新力作，奕派M8天元激光版全面共享奕派M8乾崑版在设计、空间、舒适、安全、品质等方面的产品优势，并将央企自研天元智能、宁德时代电芯、真三排大六座与满配舒适集于一体，为追求务实、空间刚需的家庭用户带来智能实用、空间越级、舒适满配的出行新选择。\n奕派M8天元激光版搭载东风自研的天元智驾与天元座舱，天元智驾以地平线J6M域控平台为底座，全车配备25个智能感知硬件，其中禾赛激光雷达最远测距达200米、精度可达±5厘米，与视觉摄像头、毫米波雷达、超声波雷达形成多融合感知体系，实时精准感知路况。\n依托这套感知体系，新车实现了高速NOA与城区NOA双场景覆盖，可辅助完成自动进出匝道、红绿灯路口通行，并标配AEB、交叉路口辅助等主动安全能力。全场景智能泊车方面，车辆围绕日常停车、窄路倒车和固定地库路线，提供融合泊车、遥控泊车、循迹倒车及跨层记忆泊车能力，有效缓解驾驶压力，让家庭出行更加从容高效。\n天元座舱则搭载高通骁龙SA8295P芯片，接入豆包、DeepSeek双AI大模型，支持连续对话交互、生活查询、影音检索等。全新迭代的HMI3.0人机交互系统操作丝滑顺手，搭配SOA场景大师，用户可自定义超1000组智能场景，座椅、空调、影音等功能随心联动，让全车乘员都能获得自然流畅、千人千面的车机交互体验。\n奕派M8天元激光版长宽高为5020/1975/1733mm，轴距达3025mm，60.3%的轴长比将更多车身尺寸转化为座舱空间。三排座椅可根据家庭人数和装载需求灵活组合，轻松满足从三口之家到多代同堂的差异化出行需求。三排正常使用时，后备厢标准容积为369L，放倒第三排后最大容积可达1794L，叠加37L前备厢，前后备厢最大容积可达1831L。整车还具备42处智慧收纳、445mm低门槛及二三排地台零高差设计，兼顾多人乘坐、家庭装载与老人儿童上下车需求。\n新车前排座椅支持通风、加热与理疗按摩，第二排大沙发采用云感结构，兼顾柔软触感与身体承托，配合座椅通风、加热及舒适腿托，让家人长途乘坐也能自在放松。双15.6英寸2.5K高清大屏、50英寸AR-HUD满足前排车控、驾驶辅助以及后排娱乐多重需求；后排吸顶屏通过莱茵低蓝光护眼认证，让旅途观影更加舒适。8.8L双向智能冷暖箱支持-6℃至50℃宽域温控，前排与二排均可便捷取物，为全家带来四季皆宜的舒适体验。\n此外，新车前风挡及四门均采用双层夹胶隔音玻璃，配合整车静谧工程，降低风噪、胎噪对座舱的干扰；21扬声器7.1.4声场带来沉浸式影音体验，主驾头枕音响可独立播放导航及驾驶提示，减少对家人观影、休憩的打扰。车辆搭载铝合金H臂后悬架，配合冠军团队调校底盘，充分过滤路面细碎颠簸，兼顾行驶平顺性与操控稳定性。\n三电与安全层面，奕派M8天元激光版搭载采用宁德时代电芯的金盾电池，以结构盾、电芯盾和云盾构建三重防护。行业首发16000吨一体化压铸电池包，120Ah方壳封装设计兼顾快充、安全、寿命与轻量化；云端安全卫士通过AI分群预测算法持续监测电池状态，及时发现潜在风险，并成功通过中汽中心刮底、涉水、炙烤、挤压四项串联极限测试。\n续航补能方面，新车CLTC纯电续航达600km，在中汽中心全域能效挑战中，续航达成率可达109%；车型搭载800V高压平台，支持4C快充，30%至80% SOC快充约15.5分钟，服务区短暂停留即可完成高效补能。\n奕派M8采用高刚性笼式吸能车身，为家人构筑“钢铁护甲”。针对长途出行中用户关注的突发爆胎和湿滑路面驾驶场景，其搭载的爆胎稳行2.0可辅助车辆在爆胎后保持稳定，磐石稳行智能防滑系统则通过智能扭矩分配提升雨雪天气下的行驶稳定性。\n奕派M8系列累计完成超过1000万公里耐久验证，测试车辆历经极寒漠河、酷热吐鲁番、高原山路等复杂环境考验；全车8道涂层防护，实现车身3年如新、10年不锈穿。面向首任非营运车主，奕派M8还提供整车及三电终身质保，以央企对品质的信心与责任，为用户长期用车提供保障。\n奕派M8天元激光版将天元智能、宁德纯电、真三排大六座、满配舒适与央企品质一次配齐，与奕派M8乾崑版形成双线产品布局，共同满足广大用户对家用大六座的多元需求。在15万级纯电大六座市场，这款新车以“满配”姿态入场，为家庭用户提供了一个兼顾智能、空间、舒适与安全的新选项。",
-   "image": "img/0214a2edd901c1.jpg"
+   "body": "2026年10月23日，在第十四届汽车与环境创新论坛上，国轩高科国际运营副总裁熊永华指出，出海是行业必然趋势，企业需跨过合规性关卡，坚持联合出海与稳步出海。他介绍到，国轩高科践行产品力、市场力、制造力与资本力“四力并举”，已构建覆盖美洲、欧洲、东南亚的全球产业版图，并在摩洛哥等地打造全产业链生态闭环，带动上游供应链协同出海。\n熊永华强调，国轩高科坚持长期主义，以产品为王，发布了全固态电池、G垣智慧电池等多款领先产品。面对地缘政治等挑战，国轩高科通过构筑技术优势、重构海外供应链、开拓新兴市场及夯实制造能力积极应对。\n国轩高科是汽车行业的电池供应商，主营动力电池产品。在动力电池业务开展过程中，我们最初聚焦A级车、B级车配套，自2014年起，着手布局国际业务发展。\n动力电池出海是行业发展的必然趋势，伴随国内鼓励“新三样”出海的相关政策导向，国轩高科落地了一系列海外实践。出海进程中必然同时面临挑战与机遇，我将简要分享我们如何应对挑战、把握机遇，实现国际化发展。\n首先分析国际化出海成为必然选择的原因。在2025‑2030年动力电池交付的预测周期内，2025年中国动力电池市场占比接近65%。到2030年，该占比虽会有所回落，但依旧占据市场半壁江山。由此可以判断，未来五至六年将是海外市场的高速发展阶段。此外，乘用车与商用车整体占比始终处于较高水平。无论是2025年还是预测的2030年，乘用车占比变化幅度较小，从初期的53%小幅回落至2030年的52%左右。与此同时，储能电池的市场需求将实现快速攀升，这是能够明确预见的行业未来趋势。放眼 新能源汽车 领域，预测到2030年，全球新能源汽车销量将达到4000万辆。从市场分布来看，中国仍是全球最大市场，占比超过50%，其后依次为欧洲、美洲与亚太地区。\n企业出海过程中遇到的第一道关卡是合规性，这是动力电池出海需要跨过的首要关口。欧洲、美国以及东南亚各国均设置了各自的市场准入门槛与监管要求。欧洲、美国近期出台的相关法规均对产业链本土化比例、回收及可再生能源利用比例作出相应规定，泰国、印尼、马来西亚等国家同样存在相关政策约束。印尼自2025年起要求本地化率达到40%，今年提升至50%，至2030年本地化率需要达到80%。马来西亚则对本地化价值贡献率以及本地人才供给比例作出规定。只要企业开展出海业务，就会面对此类政策约束。\n针对上述政策环境，我们制定了对应的应对策略，即主动拥抱全球化，强化自身抗风险能力，提升合规水平。在此基础上，我们提出两大核心理念：联合出海与稳步出海。\n联合出海意味着单打独斗的时代已经结束，当下属于协同出海的阶段。我们跟随整车企业、储能集成商、项目开发商协同拓展海外市场，同时搭建自身供应链与产业生态，带动上游供应链共同出海。\n二是稳步出海。众所周知，受欧美地缘政治相关限制与要求影响，开拓欧美市场难度相对较高。因此我们的思路是以东南亚作为进军欧美的前沿阵地，完成东南亚市场布局之后，再逐步拓展欧洲与美洲市场。\n在出海进程当中，国轩高科的实践路径为四力并举，即产品力、市场力、制造力与资本力。之所以聚焦这四项要素，是因为我们要协同产业链生态共同出海，而产业链生态布局，离不开本土化制造与本土化投资。同时，我们将全球划分为四大板块，构建四大区域市场，实现同步推进。在致力于为全部客户创造价值的同时，我们坚守长期主义的发展理念。最终，我们贯彻“本地化生产、全球研发、合作共建”的思路，落地国际化战略。\n伴随中国“新三样”海外市场的开拓，我们也识别出全新的市场机遇。“新三样”即 新能源 汽车、锂电池以及光伏设备。2025年中国汽车出口量达到700多万辆，今年预计可达1200多万辆，仅前三个季度已经完成820万辆，该数值已经超过去年全年出口规模。\n从整车出海的数据来看，新能源车型占比处于较高水平，新能源汽车出口约260万辆。在新能源汽车出海领域，奇瑞、比亚迪、上汽等头部车企处于行业领先地位。从车型结构上看，C级及以上车型占比较高，C级、D级这类车型在海外具备较大的需求增长空间。国轩高科在出海进程中，也将其视作新机遇主动把握。\n我们已经在美洲、欧洲、东南亚开拓对应市场，并且与当地头部乘用车、商用车企业达成战略合作，例如美国亚马逊物流车项目、东南亚VinFast等合作项目。在我们看来，无论是欧洲成熟汽车市场、东南亚新兴汽车市场，还是中东、非洲尚待开发的汽车市场，海外市场将是未来三至五年真正的蓝海市场。在出海实践当中，我们也参考借鉴下游客户与合作伙伴的出海模式。\n汽车出海与电池出海的发展模式大体相近，行业目前基本演进至第四发展阶段。行业早期比拼出口销量，现阶段则重在考察企业本土化扎根的深度，扎根越深，发展机遇也就越多。过去十五至二十年间，国内车企出海同样遵循该发展逻辑。现阶段，本地化生产、品牌合作均属于深度战略合作范畴。发展至第四阶段，即为产业生态层面的战略合作。该产业生态不仅包含下游客户与战略合作伙伴的生态体系，还需要与自身上游供应链搭建配套产业生态，以此实现生态层面的开放共赢与深度融合。\n回顾国轩高科的实践，自2017年于新加坡设立研发中心，至2026年，已经历经整整十年。这十年间，我们在近年才逐步收获发展成果。2023‑2025年短短三年时间，海外业务营收突破100亿元，本年度预计突破300亿元。从业务结构来看，动力电池业务占比最高，海外业务覆盖率达到76%。尽管当前动力电池业务占比居于首位，但我们预判未来五至十年，储能市场需求将持续增长。因此，我们需要加快海外储能产品以及储能产业链生态的构建，这也将是我们下一阶段的业务重心。\n我们坚持长期主义发展。无论是深耕国内市场还是开拓海外市场，我们的首要目标均是为客户创造价值，并且所创造的并非短期价值，而是长期价值。\n国轩高科自成立至今已有二十年，在行业内不算历史悠久，但属于锂电池行业中起步较早的一批企业。2015年，在第二个五年发展周期内，公司完成上市，同样属于锂电池行业较早上市的企业。\n在第四个五年发展周期，即2021‑2025年期间，公司将主要精力投入国际化征程。2020年，大众与国轩高科达成战略合作，成为公司最大单一股东，持股比例至今维持25%，自此，公司国际化进程得到进一步提速。尤其是2024‑2026这三年，我们加快推进海外产业布局，在摩洛哥、斯洛伐克、德国、美国伊利诺伊州芝加哥，以及越南、印尼、泰国等东南亚国家，均建设了对应的制造基地。近五年，我们海外国际化布局推进速度较快，布局力度也相对积极。\n我们能够抢占发展先机，首要原因是公司开展国际化业务的起步时间较早。在国际化推进过程中，我们坚持全产业生态协同。从上游矿产资源开发，到原材料制备、提纯，再到电芯生产、系统集成，直至电池回收，完整的产业链生态均由国轩高科自研自投完成，这也是我们区别于部分同行的特点，具备自身垂直产业链整合能力。\n除车载应用之外，我们的产品还拓展至特种车辆、工程机械以及当下热门的低空经济领域。面向储能产业，未来我们也将持续开发更多新产品。在出海进程中，我们坚持产品为王，为客户创造核心价值的根本在于实现产品领先。\n在去年的全球科技大会上，我们发布了七款行业领先产品。一是金石固态电池，该产品不仅性能指标处于行业前列，且已建成中试线，计划于明年启动小"
   },
   {
-   "title": "2027款极氪7X预售22.98万起：全系900V+增85度电池",
-   "url": "http://news.cheshi.com/dujia/20261105/3426214.shtml",
+   "title": "比亚迪：仰望U9X极速超503km/h 地表最快量产车！",
+   "url": "http://news.cheshi.com/dujia/20261027/3426142.shtml",
    "source": "网上车市",
    "lang": "zh",
    "hits": [
-    "极氪",
-    "电池"
+    "比亚迪",
+    "仰望"
    ],
    "score": 2,
-   "body": "2027款极氪7X开启预售，22.98万元起，和2026款起售价一致，预计正式上市时价格更低。版型由2026款的3款改为后驱Max、后驱Max+、四驱Ultra。上市前下订可用2000元抵7000元，全国门店展车已到店。\n2027款极氪7X全系标配900V高压架构。75度和新增的85度都用5.5C神盾金砖电池，全栈900V与6C快充依旧只出现在103度麒麟版本上。电驱的门槛降低了，但电池没有。\n版型与电池的对应关系也被重排。2026款是75度后驱Max、103度后驱Max、103度四驱Ultra，售价22.98万、24.98万、26.98万元，CLTC依次为620km、802km、715km。2027款把中配的标配电池从103度降到85度，103度改为后驱Max+的选装，选装后CLTC仍为802km；四驱Ultra继续用103度麒麟电池，715km；75度版仍是620km。75度与103度两档的续航数字没有变化，85度的680km是补在中间的第三档。\n配置有一定升级：CCD电磁减振、RNC主动降噪、爆胎安全稳行系统改为全系标配；前排增加云感双零重力座椅，146度躺角、12点按摩；后排云舒座椅靠背可调至134度。智驾硬件没变，仍是含一颗激光雷达的31颗感知硬件与Thor-U芯片，算力700TOPS，软件升级为首发的千里浩瀚G-ASD 4.1。内饰15处细节调整，新增玄米配色，外观增加晨曦金、云珀红。\n动力和2026款一致：75度版370kW、零百5.4秒，与2026款同规格；四驱Ultra仍是585kW、812N・m、2.98秒；后驱Max+选装103度电池后，零百由5.4秒变为5.1秒。\n极氪7X提前宣布改款，增85kWh电池版，卖23.98万起？\n极氪1-9月销量大涨81% 7X火爆20天订单超5.8万\n22.99万元起！豪华大五座SUV——极氪7X正式上市\n极氪7X售22.99万起！安聪慧：最安全、最豪华SUV\n极氪7X预售23.99万起！9月20日上市 顶配不高于30万\n10款重磅SUV成都车展亮相！宝马、凯迪拉克决战高端\n智己LS8纯电23.98万起，全系标配宁德电池+B&O音响\n第8代宝马3系加长版实拍：2.0T动力更强，增重278斤\n深化开放合作，赋能未来出行 宝马集团携新世代成果亮相进博会\n在中国，为全球 福特中国连续九年赴约中国国际进口博览会\n6. 英菲尼迪QX60(进口) 参数配置 车型图片\n10. 奔驰GLC Coupe(进口) 参数配置 车型图片",
-   "image": "img/47d4a610620294.jpg"
+   "body": "方向盘后面坐的是耐力赛车手马克·巴森（Marc Basseng）。11月1日，他在阿联酋阿布扎比E11高速公路的封闭测试路段上，把仰望U9 Xtreme（简称U9X）开到503.17km/h，相当于每秒前进约139.8米。\n11月6日，比亚迪旗下仰望公布成绩，称已获吉尼斯世界纪录认证。比亚迪称其为“地表最快量产车”；吉尼斯确认的4项纪录分别为最快量产车、最快电动车、最快电动车轮胎、最快公路车轮胎，轮胎供应商为佳通Giti。\n需要说明的是统计口径：503.17km/h是单向冲刺成绩。FIA传统的量产车极速纪录要求同一路线往返双向测试、取平均值。仰望此次未公布双向平均成绩，因此SSC Tuatara在2021年跑出的455.3km/h双向平均纪录，仍按另一套标准保留，两者不能直接对比。\nU9X基于1200V高压平台，4台电机最高转速30,000rpm，综合功率2220kW，电量降至20%时输出会降到约2,400马力。它是U9的赛道化版本，带碳纤维前铲、扩散器和加宽进气口；为这次测试，团队调整了胎压、悬架和空气动力学设定，车辆配备30C赛道版刀片电池、云辇-X主动悬架、碳陶刹车和专门标定的佳通轮胎。与纽北圈速车不同，极速车并没有安装鹅颈式尾翼。测试路段为无倾角的平直公路，当天还有高温、沙尘和侧风。\n2025年9月，U9X在ATP跑出496.22km/h，超过布加迪Chiron Super Sport 300+的490.484km/h；同年，它在纽博格林北环跑出6分59.157秒。\n503.17km/h！仰望U9 Xtreme再破全球汽车极速纪录\n仰望U9时隔1年后再挑战500km时速：还差1.5秒的事\n以车会友 与世界相见，仰望汽车亮相2026古德伍德速度节\n比亚迪下线第900万辆新能源汽车，仰望U9翻开中国超跑时代新篇\n可街、可赛、可玩的超跑，仰望U9正式上市，售价168万元\n仰望U9本月25日上市！销售：比保时捷911卡雷拉便宜\n503.17km/h！仰望U9 Xtreme再破全球汽车极速纪录\n宾利揭晓MULLINER中国专属定制系列车型，Supersports迎中国首秀\n比亚迪：仰望U9X极速超503km/h 地表最快量产车！\n法拉利：全球净利润大增13% 唯独大中华销量跌42%\n7. 阿斯顿·马丁V8 Vantage 参数配置 车型图片\n3. MG Cyberster 参数配置 车型图片\n4. 阿斯顿·马丁V8 Vantage 参数配置 车型图片",
+   "image": "img/f36924e54eb4f8.jpg"
   },
   {
-   "title": "一汽丰田全新亚洲龙售价13.38万起",
-   "url": "https://auto.sina.com.cn/newcar/2026-11-05/detail-inixtafn5448045.shtml?oaid=00111&c=spr_auto_trackid_4d7d188c9b7a61c4",
-   "source": "新浪汽车·新车",
-   "lang": "zh",
+   "title": "BMW’s Next Electric Wagon Spied Ahead Of 2027 Reveal: Video",
+   "url": "https://www.motor1.com/news/814605/bmw-3-series-electric-wagon-spied/",
+   "source": "Motor1",
+   "lang": "en",
+   "summary": "Car paparazzi have caught the i3 Touring racking up miles during testing at the Nürburgring.",
+   "imageSrc": "https://cdn.motor1.com/images/mgl/wlkXLQ/s3/2027-bmw-i3-touring-screenshot-from-spy-video.jpg",
    "hits": [
-    "丰田",
-    "一汽"
+    "bmw",
+    "ev"
    ],
    "score": 2,
-   "body": "11月5日，一汽丰田全新 亚洲龙 (配置 |询价) 正式迎来了上市，新车售价为13.38-19.18万元。这次上市的新车将会在外观、内饰、空间、配置以及动力方面进行全面升级，那么接下来我们就来看看这次升级以后的新车到底值不值得。\n说实话，B+级的轿车市场这几年真的是过得不轻松，上有豪华品牌不断下探，下有自主新能源一路猛攻，曾经靠“尺寸大半级、价格低半档”吃饭的合资中型轿车，如今都得拿出点真东西才行。\n亚洲龙这款车从2019年进入到国内以后，一直是这个细分市场里比较特别的一个存在，它的尺寸要比凯美瑞大一圈，价格又比皇冠亲民不少。也正是因为这样的设定，让它获得了不少消费者的起来。这次的改款其实还是比较全面的，外观、内饰、配置、科技化以及动力都有升级。\n先来说一下外观，老款亚洲龙的前脸是那种大面积格栅造型，整体看起来确实是很显稳重，但放在现在这个时代，就会有点显老气了，稍微穿的正式一点，就有点“司机”的感觉了，确实看起来不是很年轻，可能对于一些家庭用户来说也不是特别的友好。\n而这次升级以后，整个前脸采用了竖条状格栅，官方给的名字叫“光影棱镜竖条格栅”。一条一条竖向排开，中间用镀铬点阵做过渡，阳光下每根竖条都有自己的明暗面，不再是一整块黑乎乎的塑料感。这个处理让车头看起来更高、更挺，也更接近自家皇冠那种行政车的气场。而且这次还有全黑套件车型加入，妥妥的黑武士新成员啊。\n在引擎盖上也是有了新的升级和调整，机盖上有两道从格栅向A柱延伸的筋线，虽然不是不夸张，但在阳光下能看出型面变化，车头因此不会显得空。前脸的整体比例是“上窄下宽”，格栅占了很大面积，却没有把车头顶得太高，反而营造出了一些俯冲效果。\n两侧采用了C字形的日间行车灯，灯带勾着格栅边缘向下延伸，几乎和格栅连成了一体。这样的设计可以把车头的视觉宽度直接拉开，站在正前方看过去，直接呈现了一套低趴采用的姿态，这点确实很对年轻用户的胃口。灯腔内部做了熏黑处理，主灯组藏在下方，点亮之后层次感比较明显。\n前保险杠两侧留了纵向的导流槽，风阻和运动感都照顾到了，另外这次还准备了偏运动风格的外观套件：蜂窝状黑色中网、更锋利的前唇、熏黑灯组、19英寸黑色轮毂，车尾再加一个小扰流板。\n车身尺寸是这次外观升级最重要的部分，新车长宽高分别为5055x1850x1450mm，轴距2870mm，车长比老款多了65mm，正式跨进5米俱乐部。对于一台要兼顾家用和商务接待的轿车来说，这个数字本身就带着气场。\n官方给出的车型定位是B+级，但是却有着C级的尺寸，放在同级里看，它确实比竞争对手要长出一截。5米的车长带来的最直接好处，是侧面比例更舒展，尤其是后门到车尾那一段，不用再为了凑车长去压缩后备厢。\n此外，该车的腰线从车头一直拉到尾灯，中间没有断开，门板下半部分向内收，形成一条很清楚的明暗分界。车顶弧线过渡得比较自然，配上较低的车身高度，整台车是往前“压”的姿态，不是那种四平八稳的船感。\n轮毂提供17、18、19英寸三档，分别对应215/55 R17、235/45 R18、235/40 R19三种轮胎规格。19英寸的多辐条造型，辐条做得比较细，转动起来有层次。入门版用17英寸，胎壁厚，滤震和后期换胎成本都更友好。\n车色新增了一个星辉金，这个金色不是那种很亮的土豪金，偏暖、偏灰，阳光下车漆里能看到金属颗粒，阴天又接近香槟色。对于一台想往年轻走的行政级轿车来说，金色其实比黑色更容易出效果，也更容易在停车场里一眼认出来。\n门把手保留了传统的机械结构，没有跟风做隐藏式。这个选择在北方冬天特别有意义，不用担心下雪结冰冻住弹不出来。侧窗上沿有一条镀铬饰条，从A柱一直延伸到C柱，收尾处理得比较干净，没有为了显长而硬拉一条线到底。\n车尾是这次外观的另一处重点。整体是曲面造型，不是一块平板的切面，而且做了梯形的设计，也就是自带一定的倾斜角度。尾灯则是升级到了贯穿式的造型，内部使用了星芒点阵的发光单元，这点还是紧跟了时代的潮流，而且这种处理在夜里辨识度很高，同时也让车尾看起来比实际更宽。尾门正中是AVALON的字母标识，字距拉得比较开，没有挤在一起。\n尾门上方有一个很小的鸭尾起伏，尺寸不大，作用更多是让车尾的收口不至于太突然。后窗的倾斜角度比老款更缓，从车内后视镜看出去，后方的视野还算开阔，没有被造型牺牲掉太多。\n后包围做得比较厚，排气做了隐藏处理，下方用横向饰条压住视觉重心。电动尾门这个配置给到了，开关按键就在尾门内侧，身高不高的用户也不用踮脚去够，手里抱着东西的时候也能用肘部顶一下。\n常规状态下后备厢容积593L，对于咱们日常用车来说是完全够用了，无论是日常通勤还是周末出游，即便是远途出行也是毫无压力的。后备厢内部比较规整，两侧的轮拱占位不算大，地台下方还有一层隐藏储物格，可以放一些零碎的小物品，还是比较贴心的。\n说完了外观就来看看内饰，这次的内饰变化也是非常大的，直接升级到了环抱式座舱布局，坐进去有一种被“围住”的感觉。而且在用料和配色方面也是进行了升级，并且将更多的功能都集成在了中间新升级的15.6英寸屏幕里面了。\n中控台的层次感做的也是非常优秀的，不仅是颜色的交替，同时还有一条玫瑰金的点缀，让整个内饰的质感瞬间提升了一个层级。而且我们手能触及得到的地方也都是采用了软包材质，这点还是非常关键和重要的，无论是家用场景还是商用需求，软包的大面积使用都是必须的。\n副驾前方的饰板里还嵌了银河透光膜片，白天看就是一片深色饰板，晚上氛围灯亮起来，光会从膜片后面透出来，形成一层很淡的星点效果。这种“白天低调、晚上有戏”的处理，比直接堆一圈亮条要耐看得多，也更符合这台车的定位。\n内饰这次提供了静夜黑、暮光棕、云影灰三种颜色。暮光棕偏暖，配木纹饰板最协调，也最容易出高级感；云影灰更冷一些，适合想要简约、干净观感的用户；静夜黑最稳妥，商务接待不会出错。\n方向盘换成了三辐式设计，握感更加细腻，两侧多功能按键做了很明确的分区处理，并且使用到了实体按键，这样盲操作也不容易按错。换挡机构是水晶挡把，并且加入到了多切面的设计，光线打上去有折射，很有水晶的效果。\n中央通道配备了可升降的水杯架，以及50W的无线充电面板，这个升级还是非常重要和实用的，很多合资车型确实有无线充电，但是功率实在不敢恭维，不过这次亚洲龙直接升级到了50W功率，这一点就远超同级对手了。\n中控屏幕的升级可以说是内饰最为重要的一点了，15.6英寸的2K屏，尺寸也是目前的主流的水平，边框做得比较窄。2K分辨率的好处不只是清晰，导航地图上的小字、倒车影像里的边线，都能看得更清楚，这对一台5米长的车来说很实用。\n仪表是8.8英寸全液晶，提供4种界面模式，可以跟着驾驶模式联动，也能自己选。HUD是10.8英寸的可动抬头显示，投影面积328×120mm，比常见的小HUD大不少，导航箭头、限速、车速、辅助驾驶状态都能投上去，高度还可以调，不同身高的驾驶员都能找到合适的位置。\n中控、仪表、HUD这三块屏是能协同的工作的，导航信息上HUD，驾驶辅助状态进仪表，娱乐和设置留在中控。开车的时候视线不用来回跳，这个逻辑比单纯堆屏幕数量更实用。很多车的问题是屏幕越多越乱，亚洲龙这套至少做到了各司其职。\n车机用的是高通骁龙SA8155P芯片，算力在这个级别属于主流偏上。实际滑动",
-   "image": "img/150b4a13328ef2.jpg"
+   "body": "Car paparazzi have caught the i3 Touring racking up miles during testing at the Nürburgring.",
+   "image": "img/9d373fa77336f3.jpg"
   },
   {
-   "title": "一汽丰田全新亚洲龙正式上市 限时权益价13.38万元起",
-   "url": "https://news.yiche.com/info/114426474.html",
+   "title": "BYD’s new Denza N8 EV to launch on November 12: up to 1,193 hp and 1,003 km range",
+   "url": "https://carnewschina.com/2026/11/06/byds-new-denza-n8-ev-to-launch-on-november-12-up-to-1193-hp-and-1003-km-range/",
+   "source": "CarNewsChina",
+   "lang": "en",
+   "summary": "1,003 km range & 1,193 hp: Denza N8 EV launches on November 12. The post BYD’s new Denza N8 EV to launch on November 12: up to 1,193 hp and 1,003 km range appeared first on CarNewsChina.com .",
+   "hits": [
+    "byd",
+    "ev"
+   ],
+   "score": 2,
+   "body": "1,003 km range & 1,193 hp: Denza N8 EV launches on November 12. The post BYD’s new Denza N8 EV to launch on November 12: up to 1,193 hp and 1,003 km range appeared first on CarNewsChina.com ."
+  },
+  {
+   "title": "Tesla will stop making the Cybertruck in 2027",
+   "url": "https://techcrunch.com/2026/11/06/tesla-will-stop-making-the-cybertruck-in-2027/",
+   "source": "TechCrunch·交通",
+   "lang": "en",
+   "summary": "Elon Musk said the company will use the factory space to make more Cybercabs.",
+   "hits": [
+    "tesla",
+    "factory"
+   ],
+   "score": 2,
+   "body": "Elon Musk said the company will use the factory space to make more Cybercabs."
+  },
+  {
+   "title": "2027款东风标致408正式上市 售价9.97万元",
+   "url": "https://news.yiche.com/info/114425144.html",
    "source": "易车",
    "lang": "zh",
    "hits": [
-    "丰田",
-    "一汽"
+    "东风"
+   ],
+   "score": 1,
+   "body": ""
+  },
+  {
+   "title": "AI开始为自己造芯片，EDA行业是否会被吞噬？",
+   "url": "https://www.tmtpost.com/8196321.html",
+   "source": "钛媒体",
+   "lang": "zh",
+   "hits": [
+    "芯片"
+   ],
+   "score": 1,
+   "body": "今年下半年，AI的自我进化成为了热门话题。而且，AI不仅在尝试研发自己的模型，甚至还想自己搞定作为算力来源的AI芯片。这很可能让芯片制造业面临巨大变局，设计端的EDA（电子设计自动化）行业首当其冲。\n当地时间11月3日，The Information报道称，此前公布招股说明书的Anthropic向潜在IPO投资者展示了其如何使用Claude模型辅助自研芯片设计，并宣称此举能让芯片研发效率大幅提升。\n相关消息一出，AI将颠覆甚至取代芯片设计行业的叙事再次被提起，美股EDA（电子设计自动化）板块遭遇冲击。到了11月5日，受美国中期选举、数据中心建设放缓焦虑等影响，美股科技股暴跌，EDA两大龙头上市公司新思科技（Synopsys）、楷登电子（Cadence）跌幅均在5%左右。而且，二者今年以来股价也均转为下跌，尤其是坐头把交椅的新思科技，2023年大涨超60%后，近三年连年走低，今年年内下跌超6%。\n实际上，今年下半年以来芯片设计行业已接连迎来不少“大事件”。6月末OpenAI发布了首款自研AI推理芯片Jalapeño，并宣称其仅用9个月就完成了从架构设计到流片的全过程，创下了专用集成电路领域最短开发周期纪录。而这款芯片的一大特点就是利用GPT模型、Codex等AI工具介入芯片设计、软件栈开发。\n此后，Kimi在7月发布K3模型时也在技术报告中提及了一个案例，称其模型在48小时内自主完成了一款AI专用芯片的设计、优化与验证。\n一位曾在外资EDA企业工作的从业者认为，彼时虽然市场已经开始炒作AI替代EDA的叙事，但业内普遍认为AI带来的机会远大于冲击，其最大的好处在于增加EDA使用频率。在他看来，目前AI介入主流可用的芯片设计工作时，无一例外都仍需要调用现有成熟EDA工具，其提效的方式主要是同时处理更多任务，而这就会让EDA的“用量”和“调用次数”随之变多。尤其是Agent的出现，能够7×24小时并行处理更多设计任务，工具调用量和并发授权需求随之上升，客户的设计预算反而可能增加，至少头部EDA厂商的生意应该更加红火。而真正被冲击、替代的，往往是标准化程度较高的小IP和部分点工具，这些环节容易被AI生成或平台内置功能吸收，价值会慢慢被压缩，可能影响部分岗位人员，但对EDA厂商来说整体看有利于降本增效。\n他还介绍称，EDA行业也在积极与AI厂商展开合作，此前新思科技就与OpenAI达成合作，接入新思的EDA工具链，做“AI辅助工程”。行业也在自我迭代，重点在打造便于让各类Agent调用、完成芯片设计的新流程，目前国内外均出现了专门为EDA厂商提供Agent解决方案的业务，也有不少厂商进行了尝试。\n国泰海通研报指出，Agent可能带来至少百倍的EDA工具调用，传统license授权模式下客户无法承受百倍采购成本，行业共识是商业模式必须改变。\n据了解，EDA的传统商业模式是“seat-based license”，也就是“一个萝卜一个坑”，收入跟人头走，无法适配不间断地调用工具、执行任务的Agent模式。\n目前，新思科技和楷登电子等头部厂商已经在尝试Token化计费，核心是将EDA与算力绑定为Token，按消耗计费。\n楷登电子曾提出新的“收入三层框架”：第一层是将传统订阅制作为锚定收入；第二层是按用量计费，捕捉AI驱动的算力强度，增强营收能力；第三层则被命名为“虚拟工程师层”，将Agent定价为“增量人力等价”，意味着客户每部署一个Agent，相当于多了一个“虚拟编制”，按它替代或辅助人力的价值来收费。\n不过，值得注意的是，上述The Information相关报道提及，Anthropic和OpenAI未来可能会直接销售用于辅助芯片设计的AI工具，与传统EDA厂商形成竞争。上述从业者认为，目前看来，此类AI工具只能替代部分功能，但全流程EDA的核心能力来自数十年积累的设计数据，以及晶圆厂早期PDK接入资格、签核责任承担能力等。这些能力嵌入在芯片制造流程体系之中，目前模型公司造芯片也遵循这套流程体系，中短期很难看到颠覆或替代的途径。\n目前看，AI不会轻易吞噬EDA，但会重新分配EDA内部的价值。与很多行业相似，有数据积累、平台能力的企业，资产价值可能会不降反升，但很多初级岗位、重复性工作，以及边缘功能的供应商、外包商，很可能会被AI替代。 （本文首发于钛媒体APP，文｜飞向Tai空）\n根据《网络安全法》实名制要求，请绑定手机号后发表评论\n韩财政部召开半导体专家座谈会：AI需求未见萎缩，中长期增长依然有效\n美股开盘：三大指数涨跌不一，芯片、光通信板块反弹明显\n白宫经济顾问哈塞特：数据中心仍有很大发展空间，即使建设放缓美国经济仍可保持强劲增长\n中铝国际：拟签署约65.56亿元几内亚氧化铝项目EPC总承包合同\n郑栅洁主任主持召开民营企业座谈会，围绕抓好年内经济工作落实、研究明年政策举措听取意见建议\n美国10月非农就业人数增加16.5万人，远超市场预期\n阿联酋投资者集团将成OpenAI新一轮融资最大投资方，软银和Coatue拟各投资数亿美元\nAI股遭遇大跌后，Anthropic IPO估值预期降至1.2万亿至1.3万亿美元\n© 2026 TMTPost 京ICP备13040123号-1\n广播电视节目制作经营许可证：(京 ) 字第 33215号"
+  },
+  {
+   "title": "仰望U9X阿布扎比打破量产车公路极速世界纪录 跑出503.17km/h最高时速",
+   "url": "https://auto.sina.com.cn/news/2026-11-06/detail-inixuyxa5605765.shtml",
+   "source": "新浪汽车",
+   "lang": "zh",
+   "hits": [
+    "仰望"
+   ],
+   "score": 1,
+   "body": "北京时间11月6日下午，在阿联酋阿布扎比的公共测试公路上，中国品牌仰望旗下纯电动超跑U9X完成公路极速挑战，最终以503.17km/h的最高时速，打破全球量产车公路极速世界纪录，成为目前全球速度最快的量产公路跑车。\n获得该成绩的车手为Marc Basseng，经国际汽联（FIA）验证，该项目获得吉尼斯世界纪录认证，其中涵盖“量产汽车单向最高速度”与“量产电动汽车单向最高速度”两项纪录。这也是中国品牌量产车首次登上该榜单榜首位置。\n根据了解，仰望 U9X 基于全球首个量产全域 1200V 超高压平台打造，配备四台转速可达 30000rpm 的电机，整车最大马力超过 3000Ps（约 3019Ps）。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方",
+   "image": "img/79e94624d31d01.png"
+  },
+  {
+   "title": "吉利星愿STAR限定系列 限时8.88万元",
+   "url": "https://auto.sina.com.cn/newcar/2026-11-06/detail-inixvfew8868158.shtml?oaid=00002&c=spr_auto_trackid_f8944f41f240e3fc",
+   "source": "新浪汽车·新车",
+   "lang": "zh",
+   "hits": [
+    "吉利"
+   ],
+   "score": 1,
+   "body": "11月6日， 吉利银河 全球用户音乐嘉年华暨 吉利 星愿百万达成宠粉权益发布会，在杭州举行。上市24个月，吉利星愿累计销量突破100万辆，不到一分钟售出一辆，成为全球最快达成百万销量的新能源汽车，以现象级爆款姿态改写了全球纯电小车市场的竞争格局。\n嘉年华现场，吉利星愿发布STAR限定系列新版型——STAR Ace与STAR Chill，限时权益价8.88万元；同时“百万达成宠粉权益”也在大会上发布，用户登录吉利银河App参与抽奖，就有机会获得爷爷不泡茶奶茶券、吉利星愿百万销量纪念徽章、吉利星愿车载生态实用精品、卡皮巴拉治愈IP周边等好礼。\n吉利星愿STAR Ace提供无忧绿、百事橙、流光银三种车色；STAR Chill采用奶盐米车色并搭配全新内饰。两款新版型同步搭载电动前备箱与EVA机器人，让个性表达与日常便利融入用车体验。在购车权益层面，购买两款新版型的用户，可享受3000元超级置换补贴，并限时可享价值4099元 STAR专属礼包。\n2024年10月上市，仅用两年吉利星愿累计销量便突破100万辆，不到一分钟售出一辆。百万用户的选择，让“国民神车”的口碑越扎越稳，也为全球小车市场树立了新的标杆。\n吉利星愿的领先，不是单月冲高的偶然，而是贯穿多个销售周期的稳定表现。继夺得2025年中国车市全品类车型销量冠军后，吉利星愿2026年上半年累计售出249418辆，同比增长21%，蝉联中国市场最畅销车型。进入下半年，吉利星愿的销售节奏仍在加快，8月、9月单月销量连续突破6万辆，10月更一举突破7万辆，创下单月销量历史新高。\n而国内市场的领先，也延伸为全球市场的认可。澳大利亚、英国、法国…吉利星愿已陆续登陆全球30余个国家，位列2026年1-6月中国新能源两厢车型出口TOP2。\n先后斩获泰国电动车销冠、埃及连续2个月A&B级纯电销量销冠，墨西哥连续3个月全品类纯电第二，澳大利亚上市仅两月，蝉联Hatchback纯电销量冠军。驰骋在全球街头的吉利星愿，已成为“中国智造”的全球新名片，也让百万销量的含金量从国内延伸到海外。\n推出吉利星愿全新版型的同时，吉利星愿还同步发布了“百万达成宠粉权益”：百万用户都可登录吉利银河App参与抽奖，涵盖爷爷不泡茶奶茶券、吉利星愿百万销量纪念徽章、吉利星愿车载生态精品、卡皮巴拉治愈IP周边及充电服务费折扣券等。满足个性化需求，关照日常用车点滴，已成为吉利星愿与用户长久相处的方式。\n值得关注的是，围绕不断变化的审美喜好与出行场景，吉利星愿STAR限定系列将持续焕新，推出更多新版型与新体验，让每一种生活方式都能找到契合的选择。\n22万公里在役车实测：长久可靠才是“百万销量”的品质底气\n吉利星愿联合中汽中心，对一台用户行驶了22万公里的310km梦想版在役车进行实测，将检验聚焦于用户长期使用后的真实状态。\n在节能模式、关闭空调的综合路况下，这台开了22万公里的在役车辆，实测续航达成率99.7%，吉利星愿全系标配宁德时代电芯与液冷温控系统，三电的稳定性支撑得到验证。麋鹿测试78.1km/h的成绩；在后置后驱布局、前麦弗逊与后多连杆独立悬架以及 路特斯 调校的加持下，吉利星愿展现出长期使用后依旧稳定可控的底盘功底。\n围绕长期用车的电池安全，在役车辆同步进行了电池六大极限串行测试，涵盖整包层面的电池健康度、高温烘烤、海水浸泡，以及整车层面的低温充放电、底部撞击、双针针刺。测试结果显示，在22万公里高强度使用后，吉利星愿电池健康度为91.19%，远超国标20万公里70%的严苛标准；其所搭载的神盾电池安全系统，在多重严苛工况下的安全设计得到系统验证。目字型铝合金电池保护舱与双井字形后副车架的物理强化防护，协同液冷温控系统与BMS 3.0电池医生负责温度管理和状态监测，从结构到运行构筑多重保障。\n让百万份美好持续延伸：携手用户开启‘我们的星愿’第三季\n累计销量跨越百万辆之际，吉利星愿与用户的另一份约定仍在延续——‘我们的星愿’公益项目，正源自上市时与车主的共同心愿。第一季、第二季，在四川大凉山和贵州黔南，吉利星愿和车主一起为孩子们建起篮球场、足球场，让山区少年在奔跑中触摸梦想，实现心愿。第三季，‘我们的星愿’循着佤山的歌声而来。\n在云南普洱西盟县马散村，“小米雀合唱团”有一群热爱佤歌的孩子，梦想把民族歌声唱到更大舞台，这份心愿也牵动着吉利星愿车主。为圆车主的心愿，吉利星愿捐建“我们的星愿音乐教室”，并邀请孩子们来到杭州与郎朗同台演出。演出之外，郎朗还面对面为孩子们进行音乐指导，并开授了一堂大师课。从捐建音乐教室到登上大舞台，吉利星愿以一场圆梦行动回应车主心愿，也让孩子们的佤歌梦想在百万用户见证下落地。\n站在百万辆的新起点，吉利星愿将继续从用户需求出发，以持续进阶的产品回应每一种美好生活，以长久可靠的品质承接每一份信赖。从全球最快达成百万销量的新能源汽车，到下一个百万用户的共同选择，吉利星愿将始终以冠军实力与用户同行，向世界展现中国新能源汽车的速度、品质与诚意。\n2023年2月，吉利银河品牌正式推出。三年多来，银河不断刷新行业纪录：仅用25个月达成第一个100万台销量，从100万到200万仅用10个月，再隔8个月，即将迎来全球销量突破300万的里程碑时刻。纪录是结果，选择才是原因。\n近300万的销量，可不是冷冰冰的数字，而是近300万份信任，是近300万个家庭在众多选项里，把票投给了同一个名字。此次吉利银河全球用户嘉年华上，600多位车主从五湖四海赶来，还有来自全球五大洲35个国家和地区的200多位国际车主专程赴约。愿意为一场用户嘉年华跨越山海，这本身就是最实在的支持。\n从第一届的“初相识”，到后来的“共成长”，再到今年的“全球聚”——每一届用户嘉年华，都见证着银河品牌和车主们一起走过的路。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方",
+   "image": "img/4947f85ac4d25e.jpg"
+  },
+  {
+   "title": "BMW is throwing in $500 in free public charging with its new 2027 iX3, i5, and i7 EVs",
+   "url": "https://electrek.co/2026/11/06/bmw-offers-500-free-public-charging-new-2027-ix3-i5-i7-evs/",
+   "source": "Electrek",
+   "lang": "en",
+   "summary": "BMW introduced a new public charging package for those who buy or lease the new 2027 iX3, i5, or i7 electric vehicles. more…",
+   "imageSrc": "https://electrek.co/wp-content/uploads/sites/3/2026/11/BMW-iX3-charging-credit.jpeg?quality=82&#038;strip=all&#038;w=1400",
+   "hits": [
+    "bmw",
+    "charging",
+    "ev"
+   ],
+   "score": 3,
+   "body": "BMW introduced a new public charging package for those who buy or lease the new 2027 iX3, i5, or i7 electric vehicles. more…",
+   "image": "img/5c32456a1533dc.webp"
+  },
+  {
+   "title": "Toyota Quietly Gave The 2027 Toyota RAV4 PHEV A Big Upgrade",
+   "url": "https://insideevs.com/news/814708/2027-toyota-rav4-nacs-port-fast-charging/",
+   "source": "InsideEVs",
+   "lang": "en",
+   "summary": "With Tesla-style NACS ports and fast-charging capability on all trims, you can use your RAV4 PHEV like an EV.",
+   "imageSrc": "https://cdn.motor1.com/images/mgl/3WmX6Y/s3/2026-toyota-rav4-phev.jpg",
+   "hits": [
+    "tesla",
+    "toyota",
+    "charging",
+    "ev"
+   ],
+   "score": 4,
+   "body": "With Tesla-style NACS ports and fast-charging capability on all trims, you can use your RAV4 PHEV like an EV.",
+   "image": "img/d8eaff6667ef4f.jpg"
+  },
+  {
+   "title": "BYD Denza to launch new N8 SUV on November 12 with up to 1,003 km range",
+   "url": "https://cnevpost.com/2026/11/06/byd-denza-to-launch-new-n8-nov-12/",
+   "source": "CnEVPost",
+   "lang": "en",
+   "summary": "The new N8 is a 5-seat battery-electric SUV that opened for pre-orders on October 26. For details, please visit CnEVPost (cnev.co).",
+   "imageSrc": "https://cnevpost.com/wp-content/uploads/2026/11/2026110602423822.jpg",
+   "hits": [
+    "byd",
+    "battery",
+    "ev"
+   ],
+   "score": 3,
+   "body": "The new N8 is a 5-seat battery-electric SUV that opened for pre-orders on October 26. For details, please visit CnEVPost (cnev.co).",
+   "image": "img/aba282cbb3395b.jpg"
+  },
+  {
+   "title": "大众ID. AURA L5将于11月16日开启盲订 搭载激光雷达",
+   "url": "http://www.pcauto.com.cn/nation/5191/51912467.html?ad=28676",
+   "source": "太平洋汽车",
+   "lang": "zh",
+   "hits": [
+    "大众",
+    "激光雷达"
    ],
    "score": 2,
    "body": ""
   },
   {
-   "title": "宝马Q3税前利润降11%，纯电交付占比20%",
-   "url": "https://auto.gasgoo.com/news/202611/5I70477020C101.shtml",
-   "source": "盖世汽车",
-   "lang": "zh",
-   "hits": [
-    "宝马",
-    "交付"
-   ],
-   "score": 2,
-   "body": "盖世汽车讯 据外媒报道，宝马集团11月4日发布的财报显示，2026年第三季度，公司税前利润为20.83亿欧元，较去年同期减少10.6%；同期营收为304.52亿欧元，同比下降5.8%。该季度集团共交付55.1075万辆汽车，同比减少6.3%。其中，纯 电动汽车 占总交付量的20%；若将插电式混合动力汽车计算在内，电动化车型的交付占比为27.4%。\n第三季度，宝马集团在欧洲市场交付的汽车中，电动化车型占比为46.9%，纯电动汽车占比则达到34.7%。同期，集团在欧洲和美国市场的交付量分别同比增长2.6%和2.5%，但仍不足以完全弥补中国市场的下滑。宝马方面称，其在中国市场的销量减少约四分之一，与当地整体市场的下降幅度相当。\n在中国市场的产品布局方面，宝马计划于11月推出iX3长轴距版，并在2027年继续引入其他Neue Klasse系列车型。\n据宝马集团介绍，Neue Klasse技术及第六代（Gen6）技术目前已应用于iX3、i3、i7、iX4和iX5等车型，未来数月还将搭载于更多产品。\n从前三季度整体表现来看，宝马集团累计交付汽车170.7802万辆，同比减少4.9%；税前利润为61.28亿欧元，同比下降23.9%。\n汽车业务方面，宝马集团第三季度实现营收266.69亿欧元，同比下降6.5%；息税前利润为9.01亿欧元，同比下滑39.7%，对应的息税前利润率为3.4%。\n公司指出，销量减少、市场竞争激烈（尤其是中国市场）以及汇率的不利影响，均对业务营收形成压力。另一方面，与集成制动系统（Integrated Braking System）有关的法律诉讼达成和解，对当季业绩产生了正面影响。进口关税则使第三季度汽车业务利润率承受约1.25个百分点的影响。\n第三季度，宝马集团汽车业务自由现金流为负5.66亿欧元；今年前三季度累计自由现金流为7.24亿欧元。尽管第三季度录得负值，公司仍预计全年汽车业务自由现金流将超过25亿欧元。\n对于2026年全年，宝马集团维持11月3日公布的业绩指引，预计汽车业务息税前利润率为-0.5%至0.5%。这一预期已计入产品组合调整及结构性措施带来的约2.5个百分点影响。具体措施包括，随着Neue Klasse车型逐步扩大生产，部分采用Gen5电池技术的车型将提前停产。\n宝马股份公司管理董事会主席米兰·内德尔科维奇（Milan Nedeljković）在公告中表示：“当前行业形势要求我们果断决策，并迅速采取行动。因此，我们将进一步加大结构性措施的力度，加快相关措施的推进。”\n本文地址：http://auto.gasgoo.com/News/2019/05/300656465646I70107904C601.shtml\n本文地址：https://auto.gasgoo.com/news/202611/5I70477020C101.shtml\n联系邮箱：info@gasgoo.com 求职应聘：021-39197800-8035 简历投递：zhaopin@gasgoo.com 客服微信：gasgoo12 (豆豆)\n盖世汽车社区 盖世大学堂-公开课 英文资讯站 热门内容 数据报告 国际站 具身智能"
-  },
-  {
-   "title": "蔚来10月交付新车34246台",
-   "url": "https://auto.sina.com.cn/news/2026-11-01/detail-inixferx3070637.shtml",
-   "source": "新浪汽车",
-   "lang": "zh",
-   "hits": [
-    "蔚来",
-    "交付"
-   ],
-   "score": 2,
-   "body": "今日， 蔚来公司 公布最新交付数据。2026年10月，蔚来公司单月交付新车34246台，保持稳健市场表现。2026年1-10月，蔚来公司共交付新车334547台，同比增长38.5%，创下历史同期新高。截至目前，蔚来公司已累计交付新车1332139台。\n10月，蔚来公司旗下三大品牌在各自细分市场均展现出强劲竞争力。其中，高端智能电动汽车品牌蔚来（NIO）交付新车18125台，持续巩固高端市场领先地位；家庭智能电动品牌 乐道 （ONVO）交付新车8383台，稳步释放主流家庭市场潜力；智能电动高端小车品牌 firefly萤火虫 (配置 |询价) 交付新车7738台，受到都市品质用户的广泛青睐。三大品牌定位清晰、协同发力，共同构筑起蔚来公司稳步增长的多元化引擎。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方",
-   "image": "img/67087e064854cb.jpg"
-  },
-  {
-   "title": "史上最好的一份财报：SK 海力士股价为何回撤过半",
-   "url": "https://www.tmtpost.com/8193123.html",
-   "source": "钛媒体",
-   "lang": "zh",
-   "hits": [
-    "财报"
-   ],
-   "score": 1,
-   "body": "存储原厂单季盈利逐季刷新历史纪录，存储板块股价却同期经历多轮回撤。\nSK 海力士单季营收首次突破百万亿韩元，营业利润率升至 80%；三星电子单季营业利润突破百万亿韩元，消费电子部门同期录得亏损。与业绩方向相反，韩国交易所多次启动卖出侧车机制暂停程序化卖盘， 抛售由韩股扩散至美股存储板块，美光、闪迪、西部数据、希捷同步收跌，费城半导体指数跌逾 3% 。\n这一背离在财报披露之前已经形成。SK 海力士年中高点约 298.7 万韩元，盈利逐季改善而股价持续回撤，三季报披露时回撤幅度已约五成。在随后一轮调整中，KOSPI 单日收跌 5.28%，SK 海力士收跌 9.46%，三星电子收跌 7.57%，交易所先后对 KOSPI 与 KOSDAQ 启动卖出侧车机制。 两轮调整的诱因均来自行业外部，分别对应美股科技股财报后的 AI 硬件链承压，以及美国 AI 数据中心监管预期变化 。外资年内 KOSPI 累计净卖出超 210 万亿韩元，SK 海力士与三星电子分列个股净卖出前两位。\n单季盈利已处于历史峰值， 出货量已由长约锁定，价格成为估值的主要变量 。\nSK 海力士三季报显示，第三季度营收 104.6155 万亿韩元，环比增长 32%，同比增长 328%；营业利润 83.3338 万亿韩元，营业利润率 80%；净利润 39.7756 万亿韩元，净利率 38%。\n对照 2025 年全年 97.1467 万亿韩元营收、47.2063 万亿韩元营业利润， 单季营收已超过 2025 年全年 ，营业利润为其 1.77 倍。2024 年、2025 年全年营业利润率分别为 35% 与 49%， 2026 年第三季度单季为 80% 。\nSK 海力士的纪录序列起于 2025 年第四季度，当季营业利润 19.1696 万亿韩元，官方称三项指标均刷新历史纪录。2026 年第一季度、第二季度营业利润分别为 37.6103 万亿韩元与 60.5426 万亿韩元，两季均刷新前一季度的纪录，第三季度进一步升至 83.3338 万亿韩元。三星电子在第二季度初步业绩公布时，营业利润已连续第三个季度创纪录。\n均价上行是盈利改善的主要驱动 ，三季度 HBM4 开始全面出货，服务器 DDR5 出货量环比增长超过 40%，321 层 TLC 企业级固态硬盘继续放量。公司在业绩会上给出的口径是，DRAM 平均售价环比涨至 20% 的高位段，NAND 涨至 20% 的中段；按机构测算，两项分别约为 26% 至 29% 和 25%。同期三星的口径为 DRAM 均价环比涨约 20%，NAND 涨近 10%。\n同一份财报里，净利润 39.78 万亿韩元同比增长 216%，环比下降 58%，低于市场此前约 59.66 万亿韩元的预期；二季度为 93.92 万亿韩元。\n营业利润与净利润之间的差额主要来自非经营项目，公司在业绩会上披露，三季度汇兑相关净损失 11.6 万亿韩元，投资资产估值损失 22.9 万亿韩元，合计非经营性净支出约 32.6 万亿韩元。经营层面利润率仍处历史高位，净利润下滑主要由汇率与资产估值变动导致。\n二季度净利润高于营业利润，约 33.4 万亿韩元差额来自非经营收益；2026 年铠侠投资收益的大部分以特别分红返还股东，三季度每股 2 万韩元现金股息中，1 万韩元来自这笔收益。\n长期供应协议是支撑后续需求判断的主要依据， SK 海力士已与包括全球大型云服务商在内的 14 家主要客户签署 LTA，锁定量相当于 2027 年、2028 年总产能的 50% 以上 ；这类协议通常以五年为期，公司正与部分客户讨论延长合同期限。\n管理层在业绩会上表示，已签 LTA 叠加正在磋商的需求，到 2029 年的 DRAM 与 HBM 产能实质上已近售罄；磋商中的量基于客户具体采购计划，落地概率较高。三星披露，2027 年 HBM 供应量已按目标价格完成谈判并售罄，已与 10 家主要客户签署多年期合同，另有 10 家在谈， 到 2030 年计划将长期合同覆盖比例提高至总产能的 60% 至 70% 。\nSK 海力士对 LTA 的官方表述是“采用了在客户商定价格范围内反映市场行情的方式”，并将结构概括为“既能确保盈利稳定性、又能灵活应对市场变化”。供应量锁定，价格按约定区间浮动。据集邦咨询的 DRAM 市场快讯，原厂正在提高 LTA 比重，以地板价、量承诺和预付款锁定需求与资金，DRAM 定价与供货转向长约导向。\n产业调研显示，新旧长协在定价与履约条款上存在差异。旧长约期限通常为两至三年，同时锁定价格与数量，基本不设预付款；新长约采用 take or pay 结构，客户先付 20% 至 30% 定金，价格由供应商在约定区间内确定，未提货仍需支付全额货款。买方以采购灵活度换取供应确定性；卖方让渡后续涨价的价格弹性，获得附带定金与 take or pay 条款的采购承诺。\nHBM 价格按年度谈判，本轮谈判已提前完成 。SK 海力士与三星均称 2027 年 HBM 量价已议定，集邦咨询在 DRAM 市场快讯中亦予确认。上一轮谈判于 2025 年 11 月完成，公司宣布与 英伟达 谈妥 2026 年 HBM4 的价格与数量，消息人士给出的单价约 560 美元，比当时供货的 HBM3E 高 50% 以上，也高于业内约 500 美元的预期。本轮 HBM 年度合约价尚未披露，机构对 2027 年 HBM 价格涨幅的预测口径分散，区间从同比五成至翻倍以上。业绩能见度因而集中在出货量，价格因素尚待合约执行验证。\n2026 财年，公司计划执行约 100 万亿韩元股东回报，其中现金分红 30 万亿韩元以上，库存股回购及注销合计 60 万亿韩元以上。8 月公布的 40 万亿韩元回购已完成，等待注销；三季度董事会追加 14 万亿韩元现金分红和 20 万亿韩元回购，其中 10 万亿用于注销，另约 10 万亿用于员工绩效奖金，不计入股东回报。公司承诺将自由现金流的 50% 以上用于回报股东。100 万亿韩元约为当季净利润的 2.5 倍。\n扩产计划同步推进，2027 年龙仁一期晶圆厂投产，M15X 工厂在 2026 年底前实现 HBM4 满产，公司预计 2027 年投资规模较 2026 年大幅增加。三星将 2026 年资本开支指引上调至 84.4 万亿韩元，同比增长约六成，其中 DS 部门 76.8 万亿韩元。\n三季度末，SK 海力士现金及现金等价物 114.5 万亿韩元，较上季末增加 26.5 万亿；借款降至 15.8 万亿韩元，净现金头寸 98.7 万亿韩元。\n公司同期中止了 Solidigm 的 IPO 审议，CEO 郭鲁正在财报会上说明，IPO 本意是引入外部资本扩建 Solidigm 产能，“减轻本公司的投资负担，由此扩大股东回报空间”，但“综合考虑近期金融市场状况等因素，我们认为在当前时点难以充分实现当初所期待的效果”。营业利润率达 80% 的 SK 海力士，管理层认为难以通过外部融资实现预期效果。\n三星电子三季度业绩显示，营收 195.3 万亿韩元，营业利润 107.4 万亿韩元，成为全球首家单季营业利润突破 100 万亿韩元的科技公司。DS 部门当季销售额 147.1 万亿韩元，营"
-  },
-  {
-   "title": "Serve Robotics launches new business to become the AWS for robots",
-   "url": "https://techcrunch.com/2026/11/05/serve-robotics-launches-new-business-to-become-the-aws-for-robots/",
-   "source": "TechCrunch·交通",
-   "lang": "en",
-   "summary": "Serve Robotics announced alonsgside its third-quarter earnings that it will launch a new business line called Physical AI Services to offer customers its connectivity and data tools.",
-   "hits": [
-    "earnings"
-   ],
-   "score": 1,
-   "body": "Serve Robotics announced alonsgside its third-quarter earnings that it will launch a new business line called Physical AI Services to offer customers its connectivity and data tools."
-  },
-  {
-   "title": "Xpeng begins Mona L05 deliveries, targets 10,000 units in first month",
-   "url": "https://cnevpost.com/2026/11/05/xpeng-begins-mona-l05-deliveries-targets-10000-1st-month/",
-   "source": "CnEVPost",
-   "lang": "en",
-   "summary": "Xpeng said the Mona L05 is built on a dedicated production line, and its production and deliveries will not affect models such as the Mona L03. For details, please visit CnEVPost (cnev.co).",
-   "imageSrc": "https://cnevpost.com/wp-content/uploads/2026/11/2026110504144687.jpg",
-   "hits": [
-    "xpeng",
-    "ev",
-    "deliveries"
-   ],
-   "score": 3,
-   "body": "Xpeng said the Mona L05 is built on a dedicated production line, and its production and deliveries will not affect models such as the Mona L03. For details, please visit CnEVPost (cnev.co).",
-   "image": "img/807fd1c1ab30e8.jpg"
-  },
-  {
-   "title": "Toyota Profits Surge As Hybrid Sales Drive Strong Recovery",
-   "url": "https://www.motor1.com/news/814505/toyota-hybrid-bet-paying-off/",
-   "source": "Motor1",
-   "lang": "en",
-   "summary": "Rising hybrid sales, stronger North American profits, and factory investments in the US support a higher earnings outlook despite pressure in China.",
-   "imageSrc": "https://cdn.motor1.com/images/mgl/kJvRQ/s3/toyota-hibrido.jpg",
-   "hits": [
-    "toyota",
-    "factory",
-    "sales",
-    "earnings"
-   ],
-   "score": 4,
-   "body": "Rising hybrid sales, stronger North American profits, and factory investments in the US support a higher earnings outlook despite pressure in China.",
-   "image": "img/25ed3f3d57b207.jpg"
-  },
-  {
-   "title": "Xiaomi sets 2028 global right-hand-drive push as Australia hiring begins",
-   "url": "https://carnewschina.com/2026/11/05/xiaomi-sets-2028-global-right-hand-drive-push-as-australia-hiring-begins/",
-   "source": "CarNewsChina",
-   "lang": "en",
-   "summary": "Xiaomi is preparing for a 2028 right-hand-drive expansion after its planned European entry, with Sydney recruitment adding an Australian dimension. The post Xiaomi sets 2028 global right-hand-drive push as Australia hiring begins appeared first on CarNewsChina.com .",
-   "hits": [
-    "xiaomi",
-    "eu",
-    "europe"
-   ],
-   "score": 3,
-   "body": "Xiaomi is preparing for a 2028 right-hand-drive expansion after its planned European entry, with Sydney recruitment adding an Australian dimension. The post Xiaomi sets 2028 global right-hand-drive push as Australia hiring begins appeared first on CarNewsChina.com ."
-  },
-  {
-   "title": "Are Europe’s truck manufacturers losing their home market?",
-   "url": "https://www.electrive.com/2026/11/05/are-europes-truck-manufacturers-losing-their-home-market/",
-   "source": "Electrive",
-   "lang": "en",
-   "summary": "European commercial vehicle manufacturers now offer a wide range of electric trucks. However, new competitors from China and other regions are increasingly pressuring the established industry - not necessarily with better technology, but with lower prices. In a video interview with electrive, Johanna Braun from Transport & Environment (T&E) explains why she considers the demand for relaxing Europe",
-   "imageSrc": "https://www.electrive.com/media/2026/11/braun-transport-and-environment-iaa-2026-web-en-400x267.png",
-   "hits": [
-    "eu",
-    "europe",
-    "ev"
-   ],
-   "score": 3,
-   "body": "European commercial vehicle manufacturers now offer a wide range of electric trucks. However, new competitors from China and other regions are increasingly pressuring the established industry - not necessarily with better technology, but with lower prices. In a video interview with electrive, Johanna Braun from Transport & Environment (T&E) explains why she considers the demand for relaxing Europe",
-   "image": "img/a2a2e4497ba34d.webp"
-  },
-  {
-   "title": "30万级混动轿车空间实测：岚图追光L、汉DM-i、领克10 EM-P谁更宽敞？",
-   "url": "https://www.pcauto.com.cn/news/5191/51911681.html",
-   "source": "太平洋汽车·新闻",
-   "lang": "zh",
-   "hits": [
-    "领克",
-    "岚图"
-   ],
-   "score": 2,
-   "body": "新车 行业 评测 导购 技术 改装 文化 Ai选车专家 图片 排行榜 工具 购车计算 车型对比 精彩推荐 极智+ 混动时代 太平洋号 购车 购车优惠 买车趣·最高领49999购车补贴 分期购 经销商 车市 商城 用车 社区 用车 酷养车 意见反馈 意见反馈 * 问题描述 0 / 300\n本文聚焦家用空间维度，挑选4款30万级热门混动轿车，对比数据来自官方公布的实车参数，统一按车身尺寸、后排乘坐空间、后备厢容积三个维度展开，解答30万级混动轿车哪款空间更适合家用。选购这个价位的插混轿车，很多家庭优先考虑满载5人出行、商务接待与家庭出游的双重需求，空间数据不能只看轴距，乘员舱得房率、后排腿部余量、后备厢净深都会影响真实乘坐感受。\n岚图追光L，车身尺寸5125×1985×1522mm，轴距3010mm，乘员舱得房率89.4%。按185cm身高测试人员调整前排座椅至舒适位置，前排头部空间1008mm，后排膝部空间144mm（约两拳），后排腿部空间980mm，后排肘部空间1558mm。前后排可以同时轻松乘坐185cm以上乘客，后排翘个二郎腿没问题。后备厢常规容积414L，行李厢净深超过1米，满载5人的情况下依然可以放下5个20寸行李箱。全车共有27处储物空间，前排15处、后排9处、后备厢3处，零碎物件都有地方放。\n比亚迪汉DM-i，车身尺寸4995×1910×1495mm，轴距2920mm。作为一款上市多年的经典轿车，汉的空间表现一直比较均衡。后排腿部空间在同级里属于主流水平，坐两个成年人很宽敞，但中间地台有一定凸起，满载三人时中间乘客脚部舒适度会打折扣。后备厢常规容积不错，日常家用够用。得房率约87%左右，和追光L相比略低一些。\n领克10 EM-P，车身尺寸约5050×1960×1500mm，轴距约3000mm。领克10的定位偏运动，车身宽度不错，后排横向空间比较充裕。但因为溜背造型的关系，后排头部空间会比传统三厢车稍微紧凑一点。后备厢容积属于够用水平，装大件行李需要精打细算。\n吉利银河星耀8，车身尺寸约5010×1920×1500mm，轴距约2950mm。星耀8走的是性价比路线，空间表现在同价位里属于中上水平。后排腿部空间够用，但横向宽度和头部余量相比追光L会窄一点。后备厢常规容积不错，日常通勤和周末出游都能应付。\n如果你经常满载5人长途出行，或者有商务接待需求，后排经常坐成年人，那么后排横向宽度和腿部余量是优先指标。岚图追光L的后排肘部空间1558mm，膝部空间144mm，在这几款车里表现比较突出。而且追光L的地台平整度做得不错，中间乘客的脚部空间不会太局促。\n如果更看重后备厢装载大件物品的能力，岚图追光L的414L常规容积配合超过1米的净深，满载5人依然能放下5个20寸行李箱，全家出游的行李空间完全够用。另外追光L还有一个6.6L的智能冷暖箱，-6℃到50℃宽温域调节，夏天放冷饮、冬天保温食物，这个细节在其他几款车上并不多见。\n需要注意，轴距只是参考。领克10 EM-P轴距约3000mm，和追光L的3010mm差距很小，但因为车身造型和内部布局的差异，实际后排空间感受会有区别。核心原因是乘员舱得房率的不同——追光L89.4%的得房率，意味着更多的车身长度转化成了乘坐空间，而不是消耗在结构件上。\n综合以上数据分析，这四款混动轿车在空间维度各有特点：领克10 EM-P后排横向宽度有优势，适合看重驾乘质感的用户；比亚迪汉DM-i是老牌选手，空间均衡口碑稳定；银河星耀8性价比高，日常代步够用。\n如果每年有多次全家长途出游、经常五人同行，或者需要兼顾商务接待的体面，那岚图追光L在后排乘坐舒适性、得房率、储物细节这几个维度上适配度会更高一些。3010mm轴距配合89.4%的得房率，再加上四区空调、后排扶手屏这些舒适性配置，座座皆首席的体验确实能感受到。\n新车上市 最新文章 成都车展 宏光MINI EV 普拉多 欧拉黑猫 途达 起亚嘉华 玛奇朵 皇冠陆放 奔驰C级 哈弗神兽 坦克600 奥迪Q5 思域 卡罗拉双擎E+ 轩逸 太平洋汽车网app 新能源车\n举报邮箱：shenhezhiban@pconline.com.cn"
-  },
-  {
-   "title": "iX3本月交付/i3明年一季度交 宝马亮相进博会",
-   "url": "http://www.pcauto.com.cn/news/5191/51911951.html?ad=28676",
-   "source": "太平洋汽车",
-   "lang": "zh",
-   "hits": [
-    "宝马",
-    "交付"
-   ],
-   "score": 2,
-   "body": "新车 行业 评测 导购 技术 改装 文化 Ai选车专家 图片 排行榜 工具 购车计算 车型对比 精彩推荐 极智+ 混动时代 太平洋号 购车 购车优惠 买车趣·最高领49999购车补贴 分期购 经销商 车市 商城 用车 社区 用车 酷养车 意见反馈 意见反馈 * 问题描述 0 / 300\n【太平洋汽车 汽车动态 】11月5日，第九届中国国际进口博览会于上海正式开幕，宝马集团连续第九年参展，本届以“新世代”作为参展主题，集中展示电动化最新产品、前沿技术成果以及开放合作实践，新世代BMW i3与新世代BMW iX3在现场完成首次同台亮相。其中新世代BMW iX3将于本月开启交付，新世代BMW i3计划在明年一季度正式交付。\n新世代BMW i3是宝马专为中国市场打造的纯电轿车，采用宝马全新一代设计语言，整车线条简洁干练，保留宝马家族化识别特征。展台同步展出应用E‑Ink电子墨水技术的BMW i5全彩变色艺术概念车，展现智能材料与数字交互的创新探索。同台展出的新世代BMW iX3同样采用新世代家族外观，拥有辨识度更高的前脸造型，两款新车都针对国内用户审美做本土化优化。\n座舱深度融合中国本土数字生态，围绕国内用户使用习惯做交互优化。依托宝马驾控超级大脑硬件底座，座舱人机交互逻辑全面升级。宝马集团中国技术中心展台带来多组前沿方案，涵盖人工智能、机器人、下一代电池、智能感知、可持续内饰材料等领域，由来自欧洲、北美、亚洲的多家初创企业联合展示，为后续座舱迭代储备技术。\n智能化层面搭载BMW驾控超级大脑，是新世代车型核心硬件底座。整套智驾体系结合中国道路场景完成适配开发，深度接入本土数字生态。按照规划，2027年宝马将向中国市场投放近20款搭载新世代技术集群的全新车型，新世代智能技术将实现大规模落地。本届进博会，宝马还首次把“BMW 中国文化之旅”非遗保护创新成果带到展会现场，将科技创新与传统文化保护相结合。\n在电池安全层面，新车搭载已经实现量产的 BMW 第六代动力电池，采用全新大圆柱电芯，相比上一代产品，单体能量密度提升超 20%，从电芯结构、热管理系统多重维度优化电池安全表现。整车开发将循环可持续理念融入研发全过程，推进绿色生产、供应链减碳，把安全与可持续贯穿产品全生命周期。\n核心动力单元为BMW第六代动力电池，除能量密度提升以外，充电速度以及续航里程最高可以提升30%，该套电池现已正式投产。新世代BMW i3与iX3整套电驱、电池方案结合中国市场需求完成开发，实现宝马百年技术积淀和中国本土创新力量融合。新世代BMW iX3率先于本月开启交付，新世代BMW i3则要等到明年一季度交付，加速推进宝马电动化产品在国内落地。\n宝马集团大中华区总裁兼首席执行官柯睿辰表示，进博会是开放合作的重要桥梁，新世代开启宝马发展新阶段，中国在这一进程当中扮演至关重要的角色，宝马将坚持开放创新，为中国客户创造长期价值。\n新车上市 最新文章 成都车展 宏光MINI EV 普拉多 欧拉黑猫 途达 起亚嘉华 玛奇朵 皇冠陆放 奔驰C级 哈弗神兽 坦克600 奥迪Q5 思域 卡罗拉双擎E+ 轩逸 太平洋汽车网app 新能源车\n举报邮箱：shenhezhiban@pconline.com.cn",
-   "image": "img/c0b980d953f405.png"
-  },
-  {
-   "title": "权益后售15.98万起/东风自研天元智驾方案 奕派M8天元激光版上市",
-   "url": "https://www.autohome.com.cn/news/202611/1318139.html#pvareaid=102624",
+   "title": "全新硬派造型 2.0T插混动力 全新魏牌蓝山将于11月9日开启预售",
+   "url": "https://www.autohome.com.cn/news/202611/1318204.html#pvareaid=102624",
    "source": "汽车之家",
    "lang": "zh",
    "hits": [
-    "东风",
-    "奕派",
-    "智驾"
+    "魏牌",
+    "插混"
    ],
-   "score": 3,
-   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 国产新车 正文 权益后售15.98万起/东风自研天元智驾方案 奕派M8天元激光版上市 之家原创车闻 原创 · 0 浏览 · 2026-11-03 18:05 · 北京 关注 [汽车之家 新车上市 ] 11月3日，我们从奕派科技官方了解到，旗下中大型SUV—— 奕派M8天元激光版正式上市，共推出2款配置，售价分别为17.98万和18.58万元，权益后售15.98万和16.58万 。作为新增车型，其主要采用东风自研天元智驾方案，与现有华为乾崑版形成区分，满足不同用户需求。关于新车详细售价，请见下图：\n外观方面，新车整体采用极简新能源设计语言，前脸采用封闭式格栅搭配星环式贯穿LED灯带，前包围两侧搭载分体式远近光模组，双层散热开口结构层层递进，丰富了前脸的立体层次感。颜色方面，新车提供玄岫黑、远黛蓝、凝霜白、月光银、烟霞紫、琉璃白六种颜色可选。\n车身侧面来看，其车顶线条从B柱位置平缓向后微倾，搭配柔和上扬的车身腰线，营造出修长舒展的视觉姿态。尾部方面，该车采用贯穿式尾灯组，与车头形成视觉呼应。同时，其配备运动扰流板并集成高位刹车灯，同时搭载隐藏式后窗雨刷。尺寸方面，新车长宽高为5020/1975/1733mm，轴距达3025mm。\n车辆内饰以“以云展怀”为设计理念，并配备三辐式多功能方向盘、10.25英寸液晶仪表、50英寸HUD抬头显示以及16.1英寸3K中控屏，有着不错的科技感。同时，该车继续采用六座布局，支持3/4/5/6四种空间模式自由切换，满足不同用户使用场景。此外，其二排配备17.3英寸3K后排电吸屏，还有8.8L双门双向智能冷暖箱，提升用车便利性。配色方面，其提供曦橙、砚棕两种配色。\n动力方面，车辆采用纯电方案，基于800V高压平台打造，搭载230kW驱动电机，匹配77.38kWh宁德时代电池，CLTC工况续航600km。\n东风 奕派M8 ( 参数 | 询价 )所处的赛道竞争十分激烈，将直面吉利银河M9、零跑C16、华境S、乐道L90等一众热门家用新能源 SUV。和几款竞品相比，奕派M8最大的差异化亮点，是提供东风自研天元智驾、华为乾崑智驾两套方案可选，用分层智能化配置覆盖不同预算、不同需求的消费者，拉宽价格梯度，进一步放大自身竞争优势。动力层面它同样选择双线布局，同时提供增程与纯电版本；其中800V高压纯电版依托碳化硅高压平台，主打极速快充与长续航，适合充电条件稳定、偏爱纯电体验的用户；增程版则兼顾日常通勤的低用电成本，长途出行没有补能焦虑，给多成员家庭带来更灵活多元的出行选择。\n目前在售的奕派M8全系均带有“乾崑版”后缀，完整搭载华为乾崑智能六件套，是东风与华为深度联合打造的车型。而天元，是东风在2025年正式推出的全栈自研智能化技术品牌，包含天元智驾、天元智舱两大核心板块，它也将作为奕派M8车系新增的自研智驾分支，和现有的华为乾崑版本同堂销售，以此覆盖不同预算、不同技术偏好的消费群体。\n奕派M8拥有超5米的车身长度，配备二排头等舱航空座椅，叠加华为全套智能生态，同时提供增程、纯电两套动力方案。对于瞄准20万以内预算的家庭用户而言，这套组合带来的产品力与性价比颇具吸引力。大六座布局、两种不同的智能方案可选，也是近一年新能源市场里热度很高的家庭购车需求，多重buff加持之下，奕派M8的市场表现值得期待。那么，你觉得它能否在竞争激烈的家用SUV赛道成为一匹黑马？欢迎在评论区留下你的看法。（文/汽车之家 周易）",
-   "image": "img/88adbe9e488e3c.png"
+   "score": 2,
+   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 国产新车 正文 全新硬派造型 2.0T插混动力 全新魏牌蓝山将于11月9日开启预售 之家原创车闻 原创 · 0 浏览 · 2026-11-06 10:54 · 北京 关注 [汽车之家 资讯 ] 近日，我们从官方获悉，全新魏牌蓝山（官方称魏牌二代蓝山）将于11月9日开启预售。新车将与长城H10同平台打造，搭载2.0T发动机+双电机组成的插混动力系统，并提供5座和6座版本。\n外观方面，全新魏牌蓝山外观采用了硬朗风格的方盒子造型，前脸配备大尺寸直瀑式格栅，中央嵌入可发光的WEY品牌标识，两侧为“外方内圆”设计的复古圆形大灯，同时车顶配备行李架和激光雷达。\n车身尺寸方面，车辆长宽高分别为5140/2050/1960mm（5座版）与5300/2050/1960mm（6座版），轴距均为3010mm。车尾采用外挂式备胎布局，备胎罩上印有WEY字母标识，配合分体式竖状尾灯与侧开尾门。\n动力方面，新车搭载2.0T发动机（最大功率182kW）与电机组成的插电式混合动力系统，电机功率为前110kW/后220kW。新车搭载6C超充与800V高压平台，提供两种电池版本（WLTC工况数据），53.6kWh版本纯电续航220km、64.7kWh版本纯电续航270km。同时，车辆还将配备后桥差速锁、闭式双腔空气悬架、双向20°后轮转向等。（文/汽车之家 姚宇）",
+   "image": "img/dc057e72cba822.jpg"
   },
   {
-   "title": "Tesla Is Now Powering One Of Its Biggest Charging Rivals",
-   "url": "https://insideevs.com/news/814582/tesla-supercharging-ev-go-chicago/",
-   "source": "InsideEVs",
+   "title": "EVgo integrates first Tesla Superchargers into its network",
+   "url": "https://www.electrive.com/2026/11/06/evgo-integrates-first-tesla-superchargers-into-its-network/",
+   "source": "Electrive",
    "lang": "en",
-   "summary": "EVgo just opened its first station featuring Tesla Superchargers, with hundreds more stalls on the way.",
-   "imageSrc": "https://cdn.motor1.com/images/mgl/6ZOxXE/s3/evgo-tesla.jpg",
+   "summary": "EVgo has opened its first site with Tesla Superchargers near downtown Chicago. The twelve charging points mark the beginning of several hundred more Superchargers that the US charging network operator plans to integrate into its own network.",
+   "imageSrc": "https://www.electrive.com/media/2026/11/202610-evgo-ladeinfrastruktur-los-angeles-400x267.jpg",
    "hits": [
     "tesla",
     "charging",
     "ev"
    ],
    "score": 3,
-   "body": "EVgo just opened its first station featuring Tesla Superchargers, with hundreds more stalls on the way.",
-   "image": "img/67e439f30399bc.jpg"
+   "body": "EVgo has opened its first site with Tesla Superchargers near downtown Chicago. The twelve charging points mark the beginning of several hundred more Superchargers that the US charging network operator plans to integrate into its own network."
   },
   {
-   "title": "High gas prices are pumping up used EV sales: these are FLYING off the lot",
-   "url": "https://electrek.co/2026/11/04/high-gas-prices-are-pumping-up-used-ev-sales-these-are-flying-off-the-lot/",
-   "source": "Electrek",
-   "lang": "en",
-   "summary": "A new car affordability crisis and punishing gas prices are driving an unprecedented number of used car buyers to consider going electric, and that increased demand without a corresponding increase in supply means these used EVs are flying off dealer lots. more…",
-   "imageSrc": "https://electrek.co/wp-content/uploads/sites/3/2026/11/bmw_i4_used.jpg?quality=82&#038;strip=all&#038;w=1600",
-   "hits": [
-    "ford",
-    "ev",
-    "sales"
-   ],
-   "score": 3,
-   "body": "A new car affordability crisis and punishing gas prices are driving an unprecedented number of used car buyers to consider going electric, and that increased demand without a corresponding increase in supply means these used EVs are flying off dealer lots. more…",
-   "image": "img/ae0802d12e0a4f.webp"
-  },
-  {
-   "title": "13.59万起，首搭云辇-M，比亚迪第二代海豹07上市",
-   "url": "https://www.diandongbang.com/news/167952.html",
-   "source": "电动邦",
+   "title": "国际|欧盟议员要求评估比亚迪汽车安全威胁",
+   "url": "https://auto.gasgoo.com/news/202611/6I70477131C108.shtml",
+   "source": "盖世汽车",
    "lang": "zh",
    "hits": [
-    "比亚迪"
+    "比亚迪",
+    "欧盟"
    ],
-   "score": 1,
-   "body": "11月5日，比亚迪海洋网旗下第二代海豹07正式上市，新车提供纯电、插混两种动力版本，超级置换价区间13.59万-16.89万元。\n’作为海洋网的中大型轿车力作，第二代海豹07是比亚迪首搭云辇-M智能磁流变车身控制系统与智慧生态2.0的车型，在驾控、空间、智能、安全等维度全面升级，主打“C级全享座驾”定位。\n外观层面，新车采用全新海洋美学2.0设计语言，宽体前脸搭配机盖筋线，1:1还原OCEAN-S概念车造型。前脸配备寒冰之眼日行灯，以珠宝切割工艺打造，点亮后辨识度突出；主动式进气格栅可智能开合，兼顾散热与风阻优化。\n车身侧面以平直的海韵灵动腰线勾勒轮廓，5080×1960×1495mm的车身尺寸搭配2960mm轴距，呈现出中大型轿车的舒展姿态。车尾采用家族式分层晶澈尾灯，搭配上扬小鸭尾设计，运动感与家用质感兼顾。配色方面，提供帕拉青、极光粉等6款外观车色，以及云汐白、幻影灰等3款内饰配色可选。\n驾控是第二代海豹07的核心亮点，新车首次搭载云辇-M智能磁流变车身控制系统，硬件规格对标百万级超跑。该系统磁液直驱可实现1毫秒内极速响应，阻尼调节范围覆盖100-10000N，配合路面预瞄功能，可提前识别路况主动调节阻尼，兼顾日常滤震与弯道支撑。\n底盘全系标配前双叉臂+增强型后五连杆独立悬架，配合iTAC2.0智能扭矩控制系统，可在低附路面快速调节后轴扭矩，抑制甩尾侧滑，提升行驶稳定性。\n动力与续航方面，纯电版搭载十二合一智能电驱系统，后置永磁同步电机最大功率245kW、峰值扭矩365N·m，零百加速5.5秒；匹配第二代刀片电池，CLTC纯电续航775km，百公里电耗低至9.8kWh。同时搭载闪充技术，常温下10%-70%充电仅需5分钟，零下30℃极寒环境充电速度仅比常温多3分钟，补能效率处于同级第一梯队。\n插混版搭载插混专用1.5T高效发动机+EHS电混系统，CLTC纯电续航330km，NEDC工况亏电油耗3.3L/100km，综合续航可达1700km，兼顾日常纯电通勤与长途无焦虑出行。\n空间层面，2960mm的轴距带来了越级的后排乘坐表现，后排腿部空间充裕，中间地板平整，满载三人也能保证舒适度。储物方面，纯电版配备160L前备箱，后备箱容积618L，全车共有39处储物空间，满足家庭出行的收纳需求。\n舒适配置上，新车配备主驾零重力座椅，支持电动调节、腰撑、腿托、按摩与记忆功能；前后排座椅均带通风加热，副驾靠背配备小桌板。开启大床模式后，前排座椅放倒可与后排完全贴合，形成纯平休憩空间。\n除此之外，车内还配备帝瓦雷20扬声器音响、6.8L智能冷暖冰箱、电动天幕遮阳帘、双层隔音玻璃等配置，从听觉、体感多维度提升座舱舒适性。\n智能座舱部分，新车首搭比亚迪智慧生态2.0，配备15.6英寸智慧生态屏，支持外接Diva智能表盘、百变按键等生态配件；搭配10.25英寸超窄边框液晶仪表与26寸W-HUD抬头显示，三屏联动提升驾驶便利性。\n车机内置AI日报、魔方传声筒、海豹IP萌宠等功能，支持四音区语音交互与手车互联，拓展性与趣味性兼顾。\n智能驾驶方面，高配车型搭载天神之眼B-辅助驾驶激光版，支持城市领航、高快领航与全场景智能泊车，覆盖城区路口、高速匝道、拥堵跟车等多元场景。官方同步推出辅助驾驶无忧礼，1年内城市领航与智能泊车场景提供安全兜底，降低用户使用顾虑。\n安全层面，新车搭载CTB电池车身一体化技术，采用高强度钢铝混合笼式车身，关键部位使用2000MPa热成型钢，车身刚性大幅提升。电池采用第二代刀片电池，通过底部撞击、热扩散、边闪充边针刺等多重严苛测试，从结构到材料层层防护。\n被动安全配备最高9安全气囊，包含前排中间气囊，覆盖前后排乘员。主动安全搭载iTBC爆胎稳行控制系统，可实现高速爆胎后车辆稳定可控，降低失控风险。此外，哨兵模式、千里眼、驾驶员疲劳监测等功能也均有配备。\n车型版本方面，纯电版推出3款配置，首推775KM尊贵型，兼顾核心配置与性价比；预算充足追求极致驾控与舒适，可选择搭载云辇-M的旗舰版。插混版推出2款配置，首推1.5T 330KM尊贵型，智驾与舒适配置更全面。\n上市期间购车可享多重权益：金融方面支持0首付或24期0息；不限品牌享4000元置换补贴；三电系统终身保修（首任非营运车主），整车包修6年或15万公里。纯电版可享1年免费闪充权益，插混版赠送2年免费充电桩与安装服务。\n第二代海豹07的上市，再次把中大型轿车的配置门槛往下拉了一个段位。15万级价位，就能拿到C级车身尺寸、云辇-M磁流变悬架、775km长续航，还有闪充、智慧生态2.0这些技术亮点，既满足了家庭用户对大空间、高舒适性的需求，也兼顾了对驾控质感有追求的用户。\n从产品定位来看，它没有偏科，家用舒适和操控乐趣两手抓，再加上比亚迪成熟的三电技术与售后体系，在13-17万的中型/中大型轿车市场里，竞争力非常突出。对于预算15万左右、想要一台“全能家用轿跑”的消费者来说，这台车值得重点关注。",
-   "image": "img/b334ed4f4d3bea.jpg"
+   "score": 2,
+   "body": "根据美国佐治亚州当地经济发展机构公布的文件，大众集团旗下奥迪品牌正在考虑为计划中的美国新工厂增加第二阶段投资，进一步扩大其在美国的生产规模。奥迪此前已宣布投资40亿美元，在佐治亚州梅肯附近建设首座美国整车组装厂，计划于2030年代初投产，主要生产SUV。现在奥迪计划在第二阶段追加30亿美元投资，到2033年增加约3,000个岗位。若扩建计划落地，项目总投资将达到70亿美元。\n丰田汽车在11月5日公布，今年上半财年（4-9月），公司营业利润为2.19万亿日元，同比增长约9.2%。净利润为2.24万亿日元，同比增长约26.1%，主要得益于混合动力汽车需求强劲、有利的汇率变化和成本改善。鉴于上半财年盈利表现，丰田将全年营业利润 预测 上调至3.9万亿日元，较此前预测增加5,000亿日元，增幅约15%。\n本田汽车11月5日在巴西马瑙斯举行摩托车生产50周年纪念活动，并宣布了新一轮投资计划。2026至2030年，该公司将向当地摩托车制造业务投入33亿雷亚尔（合6.02亿美元），用于扩建生产设施和提高 产能 ，年产能预计从2026年约160万辆提升至2029年的230万辆。\n梅赛德斯-奔驰集团董事会主席Ola Källenius在接受《经济时报》采访时表示，公司希望进一步利用印度供应商和技术合作伙伴服务全球业务，同时扩大当地制造、工程研发和采购布局。今年，奔驰宣布在印度追加投资20亿卢比，使累计投资达到320亿卢比。\nStellantis将菲亚特500的停产时间延长一周\nStellantis计划将目前在意大利北部都灵菲亚特500工厂的停产状态延长至下周。Stellantis发言人表示，自10月中旬开始的前两周停产是由于市场需求疲软所致。而本周及下一周的停产与电子元器件短缺有关，尤其是发动机控制单元所用的芯片。\n英国10月新车销量增长5.4%，纯电车型市场份额达到32%\n英国汽车制造商和贸易商协会（SMMT）公布的数据显示，10月英国新车注册量同比增长5.4%至152,730辆，连续第11个月实现增长。其中，纯电车型注册量同比大增32.7%至48,858辆，占据32%的市场份额，远高于去年同期的25.4%。\n超过十名欧洲议会议员敦促欧盟委员会评估比亚迪汽车是否构成安全威胁，以及是否应对其采取限制措施，例如将其排除在公共采购项目之外。牵头推动此事的法国欧洲议会议员Francois Kalfon表示，“允许来自第三国的联网汽车接入欧洲敏感基础设施，构成了不可接受的安全风险。”比亚迪则表示，无论是在云端还是车辆内部处理或存储的数据，均无法从中国远程访问，欧洲客户始终掌握自身数据的控制权。\n丰田成立Toyota Robotics，推动机器人业务商业化\n丰田宣布自2027年1月1日起成立新的公司级组织Toyota Robotics，将原本分散在集团内部的机器人相关技术、人才和业务职能集中管理，该组织由丰田首席生产官Shiga Takefumi负责。丰田希望依托其汽车制造、工程技术和生产现场经验，加快机器人在实际生产环境中的应用与商业化。\n中国监管部门已介入并叫停了日本科技巨头软银（SoftBank）对ABB在华机器人业务（ABB Robotics）的收购。ABB于11月5日证实，中国国家发展和改革委员会（NDRC）已禁止这笔价值53.7亿美元的交易。\nLyft计划年底前大幅扩充Waymo在纳什维尔的Robotaxi车队\nLyft表示，计划在2026年底前显著扩大Waymo在美国纳什维尔的Robotaxi车队规模，并预计很快开放机场接送服务。双方的合作已不再局限于出行订单撮合。Lyft旗下Flexdrive还负责当地Waymo车辆的维护、充电和清洁服务，形成了平台运营与车队管理相结合的商业模式。\n11月6日，马瑞利宣布Laurent Favre即日起正式出任公司首席执行官，接替结束临时首席执行官任期的Frederick “Fritz” Henderson。Laurent Favre将带领公司完成美国《破产法》第11章重组程序，并推动马瑞利进入下一阶段转型。\n11月4日，Arm公布2027财年第二季度（2026年7月1日至2026年9月30日）财报。该季度总营收达14.4亿美元，同比增长27%，创下公司历史同期营收新高，也是Arm连续第五个季度实现超过20%的营收增长。\n品牌 Fiat、Jeep、Opel、Ram、克莱斯勒、标致、欧宝、玛莎拉蒂、菲亚特、雪铁龙\n本文地址：http://auto.gasgoo.com/News/2019/05/300656465646I70107904C601.shtml\n本文地址：https://auto.gasgoo.com/news/202611/6I70477131C108.shtml\n联系邮箱：info@gasgoo.com 求职应聘：021-39197800-8035 简历投递：zhaopin@gasgoo.com 客服微信：gasgoo12 (豆豆)\n盖世汽车社区 盖世大学堂-公开课 英文资讯站 热门内容 数据报告 国际站 具身智能"
   },
   {
-   "title": "智己LS8纯电23.98万起，全系标配宁德电池+B&O音响",
-   "url": "http://news.cheshi.com/dujia/20261102/3426201.shtml",
+   "title": "九届全勤+三大板块：丰田在进博会讲述出了“中国故事”",
+   "url": "http://news.cheshi.com/dujia/20261106/3426220.shtml",
    "source": "网上车市",
    "lang": "zh",
    "hits": [
-    "智己",
-    "电池"
+    "丰田"
    ],
-   "score": 2,
-   "body": "今年4月，它先以增程版上市，权益价24.98万元起；11月5日，纯电版以23.98万元与25.98万元的价格补进同一区间，入门版比增程版低一万元。同一台车两套动力，价差一万元。配置表里最容易被忽略的是：两个版本电池都来自宁德时代，音响都是B&O。\n尺寸没有变化，车长 508 5毫米、宽2000毫米、高1807毫米，轴距3060毫米，定位中大型5座 SUV 。外观换成封闭前脸与贯穿式星环灯带，车顶布置激光雷达，轮圈可选20至22英寸。\n三电部分，93千瓦时磷酸铁锂版本CLTC续航684公里，103千瓦时单晶三元版本752公里。全域800伏平台最高支持396千瓦快充，官方称15分钟补能529公里；后置电机最大功率300千瓦、峰值扭矩500牛米，百公里电耗15.2千瓦时，零下20摄氏度电量保持率95%，兼容9成以上公共充电桩。\n全线控灵蜥底盘、全线控四轮转向全系标配，后轮双向转角24度，把转弯半径压到4.85米，转向比三档可调。\n智驾配520线激光雷达与英伟达Thor芯片，算力700TOPS，IM AD ZETA由智己与Momenta联合开发，以L4模型能力降维做L2辅助驾驶。座舱为27.1英寸5K中控屏、15.6英寸副驾屏与21.5英寸二排吸顶屏，8295P芯片；主副驾零重力座椅、主驾4D机械按摩、12.3升双开门冷暖冰箱、二排天然乳胶座椅也是标配，满载时后备厢可放15个20寸行李箱，另有168升前备厢。\n权益包括首任车主AI Token终身免费、电池包终身质保、IM AD全功能包5年免费，智己老车主增换购再减一万元。\n销量逆势大涨58% 门店持续扩容！智己用实力击碎谣言\n刘翔代言！智己LS8正式上市，售24.98万-29.98万元\n智己LS8预售25.98-30.98万元 4月16日上市\n智己LS8纯电23.98万起，全系标配宁德电池+B&O音响\n第8代宝马3系加长版实拍：2.0T动力更强，增重278斤\n深化开放合作，赋能未来出行 宝马集团携新世代成果亮相进博会\n在中国，为全球 福特中国连续九年赴约中国国际进口博览会\n6. 英菲尼迪QX60(进口) 参数配置 车型图片\n10. 奔驰GLC Coupe(进口) 参数配置 车型图片",
-   "image": "img/0050dd213d0bd3.jpg"
+   "score": 1,
+   "body": "（2026年11月5日，上海） 丰田 汽车 公司（以下简称\"丰田\"）以\"with China, for China 同行 · 共创\"为主题，正式亮相第九届中国国际进口博览会（以下简称\"进博会\"）。作为连续九届参展的\"全勤生\"，丰田在本次进博会围绕\"经典 车型 传承\"\"汽车文化共创\"\"本土化共生\"三大板块展开，构成了一套完整的品牌叙事体系：通过讲述丰田与中国同行60余年的发展脉络，向到场的每一位重要访客讲述着六十余年间丰田与中国一同发展的精彩篇章。\n在“经典车型传承”中，我们看到了丰田的来时路与造车匠心的历史厚度。在“汽车文化共创”中，丰田则用与用户共建，展现出了品牌汽车文化的温度。而在“本土化共生”中，丰田则让我们看到了，以 雷克萨斯 金山工厂、氢能与储能合作项目为支撑，丰田未来在华可持续发展的广度。\n因此，这一次的进博会，丰田既是通过\"历史记忆—当下共创—未来共生\"的完整逻辑，为我们讲述了一个与中国共同成长的长期故事。\n今年年中，商务部等9部门联合发布了完善传统经典车的相关管理新措施，旨在开展传统经典车的贸易流通及展览展示，并丰富使用场景，壮大汽车后市场的消费。一提到经典车型，作为JDM代表品牌的丰田可谓如数家珍，在本次进博会上带来了两款享誉世界的经典车型。\n自1966年诞生至今，丰田 卡罗拉 已走过整整60个春秋。从第一代到如今的第十二代，卡罗拉全球累计销量突破5700万辆，畅销全球150多个国家和地区，成为名副其实的\"世界之车\"。\n另一款展示的经典车型，则是丰田在中国市场的代表产品—— 皇冠 轿车，这也是中国用户最早期的豪华车记忆。此后，\"开不坏的丰田\"更是成为深入人心的品牌标签。\n时至今日，丰田的产品与技术已伴随中国用户走过了60余年，并得到了超过2356万中国用户的喜爱和选择。\n时至今日，丰田愈发重视中国市场和用户的需求，全球代表车型的换代开发，也会更加参照中国市场的标准。已于今年4月正式发售的 LEXUS 全 新一代ES 300h，即为研发初期便不断在中国进行调研，以中国用户的需求为标杆进行的产品规划，搭载了中国市场专属的各种丰富配置。同时，LEXUS全新一代ES的纯电版本也即将上市，敬请关注和期待。\n从享誉全球的传统经典车型，到全新电动化车型，丰田矢志不渝为客户\"制造更好的汽车\"，以全球统一标准构建产品体系，通过超高安全配置与严苛验证体系，持续保障产品的长期可靠性，方能创造出一款接一款的经典传世车型。\n如果说经典车型传承承载着丰田造车的历史厚度，那么\"汽车文化共创\"，则呈现了丰田与用户共建汽车文化的温度。\n丰田深知，真正的汽车文化与用车生活不是单向输出，而是与用户、伙伴共同成长、一同创造而来。丰田以TO YOU品牌 理念 为核心，以中国市场为创新源点，与亿万中国用户一起，共创更懂你的出行生活方式，让汽车文化在中国大地生根发芽、枝繁叶茂。\n丰田旗下高性能运动品牌 TOYOTA GAZOO Racing（以下简称\"GR\"）秉承\"以汽车运动为起点，制造更好的汽车\"的理念，满足硬核车迷发烧友们对极致驾驶乐趣的追求。\n本次展出的GR YARIS是GR品牌的代表车型之一，由MORIZO（丰田章男会长）亲自以车手身份深度参与研发。此外，在全球各大拉力赛事中频繁亮相赛场并屡创佳绩的拉力赛车GR Yaris Rally2也同台出展，为到场观众带来激情热血的现场感受。\n雷克萨斯LX OVERTRAIL 黑马藏金版于8月正式推出，官方指导价141万元。这款车型以\"骏马乘风·藏金于内\"为设计寓意，将东方克制美学与豪华越野基因完美融合。\"黑马藏金版\"外观以至臻黑为底色，搭配高级光感的哑光漆面保护膜，营造出刚劲而不失细腻的视觉效果。车身点缀以高质感金色装饰，于细节处彰显豪华格调。内室方面，LX车型则基于黑色搭配墨染雅致梣木饰板，营造出沉稳而富有质感的座舱氛围。专属的方向盘装饰徽章、舒享头枕套装、前排车门迎宾灯，以及智能电子香氛以及采用纳米颗粒抗菌科技的全车脚垫，每一处细节均以黑金元素贯穿，为用户带来沉浸式的尊崇体验。\n纯电动车型方面，bZ丰田纯电动专属系列旗下两款车型也经过与本土合作伙伴的共创，打造出了不同于量产车型的动态氛围感。其中 广汽丰田 铂智3X改装版是与华南理工大学展开深度合作进行全新设计的版本； 一汽丰田 bZ5则是进行了创新调色，更加突出了这款车型的动感造型。\n两款在中国本土研发的纯电车型，都是在丰田的中国首席工程师体制下，与中国现地优秀合作伙伴共同开发的车型，一经推出便受到了市场的高度好评。\n丰田在平行进口的海艾士车型基础上全面改装开发的适老化旅居车，打造出\"移动的家，安心旅程\"的移动出行方式。这款旅居车搭载分离式福祉升降座椅，可实现座椅与电动轮椅自由切换上下车；轻量化车身结构，节能环保，长途旅居更安心。举升顶标配自研式冲压全铝电动升顶系统，可拓展居住空间。\n同时，还配有24小时车内生命体征监测系统、AED除颤仪、异常一键报警等能够充分保证乘客生命安全的设备。如此齐全的安全设备，足以保证全家人远途出行的安全，也令家中的长者可以安心出游，与家人共享天伦之乐。\n从\"过去\"到\"现在\"，丰田的故事正进一步延展向\"未来\"。在\"本土化共生\"上，丰田已经为我们描绘出未来在华可持续发展的全新广度。\n在去年发布\"立全球 更中国\"全新本土化战略后，丰田于今年4月的北京车展上进一步明确以\"with China, for China\"作为行动指南，不断推动在华本土化事业的快速发展。其中，最受瞩目的当属雷克萨斯上海金山工厂的最新情况。\n自2025年2月正式官宣签约建厂之后，这座位于上海市金山区的丰田集团全球最先进工厂，同时也是雷克萨斯全球首座从零新建的专属工厂，便以领先世界的中国速度不断推进建设，最终仅花费了约一年半的时间便完成了主体车间的封顶。该工厂占地面积约113万平方米，初期年产能规划为10万辆，集纯电整车工厂和电池工厂于一体，汇聚丰田全球造车智慧，专注打造中国消费者最接纳、最喜爱的产品。\n在金山工厂设立初期，已明确将主打\"以人为本\"的人性化工厂，未来将率先导入最先进的生产技术，建设丰田全球最领先的工厂；同时，还将秉持\"Best in Town\"理念，打造洁净、零碳的生产环境，注重与周边居民、社区、环境的和谐共生。按照原定计划，该工厂将于2027年秋季正式投产，推出雷克萨斯在中国的首款国产纯电车型，这也代表着丰田在电动化、智能化领域技术的加速发展。\n氢燃料电池技术方面，丰田连续多届进博会上均有展出最新落地成果。丰田与合作伙伴共同开发的49t氢燃料电池牵引车，搭载的燃料电池系统额定功率达300kw，适用于重载干线物流，助力氢能高速及绿色物流的发展。\n分布式氢燃料电池发电机，单模块额定发电功率达110kw，可实现热电联供，综合能源利用率可达90%以上，适用于工商业园区，可助力分布式能源与零碳供能的发展。华丰燃料电池有限公司在华生产的燃料电池系统TL Power 150，超长耐久可使用3万小时，保障氢能重卡稳定的性能输出，可适应多种应用场景，实现多系统化。\n此外，丰田在进博会上展出了两款新型储能设备。第一款是工商业锂电池储能系统，它采用了丰田汽车的SWEEP电池控制技术，主要面向工厂、数据中心、充电站等使用场景",
+   "image": "img/615aa90e890770.jpg"
   },
   {
-   "title": "深蓝汽车10月全球交付达32602辆",
-   "url": "https://auto.sina.com.cn/news/2026-11-01/detail-inixeyiu4147208.shtml?oaid=00115&c=spr_auto_trackid_4d7d188c9b7a61c4",
-   "source": "新浪汽车·新车",
-   "lang": "zh",
+   "title": "Chinese EV Hits 312 MPH To Become The World's Fastest Production Car: Onboard Video",
+   "url": "https://www.motor1.com/news/814648/byd-yangwang-u9-xtreme-312-mph/",
+   "source": "Motor1",
+   "lang": "en",
+   "summary": "BYD's Yangwang U9 Xtreme reached 503.17 km/h on a public road in Abu Dhabi, beating its own record set in Germany last year.",
+   "imageSrc": "https://cdn.motor1.com/images/mgl/lE4xr6/s3/yangwang-u9-xtreme-sets-fastest-production-car-record.jpg",
    "hits": [
-    "深蓝",
-    "交付"
+    "byd",
+    "ev"
    ],
    "score": 2,
-   "body": "10月新能源成绩单陆续出炉， 深蓝汽车 再次稳居“3万+俱乐部”，单月全球交付达32602辆！\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方",
-   "image": "img/2e5be58b8a3aac.jpg"
+   "body": "BYD's Yangwang U9 Xtreme reached 503.17 km/h on a public road in Abu Dhabi, beating its own record set in Germany last year.",
+   "image": "img/bbe170fdb3ace5.jpg"
   },
   {
-   "title": "2027款领克08 EM-P正式上市 限时置换价15.98万元起",
-   "url": "https://news.yiche.com/info/114421486.html",
+   "title": "Chery Jaecoo J5 EV loses wheel in Jakarta, raising questions after Omoda 5 axle failures",
+   "url": "https://carnewschina.com/2026/11/06/chery-jaecoo-j5-ev-loses-wheel-in-jakarta-raising-questions-after-omoda-5-axle-failures/",
+   "source": "CarNewsChina",
+   "lang": "en",
+   "summary": "Jaecoo says a collision with roadside infrastructure caused its J5 EV's wheel to detach in Jakarta, weeks after an Omoda 5 recall in Malaysia. The post Chery Jaecoo J5 EV loses wheel in Jakarta, raising questions after Omoda 5 axle failures appeared first on CarNewsChina.com .",
+   "hits": [
+    "ev",
+    "recall"
+   ],
+   "score": 2,
+   "body": "Jaecoo says a collision with roadside infrastructure caused its J5 EV's wheel to detach in Jakarta, weeks after an Omoda 5 recall in Malaysia. The post Chery Jaecoo J5 EV loses wheel in Jakarta, raising questions after Omoda 5 axle failures appeared first on CarNewsChina.com ."
+  },
+  {
+   "title": "吉利星愿STAR Ace/STAR Chill正式上市 限时权益价8.88万元",
+   "url": "https://news.yiche.com/info/114448036.html",
    "source": "易车",
    "lang": "zh",
    "hits": [
-    "领克"
+    "吉利"
    ],
    "score": 1,
    "body": ""
   },
   {
-   "title": "特斯拉10月中国产电动车销量同比涨10%",
-   "url": "https://auto.gasgoo.com/news/202611/4I70476859C501.shtml",
-   "source": "盖世汽车",
+   "title": "仰望U9X极速突破500km/h，全球最快量产车易主",
+   "url": "https://www.tmtpost.com/8196742.html",
+   "source": "钛媒体",
    "lang": "zh",
    "hits": [
-    "特斯拉",
-    "销量"
+    "仰望"
    ],
-   "score": 2,
-   "body": "盖世汽车讯 11月3日，中国汽车流通协会乘用车市场信息联席分会公布的数据显示，特斯拉10月中国产电动车销量同比增速有所加快。\n数据显示，特斯拉上海工厂生产的Model 3与Model Y（含出口至欧洲、亚太地区及加拿大的车辆）10月交付量为67,829辆，同比增长10.3%；9月同比增幅为5%，本次也是其连续第12个月实现同比正增长；不过从环比来看，10月销量较9月下滑28.9%。\n今年10月份，特斯拉新车注册量在多个欧洲市场大幅走高，该区域销量回暖态势延续；特斯拉为韩国进口车销量冠军，今年前九个月，韩国市场占到上海产特斯拉出口总量的五分之一。\n特斯拉将本年度资本开支预期下调五分之一；其三季度自由现金流为正，超出投资者预期，原因是公司在人工智能与机器人业务上的投入远低于分析师预期。\n另外，特斯拉若与太空探索技术公司（SpaceX）开展大型合并计划，很可能面临太平洋两岸监管机构的审查，国家安全、数据与技术转移相关担忧将成为一大阻碍。\n本文地址：http://auto.gasgoo.com/News/2019/05/300656465646I70107904C601.shtml\n本文地址：https://auto.gasgoo.com/news/202611/4I70476859C501.shtml\n联系邮箱：info@gasgoo.com 求职应聘：021-39197800-8035 简历投递：zhaopin@gasgoo.com 客服微信：gasgoo12 (豆豆)\n盖世汽车社区 盖世大学堂-公开课 英文资讯站 热门内容 数据报告 国际站 具身智能"
+   "score": 1,
+   "body": "11月6日，仰望汽车宣布，旗下仰望U9 Xtreme（简称U9X）在阿联酋阿布扎比E11高速公路封闭测试路段，跑出了503.17km/h的最高时速。\n根据官方公布的信息，这一成绩已获得FIA国际汽联与吉尼斯世界纪录认证。\n这是继2025年9月在德国ATP测试场创造496.22km/h的纪录之后，仰望U9X再一次刷新全球量产车极速纪录。对于长期由布加迪等欧洲超跑品牌占据主导地位的高性能汽车市场而言，一辆来自中国的纯电超跑率先突破500km/h，具有相当鲜明的标志性意义。\n但比纪录本身更值得讨论的是，中国汽车工业为什么需要这样一辆车，以及这项突破究竟能够带来什么。\n从496.22km/h到503.17km/h，数字上只提高了不到7km/h，但对于已经接近物理极限的超级跑车而言，每一次提升都意味着更大的工程挑战。\n速度越高，空气阻力、轮胎离心力、电机转速以及热管理系统承受的压力都会显著增加。汽车在这种状态下能否维持稳定，一方面考验单纯的动力输出能力，另一方面考验的是整车工程体系。\n仰望U9X搭载四台最高转速达到30000rpm的电机，整车综合马力超过3000Ps，并采用全域1200V高压平台、30C赛道级刀片电池以及专门开发的高速轮胎。与此同时，易四方四电机独立驱动系统与云辇-X全主动车身控制系统协同工作，为车辆在极端速度下保持动态稳定提供技术支撑。\n这些技术组合揭示了一个变化：电动汽车的性能竞争，已经从早期关注零百加速，逐渐延伸到持续功率输出、整车控制、热管理和极端工况可靠性。\n过去，欧洲传统超跑品牌依靠长期积累的发动机、变速箱和空气动力学技术，构筑起较高的竞争壁垒。电动化则改变了这一竞争格局，电机控制、电池放电能力以及电子电气系统的重要性不断提升，也让中国车企拥有了参与顶级性能竞争的新机会。\n仰望U9X的成绩，至少证明中国车企已经具备在部分极限性能指标上与全球顶级超跑直接竞争的工程能力。\n不过，一项极速纪录并不意味着中国汽车品牌已经全面建立起高端市场的竞争优势。\n仰望U9X全球限量30台，其核心价值更多体现在技术验证和品牌形象建设，而非直接创造大规模销量。对于比亚迪而言，这样一款产品能够展示集团的技术上限，也为仰望品牌争取国际关注度提供了机会。\n过去，中国汽车品牌进入全球市场，主要依靠价格、配置、电动化和智能化建立竞争力。但在超豪华汽车市场，消费者购买的不只是性能参数，还有品牌历史、设计语言、驾驶体验、稀缺性以及长期积累的文化认同。\n一辆车可以凭借速度打破纪录，却很难仅靠一次纪录完成品牌价值的建立。\n同样需要关注的是，极限性能技术与普通消费者的实际需求之间，仍然存在距离。超过3000马力的动力输出和500km/h的极速，对于绝大多数用户而言没有直接使用价值。\n真正值得期待的，是这些极限测试积累的电驱控制、热管理、车身结构和材料技术，未来能否以合理成本进入更多量产车型，改善车辆的安全性、可靠性与驾驶体验。\n从这个角度看，U9X更像是中国汽车工业的一座技术试验场。它的价值不只在于证明一辆车能跑多快，还在于推动企业不断突破既有工程能力的边界。\n中国汽车产业过去几年在新能源汽车规模、供应链和技术迭代方面取得了明显进展，但规模优势与高端品牌影响力之间，仍然存在需要跨越的距离。\n503.17km/h已经让仰望进入全球超跑的纪录簿。接下来更重要的考验是，中国汽车品牌能否将这种技术突破，逐步转化为可持续的产品竞争力和全球品牌价值。 （本文首发于钛媒体APP，文｜花卷）\n根据《网络安全法》实名制要求，请绑定手机号后发表评论\n韩财政部召开半导体专家座谈会：AI需求未见萎缩，中长期增长依然有效\n美股开盘：三大指数涨跌不一，芯片、光通信板块反弹明显\n白宫经济顾问哈塞特：数据中心仍有很大发展空间，即使建设放缓美国经济仍可保持强劲增长\n中铝国际：拟签署约65.56亿元几内亚氧化铝项目EPC总承包合同\n郑栅洁主任主持召开民营企业座谈会，围绕抓好年内经济工作落实、研究明年政策举措听取意见建议\n美国10月非农就业人数增加16.5万人，远超市场预期\n阿联酋投资者集团将成OpenAI新一轮融资最大投资方，软银和Coatue拟各投资数亿美元\nAI股遭遇大跌后，Anthropic IPO估值预期降至1.2万亿至1.3万亿美元\n© 2026 TMTPost 京ICP备13040123号-1\n广播电视节目制作经营许可证：(京 ) 字第 33215号"
   },
   {
-   "title": "零跑汽车10月全球交付量达106127台",
-   "url": "https://auto.sina.com.cn/news/2026-11-01/detail-inixeyiz3170441.shtml",
+   "title": "奥迪创新技术中心开业：AUDI迈向AI定义汽车时代",
+   "url": "https://auto.sina.com.cn/news/2026-11-05/detail-inixtafs9346816.shtml",
    "source": "新浪汽车",
    "lang": "zh",
    "hits": [
-    "零跑",
-    "交付"
+    "奥迪"
    ],
-   "score": 2,
-   "body": "今日， 零跑汽车 正式公布最新交付数据：2026年10月，零跑汽车单月交付量达 106127台，保持强劲增长势头。截至目前，零跑汽车已实现连续四个月月销量突破10万台，品牌全球累计交付量正式突破190万台，并即将达成第200万台整车下线的全新里程碑。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方",
-   "image": "img/66f023d6476a46.jpg"
+   "score": 1,
+   "body": "11月5日， AUDI 品牌迎来两周年重要节点，奥迪与上汽集团联合打造的全新研发载体 —— 奥迪创新技术中心（AUDI Innovation and Technology Center，简称 AITC），在上海举办开业仪式。作为AUDI品牌在中国的核心研发创新枢纽，AITC将全面主导统筹AUDI品牌车型从整车概念定义到量产交付的端到端开发。此举不仅是奥迪深化在华双品牌战略的核心支柱，更标志着中德汽车合作范式正式从“为中国适配”迈向“在中国定义”的全新阶段。\n奥迪股份公司管理董事会主席高德诺（Gernot Döllner）表示：“中国既是奥迪的一个关键市场，也是全球汽车行业最具活力的创新高地之一。要在中国市场取得成功，我们的研发必须更加贴近客户需求，并迅速将新技术转化为极具吸引力的产品。我们与合作伙伴上汽集团携手打造的奥迪创新技术中心，正是为了全面强化这一核心能力，也是我们为持续提升在华长期竞争力所做出的战略投资。”\n作为奥迪在华双品牌战略的重要基石，AITC由奥迪股份公司与上汽集团共同组建，是专为AUDI品牌打造、具备整车开发与端到端主导统筹能力的研发实体，也是继AUDI品牌及首批两款车型 奥迪E5 Sportback (配置 |询价) 和 奥迪E7X (配置 |询价) 成功推出后，双方持续深化长期战略合作，共启中德产业合作新篇章。\n上汽集团总裁贾健旭表示：“汽车产业正加速向AI定义汽车演进，中国正走在这场变革的创新前沿。上汽集团将发挥领先的技术体系与产业生态优势，以奥迪创新技术中心为载体，让‘德系豪华’与‘中国智慧’同频共振，为用户带来智能豪华出行新体验。”\nAITC总经理由冯思远（Matthias Pfister）担任，单云伟担任副总经理，共同领导一支由约300名顶尖人才组成的团队，打造下一代AI驱动的豪华出行体验。\n赋能 AUDI DNA 研发路径，打造端到端创新枢纽\n长期以来，跨国车企在华研发多遵循“适配逻辑”：总部完成产品定义，中国团队本土化落地。AITC的成立标志着奥迪对这一模式进行了根本性重构，从“为中国适配”转向“在中国定义”。AITC全链路负责产品定义、整车开发，以及软件、人工智能与驾驶辅助系统的研发，并统筹持续的OTA升级，实现AUDI车型从整车概念定义到量产交付的完整闭环。\n奥迪·上汽战略合作CEO舒睿泽（Fred Schulze）表示：“AUDI品牌专为中国客户量身打造。依托全新的创新技术中心，我们更系统地将中国客户的期望转化为产品体验——从最初的整车概念定义，到软件与驾驶辅助系统的研发，以及产品全生命周期的OTA升级。只有将奥迪的卓越工程标准与本土研发实力及敏捷的决策机制深度融合，才能实现这一目标。”\n作为AUDI品牌专属的技术与研发实体，AITC将致力于原生技术创新的研发理念，赋予AUDI品牌产品独特的DNA，并依托三大核心支柱：其一“在中国定义”（Defined in China），将中国视为产品与技术定义的起点，工程目标直接源自中国用户场景；其二“原生智能”（Native Intelligence），让AI与智能技术从项目伊始便深度融入车辆架构与产品定义，实现软硬件并行开发；其三“先进工程技术”（Advanced Engineering），将奥迪百年积淀的品质标准与上汽集团在数字技术方面的优势以及中国本地创新的速度相结合，打造“在中国定义、联合开发”的模式，标志着从“适配主导的开发”向中国视角下的“产品定义与定制”的跨越。\nAITC的研发工作聚焦于驾驶辅助系统（ADAS）与AI驱动的智能座舱体验，为中国用户解锁多模态交互、智能体能力以及全新层级的个性化车内体验。在产品开发的过程中，AITC采用软硬件一体化并行开发模式，ADAS、电子电气架构（EEA）、智能座舱与整车系统从项目立项第一天起即并行开发。AI不再作为后置功能叠加，而是从最初便进入车辆的底层架构。\n以AUDI品牌与火山引擎（字节跳动旗下的云与AI服务平台）的合作为例，双方将依托火山引擎的豆包大模型能力，共同探索下一代智能座舱产品定义、AUDI OS软件架构及多模态交互设计，并积极推进“舱驾融合”（座舱与ADAS系统深度融合）。这一合作旨在将AI能力从单一的座舱交互，拓展至对整车智能与驾驶体验的协同赋能，专为中国用户打造沉浸式AI座舱体验，共同助力AUDI品牌成为代表“具身智能”水平的行业标杆AIDV（AI定义汽车）。\n构筑全新一代 AUDI 智能数字平台 ADP 2.0 技术基石，重塑人车交互\n在面向未来的技术创新与产品落地层面，AITC正全面推进第二代智能数字平台（ADP 2.0）的研发。该平台原生契合中国智能电动车需求，采用中央计算与区域控制器的电子电气架构，并在算力与AI深度集成上全面满足L3/L4级高阶驾驶辅助的扩展需求，将全新的智能基因注入未来的AUDI品牌车型之中。\n依托ADP 2.0智能数字平台强大的数字化与智能化架构，AITC致力于为中国用户重塑面向未来的新型人车交互关系。通过人工智能技术的深度赋能，未来的AUDI车型将具备长期记忆与主动推荐能力，实现高度个性化的定制体验；通过融合语音、视觉、触控与视线追踪的多模态交互方式，实现自然意图的精准理解；最终为用户打造全感官豪华体验，将情绪价值、场景化智能与人机互动深度融合，使汽车从传统的交通工具，进化为真正懂用户的智能出行伙伴。\n未来，AUDI品牌将继续稳步推进产品布局。自2028年起，基于ADP 2.0全新智能数字平台打造的四款全新车型将陆续投入中国市场。依托AITC的端到端研发赋能，AUDI品牌将以更敏捷的创新节奏与更贴合中国用户需求的定制化方案，将“纯粹奥迪体验”深植于每一款产品之中，持续为用户创造超越期待的豪华智能电动出行方式，以“美美与共”的理念，书写智能豪华出行的新篇章。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方",
+   "image": "img/db476ddcc8abe9.jpg"
   },
   {
-   "title": "海外收入占比据报达50%，Seedance争夺AI视频的商业入口 ｜出海参考",
-   "url": "https://www.tmtpost.com/8194483.html",
+   "title": "售价9.97万元 东风标致新408上市",
+   "url": "https://auto.sina.com.cn/newcar/2026-11-06/detail-inixuywy8845162.shtml?oaid=00111&c=spr_auto_trackid_4d7d188c9b7a61c4",
+   "source": "新浪汽车·新车",
+   "lang": "zh",
+   "hits": [
+    "东风"
+   ],
+   "score": 1,
+   "body": "11月6日， 东风标致 2027款408正式上市，360THP Pro车型售价9.97万元。\n本次2027款408全新推出两款外观车色，南法黄车色灵感取自普罗旺斯的明媚日光，漆面融入细腻金粉珠光，动感鲜活却不显轻浮，既能展现活力也能诠释元气，精准契合当下年轻用户的多元审美表达。梧桐绿车色灵感取自巴黎老城的梧桐林荫，清润舒缓氛围感十足，穿行城市之间自带松弛氛围感。\n动力上，2027款408搭载第四代360THP全铝双涡道涡轮增压发动机+原装进口爱信第三代6速手自一体变速箱，可以提供127kW的最大功率和255N·m的峰值扭矩。其中充沛的扭矩在十万级轿车中位列前茅，动力响应干脆利落，城市启停轻快平顺，提速超车随踩随有。新车还搭载同级唯一的无级可变气门升程（CVVL）技术，WLTC工况下百公里油耗低至6.1升，兼顾动力输出与燃油经济性。\n空间上，2027款408长宽高尺寸分别为4750*1820*1488mm，2730mm超长轴距提供宽敞的后排腿部空间，家人可以自在舒展腿脚。同级唯一1：1等比例车门，可实现同级最大的车门开启角度，抱孩子上下车不易碰头，老人上下车不用折腰。22处人性化车内储物空间，无论近郊露营、周末遛娃、短途出游，孩子的零食玩具、大人的随身物品、全家的行李背包皆能各得其所。\n此外，2027款408焕新升级多项智能配置，新车标配全新升级的Blue-i 4.0智能网联系统以及车规级芯片，支持AI语音，通勤路上开空调、长途自驾找服务区、周末带娃放儿歌，一句话统统搞定，开车不再手忙脚乱。标配的智能云车机支持200多款应用下载，生态更丰富、娱乐随心玩。\n新增的智能数字钥匙，可提前设置车内温度，无论冬夏进入车内时都能享受适宜的温度；停车场太大找不到车，手机一键寻车鸣笛少走冤枉路；还可以把钥匙临时分享给家人或朋友，告别等待的焦虑。同级合资主销级别唯一标配带透明底盘功能的360°全景高清倒车影像，一键看清底盘障碍物，新手泊车更从容。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方",
+   "image": "img/b990467caef001.jpg"
+  },
+  {
+   "title": "EVgo opens its first Tesla Superchargers, with hundreds more planned",
+   "url": "https://electrek.co/2026/11/06/evgo-opens-its-first-tesla-superchargers-with-hundreds-more-planned/",
+   "source": "Electrek",
+   "lang": "en",
+   "summary": "EVgo has opened its first Supercharger station, and it’s in a Chicago grocery store parking lot. The site has 12 fast-charging stalls with both NACS and CCS plugs, and it’s the first of hundreds of Tesla Supercharger stalls EVgo plans to add across the US. more…",
+   "imageSrc": "https://electrek.co/wp-content/uploads/sites/3/2026/11/EVGo-supercharger-site-Chicago.jpg?quality=82&#038;strip=all&#038;w=1600",
+   "hits": [
+    "tesla",
+    "charging",
+    "ev"
+   ],
+   "score": 3,
+   "body": "EVgo has opened its first Supercharger station, and it’s in a Chicago grocery store parking lot. The site has 12 fast-charging stalls with both NACS and CCS plugs, and it’s the first of hundreds of Tesla Supercharger stalls EVgo plans to add across the US. more…",
+   "image": "img/b33938f450759d.webp"
+  },
+  {
+   "title": "China's World-Beating Supercar Just Hit 312 MPH",
+   "url": "https://insideevs.com/news/814663/byd-yangwang-u9-ev-speed-record-500-kph-first/",
+   "source": "InsideEVs",
+   "lang": "en",
+   "summary": "BYD's Yangwang U9 Xtreme EV has broken its own speed record, cementing its status as the world's fastest production car.",
+   "imageSrc": "https://cdn.motor1.com/images/mgl/ko8mZn/s3/yangwang-u9-xtreme-sets-fastest-production-car-record.jpg",
+   "hits": [
+    "byd",
+    "ev"
+   ],
+   "score": 2,
+   "body": "BYD's Yangwang U9 Xtreme EV has broken its own speed record, cementing its status as the world's fastest production car.",
+   "image": "img/a5256235daa9e0.jpg"
+  },
+  {
+   "title": "Nissan to start NX7 pre-sales in China next week, another all-new model in tow",
+   "url": "https://cnevpost.com/2026/11/06/nissan-nx7-pre-sales-china-next-week/",
+   "source": "CnEVPost",
+   "lang": "en",
+   "summary": "Nissan plans to launch 5 more NEVs in China by summer 2027 to cover mainstream segments. For details, please visit CnEVPost (cnev.co).",
+   "imageSrc": "https://cnevpost.com/wp-content/uploads/2026/11/2026110601373282.jpg",
+   "hits": [
+    "gm",
+    "ev",
+    "sales"
+   ],
+   "score": 3,
+   "body": "Nissan plans to launch 5 more NEVs in China by summer 2027 to cover mainstream segments. For details, please visit CnEVPost (cnev.co).",
+   "image": "img/4ab67acd4b205a.jpg"
+  },
+  {
+   "title": "长城欧拉5GT和欧拉5运动款激光雷达版开启下订",
+   "url": "http://www.pcauto.com.cn/nation/5191/51912416.html?ad=28676",
+   "source": "太平洋汽车",
+   "lang": "zh",
+   "hits": [
+    "长城",
+    "激光雷达"
+   ],
+   "score": 2,
+   "body": "新车 行业 评测 导购 技术 改装 文化 Ai选车专家 图片 排行榜 工具 购车计算 车型对比 精彩推荐 极智+ 混动时代 太平洋号 购车 购车优惠 买车趣·最高领49999购车补贴 分期购 经销商 车市 商城 用车 社区 用车 酷养车 意见反馈 意见反馈 * 问题描述 0 / 300\n【太平洋汽车 新车频道 】 日前，长城欧拉5GT和欧拉5运动款（燃油版/混动版）激光雷达版正式开启下订。 欧拉 将包含激光雷达在内的全套高阶智驾能力，开放给了燃油版和混动版车型，让蓝牌车用户 也 次可以按需选装城市领航辅助驾驶能力。\n此次下订的激光雷达版车型，核心升级集中在智驾硬件与功能层面。车辆配备1颗激光雷达，依托Coffee Pilot 3智驾平台与SEE端到端大模型，可实现城市NOA和高速NOA领航辅助驾驶，并进一步支持车位到车位领航辅助驾驶。\n泊车场景同样得到覆盖，融合泊车辅助、记忆泊车、手机遥控泊车辅助与循迹倒车均在功能清单之中。主动安全层面，自动紧急转向、加速踏板防误踩、后碰撞预警和开门预警等配置同步搭载。\n激光雷达版车型可享至高500万级辅助驾驶保障服务。用户在使用辅助驾驶功能期间发生事故可获得多重保障权益，有效期365天，辅助驾驶保障服务不能替代机动车交通事故责任强制保险与机动车商业险，需先进行交通事故责任强制保险、商业险赔付。\n此前，长城欧拉5GT/欧拉5运动款已于8月28日上市。欧拉5运动款旗下的燃油版价格区间为8.18‑10.58万元，混动版价格区间为10.18‑11.58万元；纯电版为12.18万‑13.58万元，整个车系的限时焕新价为7.18-12.58万元。\n欧拉5 GT的燃油版为9.98 万‑11.38万元；混动版为10.98‑12.38万元起；纯电版为12.98‑14.38万元起，整个车系的限时焕新价8.98-13.38万元。\n长城欧拉5作为长城欧拉品牌的紧凑型轿车，本次上新的欧拉5运动款与长城欧拉5 GT双版本，在原有家用属性基础之上深度植入运动特质。长城欧拉5运动款主打都市潮流日常，偏向多元动力与时尚运动造型；长城欧拉5 GT深耕操控驾趣，面向追求驾驶乐趣的年轻群体。两款车型均基于归元平台打造，实现燃油、混动、纯电一车三动力布局。\n长城欧拉5运动款在普通版本基础上做运动化升级，外观采用自然运动美学设计，提供多款撞色以及纯色车漆，包含黑黄套色、灰黄套色、白黑套色、绿白套色、黑武士、沙洲米等多种配色，配备专属空气动力学运动套件、18 英寸风刃轮毂，运动能量组件提供烈焰红、闪电黄两套配色卡钳与大灯灯圈。\n内饰提供星夜闪电、晨曦破晓两套座舱主题，以闪电黄缝线、饰条做撞色点缀。配备经过中汽研认证的“舒适之星”A级座椅，支持通风、加热、座椅迎宾与记忆功能。车内搭载 15.6英寸2.5K悬浮中控大屏，拥有莱茵三重护眼认证，车机为Coffee OS 3智慧空间系统，硬件搭载4nm芯片、24+128G存储，交互流畅。\n动力是这款车型一大亮点，提供燃油、混动、纯电三种动力形式。纯电版搭载150kW（204 匹马力）蜂巢14合1电驱系统，峰值扭矩260N・m，配备58.3kWh二代短刀电池，CLTC续航最高550km；混动版搭载Hi2 第五代智能混动系统，综合最大功率166kW，峰值扭矩476N・m；燃油版使用1.5GDIT发动机匹配第三代湿式7速双离合变速器，这套动力总成拥有百万市场验证。\n同一车系同时覆盖燃油、混动、纯电，在紧凑型两厢轿车市场比较少见。不管用户看重燃油补能便捷、混动低油耗，还是纯电低廉用车成本，都可以在长城欧拉5运动款找到对应选择。底盘由前迈凯伦 GT 首席工程师团队参与调校，遵循“卡丁车装沙发”理念，兼顾操控质感与乘坐舒适。\n长城欧拉5 GT定位驾控取向运动车型，外观对标豪华轿跑俯冲美学，拥有更低趴的车身姿态，标配全套空气动力学GT套件，包含劈风前铲、运动侧裙、汲风尾部扩散器、掠风尾翼，限时可获掠风悬浮尾翼；\n配备19英寸龙卷风高光黑轮毂，GT能量组件以烈焰红点缀轮毂圈、刹车卡钳、大灯灯圈。车漆提供闪电黄、风暴黑、冰川灰三款选择。\n内饰提供竞技方格旗、竞技赛道两套撞色内饰，配备一体式运动座椅，侧翼加厚加高，仿麂皮面料提升摩擦系数，兼顾激烈驾驶包裹性与通风加热舒适功能。\n纯电版本独有红色扳机按键，一键激活超级运动模式，还配备V8模拟声浪，全动力版本支持弹射起步功能。\n动力层面同样提供纯电、混动、燃油三套动力。纯电版搭载150kW 电机，260N・m 扭矩，58.3kWh二代短刀电池，CLTC续航 550km，30%-80%快充仅需20分钟；\n燃油版搭载1.5T+7DCT成熟动力。底盘采用490mm超低重心（纯电），搭配高强度防倾杆、1.4‑1.5Hz运动悬架，抑制过弯侧倾。\nGT版本大量空气动力学部件并非装饰件，时速180km可输出可观下压力，有效提升高速行驶稳定性。（文：太平洋汽车 彭浚哲）\n新车上市 最新文章 成都车展 宏光MINI EV 普拉多 欧拉黑猫 途达 起亚嘉华 玛奇朵 皇冠陆放 奔驰C级 哈弗神兽 坦克600 奥迪Q5 思域 卡罗拉双擎E+ 轩逸 太平洋汽车网app 新能源车\n欧拉新车： 长城欧拉5GT纯电版 长城欧拉5GT燃油版 长城欧拉5运动款纯电版\n欧拉热门车型： 长城欧拉5GT纯电版 2026款 550km Max版 长城欧拉5GT纯电版 2026款 550km 激光雷达版\n欧拉城市4S店： 广州 北京 深圳 武汉 成都 上海 天津 杭州 青岛 重庆\n举报邮箱：shenhezhiban@pconline.com.cn",
+   "image": "img/f8623b609ff928.png"
+  },
+  {
+   "title": "发布全新智能座舱等 NIO IN 2026蔚来创新科技日将于11月25日开幕",
+   "url": "https://www.autohome.com.cn/news/202611/1318171.html#pvareaid=102624",
+   "source": "汽车之家",
+   "lang": "zh",
+   "hits": [
+    "蔚来",
+    "nio"
+   ],
+   "score": 2,
+   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 国产新车 正文 发布全新智能座舱等 NIO IN 2026蔚来创新科技日将于11月25日开幕 之家原创车闻 原创 · 0 浏览 · 2026-11-05 09:49 · 北京 关注 [汽车之家 资讯 ] 11月4日，我们从蔚来官方了解到，NIO IN 2026蔚来创新科技日将于11月25日在广州举行。届时，官方会针对发布AI原生组织方面的思考与实践，以及AI驱动的全新智能座舱、智能辅助驾驶产品。\n就在今日，蔚来官方公布，其换电累计完成1.3亿次，日均换电单量突破11万次，全国布局4236座换电站。与此同时，蔚来在月初公布其10月份交付新车34246台。分品牌来看，蔚来品牌10月交付18125台，乐道品牌交付8383台，firefly萤火虫品牌交付7738台；2026年1-10月蔚来公司累计交付334547台，同比上涨38.5%，截至目前，蔚来累计交付新车已达1332139台。\n除此之外，蔚来旗下大型SUV—— 蔚来ES8 ( 参数 | 询价 )特别版将在11月27日开幕的2026广州车展上完成上市。简单了解，蔚来ES8共有5款配置车型，提供五座、六座以及七座可选，整车购买售价区间为38.28-44.68万元，采用BaaS租电方案售价为27.48-33.88万元。外观方面，目前官方并未透露该特别版车型更多信息，预计主要在配色以及细节元素上进行区分。\n驾驶辅助方面，车辆依旧配备神玑NX9031芯片+Cedar AQUILA蔚来天鹰座超感系统，拥有31个高性能感知硬件，配合蔚来世界模型NWM，支持点到点全域领航辅助。\n内饰方面，该车采用环抱式座舱与Skyline数字天际线，15.6英寸中控屏内置SkyOS・天枢全域操作系统，并新增足球盛宴和日影时序主题。其他配置方面，其车内配备27个扬声器，8.1.4.2布局，功放额定功率2600W。尺寸方面，蔚来ES8五座版长宽高分别为5280/2010/1800mm，轴距为3130mm，五/六/七座版保持完全一致。\n动力方面，蔚来ES8五座版搭载全域900V高压架构与双电机智能四驱系统，前感应异步电机最大功率180kW、后永磁同步电机最大功率340kW、综合功率520kW，标配102kWh电池包，CLTC续航可达655km。同时新车还会配备双腔空悬+单阀外置CDC，可实现4D全域舒适领航并可通过AI能力持续成长。（文/汽车之家 周易）",
+   "image": "img/5e8ab7cdf336f9.jpg"
+  },
+  {
+   "title": "UK BEV registrations reach annual high with 32 per cent market share",
+   "url": "https://www.electrive.com/2026/11/05/uk-bev-registrations-reach-annual-high-with-32-per-cent-market-share/",
+   "source": "Electrive",
+   "lang": "en",
+   "summary": "Registrations of new battery-electric cars rose by 32.7 per cent year-on-year in October, reaching 48,858 units. That's according to the Society of Motor Manufacturers and Traders (SMMT), which said BEVs accounted for 32 per cent of the market - their highest share so far this year.",
+   "imageSrc": "https://www.electrive.com/media/2026/09/chery-flotte-import-hafen-hafen-teesport-uk-400x267.jpeg",
+   "hits": [
+    "battery",
+    "ev",
+    "market share"
+   ],
+   "score": 3,
+   "body": "Registrations of new battery-electric cars rose by 32.7 per cent year-on-year in October, reaching 48,858 units. That's according to the Society of Motor Manufacturers and Traders (SMMT), which said BEVs accounted for 32 per cent of the market - their highest share so far this year."
+  },
+  {
+   "title": "大众打假安全气囊召回",
+   "url": "https://auto.gasgoo.com/news/202611/6I70477068C109.shtml",
+   "source": "盖世汽车",
+   "lang": "zh",
+   "hits": [
+    "大众",
+    "召回"
+   ],
+   "score": 2,
+   "body": "11月5日夜间，大众汽车（中国）投资有限公司发布声明称，近日有不法分子冒用该公司及相关监管部门名义，向部分车主发送虚假召回短信，并通过非官方链接诱导车主提供个人信息、办理所谓召回手续。\n从网传短信及通知截图来看，相关信息声称部分大众车型涉及安全气囊隐患，要求车主限时完成召回登记，并以逾期取消质保服务、车主自行承担安全事故责任等说法催促操作。\n对此，大众汽车明确表示，上述短信及所附文件均非官方发布的召回通知，提醒车主切勿点击可疑链接、回复相关信息或提供个人及车辆信息。\n值得注意的是，11月4日，国家市场监督管理总局确实发布了大众汽车相关召回公告，涉及进口高尔夫、途威及国产途昂、奥迪Q3等车型，召回原因是转向机固定螺栓存在锈蚀断裂风险，与网传安全气囊召回短信并非同一事项。\n大众汽车提醒，车主可通过国家市场监督管理总局缺陷产品召回技术中心官网（www.samrdprc.org.cn），或大众旗下合资企业官方渠道核实车辆召回信息。\n本文地址：http://auto.gasgoo.com/News/2019/05/300656465646I70107904C601.shtml\n本文地址：https://auto.gasgoo.com/news/202611/6I70477068C109.shtml\n联系邮箱：info@gasgoo.com 求职应聘：021-39197800-8035 简历投递：zhaopin@gasgoo.com 客服微信：gasgoo12 (豆豆)\n盖世汽车社区 盖世大学堂-公开课 英文资讯站 热门内容 数据报告 国际站 具身智能"
+  },
+  {
+   "title": "法拉利：全球净利润大增13% 唯独大中华销量跌42%",
+   "url": "http://news.cheshi.com/dujia/20261106/3426221.shtml",
+   "source": "网上车市",
+   "lang": "zh",
+   "hits": [
+    "销量"
+   ],
+   "score": 1,
+   "body": "网新社研究所： 法拉利 近日发布了今年三季度财报，一句话概括就是“车卖得少了，但反而赚而更多了”——三季度法拉利卖出了3,368台车，同比少了33台，但收入和利润却全线上涨，净利润4.31亿欧元（同比增长13%）超出市场预期，公司也在业绩发布后，顺势上调全年业绩指引。唯一的短板在中国市场：大 中华 区在三季度只卖出143台，销量比去年下滑了42%，是法拉利三季度，全球唯一销量下降的市场。\n今年三季度，法拉利实现营业收入18.96亿欧元，同比增长7.4%；经营利润率高达39.7%，相当于每收入100欧元就有近40欧元变成核心利润。秘诀在于\"卖得更贵\"：售价360万欧元的限量版超跑F80拉高了 车型 结构，个性化定制收入占比超21%创同期新高；此外，截止今年11月初，法拉利F1车队暂居积分榜第二位，表现强势，也带动赞助收入上涨。\n需求端依然火爆。 订单已排到2028年；首款纯电动车Luce还没交付，2027年配额就被订光，其0号底盘拍出4,000万美元天价。公司顺势把全年营收指引上调至约76.5亿欧元，调整后EBITDA不低于30亿欧元。\n但另一方面，法拉利也面临销量方面的压力。新车销量在持续收缩：前9个月全球共销售10,170台，同比减少318台。靠提价和定制撑利润眼下好用，但销量增长的失速，终究是隐忧。\n重点说说中国市场。今年三季度，法拉利在大中华区（中国内地及港澳台）仅卖出了143台，较上年同期248台近乎腰斩，是当季全球唯一负增长的区域；前9个月累计交付583台，同比下滑23%。\n同一时期，法拉利在欧洲中东非洲区销售了1,487台（+38台）、美洲区1,050台（+5台）、亚太其他地区688台（+29台），冷暖对比鲜明。不过中国区的收缩并未拖垮整体业绩——法拉利的打法本就不追求销量规模。\n资本市场方面，财报发布当日，法拉利股价一度上涨4.7%至375欧元，过去一年累计上涨约13%，市值约734亿欧元。中金公司上调法拉利目标价至490美元，维持“跑赢行业”评级，看好法拉利产品需求在未来将保持强劲。\n免责申明： 本文内容来自“车市号”入住作者，内容出于传递更多信息，并不意味网上车市及智电出行，赞同其观点或证实其内容的真实性！网上车市及智电出行不承担任何法律责任。\n503.17km/h！仰望U9 Xtreme再破全球汽车极速纪录\n宾利揭晓MULLINER中国专属定制系列车型，Supersports迎中国首秀\n比亚迪：仰望U9X极速超503km/h 地表最快量产车！\n法拉利：全球净利润大增13% 唯独大中华销量跌42%",
+   "image": "img/2bf1ad4c659cd6.jpg"
+  },
+  {
+   "title": "Elon Musk: Tesla Cybertruck Is 'Winding Down Production' Next Year",
+   "url": "https://www.motor1.com/news/814629/tesla-cybertruck-production-decrease-2027/",
+   "source": "Motor1",
+   "lang": "en",
+   "summary": "It's unclear whether production will shift to another factory or Tesla is preparing to retire its wacky truck altogether.",
+   "imageSrc": "https://cdn.motor1.com/images/mgl/AkQbJP/s3/tesla-cybertruck.jpg",
+   "hits": [
+    "tesla",
+    "factory"
+   ],
+   "score": 2,
+   "body": "It's unclear whether production will shift to another factory or Tesla is preparing to retire its wacky truck altogether.",
+   "image": "img/bbb3f6cb54aa1d.jpg"
+  },
+  {
+   "title": "IM Motors launches LS8 BEV SUV with steer-by-wire chassis in China, starting at 35,800 USD",
+   "url": "https://carnewschina.com/2026/11/06/im-motors-launches-ls8-bev-suv-with-steer-by-wire-chassis-in-china-starting-at-35800-usd/",
+   "source": "CarNewsChina",
+   "lang": "en",
+   "summary": "SAIC‘s IM Motors officially launched the pure electric LS8 Neo on November 5, 2026. Built on an 800V high-voltage platform, this mid-to-large-sized SUV joins the existing range-extended lineup, offering consumers two distinct trim levels. Pricing The LS8 NEO pure electric version is available in two configurations, with pricing as follows: Trim level Official price (yuan) […] The post IM Motors la",
+   "hits": [
+    "eu",
+    "ev"
+   ],
+   "score": 2,
+   "body": "SAIC‘s IM Motors officially launched the pure electric LS8 Neo on November 5, 2026. Built on an 800V high-voltage platform, this mid-to-large-sized SUV joins the existing range-extended lineup, offering consumers two distinct trim levels. Pricing The LS8 NEO pure electric version is available in two configurations, with pricing as follows: Trim level Official price (yuan) […] The post IM Motors la"
+  },
+  {
+   "title": "大湾区AI创新出海模式：香港金融搭桥，广深技术铺路",
+   "url": "https://www.tmtpost.com/8196261.html",
    "source": "钛媒体",
    "lang": "zh",
    "hits": [
     "出海"
    ],
    "score": 1,
-   "body": "11月3日，据媒体报道，字节跳动旗下视频生成模型Seedance的海外收入占比已达到50%；接近火山引擎的人士透露，过去半年，其海外收入增长近5倍。\n报道同时援引知情人士称，按照Token消耗与收入贡献计算，腾讯位列Seedance中国区客户前三，B站进入前十。\n在此之前，Seedance刚完成一次面向专业制作场景的升级。10月23日，火山引擎发布Seedance 2.5 4K，重点提升人物表情、细微动作及画面细节，并提供先生成低分辨率样片、再制作4K正片的工作方式。该版本面向部分企业客户试用。\n无论是专业制作场景升级还是海外收入提升，Seedance试图回答的是同一个问题：当AI视频逐渐走出技术演示，谁能让用户持续为它付费？这也是所有视频生成模型共同面对的问题。\n视频生成模型的客户，既有直接制作内容的创作者，也有掌握内容预算的企业，以及连接下游用户的软件平台。客户类型不同，对产品的要求和付费方式也有所区别。\n广告是其中一个需求明确的场景。美国互动广告局IAB在2025年发布的调查显示，已有约一半受访广告主使用生成式AI制作视频广告，86%的受访买方已经使用或计划使用相关技术。受访买方当时预计，到2026年，生成式AI创意将占其广告创意的40%。这一比例属于调查预期，并非已经实现的结果。\n与此同时，视频广告预算持续向数字渠道迁移。IAB在2025年报告中预计，数字视频当年将占美国电视及视频广告支出的近60%，而2020年这一比例为29%。这反映的是广告预算结构变化，不能直接等同于AI视频市场规模，但为视频创作工具提供了商业空间。\n对Seedance等模型而言，机会在于进入企业的内容预算与生产流程。以品牌营销为例，同一款商品面向不同市场，往往需要调整语言、人物、场景和画幅。模型如果能够保留产品信息与品牌要求，同时减少重复制作，就有机会成为持续采购的工具。\n这种需求也在影响产品迭代。根据Seed团队7月31日的官方介绍，Seedance 2.5支持单次生成最长30秒音视频，并可通过多轮延长继续生成；单次最多可输入30张图片、10段视频和10段音频作为参考，同时提供按时间戳定向编辑的能力。\n相比单纯延长视频，参考与编辑能力更直接关系到交付效率。广告制作要求商品外观稳定，影视创作则需要人物、场景与镜头衔接保持连贯。如果每次修改都要重新生成整个片段，前期节省的时间可能被后续返工抵消。\n10月推出的4K版本进一步指向专业制作。其Draft样片模式允许用户先用480P画面验证分镜和镜头，再生成4K正片；10-bit色深及参考素材画质保持能力，则服务于更高要求的画面交付。\n从这些更新看，Seedance正尝试覆盖更多制作环节。进入专业化制作流程是Seedance商业化的重要环节，但能否降低完制作成本，仍需结合生成成功率、修改次数和人工后期投入判断。 对用户来说，最终需要的是可交付的素材，而不只是一次效果突出的生成。\nSeedance面对的竞争，既包括快手旗下已披露季度收入的可灵，也包括MiniMax旗下持续拓展视频生成与自动化创作能力的海螺。三者都在尝试将模型能力转化为持续付费。\n可灵提供了一个较清晰的商业化参照。快手官方业绩显示，2026年第一季度可灵AI收入超过6.5亿元，同比增长逾300%；第二季度收入超过8.5亿元，同比增长逾200%。连续两个季度的收入披露表明，视频生成已为可灵带来可量化的业务收入。\n海螺背后的MiniMax，则展示了应用与开放平台并行的模式。MiniMax披露，2026年上半年总收入为1.166亿美元，其中开放平台及其他AI企业服务收入为7390万美元，占比63.4%；AI原生产品收入为4260万美元。公司称，海螺及其他AI原生产品的持续商业化推动了产品收入增长，但更为海螺视频业务收入还没有更具体的拆分。\n海外厂商则更多围绕完整创作工具组织产品。Runway将视频生成、图像、音频及编辑能力放在同一平台，其Gen-4.5官方文档列出的能力包括文生视频与图生视频。Google则通过Flow提供由Veo等模型支持的创作功能，包括参考素材生成、首尾帧控制及视频延长\nSeedance面对的竞争，已经同时发生在模型、工具和客户服务三个层面。各家都在争取让模型成为客户经常使用的生产工具。这些路径各有侧重：可灵已通过季度收入展示付费规模，MiniMax同时经营应用与企业服务，Runway和Google则围绕创作流程组织工具。\n对Seedance而言，只有当用户能够把Seedance稳定地纳入制作预算，其商业化增长才有更可持续的基础。\n9月27日，火山引擎在平遥国际电影展期间推出Seedance影视合作计划，面向全球专业影视项目提供Token补贴、宣发资源及技术工具支持，单项目激励最高可达100万元人民币。\n项目扶持有助于降低制作方的尝试成本，也能让模型在真实制作过程中暴露问题。但补贴项目与长期商业采购之间，还需要经过交付验证。\n对于海外业务，这种验证还包括素材授权、人物肖像、客户数据处理及不同地区的使用条件。模型可以提供生成能力，用户仍需确认产出能否满足项目和商业使用要求。\n从现有公开信息看，Seedance已开始同时争取大众创作者、开发者与专业制作客户。未来收入绝对规模、客户续费与复购、生成失败和返工比例，以及每条可交付视频的完整成本，才是衡量Seedance、可灵、海螺等视频生成模型商业化结果最重要的标准。（本文首发钛媒体APP 作者：Lily 编辑：杨秀娟）\n根据《网络安全法》实名制要求，请绑定手机号后发表评论\n费城半导体指数跌幅扩大至6.5%，报9651.69点\n美股半导体板块全线大跌，费城半导体指数跌5.68%\n美股存储板块持续遭遇抛售，费城半导体指数跌5.82%\n现货钯金延续上涨，最新上涨5%至每盎司1055.23美元\n何立峰在北京调研时指出 强化科技创新与产业创新深度融合 推动经济持续向新向优向好发展\n美国上周首次申领失业救济人数为18.9万人，预估为19.6万人，前值为19.4万人\n晶合集成：拟与合肥建投、合肥勤合对晶奕集成增资91亿元\n© 2026 TMTPost 京ICP备13040123号-1\n广播电视节目制作经营许可证：(京 ) 字第 33215号"
+   "body": "过去提及企业出海，多以制造和产品输出为主，现如今已经演变为技术设施服务与成熟金融体系的“系统化”出海，但企业在AI技术落地与全球商业化过程中，普遍面临合规摩擦、数据阻隔与资金管理等瓶颈。\n11月6日，中国香港特别行政区政府主办的2026年香港金融科技周落幕，在期间举行的一场关于大湾区AI创新的论坛上，来自国际金融机构与深圳企业级AI服务领域的嘉宾，一起立足粤港澳大湾区这一中企迈向全球的“出海口”，重点讨论了技术狂飙与全球合规背景下，企业如何借助大湾区的“金融+AI技术”协同效应，真正走向世界舞台。\n\"早上还在广州跟客户的内地团队讨论方案，下午就出现在香港分支机构做应用交付和AI训练\"——这样的工作节奏，是九科信息技术（深圳）有限公司合伙人兼产品VP傅恺的常态。\n粤港澳这条走廊串联起的，不仅是物理距离，更是两种制度功能的咬合：香港提供合规签约、数据基础设施与资金通道，深圳及内地城市供给技术交付与工程人才。\n像这种\"港签港建、深产深交付\"的模式，正在被大型机构系统化复制。\n刘华在 渣打集团 科技部负责公共云服务工程交付，他重点提及了大湾区丰富的人才供给，涵盖AI、云计算及银行专业领域。像渣打集团在广州设立的能力中心，聚焦跨境银行业务与创新技术。该中心设立不到一年时间，就组建起了一支服务全集团的AI平台团队，并迅速成为全球团队的核心力量——\"业务专家在香港，技术人才在广州\"的协作形态，成为渣打集团提供“金融+技术”交付的高效模式。\n正如汇丰集团中国AI生态合作与创新管理负责人宁泽宇所言，大湾区最大的价值在于“连结世界”。深圳的硬科技研发、产业链优势与香港的国际资本、普通法体系及全球跨境资金中转站功能相互交织，让企业能够在区域内高效配置资源。 在他看来，大湾区凭借独特的地理优势与制度叠加，为企业出海构筑着底座。\n如果说大湾区内部的高效协同是理想面，那么跨越国境时的规则摩擦则是现实面。\n在为很多大型国企出海提供技术产品服务的过程中，傅恺发现，企业往往以为国内方案成熟就能直接搬到海外，结果在数据流动上却被多套规则\"共同否定\"。\n\"即使同集团内部，数据跨境流动也需要各级子公司授权、详细说明用途——这不是总部能说了算的事。\"傅恺强调，无论是数据还是AI智能体，跨境语境下的第一课都是身份与边界的确认，既需要重新规划数据流动的“管线”，更要确保符合多国监管要求，保障最终的业务落地效果。\n而来自国际金融体系的两位人士，则一致提醒企业拿到海外订单或在香港开立银行账户，并不等于真正实现了全球化。真正的全球化经营需要具备跨国的交付、客户售后支持、以及全球化资金调度与合规管理的能力。\n刘华给出的关键词是\"平台化\"——渣打集团搭建了一个统一的AI平台，把各国家和地区通用的安全合规要求作为\"最大公约数\"前置嵌入，让每个AI应用在上线时即完成合规审查；对数据不出境的市场（如内地），则搭建独立平台。\n宁泽宇则补充了金融供给端的另一面：AI初创普遍\"轻资产、快迭代、短期不盈利\"，传统银行看营收、看抵押物的风控模型失效了。而汇丰集团的答案是用新物种服务新物种——2023年，汇丰以收购硅谷银行英国分行为基础推出\"汇丰科创金融\"，专门服务已完成A轮融资、增长良好但尚未盈利的高增长科创企业。该品牌已为科创企业提供15亿美元信贷资金支持。\n需要注意的是，当前越来越多人工智能科技企业推进着全球化，当它们站在AI与金融的交汇点上，三位论坛圆桌嘉宾一致认为，企业要加速走向智能体（Agent）时代。\n企业出海面临的一大痛点是海外多币种账户与海量银行对账的繁琐。傅恺举例说到，某客户拥有超过4000个海外银行账户，过去完全依赖大量人力登录网银进行对账和资金查询。他给出了一个未来的理想状态——银行系统从“供人使用”转向“可被智能体使用”。\n换言之，未来的金融体系是否能让AI在受控权限内直接获取账户数据、办理业务，为企业管理海外账户的对账、汇兑与现金流预测等。\n“让资金像水电一样被灵活调用。”在宁泽宇看来，真正的全球化不是企业\"使用\"银行系统来满足资金需求，而是银行的产品与能力成为企业经营的一部分。他同时给出一个冷静的提醒：企业应避免过早兴奋，不是接到海外订单、在香港开了收款账户就等于实现了全球化——全球化经营能力还包括本地交付、售后、全球资金调度。\n据悉，渣打集团与汇丰集团都在不同程度地将算力、模型以及各国的AI安全、合规要求封装为“最大公约数”，并在智能体平台上引入可观测性机制，确保提供给出海企业的AI决策是透明与可控的。\n傅恺觉得，不只是在企业级AI服务一线的九科信息，包括金融体系可以协同为出海的企业们打造一个\"私库智能体\"，对于业务已遍布全球、人力却不足十人的公司，让其拥有一个真正掌握企业业务数据与各银行账户头寸的智能体，可以替代过去数百人的资金管理团队，实现全球购汇、汇损对冲与现金调拨。\n已经出海或正在绸缪中的企业，如何稳稳站在粤港澳大湾区这个跳板上，论坛圆桌给出的共识是：在守好文化规则、合规底线的基础上，善用大湾区“科技+金融”的超级协同网络，在金融资本搭台，AI技术与智能体助力下，直接跃向更广阔的全球化市场。\n根据《网络安全法》实名制要求，请绑定手机号后发表评论\n韩财政部召开半导体专家座谈会：AI需求未见萎缩，中长期增长依然有效\n美股开盘：三大指数涨跌不一，芯片、光通信板块反弹明显\n白宫经济顾问哈塞特：数据中心仍有很大发展空间，即使建设放缓美国经济仍可保持强劲增长\n中铝国际：拟签署约65.56亿元几内亚氧化铝项目EPC总承包合同\n郑栅洁主任主持召开民营企业座谈会，围绕抓好年内经济工作落实、研究明年政策举措听取意见建议\n美国10月非农就业人数增加16.5万人，远超市场预期\n阿联酋投资者集团将成OpenAI新一轮融资最大投资方，软银和Coatue拟各投资数亿美元\nAI股遭遇大跌后，Anthropic IPO估值预期降至1.2万亿至1.3万亿美元\n© 2026 TMTPost 京ICP备13040123号-1\n广播电视节目制作经营许可证：(京 ) 字第 33215号"
   },
   {
-   "title": "TechCrunch Mobility: A new, bigger AV boom is here",
-   "url": "https://techcrunch.com/2026/11/01/techcrunch-mobility-a-new-bigger-av-boom-is-here/",
-   "source": "TechCrunch·交通",
-   "lang": "en",
-   "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-   "hits": [
-    "ev"
-   ],
-   "score": 1,
-   "body": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it."
-  },
-  {
-   "title": "Zeekr starts pre-sales for updated 7X in China at $34,220 with battery and comfort upgrades",
-   "url": "https://cnevpost.com/2026/11/05/zeekr-starts-pre-sales-2027-7x/",
-   "source": "CnEVPost",
-   "lang": "en",
-   "summary": "The pre-sales starting price is unchanged from the previous model, with a 900-volt architecture standard and a new 85-kWh battery option. For details, please visit CnEVPost (cnev.co).",
-   "imageSrc": "https://cnevpost.com/wp-content/uploads/2026/11/2026110502321015.jpg",
-   "hits": [
-    "battery",
-    "ev",
-    "sales"
-   ],
-   "score": 3,
-   "body": "The pre-sales starting price is unchanged from the previous model, with a 900-volt architecture standard and a new 85-kWh battery option. For details, please visit CnEVPost (cnev.co).",
-   "image": "img/ec33a85694744c.jpg"
-  },
-  {
-   "title": "BMW Creates One-Off M3 Tribute To A Motorsport Legend",
-   "url": "https://www.motor1.com/news/814517/bmw-m3-tribute-alex-zanardi/",
-   "source": "Motor1",
-   "lang": "en",
-   "summary": "This unique BMW M3 display car honors Alex Zanardi with M-inspired livery, pineapple graphics, and an E30 Sport Evolution–influenced interior.",
-   "imageSrc": "https://cdn.motor1.com/images/mgl/4076oz/s3/bmw-m3-tribute-to-alex-zanardi.jpg",
-   "hits": [
-    "bmw",
-    "ev"
-   ],
-   "score": 2,
-   "body": "This unique BMW M3 display car honors Alex Zanardi with M-inspired livery, pineapple graphics, and an E30 Sport Evolution–influenced interior.",
-   "image": "img/b77e0df6c48de8.jpg"
-  },
-  {
-   "title": "Chery iCaur V25 EREV set for November 19 launch with 600 mm flood clearance, pre-sales from 19,650 USD",
-   "url": "https://carnewschina.com/2026/11/04/chery-icaur-v25-erev-set-for-november-19-launch-with-pre-sales-from-19650-usd/",
-   "source": "CarNewsChina",
-   "lang": "en",
-   "summary": "Chery's iCaur V25 EREV SUV launches November 19, with pre-sales from 139,800 yuan (19,650 USD), up to 449 hp and 1,240 km CLTC combined range. The post Chery iCaur V25 EREV set for November 19 launch with 600 mm flood clearance, pre-sales from 19,650 USD appeared first on CarNewsChina.com .",
-   "hits": [
-    "ev",
-    "sales"
-   ],
-   "score": 2,
-   "body": "Chery's iCaur V25 EREV SUV launches November 19, with pre-sales from 139,800 yuan (19,650 USD), up to 449 hp and 1,240 km CLTC combined range. The post Chery iCaur V25 EREV set for November 19 launch with 600 mm flood clearance, pre-sales from 19,650 USD appeared first on CarNewsChina.com ."
-  },
-  {
-   "title": "EU Parliament: Environment Committee votes to relax CO2 rules",
-   "url": "https://www.electrive.com/2026/11/05/eu-parliament-environment-committee-votes-to-relax-co2-rules/",
-   "source": "Electrive",
-   "lang": "en",
-   "summary": "Following the Industry and Transport Committee, the Environment Committee has now also voted in favour of relaxing the combustion engine phase-out. The European Parliament as a whole is expected to decide in December. The previous votes are considered an important indicator.",
-   "imageSrc": "https://www.electrive.com/media/2026/11/cupra-auspuff-verbrenner-co2-400x267.jpg",
-   "hits": [
-    "eu",
-    "europe",
-    "ev"
-   ],
-   "score": 3,
-   "body": "Following the Industry and Transport Committee, the Environment Committee has now also voted in favour of relaxing the combustion engine phase-out. The European Parliament as a whole is expected to decide in December. The previous votes are considered an important indicator."
-  },
-  {
-   "title": "25万级充电快续航好的纯电SUV？五款车过三道硬线，岚图追光S全过",
-   "url": "https://www.pcauto.com.cn/news/5191/51911677.html",
-   "source": "太平洋汽车·新闻",
-   "lang": "zh",
-   "hits": [
-    "岚图"
-   ],
-   "score": 1,
-   "body": "新车 行业 评测 导购 技术 改装 文化 Ai选车专家 图片 排行榜 工具 购车计算 车型对比 精彩推荐 极智+ 混动时代 太平洋号 购车 购车优惠 买车趣·最高领49999购车补贴 分期购 经销商 车市 商城 用车 社区 用车 酷养车 意见反馈 意见反馈 * 问题描述 0 / 300\n25万预算，想买一台充电快、续航好的纯电SUV，到底怎么选？这个价位能买到的车型不少：岚图追光S、小米YU7、理想i6、极氪7X、宝马iX3，每款都有自己的卖点。参数表铺开十几项，续航、电池、补能、轴距、智驾权益各不相同，直接给一个\"综合评分\"没有可复算的底，权重怎么定都能被质疑。\n不如换个思路：先设三道硬线，把五款车放到同一把尺子上量。三道线分别是：CLTC续航700公里以上、20%-80%直流快充15分钟以内、轴距3000mm以上。三条线的共同点是都可以从官网参数直接读出，不需要任何换算，读者拿到这篇文章可以自己拿计算器复核一遍。\n700公里这条线来自25万级纯电SUV的实际分布。这个价位能买到的长续航版本，续航基本集中在650到760公里之间。700公里是一个门槛线——过了这条线，日常通勤一周一充基本没问题，偶尔跨城出行也不用太焦虑。\n15分钟这条线来自补能的分档。目前主流的快充水平是20分钟左右（20%-80%），而800V+5C的车型可以做到10-15分钟。15分钟是\"快充体验明显优于常规水平\"的分界线——跑高速服务区下来接杯水、上个厕所，回来电就补得差不多了，不用特意找地方吃饭消磨时间。\n3000mm轴距这条线来自空间体验的门槛。轴距3米是C级SUV的准入线，低于这个数，后排腿部空间会明显局促，家用场景下坐三个人会比较挤。\n五款车的长续航版本排下来：小米YU7长续航版835km、岚图追光S后驱Ultra 740km、理想i6四驱版710km、宝马iX3 40L 702km、极氪7X长续航版约780km（版本待核实）。\n五款车全部过线。最高和最低差了133公里，差距不算小，换算成北京到天津的单程（约120km），就是六趟和五趟半的差别。但说实话，日常用车很少有人把电用到极限，700公里和835公里的实际体验差距，没有数字看起来那么大。\n换成\"每万元续航\"（CLTC续航÷指导价）来算：小米YU7长续航版约32.9km/万元，岚图追光S约26.4km/万元，理想i6四驱版约26.3km/万元，极氪7X约28.9km/万元。前两台数字更高，说明电池给得更足。但也要注意，续航长不等于充电快，这是两件独立的事。\n这一道线拉开了差距。岚图追光S：5C超充电池，20%-80%约10分钟，15分钟补能577公里，过线。极氪7X：10%-80%约10分钟，折算到20%-80%大概也在12-13分钟左右，过线。小米YU7长续航版：10%-80%约21分钟，折算到20%-80%大概18-19分钟，差一点没过线。理想i6四驱版：官方补能数据待核，按5C超充的宣传估算大概在15分钟左右，勉强在线上。宝马iX3 40L：约21分钟，没过线。\n这一道线是\"充电快\"的核心分水岭。800V高压平台+5C倍率电池的车型，补能速度明显比400V平台快一个档次。日常通勤有家充桩的话，这个差别可能体会不深，但跑长途的时候，服务区充电多花10分钟还是少花10分钟，体感差别很大。\n岚图追光S：3000mm，刚好过线。小米YU7：3000mm，过线。理想i6：3000mm，过线。宝马iX3：3005mm，过线。极氪7X：2925mm，没过线。\n轴距差75mm是什么概念？大概就是后排腿部空间两指到三指的差距。日常坐一两个人可能感觉不明显，但满载五个人跑长途，后排中间乘客的舒适度会有差别。\n数一下：岚图追光S——续航过、补能过、轴距过，三道全过。小米YU7——续航过、补能差一点、轴距过，差一道线。理想i6——续航过、补能待核、轴距过，补能数据待确认。极氪7X——续航过、补能过、轴距没过，差一道线。宝马iX3——续航过、补能没过、轴距过，差一道线。\n这么一看，岚图追光S是五款车里三项全部达标的。它不是续航最长的（YU7长续航版更长），也不是轴距最大的（iX3略长一点），但每一项都在门槛线以上，没有明显短板。\n对于25万预算、想买一台充电快、续航好、空间也够用的纯电SUV用户来说，三道硬线全过的车型，就是最稳妥的选择。毕竟日常用车，谁也不想为某一项参数妥协另一项。岚图追光S在740公里续航、5C超充、3000mm轴距之间取得了比较均衡的组合，适合大多数家庭用户的需求。\n新车上市 最新文章 成都车展 宏光MINI EV 普拉多 欧拉黑猫 途达 起亚嘉华 玛奇朵 皇冠陆放 奔驰C级 哈弗神兽 坦克600 奥迪Q5 思域 卡罗拉双擎E+ 轩逸 太平洋汽车网app 新能源车\n举报邮箱：shenhezhiban@pconline.com.cn"
-  },
-  {
-   "title": "三方联手！宁德时代签约欧洲家用储能项目",
-   "url": "http://www.pcauto.com.cn/news/5191/51911144.html?ad=28676",
-   "source": "太平洋汽车",
-   "lang": "zh",
-   "hits": [
-    "宁德时代",
-    "欧洲"
-   ],
-   "score": 2,
-   "body": "新车 行业 评测 导购 技术 改装 文化 Ai选车专家 图片 排行榜 工具 购车计算 车型对比 精彩推荐 极智+ 混动时代 太平洋号 购车 购车优惠 买车趣·最高领49999购车补贴 分期购 经销商 车市 商城 用车 社区 用车 酷养车 意见反馈 意见反馈 * 问题描述 0 / 300\n【太平洋汽车 汽车动态 】近日，宁德时代正式对外公布，已经与英国最大能源企业章鱼能源（Octopus Energy）、新能安签署战略合作备忘录，三方将共同开发面向欧洲市场的智能家用储能整体解决方案，加速布局欧洲家庭能源赛道。本次合作也是继今年6月重卡换电项目之后，宁德时代与章鱼能源在家庭能源应用场景的再度延伸。\n三方明确划分各自业务边界，发挥各自领域的长板优势。宁德时代输出电池技术储备与供应链协同能力；新能安承担电芯、BMS电池管理系统以及整套储能系统的研发制造工作；章鱼能源发挥本土企业优势，输出欧洲本地终端销售渠道、动态电价算法以及虚拟电厂 VPP 接入服务。三方优先落地英国、法国、西班牙三大核心欧洲国家，后续再逐步向其他区域拓展。\n本次合作不局限于单纯的家用储能硬件产品。三方计划共同打造联合品牌家庭能源解决方案，以家用储能设备作为核心枢纽，打通屋顶光伏发电、家用智能充电、V2G车网互动、虚拟电厂调度等多项能力。家庭储能设备不再只是简单存电工具，还可以作为可调度的分布式电网节点，帮助普通家庭降低用电开支，同时增强欧洲本地电网的调节弹性与运行韧性。\n新车上市 最新文章 成都车展 宏光MINI EV 普拉多 欧拉黑猫 途达 起亚嘉华 玛奇朵 皇冠陆放 奔驰C级 哈弗神兽 坦克600 奥迪Q5 思域 卡罗拉双擎E+ 轩逸 太平洋汽车网app 新能源车\n举报邮箱：shenhezhiban@pconline.com.cn",
-   "image": "img/1f942e064d8541.png"
-  },
-  {
-   "title": "荣威家越06申报 插混/纯电皆有 提供半固态电池 主打10万级市场",
-   "url": "https://www.autohome.com.cn/news/202611/1318147.html#pvareaid=102624",
-   "source": "汽车之家",
-   "lang": "zh",
-   "hits": [
-    "电池",
-    "固态电池",
-    "插混"
-   ],
-   "score": 3,
-   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 国产新车 正文 荣威家越06申报 插混/纯电皆有 提供半固态电池 主打10万级市场 之家原创车闻 原创 · 0 浏览 · 2026-11-04 02:25 · 北京 关注 [汽车之家 资讯 ] 日前，荣威 家越06 ( 参数 | 询价 )在工信部完成申报，该车车长4815mm、轴距2825mm，本次申报涵盖插电式混合动力与纯电两种动力形式，纯电版本则提供三元锂电池和锰基锂离子电池（半固态电池）。更高级别的家越07已于10月23日上市，指导价12.78万-15.28万元，限时权益价11.98万-14.48万元，预计家越06将会落在10万元左右区间。\n家越06车头采用纯电化的处理方式，上沿是一条细长的贯穿式日间行车灯带。主灯组为分体布局，两侧各一组方形灯体嵌在黑色饰板内，位置比日行灯低一截。侧面为常规SUV比例，车顶线条平直，车门把手为半隐藏式。轮拱与下裙均为车身同色。申报信息显示它有四种轮圈造型，轮胎规格为225/60 R18与235/55 R19两种。\n车尾采用细长的贯穿式灯带，ROEWE字母标识横排在灯带内部。车顶延伸出后扰流板并集成高位制动灯，后风挡配有雨刷，插电式混动版会采用隐藏式排气。\n尺寸方面，新车长宽高为4815/1900/1695mm（1687mm），轴距2825mm，前轮距、后轮距均为1650mm，前悬936mm、后悬1054mm，接近角18度、离去角23度。和家越07相比，新车明显小一圈。\n新车提供四种样式轮圈、黑色车顶（A柱、侧围、行李架、后扰流板一并黑化）、翼子板饰条、外后视镜（车身色或黑色）等可选件。激光雷达、车头/车侧雷达、后摄像头等配置也会因为版本不同有所差异。也说明它和家越07一样，会提供不带激光雷达的版本来拉低门槛。\n动力方面，插混版搭载型号为15FHC的1.5L发动机，最大功率82kW，驱动电机最大功率175kW。配备磷酸铁锂电池，单体由时代上汽动力电池有限公司提供，总成由宁德伊控动力系统有限公司生产。\n家越06还申报了纯电版本，其中一款使用三元锂电池、电机最大功率235kW，另一款使用锰基锂离子电池、电芯来自苏州清陶动力科技，是不是很熟悉，它就是上汽一直在宣传的半固态电池，该版本搭载电机的最大功率为176kW。（文/汽车之家 陈浩）",
-   "image": "img/fca5af6d10fcb9.jpg"
-  },
-  {
-   "title": "Tesla Sold FSD To Koreans Who Still Can't Use It. Now It's Facing A Complaint",
-   "url": "https://insideevs.com/news/814404/tesla-fsd-south-korea-claims/",
-   "source": "InsideEVs",
-   "lang": "en",
-   "summary": "Data shows that 99% of Teslas imported into Korea last year can't activate Full Self-Driving, even if owners paid for the feature.",
-   "imageSrc": "https://cdn.motor1.com/images/mgl/zxJB6K/s3/tesla-fsd-europe-quiz-netherlands.jpg",
-   "hits": [
-    "tesla",
-    "ev",
-    "self-driving"
-   ],
-   "score": 3,
-   "body": "Data shows that 99% of Teslas imported into Korea last year can't activate Full Self-Driving, even if owners paid for the feature.",
-   "image": "img/cbe6204c7e28aa.jpg"
-  },
-  {
-   "title": "Aniioki A9 Pro Max review: Basically an electric motorcycle that you can pedal",
-   "url": "https://electrek.co/2026/11/05/aniioki-a9-pro-max-review-basically-an-electric-motorcycle-that-you-can-pedal/",
-   "source": "Electrek",
-   "lang": "en",
-   "summary": "There are electric bikes, there are electric motorcycles, and then there are machines like the Aniioki A9 Pro Max that plant a flag somewhere in the increasingly large no-man’s-land between the two. more…",
-   "imageSrc": "https://electrek.co/wp-content/uploads/sites/3/2026/11/annioki-a9-pro-max-e-bike-e-moto-header-1.jpg?quality=82&#038;strip=all&#038;w=1600",
-   "hits": [
-    "plant",
-    "ev"
-   ],
-   "score": 2,
-   "body": "There are electric bikes, there are electric motorcycles, and then there are machines like the Aniioki A9 Pro Max that plant a flag somewhere in the increasingly large no-man’s-land between the two. more…",
-   "image": "img/286fb6a4eb954c.webp"
-  },
-  {
-   "title": "7.68万元起，吉利银河星耀6 E-fuel，让家轿省钱有了新答案",
-   "url": "https://www.diandongbang.com/news/167950.html",
-   "source": "电动邦",
-   "lang": "zh",
-   "hits": [
-    "吉利"
-   ],
-   "score": 1,
-   "body": "11月3日，吉利把酝酿20余年的甲醇技术装进一款家轿。吉利银河星耀6 E-fuel以7.68万元的上市限时焕新价起售， 成为市面上少数能同时使用甲醇、汽油、电能的产品。\n比起账面参数，定价与背后的技术叙事更值得琢磨：一款新车如何讲清『省』的故事，又凭什么打动主流家庭用户。那么，我们就来聊聊新车的定价逻辑、技术底子与市场站位。\n价格是多数人最先关注的部分。 银河星耀6 E-fuel共三款版型 ：130km豪华版EF指导价8.68万元，230km尊贵版EF、旗舰版EF依次为9.68万元、10.68万元。 叠加限时权益后，焕新价分别落在7.68万元、8.68万元、9.68万元。\n活动期从11月3日持续到30日，正好卡在年末购车旺季。权益方面安排得也够齐整：换购用户不限品牌可享8000元置换补贴，新购用户另有2000元加醇补贴；金融方案至高5万元24期0息，首任非营运车主享三电终身质保，整车质保6年或15万公里。\n另附终身基础流量、3年娱乐流量和1301元充电桩抵扣券。细看之下，置换补贴不设品牌门槛，明显指向增换购人群；质保条款则照顾长期持有的心态。把最高1万元的让渡放进权益而非直接降价，操作更灵活，也让『焕新价』的含金量因人而异。\n价格非常诱人， 但在我看来，真正撑起产品底子的，是技术路线。\n银河星耀6 E-fuel的核心是吉利沉淀20余年的甲醇电混，『可醇、可电、可油』说起来简单，落在车上就是同一套动力系统兼容三种能源，同一加注口支持甲醇与汽油任意比例混合，补能方式多出不少选择。\n据悉， 吉利在甲醇路线上累计投入超百亿元、积累专利400余项，运营甲醇车型超6万台，累计行驶里程超250亿公里。 甲醇要量产上车，低温启动、材料腐蚀、标准与验证三关都得过，近-40℃冷启动、耐醇防腐材料、20余项国标行标都有对应解法。PHI预压高能点火技术攻克低温难题， 星睿AI云动力2.0则负责智能分配醇、电、油。\n由此可见，整条路线并非临时起意，而是从商用车、营运场景一步步跑出来的储备。 把 它移植到家用车上，等于给插混市场多摆了一条差异化路径。\n落到用车成本上，账算起来更直观。 银河星耀6 E-fuel纯电续航最高230km ，日常通勤一周一充； 馈电时百公里醇耗6.7L，每公里用醇成本约0.2元， 相比同级燃油车节省约六成，按十万公里计能省三万元上下。\n补能端， 满醇满电综合续航1250km，满油满电1880km，加醇3分钟就能完成 。冬季表现算得上加分项：近-40℃冷启动，官方称冬季续航不缩水，恰好切中北方用户对纯电续航衰减的顾虑。保养周期拉长到15000km，持有负担也轻一些。\n当然，成本故事成立的前提是加醇方便。官方资料也承认，甲醇体系仍处发展初期，便利度会随配套逐步改善。沈阳已启动总额4亿元、按购车价10%执行的甲醇乘用车补贴，算是一个信号。对通勤里程长、在意每公里花费的用户，账已经算得很明白。\n家轿的另一半是日常体验。 银河星耀6 E-fuel车长4806mm、轴距2756mm， 新车给出83.5%得房率、609L后备厢和27处储物空间，账面数据在家轿里算得上宽裕。Flyme Auto 2智能座舱配14.6英寸中控屏，棉花糖座椅带通风加热，家用够用也够舒服。\n安全方面配置给得比较全：高强钢占比71.6%的星甲笼式车身、全系6安全气囊、六横四纵油电保险舱，配合神盾电池安全系统，据悉，其多项测试标准高于新国标。\n甲醇本身的特性值得一提，美国能源部危险度评分中甲醇低于汽油，常温下不易挥发、闪点更高，储运相对省心。\n比较难得的是，银河星耀6 E-fuel并非一上市就押注家用市场。\n此前车型已在营运市场累计投放超6000台，其中东北三省超过5000台 ，覆盖网约车、出租车、公务用车，连续五个月位列东三省营运细分市场第一，数据来自交强险口径。\n营运司机对成本、加醇便利度、续航最敏感，跑得多自然算得清。某种程度上，营运车辆的反馈等于替家用用户提前做了一轮长测，司机群体对『省钱、方便、耐跑』的朴素要求，与家庭用户对使用成本的在意高度重合。 从营运市场积累口碑，再带验证过的产品走向C端，路径比喊口号稳当。\n放到A级家轿市场看，银河星耀6 E-fuel提供的是差异化答案：拼能源形式的灵活性。它未必适合所有人，但至少让『想省钱又不想在补能上妥协』的用户多了一个选择。\n『省』写进技术基因，230km纯电覆盖日常，馈电醇耗6.7L，每公里成本约两毛；『自由』来自可醇可电可油，3分钟补能、冬季续航不打折；『验证』靠20余年积累与超6000台营运车辆的实跑。\n当然，甲醇家轿走向普及仍要看配套：加醇网络的密度、燃料价格的稳定性、区域政策的跟进，都会影响实际体验。吉利用定价务实的A级车把甲醇电混带进家庭，至少让更多人愿意先试一试、再算一笔账。\n对行业而言，多一种能源路线总归是好事；对消费者而言，多一个选择，就是多一分从容。",
-   "image": "img/20f1a0a3f086ed.jpg"
-  },
-  {
-   "title": "奔驰E300L再改款：起售价降1.6万，搭全新AI智能座舱",
-   "url": "http://news.cheshi.com/dujia/20261102/3426204.shtml",
-   "source": "网上车市",
-   "lang": "zh",
-   "hits": [
-    "奔驰"
-   ],
-   "score": 1,
-   "body": "奔驰 官方宣布，2026年款E300L上市，全系3款配置，售价42.38万-50.98万元。起售价较改款前的43.98万元下调1.6万元，中配和顶配价格均与老款持平。3款 车型 同步更名，原时尚型、豪华型、尊贵型改为晖银版、鎏金版、星铂版。\n新车率先搭载奔驰中国研发团队首次主导、独立开发的AI智能座舱，虚拟助手接入豆包大模型，唤醒响应最快0.25秒，多音区交互识别准确率98%，支持声纹识别区分家庭成员、语音操作屏幕按钮和文字、开关第三方应用。界面引入数字孪生3D车模、可自定义的柔性界面与多任务小窗，系统支持季度性大版本OTA，后续将推广至更多燃油与纯电车型。\n与老款相比，变化集中在座舱底层。老款沿用第三代MBUX，界面与交互逻辑为全球统一版本，语音助手本地化程度有限，第三方应用生态相对封闭；新款将交互逻辑与视觉界面整体重做，菜单层级按中国用户习惯重新排布。\n动力与车身未动，仍为2.0T+48V轻混，最大功率190千瓦，峰值扭矩400牛・米，匹配9挡手自一体变速箱，轴距保持3094毫米。\n奔驰/宝马/奥迪集体官降！豪华C级车价格体系正重构\n奔驰36款新车计划曝光！首推小号G级车型，期待吗？\n坚守奔驰标准！2024梅赛德斯-奔驰服务技能大师赛总决赛圆满落幕\n奔驰新“专利”曝光！可自动识别飞溅物，E级以上车型将适配\n智己LS8纯电23.98万起，全系标配宁德电池+B&O音响\n第8代宝马3系加长版实拍：2.0T动力更强，增重278斤\n深化开放合作，赋能未来出行 宝马集团携新世代成果亮相进博会\n在中国，为全球 福特中国连续九年赴约中国国际进口博览会\n10. 奔驰A级AMG(进口) 参数配置 车型图片",
-   "image": "img/4ac4139d7909d4.webp"
-  },
-  {
-   "title": "售价23.98万起 智己LS8 NEO纯电上市",
-   "url": "https://auto.sina.com.cn/newcar/2026-11-05/detail-inixsvxq5551971.shtml?oaid=00004&c=spr_auto_trackid_f8944f41f240e3fc",
-   "source": "新浪汽车·新车",
-   "lang": "zh",
-   "hits": [
-    "智己"
-   ],
-   "score": 1,
-   "body": "11月5日， 智己汽车 “NEXT·2028”战略首款全线控大五座旗舰SUV——智己LS8 NEO纯电正式上市，权益价23.98万元起。\n认真造车，造科技好车。作为 上汽集团 与宁德时代两大行业龙头联手打造的家庭品质旗舰，智己LS8 NEO纯电全系标配全新NEO三电架构、全线控灵蜥底盘、全域物理AI智能三大旗舰科技，更将百万级豪华舒适体验全系拉满，是一台值得全家人信赖、值得家庭长期托付的25万级必入旗舰SUV。\n全新NEO三电架构，造就8系旗舰超能王。智己LS8 NEO纯电全系标配宁德时代定制高品质电池，提供93kWh黄金高效电池与103kWh单晶超能电池双版本，达到PPB级航空可靠性，安全、可靠、长寿命。依托上汽全新NEO飓风电机，动力表现媲美3.0T发动机；百公里电耗低至15.2kWh （CLTC），每公里出行成本低至几分钱；全域800V高压平台，15min可补能529km，市面九成以上公共充电桩，插上就是满功率；即便-20℃极寒环境下，电量保持率仍有95%，为用户兼顾了更强的动力、更低的能耗与更实用的超快充，让每一位用户都享受高品质的纯电出行。\n全线控灵蜥底盘，重构汽车安全边界，也为日常驾乘带来极致情绪价值。作为25万级唯一全系标配全线控底盘的车型，新车沿用航空同源安全理念，构建三重安全冗余。全球首创IM SynVector全域矢量扭矩协同控制，20毫秒极速响应，突发状况下可辅助避险，稳稳守护全家出行。从此，汽车安全除了五星碰撞标准，更要看有没有全线控底盘。日常驾乘方面，双向24°智慧后轮转向带来4.85米超小转弯半径，结合线控转向，半圈打满，一把掉头；高速变道丝滑平顺，过弯指哪打哪，酣畅淋漓；搭配行业唯一转向比三档可调，真正做到比小车更灵活、比旗舰更优雅、全家人都爱开，让“开大车”从将就成为享受。\n全域物理AI智能，能开车、会办事。作为Momenta行业唯一创始灯塔合作伙伴，智己IM AD ZETA以L4级模型能力降维赋能L2辅助驾驶，适配Momenta世界模型，让物理AI真正上车；联合阿里千问大模型共同打造的IM Claw龙虾智能体，支持模糊意图推理与多任务编排，真正做到 “一句话搞定一串事”，让每一个人都能享受AI时代带来的便利。\n对于品质家庭用户而言，旗舰不止于领先的科技，更在于全场景的舒适与贴心。智己LS8 NEO纯电打造“25万级最舒服的座舱”，座座都是VIP，坐哪都是旗舰的享受。\n主驾同级唯一全系标配4D机械按摩座椅，5种古法经络手法，如同随车配备资深理疗师；副驾“超级右排”头等舱，搭配15.6英寸娱乐屏，追剧休息，自在随心。二排空间媲美行政级MPV，一米九的身高也能轻松翘起二郎腿。尤值一提的是，新车首次将车规级臻选天然乳胶应用于二排座椅，柔软贴合、透气抑菌，对老人、儿童更友好，如同把顶奢酒店豪华床垫搬进了座舱。同时还全系标配“柯布西耶”电动沙发椅，靠背最大132°躺角搭配70°电动腿托与8点式SPA按摩，媲美高端家居乘坐体验。智己LS8 NEO纯电还可升级奢享大六座，三排不将就，座座皆舒展；还可灵活切换为宽敞的大四座模式，空间更显宽绰体面，满足商务、家庭多场景使用。\n此外，新车还全系标配四五十万级顶配车型才有的奢享配置——丹麦B&O豪华音响，100%原音重现的Hi-Fi级听感，出行一路愉悦；12.3L双开门智能冷暖冰箱，前后排均可便捷取放，宽温域覆盖四季需求。\n装载能力上，智己LS8 NEO纯电堪称“空间巨舰”。后备箱满载5人仍可容纳15个20寸行李箱；168L超大前备箱“敲一敲”轻松开；全车38处储物空间，包括后排9.2L的隐藏抽屉，小物件各得其所；搭配备受好评的IM MAG磁吸生态、IM随心贴，让每个位置都能自由拓展，定义自己的专属空间。\n智己LS8 NEO纯电以23.98万元起的上市权益价，真正做到 “入门即旗舰”。纵观25万级纯电SUV市场，智己LS8 NEO纯电是该级别唯一同时实现全系标配全线控底盘与全系宁德时代电池的产品；此外，4D机械按摩座椅、B&O豪华音响、天然乳胶座椅、双开门冷暖冰箱等通常出现在40万级以上车型的配置，智己LS8 NEO纯电均全系标配，用户无需在核心配置上做选择题，一步到位享受满配旗舰体验。\n上市期间下定，首任非营运车主可享受IM Claw龙虾智能体AI Token终身免费使用权，还有电池包终身质保，让大家完全没有后顾之忧；首任车主还可尊享IM AD高级辅助驾驶全功能包5年免费使用权，预售用户终身免费。智己品牌车主增换购LS8 NEO，可再额外享受一万元现金立减。\n秉持 “认真造车，造科技好车” 的初心，智己LS8 NEO纯电顶尖科技全部拉满，大厂严选顶级品质，是一台值得全家人托付的旗舰好车，势必成为25万级纯电大五座市场绕不开的选择。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方",
-   "image": "img/7136414f59ce04.jpg"
-  },
-  {
-   "title": "捷途全新自由者7正式上市 限时焕新价8.99万元起",
-   "url": "https://news.yiche.com/info/114375249.html",
-   "source": "易车",
-   "lang": "zh",
-   "hits": [
-    "捷途"
-   ],
-   "score": 1,
-   "body": ""
-  },
-  {
-   "title": "特斯拉上海工厂零部件本土化率升至98%",
-   "url": "https://auto.gasgoo.com/news/202611/5I70476989C501.shtml",
-   "source": "盖世汽车",
-   "lang": "zh",
-   "hits": [
-    "特斯拉",
-    "工厂"
-   ],
-   "score": 2,
-   "body": "盖世汽车获悉，在第九届中国国际进口博览会期间，特斯拉携创新成果亮相。根据官方透露，特斯拉上海超级工厂零部件本土化率已提升至98%。\n特斯拉方面还提到，上海超级工厂约93.3%的建筑面积用于车间。没有豪华接待大厅，也没有高管专属餐厅或专属电梯，更多空间和配套资源用于生产制造。\n值得注意的是，特斯拉与中国伙伴的合作，已经从零部件供应深入到产品开发：Model Y L座椅上的扶手、腿托等舒适性设计，由特斯拉与中国供应商共同开发。\n在此次进博会展台上，新近上市的Model Y高性能版亮相，与首次展出的Model Y的爆炸件相互呼应，让观众从整车设计深入了解车身、电池系统与关键零部件，看见车型背后的产品创新与可靠功夫。\n截至2026年第三季度，特斯拉全球累计交付车辆已超过1000万辆，连续两个季度交付超过48万辆。\n中国汽车流通协会乘用车市场信息联席分会公布的数据显示，特斯拉10月中国产电动车销量同比增速有所加快。数据显示，特斯拉上海工厂生产的Model 3与Model Y（含出口至欧洲、亚太地区及加拿大的车辆）10月交付量为67,829辆，同比增长10.3%；9月同比增幅为5%，本次也是其连续第12个月实现同比正增长。\n本文地址：http://auto.gasgoo.com/News/2019/05/300656465646I70107904C601.shtml\n本文地址：https://auto.gasgoo.com/news/202611/5I70476989C501.shtml\n联系邮箱：info@gasgoo.com 求职应聘：021-39197800-8035 简历投递：zhaopin@gasgoo.com 客服微信：gasgoo12 (豆豆)\n盖世汽车社区 盖世大学堂-公开课 英文资讯站 热门内容 数据报告 国际站 具身智能"
-  },
-  {
-   "title": "大众汽车集团（中国）携七款重磅车型及最新技术成果亮相进博会",
-   "url": "https://auto.sina.com.cn/news/hy/2026-11-04/detail-inixqaaw6165511.shtml",
+   "title": "宝马集团携新世代成果亮相第九届进博会",
+   "url": "https://auto.sina.com.cn/news/2026-11-05/detail-inixsmis8829331.shtml",
    "source": "新浪汽车",
    "lang": "zh",
    "hits": [
-    "大众"
+    "宝马"
    ],
    "score": 1,
-   "body": "2026年第九届中国国际进口博览会（进博会）将于11月5日开幕。连续第九次亮相活动的大众汽车集团（中国），此次带来旗下大众汽车、奥迪、保时捷的七款重磅车型，包括四款新能源车型以及一款车型的中国公众首秀。同时，集团将通过新一代沉浸式交互体验展具“数字幻方”，为与会观众直观展示集团本土自研一体化技术矩阵VEGA的软件支柱——CEA的硬核实力。\n在本届进博会上，大众汽车品牌将展出来自上汽大众、一汽-大众、大众安徽的三款纯电动车型，彰显其电动化转型的快速进展。这其中包括首批完整搭载大众汽车集团本土自研一体化技术矩阵“VEGA”的两款车型——上汽大众ID . ERA 5X与一汽-大众ID . AURA L5。此外，刚刚于10月24日上市的大众安徽智能纯电轿跑 与众09 (配置 |询价) 也将在进博会上与公众见面。\nID . ERA 5X是一款纯电动SUV，计划于今年11月正式上市。基于CMP平台和CEA电子电气架构，车辆的空间利用效率和整车能效得到优化，同时支持智能座舱功能、高级驾驶辅助和持续OTA升级。ID。 ERA 5X还带来更流畅直观的智能体验，配备高性能4纳米座舱芯片，响应更快、多任务处理更流畅。车辆配备激光雷达，基于酷睿程Hyper Sense 8 端到端大模型，实现端到端、全场景的增强版L2级驾驶辅助，帮助驾驶者更加从容地应对复杂路况。\nID . AURA L5是一款纯电家用轿车，由中德设计团队联合打造，高度还原了2025年上海车展ID。 AURA概念车的设计精髓。其短悬长轴的比例勾勒出舒展流畅的轿跑姿态，“得房率”达84.4%。侧面配备真无框车门、半隐藏式门把手，电动掀背尾门开启角度超70°、开口宽度超1000mm，极大提升了大件物品取放的便利性，将溜背美学与实用主义深度融合。部分车型将配备激光雷达，搭载基于酷睿程Hyper Sense 8 端到端大模型，让客户日常出行更加轻松、便捷。\n智能电动轿跑与众09融合了先进的智能座舱技术、行业领先的智能驾驶辅助和长续航超快充。它配备全面升级的云端智能座舱，车内搭载等效85英寸超大画幅AR-HUD，一屏覆盖三条车道。顶级VLA大模型智能驾驶辅助系统支持高速NOA和城市NOA，让通勤和长途驾驶更轻松。作为大众汽车首款搭载5C超快充技术的车型，与众09可实现充电10分钟补能500公里，CLTC综合续航达755公里。\n本届进博会，奥迪携四环品牌全新 奥迪S5 (配置 |询价) Avant 与 AUDI 品牌首款纯电 SUV 奥迪E7X (配置 |询价) 同台亮相，在性能基因与智能电动两个维度，呈现“突破科技，启迪未来”的品牌精髓。\n奥迪 S5 Avant ——以前卫Avant 之姿，诠释全新“S”性能：全新奥迪S5 Avant是奥迪新一代高性能燃油车型的代表之作。作为首款基于PPC豪华燃油车平台打造的S系列车型，S5 Avant 将奥迪标志性的卓越驾控性能与前卫设计、日常实用性相融合。新车搭载全新升级的3.0T V6发动机，为用户带来澎湃的驾驶体验。其标志性的 Avant 旅行车造型融合动感车身比例、精湛工艺与实用功能，彰显奥迪卓越的工程实力以及对高端驾乘体验毫不妥协的追求。\n奥迪E7X ——植根中国创新，开启豪华纯电出行新篇章：作为AUDI 品牌旗下首款纯电 SUV，奥迪E7X标志着奥迪面向中国市场打造的高端电动车产品阵容迈入新里程碑。该款车基于智能数字平台（Advanced Digitized Platform）打造，将奥迪的驾控基因与中国的创新生态融为一体。基于900V 高压架构，融合quattro 四驱技术与先进的驾驶辅助系统，奥迪E7X为用户带来出色的电动驾控性能和智能出行体验。其高端数字座舱融合 AI 智能交互与灵活多变的座椅布局，为中国客户带来更加前沿和精致的座舱体验。\n保时捷：客户赛车、本土化车型与经典车文化的多元实践\n在第九届中国国际进口博览会上，保时捷围绕客户赛车、本土化车型与经典车文化，呈现品牌持续深耕中国市场的多元实践。\n2026年正值保时捷赛车运动75周年，其中客户赛车是极为重要的组成部分。全新保时捷 911 GT4 R 在本次进博会上迎来中国公众首秀。作为品牌首款基于 911 车型平台打造的 GT4 客户赛车，新车将 911 赛车基因与成熟的 GT4 理念相结合，并进一步完善了客户赛车产品体系。\n同台展出的 Panamera 尽享版，是保时捷专为中国市场打造的车型。该车型以高价值标配、纯粹运动驾控与本土化数字体验，回应中国消费者对豪华与实用兼顾的需求，进一步丰富产品选择。此外，保时捷积极响应国家政策方向，携手上海嘉定综合保税区探索经典车文化在中国的发展路径，通过试点机制引入多台经典车，并于本届进博会在嘉定综保区展台同步展出。\n从客户赛车产品体系的持续完善，到中国专属车型的推出，再到经典车领域的本土化探索，保时捷正持续深化在中国市场的布局，为消费者带来更丰富的产品与品牌体验。\n“数字幻方”焕新升级：集团软件平台CEA推进规模化交付，强劲实力擎动智能出行未来\n活动期间，在去年进博会首次亮相的沉浸式交互体验展具“数字幻方”将实现内容的迭代升级，为与会观众直观展示大众汽车集团一体化自研技术矩阵VEGA的软件支柱——CEA（China Electronic Architecture）的硬核实力。\n截至目前，CEA已规模化赋能大众汽车集团三家合资企业共5款全新车型，并已经在今年内实现了软件迭代。CEA为集团在华全新车型阵容带来的三大核心优势：智能普惠、持续升级和安全冗余，通过沉浸式互动介绍，为消费者带来最直观的体验。通过全新的AI研发工具链“C-Brain”的赋能，CEA将AI智能体引入软件研发设计和工程化验证等幻剑，实现更灵活、高效的整车智能化能力整合与创新，赋予车辆强大的思考和感知能力。由CEA赋能的智能车型，可以做到更懂消费者需求，更高效地创造车内智能化应用场景，同时更好地提升数字智能安全守护冗余，为中国消费者带来由大众标准定义的新一代智能出行体验。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方",
-   "image": "img/d347e789ea51fb.jpg"
+   "body": "11月5日，第九届中国国际进口博览会在上海开幕。 宝马 集团以“新世代”为主题参展，集中展示新世代成果及开放合作实践，并首次将企业社会责任项目“BMW中国文化之旅”在非遗保护与创新领域的成果带到进博会。作为连续九年参展进博会的跨国企业，宝马持续深耕中国市场，不断深化与中国产业链、创新链的交流合作。\n宝马集团大中华区总裁兼首席执行官柯睿辰表示：“进博会不仅是展示创新成果的重要平台，更是促进开放合作的重要桥梁，为全球企业共享发展机遇、深化务实合作创造了良好环境。新世代开启了宝马发展新阶段，而中国在这一进程中扮演着至关重要的角色。我们坚持以开放促创新，以合作谋共赢，为中国客户创造长期价值，并为汽车产业高质量发展贡献力量。”\n新世代BMW iX3和 BMW i3 (配置 |询价) 首次同台亮相进博会，成为宝马展台的一大亮点。这两款车型专为中国市场开发，集成宝马在设计、电驱技术和智能交互等领域的最新成果，深度融合中国顶尖科技与数字生态，代表了宝马在产品、技术和产业化上的系统性跃升。随着新世代BMW iX3将于本月开始交付，新世代BMW i3于明年一季度交付，新世代产品正加速在中国落地。2027年，宝马将为中国市场带来近20款搭载新世代技术集群的BMW新车型，新世代创新成果将惠及更多中国消费者。\n新世代集成了BMW第六代动力电池、BMW驾控超级大脑等核心技术。其中，BMW第六代动力电池采用全新大圆柱电芯，单体能量密度较上一代提升超20%，充电速度和续航里程最高提升30%。第六代动力电池现已正式投产，标志着宝马新世代关键技术体系正加快迈向产业化应用阶段。\n在宝马迈向新世代的进程中，中国发挥着越来越重要的作用。从产品定义到技术研发，从数字生态建设到产业协同，新世代体现了宝马百年技术积淀与中国创新力量的深度融合。依托覆盖研发、采购、生产和质量管理的全价值链体系能力，宝马持续推动前沿技术规模化应用，将技术优势转化为消费者可感知的产品价值。中国不仅是宝马集团的重要市场，也正成为塑造宝马未来发展的重要力量。\n本届进博会上，宝马集团中国技术中心展台展示了宝马开放创新体系的实践成果。作为宝马全球创新网络的重要组成部分，宝马集团中国技术中心持续深化与创新企业、科研机构及产业伙伴的合作，推动创新资源交流与协同创新，加快前沿技术从研发验证走向产业应用。\n展区聚焦在智能数字体验、未来汽车架构及可持续出行解决方案。来自欧洲、北美和亚洲的初创企业带来人工智能、机器人、下一代电池、智能感知及可持续材料等领域的成果，展示相关技术的发展趋势。应用E-Ink电子墨水技术的 BMW i5 (配置 |询价) 全彩变色艺术概念车也在现场亮相，展现了宝马在智能材料与数字交互领域的持续探索和创新能力。\n深耕中国三十余年，宝马集团始终与中国社会共同成长，在推动技术创新和产业升级的同时，坚持将可持续发展融入企业战略和运营实践。宝马持续推进绿色生产、供应链减碳和能源转型实践，并将循环理念融入新世代车型开发全过程，助力汽车产业高质量发展。同时，宝马认为可持续发展还关乎人、社会与自然的和谐发展，“BMW中国文化之旅”项目十九年来持续推动非遗保护与创新传承，通过支持非遗传承人培养、成果展示和交流推广，促进传统文化保护传承与创新发展。\n当前，中国正持续以高水平对外开放链接全球资源，为产业发展注入新动能。作为中国市场的参与者、受益者和贡献者，宝马集团将继续深耕中国、携手中国伙伴共同成长。以新世代为起点，宝马将不断深化本土创新与开放合作，共同塑造未来出行。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方",
+   "image": "img/3caec65ffa9468.jpg"
   },
   {
-   "title": "Waymo confirms it’s shaking up its Uber relationship in January 2028",
-   "url": "https://techcrunch.com/2026/11/04/waymo-confirms-its-shaking-up-its-uber-relationship-in-january-2028/",
-   "source": "TechCrunch·交通",
+   "title": "Tesla hikes Cybertruck prices up to 10% after announcing it will kill production",
+   "url": "https://electrek.co/2026/11/06/tesla-raises-cybertruck-prices-after-ending-production/",
+   "source": "Electrek",
    "lang": "en",
-   "summary": "The change will set up direct competition in those markets, as Uber has many other autonomous vehicle partners on its network.",
+   "summary": "Tesla has raised Cybertruck prices in the US by up to 10% and stopped taking orders for the base Dual Motor AWD trim. The cheapest Cybertruck you can actually order now costs $92,490. The move comes right after Tesla confirmed it will end Cybertruck production at Gigafactory Texas around mid-2027. more…",
+   "imageSrc": "https://electrek.co/wp-content/uploads/sites/3/2024/03/Tesla-Cybertruck-off-roading-hero.jpg?quality=82&#038;strip=all&#038;w=1600",
    "hits": [
-    "autonomous"
+    "tesla",
+    "factory",
+    "gigafactory"
    ],
-   "score": 1,
-   "body": "The change will set up direct competition in those markets, as Uber has many other autonomous vehicle partners on its network."
+   "score": 3,
+   "body": "Tesla has raised Cybertruck prices in the US by up to 10% and stopped taking orders for the base Dual Motor AWD trim. The cheapest Cybertruck you can actually order now costs $92,490. The move comes right after Tesla confirmed it will end Cybertruck production at Gigafactory Texas around mid-2027. more…",
+   "image": "img/b57c3a6fb75028.webp"
   },
   {
-   "title": "BYD launches second-gen Seal 07 in China with lower prices and longer range",
-   "url": "https://cnevpost.com/2026/11/05/byd-launches-2nd-gen-seal-07/",
+   "title": "How Far Can Your EV Go After It Says It’s Empty?",
+   "url": "https://insideevs.com/news/814662/evs-how-far-after-zero/",
+   "source": "InsideEVs",
+   "lang": "en",
+   "summary": "Journalists drove 15 EVs until they stopped. The Tesla Model Y went nearly 19 more miles, while another EV barely made it half a mile.",
+   "imageSrc": "https://cdn.motor1.com/images/mgl/W8bvzL/s3/ev-test.jpg",
+   "hits": [
+    "tesla",
+    "ev"
+   ],
+   "score": 2,
+   "body": "Journalists drove 15 EVs until they stopped. The Tesla Model Y went nearly 19 more miles, while another EV barely made it half a mile.",
+   "image": "img/cfb6c8182a3664.jpg"
+  },
+  {
+   "title": "BYD Yangwang U9 Xtreme breaches 500 km/h barrier to set new world record for production cars",
+   "url": "https://cnevpost.com/2026/11/06/byd-yangwang-u9-xtreme-breaches-500-km-h/",
    "source": "CnEVPost",
    "lang": "en",
-   "summary": "The second-generation BYD Seal 07 features a larger body and a lower starting price of 139,900 yuan ($20,830). For details, please visit CnEVPost (cnev.co).",
-   "imageSrc": "https://cnevpost.com/wp-content/uploads/2026/11/2026110513000844.jpg",
+   "summary": "The Yangwang U9 Xtreme reached 503.17 km/h (312.66 miles per hour) in a top-speed challenge on public roads in Abu Dhabi. For details, please visit CnEVPost (cnev.co).",
+   "imageSrc": "https://cnevpost.com/wp-content/uploads/2026/11/2026110607505514.jpg",
    "hits": [
     "byd",
     "ev"
    ],
    "score": 2,
-   "body": "The second-generation BYD Seal 07 features a larger body and a lower starting price of 139,900 yuan ($20,830). For details, please visit CnEVPost (cnev.co).",
-   "image": "img/07e417f593cabf.jpg"
+   "body": "The Yangwang U9 Xtreme reached 503.17 km/h (312.66 miles per hour) in a top-speed challenge on public roads in Abu Dhabi. For details, please visit CnEVPost (cnev.co).",
+   "image": "img/76a548840fc6f6.jpg"
   },
   {
-   "title": "Chinese battery makers secure 56.4% share of overseas market in first three quarters of 2026",
-   "url": "https://carnewschina.com/2026/11/05/chinese-battery-makers-secure-56-4-share-of-overseas-market-in-first-three-quarters-of-2026/",
+   "title": "2027款领克08 EM-P上市 限时置换价15.98万元起",
+   "url": "http://www.pcauto.com.cn/nation/5191/51912410.html?ad=28676",
+   "source": "太平洋汽车",
+   "lang": "zh",
+   "hits": [
+    "领克"
+   ],
+   "score": 1,
+   "body": "新车 行业 评测 导购 技术 改装 文化 Ai选车专家 图片 排行榜 工具 购车计算 车型对比 精彩推荐 极智+ 混动时代 太平洋号 购车 购车优惠 买车趣·最高领49999购车补贴 分期购 经销商 车市 商城 用车 社区 用车 酷养车 意见反馈 意见反馈 * 问题描述 0 / 300\n【太平洋汽车 新车频道 】 日 前 ，2027款领克08 EM-P正式上市，共推出210四驱性能Ultra、230超长续航Ultra、230超长续航Max三款车型，限时置换价15.98万元起。\n作为年度改款，其外观与内饰部分做了细节优化，核心升级在辅助驾驶硬件上，全系标配192线激光雷达。\n外观延续The Next Day家族设计，车头新增“璀璨星河”灯光元素，日行灯内部光源排布更精致。\n车侧翼子板黑色饰件增加领克品牌标识，采用隐藏式门把手设计。车身尺寸保持不变，长宽高4825/1915/1660mm，轴距2848mm。\n尾部的后扰流板经过重新设计，让车尾细节更有层次感。\n车漆新增跃动橙，连同拂晓白、极夜黑、极光银共四款外观配色。\n内饰可选星夜蓝、新增的暖云沙两种主题，暖云沙内饰搭配Nappa真皮座椅、绗缝工艺与金属迎宾饰条。\n车机搭载LYNK Flyme Auto 2.5智能座舱系统，硬件配备高通骁龙8295芯片，支持EVA语音交互、AI任务大师、EVA实体机器人交互功能。\n座舱座椅支持多种组合方式，副驾配备零重力座椅，支持16向电动调节、4向腰部支撑，腿托最大可伸出75mm，可一键调节、复位；前后四座标配通风、加热、按摩功能，第二排座椅电动调节角度范围为118°—129°。\n车内配有7L双开门冷暖冰箱，温控区间-6℃至50℃，支持中控屏、手机App控制；第二排设置拓展小桌板，承重上限15kg。座舱音响为哈曼卡顿23扬声器版本，搭载256色氛围灯。\n辅助驾驶 方面，新车全系标配千里浩瀚H5方案，硬件包含1颗192线激光雷达，合计27颗感知硬件，搭载Orin-Y芯片，算力200TOPS，支持车位到车位领航辅助、城市NOA、高速NOA、HPA记忆泊车、APA泊车辅助、FTP指尖泊车。\n用户可付费升级千里浩瀚H7方案，该版本最高算力700TOPS，增加VLM场景理解。\n动力搭载EM-P智能电混系统与38.2kWh电池。CLTC综合续航最高超1400km，纯电续航最高230km，WLTC亏电油耗最低5.5L/100km；电池SOC 30%充至80%用时小于15分钟。\n其中210四驱性能Ultra版本系统综合功率456kW，零百加速4.6秒 。\n底盘方面， 配备CCD连续可变阻尼电控减振系统、魔毯悬架以及CST制动系统。\n安全方面， 车身采用笼式高强度框架，车门防撞梁钢材强度2000MPa，底盘为“四横四纵”结构；标配6安全气囊，配有长度超2000mm贯穿式气帘。主动安全上，AES紧急避让辅助、AEB前向碰撞减缓最高支持130km/h工况。座舱采用0杂棉、0沥青、0有害溶剂选材，搭载主动座舱清洁系统。 （文：太平洋汽车 彭浚哲）\n新车上市 最新文章 成都车展 宏光MINI EV 普拉多 欧拉黑猫 途达 起亚嘉华 玛奇朵 皇冠陆放 奔驰C级 哈弗神兽 坦克600 奥迪Q5 思域 卡罗拉双擎E+ 轩逸 太平洋汽车网app 新能源车\n领克热门车型： 领克08 2027款 EM-P 210 四驱性能Ultra 领克08 2027款 EM-P 230 超长续航Ultra 领克08 2027款 EM-P 230 超长续航Max\n领克城市4S店： 广州 北京 深圳 武汉 成都 上海 天津 杭州 青岛 重庆\n举报邮箱：shenhezhiban@pconline.com.cn",
+   "image": "img/aa79412a66c36b.png"
+  },
+  {
+   "title": "后轴因焊接不良导致脱开 奇瑞召回超5万辆瑞虎5x/欧萌达系列",
+   "url": "https://www.autohome.com.cn/news/202611/1318220.html#pvareaid=102624",
+   "source": "汽车之家",
+   "lang": "zh",
+   "hits": [
+    "奇瑞",
+    "召回"
+   ],
+   "score": 2,
+   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 召回碰撞 正文 后轴因焊接不良导致脱开 奇瑞召回超5万辆瑞虎5x/欧萌达系列 之家原创车闻 原创 · 0 浏览 · 2026-11-06 18:43 · 北京 关注 [汽车之家 资讯 ] 日前，奇瑞汽车股份有限公司根据《缺陷汽车产品召回管理条例》《缺陷汽车产品召回管理条例实施办法》的要求，向国家市场监督管理总局备案了召回计划。\n召回编号S2026M0146V：自2026年11月27日起，召回2022年6月6日至2023年12月31日期间生产的部分奇瑞瑞虎5x、欧萌达系列汽车，共计53882辆。\n本次召回范围内的部分车辆，由于后轴制造过程问题，后轴纵臂与套管可能焊接不良。极端情况下，该焊接位置焊缝可能失效脱开，造成车轮失控，增加车辆发生事故的风险，存在安全隐患。\n奇瑞汽车股份有限公司将为召回范围内的车辆免费检查后轴的生产日期代码，如果属于缺陷批次，则更换后轴，以消除安全隐患。\n奇瑞汽车股份有限公司将通过短信、挂号信等方式，通知相关用户此次召回事宜。用户可致电奇瑞汽车股份有限公司客户服务热线：400-883-8888，或联系奇瑞授权维修站，了解本次召回的详细信息。此外，也可登录市场监管总局召回中心网站www.samrdprc.org.cn，关注微信公众号（SAMRDPRC），了解更多信息，反映缺陷线索。（编译/汽车之家 秦超）",
+   "image": "img/b1961e2dff728c.jpg"
+  },
+  {
+   "title": "Volkswagen introduces battery preconditioning for older ID. models",
+   "url": "https://www.electrive.com/2026/11/06/volkswagen-introduces-battery-preconditioning-for-older-id-models/",
+   "source": "Electrive",
+   "lang": "en",
+   "summary": "Volkswagen is updating the functions of older electric cars in its ID family. With ID. Software 3.9.1, manual pre-conditioning of the high-voltage battery before DC fast charging is being introduced. This OTA update also improves thermal management, AC charging, and system stability, among other things.",
+   "imageSrc": "https://www.electrive.com/media/2026/11/volkswagen-id3-cockpit-display-software-navigation-2021-400x267.jpg",
+   "hits": [
+    "volkswagen",
+    "battery",
+    "charging"
+   ],
+   "score": 3,
+   "body": "Volkswagen is updating the functions of older electric cars in its ID family. With ID. Software 3.9.1, manual pre-conditioning of the high-voltage battery before DC fast charging is being introduced. This OTA update also improves thermal management, AC charging, and system stability, among other things."
+  },
+  {
+   "title": "奥迪拟追加投资30亿美元扩大新工厂规模",
+   "url": "https://auto.gasgoo.com/news/202611/6I70477203C101.shtml",
+   "source": "盖世汽车",
+   "lang": "zh",
+   "hits": [
+    "奥迪",
+    "工厂"
+   ],
+   "score": 2,
+   "body": "盖世汽车讯 据外媒报道，大众汽车集团旗下豪华品牌奥迪将在美国佐治亚州获得数亿美元的税收优惠和政府补助，用于在当地建设一座耗资40亿美元的汽车组装工厂。根据当地政府日前公布的文件，奥迪还在考虑推进该项目的第二阶段建设。\n奥迪于10月25日宣布，计划在佐治亚州梅肯附近建设其首座美国组装工厂，预计于2030年代初投产，年 产能 为20万辆SUV，并创造4500个就业岗位。\n根据中佐治亚州门户开发局（Mid-Georgia Gateway Development Authority）公布的文件，奥迪正在考虑该工厂的第二阶段建设，预计追加投资30亿美元，到2033年再新增3000个就业岗位。针对上述报道，奥迪拒绝置评。\n据悉，佐治亚州政府将向奥迪提供一块面积约1500英亩的土地，并给予4.58亿美元税收优惠，以及超过1.2亿美元的补助，用于基础设施建设、铁路改造、场地环境修复和厂房建设。此外，州政府还将提供4.3亿美元资金，用于供水、道路改善、公用设施配套以及员工培训和招聘。\n路透社此前报道称，特朗普政府已承诺为奥迪提供关税减免，以推动其美国工厂项目落地。美国官员曾向奥迪高管表示，政府计划为在美国进行大规模生产投资的汽车制造商提供广泛的关税减免。\n两名知情人士透露，奥迪一直在推动美国将其从欧盟进口汽车所需缴纳的关税从15%降至7.5%，但美国商务部预计最终同意的税率约为10%。\n知情人士还表示，该关税减免计划旨在推动汽车制造商增加美国本土产能或进行其他投资。\n由于奥迪目前在美国市场销售的汽车全部从欧洲或墨西哥进口，特朗普政府对进口汽车、钢铁、铝及零部件征收的关税去年给奥迪造成约12亿欧元（约合14亿美元）的成本。\n本文地址：http://auto.gasgoo.com/News/2019/05/300656465646I70107904C601.shtml\n本文地址：https://auto.gasgoo.com/news/202611/6I70477203C101.shtml\n联系邮箱：info@gasgoo.com 求职应聘：021-39197800-8035 简历投递：zhaopin@gasgoo.com 客服微信：gasgoo12 (豆豆)\n盖世汽车社区 盖世大学堂-公开课 英文资讯站 热门内容 数据报告 国际站 具身智能"
+  },
+  {
+   "title": "BYD Seagull loses rear wheel after divider strike in Indonesia, drawing quality scrutiny",
+   "url": "https://carnewschina.com/2026/11/06/byd-atto-1-loses-rear-wheel-after-divider-strike-in-indonesia-drawing-quality-scrutiny/",
    "source": "CarNewsChina",
    "lang": "en",
-   "summary": "In the first nine months of 2026, Chinese manufacturers secured more than half of the global electric vehicle (EV) battery market. According to the latest data from the South Korean research firm SNE Research, one out of every two power batteries installed in EVs outside of China now originates from a Chinese supplier. During the […] The post Chinese battery makers secure 56.4% share of overseas m",
+   "summary": "A BYD Atto 1 wheel detaches after a reported road impact in Indonesia, alongside a separate Jaecoo J5 incident in Jakarta. The post BYD Seagull loses rear wheel after divider strike in Indonesia, drawing quality scrutiny appeared first on CarNewsChina.com .",
    "hits": [
-    "battery",
+    "byd"
+   ],
+   "score": 1,
+   "body": "A BYD Atto 1 wheel detaches after a reported road impact in Indonesia, alongside a separate Jaecoo J5 incident in Jakarta. The post BYD Seagull loses rear wheel after divider strike in Indonesia, drawing quality scrutiny appeared first on CarNewsChina.com ."
+  },
+  {
+   "title": "狂欢的AI，把手机芯片厂拖入寒冬",
+   "url": "https://www.tmtpost.com/8192384.html",
+   "source": "钛媒体",
+   "lang": "zh",
+   "hits": [
+    "芯片"
+   ],
+   "score": 1,
+   "body": "当整个半导体产业都在为AI狂欢时，有一个曾经最赚钱的细分市场，却正在悄悄降温，那就是手机芯片。\nAI大模型的爆发，让全球半导体产业迎来了新的投资热潮。英伟达、AMD以及各大云计算厂商争相布局AI算力，数据中心成为资本和产业资源竞相追逐的新战场。但在这场盛宴之外，手机芯片市场却是另一番景象。\n曾经作为芯片产业最大需求来源之一的智能手机市场，却在存储成本上涨、消费者换机周期拉长以及终端厂商收缩产品线等因素影响下，进入了一个相对艰难的阶段。就在日前，高通与联发科，这对瓜分安卓阵营近半壁江山的芯片双雄，同期交出了手机业务集体滑坡的成绩单，高通更是因为业绩指引不及预期，股价大幅受挫。\nAI越火，半导体产业越“繁荣”，但手机芯片却没有同步享受到这轮红利。甚至在某种程度上，AI产业的快速扩张，正在通过存储资源争夺、供应链成本上涨等方式，给传统消费电子产业带来新的压力。\n11月5日，美股半导体大跌，费城半导体指数重挫12.3%，创下自2020年3月16日以来的单日最大跌幅。一名投资者告诉作者，调整的背后是市场对于未来AI数据中心建设审批的不确定性以及相关不利于AI发展政策的担忧，更像是板块重估，而不是系统性崩盘。\n但一个可以确定的事实是，手机芯片的黄金时代，正在逐渐远去，不再是半导体行业的增长永动机。\n过去，智能手机是全球芯片产业最稳定的增长引擎。每一轮通信技术升级、每一代旗舰手机发布，都意味着芯片厂商又一次获得增长机会。但当存储涨价抑制消费者换机需求，AI又尚未真正转化为大规模换机需求时，这套持续了十多年的增长逻辑，开始出现松动。\nCounterpoint Research发布的最新数据显示，2026年第三季度，全球智能手机SoC出货量同比大幅萎缩21%，创下近五年最大单季跌幅。行业大盘的塌方之下，没有任何一家独立芯片供应商能够独善其身，高通与联发科的财务报告，成为本轮周期下行最直观的缩影。\n根据高通最新发布的业绩报告显示，其第三季度营收104亿美元，高于市场预期101亿美元。但拆分具体的业务来看，作为收入核心支撑点的手机业务，收入为51.37亿美元，同比下降26%，低于分析师预期的52.5亿美元，相比去年同期减少了超过18亿美元。\n作为高通最核心的收入来源，手机芯片业务的变化直接影响着整个QCT业务的表现，尤其是过去几年，高通一直试图通过骁龙旗舰平台向高端市场延伸，提升单颗芯片的价值量和产品利润率。但在终端市场整体收缩的背景下，即使旗舰芯片保持技术竞争力，也很难完全抵消出货量下滑带来的影响。同时，高通还面临苹果自研基带带来的结构性影响。随着苹果逐步转向自研基带，高通来自苹果相关业务的收入正在减少。\n联发科的处境同样不容乐观，其2026年第三季度合并营收达1680.58亿元新台币，虽整体同比增长18.3%创下历史新高，但手机业务板块营收同比下滑17%，营收占比从一年前的53%降至37%。\n手机芯片业务的集体滑坡，并非单一因素导致，而是成本端、需求端与竞争端三重压力共同作用的结果。存储价格的上涨，抑制了终端的换机需求，三季度全球智能手机市场出货量暴跌超20%，创下历史最大跌幅。其中，利润较低的入门和中端机受到的冲击更为明显，为了保利润，多家品牌缩减了产品线并提高了终端售价，这也直接导致中低端SoC需求收缩。\n联发科天玑系列近年来不断向高端市场突破，尤其是旗舰产品已经具备与高通骁龙正面竞争的能力。但联发科在中低端市场的业务占比较高，当手机厂商主动压缩中低端产品线时，其受到的影响也更加直接。\n除此之外，拥有自研芯片的品牌在这轮波动中趁势追赶，也是导致高通、联发科这样垂直芯片厂份额下降的关键原因之一。Counterpoint数据显示，2026年Q3全球手机芯片市场中，高通份额从25%降至22%，联发科的份额从34%降至28%，两家合计丢失了9个百分点的市场份额，排在第四的紫光展锐的份额也从14%小幅回落至13%。\n对比之下，苹果排名第三，市场份额占比从17%攀升至21%；三星排名第五，份额由6%提升至8%，Galaxy S26系列搭载Exynos 2600，是拉动份额上涨的核心动力。这种分化也预示着，智能手机芯片市场的竞争，正从单纯的芯片性能比拼，转向芯片+终端+生态的体系化竞争，独立芯片厂商如果不能找到新的增长支点，将在存量博弈中持续陷入被动。\n半导体行业有一条从未失灵的周期铁律：所有盛极一时的赛道，都会在红利耗尽的那一刻，露出最残酷的底色，而所有试图穿越周期的玩家，都必须在旧秩序彻底崩塌前，找到下一个立足的支点。手机业务的持续承压，倒逼高通与联发科加速多元化布局，重新定义边界。事实上，两家公司早已开始布局。\n在财报中能够看到，与手机业务的直线下滑不同，PC、汽车、数据中心等业务则迎来了大幅的增长。其中，汽车业务是目前高通增长最确定的第二曲线。第三季度，高通汽车芯片收入达到19.90亿美元，同比大幅增长89%，创下历史新高。2026财年全年汽车业务收入60.04亿美元，同比增长52%，年化营收运行速率已达80亿美元，超出此前预期。\n数据中心则是高通下一阶段重点布局的市场，主要来自两大云厂商的定制AI加速器与光互联产品，与亚马逊达成了多代产品合作，共同为大型AI数据中心开发规模化定制芯片，并合作研发高达1.6T及未来世代的光连接解决方案，双方建立了一项认股权证结构，涵盖10年内高达600亿美元的亚马逊对高通潜在采购额。目前，高通已开始为亚马逊进行生产，并将于2027财年第一季度开始产生营收。\n不仅如此，最新的报道显示，高通的Agentic AI芯片已导入终端设备，并与SpaceX达成合作，将为其计划建设的美国全国性地面无线通信网络提供硬件组件。高通表示，SpaceX将采用其Dragonwing系列组件，用于基站部署，以支持通话和数据传输。\n据了解，双方已签署一项多年期协议，计划建设的基站数量将与美国主要无线通信运营商目前部署的规模相当，相关部署将于明年启动，而这也是公司迄今为止规模最大的一笔5G交易。\n联发科也在一样，探索手机业务之外的的第二增长曲线，并且已经有了明显的成效，正在逐步摆脱单纯依靠手机芯片驱动增长的局面。从第三季度财报来看，联发科智能边缘平台业务收入同比增长63%，占总营收的58%，已经成为公司最大的收入来源。\n今年9月，联发科开始出货首款AI加速器产品，业绩会上，其也透露，预计第四季度AI加速器相关收入将达到25亿美元，成为拉动四季度业绩高增长的核心动力。\n高通与联发科的第二增长曲线布局，表面上是业务多元化，本质上是对自身产业定位的重构。过去，两家公司都是智能手机周期的跟随者，行业景气度直接决定业绩起伏。而现在，它们都试图进入汽车、AI计算等全新的高壁垒赛道，重新定义自身发展的边界。\n如果从业绩的数据变动上来看，这些新业务的扩张都处在快速上升的势头中，手机业务的下滑则是让这些账单更为显眼。\n手机业务的持续滑坡与新业务的高速增长，构成了当下行业最撕裂的图景，使得市场对行业前景充满分歧。在分析师看来，尽管高通这类的企业在汽车以及数据中心等多元化经营方面有了很大的进展，但手机芯片依旧是决定整体收入的关键。\n对于市场的担忧，高通总裁兼CEO安蒙表示，截至2026财年末，高通已逐步消化此前拖累业绩的多项"
+  },
+  {
+   "title": "蔚来ES8成为第九届进博会VIP官方指定用车",
+   "url": "https://auto.sina.com.cn/news/2026-11-05/detail-inixsmiu5602125.shtml",
+   "source": "新浪汽车",
+   "lang": "zh",
+   "hits": [
+    "蔚来"
+   ],
+   "score": 1,
+   "body": "今日，第九届中国国际进口博览会（简称“进博会”）在上海开幕， 蔚来ES8 (配置 |询价) 以全场景旗舰产品力成为本届进博会VIP官方指定用车。\n蔚来 ES8作为全场景科技旗舰SUV，以旗舰级产品实力，适配商务接待等各类高端出行场景。整车搭载豪华舒适配置、领先的智能座舱与智能辅助驾驶，依托蔚来可充可换可升级的能源体系，在商务接待中提供优雅得体、稳定可靠的用车体验。\n蔚来ES8持续获得市场认可。2026年以来，全新ES8在大型SUV和40万级车型两个细分市场的累计零售销量均位列第一。在第三方权威机构的调研中，全新ES8斩获35万元以上新能源SUV保值率第一，并以85.3的高分位居纯电车型NPS（净推荐值）第一。零售销量、保值率、净推荐值三项第一，彰显了全新ES8在高端纯电市场的旗舰价值。\n中国国际进口博览会是中国主动向世界开放市场的重要平台，联通全球、促进经贸往来与人文交流。本届进博会汇聚全球各方参展主体，搭建开放合作、共享发展机遇的桥梁。\n蔚来ES8成为本届进博会VIP官方指定用车，这也是蔚来连续四年成为进博会官方指定用车，体现了大会对蔚来产品、服务体系与绿色出行方案的肯定。蔚来将以从容得体的旗舰体验，为全球来宾呈现中国高端智能电动的出行质感，助力绿色进博，共赴开放之约。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方",
+   "image": "img/de0caaff35ab2a.jpg"
+  },
+  {
+   "title": "503.17km/h！仰望U9X再创全球汽车极速新纪录 地表最快量产车",
+   "url": "http://www.pcauto.com.cn/nation/5191/51912475.html?ad=28676",
+   "source": "太平洋汽车",
+   "lang": "zh",
+   "hits": [
+    "仰望"
+   ],
+   "score": 1,
+   "body": "新车 行业 评测 导购 技术 改装 文化 Ai选车专家 图片 排行榜 工具 购车计算 车型对比 精彩推荐 极智+ 混动时代 太平洋号 购车 购车优惠 买车趣·最高领49999购车补贴 分期购 经销商 车市 商城 用车 社区 用车 酷养车 意见反馈 意见反馈 * 问题描述 0 / 300\n【太平洋汽车 新车频道 】11月6日，仰望汽车官宣：仰望U9 Xtreme在阿布扎比公共道路极速跑到503.17km/h，再度刷新地表最快量产车纪录，成为全球首款突破500大关的量产车，将全球汽车速度极限带入了全新领域。从官方获悉，仰望U9X单台售价超过2000万元，全球销量30台。\n在2025年9月14日，仰望U9X德国ATP帕彭堡测试场跑出496.22km/h极速成绩，正式超越Chiron SS 300此前创造的490.48 km/h极速成绩，将全球量产车极速桂冠收入囊中，改写了陆地量产超跑的速度天花板。\n仅仅间隔413天，仰望U9X再度打破自己缔造的纪录，把这项由自己拿下的纪录带到全新高度。从帕彭堡到阿布扎比，从拿下王座到冲破 500km/h门槛，中国纯电超跑用连续的突破，重新定义量产车的速度边界。\n此外，仰望U9 Xtreme的实力并不只局限于直线极速，在赛道同样拥有统治级表现。在2025年8月22日，它在德国纽博格林北环以6:59.157的成绩刷新量产纯电组别第一，成为首款跑进7分钟以内的量产纯电超跑。\n仰望U9X基于全域1200V超高压平台打造，搭载易四方四电机独立驱动系统，系统综合功率达到2220千瓦（3019马力），匹配全新赛道级刀片电池，通过电芯架构优化、内阻降低，搭配专属双层散热冷却结构，实现30C超高放电倍率。\n同时，还搭载云辇-X智能全主动车身控制系统，采用外置双阀结构，分别独立控制悬架升降行程，能够对四轮悬架进行垂直方向极速独立调校，抑制急加速、重刹、转向带来的俯仰与侧倾。\n此外，仰望U9X还拥有3D打印一体化车身、超级碳舱组成的超级车身架构、赛道化碳陶刹车、钛合金卡钳、定制的GitiSport e・GTR2 PRO高性能半热熔轮胎（325/35 ZR20）等诸多顶级配置，支撑它冲击各项性能纪录。\n比亚迪执行副总裁李柯表示：“我常说，我们的工程师年轻、果敢，甚至带一点疯狂——但这是难能可贵的那种疯狂！我要再次向他们以及整个仰望U9X团队表示祝贺，祝贺他们迈出这非凡一步，拿下震撼世人的纪录。就在团队去年在德国庆祝496.22km/h的成绩时，大家就已经在复盘数据、探讨如何把U9X推向更高高度。503.17km/h是一项了不起的成就，它把纯电动力的性能标杆，远远拉开到竞争对手难以企及的位置。”（文：太平洋汽车 吴启星）\n新车上市 最新文章 成都车展 宏光MINI EV 普拉多 欧拉黑猫 途达 起亚嘉华 玛奇朵 皇冠陆放 奔驰C级 哈弗神兽 坦克600 奥迪Q5 思域 卡罗拉双擎E+ 轩逸 太平洋汽车网app 新能源车\n仰望城市4S店： 广州 北京 深圳 武汉 成都 上海 天津 杭州 青岛 重庆\n举报邮箱：shenhezhiban@pconline.com.cn",
+   "image": "img/1b202b6a8f104e.jpg"
+  },
+  {
+   "title": "售8.88万元 新增电动前备厢/EVA机器人 吉利星愿STAR限定系列上市",
+   "url": "https://www.autohome.com.cn/news/202611/1318224.html#pvareaid=102624",
+   "source": "汽车之家",
+   "lang": "zh",
+   "hits": [
+    "吉利",
     "ev"
    ],
    "score": 2,
-   "body": "In the first nine months of 2026, Chinese manufacturers secured more than half of the global electric vehicle (EV) battery market. According to the latest data from the South Korean research firm SNE Research, one out of every two power batteries installed in EVs outside of China now originates from a Chinese supplier. During the […] The post Chinese battery makers secure 56.4% share of overseas m"
+   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 国产新车 正文 售8.88万元 新增电动前备厢/EVA机器人 吉利星愿STAR限定系列上市 之家原创车闻 原创 · 0 浏览 · 2026-11-06 19:35 · 北京 关注 [汽车之家 新车上市 ] 11月6日，我们从官方获悉， 吉利星愿STAR限定系列正式上市，共推出2款车型， 上市指导价9.18万元， 限时权益价8.88万元。 车辆将新增电动前备厢与EVA机器人。\n外观方面，车辆前脸以“微笑”作为设计理念，盈羽LED前大灯集成位置灯、转向灯、远近光一体。车辆搭载电动前备厢，共支持6种电动开启/关闭方式，包括敲击开关、车内语音开关、手机APP远程开关、遥控钥匙开关、车内中控屏开关、机械应急开关。\nSTAR Ace车型提供无忧绿、百事橙、流光银专属车色。同时，新车还将配备专属运动外观套件，涵盖运动前扰流板、运动星际扰流板、铝合金运动轮圈、STAR专属徽标、熏黑运动车标等多项外观专属配件。\n车辆的光羽LED尾灯采用分体式全LED设计，左右尾灯进行功能区分，显示效果更清晰，内置78颗LED光源。车身尺寸方面，车辆长宽高分别为4135×1805×1570mm，轴距2650mm。\n内饰方面，车辆搭载8.8英寸全液晶仪表+14.6英寸高清中控屏，并提供Flyme Auto 2 AI智能座舱，支持高德850地图，新增AI懂车专家、AI灵感画师、AI音乐律动、便捷找车功能等功能。STAR Ace提供曜石黑内饰（黑红、黑橙）专属内饰；STAR Chill车型搭载专属的沐光米内饰，并提供木纹、香槟金等元素点缀。\n新车还将搭载EVA车载机器人，EVA机器人可实现60°灵动转头，同时机器人表情库还支持后续OTA升级更新。车辆搭载前排电动座椅，主驾支持6项调节，副驾4项调节，并且支持142°调整。同时，全车提供36处储物空间，包括70L前备厢、28L后排储物空间，375-1320L后备厢等。\n动力方面，吉利 星愿 ( 参数 | 询价 )搭载11合1智能电驱纯电动力系统，最大功率分别为58kW和85kW，最大扭矩130N·m、150N·m。吉利星愿提供30.12kWh、40.16kWh、47.14kWh电池组，CLTC纯电续航里程分别为310km、410km、480km。吉利星愿全系标配独立悬架、后驱系统、G-TCS 2.0全天候防滑防甩尾系统、AI虚拟调校技术以及ONEBOX集成制动系统等。（文/汽车之家 姚宇）"
   },
   {
-   "title": "Mercedes-Benz starts assembling electric GLC in India",
-   "url": "https://www.electrive.com/2026/11/05/mercedes-benz-starts-assembling-electric-glc-in-india/",
-   "source": "Electrive",
-   "lang": "en",
-   "summary": "Mercedes-Benz has begun assembling the electric GLC from imported knocked-down kits at its plant in Chakan, near Pune in the Indian state of Maharashtra. Chakan is the second site for assembling the new EV from kits, after Thailand's Thonburi Automotive Assembly Plant (TAAP), and overall its fourth production site worldwide.",
-   "imageSrc": "https://www.electrive.com/media/2026/11/mercedes-benz-electric-glc-front-three-quarter-india-400x267.jpeg",
-   "hits": [
-    "mercedes",
-    "plant",
-    "ev"
-   ],
-   "score": 3,
-   "body": "Mercedes-Benz has begun assembling the electric GLC from imported knocked-down kits at its plant in Chakan, near Pune in the Indian state of Maharashtra. Chakan is the second site for assembling the new EV from kits, after Thailand's Thonburi Automotive Assembly Plant (TAAP), and overall its fourth production site worldwide."
-  },
-  {
-   "title": "欣旺达供电池 荣威家越X7油电混动版申报信息",
-   "url": "http://www.pcauto.com.cn/nation/5190/51908323.html?ad=28676",
-   "source": "太平洋汽车",
+   "title": "欣旺达动力为电池护照下了怎样一盘棋？",
+   "url": "https://auto.gasgoo.com/news/202611/6I70477079C501.shtml",
+   "source": "盖世汽车",
    "lang": "zh",
    "hits": [
     "欣旺达",
     "电池"
    ],
    "score": 2,
-   "body": "新车 行业 评测 导购 技术 改装 文化 Ai选车专家 图片 排行榜 工具 购车计算 车型对比 精彩推荐 极智+ 混动时代 太平洋号 购车 购车优惠 买车趣·最高领49999购车补贴 分期购 经销商 车市 商城 用车 社区 用车 酷养车 意见反馈 意见反馈 * 问题描述 0 / 300\n【太平洋汽车 新车频道 】日前，在工信部第413批《道路机动车辆生产企业及产品公告》新产品公示中，我们看到了荣威家越X7油电混动版的申报信息。新车定位大五座中型SUV，采用5座布局。\n外观方面，家越X7采用大尺寸前格栅，内部辅以直瀑式镀铬饰条，格栅上方配有一条星环式贯穿灯带，整体精致感较强。车顶配备激光雷达模组，或搭载家越07同款Momenta高阶辅助驾驶系统。车身侧面采用半隐藏式门把手，搭配密辐式轮圈。车尾同样采用贯穿式灯组，与车头形成视觉呼应，尾门中央为ROEWE字母标识，后包围采用黑色护板与银色饰条组合，整体风格偏家用稳重取向。\n动力方面，家越X7混动版搭载由上海汽车集团股份有限公司生产的15FLE型号1.5T发动机，排量1498ml，发动机额定功率132kW、最大净功率130kW，搭配三元锂离子电池组成油电混合动力系统，不支持外接充电。电池储能单体由南京欣旺达新能源有限公司提供，总成由欣旺达动力科技股份有限公司生产，排放满足国六B标准。\n新车上市 最新文章 成都车展 宏光MINI EV 普拉多 欧拉黑猫 途达 起亚嘉华 玛奇朵 皇冠陆放 奔驰C级 哈弗神兽 坦克600 奥迪Q5 思域 卡罗拉双擎E+ 轩逸 太平洋汽车网app 新能源车\n荣威城市4S店： 广州 北京 深圳 武汉 成都 上海 天津 杭州 青岛 重庆\n举报邮箱：shenhezhiban@pconline.com.cn",
-   "image": "img/abc62388b8c288.png"
+   "body": "距离欧盟《电池与废电池法规》（EU 2023/1542）规定的数字电池护照强制实施日越来越近，中国电池企业正在经历一场前所未有的合规大考。\n在这场考试中，欣旺达动力算得上是“最早交卷的一批”。它从2023年11月就成立了电池护照专项团队，联合国内外战略合作伙伴，历时两年基本完成平台开发，是国内最早自研电池护照平台的企业之一。\n这家从消费电池起家、如今在动力电池和储能领域均跻身全球第一梯队的电池企业，为什么会提前两年押注一件当时连技术标准都还没落定的事？\n在欧盟法规细则尚未落地时做出“提前两年”的判断，欣旺达动力的依据并不复杂：它看到的是竞争维度的迁移。\n“电池产业的竞争正在从产品性能、制造成本和交付能力，逐步向全生命周期的可持续管理能力延伸。”欣旺达动力相关负责人向盖世汽车表示。\n随着 新能源汽车 和储能产业的全球化发展，电池产品不仅要满足安全、性能和质量要求，还需要证明自己的原材料来源、碳排放表现和供应链责任。\n在2023年，欧盟已正式发布电池法规，明确2027年2月18日起对特定类别电池实施电池护照要求。尽管当时部分技术标准和实施细则尚未完善，但电池全生命周期信息透明化、数字化、可追溯的方向已经明确。\n更关键的是，欣旺达动力判断电池护照不是一件可以“临阵磨枪”的事。\n“电池护照并不是一个简单的软件开发项目，而是一项需要贯通研发、制造、采购、质量、可持续发展及信息技术等多个业务环节的系统性工程。”尤其是供应链数据的收集、核验与协同，需要较长的体系建设周期。如果等所有法规细则发布后再启动，企业将面临较大的时间和实施压力。\n于是，欣旺达动力在2023年组建专项团队，采取法规研究、技术开发与业务场景验证同步推进的方式，逐步建立覆盖电池全生命周期的数据管理能力。\n“我们希望通过提前布局，将外部法规要求转化为企业内部持续运行的管理机制。”在欣旺达动力看来，这不仅能提高未来的合规响应效率，也能为客户提供更加透明、可信、可追溯的产品信息。而这，正是欣旺达动力研判未来产品的核心竞争力之一。\n值得注意的是，欣旺达动力的关注点不止于一张数字护照本身。“从长期来看，我们关注的不只是为电池建立一张数字护照，而是形成支撑全球业务发展的产品数据治理能力。”上述负责人如此强调。\n有了判断，下一步是验证。欣旺达动力选择了一条“借国际框架打磨自己”的路径。\n2024年，欣旺达动力与点链科技、上汽大通合作的磷酸铁锂电池护照项目，以及与理想汽车合作的另一个磷酸铁锂项目，双双入选全球电池联盟（GBA）当年度十大试点，它也成为了同时有两个项目入选的两家企业之一。2026年，欣旺达动力进一步参与GBA电池护照运营试验，与理想汽车、岚图汽车组成两个联合体，推动方案从概念验证走向更贴近实际业务的应用场景。同年6月，其电池护照平台完成欧盟CirPass试点注册库测试环境的系统级对接，通过了身份认证、数据提交及注册核验等流程测试。\n电池护照必须建立在真实的产业链业务场景之上；数据可信比数据展示更加重要；跨企业协作是电池护照落地的关键，电池制造商、汽车企业、原材料供应商和技术服务机构需要在数据标准、信息共享及权限管理方面建立协同机制，同时充分保护商业敏感信息。\n落到技术层面，欣旺达动力的电池护照平台围绕三条主线展开：一是通过AIoT智能物联网平台，实现全生命周期数据的智能采集和计算，实时采集碳足迹关键参数并支持动态更新电池健康状态；二是基于开放标准与互操作协议，兼容欧盟及国内数据空间（如Catena-X），实现跨平台可信数据交换；三是用区块链技术做数据存证，哈希上链、时间戳确保不可篡改，零知识证明（ZKP）和加密存储保护敏感数据，联盟链架构支撑中欧数据跨境合规传输。\n目前，其平台数据智能化采集覆盖率已达70%以上，其余部分依靠供应商协同填报、人工审核及第三方验证补齐。\n欣旺达动力也坦承，越往供应链上游，数据获取难度越大。供应链层级多、间接供应商可见度有限、供应商数据管理能力参差、部分交易信息涉及商业秘密。它的应对是“不追求所有数据都集中到同一个平台，更重要的是建立清晰的数据责任和可信共享机制”，推动行业从“能够获取数据”向“能够持续获取可信数据”转变。\n面对欧盟CFB方法学与工信部动力电池碳足迹申报两套规则，欣旺达动力的解法是“建立统一数据底座，根据不同法规采用相应核算方法，实现数据协同、规则适配和结果可追溯”，避免供应链企业重复收集相同数据。\n在欣旺达动力看来，电池护照真正的“最后一公里”，不是完成一次系统对接，而是将合规要求嵌入产品从设计、生产到交付和使用的完整业务流程。它更希望看到的是，电池护照能“从一项合规成本，逐步转化为能够为客户创造长期价值的数字化服务能力”。\n“2027年不是电池护照建设的终点，而是电池全生命周期数字化管理逐步进入规模化应用的新起点。”欣旺达动力方面表示，“未来，企业不仅需要证明自己能够制造高质量的电池，也需要持续、可信地证明产品全生命周期的可持续表现。”\n所在地区 · 中国/广东省/深圳市/光明区 SEVB\n主营产品 动力电池电芯，动力电池模组，电池管理系统，动力电池包\n所在地区 · 中国/北京市/北京市/顺义区 Li Auto\n本文地址：http://auto.gasgoo.com/News/2019/05/300656465646I70107904C601.shtml\n本文地址：https://auto.gasgoo.com/news/202611/6I70477079C501.shtml\n联系邮箱：info@gasgoo.com 求职应聘：021-39197800-8035 简历投递：zhaopin@gasgoo.com 客服微信：gasgoo12 (豆豆)\n盖世汽车社区 盖世大学堂-公开课 英文资讯站 热门内容 数据报告 国际站 具身智能"
   },
   {
-   "title": "限时售13.98万起/提供增程和纯电可选 小鹏MONA L05正式开启交付",
-   "url": "https://www.autohome.com.cn/news/202611/1318159.html#pvareaid=102624",
-   "source": "汽车之家",
+   "title": "自然堂的双十一突围战：10亿补贴下的增长打法与科技底牌",
+   "url": "https://www.tmtpost.com/8195768.html",
+   "source": "钛媒体",
    "lang": "zh",
    "hits": [
-    "小鹏",
-    "增程",
-    "交付"
-   ],
-   "score": 3,
-   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 国产新车 正文 限时售13.98万起/提供增程和纯电可选 小鹏MONA L05正式开启交付 之家原创车闻 原创 · 0 浏览 · 2026-11-04 16:21 · 北京 关注 [汽车之家 资讯 ] 11月4日，我们从小鹏汽车官方了解到，旗下中型SUV—— 小鹏MONA L05 ( 参数 | 询价 )正式开启交付，该车共推出6款配置，售价14.48-17.68万元，限时售价13.98-17.18万元（限时现金减免5000元，截止至2026年12月15日24点），至高可享价值超4.9万元限时权益。\n外观方面，小鹏MONA L05的外观设计延续家族设计风格，车头配备MONA家族标志性的星舰前大灯设计，前保险杠中央带有AGS主动进气格栅。车辆尾部采用贯穿式星环尾灯，内部集成了超过300颗LED激光镭雕，细节感拉满。车辆前备厢为102L、后备厢容积702L，可拓展至1913L。尺寸方面，新车长宽高分别为4870/1930/1636mm，轴距2940mm。\n辅助驾驶系统搭载小鹏NGP图灵AI智驾，高配版本搭载2颗图灵AI芯片，峰值算力1500TOPS，支持车位到车位辅助驾驶、无导航漫游功能。\n内饰方面，车辆采用环抱式的座舱设计，配备17.3英寸中控大屏+26.8英寸W-HUD，方向盘采用双辐式设计。下部中央岛台造型独特，并提供无线充电面板。新车内饰带有22处拓展接口，可以安装各种不同的配件，例如安装运动相机等。值得一提的是，该车还将提供两段式天幕设计，后排带有隐私玻璃、Type-C手机充电接口、小桌板、17.3英寸后排娱乐屏等配置。\n动力方面，新车提供纯电、增程两个版本。纯电版搭载单电机，最大功率183kW，CLTC续航提供535km、635km两种规格，最低电耗12.2kWh/100km，10%-80%充电时间19.1分钟，0-100km/h最快加速6.8秒。增程版搭载1.5L增程器，系统综合功率183kW，0-100km/h加速6.8秒，CLTC纯电续航310km，综合续航1310km，WLTC亏电油耗5.26L/100km，10%-80%充电时间14.7分钟。底盘采用前麦弗逊+后多连杆独立悬架，配备DCC智能可变阻尼减振器和AI底盘智能预瞄。（文/汽车之家 周易）",
-   "image": "img/934fc629394b42.jpg"
-  },
-  {
-   "title": "The 2027 Chevy Silverado EV Gets A Power Bump And A NACS Port",
-   "url": "https://insideevs.com/news/814480/2027-chevrolet-silverado-ev-more-power-nacs/",
-   "source": "InsideEVs",
-   "lang": "en",
-   "summary": "All General Motors EVs are getting a Tesla-style charging port, but the most powerful Silverado EV gets some extra ponies, too.",
-   "imageSrc": "https://cdn.motor1.com/images/mgl/0eEpNm/s3/chevy-silverado-ev-trail-boss-first-drive-review.jpg",
-   "hits": [
-    "tesla",
-    "charging",
-    "ev"
-   ],
-   "score": 3,
-   "body": "All General Motors EVs are getting a Tesla-style charging port, but the most powerful Silverado EV gets some extra ponies, too.",
-   "image": "img/4ec17169edbb5c.jpg"
-  },
-  {
-   "title": "BLUETTI’s flexible $1,099 Apex 200 backs up your home – and powers your RV",
-   "url": "https://electrek.co/2026/11/04/bluetti-apex-200-backs-up-your-home-and-powers-your-rv/",
-   "source": "Electrek",
-   "lang": "en",
-   "summary": "What do you actually need to keep running when the power goes out? For most households, the fridge, wifi, phones, and a few other essentials come first. Buying enough battery storage for every appliance in the house can come later – and that’s the appeal of BLUETTI’s latest launch, the Apex 200 portable power station . more…",
-   "imageSrc": "https://electrek.co/wp-content/uploads/sites/3/2026/10/BLUETTI-Apex-200-Portable-Power-Station-5.jpg?quality=82&#038;strip=all&#038;w=1600",
-   "hits": [
-    "battery",
-    "ev"
-   ],
-   "score": 2,
-   "body": "What do you actually need to keep running when the power goes out? For most households, the fridge, wifi, phones, and a few other essentials come first. Buying enough battery storage for every appliance in the house can come later – and that’s the appeal of BLUETTI’s latest launch, the Apex 200 portable power station . more…",
-   "image": "img/0a0442e129339c.webp"
-  },
-  {
-   "title": "在中国，为全球，福特中国连续九年赴约中国国际进口博览会",
-   "url": "https://www.diandongbang.com/news/167951.html",
-   "source": "电动邦",
-   "lang": "zh",
-   "hits": [
-    "福特"
+    "补贴"
    ],
    "score": 1,
-   "body": "2026年11月5日，中国上海—— 今日，第九届中国国际进口博览会（简称\"进博会\"）在上海开幕，福特汽车携旗下福特、林肯两大品牌亮相国家会展中心H7.2馆。自2018年首届进博会举办以来，福特汽车以\"全勤生\"身份连续九年参展。本届进博会，福特汽车再次以双品牌多款新车为载体，呈现与中国市场深度融合的发展态势，以及坚定推进在华业务可持续发展的长期承诺。\n福特汽车携旗下福特、林肯两大品牌亮相国家会展中心H7.2馆\n本届进博会福特汽车展台上，福特、林肯双品牌多款明星车型同台亮相，呈现丰富的新能源及燃油车型产品线，并展现福特、林肯双品牌主张及生活方式。作为烈马家族首款新能源车型，福特智趣烈马定位于“全地形露营SUV”，提供纯电/增程双动力选择，融合新能源、智能科技与户外露营体验于一身，为用户带来“可城，可玩，可野”的精彩用车生活。\n“全地形露营SUV”福特智趣烈马与纯血硬核越野SUV福特烈马\n纯血硬核越野SUV福特烈马，自1966年诞生以来以全地形多功能而著称，其在巴哈赛事累计斩获34次冠军。可拆卸原厂模块化车身设计，搭配H.O.S.S.悬挂系统，提供无与伦比的可玩性，是硬核户外达人最爱的忠实伙伴。\n今年7月新福特探险者携33项升级全新上市，将数十项豪华升级精准匹配全场景体验，进一步夯实“大型长途穿越旗舰SUV”的行业标杆地位，围绕豪华、设计、智能、硬核四大维度迎来全面跃升，为中国消费者带来不断进化的全新体验。\n全路况豪华“专机”林肯飞行家与全路况豪华行宫林肯领航员\n林肯品牌方面，全路况豪华“专机”——林肯飞行家，以大气尺寸、豪华布局、 “深海”静谧工程及同级唯一标配3.0T V6动力，彰显豪华质感与强劲性能。全路况豪华行宫——林肯领航员，以恢弘设计、宽敞座舱、非承载式车身及“猛禽”底盘展现王者气场与全路况豪华实力。\n值得一提的是，本次进博会期间，恰逢福特、林肯品牌多款车型购车权益及礼遇多重升级，为消费者开启更具吸引力的购车窗口期。\n懂\"野\" 也懂\"舒服\" 福特、林肯双品牌深耕中国用户体验\n从中国消费者真实的需求与感受出发，福特和林肯品牌进一步提供了更直观、更具感知力的品牌体验。\n围绕“放天性，去野行”的品牌主张，近年来福特中国正逐渐从“卖车”走向构建“人、车、生活”的完整户外探索生态。福特以“四级野”产品矩阵（休闲野、探索野、硬核野、赛级野）精准识别不同用户的户外需求，并提供与之对应、闭环的客户体验和服务。2025年率先在济宁开设北美以外首家专业越野公园，开业以来接待游客近8万人次。2026年柳州乐园正式落地，形成了一南一北双户外主题乐园的服务形态。此外，福特中国还携手“去哪儿”旅行，推出“福特中国野行纵横路线”，业界首次实现汽车品牌定制路线在旅游平台售卖的全新模式，为丰富中国高品质户外生活体验提供创新范本。参与体验客户中91%有再次购买意愿，2026年度再度新增8条线路。\n林肯始终基于中国用户的真实需求出发，以“舒服”为品牌标签、“全路况豪华”为产品标签、“林肯之道”为体验标签，将品牌百年豪华底蕴转化成可感知的用车体验。今年7月，林肯品牌首次入驻位于柳州的福特户外主题乐园，并开启“林肯谧境”专属体验赛道。同期，林肯中国联合 “去哪儿旅行” 及 “中国旅游协会” 共同发布了4条舒奢秘境之旅，依托林肯中国豪华舒奢的出行理念和林肯SUV强大的 “全路况豪华” 实力与极致 “舒服” 的驾乘感受，让用户在每一次旅程中都能感受到舒服才是极致的豪华。\n全新福特Transit City纯电动商用车将出口至全球五大洲52个国家和地区\n对福特汽车而言，中国不仅是重要的市场，也正成为福特全球创新与制造体系中的战略一环。通过联合中国产业链开发新能源汽车，福特中国不断强化本土团队技术实力，推动中国创新进入福特全球产品，本届进博会福特展台亮相的福特智趣烈马即是该模式下的创新代表。同时，依托福特全球网络与品牌影响力，福特中国将中国研发与制造优势转化为整车出口。今年8月，由福特中国与全球工程团队及本土合作伙伴协同开发的全新福特Transit City纯电动商用车下线，将出口至全球五大洲52个国家和地区。",
-   "image": "img/6fe75423a49a6e.jpg"
+   "body": "双十一大促正在如火如荼，美妆行业也正在凭借全新的竞争逻辑，开启全新的增长周期。\n上半年中国美妆市场规模5189.1亿元、同比仅增长4.6%。在存量博弈之下，线上增量加速向内容电商集中，从而进一步推高了流量成本——大促期间头部美妆品牌在抖音的付费流量占比均值突破六成。\n增长压力倍增，流量红利收窄，能拉开差距的只剩三样东西：品牌力、产品力，以及支撑产品力的自研科技。\n迎来成立25周年的自然堂，正是沿着这一逻辑以「10亿补贴」重磅返场：一端用营销放大声量，一端用产品力承接转化。截至10月23日的阶段性数据，品牌在天猫、抖音、京东等多个平台接连取得亮眼表现，多个明星产品榜单登顶，初步验证了「10亿补贴」带动下的营销势能与产品竞争力。\n今年双11，自然堂围绕“买得越多，补贴越大”的核心主张，持续联动明星、头部达人及重点电商平台，通过差异化产品权益、内容种草与全域营销资源协同，覆盖消费者从认知到购买的不同环节，推动双11消费热度持续升温。\n明星大事件成为首轮引爆点。天猫平台，多位艺人先后走进自然堂直播间，“今日大明星”直播专场登顶淘宝直播小时榜TOP1；自然堂携手平台打造的“欢聚日”特别企划，推动直播间登顶美容护肤榜TOP1，相关热门话题斩获热搜总榜TOP1，活动GMV同比增长46%。抖音平台，超级品牌日“今日星营业”直播专场推动超品全周期销售GMV同比增长55%，直播间登顶个人护理带货榜TOP1。京东方面，自然堂联合平台打造S级营销IP“超级大牌日”，活动GMV同比增长158%，访客量同比增长64%。\n在重点平台营销事件之外，全渠道差异化运营进一步扩大消费覆盖：抖音渠道提前布局现货消费需求，通过店播与达播并行、平台消费券及重点产品推荐等方式，持续激活消费需求。同时，品牌拓展多元化达人合作与内容形式，通过差异化主播矩阵触达更多消费圈层，为重点产品创造新的增长机会。唯品会阶段性销售同比增长27%，单品牌mini大牌日销售达去年同期的2.4倍；即时零售渠道阶段性整体GMV同比增长67%，其中美团渠道同比增长89.6%、淘闪渠道同比增长60.1%。\n大促传播不止于线上曝光，更向线下场景延伸：线上，品牌整合平台核心资源位、信息流与社交媒体资源，持续释放明星内容、重点产品与10亿补贴主题信息；线下，分众梯媒与户外广告强化曝光，扬州三福一日店长活动与沈阳、苏州等重点商圈的主题路演相继开展，为消费者提供产品体验、互动打卡与现场购物的多元场景——从平台大事件到日常生活触点，线上线下营销资源就此形成合力。\n营销组合拳解决的是“让消费者看见并进来”，产品力决定的则是“能否接得住、卖得动、留得下”。截至10月23日的阶段性数据，给出了相当明确的回答。\n抖音平台，自然堂超抗小紫瓶第七代登顶面部抗皱精华爆款榜与回购榜双榜第1——两个榜单同时登顶，意味着市场同时给出了“卖得动”与“用得回来”双重认证，这正是付费流量占比突破六成的大促环境里，最稀缺的复利型增长。与此同时，自然堂超光白套组登顶面部护理套装爆款榜第1，喷喷乳、极地圣水等产品亦取得积极的销售表现，带动多品类协同增长。\n图：自然堂超抗小紫瓶第七代及自然堂超光白套组抖音榜单登顶\n天猫平台，喜默因®含量高达93%的自然堂极地圣水登顶化妆水热卖榜NO.1，并在李佳琦直播间登上「所有女生的心动水/乳/套组」TOP1；搭载等渗修护技术与3%专利极地益生菌产物的极地补水等渗面膜进入「所有女生的面膜加购」TOP3。\n京东平台则呈现多品类协同：自然堂小紫瓶系列销售同比增长132%，烟酰胺面膜同比增长120%，草本洗护同比增长超200%，素颜霜登顶相关行业榜单TOP1，男士乳液面霜类目位列国货品牌TOP3。抗老、美白、个护与男士多条赛道同时跑出的亮眼成绩表明，自然堂的增长已不再依赖单一爆款，而是由产品矩阵协同驱动；跨平台、跨品类的同步验证，也意味着大促流量正在沉淀为可持续的复购资产与品类扩张动能。\n爆品矩阵为什么撑得住？答案藏在更上游的原料与研发里。自然堂的产品矩阵并非单点配方驱动，而是建立在“皮肤科学——自研原料——配方转化”的长期科技底座上：皮肤科学回答“为什么做”，自研原料回答“用什么做”，配方转化回答“怎么落到产品”。\n第一层是皮肤科学。以登榜多平台首位的自然堂小紫瓶系列为例，其提出的“抗疲老”理念并非只是一个营销噱头，而是自然堂集团联合中国科学院上海营养与健康研究所汪思佳团队，开展中国女性衰老年轻化研究结果所得。据相关研究对比发现2018年至2023年这5年间，总皱纹衰老拐点提前了约4岁，基于此自然堂首创性提出“疲惫式衰老”这一概念，并将研究深入线粒体功能与细胞能量供应层面。2026年，自然堂联合清华长三角研究院衰老科学创新研发中心（ACRDC）与英敏特发布《2026科学抗疲老研究报告——线粒体能量白皮书》，系统梳理中国人“疲惫式衰老”的特征与作用机制，提出“线粒体新生＋线粒体修护”的全链路能量抗衰研究框架，把国人抗疲老的需求转化为系统性的科学课题。这意味着自然堂的产品开发并非从成分热点出发，而是先回答“中国消费者的皮肤问题是什么、机制在哪里”，再倒推原料与配方方向。\n图：《2026科学抗疲老研究报告——线粒体能量白皮书》\n第二层是自研原料。自2013年起，自然堂研发团队深入喜马拉雅山脉腹地，通过基因测序分离出558株特有菌种，建立起喜马拉雅特色菌种库；2022年，历时十余年专研的极地酵母喜默因®正式发布，成为中国美妆首批拥有自主知识产权的自研酵母成分。喜默因®成本仅为同类外购成分的十分之一，截至2025年底已应用于67个产品配方，2025年使用该原料的产品超过3500万支、贡献营收超过10亿元。2026年4月，研发团队借助AI计算生物学平台，在超过280万个酵母蛋白中筛选改造出喜默因®超抗肽，渗透力达到传统四肽的8.5倍，该成分荣获2026年国际化妆品创新匹亚峰会INPD国际创新原料奖项，自然堂也凭借AI计算生物学在成分研发中的应用斩获2026年天猫金妆奖AI科技奖。至此，自然堂集团已自研超20种化妆品原料，自主原料既解决了“有没有”的问题，也通过成本优势为产品权益和大促补贴留出了空间。\n第三层是配方转化。科技底座最终要落到产品上：配方极简的自然堂极地圣水，喜默因®添加量高达93%，构成了其连续问鼎精华水品类的底气；自然堂超抗小紫瓶第七代和自然堂小紫瓶超抗霜搭载喜默因®超抗肽这一核心成分，围绕线粒体能量、抗氧化与屏障修护开展配方创新，收获了来自消费者端的认可，品牌也借此收获英敏特“中国抗疲老护肤市场引领者”认证；自然堂超光白套组的精纯烟酰胺体系，背后是自然堂“577”美白科技从表观遗传层面控黑的长期积累，相关成果已发表于2026巴黎IMCAS全球医学大会；等渗面膜则以等渗修护技术搭配3%专利极地益生菌产物的配方思路，支撑其进入头部直播间加购榜前列。\n用自然堂集团董事长兼总裁郑春颖的话说，“核心原料，就是化妆品的美丽之'芯'”——省下的原料溢价，才可能变成消费者看得见的补贴与拿得到的好产品，真正实现科技普惠。\n对一家走到25年的国货美妆来说，双11的价值从来不只在榜单截图，更在大促之后留下的东西：从明星直播与平台营销IP的集中造势，到全域媒介与线下互动的持续联动，再到核心产品在"
   },
   {
-   "title": "林肯飞行家3.0T换长安1.5T 售价28万能大火吗？",
-   "url": "http://news.cheshi.com/dujia/20261105/3426215.shtml",
-   "source": "网上车市",
-   "lang": "zh",
-   "hits": [
-    "长安"
-   ],
-   "score": 1,
-   "body": "一台挂着林肯标的5米级SUV，发动机排量1.5升。这不是玩笑，是工信部第413批公示的原文，车型是林肯飞行家AVIATOR EX8。\n长安福特为这台林肯新车申报了一套1.5T插混：车长5055毫米，排量1497毫升，发动机型号JL469ZQ1，重庆长安生产，额定功率110kW，净功率105kW；磷酸铁锂电池由时代长安提供，5座，整备质量2480kg和2580kg，最高车速205km/h。\n现款国产飞行家是3.0T V6、270kW、6座和7座，指导价50.98万元起，终端让利17万左右，入门版裸车卖34万以内。EX8的动力换成1.5T插混，座位变为5座。价格官方尚未公布，28万只是向同级最火的问界M7看齐：若真按这个价，这款大SUV的市场竞争力会非常强。和现款惠后34万比，差约6万元，少两个缸、少个座位。\n还有一层成本差在税里。乘用车消费税按排量分档：1.0至1.5升（含）为3%，2.5至3.0升（含）为12%。EX8的1497毫升落在3%这一档，飞行家的2956毫升落在12%这一档，相差9个百分点。这笔税在生产环节按出厂价计征，已含在车价里；纯电不在此税目征收范围，插混仍按排量走。9个百分点不会全部让给消费者，但它解释了1.5T为什么有可能把门槛拉到30万以内，而3.0T即便优惠17万，裸车还在33万以上。\nEX8长宽高5055/1995/1790mm，另一版本高1800mm，轴距3010mm，轮胎给到255/50R21和255/45R22。与现款飞行家相比，它短25mm、窄27mm、高31mm，轴距短15mm，车身更方正，车身底部尺寸反而小了一点。\n放到竞品里，理想L7为5050/1995/1750mm、轴距3005mm，EX8比它长5mm、高40mm；问界M7为5080/1999/1780mm、轴距3030mm，EX8比它短25mm、窄4mm、轴距短20mm，三车宽度几乎一致，EX8车身最高。奥迪E7X为5049/1997/1710mm、轴距3060mm，EX8轴距短50mm，高度多出80mm。\n假设定在28万，这个价正好落在三台车中间：问界M7增程27.98万起，奥迪E7X 26.98万起，理想L7停售前是30.18万起。同价位对手给出的配置是双电机四驱、超过200km的纯电续航；纯电的E7X还带900V平台、109度电池和751km续航。EX8目前只公示了1.5T发动机和磷酸铁锂电池，电机功率、纯电续航、亏电油耗、智驾方案都没有披露。\n2.5吨上下的车重配105kW净功率的发动机，亏电时动力够不够用，是个问号。车顶预留了激光雷达位置，高阶辅助驾驶大概率会配备，但供应商和算力同样没写。\n还有一处容易被忽略：EX8只申报5座。M7有5座和6座，L7是5座，E7X是5座和4座。想覆盖家庭用户的6座需求，不知道EX8后续能否满足呢？\n林肯飞行家EX8实拍曝光：用长安发动机+长安电池！\n智己LS8纯电23.98万起，全系标配宁德电池+B&O音响\n第8代宝马3系加长版实拍：2.0T动力更强，增重278斤\n深化开放合作，赋能未来出行 宝马集团携新世代成果亮相进博会\n在中国，为全球 福特中国连续九年赴约中国国际进口博览会\n6. 英菲尼迪QX60(进口) 参数配置 车型图片\n10. 奔驰GLC Coupe(进口) 参数配置 车型图片",
-   "image": "img/ce2fd7fc2233db.jpg"
-  },
-  {
-   "title": "捷途自由者7限时焕新价8.99万元起",
-   "url": "https://auto.sina.com.cn/newcar/2026-11-04/detail-inixqsyw6672027.shtml?oaid=00114&c=spr_auto_trackid_4d7d188c9b7a61c4",
-   "source": "新浪汽车·新车",
-   "lang": "zh",
-   "hits": [
-    "捷途"
-   ],
-   "score": 1,
-   "body": "11月4日，全新捷途自由者7正式上市，共推出9款车型，限时焕新价为8.99-14.19万元。新车提供自由者7、 自由者7 PLUS 以及自由者7 PLUS C-DM三种动力版本，分别满足不同用户的出行需求。作为捷途品牌旗下的全新车型，自由者7延续了品牌标志性的方盒子设计风格，并在空间、舒适性、智能化以及户外场景体验等方面有不错的体现，如搭载灵犀智舱TOUR OS、骁龙8155芯片及DeepSeek+讯飞星火AI大模型，同时提供燃油、2.0T及插电混动三种动力选择，进一步拓展方盒子SUV的使用场景。\n外观方面，全新捷途自由者7延续时尚方盒子设计语言，直瀑阵列式格栅搭配科技风L型灯组与战机式进气前保，在硬朗的车身轮廓中融入精致的设计细节。\n新车有朝霞橙、深海蓝两款车色，搭配鎏沙金、雪山银、极夜黑，共提供5种车身配色，满足不同用户的个性化审美需求。\n值得一提的是，新车配备同级独有的原厂尾门小书包，拥有13L独立储物空间，可用于收纳生活用品、运动装备等物品，并支持一键电动开启。此外，小书包还可通过更换定制盖板变身露营小桌板，兼顾实用性与户外场景的趣味性。\n针对追求个性化的用户，新车还提供JMK官方潮改、原厂个性拉花以及25款生态改装套件，让用户能够根据自身喜好打造专属座驾。\n进入车内，全新捷途自由者7采用环抱式豪华内饰设计，隐藏式怀挡、全新运动方向盘与金属质感驾控旋钮相互搭配，营造出兼具科技感与运动感的座舱氛围。\n15.6英寸2.5K悬浮式中控大屏、星际星环面板以及多彩流光氛围灯，进一步提升了车内的精致感。与此同时，座舱大面积采用亲肤软包材质，兼顾视觉质感与实际触感。\n新车提供4651mm和4749mm两种车长规格，车宽达到1967mm，车高1840mm，轴距2800mm，以B级宽体尺寸打造更加舒展的车内空间。\n后排采用接近纯平的地板设计，横向空间达到1549mm，头部空间927mm，膝部空间149mm，后排座椅还支持25°和30°两档靠背调节，提升长途乘坐的舒适性。对于家庭用户而言，这样的空间布局不仅能够满足日常通勤和多人出行需求，也能减少长时间乘坐时的局促感。\n在储物和休息场景方面，全新捷途自由者7同样进行了针对性设计。常规状态下，后备箱能够容纳露营装备、钓具等户外用品。\n后排座椅纯平放倒后，最大纵深可达1940mm，能够形成接近2米的休息空间，配合64英寸全景天窗，可满足露营、短途旅行等场景下的休息需求。\n舒适性配置方面，新车搭载10层结构舒云座椅，采用云肤革面料，兼顾柔软度、支撑性与亲肤防污表现。主驾驶座椅支持6向电动调节，并配备通风、加热及记忆功能。副驾驶则配备同级独有的女王副驾，拥有80°电动腿托，支持一键舒享躺卧，为长途出行中的乘客提供更加放松的乘坐体验。\n智能化方面，全新捷途自由者7搭载灵犀智舱TOUR OS，配备骁龙8155车载芯片以及DeepSeek+讯飞星火AI大模型，支持多指令连续识别，用户可通过语音完成导航、空调、音乐等功能的控制，降低日常用车的操作门槛。\n泊车辅助方面，新车搭载APA全场景自动泊车系统，支持100m循迹倒车功能，能够应对车位两侧空间较为狭窄的停车场景，官方数据显示，其垂直车位泊车成功率可达99%。对于城市通勤用户而言，这些配置能够在一定程度上减轻停车和驾驶过程中的操作压力。\n户外场景则是全新捷途自由者7重点强化的使用方向。新车采用磐石车身结构，高强度钢占比超过80%，并采用一体式左右侧双门环、一体式天窗加强环、激光钎焊顶盖及激光拼焊工艺，进一步提升车身结构强度。\n此外，新车配备独立高强度拖车防撞梁，最大可拖拽3200斤，为拖挂露营装备及户外玩具提供了更多可能。\n在通过性方面，全新捷途自由者7拥有27°接近角、28°离去角，最小离地间隙185mm，最大涉水深度600mm；自由者7 PLUS与自由者7 PLUS C-DM则进一步提升至28°接近角和离去角，最小离地间隙200mm，最大涉水深度700mm。面对碎石路面、土坡以及浅滩等轻度越野场景，新车能够提供一定的通过能力。\n动力方面，全新捷途自由者7搭载1.5TD鲲鹏动力，最大功率135kW，峰值扭矩290N·m，匹配7DCT变速箱，在满足城市通勤需求的同时，也为周末户外出行提供充足动力。\n自由者7 PLUS则搭载2.0T发动机，最大功率187kW，峰值扭矩390N·m，针对满载出行、爬坡及复杂路况等场景提供更强的动力储备。\n为了进一步提升户外驾驶体验，自由者7 PLUS还配备7+X一键越野模式，可根据路况自动识别并切换对应模式，同时支持7种驾驶模式自由切换。配合智能蠕行模式、智能扭矩管理器及智能限滑差速锁，新车能够针对不同路况进行动力分配与控制，在沟壑、坎坷路面等场景下提升车辆的通过能力，减少复杂路况下的驾驶操作负担。\n新能源版本方面，自由者7 PLUS C-DM搭载插电混动系统，CLTC纯电续航里程为150km，能够满足日常通勤中的纯电出行需求。官方数据显示，新车满油满电综合续航可达1300km，百公里综合油耗低至1.08L，在兼顾日常使用经济性的同时，也为长途自驾提供了更充足的续航保障。\n围绕露营场景，自由者7 PLUS C-DM还配备2.2kW车内放电和6.6kW车外放电功能，搭载26.6kWh大容量电池，可为烧烤炉、投影仪、车载冰箱等户外电器提供电力支持。同时，新车支持40小时以上长效驻车空调，无需启动发动机即可维持车内温度，为露营休息提供更加舒适的环境。\n电池安全方面，自由者7 PLUS C-DM搭载犀牛电池，具备超级防撞、超级防热及超级防水能力。其中，电池可耐受10吨挤压力，具备NP无热扩散能力，并达到IP68级防水标准，可在1米水深环境下持续24小时。针对户外使用场景，这些设计进一步提升了车辆在复杂环境中的用电安全保障。\n总体来看，全新捷途自由者7并没有将产品定位局限于传统的城市SUV，而是通过方盒子造型、宽敞舒适的座舱、丰富的智能配置以及针对户外场景的功能设计，进一步拓展了家庭出行与轻度越野的使用边界。三种动力版本的推出，也让用户能够根据日常通勤、动力需求及户外出行频率进行选择。其中，自由者7主打城市与轻度户外兼顾，自由者7 PLUS强化动力与越野能力，自由者7 PLUS C-DM则在纯电通勤、长途续航和露营用电之间寻求平衡。随着全新捷途自由者7正式上市，捷途在方盒子SUV市场中的产品布局也得到进一步完善，为追求个性化设计、家庭舒适性与户外探索体验的消费者提供了新的选择。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方"
-  },
-  {
-   "title": "智己LS8 NEO纯电正式上市 上市权益价23.98万元起",
-   "url": "https://news.yiche.com/info/114420713.html",
-   "source": "易车",
-   "lang": "zh",
-   "hits": [
-    "智己"
-   ],
-   "score": 1,
-   "body": ""
-  },
-  {
-   "title": "福特中国本土车型技术启动出海",
-   "url": "https://auto.gasgoo.com/news/202611/5I70477017C109.shtml",
-   "source": "盖世汽车",
-   "lang": "zh",
-   "hits": [
-    "福特",
-    "出海"
-   ],
-   "score": 2,
-   "body": "盖世汽车讯 11月5日，第九届中国国际进口博览会在上海正式开幕，福特汽车携福特、林肯双品牌亮相H7.2馆，这也是福特自2018年首届进博会起，连续九年参展。\n本届展会核心看点在于福特中国战略升级：业务思路从“在中国，为中国”转向“在中国，为全球”，本土研发制造成果对外输出。其中全新福特Transit City纯电动商用车已于今年8月下线。该车型由福特中国联合本土产业链、全球工程团队协同开发，规划出口至全球五大洲52个国家和地区。\n福特智趣烈马作为烈马家族首款 新能源 车型，同样是中外协同开发的代表性产品，定位全地形露营SUV，提供纯电、增程双动力方案。\n展台上同步展出经典福特烈马、新福特探险者、林肯飞行家、林肯领航员主力车型。\n福特对外展示“四级野”户外产品矩阵，依托济宁、柳州南北两座户外主题乐园，联合去哪儿旅行上线定制越野出行线路，搭建户外出行生态。林肯品牌则围绕“舒服”的豪华定位，落地柳州乐园内的“林肯谧境”体验赛道，配套多条舒奢秘境自驾路线。\n与此同时，进博会期间，福特、林肯同步更新购车权益。\n此外，福特中国相关信息显示，中国市场已经纳入福特全球创新制造体系。福特一方面依托本土供应链完成新能源车型开发，服务国内用户差异化需求；另一方面借助福特全球渠道，将国内开发车型推向海外市场，实现本土能力反哺全球业务。\n本文地址：http://auto.gasgoo.com/News/2019/05/300656465646I70107904C601.shtml\n本文地址：https://auto.gasgoo.com/news/202611/5I70477017C109.shtml\n联系邮箱：info@gasgoo.com 求职应聘：021-39197800-8035 简历投递：zhaopin@gasgoo.com 客服微信：gasgoo12 (豆豆)\n盖世汽车社区 盖世大学堂-公开课 英文资讯站 热门内容 数据报告 国际站 具身智能"
-  },
-  {
-   "title": "奔驰携多款新车亮相第九届进博会",
-   "url": "https://auto.sina.com.cn/news/2026-11-05/detail-inixsvxu9428878.shtml",
+   "title": "通用汽车携凯迪拉克品牌亮相第九届进博会",
+   "url": "https://auto.sina.com.cn/news/2026-11-05/detail-inixsrry6077454.shtml",
    "source": "新浪汽车",
    "lang": "zh",
    "hits": [
-    "奔驰"
+    "通用"
    ],
    "score": 1,
-   "body": "2026年11月5日，梅赛德斯-奔驰连续第九届参加中国国际进口博览会（下称“进博会”），携多款重磅车型亮相，集中展示品牌最新纯电与燃油车型在前沿智能化领域的成果。其中，新一代梅赛德斯-迈巴赫S级轿车的高端后排娱乐系统由中国团队主导开发，并将推广至全球市场；该系统率先应用梅赛德斯-奔驰与中国合作伙伴联合开发的端侧多模态大模型，以前瞻AI技术打造直观便捷的交互体验。全新梅赛德斯-奔驰纯电GLC SUV配备专为中国客户打造的虚拟助手“小奔”，并搭载与Momenta联合开发的城区及高速领航辅助驾驶系统，将AI赋能的智能化体验与“奔驰标准”的整车安全品质深度融合。此外，梅赛德斯-奔驰GLE SUV、梅赛德斯-奔驰CLE、梅赛德斯-AMG SL 63、梅赛德斯-奔驰S级轿车和梅赛德斯-奔驰G 500等车型悉数亮相，共同展现一目奔驰的设计美学与一脉相承的工程匠心。\n梅赛德斯-奔驰集团股份公司董事会成员、负责大中华区业务的佟欧福（Oliver Thöne）表示：“进博会是中国推进高水平对外开放的重要窗口，也是我们深化与行业内外伙伴交流、连接中国客户的关键平台。梅赛德斯-奔驰高度重视进博会，已连续九届参展，每一年，我们都很高兴能把品牌最新科技成果带给广大观众。今年恰逢汽车工业140周年，在这段跨越百余年的历程中，中国市场扮演着不可或缺的角色。如今，中国不仅是梅赛德斯-奔驰最重要的市场之一，也是我们的核心创新基地。”\n此外，梅赛德斯-奔驰与同济大学签署了合作备忘录。双方宣布将围绕辅助驾驶、智能座舱、AI、新能源及电子电气架构等重点领域开展联合研究，推动前沿科研与产业应用深度融合；同时发挥高校学科优势与企业产业实践经验，共同培养面向未来的复合型汽车创新人才。合作初期，双方将聚焦中国客户的真实用车场景，围绕辅助驾驶驾乘偏好、不同驱动形式车型的乘坐体验等课题，探究影响驾乘体验的关键因素，让产品开发与技术创新更贴近中国客户需求。此次合作，也是梅赛德斯-奔驰持续深化产学研合作布局的最新例证。\n佟欧福表示：“我们很高兴与同济大学开启了合作，协同开展智能网联汽车、新能源和AI等领域的前瞻技术研究和本土汽车人才培养。梅赛德斯-奔驰将继续提速本土化升级，深化与中国优秀企业的合作，让‘奔驰标准’与‘中国速度’深度融合，共同迈向汽车行业新未来。”\n同济大学汽车与能源学院院长熊璐表示：“同济大学始终致力于汽车领域科技创新与高层次人才培养。携手梅赛德斯-奔驰，是我们推动产学研深度融合的又一重要实践。双方将以前沿研究为引领、以人才培养为根基，加快科研成果向产业价值转化，为中国汽车产业迈向智能化、电动化新阶段贡献力量。”\n梅赛德斯-奔驰电子电气架构和平台软件负责人王忻表示：“技术创新的价值，最终要落实到客户体验。此次与同济大学合作，我们期待充分发挥双方在前沿科研与产业实践方面的优势，从中国客户真实用车场景和需求出发，将研究洞察和成果切实应用于产品规划和技术创新，让智能驾驶、智能座舱等前沿技术更好服务中国客户。”\n本次进博会，梅赛德斯-奔驰展出了涵盖不同驱动形式和细分市场的星徽座驾，全面呈现AI科技在豪华智能出行中的应用成果。这些成果的背后，是梅赛德斯-奔驰以北京和上海研发双引擎为核心，深度洞察本土市场、连接中国数字生态的持续投入。如今，梅赛德斯-奔驰已在中国建立起德国以外最全面的研发布局，过去五年在华研发投资超过100亿元人民币；中国研发团队在持续提速整车本土化的同时，致力让辅助驾驶、智能座舱等领域的AI技术高效落地，并在全球创新项目中发挥着日益重要的作用。其中，为中国市场量身定制的L2级辅助驾驶系统，覆盖全国高速与城市快速路的点到点领航辅助能力，从项目立项到量产落地仅用时12个月，是“中国速度”的有力例证。\n与此同时，梅赛德斯-奔驰在华科技合作网络已覆盖顶尖科技公司、初创企业与知名学府，与中国创新力量协同并进。依托自研MB.OS架构，“奔驰虚拟助手”整合3D图形技术与豆包大模型，为中国客户带来更拟人化、个性化且便捷直观的语音交互体验。在辅助驾驶领域，今年上半年，基于Momenta强化学习技术的城区及高速领航辅助驾驶系统已实现全国都能开。最新的R7世界模型可向用户交付“车位到车位”辅助驾驶和记忆泊车，并将陆续用于全新纯电GLC SUV、全新长轴距GLE SUV等不同驱动形式和细分市场的产品。梅赛德斯-奔驰是首批让世界模型上车的车企，也是Momenta合作伙伴中首个交付“车位到车位”的豪华品牌。\n无论技术如何进化，梅赛德斯-奔驰始终坚守安全、舒适、品质、设计和智能的“奔驰标准”。例如，与Momenta联合开发的辅助驾驶系统基于170亿公里真实道路驾驶数据和超过1.68亿条驾驶片段开发，大幅提高了积水、积雪等极端情况下的安全性。梅赛德斯-奔驰是Momenta的合作伙伴中，路测城市最多、覆盖范围最广的品牌之一。\n此外，在正式上市前，梅赛德斯-奔驰的每款新车都要完成约15，000次仿真模拟碰撞和150次实车碰撞。以全新奔驰纯电GLC SUV为例，其累计完成超过230次实车碰撞测试；仅在中国就投入65辆测试车，开展近80次本土化碰撞测试。同时，单车耐久测试里程达到10万公里。测试结束后，全车超过9，000处连接点依然保持完好且无锈蚀，座椅无变形、无塌陷，充分验证了车辆卓越的可靠性与耐久性。\n从连续九届赴约进博会，到持续深化本土布局和产学研合作；从以中国创新推动智能科技加速落地，到以“奔驰标准”为客户创造长期价值，梅赛德斯-奔驰始终坚定扎根中国，与中国开放同行、与中国伙伴共进，为中国客户带来令人向往的产品，与中国汽车工业共同迈向更加安全、智能和可持续的出行未来。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方",
-   "image": "img/5c4116724e3a23.jpg"
+   "body": "通用汽车今日携旗下豪华品牌凯迪拉克连续第九次亮相中国国际进口博览会（以下简称“进博会”）。本次展台由凯迪拉克全新 XT5 PHEV (配置 |询价) 领衔，多款品牌车型集中亮相，展现了凯迪拉克推动“在中国，为中国”战略的最新进展。\n自2004年进入中国市场以来，凯迪拉克已积累逾210万中国用户。如今，凯迪拉克正加速向电动化转型，为中国消费者提供智电出行产品。\n通用汽车全球高级副总裁兼通用汽车中国及亚洲市场总裁罗煦（John Roth）表示：“凯迪拉克体现了通用汽车‘在中国，为中国’的发展理念。全新XT5 PHEV自9月上市以来，已成为凯迪拉克在华最畅销的产品。我们将继续为中国消费者提供智能豪华出行体验。”\n在中国，凯迪拉克将通用汽车的全球工程、设计与技术优势，与本土人才及市场洞察相结合，围绕中国道路与用户需求加速产品开发。本次展出的全新XT5 PHEV和 凯威德 (配置 |询价) 两款车型，即体现了这一思路。\n展台中央的全新XT5 PHEV全路况辅助驾驶混动SUV是凯迪拉克首款基于本土自研架构打造的车型，也是首款交付即搭载Momenta R7世界模型的豪华混动SUV。\n凯迪拉克凯威德三排豪华纯电SUV定位全尺寸纯电旗舰，是品牌旗下首款搭载与Momenta联合开发的新一代高阶辅助驾驶的车型，并配备舱内隐藏式激光雷达，在保持整车造型流畅的同时实现环境探测。\n凯迪拉克于2026年正式进军F1®赛场。本次展出的凯迪拉克F1®车队展示用复刻赛车呈现了品牌的性能与工程探索方向。同台亮相的后驱运动轿车 CT5 和凯迪拉克V系列首款纯电高性能SUV锐歌V，则将品牌的性能基因延伸至日常出行产品。\n在研发层面，参与全新XT5 PHEV开发的本土工程团队与负责下一代车型设计的中国设计团队，正围绕新一代本土消费群体需求开展工作。\n通用汽车中国凯迪拉克副总裁兼上汽通用凯迪拉克市场营销部部长施德威（Will Stacy）表示：“凯迪拉克汇聚了通用汽车在华的优势资源，在设计、性能与科技方面持续投入，并注重以创新提升客户体验。未来将有更多新产品推出。”\n第九届中国国际进口博览会于11月5日至10日在国家会展中心（上海）举行。通用汽车展台（7.2B6-04）将展出五款凯迪拉克量产车型，包括全新XT5 PHEV、凯威德、锐歌V、CT6和CT5，以及凯迪拉克F1®车队展示用复刻赛车。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方",
+   "image": "img/926488ffcbc365.jpg"
   },
   {
-   "title": "比亚迪官方辟谣：天神之眼C停产、天神之眼B更换智驾方案不实",
-   "url": "http://www.pcauto.com.cn/news/5190/51907909.html?ad=28676",
+   "title": "吉利星越L PLUS将11月12日开启预售 中大型SUV/2.0T混动+后轮转向",
+   "url": "http://www.pcauto.com.cn/nation/5191/51911955.html?ad=28676",
    "source": "太平洋汽车",
-   "lang": "zh",
-   "hits": [
-    "比亚迪",
-    "智驾"
-   ],
-   "score": 2,
-   "body": ""
-  },
-  {
-   "title": "需更换转向机固定螺栓 大众/奥迪多款车型召回 涉及61万辆",
-   "url": "https://www.autohome.com.cn/news/202611/1318165.html#pvareaid=102624",
-   "source": "汽车之家",
-   "lang": "zh",
-   "hits": [
-    "大众",
-    "奥迪",
-    "召回"
-   ],
-   "score": 3,
-   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 召回碰撞 正文 需更换转向机固定螺栓 大众/奥迪多款车型召回 涉及61万辆 之家原创车闻 原创 · 0 浏览 · 2026-11-04 18:57 · 北京 关注 [汽车之家 资讯 ] 日前，大众汽车（中国）销售有限公司、上汽大众汽车有限公司、一汽-大众汽车有限公司根据《缺陷汽车产品召回管理条例》《缺陷汽车产品召回管理条例实施办法》的要求，向国家市场监督管理总局备案了召回计划。\n召回编号S2026M0138V：自2027年1月15日起，召回2014年9月2日至2019年8月23日期间生产的部分 进口高尔夫 ( 参数 | 询价 )及途威系列汽车，共计22036辆。\n召回编号S2026M0139V：自2027年1月15日起，召回2016年11月30日至2022年7月7日期间生产的部分国产途昂汽车，共计116864辆；2020年7月27日至2022年7月5日期间生产的部分国产途昂X汽车，共计24977辆；2021年11月26日至2022年7月28日期间生产的部分国产威然汽车，共计8529辆；2022年8月9日至2026年9月20日期间生产的部分国产奥迪Q6汽车，共计20369辆。\n召回编号S2026M0140V：自2027年1月15日起，召回2020年12月14日至2022年7月8日期间生产的部分国产揽境汽车，共计29264辆。\n召回编号S2026M0141V：自2027年1月15日起，召回2018年6月20日至2025年9月15日期间生产的部分国产奥迪Q3汽车，共计388258辆。\n本次召回范围内的车辆，长期受到水分及道路融雪剂影响后，副车架与转向机右侧固定螺栓可能锈蚀。随着锈蚀的加剧，固定螺栓可能断裂，转向机右侧连接失效，造成转向功能受限，存在安全隐患。\n大众汽车（中国）销售有限公司、上汽大众汽车有限公司、一汽-大众汽车有限公司将委托授权经销商，免费为召回范围内的车辆更换改进后的转向机右侧固定螺栓，以消除安全隐患。\n应急处置措施：如果前轴区域出现异常的金属敲击声或转向系统出现异常，应立即安全停车并联系就近授权经销商对车辆进行检查和处理。\n大众汽车（中国）销售有限公司、上汽大众汽车有限公司、一汽-大众汽车有限公司将通过短信、挂号信等方式，通知相关车主召回事宜。用户可通过客户服务热线：400-188-0888（进口大众品牌）、400-820-1111（上汽大众品牌）、400-820-1118（上汽奥迪品牌）、400-817-1888（一汽-大众品牌）、400-817-1666（一汽奥迪品牌），了解此次召回的详细信息。此外，也可登录市场监管总局召回中心网站www.samrdprc.org.cn，关注微信公众号（SAMRDPRC），了解更多信息，反映缺陷线索。（文/汽车之家 陈浩）",
-   "image": "img/9f088232c65daf.jpg"
-  },
-  {
-   "title": "第8代宝马3系加长版实拍：2.0T动力更强，增重278斤",
-   "url": "http://news.cheshi.com/dujia/20261105/3426218.shtml",
-   "source": "网上车市",
-   "lang": "zh",
-   "hits": [
-    "宝马"
-   ],
-   "score": 1,
-   "body": "轴距增加9毫米，整备质量却增加了278斤。这是工信部第413批公示里， 宝马 第八代国产3系长轴版325L给出的两个数字。\n华晨宝马 此次申报了325L和330L两款，代号G58，预计2027年投放。车身4865/1852/1461mm，轴距2970mm；现款长轴4838/1827/1454mm，轴距2961mm，长宽高和轴距分别增加27mm、25mm、7mm和9mm。多出来的车长落在前后悬，申报值前悬820mm、后悬1075mm；宽度增量主要落在轮距，前1593mm、后1599mm，前轮距比现款的1583mm多10mm，后轮距没变，接近角15度、离去角16度。海外标轴版轴距2860mm，国产加长110mm，与上一代加长幅度基本持平。\n动力确实提升了。325L用B48B20K，排量1998ml，额定172kW、净功率155kW，极速233km/h；330L用B48B20N，额定211kW、净功率190kW，极速250km/h。现款325Li是135kW，330Li是180kW，两台车净功率分别多20kW和10kW。申报未披露扭矩与变速箱，额定载客5人，满足国六排放。\n重量增加得更多。325L整备质量1 740 kg，330L为1753kg；现款325Li为1601kg、330Li为1618kg，分别增加139kg和135kg，也就是278斤和270斤。总质量2225kg，现款对应2055kg和2070kg，扣除整备质量后，325L的载重从454kg升到485kg。按净功率与整备质量粗算，325L的功率重量比从0.084kW/kg升到0.089kW/kg，330L则从0.111kW/kg降到0.108kW/kg。\n尾标不再带i，申报图为华晨宝马加325L、330L，i留给纯电 车型 。外观用Neue Klasse语言：双肾格栅横向收窄并与大灯连通，日行灯竖向布置，圆形天使眼取消；门把手仍是外拉式；车尾是细长横贯灯带，配小鸭尾和双边共两出排气。轮胎前245/40R19、后255/40R19，选装包括制动钳、不同轮辋、车身同色或黑色后视镜外壳、黑色尾翼。\n扭矩、变速箱、内饰、配置和价格都未公示。现款325Li 27.8万元、330Li 30.8万元的指导价只能作参照。\n278斤加在一台净功率只多20kW的车上，从功率重量比看，325L刚好补回来，330L反而略亏一点。\n宝马2026款X5/X3/3系/i3全面增配！5系i5也将升级\n高价值标配入门即享！2026款宝马3系/宝马i3/宝马X3正式上市\n智己LS8纯电23.98万起，全系标配宁德电池+B&O音响\n第8代宝马3系加长版实拍：2.0T动力更强，增重278斤\n深化开放合作，赋能未来出行 宝马集团携新世代成果亮相进博会\n在中国，为全球 福特中国连续九年赴约中国国际进口博览会\n10. 奔驰A级AMG(进口) 参数配置 车型图片"
-  },
-  {
-   "title": "限时7.68万起 吉利银河星耀6 EF上市",
-   "url": "https://auto.sina.com.cn/newcar/2026-11-03/detail-inixnpzs2099318.shtml?oaid=00005&c=spr_auto_trackid_f8944f41f240e3fc",
-   "source": "新浪汽车·新车",
    "lang": "zh",
    "hits": [
     "吉利"
    ],
    "score": 1,
-   "body": "2026年11月3日， 吉利汽车 在沈阳正式宣布，旗下全新车型—— 吉利银河 星耀6 (配置 |询价) EF正式上市。共推出3款车型，上市限时焕新价7.68-9.68万元。\n作为全球首款搭载新一代甲醇电混技术的家用轿车，星耀6 EF的推出不仅标志着吉利在新能源多能源路线上取得重大突破，也为中国北方及寒冷地区用户提供了“可醇、可电、可油”的全新绿色出行解决方案。\n在外观设计上，星耀6 EF延续了银河家族的“涟漪美学”设计语言。车辆前脸采用横向格栅造型，搭配犀利的灯组，整体视觉相较现款更具辨识度。\n车身侧面线条动感流畅，通过锐利的腰线和车门筋线塑造出极具运动感的车侧轮廓，并保留了传统机械式门把手，兼顾实用与美观。\n车尾部分融入了“旭日东升”贯穿式尾灯设计，辅以熏黑工艺处理，不仅在夜间点亮时呈现出极具视觉张力的光影效果，更凸显整车的运动气息与科技感。\n内饰与智能化方面，星耀6 EF同样展现了越级的诚意。座舱内部大面积采用高级软质材料精心包覆，辅以细腻的缝线工艺，营造出触手可及的豪华质感，为用户带来远超同级的舒适体验。\n车内搭载了Flyme Auto智能系统及7nm龙鹰一号车规级芯片，配备10.25英寸全液晶仪表与14.6英寸中控大屏。结合星睿AI大模型的语音助手，支持连续指令识别，让空调、导航等常用功能的交互更加自然流畅，为用户带来便捷的智能座舱体验。\n本次上市的核心亮点，在于星耀6 EF搭载的新一代甲醇插电式混合动力系统。该系统由1.5L甲醇发动机与电机组成，发动机最大功率达93kW，并配备磷酸铁锂电池组。其最大的技术突破在于支持甲醇与汽油在同一油箱内0-100%灵活配比，真正实现了“城市用电、长途用醇、随时可加油”的无缝切换模式。\n针对北方冬季纯电车型续航缩水的痛点，新一代甲醇发动机具备卓越的低温适应性，通过提高喷醇压力、高能闪电点火技术+甲醇专用铱金火花塞等技术，可在近-40℃的极寒环境下实现纯甲醇启动，保障了全天候的用车可靠性。\n在续航与补能方面，星耀6 EF彻底打破了单一能源的局限。配备70L大油箱，在CLTC工况下，最大纯电续航230km，CLTC馈电醇耗6.7L/100km，混动模式用甲醇，每公里用醇成本低至0.2元。此外，满醇满电综合续航可达1250km，满油满电综合续航更是高达1880km。\n总结： 吉利银河星耀6 EF的正式上市，填补了家用轿车市场在多能源技术领域的空白。它以均衡的产品力、创新的甲醇电混技术以及务实的定价策略，对于追求低用车成本、注重冬季用车可靠性以及有长途出行需求的家庭用户而言，无疑提供了一个极具竞争力的新选择。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方"
+   "body": "新车 行业 评测 导购 技术 改装 文化 Ai选车专家 图片 排行榜 工具 购车计算 车型对比 精彩推荐 极智+ 混动时代 太平洋号 购车 购车优惠 买车趣·最高领49999购车补贴 分期购 经销商 车市 商城 用车 社区 用车 酷养车 意见反馈 意见反馈 * 问题描述 0 / 300\n【太平洋汽车 新车频道 】11月5日，从吉利汽车官方获悉， 吉利星越L PLUS将于11月12日开启预售，新车定位中大型SUV，车长接近5米，轴距2米9，采用5座布局，搭载2.0T油电式混动系统，配备双腔空悬+CCD连续可变阻尼减振器、后轮转向系统，转弯半径仅4.88米，还搭载千里浩瀚H5辅助驾驶系统。\n外观方面， 星越L PLUS整体延续星越L家族式设计语言，整体造型非常有辨识度，新车前脸继续采用 直瀑式镀铬前格栅设计，前包围和两侧进气口都采用镀铬装饰，营造出豪华稳重的形象，底部还配有主动式进气格栅，不需要散热时可自动关闭。\n车身侧面体量明显大了不少，比例似乎也更加协调，还配备最大21英寸轮毂，整车显得非常有力量感，还提供“大饼式”轮毂可选。车身尺寸方面，新车长宽高分别为4955/1960/1769mm，轴距2900mm，对比现款星越 L，车长增加160mm、宽度增加65mm、高度增加80mm、轴距加长55mm。\n车尾采用贯穿式尾灯设计，底盘还有双边单出排气装饰，车身配色提供乌金黑、甜釉白、青韵灰、郎窑绿、霜釉银等六款车漆。\n内饰方面，吉利星越L PLUS采用了全新设计，配备30英寸6K大联屏和10.2英寸液晶组合，搭配32英寸AR-HUD抬头显示，搭载Flyme Auto 2.5智能座舱。内置有高通骁龙8295芯片，内置超级EVA智能体，还支持选装EVA实体机器人。\n辅助驾驶方面，星越L PLUS搭载千里浩瀚H5辅助驾驶系统，配备1颗英伟达Orin-Y 芯片（算力200TOPS）、1颗激光雷达、11个摄像头、12个超声波雷达、3个毫米波雷达共27个智能传感器，支持高速/城区领航辅助驾驶、全场景智能泊车等功能。\n在配置方面，新车配备前后排座椅加热/通风/按摩、23扬Flyme Sound无界之声音响、后排小桌板、后排17.3英寸吸顶屏、 二排贵妃榻（最大支持137°躺角+70°腿托，腿托可伸长100mm）、后排独立空调等豪华配置。\n动力方面，吉利星越L PLUS将搭载由2.0T发动机、电动机、3挡DHT变速箱组合的i‑HEV智擎混动系统，其中 发动机功率160千瓦 ， P3驱动电机功率230千瓦 ，百公里综合油耗4L级。值得一提的是， 该版本不支持外接充电，属于非插电式混动系统，仅需加油即可行驶。此外，新车还会提供2.0T燃油版，其发动机最大功率213千瓦。\n底盘方面，新车采用前双叉臂、后五连杆独立悬架，搭载双腔闭式空气悬架和CCD可变阻尼减震器，可自适应调节悬挂软硬，还搭载后轮转向系统，最小转弯半径4.88米，并支持蟹行模式。\n从目前市场情况来看，吉利星越L PLUS未来上市后将会与丰田汉兰达、小米澎程N70、零跑C16、理想L6、别克至境E7等车型展开竞争。作为参考，现款星越L售价13.97-17.97万元，预计星越L PLUS售价16-20万元级左右。（文：太平洋汽车 吴启星）\n新车上市 最新文章 成都车展 宏光MINI EV 普拉多 欧拉黑猫 途达 起亚嘉华 玛奇朵 皇冠陆放 奔驰C级 哈弗神兽 坦克600 奥迪Q5 思域 卡罗拉双擎E+ 轩逸 太平洋汽车网app 新能源车\n吉利汽车新车： 星瑞L PLUS 博越REV 吉利雷达金刚\n吉利汽车城市4S店： 广州 北京 深圳 武汉 成都 上海 天津 杭州 青岛 重庆\n举报邮箱：shenhezhiban@pconline.com.cn",
+   "image": "img/3f28932c393a09.jpg"
   },
   {
-   "title": "比亚迪第二代海豹07正式上市 超级置换价13.59万元起",
-   "url": "https://news.yiche.com/info/114420161.html",
-   "source": "易车",
+   "title": "奥迪Q6L e-tron现金优惠1万元 一汽奥迪推出限时优惠活动",
+   "url": "https://www.autohome.com.cn/news/202611/1318173.html#pvareaid=102624",
+   "source": "汽车之家",
    "lang": "zh",
    "hits": [
-    "比亚迪"
+    "奥迪",
+    "一汽"
    ],
-   "score": 1,
-   "body": ""
+   "score": 2,
+   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 国产新车 正文 奥迪Q6L e-tron现金优惠1万元 一汽奥迪推出限时优惠活动 之家原创车闻 原创 · 0 浏览 · 2026-11-05 10:42 · 北京 关注 [汽车之家 资讯 ] 日前，一汽奥迪推出限时优惠活动，主要涉及 奥迪A6L e-tron ( 参数 | 询价 )、奥迪Q6L e-tron两款车型，限时礼遇截止至2026年11月30日。\n奥迪Q6L e-tron长续航版、奥迪Q6L Sportback e-tron长续航版可享10000元限时现金礼。优惠后，奥迪Q6L e-tron长续航版由厂商指导价279800元降至到手价269800元；奥迪Q6L Sportback e-tron长续航版由厂商指导价299800元降至到手价289800元。\n选购奥迪Q6L e-tron长续航版非黑色车型，在全系专属礼遇之上，还可叠加「臻色限定权益」，该权益全国限量666台，配额以当地门店实际可售为准，各地经销商政策存在差异，权益详情需到店咨询。\n装备升级礼，选购奥迪Q6L e-tron车型，3000元即可享受价值15000元水平贯穿式数字OLED尾灯；2000元可享受价值10000元21英寸Audi Sport运动轮圈。\n老友福利同步就位，覆盖置换、增购、推荐、复购四大场景：置换可享12000元现金补贴；增购可享10000元现金补贴；奥迪车主成功推荐亲友购车，推荐人与购车人分别可享5000奥迪商城积分，推荐3台及以上，还可额外享1000元保养代金券或1000元充电卡；复购可享10000奥迪商城积分及1000元服务加装代金券。选购全系车型还可享5年贷款前2年0息金融方案。\n选购奥迪A6L e-tron首发乾崑智驾版，可免费尊享价值45000元「先享装备包」，套装内含多项高价值配置：价值15000元水平贯穿式数字OLED尾灯、价值10000元黑光包套件、价值8000元Bang & Olufsen豪华音响系统、价值1000元20英寸Audi Sport运动轮毂、价值1000元Edition one照地灯、价值4000元冬季舒适包、价值6000元中国专属高定外饰色「瓷釉青」。\n其中黑光包套件包含纯黑色前格栅、黑色外后视镜壳体、黑色门把手及黑色车身标识；冬季舒适包包含方向盘加热及后排座椅加热。\n老友福利礼，置换可享12000元现金补贴；增购可享10000元现金补贴；奥迪车主成功推荐亲友购车，推荐人与购车人分别可享5000奥迪商城积分，推荐3台及以上，还可额外享1000元保养代金券或1000元充电卡；复购可享10000奥迪商城积分及1000元服务加装代金券。选购全系车型均可享受5年贷款前2年0息方案，降低购车门槛。\n增购现金补贴为一汽奥迪车主（或配偶）专享；置换礼遇和增购礼遇不可同享；置换、增购礼遇里的奥迪商城积分及服务加装代金券仅限一汽奥迪App认证车主会员复购。（编译/汽车之家 秦超）",
+   "image": "img/0739462b5679cd.jpg"
   },
   {
-   "title": "SKF Vertevo推新品牌",
-   "url": "https://auto.gasgoo.com/news/202611/4I70476910C103.shtml",
+   "title": "欧洲议会议员要求评估比亚迪安全风险",
+   "url": "https://auto.gasgoo.com/news/202611/6I70477208C101.shtml",
    "source": "盖世汽车",
    "lang": "zh",
    "hits": [
-    "ev"
+    "比亚迪",
+    "欧洲"
    ],
-   "score": 1,
-   "body": "11月3日，作为斯凯孚（SKF）汽车业务分拆进程的下一步，SKF Vertevo 正式揭晓其全新品牌。在计划于12月1日挂牌上市之前，这是确立 SKF Vertevo 作为一家独立运营的汽车业务公司身份的重要一步。\n随着 SKF Vertevo 官方网站及社交媒体渠道的上线，公司正式推出了全新的视觉形象与品牌平台，清晰地传递出公司的定位、核心价值理念以及未来的发展方向。\nSKF Vertevo 首席执行官 Kerstin Enochsson 表示：“我们今日发布的远不止于全新的视觉形象。品牌是企业的门面，彰显着我们的特质——它代表着我们的价值主张、热忱所在，以及我们对客户的坚定承诺。”\nSKF Vertevo 的品牌灵感源自赛车运动领域；数十年来，公司在该领域持续为汽车技术创新贡献力量。这一品牌形象的设计既延续了斯凯孚深厚的历史底蕴与专业技术积淀，同时也传递出公司致力于加速未来出行发展的雄心。\nSKF Vertevo 全球品牌与传播负责人 Viktoria Karsberg 表示：“全新品牌的发布是我们迈向独立公司征程中的重要一步。在筹备计划上市的过程中，我们非常期待能够逐步建立起外界对 SKF Vertevo 的品牌认知，并与所有利益相关方展开更直接的沟通与互动。”\n本文地址：http://auto.gasgoo.com/News/2019/05/300656465646I70107904C601.shtml\n本文地址：https://auto.gasgoo.com/news/202611/4I70476910C103.shtml\n联系邮箱：info@gasgoo.com 求职应聘：021-39197800-8035 简历投递：zhaopin@gasgoo.com 客服微信：gasgoo12 (豆豆)\n盖世汽车社区 盖世大学堂-公开课 英文资讯站 热门内容 数据报告 国际站 具身智能"
+   "score": 2,
+   "body": "盖世汽车讯 据外媒报道，近日，14名欧洲议会议员要求欧盟委员会评估比亚迪汽车是否构成安全威胁，以及是否应对其采取相应限制措施，例如将其排除在公共采购项目之外。\n11月4日，14名欧洲议会议员向欧盟行政机构提交书面质询，要求欧盟网络安全局评估比亚迪汽车的安全风险，并考虑将其列入高风险供应商名单。\n此次行动由法国欧洲议会议员Francois Kalfon牵头。他在质询文件的前言中称，允许来自第三国的网联汽车接入欧洲敏感基础设施，将带来不可接受的安全风险。\n比亚迪对此回应称，其在欧洲市场销售车辆的数据，无论是存储在云端还是车辆内部的数据，均无法从中国境内远程访问，欧洲用户始终拥有对自身数据的控制权。比亚迪在向路透社提供的声明中表示：“比亚迪欧洲不会向比亚迪在中国的实体或中国境内第三方提供此类数据。”\n欧洲议员还要求欧盟委员会明确，是否计划限制中国汽车进入具有军民两用性质的战略基础设施，以及是否考虑将比亚迪排除在公共采购项目之外。\n欧盟委员会今年9月提出了公共招标新规，相关规定可能提高中标项目中欧洲本土产品和服务的占比。不过，由于比亚迪已在匈牙利设有生产基地，并计划在欧洲建设更多工厂，因此仍可能参与相关采购项目。\n11月4日，Kalfon还致信法国总理Sebastien Lecornu，敦促法国政府采取一系列措施，避免中国网联汽车带来的潜在安全隐患。\n所在地区 · 中国/广东省/深圳市/龙岗区 BYD Auto\n品牌 丰田、仰望、方程豹、松散、比亚迪、腾势、领汇\n本文地址：http://auto.gasgoo.com/News/2019/05/300656465646I70107904C601.shtml\n本文地址：https://auto.gasgoo.com/news/202611/6I70477208C101.shtml\n联系邮箱：info@gasgoo.com 求职应聘：021-39197800-8035 简历投递：zhaopin@gasgoo.com 客服微信：gasgoo12 (豆豆)\n盖世汽车社区 盖世大学堂-公开课 英文资讯站 热门内容 数据报告 国际站 具身智能"
   },
   {
-   "title": "奕境X9单车型两周交付3612台 成交均价34万元",
-   "url": "https://auto.sina.com.cn/news/2026-11-01/detail-inixferu0889692.shtml",
+   "title": "鸿蒙智行10月交付新车33537台 全系成交均价超40万元",
+   "url": "https://auto.sina.com.cn/news/2026-11-01/detail-inixferx3103123.shtml",
    "source": "新浪汽车",
    "lang": "zh",
    "hits": [
     "交付"
    ],
    "score": 1,
-   "body": "据 奕境汽车 官方数据，自10月18日全国批量交付起， 奕境X9 (配置 |询价) 单车型两周交付3612台，成交均价34万元。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方"
+   "body": "据 鸿蒙智行 官方数据，鸿蒙智行10月交付新车33537台，全系成交均价超40万元，累计交付突破160万台。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方",
+   "image": "img/69ddf0ceb6cd0f.jpg"
   },
   {
-   "title": "10月乘用车市场零售169.3万辆 同比下降25% 新能源渗透率67.8%",
-   "url": "http://www.pcauto.com.cn/news/5190/51908731.html?ad=28676",
+   "title": "售价9.97万元 2027款东风标致408 1.5T+6AT动力组合",
+   "url": "http://www.pcauto.com.cn/nation/5191/51912412.html?ad=28676",
    "source": "太平洋汽车",
    "lang": "zh",
    "hits": [
-    "零售"
+    "东风"
    ],
    "score": 1,
-   "body": ""
+   "body": "新车 行业 评测 导购 技术 改装 文化 Ai选车专家 图片 排行榜 工具 购车计算 车型对比 精彩推荐 极智+ 混动时代 太平洋号 购车 购车优惠 买车趣·最高领49999购车补贴 分期购 经销商 车市 商城 用车 社区 用车 酷养车 意见反馈 意见反馈 * 问题描述 0 / 300\n【太平洋汽车 新车频道 】11月6日，2027款东风标致408正式上市，新车共推出1款车型，售价9.97万元。作为改款车型，新车新增梧桐绿和南法黄2款车色，动力上继续搭载1.5T发动机，最大功率173马力，匹配爱信6速手自一体变速箱，还标配全新升级的Blue-i 4.0智能网联系统以及车规级芯片，支持AI语音。\n外观方面，2027款标致408延续现款车型设计，采用标致家族的\"狮魂美学\"设计，盾形狮标与星动点阵式格栅融为一体，两侧为獠牙状LED日间行车灯和狮眼LED大灯，极具攻击性。配色上主要新增梧桐绿和南法黄2款车色。\n车身侧面线条饱满，配备17英寸轮毂（轮胎规格215/50 R17），车尾尾灯组由一个黑色的装饰面板相连接形成贯穿式设计，内部则采用了名为“狮爪LED”的3D灯组造型，看起来很有辨识度。车身尺寸方面，新车长宽高为4750/1820/1488mm，轴距为2730mm，与现款车型保持一致。\n内饰方面，2027款标致408同样延续现款车型设计，采用12英寸全液晶仪表+10英寸内嵌入式中控屏幕组合，搭配标志性的小幅多功能赛车式方向盘，标配全新升级的Blue-i 4.0智能网联系统以及车规级芯片，支持AI语音、200多款应用下载、CarLife/华为HiCar手机互联，还新增智能数字钥匙，可提前设置车内温度。\n配置层面，新车配备6安全气囊、360度全景影像、定速巡航、高德地图导航、前排座椅电动调节、6扬声器音响、后排空调出风口、远近LED大灯等。\n动力方面，2027款标致408搭载第四代360THP全铝双涡道涡轮增压发动机，最大功率127千瓦（173马力），峰值扭矩255牛·米，传动系统匹配6速手自一体变速箱，最高车速225km/h，WLTC综合油耗6.10L/100km。底盘采用前麦弗逊独立悬架、后扭力梁非独立悬架。\n从目前市场情况来看，2027款标致408的竞争对手主要包括大众速腾、日产轩逸、奇瑞艾瑞泽8、丰田卡罗拉等传统燃油车，还面临比亚迪秦PLUS、小鹏MONA M03等新能源车型的竞争。今年前9个月，现款标致408累计销量5635辆，月均销量600辆左右。（文：太平洋汽车 吴启星）\n新车上市 最新文章 成都车展 宏光MINI EV 普拉多 欧拉黑猫 途达 起亚嘉华 玛奇朵 皇冠陆放 奔驰C级 哈弗神兽 坦克600 奥迪Q5 思域 卡罗拉双擎E+ 轩逸 太平洋汽车网app 新能源车\n标致新车： 标致408X 标致5008 标致4008\n标致热门车型： 标致408 2027款 360THP Pro 标致408 2024款 龘龘款 360THP 罗曼尼版 标致408 2024款 龘龘款 360THP 拉图版\n标致城市4S店： 广州 北京 深圳 武汉 成都 上海 天津 杭州 青岛 重庆\n举报邮箱：shenhezhiban@pconline.com.cn",
+   "image": "img/956643a01d93e5.png"
   },
   {
-   "title": "“方盒子”中大型SUV 搭2.0T油混系统 魏牌蓝山HEV版申报信息曝光",
-   "url": "https://www.autohome.com.cn/news/202611/1318152.html#pvareaid=102624",
+   "title": "拉风！长城欧拉5GT和运动款（燃油版/混动版）激光雷达版开启下订",
+   "url": "https://www.autohome.com.cn/news/202611/1318203.html#pvareaid=102624",
    "source": "汽车之家",
    "lang": "zh",
    "hits": [
-    "魏牌",
-    "ev"
+    "长城",
+    "激光雷达"
    ],
    "score": 2,
-   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 国产新车 正文 “方盒子”中大型SUV 搭2.0T油混系统 魏牌蓝山HEV版申报信息曝光 之家原创车闻 原创 · 0 浏览 · 2026-11-04 11:31 · 北京 关注 [汽车之家 国内谍照 ] 日前，我们在工信部官网看到了魏牌蓝山HEV版申报信息，新车外观与此前申报的PHEV版保持一致，目前申报了大五座布局，定位中大型SUV。新车整备质量2420kg，比插混五座版的2640kg轻了220kg，最高车速从205km/h降到200km/h，少掉的重量主要来自被拿掉的大电池。\n外观方面，新车采用了插混版同款的“方盒子”设计语言，配合大面积垂瀑式镀铬中网，整体风格相当硬派。尺寸方面，车长5140mm、车宽2050mm、高1960mm/1975mm，轴距3010mm。提供两种规格的轮胎，分别为255/60 R20与275/50 R21。此外，由于新车申报了两种车高，所以接近角/离去角也随之分成23°/28°与24°/29°两组。\n值得注意的是，前脸部分是本次申报的另一个信息点：中网、前保险杠、前格栅、前车标、号牌板、保险杠下装饰件五项均可选装，同一台车能组合出不同的前脸方案，车身侧面则提供翼子板装饰件选装。其它选装项为：中网、前保险杠、前格栅、前车标、号牌板、保险杠下装饰件、天幕、后雷达、轮圈、翼子板装饰件。\n动力方面，新车采用油电混合动力，搭载长城汽车股份有限公司自产的2.0T发动机，最大功率182kW，与二代蓝山的插混版相比，此次申报的油电混动版拿不到绿牌，也不进入新能源购置税优惠的范畴，这是一条完全不同的赛道。\n作为了解，长城在混动路线上并不只有插混一张牌，魏牌此前已在高山8上重启HEV方案，电池容量仅3.64kWh，思路是让电池优化起步、低速与四驱响应，而不是承担纯电通勤。蓝山HEV大概率延续同一逻辑：用一块小电池、一台2.0T发动机，去覆盖不装充电桩、有跑长途需求的那部分用户。关于新车的更多信息，我们会持续关注。（文/汽车之家 岳长兴）"
+   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 国产新车 正文 拉风！长城欧拉5GT和运动款（燃油版/混动版）激光雷达版开启下订 之家原创车闻 原创 · 0 浏览 · 2026-11-06 10:53 · 北京 关注 [汽车之家 资讯 ] 日前，长城 欧拉5GT ( 参数 | 询价 )和运动款（燃油版/混动版）激光雷达版开启下订，新款车型将拥有1颗激光雷达，带来城市NOA和高速NOA领航辅助驾驶，并实现车位到车位领航辅助驾驶，同时还提供融合泊车辅助、记忆泊车、手机遥控泊车辅助、循迹倒车等。此外，新车还将配备自动紧急转向、加速踏板防误踩、后碰撞预警、开门预警等主动安全配置。智能座舱带来领航桌面与还原世界。\n欧拉5运动款相比欧拉5增加运动化外观套件，整车配备运动前铲、尾部扩散器与后扰流板组件，提供两种配色套装：烈焰红组件包含红色刹车卡钳、大灯红色装饰圈；闪电黄组件包含黄色刹车卡钳、大灯黄色装饰圈。新车配备18英寸风刃轮圈，提供本色、亮黑两种涂装，采用高强度铝合金材质，兼顾轻量化与结构强度。外观带来6种颜色，分别是风暴黑+闪电黄、冰川灰+闪电黄、白崖白+风暴黑、敦煌绿+白崖白、风暴黑纯色、沙洲米纯色。\n内饰方面，带来星夜灰+闪电黄撞色和晨曦白+闪电黄撞色两种选择。车内采用15.6英寸2.5K悬浮屏，座舱芯片采用4nm工艺，算力20TOPS，支持HUAWEI HiCar、ICCOA Carlink、CarPlay手机互联。搭载Coffee GPT语音大模型，支持可见即可说、免唤醒、一语十意、方言识别，支持灵感绘画并可设置为车机壁纸。\n动力方面，燃油版本搭载长城1.5T涡轮增压发动机+第三代湿式7DCT双离合变速箱，最大功率135千瓦，最大扭矩275牛·米，WLTC综合油耗6.4L/100km。混动版本搭载Hi2第五代智能混动技术，包含1.5T HEV专用发动机、2挡混动变速器，系统综合功率166千瓦，综合扭矩476牛·米，WLTC综合油耗4.5L/100km。\n欧拉5GT拥有更为夸张的外观套件，与更动感的内饰装饰。全车搭载专业空气动力学GT套件，配备烈焰红配色装饰，通过结构性优化大幅降低风阻、提升高速下压力，时速180km工况下，燃油、混动车型可提供31.5公斤下压力。劈风前铲可梳理车头气流；运动侧裙可阻挡侧面横向气流侵入底盘，降低车底乱流；汲风尾部扩散器加速车底气流排出，时速180km可增加1.5公斤下压力；掠风后扰流板通过压差效应提升下压力，时速180km可增加24公斤下压力。长城欧拉5GT还配备19英寸龙卷风铝合金轮圈，采用十辐旋涡式造型，通体高光纯黑涂装，搭配定制红色套色工艺，烈焰红为专属装饰色，覆盖轮毂圈、刹车卡钳、大灯灯圈三大核心部件，强化车型运动属性与专属辨识度。新车提供闪电黄、风暴黑、冰川灰三大专属车色。\n内饰同样提供两套专属运动内饰配色，烈焰红X星夜灰或闪电黄X星夜灰，座舱搭载Coffee OS 3智慧空间系统，配备15.6英寸2.5K悬浮中控屏，通过莱茵眼部舒适度、硬件级低蓝光、无频闪三重护眼认证，座舱搭载4nm车规芯片，算力20TOPS，支持HUAWEI HiCar、CarPlay等多平台手机互联，提供四种桌面显示模式，搭载高德全场景导航。新车还搭载Coffee GPT语音大模型，支持灵感绘画、免唤醒交互、一语十意、方言识别等功能手机App支持远程控车、智慧寻车，可实时查看车辆位置与周边环境，用车便捷度大幅提升。\n新车全系配备一体式运动座椅，座椅侧翼、坐垫、头枕尺寸全面优化，可有效固定驾乘人员身体，减少激烈驾驶时的身体位移。主副驾高配车型配备座椅通风、加热功能。座椅头枕专属刺绣、定制运动缝线，强化车型运动标识。\n动力方面，燃油版本搭载1.5T涡轮增压发动机，最大功率135千瓦，最大扭矩275牛·米，WLTC综合油耗6.4L/100km，与之搭配第三代湿式7速双离合变速器。混动版本搭载长城第五代Hi2智能混动系统，与Hi4技术架构同源，采用1.5T HEV专用发动机、全新二代混动变速器，系统综合功率166千瓦，综合扭矩476牛·米，WLTC综合油耗4.5L/100km。全动力版本标配弹射起步功能，对应不同动力架构实现瞬时扭矩爆发，搭配专属车机动效，提升加速体验。（文/汽车之家 秦超）",
+   "image": "img/4d5d85fa04ca98.jpg"
+  },
+  {
+   "title": "电池出海，一张提前支付的账单",
+   "url": "https://auto.gasgoo.com/news/202611/6I70477021C501.shtml",
+   "source": "盖世汽车",
+   "lang": "zh",
+   "hits": [
+    "电池",
+    "出海"
+   ],
+   "score": 2,
+   "body": "宁德时代、亿纬锂能、国轩高科、欣旺达四家企业营收全部上涨，增速从45.78%到63.08%不等；但利润表给出了不同答案。\n亿纬锂能归母净利润增长86.11%，宁德时代三季度增速降至14.54%，国轩高科归母净利润下滑66.48%，欣旺达下滑56.37%。\n9月我国动力和储能电池合计出口44.0GWh，同比增长64.5%，占当月销量19.7%。把电池卖出去和把工厂建出去，是两笔完全不同的账。\n随着欧盟碳足迹标注、电池护照等合规门槛逐步落地，“卖产品”与“搬产业链”之间的距离正在被拉大。\n这四份财报放在一起看，出海不再只是一个增长故事，而是一张需要提前支付的账单。\n国内动力电池装车增速已经放缓，增量主要来自两个方向：储能和海外。\n上半年，我国动力和储能电池累计出口181.3GWh，同比增长42.5%，出口占总销量的18.5%。相当于每卖出五六块电池，就有一块销往海外。海关总署的数据也显示，上半年我国锂电池出口增长37.6%。\n从结构上看，这一轮出口增长中，储能电池的贡献在提升。上半年动力电池仍占出口主导，但储能增速更快。这背后是欧洲、中东、澳洲等地储能项目集中落地。对电池企业来说，储能订单单笔规模大、交付周期集中，更依赖项目节奏，收入确认的波动也更明显。\n出口占比的提升，也在改变电池企业的收入结构。上半年出口占总销量的18.5%，9月单月这一比例升至19.7%，占比在往上走。这意味着，欧洲市场的需求波动、政策变化、汇率变动，会越来越直接地传导到国内电池企业的报表上。\n出海带来的营收增量是真实的，但它同时是一门重资产生意。\n以国轩高科为例，前三季度营收增长超过五成，归母净利润却下滑66.48%。公司在欧洲同步推进多个项目：德国哥廷根工厂已经量产，与大众汽车集团旗下PowerCo在西班牙瓦伦西亚、斯洛伐克苏拉尼、摩洛哥肯尼特拉组建三家合资公司，建设锂电池及正极材料生产基地，项目总投资约32.22亿欧元，折合人民币约246.20亿元。\n这些项目在建设期只出不进，折旧、财务费用、前期投入都会压在当期利润上。此外，国轩高科第三季度因持有的金融资产产生约8.91亿元浮亏，也对当期归母净利润造成了显著影响。\n欣旺达的情况类似。前三季度营收增长45.78%，归母净利润下滑56.37%。公司在泰国、匈牙利、越南、摩洛哥多点布局，泰国电池生产基地一期已投产、二期同步启动，匈牙利动力电池生产基地和越南消费类电芯生产基地仍在建设期。\n相比之下，亿纬锂能是四家里利润增速表现最好的，归母净利润增长86.11%，扣非净利润增长111.38%，动力电池出货66.17GWh，同比增长91.30%。这说明出海并不必然拖累利润，关键在于 产能 投放的节奏、客户结构的稳定性和成本控制能力。\n宁德时代则是另一种样本。前三季度营收4421.37亿元，规模远超同行，但第三季度归母净利润增速只有14.54%，明显低于58.58%的营收增速。\n有分析认为，原材料成本占比上升、价格竞争延续是主要原因。对这家全球装机量第一的企业来说，海外扩张的资本开支同样庞大。据悉，宁德时代在匈牙利德布勒森工厂总投资约73亿欧元，规划产能100GWh。\n这座工厂的推进节奏可以作为一个参照：2024年秋季先投产模组产线，累计生产了53.7万套模组；2026年9月才启动电芯产线试生产，两条产线先进入设备和工艺的调试、优化与验证；全部设施就绪后才会进入满产。\n从模组到电芯，从试生产到满产，每一步都要重新验证设备、工艺和人员，这也是海外工厂投产周期普遍长于国内的原因。\n四份财报读下来，可以得出一个判断：出海已经是营收增长的主动力之一，但它同时也是一张需要提前支付的账单。产能建在欧洲，钱要先花出去，订单要等到投产之后才兑现。这个时间差，就是当下电池企业利润表分化的原因。\n要理解这笔“提前支付的账单”花在了哪里，需要把视线从利润表移到欧洲的产能地图上。\n如果说三季报反映的是“钱花在哪”，那么各家披露的产能布局，反映的是“厂建在哪”。\n把中国电池企业的欧洲落点标在地图上，会发现一个明显的聚集区：匈牙利。\n宁德时代在匈牙利东部城市德布勒森建设的工厂，2026年9月正式启动电芯产线试生产，规划产能100GWh，是中国企业在海外投资规模最大的动力电池生产基地。此前该工厂自2024年秋季起已经开始生产电池模组，累计 产量 达到53.7万套。全部建成后，这里将成为宁德时代在中国以外最大的制造基地。\n欣旺达动力在欧洲的首个生产基地同样落在匈牙利，规划有动力电池和储能电芯生产线，包括电芯、模组、电池包的生产和组装。中创新航也在匈牙利布局产能。\n为什么是匈牙利？三个原因叠加：地理位置居中，向四面辐射欧洲主要汽车市场；劳动力和土地成本低于西欧；政府对外资设厂给予政策支持。更关键的是，它靠近德系车企的产业集群。\n德国是另一个落点，逻辑不同。国轩高科的哥廷根工厂已经量产，据公开报道，中创新航德国工厂已实现盈利。把工厂直接建在德系车企的家门口，服务的是对交付半径和响应速度要求最高的客户。\n南欧正在成为新的热点。宁德时代与Stellantis在西班牙萨拉戈萨合资建设电池工厂，规划年产能50GWh，预计2026年底投产；国轩高科与PowerCo在西班牙瓦伦西亚的合资项目规划29.1GWh，国轩持股49%，PowerCo持股51%。西班牙的优势在于绿电资源丰富、土地成本较低，且靠近南欧整车厂。\n国轩高科2025年10月在斯洛伐克开工建设的20GWh磷酸铁锂储能专用电池工厂，瞄准的是中东欧储能市场，这也是它和PowerCo三家合资公司之一；中创新航在葡萄牙锡尼什工业区布局15GWh项目，服务西欧的整车与储能客户。远景动力在法国杜埃的工厂则定向供应雷诺主流电动车型，并同步规划配套回收体系。摩洛哥则是另一类落点——国轩高科与PowerCo在肯尼特拉建设正极材料基地，把产业链上游也带到了北非。\n把这些点连起来看，欧洲的电池产能布局已经沿着“德系车企集群—中东欧成本洼地—南欧绿电资源”三条线展开，每个落点对应不同的客户结构和成本逻辑。\n一种是独资为主、自主掌控。宁德时代的德国图林根工厂、匈牙利德布勒森工厂都是独资项目，从电芯到模组全流程自己管，客户资源自己谈。这种模式的好处是控制力强、利润留存高，代价是资本开支和运营风险全部自己承担。\n另一种是绑定车企、以股权换订单。国轩高科与大众的合作是最典型的案例：三家合资公司中，西班牙项目由PowerCo持股51%，斯洛伐克项目由国轩持股51%，股权结构直接对应双方的话语权分配。这种模式的好处是订单有保障、客户关系深度绑定，代价是让渡部分股权和利润。\n在当前欧盟对本地化比例和供应链审查趋严的背景下，两种模式在合规准入上的优劣正在发生变化：合资模式因绑定了本土车企，在供应链审查和本地化认定上往往更具弹性；但让渡控股权的代价，也意味着部分利润和话语权的同步让渡。独资模式则保留了完整的控制权和利润留存，却需要独自面对日益复杂的合规审查。\n两种模式没有绝对优劣之分，取决于企业的客户结构和风险偏好。\n但一个共同点是：无论哪种模式，中国电池企业都已经从“把电池卖到欧洲”走到了“在欧洲造电池”。\n四家之外，中创新航德国工厂已实现盈利，匈牙利工厂仍在推进；远景动力法国杜埃工厂定向供应雷诺；"
+  },
+  {
+   "title": "泊车辅助系统软件存在偏差 保时捷召回18274辆Cayenne",
+   "url": "https://www.autohome.com.cn/news/202611/1318221.html#pvareaid=102624",
+   "source": "汽车之家",
+   "lang": "zh",
+   "hits": [
+    "保时捷",
+    "召回"
+   ],
+   "score": 2,
+   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 召回碰撞 正文 泊车辅助系统软件存在偏差 保时捷召回18274辆Cayenne 之家原创车闻 原创 · 0 浏览 · 2026-11-06 18:47 · 北京 关注 [汽车之家 资讯 ] 日前，保时捷（中国）汽车销售有限公司根据《缺陷汽车产品召回管理条例》《缺陷汽车产品召回管理条例实施办法》的要求，向国家市场监督管理总局备案了召回计划。\n一、召回编号S2026M0136I：自即日起，召回2017年11月22日至2025年5月27日期间生产的Cayenne系列汽车，共计18274辆。\n本次召回范围内的车辆，由于泊车辅助系统软件存在偏差，可能导致后视摄像头的图像不能显示在多媒体屏上，影响驾驶员倒车时的视野，增加车辆发生碰撞的风险，存在安全隐患。\n本次召回活动是在国家市场监督管理总局启动缺陷调查情况下开展的。保时捷（中国）汽车销售有限公司将委托授权经销商，对受影响车辆免费升级泊车辅助系统软件，以消除安全隐患。\n二、召回编号S2026M0137V：自即日起，召回2024年08月22日生产的911系列汽车，共计1辆。\n本次召回范围内的车辆，车轮中央锁止紧固装置可能损坏，导致车轮脱落和转向控制性能下降，增加发生事故的风险，存在安全隐患。\n保时捷（中国）汽车销售有限公司将委托授权经销商，检查车轮中央锁止紧固装置，必要时更换不符合规格的零件，以消除安全隐患。\n本次召回属于2024年11月15日，2024年12月20日发布的《保时捷（中国）汽车销售有限公司召回部分进口911、718系列汽车》召回活动的扩大召回。\n保时捷（中国）汽车销售有限公司将委托授权经销商通过短信、电话等方式主动联系用户并安排召回事宜。用户可登录保时捷（中国）汽车销售有限公司官方网站或拨打免费客户服务中心热线：400-820-5911，了解本次召回的详细信息。此外，也可登录市场监管总局召回中心网站www.samrdprc.org.cn，关注微信公众号（SAMRDPRC），了解更多信息，反映缺陷线索。（编译/汽车之家 秦超）",
+   "image": "img/bb2cf60a95b295.jpg"
+  },
+  {
+   "title": "2026年1-9月ADAS供应商装机量排行榜",
+   "url": "https://auto.gasgoo.com/news/202611/6I70477202C103.shtml",
+   "source": "盖世汽车",
+   "lang": "zh",
+   "hits": [
+    "adas"
+   ],
+   "score": 1,
+   "body": "根据 盖世汽车研究院 数据，2026年1-9月，国内乘用车ADAS市场持续发展，随着智能驾驶功能加速向更多车型和价格区间渗透，产业链各细分领域的配套规模不断扩大。从行车ADAS、自动泊车APA，到前视摄像头、激光雷达、高精地图及高精定位，多个核心环节已形成较为完整的供应商体系。市场竞争也呈现出多元化特征：博世、电装、采埃孚等传统国际Tier 1持续保持市场份额，比亚迪、华为、德赛西威、福瑞泰克等本土企业加快提升配套能力，整车企业自研及自有体系配套也逐渐成为重要力量。\n孔辉科技，2026年1-9月，国内乘用车市场空气悬架装机量415,890套，市场份额32.1%。\n保隆科技，2026年1-9月，国内乘用车市场空气悬架装机量410,217套，市场份额31.7%。\n拓普集团，2026年1-9月，国内乘用车市场空气悬架装机量335,777套，市场份额25.9%。\n威巴克，2026年1-9月，国内乘用车市场空气悬架装机量41,471套，市场份额3.2%。\n戈尔德，2026年1-9月，国内乘用车市场空气悬架装机量22,809套，市场份额1.8%。\n其他，2026年1-9月，国内乘用车市场空气悬架装机量68,942套，市场份额5.3%。\n2026年1-9月，国内乘用车空气悬架市场呈现出明显的头部集中格局。孔辉科技以415,890套的装机量、32.1%的市场份额位居第一，保隆科技紧随其后，装机量为410,217套，市场份额为31.7%，两者仅相差5,673套，竞争十分接近。拓普集团以335,777套、25.9%的份额排名第三。前三家供应商合计占据89.7%的市场份额，形成较为稳固的头部竞争梯队。\n从竞争格局来看，空气悬架市场已形成孔辉科技、保隆科技与拓普集团三家国内供应商主导的局面，三者合计市场份额接近九成。相比之下，威巴克和戈尔德分别以3.2%和1.8%的份额位列第四、第五，市场规模与头部企业存在明显差距。随着空气悬架在乘用车市场的应用持续拓展，供应商之间的竞争也将进一步聚焦于成本控制、产品性能、系统集成能力及主机厂项目配套能力。\n禾赛科技，2026 年 1-9 月，国内乘用车市场激光雷达装机量 1,276,913 颗，市场份额 33.5%。\n华为 技术，2026 年 1-9 月，国内乘用车市场激光雷达装机量 1,226,858 颗，市场份额 32.2%。\n速腾聚创，2026 年 1-9 月，国内乘用车市场激光雷达装机量 575,250 颗，市场份额 15.1%。\n图达通，2026 年 1-9 月，国内乘用车市场激光雷达装机量 575,161 颗，市场份额 15.1%。\n其他，2026 年 1-9 月，国内乘用车市场激光雷达装机量 161,675 颗，市场份额 4.2%。\n2026年1-9月，国内乘用车激光雷达市场呈现出禾赛科技与华为技术双强竞争的格局。禾赛科技以1,276,913颗的装机量、33.5%的市场份额位居第一，华为技术紧随其后，装机量为1,226,858颗，市场份额达32.2%，两者合计占据65.7%的市场份额，形成明显的领先梯队。不过，双方装机量仅相差50,055颗，市场竞争较为胶着。\n第二梯队中，速腾聚创与图达通装机量几乎持平，分别以575,250颗和575,161颗位列第三、第四，市场份额均为15.1%。两家供应商合计市场份额达30.2%，与头部企业共同构成当前市场的主要竞争力量。整体来看，前四家供应商合计占据95.9%的市场份额，激光雷达市场集中度较高，竞争主要集中在头部供应商之间。\n比亚迪，2026年1-9月，国内乘用车市场行车ADAS装机量1,084,825套，市场份额10.7%。\n博世 ，2026年1-9月，国内乘用车市场行车ADAS装机量906,936套，市场份额8.9%。\n电装 ，2026年1-9月，国内乘用车市场行车ADAS装机量904,399套，市场份额8.9%。\n采埃孚 ，2026年1-9月，国内乘用车市场行车ADAS装机量625,182套，市场份额6.1%。\n福瑞泰克，2026年1-9月，国内乘用车市场行车ADAS装机量599,371套，市场份额5.9%。\n华为技术，2026年1-9月，国内乘用车市场行车ADAS装机量564,316套，市场份额5.5%。\n法雷奥，2026年1-9月，国内乘用车市场行车ADAS装机量425,703套，市场份额4.2%。\n魔门塔，2026年1-9月，国内乘用车市场行车ADAS装机量407,428套，市场份额4.0%。\n特斯拉，2026年1-9月，国内乘用车市场行车ADAS装机量380,873套，市场份额3.7%。\n经纬恒润，2026年1-9月，国内乘用车市场行车ADAS装机量337,890套，市场份额3.3%。\n2026年1-9月，国内乘用车行车ADAS市场呈现出整车企业自研与传统Tier 1供应商并行竞争的格局。比亚迪以1,084,825套的装机量、10.7%的市场份额位居第一，领先博世和电装约1.8个百分点。博世、电装分别以906,936套和904,399套位列第二、第三，两者装机量几乎持平。比亚迪跻身榜首，体现出整车企业在行车ADAS领域的自研及自主配套能力已具备较强的市场竞争力。\n从供应商结构来看，传统国际Tier 1仍占据重要位置，博世、电装、采埃孚和法雷奥均进入前十；与此同时，福瑞泰克、华为技术、魔门塔和经纬恒润等中国供应商也已形成一定装机规模。其中，福瑞泰克以599,371套位列第五，华为技术以564,316套排名第六，展现出本土供应商在行车ADAS市场的竞争力。整体来看，市场参与者类型多元，竞争已不再局限于传统零部件供应商之间，整车企业自研体系与本土智能驾驶供应商正成为市场格局中的重要力量。\n舜宇智领，2026年1-9月，国内乘用车市场前视摄像头装机量1,071,779套，市场份额10.5%。\n博世，2026年1-9月，国内乘用车市场前视摄像头装机量930,727套，市场份额9.1%。\n电装，2026年1-9月，国内乘用车市场前视摄像头装机量895,946套，市场份额8.8%。\n采埃孚，2026年1-9月，国内乘用车市场前视摄像头装机量636,032套，市场份额6.2%。\n比亚迪半导体，2026年1-9月，国内乘用车市场前视摄像头装机量541,811套，市场份额5.3%。\n欧菲车联，2026年1-9月，国内乘用车市场前视摄像头装机量505,820套，市场份额5.0%。\n福瑞泰克，2026年1-9月，国内乘用车市场前视摄像头装机量484,907套，市场份额4.8%。\n华锐捷，2026年1-9月，国内乘用车市场前视摄像头装机量464,923套，市场份额4.6%。\n德赛西威，2026年1-9月，国内乘用车市场前视摄像头装机量423,428套，市场份额4.2%。\n法雷奥，2026年1-9月，国内乘用车市场前视摄像头装机量418,611套，市场份额4.1%。\n2026年1-9月，国内乘用车前视摄像头市场竞争较为分散，舜宇智领以1,071,779套的装机量、10.5%的市场份额位居第一，是榜单中唯一份额超过10%的供应商。博世和电装分别以930,727套和895,946套位列第二、第三，市场份额分别为9.1%和8.8%，与榜首的差"
+  },
+  {
+   "title": "现金优惠1.5万元 置换补贴1万元 长城H9限时优惠换新价17.19万起",
+   "url": "https://www.autohome.com.cn/news/202611/1318209.html#pvareaid=102624",
+   "source": "汽车之家",
+   "lang": "zh",
+   "hits": [
+    "长城",
+    "补贴"
+   ],
+   "score": 2,
+   "body": "选择城市 综合 综合 找论坛 搜索 更多 移动App 触屏版 小程序 i车商 本地服务 登录 发布作品 下载App 扫码下载汽车之家App 小程序 扫码打开汽车之家小程序 > 点赞 评论 收藏 分享 问编辑 当前位置： 首页 车闻中心 国产新车 正文 现金优惠1.5万元 置换补贴1万元 长城H9限时优惠换新价17.19万起 之家原创车闻 原创 · 0 浏览 · 2026-11-06 11:47 · 北京 关注 [汽车之家 资讯 ] 日前， 长城H9 ( 参数 | 询价 )推出限时优惠换新价17.19万元起，长城车主增换购享额外3000元补贴，限时享15000元现金优惠，本/外品置换补贴10000元，活动截止至11月30日24点前。\n外观方面，长城H9依旧采用非承载式车身，定位硬派SUV，延续家族经典外观造型，圆形复古车灯格外抢眼。车身长宽高分别为5070mm/1960mm/1950mm；其中车身宽度，选装电动踏板时为1960mm，选装固定踏板时为 1976mm，轴距为2850mm，最小离地间隙226mm，接近角32°，离去角26°，纵向通过角24°，最大涉水深度800mm。\n内饰方面，整体同样展现硬核风格，中央通道区保留大量物理按键，15.6英寸2.5K中控屏，搭载Coffee OS3系统，支持手机无缝互联、Coffee GPT、一语多意、四音区语音交互。Coffee GPT支持资料检索、交互娱乐、越野路线查询。新车全系标配电吸尾门、低速越野巡航、坦克转弯、540°全景影像、2.5吨牵引资质。\n座椅按国内人体模型优化，调整腰托、坐垫、靠背厚度，具备通风（靠背吸风、坐垫吹风）、加热、8点按摩功能；主驾支持8向电动调节+4向腰托调节，新增座椅记忆、迎宾功能。常规后备箱容积791L，后排座椅放倒后容积1814L，整车共45处储物点位。\n动力提供2.0T汽油发动机匹配8AT变速箱和2.4T柴油发动机匹配9AT变速箱，最大功率分别为165千瓦和137千瓦，全系标配2.5吨牵引资质，允许合规拖拽房车、摩托艇等设备。\n底盘结构为前双叉臂独立悬架、后多连杆整体桥非独立悬架，搭载TOD智能四驱系统，配备Mlock机械锁止与前后差速锁，带来岩石模式、专家模式。（文/汽车之家 秦超）",
+   "image": "img/8c8d69436ef2fc.jpg"
+  },
+  {
+   "title": "2026第八届金辑奖最佳出海实践奖",
+   "url": "https://auto.gasgoo.com/news/202611/6I70477201C1206.shtml#nav",
+   "source": "盖世汽车",
+   "lang": "zh",
+   "hits": [
+    "出海"
+   ],
+   "score": 1,
+   "body": "联系邮箱：info@gasgoo.com 求职应聘：021-39197800-8035 简历投递：zhaopin@gasgoo.com 客服微信：gasgoo12 (豆豆)\n盖世汽车社区 盖世大学堂-公开课 英文资讯站 热门内容 数据报告 国际站 具身智能"
+  },
+  {
+   "title": "Mate Rimac如何用一场豪赌拿下宝马",
+   "url": "https://auto.gasgoo.com/news/202611/6I70477129C501.shtml",
+   "source": "盖世汽车",
+   "lang": "zh",
+   "hits": [
+    "宝马"
+   ],
+   "score": 1,
+   "body": "2021年的一天，克罗地亚萨格勒布郊外还是一片工地。宝马集团（BMW Group）的几位高管站在泥土和脚手架之间，听这家年轻供应商的创始人讲他的计划。公司创始人Mate Rimac伸手一指不远处几根刚立起来的水泥柱：不管宝马最后签不签合同，他都会在这里，为宝马建一条高 产量 的电池生产线。\n这句话的分量，在场的人都懂。彼时的Rimac Technology，还只是一家以电动超跑闻名的小公司；而它要争取的，是全球最知名 豪华车 企之一的电池订单，对手里还包括规模庞大的中国电池厂商。\n要理解这个承诺，得先认识Mate Rimac这个人。\n他是那种典型的工程师型创业者，痴迷速度，也痴迷电。公司最早靠电动超跑闯出名堂，那些马力惊人、产量稀少的车型，让外界第一次知道，克罗地亚有个叫Mate Rimac的年轻人，能把电动车做得又快又极致。\n但超跑是门小生意。Mate Rimac真正想证明的，是自己不止能造几辆昂贵的玩具，还能在主流汽车工业的牌桌上坐下来。电池，就是他选择的入场券。\n超跑能为他赢得名声，却很难支撑起一家公司的体量。那个市场太小，每年交付的数量有限，供应链也围绕着小批量、高成本运转。Mate Rimac很清楚，想让公司真正长大，就得证明自己能服务那些一年要卖几十万辆车的主流车企。\n然而，这张入场券并不好拿。根据SNE Research的数据，中国电池厂商合计占据全球汽车电池市场超过70%的份额，原材料、制造规模和成本优势都在他们一边。\n“要拿下这笔订单，我们必须在技术和商业上都比市场上的所有人更强，尤其是电池领域，和中国竞争并不容易。”Mate Rimac后来对《欧洲汽车新闻》（Automotive News Europe）说。\n宝马没有轻易点头。车企的流程很严谨：先做原型，再评估供应商，反复考察之后，才会把量产合同交给谁。在最终定点之前，没有谁会给Mate Rimac任何承诺。\nMate Rimac却选择先把自己推出去。2021年那次工地访问时，他已经悄悄把宝马产线的初步布局，画进了新工厂的设计图里。换句话说，哪怕最后宝马不选他，这笔建厂投入也已经花了出去。\n这是实打实的财务风险。在很多成熟供应商看来，这是一步险棋：把钱压在一个还没到手的合同上，一旦落空，损失只能自己承担。Mate Rimac不是没有算过这笔账，但他更清楚另一件事：在宝马这种车企面前，口头保证没有多少分量，已经动工的产线，才更能说明他到底有多想做成这件事。\n从原型样件到最终定点，中间是漫长的考察。宝马要看的不仅是电池能不能在测试里达标，更是这家年轻公司能不能在之后几年里始终如一地交付。Mate Rimac愿意把工厂提前建好，等于提前回答了这个问题。\n“这给了他们信心。他们看到我们是真的投入，时间上也可行，工厂能在他们量产启动（SOP）需要时准备好。”Mate Rimac回忆。\n他相信，正是这股劲头，把自己和那些更谨慎的对手区分开。“他们看到了我们的热情，以及超额交付的渴望。”\n今年4月的北京车展上，这款电动豪华轿车亮相，成为首款搭载Rimac Technology联合开发电池系统的宝马量产车：宝马第六代圆柱锂离子电芯，配上Rimac Technology第五代模块化电池技术，容量、续航和充电速度都有提升。\n对Mate Rimac来说，i7的意义不止于又一个客户。宝马把第六代圆柱电芯这样的核心技术放进联合开发，意味着这家百年车企真正认可了他的工程能力，而不是把他当作一个外围的加工方。\n光鲜的产品背后，是更硬的考验。Mate Rimac必须从零搭起一套全新供应链，并在萨格勒布附近的园区让两条产线真正跑起来，达到宝马对质量、成本和产量的严苛要求。宝马项目在一座90,000平方米的工厂里占了15,000平方米，整座工厂约七成 产能 ，都留给了多家车企的电池订单。\n“我们以创纪录的时间，开发出一套高压电池系统，把新一代圆柱电芯的全部潜力释放出来。”他在新闻稿里写道。\n如今，Mate Rimac每年为宝马i7生产48,000套电池系统。当年工地上的那句承诺，变成了流水线上成批下线的产品。\n保时捷（Porsche）在911 GTS T-Hybrid上用了他定制的1.9千瓦时、400伏电池包；沙特电动车初创企业Ceer，把整套电驱系统交给他；还有两套新电池系统在推进，其中一套仍属于宝马。自家的Nevera电动超跑和Bugatti Tourbillon，也用他的组件。\n这些订单不是同时到来的。愿意相信他的客户里，有同样追求极致性能的同行；随着宝马项目落地，越来越多车企开始把更核心的系统交给他。一个年轻供应商的信誉，就这样在一次次交付中累积起来。\nRimac Technology目前手握价值50亿欧元的客户签约订单。Rimac集团作为控股平台，旗下拥有超跑合资公司Bugatti Rimac、储能业务Rimac Energy，同时也是欧洲自动驾驶出租车企业Verne的重要投资方。\n但坐在集团总部的办公室里，Mate Rimac开始想另一个问题：汽车这门生意，还要继续扩张吗？\n他给出的答案有些出人意料。他不想把公司做成一家什么都生产的庞大供应商。“现有的产品组合，就是我们想要的位置。”他说。公司专注电池、电驱、电子和软件，这几项已经足够。\n“在供应汽车行业这件事上，我们已经超额完成了我当初所有的设想。”Mate Rimac说，“所以我们正在研究，如何把这些技术应用到其他产业。”\n从一个在工地上指着立柱许下承诺的年轻人，到宝马的电池伙伴，再到打算把一身本事带出汽车圈，他的故事还在往下走。只是这一次，他要回答的问题，已经和当年那几根立柱无关了。\n本文地址：http://auto.gasgoo.com/News/2019/05/300656465646I70107904C601.shtml\n本文地址：https://auto.gasgoo.com/news/202611/6I70477129C501.shtml\n联系邮箱：info@gasgoo.com 求职应聘：021-39197800-8035 简历投递：zhaopin@gasgoo.com 客服微信：gasgoo12 (豆豆)\n盖世汽车社区 盖世大学堂-公开课 英文资讯站 热门内容 数据报告 国际站 具身智能"
+  },
+  {
+   "title": "Smart精灵2号上市，限时权益价9.99万元起",
+   "url": "http://news.cheshi.com/dujia/20261105/3426219.shtml",
+   "source": "网上车市",
+   "lang": "zh",
+   "hits": [],
+   "score": 0,
+   "body": "2.75米车长、2个座位、9.99万元起，在一个持续把车做大做长的纯电市场里，这组数字显得格外扎眼。11月5日，smart精灵2号在国内上市。该车被视为fortwo的电动继任者，国内仅提供Premium豪华版一个配置；此前发售的鎏金高定版售价11.2999万元，中国与欧洲各限量999台，官方称已售罄，年内开始交付。\n车身仍为双门双座，车长2751毫米，宽1669毫米、高1555毫米，轴距1875毫米，鎏金高定版车长2764毫米。四轮四角布局与短前后悬，让这台不到2.8米的小车做到3.35米的最小转弯半径。官方称车内垂直空间1米、横向利用率约79%；行李厢标准容积305升，放倒座椅后扩展到527升。车尾为分体式天地门，下半段可承重120公斤。\n三电部分，后置单电机最大功率60千瓦、峰值扭矩130牛·米，0至50公里/时加速3.8秒，极速140公里/时。35.8千瓦·时宁德时代磷酸铁锂电池，CLTC续航410公里，直流快充10%至80%约20分钟，并支持V2L对外放电。底盘为前麦弗逊、后五连杆独立悬架。\n配置上，12.8英寸中控屏搭配8.8英寸仪表，车机支持CarPlay、HiCar、Flyme Link等互联，另有森海塞尔7扬声器、256色氛围灯、座椅与方向盘加热、全景天幕、L2级辅助驾驶、360环视与遥控泊车，提供7种车身配色与3种内饰主题。车身高强钢占比78%，白车身扭转刚度39,000牛米每度，配7个安全气囊。\n权益包括3,000元首发购车基金、付费配色半价、置换与复购补贴、充电桩优惠及低息金融方案。新车由吉利济南基地生产，按中欧双标开发。\nSmart精灵2限量版售11.3万 普通版不到10万\nsmart精灵2实拍：车长2米76轴距1米87，车重1.1吨\n503.17km/h！仰望U9 Xtreme再破全球汽车极速纪录\n宾利揭晓MULLINER中国专属定制系列车型，Supersports迎中国首秀\n比亚迪：仰望U9X极速超503km/h 地表最快量产车！\n法拉利：全球净利润大增13% 唯独大中华销量跌42%\n10. 奔驰A级AMG(进口) 参数配置 车型图片"
+  },
+  {
+   "title": "Almost no one uses AI agents to book their Uber, company says",
+   "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/",
+   "source": "TechCrunch·交通",
+   "lang": "en",
+   "summary": "During its busiest week last quarter, Uber said only four people booked a ride using an AI agent.",
+   "hits": [],
+   "score": 0,
+   "body": "During its busiest week last quarter, Uber said only four people booked a ride using an AI agent."
+  },
+  {
+   "title": "全新smart精灵#2正式上市 限时权益价9.99万元起",
+   "url": "https://news.yiche.com/info/114426653.html",
+   "source": "易车",
+   "lang": "zh",
+   "hits": [],
+   "score": 0,
+   "body": ""
+  },
+  {
+   "title": "Honda携多领域技术成果亮相进博会",
+   "url": "https://auto.sina.com.cn/news/2026-11-05/detail-inixsmka6119642.shtml",
+   "source": "新浪汽车",
+   "lang": "zh",
+   "hits": [],
+   "score": 0,
+   "body": "11月5日，第九届进博会正式在上海开幕，Honda携汽车、两轮车、Power Products、航空等四大领域的代表产品和技术成果正式亮相。\n汽车产品方面，本次进博会Honda特别带来一台百万公里 雅阁 改装车，这辆车龄已达27年的雅阁累计行驶里程接近百万公里，并在2025年以全程零故障的成绩完成24小时耐力赛。此外，目前国内车龄超过15年、仍在正常行驶的雅阁车型仍有70多万辆，充分印证了Honda产品在真实使用环境的耐久性和可靠性。不仅如此，历经50年、进化了十一代的雅阁，从性能到品质，从车身架构到智能科技，每一代都是Honda技术实力和可靠性能的最佳代言。全球累计销量超2，600万辆，中国市场累计销量超360万辆的亮眼成绩，更是其品牌价值的有力证明。\n两轮车领域，此次9款汇聚先进技术的摩托车产品集体重磅亮相本届进博会。此外，多款搭载Honda E-Clutch电控离合技术的车型也亮相进博会。Honda E-Clutch是一项专为摩托车开发的电控离合技术，在任意骑行场景下骑手无需操作离合拉杆也能平稳地起步、变速和停车。无论是新手还是资深骑手，都能在减轻驾驶疲劳的同时，更自由从容地享受骑行乐趣，这也是Honda摩托车独特骑行驾趣的体现。\n其中，继承Honda CB正统四缸基因的CBR500R FOUR和CB500 SUPER FOUR自今年4月上市以来，广受众多骑士的喜爱。搭载全新502cc直列四缸发动机，以标志性的高亢声浪唤醒跨越时代的四缸情怀，激发骑士的驾驭激情。尤其，其搭载新一代Honda E-Clutch电控离合与TBW电子油门协同，使换挡过程更加平顺安稳。本届进博会现场特别展示CBR500R FOUR赛事涂装版和CB500 SUPER FOUR红白蓝经典配色版。\n作为国产玩乐车型新成员，CM500与焕新升级CM250两款车型同样新增搭载了Honda E-Clutch电控离合系统，在实现操控更轻松、换挡更平顺的同时，全新升级的智能化系统更让骑行真正成为一种享受。\n此外，同台展出的还有：专为拥有多元价值观的中国Z世代用户打造的概念车CB250SS CONCEPT、旗舰级探险车型CRF1100L Africa Twin 2026年新款，大型ADV探险踏板车X-ADV 2026年升级款、全新发布的NSS350国风限量版，以及骑行玩乐周边商品。从入门玩乐到豪华摩旅、从城市通勤到硬核越野，丰富的产品阵容勾勒了多元的骑行生活图景。\n航空领域，Honda展出了HondaJet的新一代升级版Elite II的1/2比例模型。HondaJet创新性地采用主翼上方发动机布局、自然层流机翼与全复合材料机身，这些突破常识的设计有效降低阻力、提升空间利用率和燃油经济性，同时带来更安静的客舱环境、更低的运营成本和更远的航程，为顾客提供安全、安心、自由的空中移动乐趣。\n从街道到赛场，从陆地到海洋，从天空到太空，Honda始终以“梦想”为原动力，为用户提供“拓展移动和生活可能性的喜悦”。未来，Honda将持续以技术拓界，以品质立信，继续扎根中国，为中国用户打造更多元化且充满乐趣的移动出行体验。\n更多汽车资讯，涨知识赢好礼扫描二维码关注（auto_sina）\nCopyright ©1996-2026 SINA Corporation\n*底价将以短信的形式发送到您的手机，个人信息不会泄露给第三方\n*订阅信息将以短信的形式发送到您的手机，个人信息不会泄露给第三方"
   }
  ]
 }
