@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>通用汽车</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 11 月 8 日 · 星期日 · 第 45 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">企业史</p>
+    <h1 class="art-title">通用汽车</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">通用汽车通过多品牌矩阵与事业部制（斯隆改革）起家</p>
+  <article class="art-body">
+
+<p class="standfirst">多品牌矩阵与事业部制（斯隆改革）</p>
+
+<p class="standfirst">第 1/2 期：发展历史、创始人、知名高管</p>
+
+
+
+<h2>一、发展历史</h2>
+
+<p>通用汽车的起点可以追溯到1908年，由威廉·C·杜兰特创立，当时他成立了一家名为“通用汽车公司”的控股公司，目的是整合和管理他之前收购的多家汽车制造商，包括别克。当时，美国汽车市场正处于快速发展阶段，但缺乏一个能够统一管理多个品牌、实现规模经济的公司，而杜兰特看到了这一机会，希望通过整合资源，提高生产效率和市场竞争力。</p>
+
+<p>关键突破发生在1911年，当时杜兰特与路易斯·雪佛兰、威廉·杜兰特等人共同创立了雪佛兰汽车公司，这一举措为通用汽车的扩张提供了新的动力。雪佛兰的成立不仅丰富了通用汽车的产品线，还通过引入更经济实惠的车型，解决了当时市场上对价格敏感的消费者需求。此外，雪佛兰采用了别克的顶置气门技术，这一技术的引入显著提高了发动机的效率和可靠性，为通用汽车在技术上奠定了坚实的基础。</p>
+
+<p>规模化方面，通用汽车通过不断扩张和整合，实现了产量和成本的大幅下降。例如，1918年，杜兰特重新购回通用汽车的控股权，并将雪佛兰作为独立事业部并入通用。这一时期，通用汽车的生产能力迅速提升，到1929年，雪佛兰的销量已经超过了福特，成为美国最畅销的汽车品牌之一。通过标准化生产、共享平台和零部件，通用汽车有效降低了成本，提高了生产效率。</p>
+
+<p>转折点出现在1920年代末至1930年代初，当时通用汽车面临经济大萧条的严峻挑战。然而，通用汽车通过调整产品结构、优化成本和加强市场推广，成功度过了这一时期。在这一过程中，通用汽车还面临是否继续扩张或收缩的抉择，但最终选择了继续投资于研发和市场，这一决策为其后续的发展奠定了基础。</p>
+
+<p>今天，通用汽车仍然是全球最大的汽车制造商之一，其品牌包括雪佛兰、别克、凯迪拉克和GMC等。尽管近年来面临激烈的市场竞争和环保压力，通用汽车依然在不断调整战略，推动电动化和智能化转型。这些举措与其早期通过整合和创新实现规模经济和市场扩张的历史密切相关，体现了公司在不断变化的市场环境中持续适应和发展的能力。</p>
+
+<p><strong>关键节点</strong></p>
+
+<table><thead><tr><th>年份</th><th>发生了什么</th><th>意义</th></tr></thead><tbody>
+<tr><td>1908年</td><td>威廉·C·杜兰特创立通用汽车公司</td><td>通用汽车的起点</td></tr>
+<tr><td>1918年</td><td>杜兰特重新购回通用汽车的控股权</td><td>通用汽车的扩张阶段</td></tr>
+<tr><td>1920年代</td><td>阿尔弗雷德·斯隆实施事业部制改革</td><td>通用汽车的组织结构改革</td></tr>
+<tr><td>2008年</td><td>丰田超越通用汽车成为全球最大汽车制造商</td><td>通用汽车失去全球最大汽车制造商的地位</td></tr>
+<tr><td>2021年</td><td>通用汽车宣布停止生产内燃机车辆的计划</td><td>通用汽车向电动化转型</td></tr>
+</tbody></table>
+
+<p><strong>关键转折</strong></p>
+
+<ul><li>1908年，威廉·C·杜兰特创立通用汽车公司，为公司的起点。</li><li>1918年，杜兰特重新购回通用汽车的控股权，为公司的扩张奠定了基础。</li><li>1920年代，阿尔弗雷德·斯隆实施事业部制改革，将通用汽车划分为多个独立的事业部。</li></ul>
+
+<h2>二、创始人</h2>
+
+<h3>William C. Durant</h3>
+
+<ul><li><strong>出身</strong>：威廉·C·杜兰特是美国汽车工业的先驱之一，他在1908年创立了通用汽车公司。</li><li><strong>做对了什么</strong>：杜兰特通过收购多家汽车公司，如别克、雪佛兰等，奠定了通用汽车的基础。</li><li><strong>后来</strong>：杜兰特在1910年被解除了在通用汽车的高级管理职务，但后来重新购回通用汽车的控股权。</li></ul>
+
+<h2>三、知名高管</h2>
+
+<table><thead><tr><th>姓名</th><th>职位</th><th>任期</th><th>任内最关键的事</th></tr></thead><tbody>
+<tr><td>Alfred P. Sloan</td><td>总裁</td><td>1920年代</td><td>阿尔弗雷德·P·斯隆实施事业部制改革，将通用汽车划分为多个独立的事业部，如雪佛兰、别克、凯迪拉克等。</td></tr>
+<tr><td>William C. Durant</td><td>总裁</td><td>1908年-1910年</td><td>威廉·C·杜兰特通过收购多家汽车公司，如别克、雪佛兰等，奠定了通用汽车的基础。</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>语料出处</h2>
+
+<p>1. SDGs Transformation and Quality Growth 2022 · 第 7 节（提及 125 次，book-corpus 语料）</p>
+<p>2. SDGs Transformation and Quality Growth 2022 · 第 6 节（提及 77 次，book-corpus 语料）</p>
+<p>3. The Automobile in Japan Lone 2005 · 第 5 节（提及 75 次，book-corpus 语料）</p>
+<p>4. 福特自传 My Life and Work Henry Ford · 第 2 节（提及 51 次，book-corpus 语料）</p>
+<p>5. 雪佛兰（提及 570 次，wiki-corpus 语料）</p>
+<p>6. 别克（提及 567 次，wiki-corpus 语料）</p>
+<p>7. 凯迪拉克（提及 490 次，wiki-corpus 语料）</p>
+<p>8. General Motors（提及 480 次，wiki-corpus-en 语料）</p>
+
+<p class="standfirst">语料来源：本地书籍语料（data\book-corpus）、维基百科离线转储（中文 / 英文）。价格为资料所载，销量带年份口径；标「资料未覆盖」的不做推测。</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
