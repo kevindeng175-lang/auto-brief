@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>中国对欧盟汽车出口增长87%，2026年前三季度达183万辆</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 11 月 9 日 · 星期一 · 第 46 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">汽车日报</p>
+    <h1 class="art-title">中国对欧盟汽车出口增长87%，2026年前三季度达183万辆</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">13 条报道 ｜ 8 张配图 ｜ 全部条目带来源标注，单源信息标注待证实</p>
+  <article class="art-body">
+
+<h2>今日速览（30 秒版）</h2>
+<ul><li>奔驰AMG新款GT车型搭载电动系统，模拟V8引擎声效</li><li>领克07GT帕尔马紫调高定版11月9日上市</li><li>奇瑞召回53882辆汽车，因后桥焊接缺陷</li><li>雅马哈推出125cc等效电动滑板车XENTER E</li><li>新款宝马iX2谍照曝光，或采用更大电池组</li><li>奔驰与吉利合资品牌Smart #2 Premium售价99900元</li><li>工信部第413批申报信息含宝马3系、极氪001等车型</li></ul>
+
+<h2>今日头条</h2>
+<p>2026年前三季度，中国对欧盟汽车出口达183万辆，同比增长87%，已超过2025年全年出口量。这一增长发生在欧盟对中国制造纯电动乘用车征收反补贴税的背景下，同时混动车型也面临新的贸易谈判。欧洲汽车工业协会（ACEA）首次以参展方身份亮相中国国际进口博览会，表明欧洲车企在贸易分歧与产业合作之间寻求平衡。ACEA北京代表处首席代表张硕指出，汽车行业应主动发挥专业智慧，支撑解决国际经贸问题。数据显示，2026年前三季度，中国对欧盟插混汽车出口同比增长372%，普通混动汽车出口同比增长91%。中欧贸易磋商取得阶段性进展，双方就混动汽车贸易达成谅解，以2025年欧盟自中国进口30.2万辆混动汽车为基础，作出向上调整的安排。ACEA警告称，若欧洲市场出现类似中国市场的价格战，可能对欧洲整体经济造成严重冲击。</p>
+
+<h2>一、新车与产品</h2>
+
+<h3>Lynk &amp; Co 900L 11月10日首发，旗舰900系列新增7座版本</h3>
+
+<p>Lynk &amp; Co 900L 的车身长度为 5,280 毫米，轴距为 3,170 毫米，两项数据均超过当前 900。Lynk &amp; Co 此次推出 900L，为旗舰 900 系列新增了 7 座版本。该车型的发布将进一步丰富其产品线，满足更多消费者的需求。目前，更多关于该车型的详细信息可访问 CnEVPost（cnev.co）。（来源：CnEVPost）</p>
+
+<figure><img src="img/81003adaeef01a.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>魏牌二代蓝山11月9日预售 5140mm车身配双腔空悬</h3>
+
+<p>魏牌二代蓝山将于11月9日正式开启预售，新车定位中大型方盒子SUV，车身尺寸为5140/2050/1960mm，轴距3010mm，提供5座和6座版本。新车基于800V高压平台打造，搭载2.0T双电机插混系统，配备闭式双腔空悬、后轮转向等硬件，还搭载高通骁龙8797座舱芯片和英伟达Thor-U智驾芯片。作为现款蓝山的升级版，二代蓝山在设计、智能化和动力方面均有提升，未来将与小米、问界等城市型SUV形成差异化竞争。此举意味着魏牌在新能源SUV市场进一步扩大产品矩阵，强化技术竞争力。（来源：太平洋汽车）</p>
+
+<figure><img src="img/8c24257c94c325.png" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>全新红旗H9预售32.98万元起 全系标配空气悬架</h3>
+
+<p>全新红旗H9正式开启预售，预售先享价区间为32.98-41.98万元，其中豪华MAX版起售价为32.98万元。新车定位D级行政豪华轿车，车身长度达5230mm，轴距3120mm，全系标配闭式空气悬架、双向16°后轮转向等高端配置。新车搭载华为乾崑智驾ADS™ 5高阶版，配备896线双光路激光雷达，支持L3级自动驾驶。作为红旗冲击高端D级轿车市场的重磅车型，全新红旗H9在智能化、舒适性及动力性能方面均有显著提升，意味着红旗在国产高端轿车市场进一步巩固地位，为商务用户提供了更具竞争力的选择。（来源：太平洋汽车）</p>
+
+<h3>荣威家越07上市首周交付5000辆</h3>
+
+<p>11月8日，荣威家越07上市首周交付5000辆，新车于10月23日上市，11月1日开启交付，共推出4款车型，限时权益价11.98-14.48万元。家越07由荣威与字节跳动旗下火山引擎深度合作联合打造，搭载1.5L增程混动系统，CLTC纯电续航最高320km，配备豆包座舱助手、Momenta R7辅助驾驶系统等配置。荣威家越07将与比亚迪海狮06/宋Ultra、零跑C10/C11等车型展开竞争，其核心优势在于配备激光雷达、豆包助手、320km纯电续航等豪华配置，对于家庭用户感知极为明显。（来源：太平洋汽车）</p>
+
+<figure><img src="img/10c6df21c06e07.jpg" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h2>二、销量与市场</h2>
+
+<h3>宝马全球交付148.4万辆同比下滑6.4%</h3>
+
+<p>2026年前三季度，宝马全球共交付148.4万辆，同比下滑6.4%。宝马X3/X4系列逆势增长16.1%，合计交付266397辆；宝马X1/X2系列交付310714辆，仅下滑2.8%。宝马X5/X6系列微跌1.5%至185000辆，iX车型交付16789辆，同比下降34.1%。宝马正在考虑推出一款尺寸更大的SUV，若计划获批，X9（暂定名）有望在2029年或2030年问世。宝马X3/X4系列的逆势增长表明其在市场中的竞争力依然强劲，而高端车型的大幅下滑则反映出市场对高端产品的接受度有所下降。（来源：汽车之家）</p>
+
+<figure><img src="img/f0d11db0fd46c9.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>广汽1-10月销量128.49万辆出口暴涨121.9%</h3>
+
+<p>广汽集团1-10月累计销量128.49万辆，新能源板块与海外出口成为核心增长动力。1-10月新能源累计销量50.12万辆，同比上涨58.94%；自主品牌累计销量突破60万辆，同比增速接近26%。广汽自主品牌出口累计22.31万辆，同比大涨121.9%。广汽的新能源板块和海外出口表现亮眼，显示出其在新能源和国际市场上的竞争力。广汽在新能源和出口方面的强劲表现，表明其在市场中的战略转型取得了显著成效。（来源：太平洋汽车）</p>
+
+<figure><img src="img/b09728925f06cd.jpg" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>广汽集团1-10月销量128.49万辆</h3>
+
+<p>广汽集团1-10月销量达128.49万辆，其中新能源销量突破50万辆，同比增长58.94%。自主品牌销量超60万辆，同比增长25.84%。广汽埃安1-10月销量32.69万辆，10月销量43160辆，同比大增53.06%。广汽丰田1-10月销量56.5万辆，10月销量连续3个月环比正增长。广汽集团出口22.31万辆，同比增幅121.9%。广汽集团在新能源和出口方面表现突出，与此前的销量增长趋势一致，显示出其在新能源和国际化方面的持续发力。这表明广汽集团在新能源和出口领域的竞争力正在不断提升。（来源：汽车之家）</p>
+
+<figure><img src="img/6d1f0ed9284a80.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h2>四、供应链与智驾</h2>
+
+<h3>奔驰研发创新显示技术</h3>
+
+<p>梅赛德斯-奔驰正在研发创新的显示技术，旨在实现车辆与周边环境之间全新的沟通方式。通过将LED显示元件直接集成到车窗内，车辆能够在需要时，在后窗上选择性地呈现警示标志、安全符号或与交通相关的信息。梅赛德斯-奔驰还正在研发一种全息显示技术，能够将挡风玻璃转变为交互界面。此外，奔驰还开发了创新型功率转换器，为800伏架构下的电动驱动系统开辟新路径。这项技术的研发与奔驰在智能驾驶和电动化领域的布局密切相关，显示出其在显示技术和电动驱动系统方面的持续创新。这表明奔驰在智能驾驶和电动化领域正不断推进技术突破。（来源：盖世汽车）</p>
+
+<h3>第二代海豹07上市售价13.59万起</h3>
+
+<p>第二代海豹07正式上市，超级置换价13.59万元-16.89万元。新车车长首次突破5米，定位从中型轿车升格为中大型轿车，首次搭载云辇-M智能磁流变车身控制系统，纯电版CLTC续航最高775公里。第二代海豹07在尺寸、底盘架构与动力系统上均进行了实质性重构，轴距增加60mm，后备箱容积达618L，前备箱容积160L。新车搭载天神之眼B辅助驾驶激光版，支持城市领航、高快领航与全场景泊车辅助等功能。第二代海豹07的上市与比亚迪在新能源领域的持续投入密切相关，显示出其在中大型轿车市场的进一步布局。这表明比亚迪在新能源汽车市场正不断拓展产品线，提升竞争力。（来源：新浪汽车·新车）</p>
+
+<figure><img src="img/87c4d70b557f97.jpg" alt="（图：新浪汽车·新车）" loading="lazy"><figcaption>（图：新浪汽车·新车）</figcaption></figure>
+
+<h2>五、公司与人事</h2>
+
+<h3>大众汽车集团奥博穆先生将上线对话栏目</h3>
+
+<p>盖世汽车CEO兼资讯总编周晓莺将与大众汽车集团管理董事会主席奥博穆先生进行对话，相关内容即将上线。此次对话属于C Talk栏目，旨在深入探讨汽车行业的发展趋势与未来方向。此前，盖世汽车已多次举办类似活动，邀请行业领袖分享见解。此次对话将进一步推动行业交流与合作，为观众带来高质量的内容。（来源：盖世汽车）</p>
+
+<h3>博世Fedra Ribeiro将上线对话栏目</h3>
+
+<p>盖世汽车CEO兼资讯总编周晓莺将与博世智能驾控董事会成员、全球执行副总裁Fedra Ribeiro女士进行对话，相关内容即将上线。此次对话属于C Talk栏目，旨在深入探讨智能驾控技术的发展与应用。此前，盖世汽车已多次举办类似活动，邀请行业领袖分享见解。此次对话将进一步推动行业交流与合作，为观众带来高质量的内容。（来源：盖世汽车）</p>
+
+<h2>六、出海与国际</h2>
+
+<h3>近700辆极氪9X发运欧洲</h3>
+
+<p>近日，近700辆极氪9X完成下线，正分批发往欧洲市场，包括德国、荷兰、比利时、瑞典、法国、挪威、丹麦共7个国家。极氪9X是极氪面向全球打造的豪华旗舰超级混动SUV，售价折合人民币超百万元。此前，极氪已大批量发运阿联酋，并在欧洲市场布局22个国家和地区，2026年1-9月交付量同比增长200%。此次发运将进一步巩固极氪在欧洲高端市场的地位，推动品牌全球化战略。（来源：太平洋汽车）</p>
+
+<figure><img src="img/5dfddb58958621.png" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>吉利甲醇电混家轿上市 7.68万元起</h3>
+
+<p>11月3日，吉利新一代甲醇电混技术发布，全球首款面向家用市场的甲醇电混家轿——银河星耀6 EF正式上市，限时焕新价7.68万元起。该车型采用吉利行业首创的PHI预压高能点火技术，实现近零下40摄氏度一次点火成功，并开发全车型耐醇防腐材料体系，台架试验超100万公里。截至2026年10月，吉利投入运营的甲醇电动车型超过6万台，累计行驶里程突破250亿公里。此前，该车型已向营运市场投放超6000台，为家用场景的耐久性与可靠性验证提供了数据支持。吉利将星耀6 E-fuel视为甲醇战略从‘全链条闭环’向‘私人消费闭环’跨越的关键一步，其市场销量将成为检验绿色甲醇减碳路径能否实现规模化的重要参考。（来源：盖世汽车）</p>
+
+<h2>数据速览</h2>
+
+<table><thead><tr><th>指标</th><th>数值</th><th>口径/区间</th><th>来源</th></tr></thead><tbody>
+<tr><td>广汽集团1-10月销量</td><td>128.49万辆</td><td>出口暴涨121.9%</td><td>广汽</td></tr>
+<tr><td>吉利银河星耀6 EF售价</td><td>7.68万元起</td><td>限时焕新价</td><td>吉利</td></tr>
+<tr><td>极氪9X发运欧洲数量</td><td>近700辆</td><td>折合超百万</td><td>极氪</td></tr>
+<tr><td>广汽集团出口增长</td><td>121.9%</td><td>1-10月</td><td>广汽</td></tr>
+<tr><td>Lynk &amp; Co 900L车身长度</td><td>5,280 mm</td><td>超越当前900</td><td>Lynk &amp; Co</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>原文来源</h2>
+
+<p class="standfirst">本页每条报道的图片均来自该条新闻原文页面；原文没有合格图片的条目不配图。</p>
+
+<p>1. [盖世汽车] 欧洲汽车业：挡不住中国车，绕不开中国 — https://auto.gasgoo.com/news/202611/6I70477037C108.shtml</p>
+<p>2. [CnEVPost] Lynk &amp; Co to debut 900L on November 10, adding 7-seat version to flagship 900 lineup — https://cnevpost.com/2026/11/06/lynk-co-debut-900l-nov-10/</p>
+<p>3. [太平洋汽车] 魏牌二代蓝山即将预售！全系800V/2.0T插混 配双腔空悬+后轮转向 — http://www.pcauto.com.cn/nation/5191/51915058.html?ad=28676</p>
+<p>4. [太平洋汽车] 配空气悬架+后轮转向 全新红旗H9预售32.98万元起 — http://www.pcauto.com.cn/nation/5191/51915060.html?ad=28676</p>
+<p>5. [太平洋汽车] 限时售11.98万起 荣威家越07上市首周交付5000辆 — http://www.pcauto.com.cn/nation/5191/51915059.html?ad=28676</p>
+<p>6. [汽车之家] 同比下滑6.4% 宝马全球交付148.4万辆 宝马X3/X4系列增长16.1% — https://www.autohome.com.cn/news/202611/1318235.html#pvareaid=102624</p>
+<p>7. [太平洋汽车] 128.49万辆！广汽1-10月销量出炉 出口暴涨121.9% — http://www.pcauto.com.cn/news/5191/51915062.html?ad=28676</p>
+<p>8. [汽车之家] 新能源同比增长58.94% 广汽集团1-10月销量128.49万辆 — https://www.autohome.com.cn/news/202611/1318241.html#pvareaid=102624</p>
+<p>9. [盖世汽车] 梅赛德斯-奔驰开发创新显示解决方案 — https://auto.gasgoo.com/news/202611/6I70477156C409.shtml</p>
+<p>10. [新浪汽车·新车] 超级置换价13.59万起 二代海豹07上市 — https://auto.sina.com.cn/newcar/2026-11-06/detail-inixuqhy8859431.shtml?oaid=00110&amp;c=spr_auto_trackid_4d7d188c9b7a61c4</p>
+<p>11. [盖世汽车] 精彩花絮｜对话大众汽车集团奥博穆先生 — https://auto.gasgoo.com/news/202611/7I70477285C1207.shtml#nav</p>
+<p>12. [盖世汽车] 花絮｜对话 博世智能驾控Fedra Ribeiro — https://auto.gasgoo.com/news/202610/29I70476263C1207.shtml#nav</p>
+<p>13. [太平洋汽车] 折合超百万 近700辆极氪9X发运欧洲 国产旗舰出海 — http://www.pcauto.com.cn/news/5191/51915061.html?ad=28676</p>
+<p>14. [盖世汽车] E周看点 | 吉利首款家用甲醇车上市 — https://auto.gasgoo.com/news/202611/8I70477290C501.shtml</p>
+<p>15. [Electrive] The perfect illusion: our first test drive of the AMG GT 4-Door and SUV — https://www.electrive.com/2026/11/08/the-perfect-illusion-our-first-test-drive-of-the-amg-gt-4-door-and-suv/</p>
+<p>16. [易车] 领克07GT帕尔马紫调高定版将于11月9日上市 丰富选择空间 — https://news.yiche.com/info/114447997.html</p>
+<p>17. [CarNewsChina] Chery recalls 53,882 vehicles in China after Omoda 5 rear axle detaches in Malaysia — https://carnewschina.com/2026/11/06/chery-recalls-53882-vehicles-in-china-after-omoda-5-rear-axle-detaches-in-malaysia/</p>
+<p>18. [Electrek] Yamaha’s new electric scooter takes aim at Europe’s 125cc commuters — https://electrek.co/2026/11/07/yamahas-new-electric-scooter-takes-aim-at-europes-125cc-commuters/</p>
+<p>19. [汽车之家] 换装新世代造型设计 或采用更大电池组 新款宝马iX2谍照曝光 — https://www.autohome.com.cn/news/202611/1318238.html#pvareaid=102624</p>
+<p>20. [CnEVPost] Mercedes-Geely venture Smart expands #2 roll-out in China with Premium trim — https://cnevpost.com/2026/11/05/smart-expands-2-roll-out-china-premium-trim/</p>
+<p>21. [CarNewsChina] Chery’s boxy Jetour R700 SUV to share platform with 892-HP G700, debut November 27 — https://carnewschina.com/2026/11/07/cherys-boxy-jetour-r700-suv-to-share-platform-with-892-hp-g700-to-debut-november-27/</p>
+<p>22. [太平洋汽车] 国产宝马3系/极氪001领衔 最新一期工信部申报信息汇总 — http://www.pcauto.com.cn/nation/5191/51915109.html?ad=28676</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
