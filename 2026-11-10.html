@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>比亚迪第1900万辆新能源汽车下线</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 11 月 10 日 · 星期二 · 第 46 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">汽车日报</p>
+    <h1 class="art-title">比亚迪第1900万辆新能源汽车下线</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">22 条报道 ｜ 10 张配图 ｜ 全部条目带来源标注，单源信息标注待证实</p>
+  <article class="art-body">
+
+<h2>今日速览（30 秒版）</h2>
+<ul><li>比亚迪推出第1900万辆新能源车，方程豹Ti 9开启预订</li><li>特斯拉在圣安东尼奥启动自动驾驶出租车服务</li><li>领克07GT帕尔马紫调高定版售价15.98万元起</li><li>福田欧曼推出组合辅助驾驶重卡商业化方案</li><li>马斯克称Cybertruck订单远超产能</li><li>宝马国产新世代iX3/新世代i3月底上市</li><li>全新魏牌蓝山预售28.98万起，配备后桥差速锁</li><li>长安Lumin PLUS将于11月11日上市，纯电续航301km</li><li>大众ID. AURA L5将于11月16日开启盲订</li></ul>
+
+<h2>今日头条</h2>
+<p>11月9日，比亚迪第1900万辆新能源汽车在西安工厂正式下线，车型为方程豹钛9，该车将于本月正式上市。按照比亚迪目前的产销量节奏，预计今年12月底将迎来第2000万辆新能源汽车下线，达成全新里程碑。从第1辆到第100万辆新能源汽车下线累计耗时13年，从第100万辆到第1000万辆下线用时3年半，从第1000万辆到1900万辆下线用时23个月。回顾比亚迪在新能源领域的发展历史，其首款新能源车型为比亚迪F3DM，同时它也是中国品牌首款新能源汽车，更是全球首款插电式混合动力车型，该车下线时间为2008年12月。比亚迪第1900万辆新能源汽车下线，标志着其在新能源汽车领域的持续增长和领先地位。</p>
+
+<figure><img src="img/298bb8e5a964f1.jpg" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h2>一、新车与产品</h2>
+
+<h3>2027款岚图知音11月13日上市 配华为896线激光雷达</h3>
+
+<p>11月9日，岚图汽车宣布2027款岚图知音将于11月13日上市。新车定位智慧超充纯电大五座SUV，主打20万级市场，搭载华为乾崑896线激光雷达与5C超级快充，目前展车已陆续到店。智能驾驶是此次焕新的重点，新车配备华为乾崑智驾ADS 5与鸿蒙座舱5.2，构成20万级市场唯一的高阶智能方案。三电方面，基于全域800V原生纯电架构开发，搭载81kWh电池，CLTC续航650公里；配备5C超级快充，电量从20%充至80%仅需10分钟。此次焕新基于上万条真实用户反馈，意在减少家庭用户的购车取舍。（来源：太平洋汽车；旁证：网上车市 亦报道）</p>
+
+<figure><img src="img/6a97e9e687dc0f.jpg" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>魏牌二代蓝山预售28.98万起 4款车型</h3>
+
+<p>11月9日，魏牌二代蓝山正式开启预售，4款车型，分为5座和6座版本，预售价28.98-32.98万元。新车定位中大型插混SUV，全面进化为方盒子SUV造型，视觉上强悍且体量感十足。内饰方面，搭载新一代Coffee AIOS 4座舱系统，中控台配备29.6英寸6.4K贯穿双联屏，支持模糊语义识别、免唤醒智能控车等功能。新车配备NVIDIA Thor-U驾驶辅助芯片，包含2颗激光雷达及28个感知传感器，Coffee Pilot 4 V5全地形辅助驾驶系统支持城市道路、高速及非铺装越野路况的辅助行驶能力。新车搭载2.0T超级Hi4+双电机四驱+6C超充+800V高压平台，系统综合功率510kW，0-100km/h加速4.8秒，WLTC馈电油耗6.9L/100km，CLTC纯电续航350km。（来源：新浪汽车·新车）</p>
+
+<figure><img src="img/6e6888101a92eb.png" alt="（图：新浪汽车·新车）" loading="lazy"><figcaption>（图：新浪汽车·新车）</figcaption></figure>
+
+<h3>方程豹钛9开启预订 顶配版售价40万元</h3>
+
+<p>11月9日，方程豹品牌宣布钛9全国预订正式开启，并同步公布顶配版车型信息。钛9定位为科技新奢旗舰SUV，采用全尺寸‘方盒子’造型，车内为大六座布局，兼顾个性表达、空间实用性与科技豪华。钛9搭载比亚迪全新混动技术平台DMS、闪充技术、第二代刀片电池，以及云辇-A、天神之眼B等核心技术。顶配版车型进一步升级，搭载1.1米全景PHUD天际屏和30英寸全景巨幕屏，全车座椅均支持通风、加热和按摩功能，首创并首搭副驾舒享摇椅。CLTC纯电续航里程为400km，综合续航里程达1630km。新车将于11月内上市，预计售价35万—40万元。（来源：新浪汽车·新车）</p>
+
+<h3>方程豹钛9开启预定 本月将上市</h3>
+
+<p>方程豹钛9正式开启预定，将于本月正式上市，预计11月19日。该车型基于全新DMS平台打造，定位大型SUV，车长5270mm，轴距3130mm，搭载1.5T插混系统，匹配66.48度二代刀片电池，WLTC纯电续航310km。此外，比亚迪第1900万辆新能源汽车在西安工厂正式下线，下线车型为钛9。钛9外观采用方盒子造型，前脸配备贯穿式环形带灯，提供6款车色可选，车身侧面采用双拼色设计，配备半隐藏式门把手和多款轮毂可选。内饰方面，配备30英寸全景巨幕屏和全液晶仪表，提供3款内饰配色可选。配置方面，钛9将配备21.4英寸后排吸顶屏、副驾摇篮式座椅、二排零重力座椅等豪华配置。动力方面，搭载1.5T发动机和前后双电机组成的插混系统，最高车速为220km/h，匹配66.48千瓦时二代刀片电池组，WLTC纯电续航310km。未来钛9将与理想L9、问界M8、小米澎程N90、蔚来ES8、小鹏GX等车型展开竞争，预计售价30-40万元左右。（来源：太平洋汽车）</p>
+
+<figure><img src="img/298bb8e5a964f1.jpg" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h2>二、销量与市场</h2>
+
+<h3>小米汽车10月销量突破5万台</h3>
+
+<p>小米汽车10月月销量突破5万台，助力进入销量前五，排名大幅提升，小米澎程系列两款新车成为销量增长的核心贡献者。目前下订小米车型，至少需要等待4周时间。小米汽车的销量增长得益于新车型的推出，目前已有两款新车成为销量增长的核心贡献者。小米汽车的销量表现显示出其在新能源市场中的竞争力，与小鹏汽车、长安启源等品牌一同跻身销量前三。小米汽车的销量增长也反映了新能源市场整体的强劲势头，预计11月和12月新势力整体销量表现有望再创新高。（来源：汽车之家）</p>
+
+<figure><img src="img/95f77a427ea3d3.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>蔚来10月ES8交付量降至年度最低</h3>
+
+<p>蔚来10月ES8交付量为8,738辆，该车型与ES9一起占蔚来主品牌交付量的85.25%。ES8的交付量降至年度最低，但蔚来整体销量仍保持领先。ES8和ES9作为蔚来的主力车型，其交付量对蔚来整体销量有重要影响。尽管ES8交付量下降，但蔚来在新能源市场中的地位依然稳固，其产品线和市场策略仍具有竞争力。（来源：CnEVPost）</p>
+
+<figure><img src="img/5e95d123787a30.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>特斯拉中国销量降至8800辆，创2022年7月以来新低</h3>
+
+<p>2023年10月，特斯拉在中国市场销量为8,817辆，同比下降66.1%，为自2022年7月以来的最低水平，也是自2020年CarNewsChina开始追踪特斯拉中国销量以来最差的10月表现。与此同时，特斯拉上海工厂出口量达到59,012辆，同比增长66.3%。这一销量下滑与出口增长并存的现象，反映出特斯拉在中国市场面临激烈竞争，同时加大了对海外市场的布局力度。此前，特斯拉在中国市场曾多次实现销量增长，但此次大幅下滑表明其在本土市场的挑战加剧。此次销量表现意味着特斯拉需要重新调整其在中国市场的策略，以应对不断变化的竞争环境和市场需求。（来源：CarNewsChina）</p>
+
+<h3>宝马本月将在中国推出全新iX3和i3车型</h3>
+
+<p>宝马计划于本月在中国市场推出全新一代iX3和i3电动车。这两款车型属于宝马Neue-Klasse系列，标志着宝马在电动化转型上的进一步推进。此前，宝马已在中国市场推出多款电动车型，如iX和i7，但iX3和i3的推出将进一步丰富其电动产品线，增强在新能源汽车市场的竞争力。此次新车发布正值中国电动车市场竞争日益激烈的背景下，宝马此举旨在巩固其在高端电动车市场的地位。这意味着宝马正加快其电动化战略的落地，以应对来自特斯拉、比亚迪等品牌的激烈竞争。（来源：CarNewsChina）</p>
+
+<h2>三、政策与标准</h2>
+
+<h3>欧盟2035年禁售燃油车目标放宽，车企获更多缓冲空间</h3>
+
+<p>欧盟委员会近日决定放宽2035年全面禁售燃油车的目标，为汽车制造商提供更多缓冲空间。根据新政策，低碳钢信用额度将成为车企实现排放目标的另一条路径。此前，欧盟曾计划在2035年全面禁止销售新的燃油车，以推动汽车行业向零排放转型。然而，由于部分车企在电动化转型过程中面临技术、供应链和成本等挑战，欧盟决定调整目标，以确保行业平稳过渡。此次政策调整意味着欧盟在推动绿色转型的同时，也考虑到了车企的实际困难，为行业提供了更多灵活性。（来源：Motor1）</p>
+
+<figure><img src="img/22c32d4e0af1f8.jpg" alt="（图：Motor1）" loading="lazy"><figcaption>（图：Motor1）</figcaption></figure>
+
+<h3>电池护照倒计时四个月，欧盟新规将实施</h3>
+
+<p>距离2027年2月18日欧盟《电池与废电池法规》（EU 2023/1542）要求的数字电池护照强制实施日，还有不到四个月。届时，每一块进入欧盟市场的电动汽车电池、轻型交通工具电池，以及容量超过2kWh的工业电池，都必须携带一枚“数字护照”，并在海关环节通过唯一标识完成核验。这一新规是欧盟“绿色新政”和循环经济战略的重要组成部分，旨在降低电池全生命周期的碳排放、提高回收材料比例、延长电池寿命。此前，2026年7月欧盟数字产品护照（DPP）注册库正式上线，今年10月，全球电池联盟（GBA）公布最新一轮电池护照试点结果，17个供应链联合体进入运营试验阶段，涉及电芯产能占全球80%。这意味着电池厂交付的不再只是一个产品，而是一条持续更新的数据链，且数据需经过第三方验证，确保可信度。（来源：盖世汽车）</p>
+
+<h2>四、供应链与智驾</h2>
+
+<h3>宝马新增两家电池供应商，强化区域供应链</h3>
+
+<p>宝马宣布为Neue Klasse车型的Gen6电池新增两家区域电池供应商，分别是欧洲的三星SDI和美国的LG能源解决方案（LGES）。此举旨在进一步区域化其电池供应网络，以确保供应链安全。此前，宝马已有多家电池供应商，此次新增两家将进一步增强其在欧洲和北美市场的电池供应能力。这一动作也反映了全球车企在电动车领域对供应链本地化和多样化的重视，以应对地缘政治和物流风险。此举意味着宝马在电池供应方面将更加灵活，能够更好地满足不同地区市场需求。（来源：Electrive）</p>
+
+<h3>福特测试3.6万块Mustang Mach-E电池，行驶10万公里表现稳定</h3>
+
+<p>福特对3.6万块Mustang Mach-E电池进行了测试，结果显示这些电池在行驶10万公里后表现稳定。这一测试数据为潜在电动车买家提供了重要参考，表明电池在长期使用中的性能衰减可能低于预期。此前，电池退化一直是电动车消费者关注的焦点，而福特此次的测试结果有助于缓解这一担忧。此举也表明，车企正在通过大量实测数据来提升消费者对电动车电池寿命和可靠性的信心。这意味着电动车在电池耐久性方面可能比消费者预期的更具优势。（来源：InsideEVs）</p>
+
+<figure><img src="img/eaf1407ae580cb.jpg" alt="（图：InsideEVs）" loading="lazy"><figcaption>（图：InsideEVs）</figcaption></figure>
+
+<h3>福特电动车电池行驶10万公里健康度超90%</h3>
+
+<p>福特表示，其电动车电池在行驶超过10万公里后，平均健康度仍保持在90%以上。这项数据表明，福特电动车电池的耐久性表现优异，有助于提升消费者对电动车长期使用的信心。此前，电动车电池的寿命和健康度一直是消费者关注的焦点，而福特此次公布的数据显示，其电池技术在实际使用中表现稳定。这一成果意味着，电动车在长期使用过程中，电池性能的衰减速度可能低于预期，从而增强消费者对电动车的购买意愿和使用信心。（来源：Electrek）</p>
+
+<figure><img src="img/d27cf0cb480253.webp" alt="（图：Electrek）" loading="lazy"><figcaption>（图：Electrek）</figcaption></figure>
+
+<h3>宝马新款电动车将部分使用磷酸铁锂电池</h3>
+
+<p>宝马确认，其新款电动车型Neue Klasse将部分使用磷酸铁锂电池（LFP），同时继续使用镍锰钴电池（NMC），但会非常谨慎地选择使用场景。目前在中国市场，宝马iX3 30L车型已经采用LFP电池，而更高端的40L和50L版本仍使用NMC电池。此前，宝马在电动车电池技术的选择上主要依赖NMC电池，而此次引入LFP电池表明宝马正在探索更多电池技术方案，以满足不同市场和车型的需求。这一举措意味着，宝马正在根据市场需求和技术发展，逐步调整其电池策略，以提升电动车的竞争力和适应性。（来源：Electrive）</p>
+
+<h2>五、公司与人事</h2>
+
+<h3>吉利认同换电模式应对电池衰减问题</h3>
+
+<p>吉利控股集团董事长李书福在2026世界互联网大会・乌镇咖荟・汽车夜话上表示，吉利完全认同换电模式，认为这是解决动力电池衰减和更换成本高的有效方案。他指出，动力电池在使用过程中会逐渐衰减，而车辆的使用周期通常超过七八年，因此换电模式可以确保车辆在使用20年时电池仍能正常使用。此前，中国新能源乘用车企需为动力电池提供不低于8年或12万公里的质保，而最新国标要求轻型乘用车电池使用8年或16万公里后，可用能量状态不低于75%。吉利已通过入股蔚来能源，与蔚来共享换电技术与标准，推动换电模式的落地。这一举措意味着，吉利正在积极布局换电模式，以应对未来动力电池使用周期延长带来的挑战。（来源：盖世汽车）</p>
+
+<h3>吉利董事长警告电池寿命危机：直接更换电池包成本过高</h3>
+
+<p>吉利董事长李书福近日表示，直接更换电动汽车电池包的成本过高，这可能成为行业面临的一个重大挑战。吉利与蔚来正在扩大电池更换合作，以应对电池寿命问题。此前，吉利和蔚来已在电池交换技术上展开合作，但李书福指出，直接更换电池包的高昂成本可能限制这一方案的普及。这一问题不仅影响吉利和蔚来，也对整个电动汽车行业构成挑战。这意味着，电池更换技术的发展和成本控制将成为未来电动汽车行业竞争的关键因素之一。（来源：CarNewsChina）</p>
+
+<h3>玛莎拉蒂计划与马斯特罗合作在中国本地化生产</h3>
+
+<p>玛莎拉蒂计划与马斯特罗合作，在中国进行本地化生产。该项目涉及华为、江淮汽车和Stellantis，新车的外观设计已经确定。此前，玛莎拉蒂在中国市场一直依赖进口，而此次合作可能标志着其在中国市场战略的重大调整。与华为、江淮汽车和Stellantis的合作，表明玛莎拉蒂希望借助中国本土企业的技术与制造能力，提升其在中国市场的竞争力。这意味着，玛莎拉蒂正加速其在中国市场的本地化布局，以应对日益激烈的市场竞争。（来源：CnEVPost）</p>
+
+<figure><img src="img/8b4cecf3cc2c94.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>特斯拉计划明年中旬停产Cybertruck</h3>
+
+<p>特斯拉首席执行官埃隆·马斯克昨日在社交平台X上表示，公司计划于明年中旬在得克萨斯州超级工厂逐步停止Cybertruck的生产，以腾出空间生产Cybercab机器人出租车。此前，特斯拉已在得克萨斯州超级工厂启动了Cybertruck的生产，但随着Cybercab项目的推进，特斯拉决定调整生产计划。这一调整表明特斯拉正在加快其在自动驾驶和机器人出租车领域的布局。这意味着，特斯拉正将重点转向未来出行解决方案，以巩固其在电动汽车和自动驾驶领域的领先地位。（来源：盖世汽车）</p>
+
+<h2>六、出海与国际</h2>
+
+<h3>大众中国减持国轩高科5.3%股权</h3>
+
+<p>大众汽车（中国）投资有限公司将持有的国轩高科5.30%股权，共计96,180,444股，以每股24.09元的价格转让给合肥市建设投资有限公司，总价约23.17亿元。转让完成后，大众中国持股比例由24.28%降至18.98%，仍为第一大股东。此次交易基于双方对公司发展前景的认可，且不涉及要约收购或控制权变更。此前，国轩高科与大众汽车集团PowerCo已达成共建三家合资公司的协议，涉及总投资约32.22亿欧元。此次股权交易与产能合作并行，显示双方在新能源汽车领域的深度绑定。（来源：盖世汽车）</p>
+
+<h3>小米汽车出海首站锁定欧洲</h3>
+
+<p>小米汽车正式设立国际业务部，由汽车部副总裁于立国兼任总经理，全面负责海外市场布局。小米计划于2027年下半年启动全球化，首站落地欧洲，并已与德国8家头部经销商集团签约。小米手机在欧洲市场已有十年经营基础，品牌认知度较高，有助于汽车业务的推广。小米汽车目前有三款车型，其中定位家庭用户的增程式SUV澎程可能成为出海主力。欧洲市场对汽车安全、环保标准要求较高，小米汽车需通过严格认证才能上市销售。（来源：盖世汽车）</p>
+
+<h3>中国车企欧洲建厂用工难题凸显</h3>
+
+<p>随着中国车企在欧洲建厂步伐加快，用工问题成为新的挑战。在西班牙、匈牙利等地，年轻工人对三班倒工作模式接受度低，企业更多依赖中年工人和移民劳工。东欧劳工语言通、成本低，但稳定性差；北非劳工勤劳但需注意宗教信仰；难民劳工身份不稳定，车企较少使用。此外，欧洲技术工人对加班福利、夜班补贴等要求较高，中国企业单纯靠涨薪难以吸引人才。欧盟数据保护规则严格，企业需提前告知员工数据使用方式，否则可能面临高额罚款。用工合规成为车企出海必须面对的硬约束。（来源：盖世汽车）</p>
+
+<h3>匈牙利新政府设环境监管机构，罚款上限提至50亿福林</h3>
+
+<p>2025年9月，匈牙利新政府宣布设立新的环境监管机构，重点监督电池制造、回收和退役处置，并拟将大型制造企业严重环境违法的罚款上限提高至50亿福林。此前，匈牙利长期以政策友好、成本优势和欧盟入口吸引中资新能源企业布局，如CATL、BYD和欣旺达等均在该国开展项目。新政府上台后，政策语言转向强调环境和劳动监管，同时仍希望提供稳定的投资环境。这意味着中国企业未来在匈牙利的布局，需在合规、公共沟通和本地价值创造方面加强能力。匈牙利作为欧洲制造型战略节点的地位依然稳固，但投资条件已从“招商优先”转向“投资质量、治理约束和社会许可并重”。（来源：盖世汽车）</p>
+
+<h2>数据速览</h2>
+
+<table><thead><tr><th>指标</th><th>数值</th><th>口径/区间</th><th>来源</th></tr></thead><tbody>
+<tr><td>方程豹钛9预售价</td><td>28.98-32.98万元</td><td>预售价</td><td>12</td></tr>
+<tr><td>魏牌二代蓝山预售价</td><td>28.98万元起</td><td>预售价</td><td>12</td></tr>
+<tr><td>特斯拉10月中国销量</td><td>8,817辆</td><td>10月销量</td><td>34</td></tr>
+<tr><td>BYD Yangwang Altior续航里程</td><td>1,000+ km</td><td>CTLC</td><td>4</td></tr>
+<tr><td>Fang Cheng Bao Ti 9 WLTC续航里程</td><td>310 km</td><td>WLTC</td><td>5</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>原文来源</h2>
+
+<p class="standfirst">本页每条报道的图片均来自该条新闻原文页面；原文没有合格图片的条目不配图。</p>
+
+<p>1. [太平洋汽车] 比亚迪第1900万辆新能源汽车下线 车型为方程豹钛9 — http://www.pcauto.com.cn/nation/5191/51915190.html?ad=28676</p>
+<p>2. [太平洋汽车] 2027 款岚图知音将于11月13日上市 配华为896线激光雷达 — http://www.pcauto.com.cn/nation/5191/51915171.html?ad=28676</p>
+<p>3. [新浪汽车·新车] 28.98万起 魏牌二代蓝山开启预售 — https://auto.sina.com.cn/newcar/x/2026-11-09/detail-iniyearw9861827.shtml?oaid=00002&amp;c=spr_auto_trackid_f8944f41f240e3fc</p>
+<p>4. [新浪汽车·新车] 方程豹钛9正式开启预订 将于11月上市 — https://auto.sina.com.cn/newcar/2026-11-09/detail-iniycwiu6428575.shtml?oaid=00001&amp;c=spr_auto_trackid_f8944f41f240e3fc</p>
+<p>5. [太平洋汽车] 方程豹钛9开启预定 全新DMS平台/1.5T插混 将于本月上市 — http://www.pcauto.com.cn/nation/5191/51915179.html?ad=28676</p>
+<p>6. [汽车之家] 10月销量快报：没想到这两家进销量前三 均破5万台 小米冲进前五 — https://www.autohome.com.cn/news/202611/1318222.html#pvareaid=102624</p>
+<p>7. [CnEVPost] Nio October deliveries breakdown: ES8 falls to year-to-date low, still lead company sales — https://cnevpost.com/2026/11/09/nio-oct-2026-deliveries-breakdown/</p>
+<p>8. [CarNewsChina] Tesla’s China sales fall to 8,800 in October, the lowest since July 2022, as exports surge — https://carnewschina.com/2026/11/09/teslas-china-sales-fall-to-8800-in-october-the-lowest-since-july-2022-as-exports-surge/</p>
+<p>9. [CarNewsChina] BMW to launch all-new iX3 and i3 in China this month — https://carnewschina.com/2026/11/09/bmw-to-launch-all-new-ix3-and-i3-in-china-this-month/</p>
+<p>10. [Motor1] EU Softens 2035 Combustion Engine Ban, Giving Carmakers More Breathing Room — https://www.motor1.com/news/814805/eu-parliament-proposal-soften-2035/</p>
+<p>11. [盖世汽车] 电池护照倒计时的大考 — https://auto.gasgoo.com/news/202611/9I70477080C501.shtml</p>
+<p>12. [Electrive] BMW to source battery cells from LGES and Samsung SDI — https://www.electrive.com/2026/11/09/bmw-to-source-battery-cells-from-lges-and-samsung-sdi/</p>
+<p>13. [InsideEVs] Ford Tested 36,000 Mustang Mach-E Batteries. Here’s How They Held Up After 100,000 Miles — https://insideevs.com/news/814780/ford-mustang-mach-e-battery-degradation-range-study/</p>
+<p>14. [Electrek] Ford’s EV batteries retain more than 90% health after 100,000 miles — https://electrek.co/2026/11/09/fords-ev-batteries-retain-over-90-health-after-100000-miles/</p>
+<p>15. [Electrive] BMW to partially use LFP batteries in Neue Klasse — https://www.electrive.com/2026/11/09/bmw-to-partially-use-lfp-batteries-in-neue-klasse/</p>
+<p>16. [盖世汽车] 吉利认同换电模式 — https://auto.gasgoo.com/news/202611/9I70477362C109.shtml</p>
+<p>17. [CarNewsChina] Geely boss warns of EV battery lifespan crisis: “direct pack replacement is too expensive” — https://carnewschina.com/2026/11/09/geely-boss-warns-of-ev-battery-lifespan-crisis-direct-pack-replacement-is-too-expensive/</p>
+<p>18. [CnEVPost] Maserati reportedly to partner with Maextro on localized production in China — https://cnevpost.com/2026/11/09/maserati-partner-with-maextro-localized-production-china/</p>
+<p>19. [盖世汽车] 特斯拉计划得州工厂逐步停产Cybertruck — https://auto.gasgoo.com/news/202611/9I70477270C409.shtml</p>
+<p>20. [盖世汽车] 大众中国转让国轩高科股权 — https://auto.gasgoo.com/news/202611/9I70477361C501.shtml</p>
+<p>21. [盖世汽车] 小米汽车出海谁是主力？ — https://auto.gasgoo.com/news/202611/9I70477372C109.shtml</p>
+<p>22. [盖世汽车] 中国车企出海，建厂不易，用工更难？ — https://auto.gasgoo.com/news/202611/9I70477393C108.shtml</p>
+<p>23. [盖世汽车] 匈牙利变了中国汽车的欧洲打法也该变了 — https://auto.gasgoo.com/news/202611/9I70477377C1213.shtml#nav</p>
+<p>24. [CarNewsChina] BYD rolls out 19 millionth NEV as Fang Cheng Bao Ti 9 opens reservations — https://carnewschina.com/2026/11/09/byd-rolls-out-19-millionth-nev-as-fang-cheng-bao-ti-9-opens-reservations/</p>
+<p>25. [TechCrunch·交通] Tesla expands robotaxi service to San Antonio — https://techcrunch.com/2026/11/09/tesla-expands-robotaxi-service-to-san-antonio/</p>
+<p>26. [易车] 领克07GT帕尔马紫调高定版上市 限时专享价15.98万元起 — https://news.yiche.com/info/114522252.html</p>
+<p>27. [太平洋汽车·新闻] 福田欧曼「苍穹」范式解法 加速组合辅助驾驶重卡商业化 — https://www.pcauto.com.cn/news/5191/51915187.html</p>
+<p>28. [Electrek] Musk says Cybertruck isn’t dying from weak sales — the numbers disagree — https://electrek.co/2026/11/09/musk-cybertruck-demand-claim-data/</p>
+<p>29. [网上车市] 宝马官宣：国产新世代iX3/新世代i3月底上市！ — http://news.cheshi.com/dujia/20261109/3426236.shtml</p>
+<p>30. [Electrek] Tesla launches Robotaxi in San Antonio with a 274 sq mi geofence on paper — https://electrek.co/2026/11/09/tesla-robotaxi-san-antonio-launch-geofence/</p>
+<p>31. [汽车之家] 全新魏牌蓝山预售28.98万起 变身方盒子SUV 后桥差速锁+双腔空悬 — https://www.autohome.com.cn/news/202611/1318260.html#pvareaid=102624</p>
+<p>32. [汽车之家] 四门四座布局 纯电续航301km 长安Lumin PLUS将于11月11日上市 — https://www.autohome.com.cn/news/202611/1318239.html#pvareaid=102624</p>
+<p>33. [汽车之家] 基于大众CMP纯电平台开发 大众ID. AURA L5将于11月16日开启盲订 — https://www.autohome.com.cn/news/202611/1318210.html#pvareaid=102624</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
