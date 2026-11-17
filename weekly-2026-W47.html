@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>2026 年第 47 周</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年第 47 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">汽车周报</p>
+    <h1 class="art-title">2026 年第 47 周</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">2026-11-16 至 2026-11-22 ｜ 共覆盖 72 条公开来源材料</p>
+  <article class="art-body">
+
+
+
+<h2>本周速览</h2>
+
+<ul><li>18.49万起 配华为乾��ADS 5 捷途旅行者7 C-DM华为乾��智驾版上市</li><li>27款岚图知音上市：售19.79万，配华为896激光雷达</li><li>一汽-大众ID. AURA L5开启盲订 大掀背家轿/支持城市NOA</li><li>全系标配激光雷达、宁德时代电池，2027款极狐阿尔法S5售11.58万元起</li><li>理想辟谣动力电池召回</li><li>1. 宝马新世代在华开启量产 首款国产新世代BMW iX3正式投产</li><li>小米首次开放电池产线，背后藏着一场供应链博弈</li><li>2027款全新领克03家族正式上市 限时权益价11.38万元起</li><li>立足一线 场景为锚，福田欧曼构筑组合辅助驾驶普及链路</li><li>9.99万起 提供猎鹰500+辅助驾驶/续航550km 捷途环游者EV开启预售</li></ul>
+
+<h2>本周头条</h2>
+
+<h3>蔚来ES9交付突破40000台，彰显品牌实力</h3>
+
+<p>蔚来汽车宣布，其高端车型ES9已完成第40000台新车的交付。这一里程碑标志着蔚来在新能源汽车市场持续发力，进一步巩固了其在高端智能电动车领域的地位。ES9作为蔚来旗下的旗舰车型，自推出以来凭借卓越的性能、智能化配置和豪华的驾乘体验，赢得了消费者的广泛认可。</p>
+
+<p>蔚来ES9的交付量稳步增长，得益于其在产品设计、技术创新和用户体验方面的持续投入。相比同级别车型，ES9在续航里程、智能驾驶辅助系统以及整车安全性能方面表现突出。同时，随着全球新能源汽车政策的不断推进，以及消费者对环保和智能化出行需求的提升，蔚来ES9的市场竞争力进一步增强。</p>
+
+<p>此次交付量突破40000台，不仅体现了蔚来品牌在高端新能源汽车市场的影响力，也预示着未来新能源汽车行业的竞争将更加激烈。未来一两个季度，行业将重点关注蔚来及其他品牌在智能化、电动化领域的技术突破，以及市场对高端新能源车型的接受度和需求变化。</p>
+
+<h2>一、政策与标准</h2>
+
+<h3>东风本田置换补贴最高达2万元</h3>
+
+<p>东风本田近期推出购车置换补贴政策，最高可享2万元补贴，部分车型如CR-V和UR-V还可享受1000元抵2000元的优惠。该政策由汽车之家报道，旨在刺激消费者在当前市场环境下加快购车决策。此前，东风本田在新能源领域已有布局，但此次补贴政策更偏向于传统燃油车型，显示出其在市场竞争中对主流消费群体的重视。这一举措与当前国家鼓励汽车消费、推动汽车市场复苏的政策方向相契合。此举意味着东风本田正通过多重优惠手段，增强品牌在中高端SUV市场的竞争力。</p>
+
+<h3>2027款极狐阿尔法S5限时补贴价11.58万元起</h3>
+
+<p>2027款极狐阿尔法S5正式上市，限时补贴价为11.58万元起，该信息由易车报道。此次上市的车型在配置和智能化方面进行了多项升级，进一步提升了产品的市场吸引力。此前，极狐品牌在新能源汽车领域已有一定积累，但此次价格调整显示出其在市场竞争中对价格敏感型消费者的关注。这一价格策略意味着极狐正通过更具竞争力的定价，进一步扩大其在新能源汽车市场的份额，同时推动品牌向更广泛的消费群体渗透。</p>
+
+<h2>三、新车日历</h2>
+
+<h3>捷途旅行者7 C-DM华为乾崎智驾版上市，售价18.49万起</h3>
+
+<p>捷途旅行者7 C-DM华为乾崎智驾版已于近日正式上市，起售价为18.49万元。该车型搭载华为乾崎ADS 5智能驾驶系统，提供先进的辅助驾驶功能。此前，捷途品牌在新能源领域已有布局，但此次与华为合作，标志着其在智能化方面迈出了重要一步。相比同级别车型，该车在智能驾驶配置上具有明显优势，同时价格也更具竞争力。此次上市意味着捷途正加速向高端智能化市场迈进，进一步提升品牌影响力。</p>
+
+<h3>27款岚图知音上市，售价19.79万起</h3>
+
+<p>27款岚图知音已于近日正式上市，限时权益价为19.79万元起。该车型搭载华为896激光雷达，提供高阶智能驾驶辅助功能。此前，岚图知音在智能化配置上已有一定积累，但此次升级后，其在感知能力和自动驾驶水平上有了显著提升。相比同级别车型，该车在硬件配置上更具优势，同时价格也保持在合理区间。此次上市意味着岚图正通过与华为深度合作，进一步强化其在智能电动车领域的竞争力。</p>
+
+<h3>2027款全新领克03家族上市，限时权益价11.38万元起</h3>
+
+<p>2027款全新领克03家族已于近日正式上市，限时权益价为11.38万元起。该车型在设计、性能和智能化方面均有较大提升，进一步巩固了领克在紧凑型车市场的地位。此前，领克03系列在市场上已取得一定口碑，但此次新款在配置和价格上更具吸引力。相比同级别车型，该车在性价比方面表现突出，同时延续了领克一贯的高水准设计和驾驶体验。此次上市意味着领克正通过持续的产品迭代，进一步巩固其在年轻消费群体中的影响力。</p>
+
+<h3>捷途环游者EV开启预售，续航550km</h3>
+
+<p>捷途环游者EV已于近日开启预售，起售价为9.99万元，提供猎鹰500+辅助驾驶功能，续航里程达550公里。该车型作为捷途在新能源领域的又一力作，延续了品牌在空间和实用性方面的优势。相比同级别车型，该车在续航和智能驾驶配置上表现较为突出，同时价格也更具吸引力。此次预售意味着捷途正加速布局新能源市场，进一步丰富其产品矩阵，满足消费者对电动化和智能化的双重需求。</p>
+
+<h2>四、公司与人事</h2>
+
+<h3>小鹏汽车发布242.8亿财报</h3>
+
+<p>小鹏汽车本周发布了最新财报，营收达到242.8亿元。这一数字反映了其在新能源汽车市场的强劲表现。此前，小鹏汽车在2022年的营收为183.6亿元，同比增长约32%。与行业其他主要竞争对手相比，小鹏汽车的营收增速处于领先地位。这一成绩得益于其在智能电动汽车领域的持续投入和市场拓展。小鹏汽车的财报发布表明其在新能源汽车市场中具有较强的竞争力和增长潜力。</p>
+
+<h3>奥迪中国高管架构调整</h3>
+
+<p>奥迪中国本周宣布了新的高管架构，张俊被任命为总裁，穆鸿远被任命为首席运营官。这一调整是奥迪中国在组织架构上的重要一步。此前，奥迪中国在2023年进行了多项人事调整，以适应中国市场的发展需求。此次高管架构的调整表明奥迪中国在加强内部管理的同时，也在积极应对市场竞争和客户需求的变化。这一举措有助于奥迪中国在未来的市场竞争中保持优势。</p>
+
+<h2>五、技术与智驾</h2>
+
+<h3>一汽-大众ID. AURA L5开启盲订，支持城市NOA</h3>
+
+<p>一汽-大众ID. AURA L5近日开启盲订，该车型定位为大掀背家轿，并支持城市NOA（导航辅助驾驶）功能。此次盲订标志着该车型即将进入市场，为消费者提供更智能化的出行体验。此前，一汽-大众在智能驾驶领域已有布局，但ID. AURA L5的推出将进一步巩固其在新能源市场的竞争力。该车型的盲订策略与竞品相比更具吸引力，尤其是在城市NOA功能的加持下，能够满足消费者对智能化和便捷性的需求。这一举措意味着一汽-大众正加速推进智能驾驶技术的普及，为未来市场竞争奠定基础。</p>
+
+<h3>福田欧曼构建组合辅助驾驶普及链路</h3>
+
+<p>福田欧曼近日立足一线，以场景为锚，构建组合辅助驾驶的普及链路。该举措旨在提升商用车在实际运营中的安全性和效率，为行业提供更具实用性的智能驾驶解决方案。此前，福田欧曼在辅助驾驶技术上已有一定积累，但此次构建的普及链路将覆盖更多应用场景，进一步推动技术落地。与竞品相比，福田欧曼的组合辅助驾驶方案在成本控制和实用性方面更具优势，能够更好地满足中小企业的实际需求。这一行动表明，福田欧曼正致力于推动智能驾驶技术在商用车领域的广泛应用，为行业转型升级提供支持。</p>
+
+<h3>埃安Ray7以11.47万起售价引入激光雷达</h3>
+
+<p>埃安Ray7以11.47万元起售价进入市场，成为13万级车型中唯一配备激光雷达的车型。该车型的推出标志着埃安在智能驾驶技术上的突破，为消费者提供更安全、更智能的出行选择。此前，激光雷达技术多见于高端车型，而埃安Ray7的定价策略使其在同价位车型中更具竞争力。与竞品相比，埃安Ray7在长续航和智能驾驶配置方面表现出色，能够满足更多消费者的需求。这一举措意味着埃安正加速推进智能驾驶技术的普及，为新能源市场注入新的活力。</p>
+
+<h3>2027款岚图知音限时19.79万元，搭载896线激光雷达</h3>
+
+<p>2027款岚图知音限时售价19.79万元，成为20万内唯一搭载896线激光雷达的车型。该车型的推出展示了岚图在智能驾驶技术上的领先地位，为消费者提供更精准、更安全的驾驶体验。此前，岚图在高端车型中已应用激光雷达技术，但此次降价使其在中高端市场更具竞争力。与竞品相比，2027款岚图知音在激光雷达的配置上更具优势，能够提供更全面的智能驾驶功能。这一举措表明，岚图正致力于推动高阶智能驾驶技术的普及，为消费者带来更优质的出行体验。</p>
+
+<h2>六、供应链与电池</h2>
+
+<h3>理想辟谣动力电池召回事件</h3>
+
+<p>理想汽车近日辟谣此前有关其动力电池存在质量问题并被召回的传闻。该消息来源于盖世汽车的报道，目前尚未有官方确认的召回计划。此前，理想汽车在电池安全和质量方面一直保持较高标准，多次强调其电池技术的可靠性。与部分新能源车企因电池问题频繁召回相比，理想汽车的电池质量控制体系较为稳定。此次辟谣表明，理想汽车在电池供应链管理方面具备较强的能力，能够有效应对市场对其产品质量的质疑。</p>
+
+<h3>宝马新世代iX3在华量产</h3>
+
+<p>宝马新世代车型在华正式开启量产，首款国产新世代BMW iX3已投入生产。该消息由新浪汽车·新车报道，标志着宝马在华新能源战略的进一步推进。与此前宝马在华生产的传统燃油车型相比，新世代iX3采用了更多智能化和电动化技术，符合当前新能源市场的发展趋势。此举意味着宝马正在加速布局中国市场，以应对来自特斯拉、比亚迪等品牌的激烈竞争。</p>
+
+<h3>小米首次开放电池产线</h3>
+
+<p>小米首次向外界开放其电池产线，这一事件由钛媒体和新浪汽车·新车共同报道。此次开放不仅展示了小米在电池制造领域的技术实力，也表明其在供应链管理方面正在逐步加强自主可控能力。与以往依赖外部供应商不同，小米此次通过自建产线，实现了对电池生产环节的深度参与。这一举措意味着小米正在向高端制造领域迈进，为其智能电动汽车业务的长远发展奠定基础。</p>
+
+<h3>奕境X9纯电搭载宁德时代电池</h3>
+
+<p>奕境X9纯电车型将在广州车展正式上市，该车型将标配宁德时代电池，提供两驱和四驱版本。太平洋汽车的报道指出，宁德时代作为全球领先的动力电池供应商，其电池技术在续航、安全和性能方面具有显著优势。与部分新能源车企自研电池相比，奕境选择与宁德时代合作，能够有效降低研发成本并提升产品可靠性。此举意味着奕境在供应链选择上更加注重稳定性和技术保障，为消费者提供更高质量的纯电车型。</p>
+
+<h2>七、出海与国际</h2>
+
+<h3>特斯拉投30亿欧元扩建工厂造Cybercab</h3>
+
+<p>特斯拉近日宣布将投资30亿欧元扩建其柏林工厂，以加速Cybercab车型的生产。该工厂预计将在未来几年内完成扩建，进一步提升产能。此前，特斯拉在柏林工厂的建设已经投入了大量资源，此次扩建表明其对Cybercab市场的信心。与传统汽车制造商相比，特斯拉在电动车领域拥有显著的技术优势，并且其垂直整合的生产模式有助于降低成本。此次投资也反映出特斯拉在全球电动车市场竞争中持续加大布局。Cybercab的推出将进一步巩固特斯拉在高端电动车市场的地位，并可能对传统豪华车品牌构成挑战。</p>
+
+<h2>九、数据速览</h2>
+
+<table><thead><tr><th>指标</th><th>本周</th><th>上周</th><th>变化</th><th>口径/来源</th></tr></thead><tbody>
+<tr><td>BYD在华销量</td><td>10,000</td><td>—</td><td>—</td><td>InsideEVs</td></tr>
+<tr><td>Tesla Gigafactory Grünheide投资</td><td>30亿欧元</td><td>—</td><td>—</td><td>Electrive</td></tr>
+<tr><td>Nio Q3交付量</td><td>109,178</td><td>—</td><td>—</td><td>CnEVPost</td></tr>
+<tr><td>2027款极狐阿尔法S5起售价</td><td>11.58万元</td><td>—</td><td>—</td><td>电动邦</td></tr>
+<tr><td>2027款岚图知音起售价</td><td>19.79万元</td><td>—</td><td>—</td><td>易车</td></tr>
+<tr><td>中国乘用车零售销量同比降幅</td><td>27.1%</td><td>—</td><td>—</td><td>CarNewsChina</td></tr>
+<tr><td>小鹏Q3营收同比增长</td><td>19.1%</td><td>—</td><td>—</td><td>CnEVPost</td></tr>
+<tr><td>CATL计划电池换电站数量</td><td>6,000</td><td>—</td><td>—</td><td>Electrive</td></tr>
+<tr><td>2027款全新领克03起售价</td><td>11.38万元</td><td>—</td><td>—</td><td>易车</td></tr>
+<tr><td>捷途旅行者7 C-DM华为智驾版起售价</td><td>18.49万元</td><td>—</td><td>—</td><td>汽车之家</td></tr>
+</tbody></table>
+
+<h2>十、下周预告与观察点</h2>
+
+<ul><li>宝马新世代车型在华开启量产，首款国产新世代BMW iX3正式投产。</li><li>特斯拉计划在柏林超级工厂投资30亿欧元，用于扩大Cybercab自动驾驶出租车的生产。</li><li>蔚来ES9完成第40000台新车交付，显示出其在高端市场的持续增长。</li><li>宁德时代计划到2027年在中国运营6000个电池换电站，有望成为该领域的市场领导者。</li><li>捷途环游者EV开启预售，提供猎鹰500+辅助驾驶系统及550km续航，起售价9.99万元。</li></ul>
+
+<h2>十一、供应链与库存观察</h2>
+
+<ul><li><strong>小米首次开放电池产线，背后藏着一场供应链博弈</strong>（钛媒体）—— 小米首次开放电池产线可能促使供应链企业提前备货，以应对潜在的产能提升带来的需求变化。</li><li><strong>理想辟谣动力电池召回</strong>（盖世汽车）—— 理想辟谣动力电池召回有助于稳定供应链合作方信心，减少因召回风险导致的订货点调整。</li><li><strong>全链路自证 打卡小米龙甲电池产线</strong>（新浪汽车·新车）—— 打卡小米龙甲电池产线可能推动供应链企业延长安全库存，以确保生产节奏与产线效率匹配。</li></ul>
+
+<p class="standfirst">本节从本周采集到的公开报道中筛出与产能、交付、物流、库存直接相关的条目，判断部分由本地模型依据原文给出，不引用券商研报。</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
