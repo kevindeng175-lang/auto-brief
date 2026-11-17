@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>本田</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 11 月 18 日 · 星期三 · 第 47 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">企业史</p>
+    <h1 class="art-title">本田</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">2026-11-18</p>
+  <article class="art-body">
+
+<p class="standfirst">技术独立路线：发动机优先与摩托车起家</p>
+
+<p class="standfirst">第 2/2 期：在售产品、定位、价格、销量、目标用户、实际用户、口碑、产品状况</p>
+
+<h2>一、产品线</h2>
+
+<table><thead><tr><th>车型</th><th>细分</th><th>价格</th><th>销量</th><th>定位的用户</th></tr></thead><tbody>
+<tr><td>本田飞度</td><td>次紧凑型车</td><td>资料未覆盖</td><td>资料未覆盖</td><td>年轻消费者和城市用户</td></tr>
+<tr><td>本田City</td><td>小型车</td><td>资料未覆盖</td><td>资料未覆盖</td><td>城市通勤者和年轻用户</td></tr>
+<tr><td>本田CR-V全能荣耀款</td><td>SUV</td><td>13.79万</td><td>资料未覆盖</td><td>家庭用户和城市SUV买家</td></tr>
+<tr><td>本田Insight</td><td>混合动力车</td><td>资料未覆盖</td><td>资料未覆盖</td><td>环保意识强的消费者</td></tr>
+<tr><td>本田Super Cub</td><td>摩托车</td><td>资料未覆盖</td><td>资料未覆盖</td><td>摩托车爱好者和通勤用户</td></tr>
+<tr><td>本田Ridgeline</td><td>皮卡</td><td>资料未覆盖</td><td>资料未覆盖</td><td>越野爱好者和需要载货能力的用户</td></tr>
+<tr><td>本田Alpha EV</td><td>电动车</td><td>资料未覆盖</td><td>资料未覆盖</td><td>环保意识强的消费者和电动车用户</td></tr>
+<tr><td>东风本田CR-V</td><td>SUV</td><td>资料未覆盖</td><td>资料未覆盖</td><td>家庭用户和城市SUV买家</td></tr>
+</tbody></table>
+
+<h3>本田飞度</h3>
+
+<ul><li><strong>实际用户</strong>：推断：年轻消费者和城市用户，注重经济性和空间灵活性</li><li><strong>大众评价</strong>：优点：空间利用率高、油耗低；缺点：动力表现一般，内饰较为简单</li></ul>
+
+<h3>本田City</h3>
+
+<ul><li><strong>实际用户</strong>：推断：城市通勤者和年轻用户，注重性价比和实用性</li><li><strong>大众评价</strong>：优点：设计时尚、操控灵活；缺点：配置较低，动力一般</li></ul>
+
+<h3>本田CR-V全能荣耀款</h3>
+
+<ul><li><strong>实际用户</strong>：推断：家庭用户和城市SUV买家，注重空间和舒适性</li><li><strong>大众评价</strong>：优点：配置升级、空间宽敞；缺点：油耗略高，内饰质感一般</li></ul>
+
+<h3>本田Insight</h3>
+
+<ul><li><strong>实际用户</strong>：推断：环保意识强的消费者，注重燃油经济性和环保性能</li><li><strong>大众评价</strong>：优点：燃油经济性好、环保；缺点：价格较高，动力表现一般</li></ul>
+
+<h3>本田Super Cub</h3>
+
+<ul><li><strong>实际用户</strong>：推断：摩托车爱好者和通勤用户，注重实用性和耐用性</li><li><strong>大众评价</strong>：优点：经典设计、耐用性强；缺点：配置较低，动力一般</li></ul>
+
+<h3>本田Ridgeline</h3>
+
+<ul><li><strong>实际用户</strong>：推断：越野爱好者和需要载货能力的用户，注重实用性和空间</li><li><strong>大众评价</strong>：优点：空间大、载货能力强；缺点：油耗高，价格较高</li></ul>
+
+<h3>本田Alpha EV</h3>
+
+<ul><li><strong>实际用户</strong>：推断：环保意识强的消费者和电动车用户，注重环保和科技感</li><li><strong>大众评价</strong>：优点：环保、科技感强；缺点：续航里程一般，价格较高</li></ul>
+
+<h3>东风本田CR-V</h3>
+
+<ul><li><strong>实际用户</strong>：推断：家庭用户和城市SUV买家，注重空间和舒适性</li><li><strong>大众评价</strong>：优点：配置丰富、空间宽敞；缺点：油耗略高，内饰质感一般</li></ul>
+
+<p><strong>价格带分层</strong>：本田的产品线从入门级的飞度、City到中端的CR-V、Insight，再到高端的Ridgeline和Alpha EV，价格区间覆盖广泛，但具体价格信息在资料中未明确提及。</p>
+
+<p><strong>产品状况</strong></p>
+
+<table><thead><tr><th>车型</th><th>产品阶段</th><th>换代/改款节奏</th><th>同级对手与打法</th></tr></thead><tbody>
+<tr><td>本田飞度</td><td>在售</td><td>推断：自2001年起持续生产，第四代车型自2020年起生产</td><td>推断：主要竞争对手包括丰田Yaris、日产Kicks等，凭借灵活空间和高效动力系统竞争</td></tr>
+<tr><td>本田City</td><td>停产在售</td><td>推断：自1981年起生产，2020年停产</td><td>推断：主要竞争对手包括丰田Corolla、日产Sunny等，凭借经济性和实用性竞争</td></tr>
+<tr><td>本田CR-V全能荣耀款</td><td>在售</td><td>推断：2023年推出，为中期改款</td><td>推断：主要竞争对手包括丰田RAV4、日产奇骏等，凭借配置升级和性价比竞争</td></tr>
+<tr><td>本田Insight</td><td>停产在售</td><td>推断：2018年推出第三代，2022年停产</td><td>推断：主要竞争对手包括丰田Prius、福特Fusion Hybrid等，凭借高燃油效率和环保技术竞争</td></tr>
+<tr><td>本田Super Cub</td><td>在售</td><td>推断：自1958年起持续生产，为经典车型，换代周期长</td><td>推断：主要竞争对手包括雅马哈XSR、铃木GSX-S等，凭借经典设计和可靠性竞争</td></tr>
+<tr><td>本田Ridgeline</td><td>在售</td><td>推断：自2008年起生产，为中型皮卡，换代周期较长</td><td>推断：主要竞争对手包括福特F-150、丰田Tundra等，凭借独特设计和舒适性竞争</td></tr>
+<tr><td>本田Alpha EV</td><td>在售</td><td>推断：2025年推出，为首款印度市场电动车</td><td>推断：主要竞争对手包括现代Creta Electric、马恒达BE6等，凭借电动化和智能化技术竞争</td></tr>
+<tr><td>东风本田CR-V</td><td>在售</td><td>推断：自2004年起生产，2023年推出全能荣耀款为中期改款</td><td>推断：主要竞争对手包括丰田RAV4、日产奇骏等，凭借配置升级和性价比竞争</td></tr>
+</tbody></table>
+
+<p><strong>产品矩阵的形状</strong>：本田的产品矩阵以紧凑型和中型车为主力，覆盖小型车、SUV、MPV及电动车型，主力集中在CR-V、飞度、Super Cub等车型上，电动车型如Alpha EV和Fit EV开始布局，但高端车型较少，向上冲的车型如Ridgeline和Alpha EV尚处早期阶段。</p>
+
+<p><strong>产品线内部的取舍</strong></p>
+
+<ul><li>电动车型与传统燃油车型并行，面临资源分配和市场接受度的挑战。</li><li>CR-V等主力车型与东风本田CR-V等子品牌车型在同价位段存在自相竞争。</li><li>高端车型如Ridgeline和Alpha EV尚处早期阶段，与本田在主流市场的布局存在拉扯。</li></ul>
+
+<h2>二、产品定位</h2>
+
+<p>本田作为全球知名的汽车制造商，以技术创新和环保理念著称，产品线覆盖从入门级到高端车型，包括轿车、SUV、MPV、摩托车等。其核心优势在于发动机技术、混合动力系统以及在摩托车领域的深厚积累。本田在市场上的定位偏向年轻消费者和家庭用户，同时也在新能源领域积极布局，如推出电动车型和氢燃料电池车。</p>
+
+<h2>三、用户画像与口碑</h2>
+
+<ul><li><strong>目标用户</strong>：年轻消费者、家庭用户、环保意识强的消费者以及需要载货能力的用户</li><li><strong>实际用户</strong>：年轻消费者、家庭用户、环保意识强的消费者以及需要载货能力的用户</li><li><strong>差在哪里</strong>：目标用户和实际用户基本一致，但高端车型的用户群体可能相对较小</li></ul>
+
+<p><strong>口碑优点</strong></p>
+
+<ul><li>发动机技术先进，尤其是混合动力系统</li><li>产品线丰富，覆盖多种车型和用户需求</li><li>注重环保和新能源技术的开发</li></ul>
+
+<p><strong>口碑槽点</strong></p>
+
+<ul><li>部分车型油耗较高</li><li>内饰质感一般，配置较低</li><li>高端车型价格较高，性价比一般</li></ul>
+
+<hr>
+
+<h2>语料出处</h2>
+
+<p>1. SDGs Transformation and Quality Growth 2022 · 第 7 节（提及 4 次，book-corpus 语料）</p>
+<p>2. SDGs Transformation and Quality Growth 2022 · 第 6 节（提及 1 次，book-corpus 语料）</p>
+<p>3. Honda（提及 387 次，wiki-corpus-en 语料）</p>
+<p>4. Honda City（提及 201 次，wiki-corpus-en 语料）</p>
+<p>5. 本田技研工业（提及 189 次，wiki-corpus 语料）</p>
+<p>6. Honda Insight（提及 130 次，wiki-corpus-en 语料）</p>
+<p>7. Honda Super Cub（提及 124 次，wiki-corpus-en 语料）</p>
+<p>8. 本田飞度（提及 117 次，wiki-corpus 语料）</p>
+<p>9. 东风本田CR-V全能荣耀款将11月10日上市 预计座舱等配置升级（提及 27 次，news-archive 语料）</p>
+<p>10. 售13.79万/配置迎来升级 本田CR-V全能荣耀款上市（提及 27 次，news-archive 语料）</p>
+<p>11. 新大洲本田推出领咖智行子品牌 首款车型CE6售价4999元起（提及 15 次，news-archive 语料）</p>
+<p>12. 东风本田10月销量17026台 CR-V销量10455台 双11享1000元抵3000元（提及 15 次，news-archive 语料）</p>
+<p>13. 东风Honda正式迈入900万用户时代，CR-V全能荣耀款焕新上市（提及 15 次，news-archive 语料）</p>
+<p>14. 东风本田购车至高享2万元置换补贴 1000元抵2000元 涉及CR-V/UR-V（提及 15 次，news-archive 语料）</p>
+<p>15. Honda Never Wanted The Ridgeline To Be A Traditional Pickup,（提及 6 次，news-archive 语料）</p>
+<p>16. Honda announces Alpha EV in India, effectively scrapping 0 S（提及 6 次，news-archive 语料）</p>
+
+<p class="standfirst">语料来源：本地书籍语料（data\book-corpus）、维基百科离线转储（中文 / 英文）。价格为资料所载，销量带年份口径；标「资料未覆盖」的不做推测。</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
