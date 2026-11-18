@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>2026广州车展新车前瞻，奥迪Q9等多款新车亮相</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 11 月 19 日 · 星期四 · 第 47 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">汽车日报</p>
+    <h1 class="art-title">2026广州车展新车前瞻，奥迪Q9等多款新车亮相</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">10 条报道 ｜ 4 张配图 ｜ 全部条目带来源标注，单源信息标注待证实</p>
+  <article class="art-body">
+
+<h2>今日速览（30 秒版）</h2>
+<ul><li>奔驰4款新车11月27日上市，纯电GLC续航680公里起，预售价29.99万元起</li><li>吉利银河M8年内上市，搭1.5T插混系统，提供5款配色</li><li>深蓝G318乾崑版一口价18.98万元，比原价便宜3万元</li><li>瑞虎9猎鹰700版售价17.29万元起，配备激光雷达和30英寸屏</li><li>福特停止从美国向中国出口发动机，曾进口1.5T、2.0T等机型</li><li>长安Lumin PLUS限时4.99万起，轴距加长22厘米</li><li>问界新M8售37.98万起，全系标配4颗激光雷达</li><li>腾势N8售价26.99万元起，提供纯电和插混共6款车型</li></ul>
+
+<h2>今日头条</h2>
+<p>2026年11月27日，2026广州车展媒体日将有奥迪Q9、新款林肯航海家、全新比亚迪汉、仰望鼎曜、全新宝马i3等数十款新车亮相。奥迪Q9作为旗舰车型，车身长度达5.31米，轴距3.14米，配备电动门、App远程开闭车门、分体式灯组、矩阵式LED大灯、第三代数字化OLED尾灯等先进配置。内饰方面，奥迪Q9采用木纹饰板搭配Nappa真皮，座舱配备曲面OLED交互三屏，支持多类应用安装，并接入ChatGPT语音控制系统。动力方面，奥迪Q9或将引入3.0T轻混动力系统，最大功率367马力，搭配自适应空气悬架与后轮转向系统。此次广州车展是车企冲刺全年销量目标的重要节点，奥迪Q9的亮相将进一步强化其在豪华SUV市场的竞争力。</p>
+
+<figure><img src="img/9533b120433e19.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h2>一、新车与产品</h2>
+
+<h3>新款领克03上市 限时10.38万元起</h3>
+
+<p>11月13日，2027款全新领克03家族在成都赛道正式上市，其中2027款领克03限时专享价10.38万元起，2027款领克03+限时专享价23.98万元。新车在外观套件、动力参数及底盘配置上进行了全面进阶，进一步明确了其‘中国性能轿车’的市场定位。外观延续了家族‘驭风而过’的设计语言，并推出全新‘赛道红’车漆，以致敬领克03+TCR赛车的经典战衣。动力系统方面，1.5TD发动机最大功率提升至148kW，2.0T车型维持200kW输出。此次改款通过‘原厂宽体+动力升级+智能座舱’的组合，精准切中了年轻用户对个性化外观与驾驶乐趣的双重需求。（来源：新浪汽车·新车）</p>
+
+<figure><img src="img/8d0d6528a919b2.jpg" alt="（图：新浪汽车·新车）" loading="lazy"><figcaption>（图：新浪汽车·新车）</figcaption></figure>
+
+<h3>新款比亚迪汉曝光 875公里续航</h3>
+
+<p>新款比亚迪汉在正式发布前被曝光，搭载88.7 kWh电池，CLTC工况下续航达875公里，最大功率697 hp。新车预计于11月27日发布，外观经过重新设计，车身更长，整体造型有所调整。此次曝光的谍照显示，新款比亚迪汉在电池容量、续航里程和动力性能方面均有显著提升，进一步巩固其在新能源市场中的竞争力。（来源：CarNewsChina）</p>
+
+<h3>比亚迪第三代唐开启预售 22.5万元起</h3>
+
+<p>11月13日，比亚迪第三代唐正式开启预售，起售价22.5万元，提供850KM后驱激光尊荣型、850KM后驱激光旗舰型、770KM四驱型三种版本。新车采用全新科技美学设计，配备2.5米一体贯穿式飞檐光羽大灯，内饰提供星际双屏设计，由35.4英寸一体远端星环屏与30英寸全景巨幕屏组成。第三代唐搭载云辇-A双腔空气悬架，CLTC工况下最高续航达850km，支持超12种常用座椅变化形态，为家庭用户带来更高端的出行体验。（来源：新浪汽车·新车）</p>
+
+<h3>2027款岚图知音试驾体验 19.79万元起</h3>
+
+<p>2027款岚图知音限时权益价19.79万元起，搭载896线乾崑版智能驾驶系统，提供多种驾驶模式和高能续航表现。该车型在智能座舱、空间舒适性、补能效率等方面均有显著提升，例如配备29英寸AR-HUD抬头显示、7L冷暖控温车载冰箱、零重力座椅等。岚图知音延续了“星伴时光美学”设计语言，新增“暮山紫”和“星光银”车色，提升辨识度和颜值。该车型在20万级纯电SUV市场中，试图通过越级配置打破同质化竞争。此前，岚图已在智能驾驶和空间舒适性方面积累了一定经验，此次试驾进一步强化了其市场竞争力。2027款岚图知音的推出，意味着岚图在新能源市场中正加速布局，以更全面的产品力应对激烈竞争。（来源：新浪汽车·新车）</p>
+
+<figure><img src="img/9e0cd9542cbc7b.jpg" alt="（图：新浪汽车·新车）" loading="lazy"><figcaption>（图：新浪汽车·新车）</figcaption></figure>
+
+<h2>二、销量与市场</h2>
+
+<h3>日产NX7预售 12.99万元起</h3>
+
+<p>日产NX7于11月11日开启预售，预售价12.99万元至14.99万元，全系配备宁德时代40.9kWh电池，CLTC纯电续航320公里。该车型定位中型插混SUV，搭载Momenta R7世界模型辅助驾驶方案，顶配车型配备该方案。日产希望通过NX7的推出，提升其在新能源市场的竞争力。此前，日产在华销量持续下滑，10月销量同比下降67.1%。NX7的推出是日产加速产品更新、提升智能化水平的重要举措，旨在应对新能源市场竞争。日产希望通过NX7的均衡配置，吸引消费者关注，并在智能座舱、辅助驾驶等方面实现突破。NX7的正式售价和最终权益将在11月27日广州车展公布。（来源：钛媒体）</p>
+
+<h3>广汽传祺新能源销量暴涨75%</h3>
+
+<p>2026年1至10月，广汽传祺新能源销量同比大涨75%，10月新能源销量同比涨幅达64%。这一增长主要得益于李安主导的渠道新政，推动经销商体系向新能源转型，重点推广向往系列插混、M8插混、越7插混等车型。此前，传祺新能源占比仅为两成出头，如今已提升至接近35%。李安曾成功推动广汽丰田新能源转型，现将其经验应用于传祺，帮助其完成从燃油营销向新能源营销的转变。传祺新能源的快速增长，表明其在电动化转型中取得阶段性成果，但燃油车销量下滑仍对整体表现构成压力。未来，传祺需持续巩固新能源增长势头，使其成为品牌新基本盘。（来源：网上车市）</p>
+
+<figure><img src="img/0626b8786496a1.jpg" alt="（图：网上车市）" loading="lazy"><figcaption>（图：网上车市）</figcaption></figure>
+
+<h2>三、政策与标准</h2>
+
+<h2>四、供应链与智驾</h2>
+
+<h3>长城汽车探索ABS介入后智驾不立即退出</h3>
+
+<p>盖世汽车讯 11月18日，在2026第六届汽车AI智能底盘大会上，长城汽车线控底盘总工程师景立新博士透露，长城汽车正推进智能底盘与智能驾驶系统的协同控制，通过共享车辆稳定性边界，探索在ABS、TCS等底盘控制功能介入时，避免智能驾驶系统立即退出。 景立新表示，目前部分智能驾驶系统在检测到ABS、TCS或车辆动态稳定控制功能介入后，会直接退出。面向L3及以上自动驾驶，这种控制方式需要进一步优化。 为此，长城汽车正探索由底盘系统向智驾系统提供实时车辆稳定性边界，使其能够根据车辆实际状态判断是否继续运行，在满足安全条件时（来源：盖世汽车）</p>
+
+<h3>IM LS6 SUV在德国提供自动驾驶服务</h3>
+
+<p>由SAIC和阿里巴巴联合推出的IM LS6 SUV，搭载Momenta自动驾驶技术，已在德国慕尼黑提供监督下的自动驾驶服务。该车型是一款快速背负式跨界车，其自动驾驶功能的落地标志着Momenta与SAIC和阿里巴巴在智能驾驶领域的合作取得重要进展。此前，Momenta已获得德国全境L4级自动驾驶测试许可，为此次服务的推出提供了监管支持。此次服务的推出也表明，自动驾驶技术正在逐步从测试阶段走向实际应用，为未来更广泛的商业化铺平道路。（来源：CarNewsChina）</p>
+
+<h2>五、公司与人事</h2>
+
+<h3>红旗评估与Stellantis等合作</h3>
+
+<p>一汽旗下高端品牌红旗正在评估与Stellantis等企业合作的欧洲本地生产方案。红旗国际业务负责人表示，欧洲本地化生产是品牌扩张的战略优先事项，目前正与多家潜在合作方讨论。与此同时，通用汽车已启动寻找玛丽·博拉继任者的程序，开放内外部候选人。此外，本田在美国阿拉巴马州工厂追加4.62亿美元投资，用于扩大高需求车型产能、新建V6混合动力发动机装配线。梅赛德斯-奔驰计划在2027年实现超过33万辆的美国零售销量，比今年预期目标高出约5%。丰田向11家太空初创企业投资逾2.4亿美元，专注于卫星制造、通信、导航等领域。（来源：盖世汽车）</p>
+
+<h2>六、出海与国际</h2>
+
+<h3>小鹏在英国发布G9L及MONA L03</h3>
+
+<p>小鹏集团近日在英国举办品牌之夜“The Next Chapter”，正式面向英国市场推出小鹏G9L和MONA L03两款车型。两款车型均提供纯电与超级增程两种动力选择，能覆盖城市通勤、乡村道路和长途出行等场景。G9L英国起售价为64,990英镑，顶配78,990英镑；MONA L03起售价32,990英镑，顶配40,990英镑。小鹏计划未来一年在英国推出5款右舵车型，并同步扩展销售与服务网络。小鹏宣布成立英国子公司，提出到2028年成为英国高端电动汽车市场第一品牌的目标。（来源：盖世汽车）</p>
+
+<h2>数据速览</h2>
+
+<table><thead><tr><th>指标</th><th>数值</th><th>口径/区间</th><th>来源</th></tr></thead><tbody>
+<tr><td>奔驰G400等4款新车上市时间</td><td>11月27日</td><td>日期</td><td>网上车市</td></tr>
+<tr><td>广汽传祺新能源销量同比增长</td><td>75%</td><td>百分比</td><td>网上车市</td></tr>
+<tr><td>深蓝G318乾崑版价格</td><td>18.98万</td><td>人民币</td><td>网上车市</td></tr>
+<tr><td>瑞虎9猎鹰700限时价格</td><td>17.29万起</td><td>人民币</td><td>网上车市</td></tr>
+<tr><td>问界新M8售价</td><td>37.98万起</td><td>人民币</td><td>网上车市</td></tr>
+<tr><td>腾势N8售价</td><td>26.99万起</td><td>人民币</td><td>电动邦</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>原文来源</h2>
+
+<p class="standfirst">本页每条报道的图片均来自该条新闻原文页面；原文没有合格图片的条目不配图。</p>
+
+<p>1. [汽车之家] 奥迪Q9/新款航海家/全新汉/仰望鼎曜领衔 2026广州车展新车前瞻 — https://www.autohome.com.cn/news/202611/1318399.html#pvareaid=102624</p>
+<p>2. [新浪汽车·新车] 新款领克03上市 限时10.38万元起 — https://auto.sina.com.cn/newcar/x/2026-11-13/detail-iniyriiv3452868.shtml?oaid=00108&amp;c=spr_auto_trackid_4d7d188c9b7a61c4</p>
+<p>3. [CarNewsChina] New BYD Han exposed with 88.7 kWh battery, 875 km range and 697 hp — https://carnewschina.com/2026/11/18/new-byd-han-exposed-with-88-7-kwh-battery-875-km-range-and-697-hp/</p>
+<p>4. [新浪汽车·新车] 比亚迪第三代唐开启预售22.5万元起 — https://auto.sina.com.cn/newcar/2026-11-13/detail-iniypzqc1090358.shtml?oaid=00109&amp;c=spr_auto_trackid_4d7d188c9b7a61c4</p>
+<p>5. [新浪汽车·新车] 满配越级体验 试驾2027款岚图知音 — https://auto.sina.com.cn/review/2026-11-15/detail-iniyupui2181496.shtml?oaid=00006&amp;c=spr_auto_trackid_f8944f41f240e3fc</p>
+<p>6. [钛媒体] 一年半连推四款新车，日产为何还是焦虑？ — https://www.tmtpost.com/8210062.html</p>
+<p>7. [网上车市] 李安新政大获成功！广汽传祺1-10月新能源暴涨75% — http://news.cheshi.com/dujia/20261117/3426298.shtml</p>
+<p>8. [Electrive] EU accelerates approvals for power grids and charging stations — https://www.electrive.com/2026/11/18/eu-accelerates-approvals-for-power-grids-and-charging-stations/</p>
+<p>9. [盖世汽车] 长城汽车探索ABS介入后智驾不立即退出 — https://auto.gasgoo.com/news/202611/18I70478428C109.shtml</p>
+<p>10. [CnEVPost] Momenta, Uber launch supervised robotaxi pilot in Germany — https://cnevpost.com/2026/11/18/momenta-uber-launch-robotaxi-pilot-germany/</p>
+<p>11. [盖世汽车] Momenta与Uber在德启动Robotaxi试运营 — https://auto.gasgoo.com/news/202611/18I70478414C601.shtml</p>
+<p>12. [CarNewsChina] Momenta-powered IM LS6 SUV became available for autonomous rides in Germany — https://carnewschina.com/2026/11/18/momenta-powered-im-ls6-suv-became-available-for-autonomous-rides-in-germany/</p>
+<p>13. [盖世汽车] 【国际】红旗评估与Stellantis等合作 — https://auto.gasgoo.com/news/202611/18I70478364C108.shtml</p>
+<p>14. [盖世汽车] 小鹏在英国发布G9L — https://auto.gasgoo.com/news/202611/18I70478348C109.shtml</p>
+<p>15. [网上车市] 奔驰G400等4款新车27日同时上市 VLE MPV国内首秀 — http://news.cheshi.com/dujia/20261118/3426308.shtml</p>
+<p>16. [汽车之家] 推出5款配色/搭1.5T插混系统 吉利银河M8将于年内上市 — https://www.autohome.com.cn/news/202611/1318425.html#pvareaid=102624</p>
+<p>17. [网上车市] 深蓝G318乾崑版上新：便宜3万，一口价18.98万！ — http://news.cheshi.com/dujia/20261111/3426255.shtml</p>
+<p>18. [网上车市] 瑞虎9猎鹰700限时17.29万起！激光雷达+30英寸屏 — http://news.cheshi.com/dujia/20261111/3426258.shtml</p>
+<p>19. [网上车市] 福特将全面停止！从美国向中国出口发动机 — http://news.cheshi.com/dujia/20261111/3426259.shtml</p>
+<p>20. [网上车市] 长安Lumin出5门了：轴距加长22厘米，限时4.99万起 — http://news.cheshi.com/dujia/20261111/3426254.shtml</p>
+<p>21. [网上车市] 问界新M8售37.98万起：全系4激光，还有后轮转向！ — http://news.cheshi.com/dujia/20261113/3426273.shtml</p>
+<p>22. [电动邦] 26.99万元起的大五座，腾势N8值不值得入手 — https://www.diandongbang.com/news/167966.html</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
