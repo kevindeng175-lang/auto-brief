@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light">
+<title>零跑与欧宝合作开发纯电SUV，金额达1亿欧元</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --accent:#0071e3; --card:#f5f5f7; --hero:#fbfbfd;
+}
+/* The site is a printed page now: no dark variant. A dark article page under a light
+   front page broke the newspaper metaphor and flashed black on every click. */
+:root{--bg:#fbfaf7; --fg:#17130c; --muted:#5b5446; --line:#ded7c8;
+      --accent:#9a2f22; --card:#f3efe4; --hero:#f7f4ec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",
+    "Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:17px;line-height:1.62;letter-spacing:-.003em;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.hero{padding:104px 24px 60px;text-align:center;
+  background:linear-gradient(180deg,var(--hero) 0%,var(--bg) 100%)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px}
+h1.title{font-size:clamp(34px,5.6vw,60px);line-height:1.06;letter-spacing:-.022em;
+  font-weight:700;margin:0 auto;max-width:22ch;text-wrap:balance}
+.sub{font-size:clamp(15px,1.7vw,20px);line-height:1.45;color:var(--muted);
+  margin:20px auto 0;max-width:46ch}
+.wrap{max-width:740px;margin:0 auto;padding:0 24px 110px}
+article h2{font-size:clamp(23px,3vw,31px);line-height:1.16;letter-spacing:-.015em;
+  font-weight:680;margin:66px 0 20px;padding-top:38px;border-top:1px solid var(--line)}
+article h2:first-of-type{border-top:none;padding-top:0;margin-top:34px}
+article h3{font-size:clamp(18px,2.1vw,22px);letter-spacing:-.01em;margin:36px 0 10px}
+article p{margin:0 0 18px}
+article ul{list-style:none;padding:0;margin:0 0 24px}
+article li{position:relative;padding-left:21px;margin:0 0 13px}
+article li::before{content:"";position:absolute;left:2px;top:.63em;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+article hr{border:none;border-top:1px solid var(--line);margin:52px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:650}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  background:var(--card);padding:.15em .4em;border-radius:6px}
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);
+  vertical-align:top}
+th{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--muted)}
+tr:last-child td{border-bottom:none}
+blockquote{margin:28px 0;padding:2px 0 2px 22px;border-left:3px solid var(--accent);
+  color:var(--muted);font-size:1.04em}
+.footer{border-top:1px solid var(--line);padding:40px 24px 64px;text-align:center;
+  color:var(--muted);font-size:13px;line-height:1.9}
+.footer a{color:var(--muted);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px;
+  max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.card{display:block;background:var(--card);border-radius:18px;padding:26px 24px 24px;
+  transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s ease;
+  color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12);
+  text-decoration:none}
+.card-kicker{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:10px}
+.card-title{font-size:21px;font-weight:650;letter-spacing:-.012em;line-height:1.24;
+  margin-bottom:10px}
+.card-desc{font-size:14px;line-height:1.5;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.section-label{max-width:1080px;margin:0 auto;padding:52px 24px 18px;
+  font-size:clamp(20px,2.4vw,26px);font-weight:700;letter-spacing:-.01em;
+  color:var(--fg)}
+.section-label+.grid{margin-top:2px}
+/* Entrance animation is CSS-only on purpose. The previous version set .reveal to
+   opacity:0 and relied on IntersectionObserver with threshold 0.08 - once the article
+   grew taller than ~12 viewports that threshold became unreachable, the observer never
+   fired, and the whole page rendered blank. A CSS keyframe cannot fail that way. */
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+article{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+.card{animation:rise .5s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){
+  article,.card{animation:none}
+  html{scroll-behavior:auto}}
+@media print{.hero{padding:24px 0}}
+/* article images + the :::gallery grid */
+article img{max-width:100%;height:auto;border-radius:12px;display:block}
+figure{margin:26px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));
+  gap:16px;margin:28px 0}
+.gallery figure{margin:0;background:var(--card);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:158px;object-fit:cover;border-radius:0}
+.gallery figcaption{font-size:12px;line-height:1.45;color:var(--muted);padding:10px 12px}
+.gallery .via{display:block;margin-top:3px;opacity:.75;font-size:11px}
+@media (max-width:520px){.gallery{grid-template-columns:1fr 1fr}.gallery img{height:112px}}
+
+html,body{background:#f7f4ec !important;color:#17130c !important}
+.art{max-width:764px;margin:0 auto;padding:0 32px 70px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art a{color:#9a2f22;text-decoration:none}
+.art a:hover{text-decoration:underline}
+.art-nav{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 13px;font-size:12.5px;letter-spacing:.14em;color:#5b5446;
+  border-bottom:1px solid #ded7c8}
+.art-nav a{color:#5b5446;font-weight:700}
+.art-nav a:hover{color:#9a2f22}
+.art-head{padding:32px 0 0}
+.art-kicker{font-size:11.5px;letter-spacing:.3em;font-weight:700;color:#9a2f22;margin:0 0 13px}
+.art-title{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:44px;line-height:1.28;font-weight:900;letter-spacing:-.012em;margin:0 0 15px;
+  text-wrap:balance}
+.art-meta{font-size:13px;color:#5b5446;letter-spacing:.04em;margin:0}
+.art-rule{height:3px;background:#17130c;margin:20px 0 0}
+.art-body{padding-top:26px}
+/* body copy: serif, single measure, newspaper leading */
+.art-body p{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17.5px;line-height:1.95;margin:0 0 19px;color:#241f16}
+.art-body h2{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:26px;line-height:1.3;font-weight:800;letter-spacing:-.01em;
+  margin:44px 0 15px;padding-top:20px;border-top:1px solid #ded7c8}
+.art-body h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+.art-body h3{font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:20.5px;line-height:1.38;font-weight:700;margin:30px 0 8px;letter-spacing:-.005em}
+.art-body h3+p{margin-top:0}
+.art-body ul{list-style:none;padding:0;margin:0 0 20px}
+.art-body li{position:relative;padding-left:18px;margin:0 0 11px;
+  font-family:"Source Han Serif SC","Songti SC","Noto Serif SC",Georgia,SimSun,serif;
+  font-size:17px;line-height:1.85;color:#241f16}
+.art-body li::before{content:"";position:absolute;left:3px;top:.72em;width:5px;height:5px;
+  background:#9a2f22;border-radius:50%}
+.art-body hr{border:none;border-top:1px solid #ded7c8;margin:38px 0}
+.art-body .standfirst{font-size:16px;line-height:1.7;color:#5b5446;margin:0 0 22px;
+  padding-bottom:16px;border-bottom:1px solid #ded7c8}
+/* lesson audio */
+.player{margin:0 0 26px;padding:14px 16px;background:#f3efe4;border-left:3px solid #9a2f22}
+.player audio{width:100%;display:block;height:38px}
+.player .player-note{margin:9px 0 0;font-size:13px;color:#5b5446;letter-spacing:.03em;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body .ts{font:inherit;font-size:13px;letter-spacing:.06em;color:#9a2f22;
+  background:transparent;border:1px solid #d9d2c2;border-radius:2px;padding:1px 7px;
+  cursor:pointer;font-family:Georgia,"Microsoft YaHei",serif;vertical-align:middle}
+.art-body .ts:hover,.art-body .ts.on{background:#9a2f22;color:#f7f4ec;border-color:#9a2f22}
+/* business English blocks */
+.biz-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#ded7c8;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;margin:20px 0 26px}
+.biz-card{background:#fbfaf7;padding:15px 16px 16px;display:flex;flex-direction:column;gap:5px}
+.bc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.bc-head b{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:18px;
+  font-weight:700;letter-spacing:-.005em;color:#17130c}
+.bc-reg{font-size:10.5px;letter-spacing:.08em;color:#8a5b4a;border:1px solid #e0d3c4;
+  padding:1px 5px;white-space:nowrap}
+.bc-zh{font-size:14px;color:#9a2f22;letter-spacing:.02em}
+.bc-eg{font-family:"Source Han Serif SC","Songti SC",Georgia,SimSun,serif;font-size:14.5px;
+  line-height:1.62;color:#241f16}
+.bc-eg i{display:block;font-style:normal;font-size:13px;color:#5b5446;margin-top:3px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.bc-alt{font-size:12px;color:#5b5446;letter-spacing:.02em;border-top:1px dotted #ded7c8;
+  padding-top:6px;margin-top:2px}
+.biz-fix{border-top:1px solid #17130c;margin:20px 0 26px}
+.bf-row{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;padding:12px 0;
+  border-bottom:1px solid #e6e0d2}
+.bf-bad{font-size:14.5px;color:#6b6459;text-decoration:line-through;
+  text-decoration-color:#c9bfae;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-bad::before{content:"✗";text-decoration:none;display:inline-block;color:#a8432c;
+  margin-right:7px;font-weight:700}
+.bf-good{font-size:15px;color:#17130c;font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+.bf-good::before{content:"✓";color:#3f6b45;margin-right:7px;font-weight:700}
+.bf-note{grid-column:1 / -1;font-size:12.5px;color:#5b5446;margin-top:4px;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.biz-quiz{border-top:1px solid #17130c;margin:20px 0 26px}
+.biz-quiz details{border-bottom:1px solid #e6e0d2}
+.biz-quiz summary{padding:11px 0;cursor:pointer;font-size:15px;line-height:1.62;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif;color:#241f16}
+.biz-quiz summary::marker{color:#9a2f22}
+.biz-quiz .qn{font-family:Georgia,serif;font-size:11px;color:#9a2f22;margin-right:9px}
+.biz-quiz .qa{padding:0 0 12px 30px;font-size:14px;color:#4a7a52;
+  font-family:"Source Han Serif SC","Songti SC",Georgia,serif}
+@media (max-width:640px){
+  .biz-cards{grid-template-columns:1fr}
+  .bf-row{grid-template-columns:1fr;gap:4px}
+}
+.art-body pre.cards{margin:18px 0 22px;padding:14px 16px;background:#f3efe4;border:1px solid #ded7c8;
+  border-radius:2px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;
+  font-size:13px;line-height:1.9;white-space:pre-wrap;color:#241f16}
+.art-body figure{margin:22px 0 26px}
+.art-body figure img{width:100%;height:auto;display:block;border-radius:2px}
+.art-body figcaption{font-size:12.5px;color:#5b5446;margin-top:8px;letter-spacing:.03em;
+  border-top:1px solid #ded7c8;padding-top:6px}
+.art-body table{width:100%;border-collapse:collapse;margin:22px 0;font-size:16px;
+  border-top:1px solid #17130c;border-bottom:1px solid #17130c;
+  font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+.art-body th{font-size:13px;letter-spacing:.06em;color:#5b5446;text-align:left;
+  font-weight:700;border-bottom:1px solid #17130c;padding:8px 14px 8px 0}
+.art-body td{border-bottom:0;padding:10px 14px 10px 0;vertical-align:top}
+.art-body th:first-child,.art-body td:first-child{width:64px;white-space:nowrap}
+.art-body th:last-child,.art-body td:last-child{width:46%;}
+.art-body td:last-child,.art-body th:last-child{padding-right:0}
+.art-body tbody tr:nth-child(even){background:#f3efe4}
+.art-foot{margin-top:44px;border-top:1px solid #ded7c8;padding-top:16px;text-align:center;
+  font-size:12.5px;color:#5b5446;line-height:1.9}
+@media (max-width:640px){
+  .art{padding:0 20px 50px}
+  .art-title{font-size:clamp(23px,6.4vw,29px);line-height:1.26;text-wrap:balance}
+  .art-body p,.art-body li{font-size:16.5px;line-height:1.82}
+  .art-body h2{font-size:22px}
+  .art-body h3{font-size:18.5px}
+  /* three items on one 390px row wrapped into six lines; put the dateline on its own row */
+  .art-nav{flex-wrap:wrap;gap:3px 10px;font-size:11.5px;letter-spacing:.06em}
+  .art-nav-mid{display:none}
+  .art-nav > span:last-child{flex-basis:100%;color:#5b5446}
+  /* the quick-scan block still pushed the first body line below the fold */
+  .art-body p,.art-body li{margin-bottom:13px}
+  .art-standfirst{padding-bottom:12px;margin-bottom:16px}
+  .art-body h2{margin-top:32px;padding-top:16px}
+}
+</style>
+</head><body>
+<div class="art">
+  <nav class="art-nav"><a href="index.html">← 返回头版</a>
+    <span class="art-nav-mid">汽车产业日报</span>
+    <span>2026 年 11 月 22 日 · 星期日 · 第 47 周</span></nav>
+  <header class="art-head">
+    <p class="art-kicker">汽车日报</p>
+    <h1 class="art-title">零跑与欧宝合作开发纯电SUV，金额达1亿欧元</h1>
+  </header>
+  <div class="art-rule"></div>
+  <p class="art-standfirst">15 条报道 ｜ 5 张配图 ｜ 全部条目带来源标注，单源信息标注待证实</p>
+  <article class="art-body">
+
+<h2>今日速览（30 秒版）</h2>
+<ul><li>一汽-大众CMP平台插混SUV谍照曝光，疑似套壳与众06</li><li>GTA6中电动车成主流，包含特斯拉和保时捷仿制品</li><li>蔚来推出ES9特别版，起售价63.8万元</li><li>蔚来ES9地平线鎏金特别版发布，BaaS租电53万起</li><li>改装1967款保时捷912电动车功率达300马力</li><li>荷兰法院因设计侵权阻止比亚迪Ti7在欧盟销售</li><li>零跑汽车2026年第三季度营收达317亿元</li><li>2027款丰田赛那混动升级，配备更大数字显示屏</li></ul>
+
+<h2>今日头条</h2>
+<p>11月20日，零跑科技与Stellantis集团旗下欧宝正式签署合作协议，双方将共同开发一款全新的C级纯电动SUV。根据零跑当天披露的公告，欧宝将为相关工程及开发服务支付总计1亿欧元。新车预计2028年9月进入量产阶段，计划在西班牙萨拉戈萨工厂生产，并于2028年上市。此前，Stellantis已投资约15亿欧元入股零跑，并于2024年成立零跑国际，由Stellantis持有51%股权，负责零跑汽车在中国以外市场的业务拓展。此次合作标志着中国车企的研发能力首次进入欧洲品牌面向本土市场的新车项目。欧宝CEO Florian Huettl表示，双方将整合两地的工程研发能力，将开发速度、技术实力和工程经验结合起来。按照最新协议，零跑将为新车提供工程及开发服务，具体开发职责、产品性能要求和项目节点由双方进一步约定。</p>
+
+<h2>一、新车与产品</h2>
+
+<h3>奇瑞iCar V25 EREV在中国正式发布，起售价17900美元</h3>
+
+<p>奇瑞iCar V25 EREV在中国正式发布，这是一款5座SUV，性能达到449马力。iCar V25 EREV是一款插电式混合动力车型，属于EREV（增程式电动车）类别。该车型的发布标志着奇瑞在新能源汽车领域进一步拓展。目前，该车型的起售价为17900美元。从目前的信息来看，iCar V25 EREV在动力性能和市场定位上具有较强的竞争力。（来源：CarNewsChina）</p>
+
+<h3>奇瑞iCar V25上市 综合续航达1240公里</h3>
+
+<p>奇瑞iCar V25正式在中国市场推出，综合续航里程可达1240公里，起售价为129800元（约合19340美元）。这款车型主要面向年轻消费者群体，是奇瑞iCar系列在插电式混合动力领域的重要补充。此前，奇瑞已推出多款新能源车型，进一步巩固其在新能源市场的地位。iCar V25的上市，不仅丰富了奇瑞的产品矩阵，也进一步提升了其在插电式混合动力市场的竞争力。（来源：CnEVPost）</p>
+
+<figure><img src="img/29b4b8e4ff8734.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>现代汽车广州车展发布多款新车 MERCURY Concept亮相</h3>
+
+<p>现代汽车将在即将于11月27日开幕的广州车展上发布多款新车，包括IONIQ品牌的全新概念车MERCURY Concept。此外，还将展示艾尼氪V、EARTH Concept、帕里斯帝焕新版、IONIQ 5 N和伊兰特ELANTRA N等车型。MERCURY Concept作为IONIQ品牌的重要概念车，将首次在全球设计亮相。现代汽车此前已推出艾尼氪V等车型，进一步拓展其在新能源市场的产品布局。此次广州车展的发布，标志着现代汽车在中国市场持续发力，强化其在新能源领域的竞争力。（来源：汽车之家）</p>
+
+<figure><img src="img/ee18b539a9fc38.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h3>奇瑞集团广州车展发布多款新车 全新艾瑞泽7预售</h3>
+
+<p>2026年广州车展上，奇瑞集团将发布多款新车，包括全新艾瑞泽7的预售、风云全新概念车以及代号为T18D的瑞虎8系列新车。全新艾瑞泽7将提供纯燃油和插电混动两种动力，燃油版长宽高分别为4739x1850x1491mm，轴距为2770mm，搭载最大功率为105kW的1.5T发动机；插混版车型长宽高分别为4739x1850x1498mm，轴距为2770mm，搭载最大功率为82kW的1.5L混动专用发动机。此外，星途EX6量产版以及纵横R700也将发布。此次发布延续了奇瑞近年来在新能源和智能化领域的布局，与竞品相比，其产品线覆盖更广，技术更全面。此举意味着奇瑞在新能源和智能化赛道上进一步加速布局，巩固其在行业中的领先地位。（来源：汽车之家）</p>
+
+<figure><img src="img/f2ad1fc86318be.jpg" alt="（图：汽车之家）" loading="lazy"><figcaption>（图：汽车之家）</figcaption></figure>
+
+<h2>二、销量与市场</h2>
+
+<h3>中国11月新能源车零售销量预计达115万辆 渗透率首超70%</h3>
+
+<p>中国新能源汽车渗透率预计在2026年11月首次突破70%。据中国电动汽车百人会（CPCA）预测，中国11月新能源车零售销量将达到115万辆，占整体乘用车零售销量的70%以上。整体乘用车零售销量预计为163万辆，环比下降1.1%。这一数据反映了中国新能源汽车市场的快速增长，以及消费者对新能源车接受度的显著提升。此前，中国新能源车市场渗透率已连续多月保持增长，此次突破70%标志着新能源车正式进入主流市场。这意味着中国新能源汽车市场已进入规模化、普及化的关键阶段，对全球新能源汽车产业发展具有重要影响。（来源：CnEVPost）</p>
+
+<figure><img src="img/ac3c70c29782f5.jpg" alt="（图：CnEVPost）" loading="lazy"><figcaption>（图：CnEVPost）</figcaption></figure>
+
+<h3>零跑汽车单季交付31万台 市占率升至7.2%</h3>
+
+<p>2026年第三季度，零跑汽车全球交付310,052台，同比增长78.3%，连续多月月销过10万台。国内新能源乘用车市占率从二季度末的5.71%升至7.2%，在新势力品牌中排名第一。零跑汽车成为首个达到200万台整车下线的中国新势力品牌。这一成绩得益于其在产品和技术上的持续投入，包括LEAP 5.0新移动空间架构、四叶草5.0中央域控架构和LWM世界模型辅助驾驶等技术的发布。此外，零跑在海外市场的表现尤为亮眼，三季度出口63,278台，同比增长263.7%。零跑与欧宝签署合作协议，计划2028年推出一款全新C级SUV。这意味着零跑在新能源汽车市场中的竞争力和影响力进一步增强，其全球化战略取得实质性进展。（来源：太平洋汽车）</p>
+
+<figure><img src="img/28b6cc85282516.png" alt="（图：太平洋汽车）" loading="lazy"><figcaption>（图：太平洋汽车）</figcaption></figure>
+
+<h3>零跑汽车达成200万台整车下线</h3>
+
+<p>11月19日，零跑汽车在金华智能制造基地迎来第200万台整车下线，下线车型为黑色旗舰SUV零跑D19。这标志着零跑正式成为中国首家达成200万台整车下线的新势力车企。从2019年6月首台车下线至2025年9月突破100万台，零跑产能持续加速，月销量已连续突破10万台。C系列与D系列车型累计占比过半，接近105万台。D19在2026年1-10月位列大型SUV累计销量TOP4及30万内大型SUV销量第一。零跑表示，其坚持全域自研与深度自制，为首任车主提供终身质保等品质保障，获得了传统合资燃油车老车主的增换购支持。（来源：盖世汽车）</p>
+
+<h3>2027款凯翼昆仑官图发布</h3>
+
+<p>2027款凯翼昆仑官图发布，该车型将于12月8日正式上市。目前，关于该车型的具体配置、性能参数及市场定位尚未公布，但此次发布官图标志着凯翼在新能源车型领域的进一步布局。此前，凯翼已推出多款SUV车型，市场竞争日趋激烈。此次发布2027款凯翼昆仑，或将提升凯翼在新能源市场中的竞争力。（来源：太平洋汽车）</p>
+
+<h2>三、政策与标准</h2>
+
+<h3>多家车企提醒警惕虚假召回信息</h3>
+
+<p>近期，大众中国、上汽通用、沃尔沃、奇瑞、长城、理想、小米等多家车企密集发布声明，提醒消费者警惕冒用企业名义的虚假召回信息。这些虚假信息多伪造企业印章，谎称车辆转向系统、气囊等存在隐患，诱导车主申请“召回补偿金”。市场监管总局发文提醒，汽车生产企业实施召回均免费。此次被冒名的品牌涉及合资、豪华及新势力等各类车企，短期内发布同类声明的企业已超二十家。2025年，我国实施汽车召回190次、涉及车辆684.6万辆，同比分别下降18.5%和39.1%。（来源：盖世汽车）</p>
+
+<h2>四、供应链与智驾</h2>
+
+<h3>50余家机构共建RISC-V Club，汽车芯片生态迎关键一步</h3>
+
+<p>近日，50余家机构联合宣布共建RISC-V Club，旨在推动RISC-V架构在汽车芯片领域的应用与发展。该俱乐部的成立标志着汽车芯片生态进入了一个新的阶段，为行业提供了更多合作与创新的机会。此前，RISC-V架构在多个领域已有应用，但其在汽车芯片领域的潜力尚未完全释放。此次合作将有助于加速RISC-V在汽车芯片中的落地，提升芯片的性能与效率。此举意味着，RISC-V架构在汽车芯片领域的应用正逐步扩大，为行业带来新的发展机遇。（来源：太平洋汽车·新闻）</p>
+
+<h3>波士顿动力人形机器人拿下首个芯片客户</h3>
+
+<p>盖世具身智能获悉，日前，现代汽车集团旗下机器人公司波士顿动力（Boston Dynamics）与半导体制造商格芯（GlobalFoundries）宣布扩大合作。 据悉，波士顿动力四足机器人Spot将被部署到格芯位于美国、欧洲和亚洲的更多晶圆厂，同时，格芯还将成为波士顿动力在汽车行业之外首个测试其人形机器人Atlas的客户，也是首家实地验证人形机器人的半导体制造商。 此前，格芯在佛蒙特州的伯灵顿工厂已使用Spot超过四年，此次扩展的直接依据，是新加坡工厂的运行数据。自今年4月起，两台Spot在格芯晶圆厂地下辅助设备层（来源：盖世汽车）</p>
+
+<h3>零跑与欧宝签署联合开发协议</h3>
+
+<p>盖世汽车讯 11月20日，零跑科技创始人、董事长兼CEO朱江明与欧宝CEO Florian Huettl正式签署合作协议，双方将共同开发一款全新C级纯电动SUV。新车计划于2028年上市，并在Stellantis集团位于西班牙萨拉戈萨的工厂生产。 根据协议，新车将采用零跑汽车的核心零部件，同时融合欧宝的设计语言、座舱人体工程学、底盘工程、照明系统及座椅技术。目前，双方研发团队已分别在中国杭州和德国吕塞尔斯海姆的联合项目中心开展开发工作。 此次签约是双方此前合作规划的进一步落实。今年5月，Stellantis集团与零（来源：盖世汽车）</p>
+
+<h3>2026中国汽车软件大会在上海嘉定召开</h3>
+
+<p>2026年是“十五五”规划开局之年，也是我国汽车产业由规模优势、市场优势加快迈向技术体系优势和全球生态优势的重要阶段。为凝聚汽车软件领域创新共识，推动关键技术突破、标准体系建设、成果转化应用和国际交流合作，11月19日-20日，以“向新・向智・向全球”为主题的2026中国汽车软件大会在上海嘉定召开。大会共设置“1场闭门会议、1场大会论坛、4场主题论坛、多个成果发布”，聚焦芯软协同、基础软件与操作系统、具身智能赋能汽车产业、可信数据流通应用创新、智舱交互体验焕新等重点方向，通过搭建高层次、开放型、国际化的产业交流合作（来源：盖世汽车）</p>
+
+<h2>五、公司与人事</h2>
+
+<h3>黄仁勋的最后一季财报</h3>
+
+<p>美东时间11月17日下午5点， 英伟达 的财报电话会开始。坐在开场位置的是临时CEO科莱特·克雷斯和新任董事长哈维·琼斯，人们熟悉的穿皮衣的黄仁勋不在席上。五天前，黄仁勋辞去总裁、CEO和董事职务，即刻生效，33年的掌舵到此结束。辞职之前，董事会已就其个人行为启动独立调查。 他交出的最后一份季报在数字上几乎无可挑剔，2027财年第三季度营收1158.4亿美元，同比增长103%，环比增长20%，比公司8月给出的指引中值高出78亿美元，单季营收首次跨过千亿。数据中心收入1076.1亿美元，同比增长110%，占总营收九成（来源：钛媒体）</p>
+
+<h2>六、出海与国际</h2>
+
+<h3>中国Robotaxi在德国慕尼黑试运营</h3>
+
+<p>11月18日，Momenta与Uber联合宣布在德国慕尼黑启动Robotaxi试运营，这是Uber在德国首次上线自动驾驶出行服务，也是中国Robotaxi首次通过公开出行平台向德国公众开放体验。试运营初期覆盖慕尼黑北部大部分区域，包括奥林匹克公园周边街区，全程免费向乘客开放，每趟行程均配备经过专业训练的安全员。此前，Momenta已获得德国联邦机动车交通管理局（KBA）颁发的德国全境L4级测试许可，成为首家获此资质的中国企业。欧洲公共交通驾驶员短缺问题日益严重，预计到2028年，欧洲公交及长途、旅游客车司机岗位空缺将超过27.5万个。此次试运营标志着中国智驾技术开始直面欧洲监管、真实道路、公众乘客和出行平台的检验。（来源：盖世汽车）</p>
+
+<h2>数据速览</h2>
+
+<table><thead><tr><th>指标</th><th>数值</th><th>口径/区间</th><th>来源</th></tr></thead><tbody>
+<tr><td>零跑2026年第三季度营收</td><td>317亿元</td><td>同比增长63%</td><td>CnEVPost</td></tr>
+<tr><td>零跑2026年第三季度单季交付量</td><td>31万辆</td><td>市占率7.2%</td><td>太平洋汽车</td></tr>
+<tr><td>iCar V25综合续航里程</td><td>1240公里</td><td>官方数据</td><td>CnEVPost</td></tr>
+<tr><td>BYD Boxy SUV EU销售禁令罚款上限</td><td>1000万欧元</td><td>荷兰法院裁定</td><td>Motor1</td></tr>
+<tr><td>零跑200万台整车下线</td><td>200万台</td><td>金华智能制造基地</td><td>盖世汽车</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>原文来源</h2>
+
+<p class="standfirst">本页每条报道的图片均来自该条新闻原文页面；原文没有合格图片的条目不配图。</p>
+
+<p>1. [盖世汽车] 欧洲车企开始为中国造车技术付费 — https://auto.gasgoo.com/news/202611/21I70478679C109.shtml</p>
+<p>2. [CarNewsChina] Chery’s iCar V25 EREV officially launched in China, starting at 17,900 USD — https://carnewschina.com/2026/11/20/cherys-icar-v25-erev-officially-launched-in-china-starting-at-17900-usd/</p>
+<p>3. [CnEVPost] Chery iCar officially launches V25, expanding EREV lineup with up to 1,240 km combined range — https://cnevpost.com/2026/11/19/chery-icar-launches-v25/</p>
+<p>4. [汽车之家] 全新概念车MERCURY Concept领衔 现代汽车广州车展阵容曝光 — https://www.autohome.com.cn/news/202611/1318499.html#pvareaid=102624</p>
+<p>5. [汽车之家] 全新艾瑞泽7预售 奇瑞集团广州车展阵容曝光 还有全新概念车首秀 — https://www.autohome.com.cn/news/202611/1318483.html#pvareaid=102624</p>
+<p>6. [CnEVPost] CPCA estimates China November NEV retail sales at 1.15 million units, penetration to top 70% for first time — https://cnevpost.com/2026/11/19/cpca-estimates-china-nov-nev-retail-1-15-million/</p>
+<p>7. [太平洋汽车] 卖得多也赚到了钱 零跑单季交付31万台 市占率升到7.2% — http://www.pcauto.com.cn/news/5193/51938207.html?ad=28676</p>
+<p>8. [盖世汽车] 零跑达成200万台整车下线 — https://auto.gasgoo.com/news/202611/20I70478610C110.shtml</p>
+<p>9. [太平洋汽车] 2027款凯翼昆仑官图发布 将于12月8日上市 — http://www.pcauto.com.cn/nation/5193/51936591.html?ad=28676</p>
+<p>10. [盖世汽车] 汽车召回怎么了？ — https://auto.gasgoo.com/news/202611/20I70478503C108.shtml</p>
+<p>11. [太平洋汽车·新闻] 50余家机构共建RISC-V Club，汽车芯片生态迎关键一步 — https://www.pcauto.com.cn/news/5193/51938210.html</p>
+<p>12. [盖世汽车] 波士顿动力人形机器人拿下首个芯片客户 — https://auto.gasgoo.com/news/202611/20I70478626C601.shtml</p>
+<p>13. [盖世汽车] 零跑与欧宝签署联合开发协议 — https://auto.gasgoo.com/news/202611/20I70478676C109.shtml</p>
+<p>14. [盖世汽车] 2026中国汽车软件大会在上海嘉定召开 — https://auto.gasgoo.com/news/202611/20I70478677C108.shtml</p>
+<p>15. [钛媒体] 黄仁勋的最后一季财报 — https://www.tmtpost.com/8212036.html</p>
+<p>16. [CarNewsChina] Nio apologizes for ES9 matrix headlight messaging fiasco after censoring child’s birthday wish — https://carnewschina.com/2026/11/21/nio-apologizes-for-es9-matrix-headlight-messaging-fiasco-after-censoring-childs-birthday-wish/</p>
+<p>17. [盖世汽车] 中国Robotaxi，开始接受欧洲乘客检验 — https://auto.gasgoo.com/news/202611/21I70478583C601.shtml</p>
+<p>18. [汽车之家] 套壳与众06 疑似一汽-大众首款CMP平台插混SUV谍照 — https://www.autohome.com.cn/news/202611/1318496.html#pvareaid=102624</p>
+<p>19. [Electrek] Electric cars are finally mainstream in GTA 6, and Vice City is full of them — https://electrek.co/2026/11/21/gta-6-electric-vehicles-mainstream-vice-city/</p>
+<p>20. [CnEVPost] Nio launches ES9 special edition to mark brand&#x27;s 10th anniversary — https://cnevpost.com/2026/11/21/nio-launches-es9-special-edition/</p>
+<p>21. [太平洋汽车] 24K鎏金加持 蔚来ES9地平线鎏金特别版正式发布 BaaS租电53万起 — http://www.pcauto.com.cn/nation/5193/51938208.html?ad=28676</p>
+<p>22. [InsideEVs] This EV-Swapped 1967 Porsche 912 Has 300 HP And A Split Battery Pack — https://insideevs.com/news/816157/porsche-912-ev-swap/</p>
+<p>23. [CarNewsChina] Dutch court blocks BYD Ti 7 in EU over Defender design, leaves UK launch untouched — https://carnewschina.com/2026/11/21/dutch-court-blocks-byd-ti7-in-eu-over-defender-design-leaves-uk-launch-untouched/</p>
+<p>24. [汽车之家] 连续季度盈利 营收创历史新高 零跑汽车发布2026年第三季度财报 — https://www.autohome.com.cn/news/202611/1318489.html#pvareaid=102624</p>
+<p>25. [Motor1] The Toyota Sienna Gets A Big Hybrid Upgrade For 2027 — https://www.motor1.com/news/816162/2027-toyota-sienna-hybrid-changes/</p>
+
+  </article>
+  <footer class="art-foot">
+    <p>由家里的本地 AI 节点自动生成 ｜ 内容均为公开来源摘编，仅作个人学习使用 ｜ 单源信息单独标注待证实</p>
+    <p><a href="index.html">返回头版</a></p>
+  </footer>
+</div>
+<script>
+(function(){
+  var a = document.querySelector(".player audio");
+  if (!a) return;
+  var marks = [].slice.call(document.querySelectorAll(".ts"));
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".ts");
+    if (!b) return;
+    a.currentTime = Number(b.dataset.sec) || 0;
+    a.play();
+    marks.forEach(function(m){ m.classList.toggle("on", m === b); });
+  });
+  a.addEventListener("timeupdate", function(){
+    var t = a.currentTime, cur = null;
+    marks.forEach(function(m){
+      if (Number(m.dataset.sec) <= t + 0.4) { cur = m; } else { m.classList.remove("on"); }
+    });
+    if (cur) cur.classList.add("on");
+  });
+})();
+</script>
+</body></html>
